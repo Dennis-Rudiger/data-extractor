@@ -5,1772 +5,1477 @@
             {
                 "item_code": "BAS003",
                 "item_description": "Basco Primer Grey 1l",
-                "unit_cost": 241.38,
-                "buying_price": 280.0
+                "price": 300
             },
             {
                 "item_code": "BAS004",
                 "item_description": "Basco Primer Grey 4l",
-                "unit_cost": 818.97,
-                "buying_price": 950.01
+                "price": 1025
             },
             {
                 "item_code": "BAS005",
                 "item_description": "Basco Red Oxide 1l",
-                "unit_cost": 241.38,
-                "buying_price": 280.0
+                "price": 300
             },
             {
                 "item_code": "BAS006",
                 "item_description": "Basco Red Oxide 4l",
-                "unit_cost": 818.97,
-                "buying_price": 950.01
+                "price": 1025
             },
             {
                 "item_code": "BAS007",
                 "item_description": "Basco Sanding Sealer 1l",
-                "unit_cost": 514.66,
-                "buying_price": 597.01
+                "price": 645
             },
             {
                 "item_code": "BAS008",
                 "item_description": "Basco Sanding Sealer 4l",
-                "unit_cost": 2133.83,
-                "buying_price": 2475.24
+                "price": 2675
             },
             {
                 "item_code": "BAS009",
                 "item_description": "Basco Silver Almn 1l",
-                "unit_cost": 344.83,
-                "buying_price": 400.0
+                "price": 430
             },
             {
                 "item_code": "BAS010",
                 "item_description": "Basco Silver Almn 4l",
-                "unit_cost": 1293.1,
-                "buying_price": 1500.0
+                "price": 1620
             },
             {
                 "item_code": "BAS011",
                 "item_description": "Base Aquagloss 1 4l",
-                "unit_cost": 2984.48,
-                "buying_price": 3462.0
+                "price": 3740
             },
             {
                 "item_code": "BAS012",
                 "item_description": "Base Aquagloss 2 1l",
-                "unit_cost": 661.21,
-                "buying_price": 767.0
+                "price": 830
             },
             {
                 "item_code": "BAS013",
                 "item_description": "Base Aquagloss 2 4l",
-                "unit_cost": 2616.38,
-                "buying_price": 3035.0
+                "price": 3280
             },
             {
                 "item_code": "BAS017",
                 "item_description": "Base Sg Red 1l",
-                "unit_cost": 617.24,
-                "buying_price": 716.0
+                "price": 775
             },
             {
                 "item_code": "BAS018",
                 "item_description": "Base Sg Red 4l",
-                "unit_cost": 2344.83,
-                "buying_price": 2720.0
+                "price": 2940
             },
             {
                 "item_code": "BAS019",
                 "item_description": "Base Sg1 1l",
-                "unit_cost": 590.7,
-                "buying_price": 685.21
+                "price": 740
             },
             {
                 "item_code": "BAS020",
                 "item_description": "Base Sg1 4l",
-                "unit_cost": 2267.89,
-                "buying_price": 2630.75
+                "price": 2840
             },
             {
                 "item_code": "BAS021",
                 "item_description": "Base Sg2 1l",
-                "unit_cost": 559.53,
-                "buying_price": 649.05
+                "price": 700
             },
             {
                 "item_code": "BAS022",
                 "item_description": "Base Sg2 4l",
-                "unit_cost": 2132.97,
-                "buying_price": 2474.25
+                "price": 2670
             },
             {
                 "item_code": "BAS023",
                 "item_description": "Base Sg3 1l",
-                "unit_cost": 513.84,
-                "buying_price": 596.05
+                "price": 645
             },
             {
                 "item_code": "BAS024",
                 "item_description": "Base Sg3 4l",
-                "unit_cost": 1869.46,
-                "buying_price": 2168.57
+                "price": 2340
             },
             {
                 "item_code": "BAS025",
                 "item_description": "Base Sg4 1l",
-                "unit_cost": 439.35,
-                "buying_price": 509.65
+                "price": 550
             },
             {
                 "item_code": "BAS026",
                 "item_description": "Base Sg4 4l",
-                "unit_cost": 1664.11,
-                "buying_price": 1930.37
+                "price": 2085
             },
             {
                 "item_code": "BAS027",
                 "item_description": "Base Sg5 1l",
-                "unit_cost": 408.37,
-                "buying_price": 473.71
+                "price": 510
             },
             {
                 "item_code": "BAS028",
                 "item_description": "Base Sg5 4l",
-                "unit_cost": 1552.99,
-                "buying_price": 1801.47
+                "price": 1945
             },
             {
                 "item_code": "BAS029",
                 "item_description": "Base Sg6 1l",
-                "unit_cost": 419.23,
-                "buying_price": 486.31
+                "price": 525
             },
             {
                 "item_code": "BAS030",
                 "item_description": "Base Sg6 4l",
-                "unit_cost": 1525.17,
-                "buying_price": 1769.2
+                "price": 1910
             },
             {
                 "item_code": "BAS031",
                 "item_description": "Base Sgylw 1l",
-                "unit_cost": 500.85,
-                "buying_price": 580.99
+                "price": 625
             },
             {
                 "item_code": "BAS032",
                 "item_description": "Base Sgylw 4l",
-                "unit_cost": 1994.4,
-                "buying_price": 2313.5
+                "price": 2500
             },
             {
                 "item_code": "BAS033",
                 "item_description": "Base Silicon 1 Ext 4l",
-                "unit_cost": 2259.18,
-                "buying_price": 2620.65
+                "price": 2830
             },
             {
                 "item_code": "BAS034",
                 "item_description": "Base Silicon 2 Ext 4l",
-                "unit_cost": 2153.4,
-                "buying_price": 2497.94
+                "price": 2700
             },
             {
                 "item_code": "BAS035",
                 "item_description": "Base Silicon Ext 1 1l",
-                "unit_cost": 588.06,
-                "buying_price": 682.15
+                "price": 735
             },
             {
                 "item_code": "BAS036",
                 "item_description": "Base Silicon Ext 2 1l",
-                "unit_cost": 571.29,
-                "buying_price": 662.7
+                "price": 715
             },
             {
                 "item_code": "BAS037",
                 "item_description": "Base Silicon Ext 3 1l",
-                "unit_cost": 558.62,
-                "buying_price": 648.0
+                "price": 700
             },
             {
                 "item_code": "BAS038",
                 "item_description": "Base Silicone Ext 3 4l",
-                "unit_cost": 2016.38,
-                "buying_price": 2339.0
+                "price": 2525
             },
             {
                 "item_code": "BAS039",
                 "item_description": "Base Vm Yox 1l",
-                "unit_cost": 355.17,
-                "buying_price": 412.0
+                "price": 445
             },
             {
                 "item_code": "BAS040",
                 "item_description": "Base Vm Yox 4l",
-                "unit_cost": 1343.97,
-                "buying_price": 1559.01
+                "price": 1685
             },
             {
                 "item_code": "BAS041",
                 "item_description": "Base Vm1 1l",
-                "unit_cost": 485.92,
-                "buying_price": 563.67
+                "price": 610
             },
             {
                 "item_code": "BAS042",
                 "item_description": "Base Vm1 20l",
-                "unit_cost": 8952.33,
-                "buying_price": 10384.7
+                "price": 11215
             },
             {
                 "item_code": "BAS043",
                 "item_description": "Base Vm1 4l",
-                "unit_cost": 1778.11,
-                "buying_price": 2062.61
+                "price": 2230
             },
             {
                 "item_code": "BAS044",
                 "item_description": "Base Vm2 1l",
-                "unit_cost": 462.5,
-                "buying_price": 536.5
+                "price": 580
             },
             {
                 "item_code": "BAS046",
                 "item_description": "Base Vm2 4l",
-                "unit_cost": 1764.0,
-                "buying_price": 2046.24
+                "price": 2210
             },
             {
                 "item_code": "BAS047",
                 "item_description": "Base Vm3 1l",
-                "unit_cost": 375.54,
-                "buying_price": 435.63
+                "price": 470
             },
             {
                 "item_code": "BAS048",
                 "item_description": "Base Vm3 4l",
-                "unit_cost": 1940.52,
-                "buying_price": 2251.0
+                "price": 2430
             },
             {
                 "item_code": "BAS049",
                 "item_description": "Base Vm4 1l",
-                "unit_cost": 317.79,
-                "buying_price": 368.64
+                "price": 400
             },
             {
                 "item_code": "BAS050",
                 "item_description": "Base Vm4 4l",
-                "unit_cost": 1134.48,
-                "buying_price": 1316.0
+                "price": 1420
             },
             {
                 "item_code": "BAS051",
                 "item_description": "Base Vm5 1l",
-                "unit_cost": 359.36,
-                "buying_price": 416.86
+                "price": 450
             },
             {
                 "item_code": "BAS052",
                 "item_description": "Base Vm5 4l",
-                "unit_cost": 1391.57,
-                "buying_price": 1614.22
+                "price": 1745
             },
             {
                 "item_code": "BAS053",
                 "item_description": "Base Vmylw 1l",
-                "unit_cost": 406.39,
-                "buying_price": 471.41
+                "price": 510
             },
             {
                 "item_code": "BAS054",
                 "item_description": "Base Vmylw 4l",
-                "unit_cost": 1844.83,
-                "buying_price": 2140.0
+                "price": 2310
             },
             {
                 "item_code": "BAS055",
                 "item_description": "Base Vs1 1l",
-                "unit_cost": 513.08,
-                "buying_price": 595.17
+                "price": 645
             },
             {
                 "item_code": "BAS056",
                 "item_description": "Base Vs1 20l",
-                "unit_cost": 9394.13,
-                "buying_price": 10897.19
+                "price": 11770
             },
             {
                 "item_code": "BAS057",
                 "item_description": "Base Vs1 4l",
-                "unit_cost": 1892.54,
-                "buying_price": 2195.35
+                "price": 2370
             },
             {
                 "item_code": "BAS058",
                 "item_description": "Base Vs2 1l",
-                "unit_cost": 493.92,
-                "buying_price": 572.95
+                "price": 620
             },
             {
                 "item_code": "BAS059",
                 "item_description": "Base Vs2 20l",
-                "unit_cost": 9643.52,
-                "buying_price": 11186.48
+                "price": 12080
             },
             {
                 "item_code": "BAS060",
                 "item_description": "Base Vs2 4l",
-                "unit_cost": 1855.54,
-                "buying_price": 2152.43
+                "price": 2325
             },
             {
                 "item_code": "BAS061",
                 "item_description": "Base Vs3 4l",
-                "unit_cost": 1916.6,
-                "buying_price": 2223.26
+                "price": 2400
             },
             {
                 "item_code": "BAS062",
                 "item_description": "Base Vs3 Il",
-                "unit_cost": 491.26,
-                "buying_price": 569.86
+                "price": 615
             },
             {
                 "item_code": "BAS063",
                 "item_description": "Base Vs4 1l",
-                "unit_cost": 395.69,
-                "buying_price": 459.0
+                "price": 495
             },
             {
                 "item_code": "BAS064",
                 "item_description": "Base Vs4 4l",
-                "unit_cost": 1429.49,
-                "buying_price": 1658.21
+                "price": 1790
             },
             {
                 "item_code": "BAS065",
                 "item_description": "Base Vs5 1l",
-                "unit_cost": 462.93,
-                "buying_price": 537.0
+                "price": 580
             },
             {
                 "item_code": "BAS066",
                 "item_description": "Base Vs5 4l",
-                "unit_cost": 1657.5,
-                "buying_price": 1922.7
+                "price": 2075
             },
             {
                 "item_code": "C/ 002",
                 "item_description": "C/ Roofmaster Beetle Green 4",
-                "unit_cost": 3823.28,
-                "buying_price": 4435.0
+                "price": 4790
             },
             {
                 "item_code": "C/ 003",
                 "item_description": "C/ Roofmaster Cornflower 4l",
-                "unit_cost": 3823.28,
-                "buying_price": 4435.0
+                "price": 4790
             },
             {
                 "item_code": "C/ 004",
                 "item_description": "C/ Transeal 1l",
-                "unit_cost": 407.11,
-                "buying_price": 472.25
+                "price": 510
             },
             {
                 "item_code": "C/ 005",
                 "item_description": "C/ Transeal 4l",
-                "unit_cost": 1238.61,
-                "buying_price": 1436.79
+                "price": 1550
             },
             {
                 "item_code": "C/ 006",
                 "item_description": "C/ Varnish Stain Mah 1l",
-                "unit_cost": 583.62,
-                "buying_price": 677.0
+                "price": 730
             },
             {
                 "item_code": "C/ 007",
                 "item_description": "C/ Varnish Stain Mah 4l",
-                "unit_cost": 1896.55,
-                "buying_price": 2200.0
+                "price": 2375
             },
             {
                 "item_code": "C/B001",
                 "item_description": "C/Bituminous Black 1l",
-                "unit_cost": 513.16,
-                "buying_price": 595.27
+                "price": 645
             },
             {
                 "item_code": "C/D001",
                 "item_description": "C/Dr Fixit Polyplus Cp 25kg",
-                "unit_cost": 4564.6,
-                "buying_price": 5294.94
+                "price": 5720
             },
             {
                 "item_code": "C/E001",
                 "item_description": "C/S/G  Aqua Glow Accent 4l",
-                "unit_cost": 1672.41,
-                "buying_price": 1940.0
+                "price": 2095
             },
             {
                 "item_code": "C/E004",
                 "item_description": "C/E Covermatt White 1l",
-                "unit_cost": 232.83,
-                "buying_price": 270.08
+                "price": 290
             },
             {
                 "item_code": "C/E005",
                 "item_description": "C/E Covermatt White 20l",
-                "unit_cost": 3136.84,
-                "buying_price": 3638.73
+                "price": 3930
             },
             {
                 "item_code": "C/E006",
                 "item_description": "C/E Covermatt White 4l",
-                "unit_cost": 703.58,
-                "buying_price": 816.15
+                "price": 880
             },
             {
                 "item_code": "C/E007",
                 "item_description": "C/E Matt Accent Base 1l",
-                "unit_cost": 461.36,
-                "buying_price": 535.18
+                "price": 580
             },
             {
                 "item_code": "C/E008",
                 "item_description": "C/E Matt Accent Base 20l",
-                "unit_cost": 7341.62,
-                "buying_price": 8516.28
+                "price": 9200
             },
             {
                 "item_code": "C/E009",
                 "item_description": "C/E Matt Accent Base 4l",
-                "unit_cost": 1677.37,
-                "buying_price": 1945.75
+                "price": 2100
             },
             {
                 "item_code": "C/E010",
                 "item_description": "C/E Matt B/White 1l",
-                "unit_cost": 615.47,
-                "buying_price": 713.95
+                "price": 770
             },
             {
                 "item_code": "C/E011",
                 "item_description": "C/E Matt B/White 4l",
-                "unit_cost": 1954.67,
-                "buying_price": 2267.42
+                "price": 2450
             },
             {
                 "item_code": "C/E012",
                 "item_description": "C/E Matt Black 1l",
-                "unit_cost": 740.13,
-                "buying_price": 858.55
+                "price": 925
             },
             {
                 "item_code": "C/E013",
                 "item_description": "C/E Matt Black 20l",
-                "unit_cost": 11465.52,
-                "buying_price": 13300.0
+                "price": 14365
             },
             {
                 "item_code": "C/E014",
                 "item_description": "C/E Matt Black 4l",
-                "unit_cost": 2357.82,
-                "buying_price": 2735.07
+                "price": 2955
             },
             {
                 "item_code": "C/E015",
                 "item_description": "C/E Matt Deep Base 1l",
-                "unit_cost": 590.58,
-                "buying_price": 685.07
+                "price": 740
             },
             {
                 "item_code": "C/E016",
                 "item_description": "C/E Matt Deep Base 20l",
-                "unit_cost": 9340.36,
-                "buying_price": 10834.82
+                "price": 11700
             },
             {
                 "item_code": "C/E017",
                 "item_description": "C/E Matt Deep Base 4l",
-                "unit_cost": 1885.44,
-                "buying_price": 2187.11
+                "price": 2360
             },
             {
                 "item_code": "C/E018",
                 "item_description": "C/E Matt Pastel Base 1l",
-                "unit_cost": 573.85,
-                "buying_price": 665.67
+                "price": 720
             },
             {
                 "item_code": "C/E019",
                 "item_description": "C/E Matt Pastel Base 20l",
-                "unit_cost": 8985.24,
-                "buying_price": 10422.88
+                "price": 11255
             },
             {
                 "item_code": "C/E020",
                 "item_description": "C/E Matt Pastel Base 4l",
-                "unit_cost": 1785.13,
-                "buying_price": 2070.75
+                "price": 2235
             },
             {
                 "item_code": "C/E022",
                 "item_description": "C/E Matt S/White 4l",
-                "unit_cost": 2170.81,
-                "buying_price": 2518.14
+                "price": 2720
             },
             {
                 "item_code": "C/E024",
                 "item_description": "C/E Satin Finish 4l",
-                "unit_cost": 2581.03,
-                "buying_price": 2993.99
+                "price": 3235
             },
             {
                 "item_code": "C/E025",
                 "item_description": "C/E Silicon Accent Base 1l",
-                "unit_cost": 580.69,
-                "buying_price": 673.6
+                "price": 725
             },
             {
                 "item_code": "C/E026",
                 "item_description": "C/E Silicon Accent Base 20l",
-                "unit_cost": 9134.68,
-                "buying_price": 10596.23
+                "price": 11445
             },
             {
                 "item_code": "C/E027",
                 "item_description": "C/E Silicon Accent Base 4l",
-                "unit_cost": 1797.64,
-                "buying_price": 2085.26
+                "price": 2250
             },
             {
                 "item_code": "C/E028",
                 "item_description": "C/E Silicon B/White 1l",
-                "unit_cost": 727.46,
-                "buying_price": 843.85
+                "price": 910
             },
             {
                 "item_code": "C/E029",
                 "item_description": "C/E Silicon B/White 20l",
-                "unit_cost": 12599.97,
-                "buying_price": 14615.97
+                "price": 15785
             },
             {
                 "item_code": "C/E030",
                 "item_description": "C/E Silicon B/White 4l",
-                "unit_cost": 2727.59,
-                "buying_price": 3164.0
+                "price": 3415
             },
             {
                 "item_code": "C/E031",
                 "item_description": "C/E Silicon Black 1l",
-                "unit_cost": 924.86,
-                "buying_price": 1072.84
+                "price": 1160
             },
             {
                 "item_code": "C/E032",
                 "item_description": "C/E Silicon Black 4l",
-                "unit_cost": 2987.36,
-                "buying_price": 3465.34
+                "price": 3745
             },
             {
                 "item_code": "C/E033",
                 "item_description": "C/E Silicon Deep Base 1l",
-                "unit_cost": 711.54,
-                "buying_price": 825.39
+                "price": 890
             },
             {
                 "item_code": "C/E034",
                 "item_description": "C/E Silicon Deep Base 20l",
-                "unit_cost": 11227.57,
-                "buying_price": 13023.98
+                "price": 14065
             },
             {
                 "item_code": "C/E035",
                 "item_description": "C/E Silicon Deep Base 4l",
-                "unit_cost": 2242.76,
-                "buying_price": 2601.6
+                "price": 2810
             },
             {
                 "item_code": "C/E036",
                 "item_description": "C/E Silicon Pastel Base 1l",
-                "unit_cost": 675.66,
-                "buying_price": 783.77
+                "price": 845
             },
             {
                 "item_code": "C/E037",
                 "item_description": "C/E Silicon Pastel Base 20l",
-                "unit_cost": 11126.64,
-                "buying_price": 12906.9
+                "price": 13940
             },
             {
                 "item_code": "C/E038",
                 "item_description": "C/E Silicon Pastel Base 4l",
-                "unit_cost": 2274.19,
-                "buying_price": 2638.06
+                "price": 2850
             },
             {
                 "item_code": "C/E040",
                 "item_description": "C/E Silk Accent Base 1l",
-                "unit_cost": 506.17,
-                "buying_price": 587.16
+                "price": 635
             },
             {
                 "item_code": "C/E041",
                 "item_description": "C/E Silk Accent Base 20l",
-                "unit_cost": 7971.24,
-                "buying_price": 9246.64
+                "price": 9985
             },
             {
                 "item_code": "C/E042",
                 "item_description": "C/E Silk Accent Base 4l",
-                "unit_cost": 1624.7,
-                "buying_price": 1884.65
+                "price": 2035
             },
             {
                 "item_code": "C/E043",
                 "item_description": "C/E Silk Brill White 20l",
-                "unit_cost": 12547.57,
-                "buying_price": 14555.18
+                "price": 15720
             },
             {
                 "item_code": "C/E044",
                 "item_description": "C/E Silk Deep Base 1l",
-                "unit_cost": 630.2,
-                "buying_price": 731.03
+                "price": 790
             },
             {
                 "item_code": "C/E045",
                 "item_description": "C/E Silk Deep Base 20l",
-                "unit_cost": 9853.84,
-                "buying_price": 11430.45
+                "price": 12345
             },
             {
                 "item_code": "C/E046",
                 "item_description": "C/E Silk Deep Base 4l",
-                "unit_cost": 1957.2,
-                "buying_price": 2270.35
+                "price": 2450
             },
             {
                 "item_code": "C/E047",
                 "item_description": "C/E Silk Pastel Base 1l",
-                "unit_cost": 588.59,
-                "buying_price": 682.76
+                "price": 735
             },
             {
                 "item_code": "C/E048",
                 "item_description": "C/E Silk Pastel Base 20l",
-                "unit_cost": 9545.66,
-                "buying_price": 11072.97
+                "price": 11960
             },
             {
                 "item_code": "C/E049",
                 "item_description": "C/E Silk Pastel Base 4l",
-                "unit_cost": 1958.47,
-                "buying_price": 2271.83
+                "price": 2455
             },
             {
                 "item_code": "C/P001",
                 "item_description": "C/Paint Remover 1l",
-                "unit_cost": 749.51,
-                "buying_price": 869.43
+                "price": 940
             },
             {
                 "item_code": "C/S002",
                 "item_description": "C/S/G Accent Base 4l",
-                "unit_cost": 1783.42,
-                "buying_price": 2068.77
+                "price": 2235
             },
             {
                 "item_code": "C/S003",
                 "item_description": "C/S/G  Accent Base  1l",
-                "unit_cost": 525.1,
-                "buying_price": 609.12
+                "price": 660
             },
             {
                 "item_code": "C/S009",
                 "item_description": "C/S/G Black 1l",
-                "unit_cost": 711.69,
-                "buying_price": 825.56
+                "price": 890
             },
             {
                 "item_code": "C/S010",
                 "item_description": "C/S/G Black BITUMINOUS 4l",
-                "unit_cost": 1758.82,
-                "buying_price": 2040.23
+                "price": 2205
             },
             {
                 "item_code": "C/S011",
                 "item_description": "C/S/G Black Board Paint 4l",
-                "unit_cost": 1750.0,
-                "buying_price": 2030.0
+                "price": 2190
             },
             {
                 "item_code": "C/S012",
                 "item_description": "C/S/G C/Varnish H/G 1l",
-                "unit_cost": 661.17,
-                "buying_price": 766.96
+                "price": 830
             },
             {
                 "item_code": "C/S013",
                 "item_description": "C/S/G C/Varnish H/G 4l",
-                "unit_cost": 2230.2,
-                "buying_price": 2587.03
+                "price": 2795
             },
             {
                 "item_code": "C/S014",
                 "item_description": "C/S/G Clear Varnish Matt 1l",
-                "unit_cost": 717.65,
-                "buying_price": 832.47
+                "price": 900
             },
             {
                 "item_code": "C/S016",
                 "item_description": "C/S/G Clear Varnish Nc 4l",
-                "unit_cost": 2063.77,
-                "buying_price": 2393.97
+                "price": 2585
             },
             {
                 "item_code": "C/S017",
                 "item_description": "C/S/G Deep Base 1l",
-                "unit_cost": 665.96,
-                "buying_price": 772.51
+                "price": 835
             },
             {
                 "item_code": "C/S018",
                 "item_description": "C/S/G Deep Base 4l",
-                "unit_cost": 2313.74,
-                "buying_price": 2683.94
+                "price": 2900
             },
             {
                 "item_code": "C/S019",
                 "item_description": "C/S/G Economy Cornflower 4l",
-                "unit_cost": 1551.72,
-                "buying_price": 1800.0
+                "price": 1945
             },
             {
                 "item_code": "C/S020",
                 "item_description": "C/S/G Eggshell Accent Base 1l",
-                "unit_cost": 613.75,
-                "buying_price": 711.95
+                "price": 770
             },
             {
                 "item_code": "C/S021",
                 "item_description": "C/S/G Eggshell Accent Base 4l",
-                "unit_cost": 2188.92,
-                "buying_price": 2539.15
+                "price": 2740
             },
             {
                 "item_code": "C/S022",
                 "item_description": "C/S/G Eggshell Black 1l",
-                "unit_cost": 983.9,
-                "buying_price": 1141.32
+                "price": 1235
             },
             {
                 "item_code": "C/S023",
                 "item_description": "C/S/G Eggshell Black 4l",
-                "unit_cost": 3221.51,
-                "buying_price": 3736.95
+                "price": 4035
             },
             {
                 "item_code": "C/S024",
                 "item_description": "C/S/G Eggshell Deep Base 1l",
-                "unit_cost": 775.37,
-                "buying_price": 899.43
+                "price": 970
             },
             {
                 "item_code": "C/S025",
                 "item_description": "C/S/G Eggshell Deep Base 4l",
-                "unit_cost": 2702.3,
-                "buying_price": 3134.67
+                "price": 3385
             },
             {
                 "item_code": "C/S026",
                 "item_description": "C/S/G Eggshell Pastel 1l",
-                "unit_cost": 802.04,
-                "buying_price": 930.37
+                "price": 1005
             },
             {
                 "item_code": "C/S027",
                 "item_description": "C/S/G Eggshell Pastel 4l",
-                "unit_cost": 2861.1,
-                "buying_price": 3318.88
+                "price": 3585
             },
             {
                 "item_code": "C/S028",
                 "item_description": "C/S/G Floor Grey 4l",
-                "unit_cost": 2781.9,
-                "buying_price": 3227.0
+                "price": 3485
             },
             {
                 "item_code": "C/S029",
                 "item_description": "C/S/G Floor Paint Red Oxide 1l",
-                "unit_cost": 836.46,
-                "buying_price": 970.29
+                "price": 1050
             },
             {
                 "item_code": "C/S031",
                 "item_description": "C/S/G Floor Paint Red Oxide 4L",
-                "unit_cost": 2636.67,
-                "buying_price": 3058.54
+                "price": 3305
             },
             {
                 "item_code": "C/S037",
                 "item_description": "C/S/G Clear Varnish Matt  4l",
-                "unit_cost": 2279.57,
-                "buying_price": 2644.3
+                "price": 2855
             },
             {
                 "item_code": "C/S038",
                 "item_description": "C/S/G Matt Finish Black 1l",
-                "unit_cost": 747.57,
-                "buying_price": 867.18
+                "price": 935
             },
             {
                 "item_code": "C/S039",
                 "item_description": "C/S/G Matt Finish Black 4l",
-                "unit_cost": 2565.83,
-                "buying_price": 2976.36
+                "price": 3215
             },
             {
                 "item_code": "C/S040",
                 "item_description": "C/S/G Metallica T/Gold 1l",
-                "unit_cost": 1489.66,
-                "buying_price": 1728.01
+                "price": 1865
             },
             {
                 "item_code": "C/S041",
                 "item_description": "C/S/G Mulipurpose Varnish 1",
-                "unit_cost": 530.31,
-                "buying_price": 615.16
+                "price": 665
             },
             {
                 "item_code": "C/S042",
                 "item_description": "C/S/G Mulipurpose Varnish 4",
-                "unit_cost": 2034.24,
-                "buying_price": 2359.72
+                "price": 2550
             },
             {
                 "item_code": "C/S043",
                 "item_description": "C/S/G Nc Clear Lacquer 1l",
-                "unit_cost": 621.84,
-                "buying_price": 721.33
+                "price": 780
             },
             {
                 "item_code": "C/S044",
                 "item_description": "C/S/G Nc Clear Lacquer 4l",
-                "unit_cost": 2030.24,
-                "buying_price": 2355.08
+                "price": 2545
             },
             {
                 "item_code": "C/S045",
                 "item_description": "C/S/G Ngao White 4l",
-                "unit_cost": 623.28,
-                "buying_price": 723.0
+                "price": 780
             },
             {
                 "item_code": "C/S046",
                 "item_description": "C/S/G Pastel Base 1l",
-                "unit_cost": 620.54,
-                "buying_price": 719.83
+                "price": 775
             },
             {
                 "item_code": "C/S047",
                 "item_description": "C/S/G Pastel Base 4l",
-                "unit_cost": 2215.73,
-                "buying_price": 2570.25
+                "price": 2775
             },
             {
                 "item_code": "C/S048",
                 "item_description": "C/S/G Roadline White 4l",
-                "unit_cost": 3369.57,
-                "buying_price": 3908.7
+                "price": 4220
             },
             {
                 "item_code": "C/S049",
                 "item_description": "C/S/G Roadline Yellow 1l",
-                "unit_cost": 794.83,
-                "buying_price": 922.0
+                "price": 995
             },
             {
                 "item_code": "C/S050",
                 "item_description": "C/S/G Roadline Yellow 4l",
-                "unit_cost": 3310.57,
-                "buying_price": 3840.26
+                "price": 4145
             },
             {
                 "item_code": "C/S052",
                 "item_description": "C/S/G Roof Cornflower 4l",
-                "unit_cost": 2486.21,
-                "buying_price": 2884.0
+                "price": 3115
             },
             {
                 "item_code": "C/S053",
                 "item_description": "C/S/G Roof Green 4l",
-                "unit_cost": 2401.84,
-                "buying_price": 2786.13
+                "price": 3010
             },
             {
                 "item_code": "C/S054",
                 "item_description": "C/S/G Roof Grey 4l",
-                "unit_cost": 2872.41,
-                "buying_price": 3332.0
+                "price": 3600
             },
             {
                 "item_code": "C/S055",
                 "item_description": "C/S/G Roof Red 4l",
-                "unit_cost": 2486.21,
-                "buying_price": 2884.0
+                "price": 3115
             },
             {
                 "item_code": "C/S056",
                 "item_description": "C/S/G Roof Red Oxide 4l",
-                "unit_cost": 2485.98,
-                "buying_price": 2883.74
+                "price": 3115
             },
             {
                 "item_code": "C/S057",
                 "item_description": "C/S/G Roofmaster Clear Base",
-                "unit_cost": 2051.7,
-                "buying_price": 2379.97
+                "price": 2570
             },
             {
                 "item_code": "C/S058",
                 "item_description": "C/S/G Ruff & Tuff 30l-Normal",
-                "unit_cost": 3292.31,
-                "buying_price": 3819.08
+                "price": 4125
             },
             {
                 "item_code": "C/S059",
                 "item_description": "C/S/G S/White 1l",
-                "unit_cost": 804.98,
-                "buying_price": 933.78
+                "price": 1010
             },
             {
                 "item_code": "C/S060",
                 "item_description": "C/S/G S/White 4l",
-                "unit_cost": 2335.66,
-                "buying_price": 2709.37
+                "price": 2925
             },
             {
                 "item_code": "C/S061",
                 "item_description": "C/S/G Sanding Sealer 1l",
-                "unit_cost": 482.06,
-                "buying_price": 559.19
+                "price": 605
             },
             {
                 "item_code": "C/S062",
                 "item_description": "C/S/G Sanding Sealer 4l",
-                "unit_cost": 1629.97,
-                "buying_price": 1890.77
+                "price": 2040
             },
             {
                 "item_code": "C/S063",
                 "item_description": "C/S/G Sch Board Paint 1l",
-                "unit_cost": 524.14,
-                "buying_price": 608.0
+                "price": 655
             },
             {
                 "item_code": "C/S064",
                 "item_description": "C/S/G Sch Board Paint 4l",
-                "unit_cost": 1750.0,
-                "buying_price": 2030.0
+                "price": 2190
             },
             {
                 "item_code": "C/S065",
                 "item_description": "C/S/G Silver Almn 1l",
-                "unit_cost": 668.1,
-                "buying_price": 775.0
+                "price": 835
             },
             {
                 "item_code": "C/S066",
                 "item_description": "C/S/G Silver Almn 4l",
-                "unit_cost": 3358.62,
-                "buying_price": 3896.0
+                "price": 4210
             },
             {
                 "item_code": "C/S067",
                 "item_description": "C/S/G Thinner For Roadline 1l",
-                "unit_cost": 515.42,
-                "buying_price": 597.89
+                "price": 645
             },
             {
                 "item_code": "C/S068",
                 "item_description": "C/S/G Thinner For Roadline 5L",
-                "unit_cost": 1763.72,
-                "buying_price": 2045.92
+                "price": 2210
             },
             {
                 "item_code": "C/S069",
                 "item_description": "C/S/G Twopack Thinner 1l",
-                "unit_cost": 896.01,
-                "buying_price": 1039.37
+                "price": 1125
             },
             {
                 "item_code": "C/S070",
                 "item_description": "C/S/G Twopack Thinner 5l",
-                "unit_cost": 2594.6,
-                "buying_price": 3009.74
+                "price": 3250
             },
             {
                 "item_code": "C/S071",
                 "item_description": "C/S/G Twopack V/Gloss 1l",
-                "unit_cost": 1487.76,
-                "buying_price": 1725.8
+                "price": 1865
             },
             {
                 "item_code": "C/S072",
                 "item_description": "C/S/G Twopack V/Gloss 4l",
-                "unit_cost": 5026.26,
-                "buying_price": 5830.46
+                "price": 6295
             },
             {
                 "item_code": "C/S073",
                 "item_description": "C/S/G Twopack V/Matt 1l",
-                "unit_cost": 1467.11,
-                "buying_price": 1701.85
+                "price": 1840
             },
             {
                 "item_code": "C/S074",
                 "item_description": "C/S/G Twopack V/Matt 4l",
-                "unit_cost": 5488.19,
-                "buying_price": 6366.3
+                "price": 6875
             },
             {
                 "item_code": "C/S075",
                 "item_description": "C/S/G Undercoat 1l",
-                "unit_cost": 499.77,
-                "buying_price": 579.73
+                "price": 625
             },
             {
                 "item_code": "C/S076",
                 "item_description": "C/S/G Undercoat 4l",
-                "unit_cost": 1797.77,
-                "buying_price": 2085.41
+                "price": 2250
             },
             {
                 "item_code": "C/S077",
                 "item_description": "C/S/G Varnish Mahogany 1L",
-                "unit_cost": 731.43,
-                "buying_price": 848.46
+                "price": 915
             },
             {
                 "item_code": "C/S078",
                 "item_description": "C/S/G Vesta Black 1l",
-                "unit_cost": 240.07,
-                "buying_price": 278.48
+                "price": 300
             },
             {
                 "item_code": "C/S079",
                 "item_description": "C/S/G Vesta Black 4l",
-                "unit_cost": 854.66,
-                "buying_price": 991.41
+                "price": 1070
             },
             {
                 "item_code": "C/S080",
                 "item_description": "C/S/G Vesta Floor Red 4l",
-                "unit_cost": 1303.6,
-                "buying_price": 1512.18
+                "price": 1635
             },
             {
                 "item_code": "C/S081",
                 "item_description": "C/S/G Vesta Grey Oxide 1l-primer",
-                "unit_cost": 324.59,
-                "buying_price": 376.52
+                "price": 405
             },
             {
                 "item_code": "C/S083",
                 "item_description": "C/S/G Vesta Red Oxide 1l",
-                "unit_cost": 294.7,
-                "buying_price": 341.85
+                "price": 370
             },
             {
                 "item_code": "C/S084",
                 "item_description": "C/S/G Vesta Red Oxide 4l",
-                "unit_cost": 873.69,
-                "buying_price": 1013.48
+                "price": 1095
             },
             {
                 "item_code": "C/S085",
                 "item_description": "C/S/G Vesta Roof Green 4l",
-                "unit_cost": 862.07,
-                "buying_price": 1000.0
+                "price": 1080
             },
             {
                 "item_code": "C/S086",
                 "item_description": "C/S/G Vesta White 1l",
-                "unit_cost": 254.16,
-                "buying_price": 294.83
+                "price": 320
             },
             {
                 "item_code": "C/S087",
                 "item_description": "C/S/G Vesta White 4l",
-                "unit_cost": 817.94,
-                "buying_price": 948.81
+                "price": 1025
             },
             {
                 "item_code": "C/S089",
                 "item_description": "C/S/G Wood Primer White 4l",
-                "unit_cost": 2087.58,
-                "buying_price": 2421.59
+                "price": 2615
             },
             {
                 "item_code": "DES002",
                 "item_description": "D/E  Silicon Brill White 20L",
-                "unit_cost": 12228.05,
-                "buying_price": 14184.54
+                "price": 15320
             },
             {
                 "item_code": "BAS074",
                 "item_description": "Base Silicon Ext5 -20 L",
-                "unit_cost": 9560.88,
-                "buying_price": 11090.62
+                "price": 11980
             },
             {
                 "item_code": "CRO026",
                 "item_description": "C/S/G Ruff   & Tuff Stoneless",
-                "unit_cost": 3446.89,
-                "buying_price": 3998.39
+                "price": 4320
             },
             {
                 "item_code": "RUF001",
                 "item_description": "C/S/G RUFF & TUFF 3mm B/whiite",
-                "unit_cost": 3414.2,
-                "buying_price": 3960.47
+                "price": 4275
             },
             {
                 "item_code": "CEC001",
                 "item_description": "C/E Covermatt Pastel 20l",
-                "unit_cost": 3335.98,
-                "buying_price": 3869.74
+                "price": 4180
             },
             {
                 "item_code": "CEA002",
                 "item_description": "C/S/G  AQUAGLOW DEEP 4L",
-                "unit_cost": 1500.0,
-                "buying_price": 1740.0
+                "price": 1880
             },
             {
                 "item_code": "CSG010",
                 "item_description": "C/S/G Vesta Red Oxide 4l-Primer",
-                "unit_cost": 1061.85,
-                "buying_price": 1231.75
+                "price": 1330
             },
             {
                 "item_code": "CSG011",
                 "item_description": "C/S/G Ruff & Tuff 30l-Clear  Base",
-                "unit_cost": 3070.97,
-                "buying_price": 3562.33
+                "price": 3845
             },
             {
                 "item_code": "BAS076",
                 "item_description": "Base VSYLW 4l",
-                "unit_cost": 2077.68,
-                "buying_price": 2410.11
+                "price": 2605
             },
             {
                 "item_code": "CSG012",
                 "item_description": "C/S/G Aqua Glow Black 4 L",
-                "unit_cost": 2534.44,
-                "buying_price": 2939.95
+                "price": 3175
             },
             {
                 "item_code": "PLA018",
                 "item_description": "Plascon Graffiato  30ltrs",
-                "unit_cost": 3318.97,
-                "buying_price": 3850.01
+                "price": 4160
             },
             {
                 "item_code": "BAS073",
                 "item_description": "Base Silicon Ext 3 4 Ll",
-                "unit_cost": 2081.52,
-                "buying_price": 2414.56
+                "price": 2610
             },
             {
                 "item_code": "DGW001",
                 "item_description": "D/G  White 1l",
-                "unit_cost": 592.7,
-                "buying_price": 687.53
+                "price": 745
             },
             {
                 "item_code": "MAH003",
                 "item_description": "Orion Mahogany Varnish1/2l",
-                "unit_cost": 150.86,
-                "buying_price": 175.0
+                "price": 190
             },
             {
                 "item_code": "MAH004",
                 "item_description": "Orion Mahogany Varnish1 l",
-                "unit_cost": 301.72,
-                "buying_price": 350.0
+                "price": 380
             },
             {
                 "item_code": "CRO025",
                 "item_description": "Crown Wallputty 1kg",
-                "unit_cost": 59.76,
-                "buying_price": 69.32
+                "price": 75
             },
             {
                 "item_code": "CSG008",
                 "item_description": "C/S/G Aqua Glow  black 4l",
-                "unit_cost": 2341.33,
-                "buying_price": 2715.94
+                "price": 2935
             },
             {
                 "item_code": "CSG009",
                 "item_description": "C/S/G Ruff & Tuff 30l-White Base",
-                "unit_cost": 3293.45,
-                "buying_price": 3820.4
+                "price": 4125
             },
             {
                 "item_code": "CSG007",
                 "item_description": "C/S/G  Zinc phophate Grey 4 l",
-                "unit_cost": 3370.15,
-                "buying_price": 3909.37
+                "price": 4220
             },
             {
                 "item_code": "CEA001",
                 "item_description": "C/S/G Aqua Glow Pastel 4L",
-                "unit_cost": 2300.0,
-                "buying_price": 2668.0
+                "price": 2880
             },
             {
                 "item_code": "CSG002",
                 "item_description": "C/S/G Aqua Glow B/W 4l",
-                "unit_cost": 2047.34,
-                "buying_price": 2374.91
+                "price": 2565
             },
             {
                 "item_code": "CSG003",
                 "item_description": "C/E Vesta White 20l",
-                "unit_cost": 1637.86,
-                "buying_price": 1899.92
+                "price": 2050
             },
             {
                 "item_code": "CEV002",
                 "item_description": "C/S/G  Vesta Primer Grey Oxide 4l",
-                "unit_cost": 1028.5,
-                "buying_price": 1193.06
+                "price": 1290
             },
             {
                 "item_code": "CSG004",
                 "item_description": "C/S/G Varnish Mahogany 4L",
-                "unit_cost": 1664.11,
-                "buying_price": 1930.37
+                "price": 2085
             },
             {
                 "item_code": "CSG005",
                 "item_description": "C/S/G Black 4l",
-                "unit_cost": 2436.93,
-                "buying_price": 2826.84
+                "price": 3055
             },
             {
                 "item_code": "CSG006",
                 "item_description": "C/S/G Roadline  Black 4l",
-                "unit_cost": 3327.22,
-                "buying_price": 3859.58
+                "price": 4170
             },
             {
                 "item_code": "DES001",
                 "item_description": "D/E SILK BRILL WHITE 4L",
-                "unit_cost": 2066.82,
-                "buying_price": 2397.51
+                "price": 2590
             },
             {
                 "item_code": "AG1001",
                 "item_description": "AG 1 1L",
-                "unit_cost": 603.45,
-                "buying_price": 700.0
+                "price": 755
             },
             {
                 "item_code": "DGB001",
                 "item_description": "D/G White 4L",
-                "unit_cost": 2250.87,
-                "buying_price": 2611.01
+                "price": 2820
             },
             {
                 "item_code": "COL001",
                 "item_description": "Colorant Ext Orange",
-                "unit_cost": 3648.28,
-                "buying_price": 4232.0
+                "price": 4570
             },
             {
                 "item_code": "COL002",
                 "item_description": "Colorant Ext Red",
-                "unit_cost": 4646.55,
-                "buying_price": 5390.0
+                "price": 5820
             },
             {
                 "item_code": "COL003",
                 "item_description": "Colorant Ext Yellow",
-                "unit_cost": 6067.24,
-                "buying_price": 7038.0
+                "price": 7600
             },
             {
                 "item_code": "COL004",
                 "item_description": "Colorant Fast Black",
-                "unit_cost": 792.91,
-                "buying_price": 919.78
+                "price": 995
             },
             {
                 "item_code": "COL005",
                 "item_description": "Colorant Fast Blue",
-                "unit_cost": 1343.97,
-                "buying_price": 1559.01
+                "price": 1685
             },
             {
                 "item_code": "COL006",
                 "item_description": "Colorant Fast Green",
-                "unit_cost": 1286.21,
-                "buying_price": 1492.0
+                "price": 1610
             },
             {
                 "item_code": "COL007",
                 "item_description": "Colorant Fast Magenta",
-                "unit_cost": 2628.06,
-                "buying_price": 3048.55
+                "price": 3290
             },
             {
                 "item_code": "COL008",
                 "item_description": "Colorant Fast Red Oxide",
-                "unit_cost": 2227.59,
-                "buying_price": 2584.0
+                "price": 2790
             },
             {
                 "item_code": "COL009",
                 "item_description": "Colorant Fast Violet",
-                "unit_cost": 1306.03,
-                "buying_price": 1514.99
+                "price": 1635
             },
             {
                 "item_code": "COL010",
                 "item_description": "Colorant Fast Yellow Oxide",
-                "unit_cost": 1664.97,
-                "buying_price": 1931.37
+                "price": 2085
             },
             {
                 "item_code": "COL011",
                 "item_description": "Colorant Ht Blue",
-                "unit_cost": 1690.71,
-                "buying_price": 1961.22
+                "price": 2120
             },
             {
                 "item_code": "COL012",
                 "item_description": "Colorant Ht Green",
-                "unit_cost": 1805.17,
-                "buying_price": 2094.0
+                "price": 2260
             },
             {
                 "item_code": "COL013",
                 "item_description": "Colorant Ht White",
-                "unit_cost": 1918.11,
-                "buying_price": 2225.01
+                "price": 2405
             },
             {
                 "item_code": "COL014",
                 "item_description": "Colorant Int Red",
-                "unit_cost": 1343.97,
-                "buying_price": 1559.01
+                "price": 1685
             },
             {
                 "item_code": "COL015",
                 "item_description": "Colorant Int Yellow",
-                "unit_cost": 1574.14,
-                "buying_price": 1826.0
+                "price": 1970
             },
             {
                 "item_code": "COL016",
                 "item_description": "Colorant Tmed Yellow",
-                "unit_cost": 4224.14,
-                "buying_price": 4900.0
+                "price": 5290
             },
             {
                 "item_code": "CRO001",
                 "item_description": "Crown Colorant B",
-                "unit_cost": 789.59,
-                "buying_price": 915.92
+                "price": 990
             },
             {
                 "item_code": "CRO002",
                 "item_description": "Crown Colorant C",
-                "unit_cost": 1135.84,
-                "buying_price": 1317.57
+                "price": 1425
             },
             {
                 "item_code": "CRO003",
                 "item_description": "Crown Colorant D",
-                "unit_cost": 999.7,
-                "buying_price": 1159.65
+                "price": 1250
             },
             {
                 "item_code": "CRO004",
                 "item_description": "Crown Colorant E",
-                "unit_cost": 919.45,
-                "buying_price": 1066.56
+                "price": 1150
             },
             {
                 "item_code": "CRO005",
                 "item_description": "Crown Colorant Ext Orange Us",
-                "unit_cost": 3173.17,
-                "buying_price": 3680.88
+                "price": 3975
             },
             {
                 "item_code": "CRO006",
                 "item_description": "Crown Colorant High Yellow-QS",
-                "unit_cost": 2885.27,
-                "buying_price": 3346.91
+                "price": 3615
             },
             {
                 "item_code": "CRO007",
                 "item_description": "Crown Colorant Kx",
-                "unit_cost": 1247.56,
-                "buying_price": 1447.17
+                "price": 1565
             },
             {
                 "item_code": "CRO008",
                 "item_description": "Crown Colorant M/Yellow- T",
-                "unit_cost": 2261.08,
-                "buying_price": 2622.85
+                "price": 2835
             },
             {
                 "item_code": "CRO009",
                 "item_description": "Crown Colorant R",
-                "unit_cost": 2052.52,
-                "buying_price": 2380.92
+                "price": 2570
             },
             {
                 "item_code": "CRO010",
                 "item_description": "Crown Colorant Raw Umber-L",
-                "unit_cost": 917.26,
-                "buying_price": 1064.02
+                "price": 1150
             },
             {
                 "item_code": "CRO011",
                 "item_description": "Crown Colorant Red Oxide-F",
-                "unit_cost": 1504.3,
-                "buying_price": 1744.99
+                "price": 1885
             },
             {
                 "item_code": "CRO012",
                 "item_description": "Crown Colorant Rn",
-                "unit_cost": 3971.11,
-                "buying_price": 4606.49
+                "price": 4975
             },
             {
                 "item_code": "CRO013",
                 "item_description": "Crown Colorant V",
-                "unit_cost": 1963.75,
-                "buying_price": 2277.95
+                "price": 2460
             },
             {
                 "item_code": "CRO014",
                 "item_description": "Crown Colorant Violet-Zs",
-                "unit_cost": 2249.48,
-                "buying_price": 2609.4
+                "price": 2820
             },
             {
                 "item_code": "CRO015",
                 "item_description": "Crown Colorant Yellow An",
-                "unit_cost": 4661.99,
-                "buying_price": 5407.91
+                "price": 5840
             },
             {
                 "item_code": "CRO016",
                 "item_description": "Crown Colorant Yellow Axx",
-                "unit_cost": 1712.93,
-                "buying_price": 1987.0
+                "price": 2145
             },
             {
                 "item_code": "CRO018",
                 "item_description": "Crown Polyfilla 2.5kg",
-                "unit_cost": 479.31,
-                "buying_price": 556.0
+                "price": 600
             },
             {
                 "item_code": "CRO024",
                 "item_description": "Crown Wallputty 25kg",
-                "unit_cost": 901.91,
-                "buying_price": 1046.22
+                "price": 1130
             },
             {
                 "item_code": "D/B001",
                 "item_description": "D/Basco Black 1/2 L",
-                "unit_cost": 129.31,
-                "buying_price": 150.0
+                "price": 160
             },
             {
                 "item_code": "D/B002",
                 "item_description": "D/Basco Black 1l",
-                "unit_cost": 241.38,
-                "buying_price": 280.0
+                "price": 300
             },
             {
                 "item_code": "D/B003",
                 "item_description": "D/Basco Black 4l",
-                "unit_cost": 818.99,
-                "buying_price": 950.03
+                "price": 1025
             },
             {
                 "item_code": "D/B004",
                 "item_description": "D/Basco Cream 1/2l",
-                "unit_cost": 112.07,
-                "buying_price": 130.0
+                "price": 140
             },
             {
                 "item_code": "D/B005",
                 "item_description": "D/Basco Cream 1l",
-                "unit_cost": 215.52,
-                "buying_price": 250.0
+                "price": 270
             },
             {
                 "item_code": "D/B006",
                 "item_description": "D/Basco White 1/2l",
-                "unit_cost": 129.31,
-                "buying_price": 150.0
+                "price": 160
             },
             {
                 "item_code": "D/B007",
                 "item_description": "D/Basco White 1l",
-                "unit_cost": 241.38,
-                "buying_price": 280.0
+                "price": 300
             },
             {
                 "item_code": "D/B008",
                 "item_description": "D/Basco White 4l",
-                "unit_cost": 818.97,
-                "buying_price": 950.01
+                "price": 1025
             },
             {
                 "item_code": "D/E001",
                 "item_description": "D/E Matt Black 1l",
-                "unit_cost": 602.52,
-                "buying_price": 698.92
+                "price": 755
             },
             {
                 "item_code": "D/E002",
                 "item_description": "D/E Matt Black 4l",
-                "unit_cost": 2268.75,
-                "buying_price": 2631.75
+                "price": 2840
             },
             {
                 "item_code": "D/E004",
                 "item_description": "D/E Matt Brilliant  White 1l",
-                "unit_cost": 481.27,
-                "buying_price": 558.27
+                "price": 605
             },
             {
                 "item_code": "D/E005",
                 "item_description": "D/E Matt Brilliant White 20l",
-                "unit_cost": 9290.52,
-                "buying_price": 10777.0
+                "price": 11640
             },
             {
                 "item_code": "D/E006",
                 "item_description": "D/E Matt Brilliant  White 4l",
-                "unit_cost": 1844.23,
-                "buying_price": 2139.31
+                "price": 2310
             },
             {
                 "item_code": "D/E008",
                 "item_description": "D/E Sf Brill White 20l",
-                "unit_cost": 3202.59,
-                "buying_price": 3715.0
+                "price": 4010
             },
             {
                 "item_code": "D/E009",
                 "item_description": "D/E Sf Brill White 4l",
-                "unit_cost": 689.66,
-                "buying_price": 800.01
+                "price": 865
             },
             {
                 "item_code": "D/E010",
                 "item_description": "D/E Sf Brilliant White 1l",
-                "unit_cost": 197.05,
-                "buying_price": 228.58
+                "price": 245
             },
             {
                 "item_code": "D/E011",
                 "item_description": "D/E Silk S/White 1l",
-                "unit_cost": 615.17,
-                "buying_price": 713.6
+                "price": 770
             },
             {
                 "item_code": "D/E012",
                 "item_description": "D/E Silk S/White 4l",
-                "unit_cost": 2365.45,
-                "buying_price": 2743.92
+                "price": 2965
             },
             {
                 "item_code": "D/E013",
                 "item_description": "D/E Silk Vs1",
-                "unit_cost": 10522.41,
-                "buying_price": 12206.0
+                "price": 13180
             },
             {
                 "item_code": "D/E014",
                 "item_description": "D/E Silk White 1l",
-                "unit_cost": 561.01,
-                "buying_price": 650.77
+                "price": 705
             },
             {
                 "item_code": "D/E015",
                 "item_description": "D/E Silk White 4l",
-                "unit_cost": 2166.7,
-                "buying_price": 2513.37
+                "price": 2715
             },
             {
                 "item_code": "D/G001",
                 "item_description": "D/G Aquagloss White 1l",
-                "unit_cost": 808.62,
-                "buying_price": 938.0
+                "price": 1015
             },
             {
                 "item_code": "D/G002",
                 "item_description": "D/G Black 1l",
-                "unit_cost": 630.25,
-                "buying_price": 731.09
+                "price": 790
             },
             {
                 "item_code": "D/G003",
                 "item_description": "D/G Black 4l",
-                "unit_cost": 2361.12,
-                "buying_price": 2738.9
+                "price": 2960
             },
             {
                 "item_code": "D/G004",
                 "item_description": "D/G Clear Gloss Varnish 1l",
-                "unit_cost": 448.06,
-                "buying_price": 519.75
+                "price": 560
             },
             {
                 "item_code": "D/G005",
                 "item_description": "D/G Clear Gloss Varnish 4l",
-                "unit_cost": 1468.88,
-                "buying_price": 1703.9
+                "price": 1840
             },
             {
                 "item_code": "D/G006",
                 "item_description": "D/G Eggshell White 1l",
-                "unit_cost": 569.83,
-                "buying_price": 661.0
+                "price": 715
             },
             {
                 "item_code": "D/G007",
                 "item_description": "D/G Matt Primer Grey 4l",
-                "unit_cost": 2139.24,
-                "buying_price": 2481.52
+                "price": 2680
             },
             {
                 "item_code": "D/G008",
                 "item_description": "D/G Nc Lacquer 1l",
-                "unit_cost": 493.97,
-                "buying_price": 573.01
+                "price": 620
             },
             {
                 "item_code": "D/G009",
                 "item_description": "D/G Nc Sanding Sealer 4L",
-                "unit_cost": 1852.59,
-                "buying_price": 2149.0
+                "price": 2320
             },
             {
                 "item_code": "D/G010",
                 "item_description": "D/G Undercoat 1l",
-                "unit_cost": 504.23,
-                "buying_price": 584.91
+                "price": 630
             },
             {
                 "item_code": "D/G011",
                 "item_description": "D/G Undercoat 4l",
-                "unit_cost": 1732.61,
-                "buying_price": 2009.83
+                "price": 2170
             },
             {
                 "item_code": "D/G012",
                 "item_description": "D/G Varnish Mahogany 4l",
-                "unit_cost": 1577.65,
-                "buying_price": 1830.07
+                "price": 1975
             },
             {
                 "item_code": "D/R001",
                 "item_description": "D/Real Roc White 20l",
-                "unit_cost": 4569.83,
-                "buying_price": 5301.0
+                "price": 5725
             },
             {
                 "item_code": "D/S001",
                 "item_description": "D/S/G White 1l",
-                "unit_cost": 673.53,
-                "buying_price": 781.29
+                "price": 845
             },
             {
                 "item_code": "D/S002",
                 "item_description": "D/S/G White 4l",
-                "unit_cost": 2565.12,
-                "buying_price": 2975.54
+                "price": 3215
             },
             {
                 "item_code": "DU 001",
                 "item_description": "Du Acrylic Sealer 4L",
-                "unit_cost": 1491.02,
-                "buying_price": 1729.58
+                "price": 1870
             },
             {
                 "item_code": "R/E001",
                 "item_description": "R/E Hi-Cover White 20l",
-                "unit_cost": 3232.76,
-                "buying_price": 3750.0
+                "price": 4050
             },
             {
                 "item_code": "R/E002",
                 "item_description": "R/E Hi-Cover White 4l",
-                "unit_cost": 750.0,
-                "buying_price": 870.0
+                "price": 940
             },
             {
                 "item_code": "R/E003",
                 "item_description": "R/E Matt White 1l",
-                "unit_cost": 504.31,
-                "buying_price": 585.0
+                "price": 630
             },
             {
                 "item_code": "R/E004",
                 "item_description": "R/E Matt White 4l",
-                "unit_cost": 1849.14,
-                "buying_price": 2145.0
+                "price": 2315
             },
             {
                 "item_code": "R/E005",
                 "item_description": "R/E Silk Soft White 1l",
-                "unit_cost": 543.1,
-                "buying_price": 630.0
+                "price": 680
             },
             {
                 "item_code": "R/E006",
                 "item_description": "R/E Silk White 1l",
-                "unit_cost": 543.1,
-                "buying_price": 630.0
+                "price": 680
             },
             {
                 "item_code": "R/E007",
                 "item_description": "R/E Silk White 20l",
-                "unit_cost": 9896.55,
-                "buying_price": 11480.0
+                "price": 12400
             },
             {
                 "item_code": "R/E008",
                 "item_description": "R/E Silk White 4l",
-                "unit_cost": 1745.69,
-                "buying_price": 2025.0
+                "price": 2185
             },
             {
                 "item_code": "R/H001",
                 "item_description": "R/Harmony White 4l",
-                "unit_cost": 362.07,
-                "buying_price": 420.0
+                "price": 455
             }
         ]
     }
