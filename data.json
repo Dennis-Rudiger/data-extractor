@@ -1,0 +1,2918 @@
+[
+    {
+        "category_name": "PLUMBING MATERIALS",
+        "products": [
+            {
+                "item_code": "ANG011",
+                "item_description": "Angle Valve 1/2turn",
+                "price": ""
+            },
+            {
+                "item_code": "ANG012",
+                "item_description": "Angle Valve 2way",
+                "price": ""
+            },
+            {
+                "item_code": "ANG013",
+                "item_description": "Angle Valve Full Turn",
+                "price": ""
+            },
+            {
+                "item_code": "ARA001",
+                "item_description": "Arabic Shower",
+                "price": ""
+            },
+            {
+                "item_code": "ASI001",
+                "item_description": "Asian Step Toilet",
+                "price": ""
+            },
+            {
+                "item_code": "ASI002",
+                "item_description": "Asian Toilet",
+                "price": ""
+            },
+            {
+                "item_code": "BAL004",
+                "item_description": "Ball Cork 1",
+                "price": ""
+            },
+            {
+                "item_code": "BAL005",
+                "item_description": "Ball Cork 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "BAL006",
+                "item_description": "Ball Cork 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "BAL007",
+                "item_description": "Ball Cork 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "BAL011",
+                "item_description": "Ball Valve 1 Pegler",
+                "price": ""
+            },
+            {
+                "item_code": "BAL012",
+                "item_description": "Ball Valve 1/2 Pegler",
+                "price": ""
+            },
+            {
+                "item_code": "BAL013",
+                "item_description": "Ball Valve 11/2 pegler",
+                "price": ""
+            },
+            {
+                "item_code": "BAL014",
+                "item_description": "Ball Valve 3/4  Pegler",
+                "price": ""
+            },
+            {
+                "item_code": "BAS067",
+                "item_description": "Basin & Pedestal",
+                "price": ""
+            },
+            {
+                "item_code": "BAS069",
+                "item_description": "Basin Mixer Sprout",
+                "price": ""
+            },
+            {
+                "item_code": "BOS001",
+                "item_description": "Boss White 200g",
+                "price": ""
+            },
+            {
+                "item_code": "BOS002",
+                "item_description": "Boss White 400g",
+                "price": ""
+            },
+            {
+                "item_code": "BOT001",
+                "item_description": "Bottle Trap 11/2 malpine",
+                "price": ""
+            },
+            {
+                "item_code": "BOT002",
+                "item_description": "Bottle Trap 11/4 Malpine",
+                "price": ""
+            },
+            {
+                "item_code": "BOT004",
+                "item_description": "Bottle Trap Double",
+                "price": ""
+            },
+            {
+                "item_code": "BOT005",
+                "item_description": "Bottle Trap Flex Chrome 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "BOT006",
+                "item_description": "Bottle Trap Flex Chrome 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "BOT007",
+                "item_description": "Magic Connector Plastic 11/2\"",
+                "price": ""
+            },
+            {
+                "item_code": "BOT008",
+                "item_description": "Bottle Trap Galv 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "BOT009",
+                "item_description": "Magic Connector Plastic 11/4\"",
+                "price": ""
+            },
+            {
+                "item_code": "BOT010",
+                "item_description": "Bottle Trap Viega 1 1/4",
+                "price": ""
+            },
+            {
+                "item_code": "BOT011",
+                "item_description": "Bottle Trap Viega 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "CER001",
+                "item_description": "Ceramic Cistern",
+                "price": ""
+            },
+            {
+                "item_code": "CIS001",
+                "item_description": "Cistern Ball Valve",
+                "price": ""
+            },
+            {
+                "item_code": "CIS002",
+                "item_description": "Cistern Ceramic",
+                "price": ""
+            },
+            {
+                "item_code": "CIS004",
+                "item_description": "Cistern High Lever",
+                "price": ""
+            },
+            {
+                "item_code": "CIS005",
+                "item_description": "Cistern Low Lever",
+                "price": ""
+            },
+            {
+                "item_code": "CIS006",
+                "item_description": "Cistern Top Flush",
+                "price": ""
+            },
+            {
+                "item_code": "CLO001",
+                "item_description": "Close Couple Ball Valve",
+                "price": ""
+            },
+            {
+                "item_code": "CLO002",
+                "item_description": "Close Couple Fitting Green",
+                "price": ""
+            },
+            {
+                "item_code": "CLO003",
+                "item_description": "Close Couple Fitting Pvc",
+                "price": ""
+            },
+            {
+                "item_code": "CLO004",
+                "item_description": "Close Couple Set",
+                "price": ""
+            },
+            {
+                "item_code": "CLO005",
+                "item_description": "Close Couple Set Frencia",
+                "price": ""
+            },
+            {
+                "item_code": "CYP001",
+                "item_description": "Syphone",
+                "price": ""
+            },
+            {
+                "item_code": "CYP002",
+                "item_description": "Cyphone Push",
+                "price": ""
+            },
+            {
+                "item_code": "CYP003",
+                "item_description": "Syphon Top Flush",
+                "price": ""
+            },
+            {
+                "item_code": "DAY009",
+                "item_description": "Dayliff Water Meter",
+                "price": ""
+            },
+            {
+                "item_code": "DAY010",
+                "item_description": "Waterpump Dayliff 0.5HP",
+                "price": ""
+            },
+            {
+                "item_code": "DRA001",
+                "item_description": "Drain Opener 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "DRA002",
+                "item_description": "Drain Opener 500g",
+                "price": ""
+            },
+            {
+                "item_code": "DRA003",
+                "item_description": "Drainer",
+                "price": ""
+            },
+            {
+                "item_code": "FLE002",
+                "item_description": "Flex Tube Metallic 1/2x1.5ft",
+                "price": ""
+            },
+            {
+                "item_code": "FLE004",
+                "item_description": "Flex Tube Plastic 1/2x2ft",
+                "price": ""
+            },
+            {
+                "item_code": "FLE007",
+                "item_description": "Flex Tube Plastic 1/2x1.5ft",
+                "price": ""
+            },
+            {
+                "item_code": "FLE008",
+                "item_description": "Flex Tube 1/2x1ft",
+                "price": ""
+            },
+            {
+                "item_code": "FLE009",
+                "item_description": "Flex metallic Tube 1/2x2ft",
+                "price": ""
+            },
+            {
+                "item_code": "FLE010",
+                "item_description": "Flex Tube 11/2x1/2 M/F",
+                "price": ""
+            },
+            {
+                "item_code": "FLE011",
+                "item_description": "Flex Tube Plastic 3/4x1.5ft",
+                "price": ""
+            },
+            {
+                "item_code": "FLO001",
+                "item_description": "Float Switch",
+                "price": ""
+            },
+            {
+                "item_code": "FLO004",
+                "item_description": "Floor Drain",
+                "price": ""
+            },
+            {
+                "item_code": "FLU001",
+                "item_description": "Flusher Plug pkts",
+                "price": ""
+            },
+            {
+                "item_code": "FOO003",
+                "item_description": "Foot Valve 1 peggler",
+                "price": ""
+            },
+            {
+                "item_code": "FOO004",
+                "item_description": "Foot Valve 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "FOO005",
+                "item_description": "Foot Valve 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "FOO006",
+                "item_description": "Foot Valve 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "FOO007",
+                "item_description": "Foot Valve 3/4 pegler",
+                "price": ""
+            },
+            {
+                "item_code": "GAR001",
+                "item_description": "Garden Tap 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GAR003",
+                "item_description": "Gardena C/Circ Sprinkler Mam",
+                "price": ""
+            },
+            {
+                "item_code": "GAR004",
+                "item_description": "Gardena Classic Circ Sprinkl",
+                "price": ""
+            },
+            {
+                "item_code": "GAR005",
+                "item_description": "Gardena Comfort Multisprayer",
+                "price": ""
+            },
+            {
+                "item_code": "GAR006",
+                "item_description": "Gardena Fullpart Circ Sprink",
+                "price": ""
+            },
+            {
+                "item_code": "GAT002",
+                "item_description": "Gate Valve 1",
+                "price": ""
+            },
+            {
+                "item_code": "GAT003",
+                "item_description": "Gate Valve 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GAT004",
+                "item_description": "Gate Valve 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GAT005",
+                "item_description": "Gate Valve 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GAT006",
+                "item_description": "Gate Valve 2 pegler",
+                "price": ""
+            },
+            {
+                "item_code": "GAT007",
+                "item_description": "Gate Valve 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 001",
+                "item_description": "Gi Back Nut 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 002",
+                "item_description": "Gi Back Nut 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 003",
+                "item_description": "Gi Back Nut 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 004",
+                "item_description": "Gi Back Nut 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 005",
+                "item_description": "Gi Back Nut 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 006",
+                "item_description": "Gi Back Nut 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 007",
+                "item_description": "Gi Barrel Nipple 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 008",
+                "item_description": "Gi Barrel Nipple 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 009",
+                "item_description": "Gi Barrel Nipple 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 010",
+                "item_description": "Gi Barrel Nipple 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 011",
+                "item_description": "Gi Barrel Nipple 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 012",
+                "item_description": "Gi Barrel Nipple 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 013",
+                "item_description": "Gi Bend 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 014",
+                "item_description": "Gi Bend 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 015",
+                "item_description": "Gi Bend 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 016",
+                "item_description": "Gi Bend 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 017",
+                "item_description": "Gi Bend 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 018",
+                "item_description": "Gi Bend 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 019",
+                "item_description": "Gi Cup Plug 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 020",
+                "item_description": "Gi Cup Plug 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 021",
+                "item_description": "Gi Cup Plug 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 022",
+                "item_description": "Gi Cup Plug 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 023",
+                "item_description": "Gi Cup Plug 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 024",
+                "item_description": "Gi Elbow 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 025",
+                "item_description": "Gi Elbow 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 026",
+                "item_description": "Gi Elbow 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 027",
+                "item_description": "Gi Elbow 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 028",
+                "item_description": "Gi Elbow 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 029",
+                "item_description": "Gi Elbow 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 030",
+                "item_description": "Gi Hex Nipple 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 031",
+                "item_description": "Gi Hex Nipple 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 032",
+                "item_description": "Gi Hex Nipple 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 033",
+                "item_description": "Gi Hex Nipple 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 034",
+                "item_description": "Gi Hex Nipple 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 035",
+                "item_description": "Gi Hex Nipple 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 036",
+                "item_description": "Gi Long Thread Nipple 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 037",
+                "item_description": "Gi Long Thread Nipple 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 038",
+                "item_description": "Gi Long Thread Nipple 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 039",
+                "item_description": "Gi Long Thread Nipple 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 040",
+                "item_description": "Gi Long Thread Nipple 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 041",
+                "item_description": "Gi Long Thread Nipple 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 042",
+                "item_description": "Gi Plug 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 043",
+                "item_description": "Gi Plug 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 044",
+                "item_description": "Gi Plug 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 045",
+                "item_description": "Gi Plug 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 046",
+                "item_description": "Gi Red Bush 11/2x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 047",
+                "item_description": "Gi Red Bush 11/2x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 048",
+                "item_description": "Gi Red Bush 11/4x1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 049",
+                "item_description": "Gi Red Bush 11/4x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 050",
+                "item_description": "Gi Red Bush 1x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 051",
+                "item_description": "Gi Red Bush 1x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 052",
+                "item_description": "Gi Red Bush 2x1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 053",
+                "item_description": "Gi Red Bush 2x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 054",
+                "item_description": "Gi Red Bush 2x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 055",
+                "item_description": "Gi Red Bush 2x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 056",
+                "item_description": "Gi Red Bush 3/4x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 057",
+                "item_description": "Gi Red Socket 11/2x1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 058",
+                "item_description": "Gi Red Socket 11/2x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 059",
+                "item_description": "Gi Red Socket 11/2x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 060",
+                "item_description": "Gi Red Socket 11/4x1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 061",
+                "item_description": "Gi Red Socket 1x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 062",
+                "item_description": "Gi Red Socket 1x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 063",
+                "item_description": "Gi Red Socket 2 X 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 064",
+                "item_description": "Gi Red Socket 2 X 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 065",
+                "item_description": "Gi Red Socket 3/4x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 066",
+                "item_description": "Gi Red Tee 1x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 067",
+                "item_description": "Gi Red Tee 3/4x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 068",
+                "item_description": "Gi Socket 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 069",
+                "item_description": "Gi Socket 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 070",
+                "item_description": "Gi Socket 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 071",
+                "item_description": "Gi Socket 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 072",
+                "item_description": "Gi Socket 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 073",
+                "item_description": "Gi Socket 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 074",
+                "item_description": "Gi Stand Pipe 1/2x1.5ft",
+                "price": ""
+            },
+            {
+                "item_code": "GI 075",
+                "item_description": "Gi Stand Pipe 1/2x1ft",
+                "price": ""
+            },
+            {
+                "item_code": "GI 076",
+                "item_description": "Gi Stand Pipe 1/2x2ft",
+                "price": ""
+            },
+            {
+                "item_code": "GI 077",
+                "item_description": "Gi Stand Pipe 1/2x3ft",
+                "price": ""
+            },
+            {
+                "item_code": "GI 078",
+                "item_description": "Gi Stand Pipe 3/4x1.5ft",
+                "price": ""
+            },
+            {
+                "item_code": "GI 079",
+                "item_description": "Gi Stand Pipe 3/4x1ft",
+                "price": ""
+            },
+            {
+                "item_code": "GI 080",
+                "item_description": "Gi Stand Pipe 3/4x2ft",
+                "price": ""
+            },
+            {
+                "item_code": "GI 081",
+                "item_description": "Gi Tee 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 082",
+                "item_description": "Gi Tee 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 083",
+                "item_description": "Gi Tee 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 084",
+                "item_description": "Gi Tee 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 085",
+                "item_description": "Gi Tee 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 086",
+                "item_description": "Gi Tee 21/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 087",
+                "item_description": "Gi Tee 3'",
+                "price": ""
+            },
+            {
+                "item_code": "GI 088",
+                "item_description": "Gi Tee 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 089",
+                "item_description": "Gi Union 1",
+                "price": ""
+            },
+            {
+                "item_code": "GI 090",
+                "item_description": "Gi Union 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 091",
+                "item_description": "Gi Union 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 092",
+                "item_description": "Gi Union 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GI 093",
+                "item_description": "Gi Union 2",
+                "price": ""
+            },
+            {
+                "item_code": "GI 094",
+                "item_description": "Gi Union 3",
+                "price": ""
+            },
+            {
+                "item_code": "GI 095",
+                "item_description": "Gi Union 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "GUT001",
+                "item_description": "Gutter Angle",
+                "price": ""
+            },
+            {
+                "item_code": "GUT002",
+                "item_description": "Gutter Bracket",
+                "price": ""
+            },
+            {
+                "item_code": "GUT003",
+                "item_description": "Gutter Connector",
+                "price": ""
+            },
+            {
+                "item_code": "GUT004",
+                "item_description": "Gutter Elbow",
+                "price": ""
+            },
+            {
+                "item_code": "GUT005",
+                "item_description": "Gutter End Cap",
+                "price": ""
+            },
+            {
+                "item_code": "GUT006",
+                "item_description": "Gutter End Cup Metro",
+                "price": ""
+            },
+            {
+                "item_code": "GUT007",
+                "item_description": "Gutter Joiner Metro",
+                "price": ""
+            },
+            {
+                "item_code": "GUT008",
+                "item_description": "Gutter Metro",
+                "price": ""
+            },
+            {
+                "item_code": "GUT009",
+                "item_description": "Gutter Outlet Tee",
+                "price": ""
+            },
+            {
+                "item_code": "GUT010",
+                "item_description": "Gutter Rain",
+                "price": ""
+            },
+            {
+                "item_code": "GUT011",
+                "item_description": "Gutter Rain Box",
+                "price": ""
+            },
+            {
+                "item_code": "GUT012",
+                "item_description": "Gutter Stop End",
+                "price": ""
+            },
+            {
+                "item_code": "GUT013",
+                "item_description": "Gutters Angle",
+                "price": ""
+            },
+            {
+                "item_code": "GUT014",
+                "item_description": "Gutters Outlet",
+                "price": ""
+            },
+            {
+                "item_code": "GUT015",
+                "item_description": "Gutters Union",
+                "price": ""
+            },
+            {
+                "item_code": "HDP001",
+                "item_description": "Hdpe Pipe  Roll 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "HDP003",
+                "item_description": "Hdpe Pipe Roll 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "HDP004",
+                "item_description": "Hdpe Pipe roll 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "HEM001",
+                "item_description": "Hemp",
+                "price": ""
+            },
+            {
+                "item_code": "HOS010",
+                "item_description": "Hose Pipe Braided 1/2x30ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS011",
+                "item_description": "Hose Pipe Braided 1/2x30m",
+                "price": ""
+            },
+            {
+                "item_code": "HOS012",
+                "item_description": "Hose Pipe Braided 1/2x50m",
+                "price": ""
+            },
+            {
+                "item_code": "HOS013",
+                "item_description": "Hose Pipe Braided 1x30m",
+                "price": ""
+            },
+            {
+                "item_code": "HOS014",
+                "item_description": "Hose Pipe Braided 1x50",
+                "price": ""
+            },
+            {
+                "item_code": "HOS015",
+                "item_description": "Hose Pipe Braided 3/4x30m",
+                "price": ""
+            },
+            {
+                "item_code": "HOS016",
+                "item_description": "Hose Pipe Braided 3/4x50m",
+                "price": ""
+            },
+            {
+                "item_code": "HOS017",
+                "item_description": "Hose Pipe Clear 1/2x120ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS018",
+                "item_description": "Hose Pipe Clear 1/2x60ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS019",
+                "item_description": "Hose Pipe Clear 1/4 X 50",
+                "price": ""
+            },
+            {
+                "item_code": "HOS020",
+                "item_description": "Hose Pipe Clear 1/4",
+                "price": ""
+            },
+            {
+                "item_code": "HOS021",
+                "item_description": "Hose Pipe Clear 3/4x120ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS022",
+                "item_description": "Hose Pipe Clear 3/4x60ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS023",
+                "item_description": "Hose Pipe Zebra 1/2x60ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS024",
+                "item_description": "Hose Pipe Zebra 1x60ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS025",
+                "item_description": "Hose Pipe Zebra 3/4x120ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS026",
+                "item_description": "Hose Pipe Zebra 3/4x60ft",
+                "price": ""
+            },
+            {
+                "item_code": "HOS029",
+                "item_description": "Hose To Sprinkler H/G",
+                "price": ""
+            },
+            {
+                "item_code": "KIT002",
+                "item_description": "Kitchen Mixer Pillar",
+                "price": ""
+            },
+            {
+                "item_code": "KIT003",
+                "item_description": "Kitchen Mixer Sink",
+                "price": ""
+            },
+            {
+                "item_code": "KIT004",
+                "item_description": "Kitchen Mixer Wall",
+                "price": ""
+            },
+            {
+                "item_code": "KIT005",
+                "item_description": "Kitchen Sink Bowl",
+                "price": ""
+            },
+            {
+                "item_code": "KIT006",
+                "item_description": "Kitchen Sink D/B S/D",
+                "price": ""
+            },
+            {
+                "item_code": "KIT007",
+                "item_description": "Kitchen Sink S/B S/D",
+                "price": ""
+            },
+            {
+                "item_code": "MAN001",
+                "item_description": "Manhole Cover 12x12",
+                "price": ""
+            },
+            {
+                "item_code": "MAN002",
+                "item_description": "Manhole Cover 15x15",
+                "price": ""
+            },
+            {
+                "item_code": "MAN003",
+                "item_description": "Manhole Cover 18x18",
+                "price": ""
+            },
+            {
+                "item_code": "MAN004",
+                "item_description": "Manhole Cover 18x24",
+                "price": ""
+            },
+            {
+                "item_code": "MAN005",
+                "item_description": "Manhole Cover 24x24",
+                "price": ""
+            },
+            {
+                "item_code": "MIX001",
+                "item_description": "Mixer Bathroom",
+                "price": ""
+            },
+            {
+                "item_code": "NON001",
+                "item_description": "Non Return Valve lirlee 1\"",
+                "price": ""
+            },
+            {
+                "item_code": "NON002",
+                "item_description": "Non Return Valve 1 pegler",
+                "price": ""
+            },
+            {
+                "item_code": "NON003",
+                "item_description": "Non Return Valve 1/2 Pegler",
+                "price": ""
+            },
+            {
+                "item_code": "NON005",
+                "item_description": "Non Return Valve 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "NON006",
+                "item_description": "Non Return Valve 3/4 Pegler",
+                "price": ""
+            },
+            {
+                "item_code": "PED001",
+                "item_description": "Pedrallo Pump 0.5hp",
+                "price": ""
+            },
+            {
+                "item_code": "PED002",
+                "item_description": "Pedrallo Pump 1hp",
+                "price": ""
+            },
+            {
+                "item_code": "PIL002",
+                "item_description": "Pillar Tap 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PIL003",
+                "item_description": "Pillar Tap Basin Type",
+                "price": ""
+            },
+            {
+                "item_code": "PIL005",
+                "item_description": "Pillar Tap Sprout Brimix",
+                "price": ""
+            },
+            {
+                "item_code": "POP004",
+                "item_description": "Pop Up Waste Chrome 11/2\"",
+                "price": ""
+            },
+            {
+                "item_code": "POP005",
+                "item_description": "Pop Up Waste Chrome 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR001",
+                "item_description": "Ppr Ball Cork 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR002",
+                "item_description": "Ppr Ball Cork 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR003",
+                "item_description": "Ppr Ball Cork 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR004",
+                "item_description": "Ppr Ball Cork 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR006",
+                "item_description": "Ppr Ball Cork 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR007",
+                "item_description": "Ppr Cup 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR008",
+                "item_description": "Ppr Cup 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR009",
+                "item_description": "Ppr Cup 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR010",
+                "item_description": "Ppr Cup 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR011",
+                "item_description": "Ppr Cup 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR012",
+                "item_description": "Ppr Cup 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR013",
+                "item_description": "Ppr Double Elbow 25x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR014",
+                "item_description": "Ppr Elbow 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR015",
+                "item_description": "Ppr Elbow 20mm *45'",
+                "price": ""
+            },
+            {
+                "item_code": "PPR016",
+                "item_description": "Ppr Elbow 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR017",
+                "item_description": "Ppr Elbow 25mmx45",
+                "price": ""
+            },
+            {
+                "item_code": "PPR018",
+                "item_description": "Ppr Elbow 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR019",
+                "item_description": "Ppr Elbow 32mm x45",
+                "price": ""
+            },
+            {
+                "item_code": "PPR020",
+                "item_description": "Ppr Elbow 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR021",
+                "item_description": "Ppr Elbow 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR022",
+                "item_description": "Ppr Elbow 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR023",
+                "item_description": "Ppr F/Adapter 20x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR024",
+                "item_description": "Ppr F/Adapter 25x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR025",
+                "item_description": "Ppr F/Adapter 25x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR026",
+                "item_description": "Ppr F/Adapter 32x1",
+                "price": ""
+            },
+            {
+                "item_code": "PPR027",
+                "item_description": "Ppr F/Adapter 32x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR028",
+                "item_description": "Ppr F/Adapter 40x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR029",
+                "item_description": "Ppr F/Adapter 50x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR030",
+                "item_description": "Ppr F/Adapter 63x2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR031",
+                "item_description": "Ppr F/Elbow 20x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR032",
+                "item_description": "Ppr F/Elbow 25x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR033",
+                "item_description": "Ppr F/Elbow 25x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR034",
+                "item_description": "Ppr F/Elbow 32x1",
+                "price": ""
+            },
+            {
+                "item_code": "PPR035",
+                "item_description": "Ppr F/Elbow 32x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR036",
+                "item_description": "Ppr F/Elbow 32x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR037",
+                "item_description": "Ppr F/Elbow 40x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR038",
+                "item_description": "Ppr F/Elbow 50x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR039",
+                "item_description": "Ppr F/Tee 20x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR040",
+                "item_description": "Ppr F/Tee 25x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR041",
+                "item_description": "Ppr F/Tee 25x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR042",
+                "item_description": "Ppr F/Tee 32x1",
+                "price": ""
+            },
+            {
+                "item_code": "PPR043",
+                "item_description": "Ppr F/Tee 32x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR044",
+                "item_description": "Ppr F/Tee 40x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR045",
+                "item_description": "Ppr F/ Thread Union 1",
+                "price": ""
+            },
+            {
+                "item_code": "PPR046",
+                "item_description": "Ppr F/Union Thread 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR047",
+                "item_description": "Ppr Gate Valve 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR048",
+                "item_description": "Ppr Gate Valve 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR049",
+                "item_description": "Ppr Gate Valve 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR050",
+                "item_description": "Ppr M/Adapter 20x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR051",
+                "item_description": "Ppr M/Adapter 25x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR052",
+                "item_description": "Ppr M/Adapter 25x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR053",
+                "item_description": "Ppr M/Adapter 32x1",
+                "price": ""
+            },
+            {
+                "item_code": "PPR054",
+                "item_description": "Ppr M/Adapter 32x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR055",
+                "item_description": "Ppr M/Adapter 32x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR056",
+                "item_description": "Ppr M/Adapter 40x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR057",
+                "item_description": "Ppr M/Adapter 50x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR058",
+                "item_description": "Ppr M/Adapter 63x2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR059",
+                "item_description": "Ppr M/Elbow 20x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR060",
+                "item_description": "Ppr M/Elbow 25x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR061",
+                "item_description": "Ppr M/Elbow 25x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR062",
+                "item_description": "Ppr M/Elbow 32x1",
+                "price": ""
+            },
+            {
+                "item_code": "PPR063",
+                "item_description": "Ppr M/Elbow 32x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR064",
+                "item_description": "Ppr M/Elbow 40x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR065",
+                "item_description": "Ppr M/Elbow 50x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR066",
+                "item_description": "Ppr M/Tee 20x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR067",
+                "item_description": "Ppr M/Tee 25x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR068",
+                "item_description": "Ppr M/Tee 25x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR069",
+                "item_description": "Ppr M/Tee 32x1",
+                "price": ""
+            },
+            {
+                "item_code": "PPR070",
+                "item_description": "Ppr M/Tee 32x3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR071",
+                "item_description": "Ppr M/Tee 40x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR072",
+                "item_description": "Ppr M/Thread Union 1",
+                "price": ""
+            },
+            {
+                "item_code": "PPR073",
+                "item_description": "Ppr M/Thread Union 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR074",
+                "item_description": "Ppr M/Thread Union 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PPR075",
+                "item_description": "Ppr Machine H/G",
+                "price": ""
+            },
+            {
+                "item_code": "PPR076",
+                "item_description": "Ppr Overbend 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR077",
+                "item_description": "Ppr Overbend 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR078",
+                "item_description": "Ppr Pipe 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR084",
+                "item_description": "Ppr Pipe Danco 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR085",
+                "item_description": "Ppr Pipe Danco 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR086",
+                "item_description": "Ppr Pipe Danco 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR087",
+                "item_description": "Ppr Pipe Danco 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR088",
+                "item_description": "Ppr Pipe Danco 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR089",
+                "item_description": "Ppr Pipe Metro 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR090",
+                "item_description": "Ppr Pipe Metro 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR091",
+                "item_description": "Ppr Pipe Metro 25mm Std",
+                "price": ""
+            },
+            {
+                "item_code": "PPR092",
+                "item_description": "Ppr Pipe Metro 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR093",
+                "item_description": "Ppr Pipe Metro 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR094",
+                "item_description": "Ppr Pipe Metro 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR095",
+                "item_description": "Ppr Pipe Metro 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR096",
+                "item_description": "Ppr Pipe Roll 20mm-DANCO",
+                "price": ""
+            },
+            {
+                "item_code": "PPR097",
+                "item_description": "Ppr Pipe Roll 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR098",
+                "item_description": "Ppr Pipe Roll 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR099",
+                "item_description": "Ppr Pipe Roll 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR100",
+                "item_description": "Ppr Pipe Roll Danco 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR101",
+                "item_description": "Ppr Pipe Roll Danco 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR102",
+                "item_description": "Ppr Pipe Roll Danco 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR103",
+                "item_description": "Ppr Pipe Roll Danco 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR104",
+                "item_description": "Ppr Pipe Roll Danco 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR105",
+                "item_description": "Ppr Plug 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR106",
+                "item_description": "Ppr Plug 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR107",
+                "item_description": "Ppr Red/Socket 25x20",
+                "price": ""
+            },
+            {
+                "item_code": "PPR108",
+                "item_description": "Ppr Red/Socket 32x20",
+                "price": ""
+            },
+            {
+                "item_code": "PPR109",
+                "item_description": "Ppr Red/Socket 32x25",
+                "price": ""
+            },
+            {
+                "item_code": "PPR110",
+                "item_description": "Ppr Red/Socket 40x25",
+                "price": ""
+            },
+            {
+                "item_code": "PPR111",
+                "item_description": "Ppr Red/Socket 40x32",
+                "price": ""
+            },
+            {
+                "item_code": "PPR112",
+                "item_description": "Ppr Red/Socket 50x20",
+                "price": ""
+            },
+            {
+                "item_code": "PPR113",
+                "item_description": "Ppr Red/Socket 50x25",
+                "price": ""
+            },
+            {
+                "item_code": "PPR114",
+                "item_description": "Ppr Red/Socket 50x32",
+                "price": ""
+            },
+            {
+                "item_code": "PPR115",
+                "item_description": "Ppr Red/Socket 50x40",
+                "price": ""
+            },
+            {
+                "item_code": "PPR116",
+                "item_description": "Ppr Red/Socket 63x25",
+                "price": ""
+            },
+            {
+                "item_code": "PPR117",
+                "item_description": "Ppr Red/Socket 63x32",
+                "price": ""
+            },
+            {
+                "item_code": "PPR118",
+                "item_description": "Ppr Red/Socket 63x40",
+                "price": ""
+            },
+            {
+                "item_code": "PPR120",
+                "item_description": "Ppr Red/Tee 20x25",
+                "price": ""
+            },
+            {
+                "item_code": "PPR121",
+                "item_description": "Ppr Red/Tee 32x20",
+                "price": ""
+            },
+            {
+                "item_code": "PPR122",
+                "item_description": "Ppr Red/Tee 32x25",
+                "price": ""
+            },
+            {
+                "item_code": "PPR123",
+                "item_description": "Ppr Red/Tee 40x25",
+                "price": ""
+            },
+            {
+                "item_code": "PPR124",
+                "item_description": "Ppr Red/Tee 40x32",
+                "price": ""
+            },
+            {
+                "item_code": "PPR125",
+                "item_description": "Ppr Socket 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR126",
+                "item_description": "Ppr Socket 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR127",
+                "item_description": "Ppr Socket 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR128",
+                "item_description": "Ppr Socket 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR129",
+                "item_description": "Ppr Socket 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR130",
+                "item_description": "Ppr Socket 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR131",
+                "item_description": "Ppr Stone 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR132",
+                "item_description": "Ppr Stone 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR133",
+                "item_description": "Ppr Stone 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR134",
+                "item_description": "Ppr Stone 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR135",
+                "item_description": "Ppr socket 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR136",
+                "item_description": "Ppr Stone 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR137",
+                "item_description": "Ppr Tee 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR138",
+                "item_description": "Ppr Tee 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR139",
+                "item_description": "Ppr Tee 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR140",
+                "item_description": "Ppr Tee 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR141",
+                "item_description": "Ppr Tee 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR142",
+                "item_description": "Ppr Tee 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR143",
+                "item_description": "Ppr Thread Union 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR144",
+                "item_description": "Ppr Thread Union 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR145",
+                "item_description": "Ppr Thread Union 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR146",
+                "item_description": "Ppr Thread Union 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR147",
+                "item_description": "Ppr Union 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR148",
+                "item_description": "Ppr Union 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR149",
+                "item_description": "Ppr Union 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR150",
+                "item_description": "Ppr Union 40mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR151",
+                "item_description": "Ppr Union 50mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR152",
+                "item_description": "Ppr Union 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "PTG001",
+                "item_description": "Ptg Brackets",
+                "price": ""
+            },
+            {
+                "item_code": "PTG002",
+                "item_description": "Ptg Clips",
+                "price": ""
+            },
+            {
+                "item_code": "PTG003",
+                "item_description": "Ptg Connector",
+                "price": ""
+            },
+            {
+                "item_code": "PTG004",
+                "item_description": "Ptg Converter 90'",
+                "price": ""
+            },
+            {
+                "item_code": "PTG005",
+                "item_description": "Ptg Diverter 65'",
+                "price": ""
+            },
+            {
+                "item_code": "PTG006",
+                "item_description": "Ptg Down Pipe",
+                "price": ""
+            },
+            {
+                "item_code": "PTG008",
+                "item_description": "Ptg Elbow 65'",
+                "price": ""
+            },
+            {
+                "item_code": "PTG009",
+                "item_description": "Ptg Elbow 90'",
+                "price": ""
+            },
+            {
+                "item_code": "PTG010",
+                "item_description": "Ptg Endcup",
+                "price": ""
+            },
+            {
+                "item_code": "PTG011",
+                "item_description": "Ptg Gutter",
+                "price": ""
+            },
+            {
+                "item_code": "PTG012",
+                "item_description": "Ptg Hangers",
+                "price": ""
+            },
+            {
+                "item_code": "PTG013",
+                "item_description": "Ptg Inside Corner",
+                "price": ""
+            },
+            {
+                "item_code": "PTG014",
+                "item_description": "Ptg Outlet",
+                "price": ""
+            },
+            {
+                "item_code": "PTG015",
+                "item_description": "Ptg Outside Corner",
+                "price": ""
+            },
+            {
+                "item_code": "PTG016",
+                "item_description": "Ptg Socket",
+                "price": ""
+            },
+            {
+                "item_code": "PUM001",
+                "item_description": "Pump Control Auto",
+                "price": ""
+            },
+            {
+                "item_code": "PVC001",
+                "item_description": "Pvc Bend 11/2x45",
+                "price": ""
+            },
+            {
+                "item_code": "PVC002",
+                "item_description": "Pvc Bend 11/2x90",
+                "price": ""
+            },
+            {
+                "item_code": "PVC003",
+                "item_description": "Pvc Bend 11/4x45",
+                "price": ""
+            },
+            {
+                "item_code": "PVC004",
+                "item_description": "Pvc Bend 11/4x90",
+                "price": ""
+            },
+            {
+                "item_code": "PVC005",
+                "item_description": "Pvc Bend 2x45",
+                "price": ""
+            },
+            {
+                "item_code": "PVC006",
+                "item_description": "Pvc Bend 2x90",
+                "price": ""
+            },
+            {
+                "item_code": "PVC007",
+                "item_description": "Pvc Bend 3x45",
+                "price": ""
+            },
+            {
+                "item_code": "PVC008",
+                "item_description": "Pvc Bend 3x90",
+                "price": ""
+            },
+            {
+                "item_code": "PVC009",
+                "item_description": "Pvc Bend 4x45",
+                "price": ""
+            },
+            {
+                "item_code": "PVC010",
+                "item_description": "Pvc Bend 4x90",
+                "price": ""
+            },
+            {
+                "item_code": "PVC011",
+                "item_description": "Pvc Bend 6x45",
+                "price": ""
+            },
+            {
+                "item_code": "PVC012",
+                "item_description": "Pvc Bend 6x90",
+                "price": ""
+            },
+            {
+                "item_code": "PVC013",
+                "item_description": "Pvc Bend 8x90",
+                "price": ""
+            },
+            {
+                "item_code": "PVC014",
+                "item_description": "Pvc Boss Connector 4x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC015",
+                "item_description": "Pvc Boss Connector 4x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC016",
+                "item_description": "Pvc Boss Connector 4x2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC017",
+                "item_description": "Pvc Boss Connector 4x3",
+                "price": ""
+            },
+            {
+                "item_code": "PVC018",
+                "item_description": "Pvc Cross Tee 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC019",
+                "item_description": "Pvc Cross Tee 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC020",
+                "item_description": "Pvc Flex Bend 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC021",
+                "item_description": "Pvc Flexible Connector 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC022",
+                "item_description": "Pvc Floor Trap 4way",
+                "price": ""
+            },
+            {
+                "item_code": "PVC023",
+                "item_description": "Pvc Floor Trap 1Way",
+                "price": ""
+            },
+            {
+                "item_code": "PVC025",
+                "item_description": "Pvc Floor Trap Cover",
+                "price": ""
+            },
+            {
+                "item_code": "PVC026",
+                "item_description": "Pvc Full Bora 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC027",
+                "item_description": "Pvc Gulley Trap 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC028",
+                "item_description": "Pvc Gulley Trap 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC030",
+                "item_description": "Pvc Gutter Clip",
+                "price": ""
+            },
+            {
+                "item_code": "PVC031",
+                "item_description": "Pvc Inspection Bend 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC032",
+                "item_description": "Pvc Inspection Tee 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC033",
+                "item_description": "Pvc Pipe Sewer 6",
+                "price": ""
+            },
+            {
+                "item_code": "PVC034",
+                "item_description": "Pvc Plug 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC035",
+                "item_description": "Pvc Plug 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC036",
+                "item_description": "Pvc Plug 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC037",
+                "item_description": "Pvc Plug 3",
+                "price": ""
+            },
+            {
+                "item_code": "PVC038",
+                "item_description": "Pvc Plug 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC039",
+                "item_description": "Pvc Plug 6",
+                "price": ""
+            },
+            {
+                "item_code": "PVC040",
+                "item_description": "Pvc Plug 8",
+                "price": ""
+            },
+            {
+                "item_code": "PVC041",
+                "item_description": "Pvc Press Elbow 1",
+                "price": ""
+            },
+            {
+                "item_code": "PVC042",
+                "item_description": "Pvc Press Elbow 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC043",
+                "item_description": "Pvc Press Elbow 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC044",
+                "item_description": "Pvc Press Elbow 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC045",
+                "item_description": "Pvc Press Elbow 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC046",
+                "item_description": "Pvc Press Elbow 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC047",
+                "item_description": "Pvc Press Tee 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC048",
+                "item_description": "Pvc Pressure Tee 1",
+                "price": ""
+            },
+            {
+                "item_code": "PVC049",
+                "item_description": "Pvc Pressure Tee 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC050",
+                "item_description": "Pvc Pressure Tee 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC051",
+                "item_description": "Pvc Pressure Tee 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC052",
+                "item_description": "Pvc Pressure Tee 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC053",
+                "item_description": "Pvc Reducer 11/2x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC054",
+                "item_description": "Pvc Reducer 2x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC055",
+                "item_description": "Pvc Reducer 2x11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC056",
+                "item_description": "Pvc Reducer 3x2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC057",
+                "item_description": "Pvc Reducer 4x2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC058",
+                "item_description": "Pvc Reducer 4x3",
+                "price": ""
+            },
+            {
+                "item_code": "PVC059",
+                "item_description": "Pvc Reducer 6x4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC060",
+                "item_description": "Pvc Reducer 8x4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC061",
+                "item_description": "Pvc Ring Sewer 6",
+                "price": ""
+            },
+            {
+                "item_code": "PVC062",
+                "item_description": "Pvc Socket 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC063",
+                "item_description": "Pvc Socket 6",
+                "price": ""
+            },
+            {
+                "item_code": "PVC064",
+                "item_description": "Pvc Tee 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC065",
+                "item_description": "Pvc Tee 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC066",
+                "item_description": "Pvc Tee 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC067",
+                "item_description": "Pvc Tee 3",
+                "price": ""
+            },
+            {
+                "item_code": "PVC068",
+                "item_description": "Pvc Tee 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC069",
+                "item_description": "Pvc Tee 6",
+                "price": ""
+            },
+            {
+                "item_code": "PVC070",
+                "item_description": "Pvc Tee 8",
+                "price": ""
+            },
+            {
+                "item_code": "PVC071",
+                "item_description": "Pvc Tee Cross 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC072",
+                "item_description": "Pvc Vent Core 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC073",
+                "item_description": "Pvc Vent Core 3",
+                "price": ""
+            },
+            {
+                "item_code": "PVC074",
+                "item_description": "Pvc Vent Core 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC075",
+                "item_description": "Pvc W/Pipe 12",
+                "price": ""
+            },
+            {
+                "item_code": "PVC076",
+                "item_description": "Pvc W/Pipe Brown 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC077",
+                "item_description": "Pvc W/Pipe Grey 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC078",
+                "item_description": "Pvc W/Pipe Grey 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC079",
+                "item_description": "Pvc W/Pipe Grey 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC080",
+                "item_description": "Pvc W/Pipe Grey 3",
+                "price": ""
+            },
+            {
+                "item_code": "PVC081",
+                "item_description": "Pvc W/Pipe Grey 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC082",
+                "item_description": "Pvc W/Pipe Grey 6",
+                "price": ""
+            },
+            {
+                "item_code": "PVC083",
+                "item_description": "Pvc W/Pipe Grey 8 pm",
+                "price": ""
+            },
+            {
+                "item_code": "PVC084",
+                "item_description": "Pvc W/Pipe Metro 10",
+                "price": ""
+            },
+            {
+                "item_code": "PVC085",
+                "item_description": "Pvc W/Pipe Metro 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC086",
+                "item_description": "Pvc W/Pipe Metro 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC087",
+                "item_description": "Pvc W/Pipe Metro 3",
+                "price": ""
+            },
+            {
+                "item_code": "PVC088",
+                "item_description": "Pvc W/Pipe Metro 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC089",
+                "item_description": "Pvc W/Pipe Metro 6",
+                "price": ""
+            },
+            {
+                "item_code": "PVC090",
+                "item_description": "Pvc W/Pipe Pm 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC091",
+                "item_description": "Pvc W/Pipe Pm 2",
+                "price": ""
+            },
+            {
+                "item_code": "PVC092",
+                "item_description": "Pvc W/Pipe Pm 3",
+                "price": ""
+            },
+            {
+                "item_code": "PVC093",
+                "item_description": "Pvc W/Pipe Pm 4",
+                "price": ""
+            },
+            {
+                "item_code": "PVC094",
+                "item_description": "Pvc Y Tee 4",
+                "price": ""
+            },
+            {
+                "item_code": "SEA001",
+                "item_description": "Seat Cover",
+                "price": ""
+            },
+            {
+                "item_code": "SEA002",
+                "item_description": "Seat Cover Fitting",
+                "price": ""
+            },
+            {
+                "item_code": "SEA003",
+                "item_description": "Seat Cover H/G",
+                "price": ""
+            },
+            {
+                "item_code": "SHA001",
+                "item_description": "Shallow Drain",
+                "price": ""
+            },
+            {
+                "item_code": "SHO005",
+                "item_description": "Shower Arabic Lirlee",
+                "price": ""
+            },
+            {
+                "item_code": "SHO006",
+                "item_description": "Shower Arm Chrome",
+                "price": ""
+            },
+            {
+                "item_code": "SHO007",
+                "item_description": "Shower Element",
+                "price": ""
+            },
+            {
+                "item_code": "SHO008",
+                "item_description": "Shower Head",
+                "price": ""
+            },
+            {
+                "item_code": "SHO009",
+                "item_description": "Shower Mixer",
+                "price": ""
+            },
+            {
+                "item_code": "SHO010",
+                "item_description": "Shower Rose Metal 6",
+                "price": ""
+            },
+            {
+                "item_code": "SHO012",
+                "item_description": "Shower Rose Plastic",
+                "price": ""
+            },
+            {
+                "item_code": "SHO013",
+                "item_description": "Shower Stand",
+                "price": ""
+            },
+            {
+                "item_code": "SOA001",
+                "item_description": "Soap Dish Silver",
+                "price": ""
+            },
+            {
+                "item_code": "SOA003",
+                "item_description": "Soap Dish Small",
+                "price": ""
+            },
+            {
+                "item_code": "SPR013",
+                "item_description": "Spring Bend 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "SPR014",
+                "item_description": "Spring Bend 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "SPR015",
+                "item_description": "Sprinkler Head",
+                "price": ""
+            },
+            {
+                "item_code": "SPR016",
+                "item_description": "Sprinkler Juakali",
+                "price": ""
+            },
+            {
+                "item_code": "STA006",
+                "item_description": "Stand Pipe 1.5ft",
+                "price": ""
+            },
+            {
+                "item_code": "STA007",
+                "item_description": "Stand Pipe 1ft",
+                "price": ""
+            },
+            {
+                "item_code": "STA008",
+                "item_description": "Stand Pipe 3ft",
+                "price": ""
+            },
+            {
+                "item_code": "STO006",
+                "item_description": "Stop Cork Cons 1/2 Cobra",
+                "price": ""
+            },
+            {
+                "item_code": "TAN006",
+                "item_description": "Tank Connector 1",
+                "price": ""
+            },
+            {
+                "item_code": "TAN007",
+                "item_description": "Tank Connector 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "TAN009",
+                "item_description": "Tank Connector 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "TAP001",
+                "item_description": "Tap Garden 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "TAP002",
+                "item_description": "Tap Garden 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "TAP003",
+                "item_description": "Tap Lockable 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "TAP004",
+                "item_description": "Tap Lockable 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "TAP007",
+                "item_description": "Tap Pegler 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "TAP008",
+                "item_description": "Tap Pegler 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "THR001",
+                "item_description": "Thread Tape Small",
+                "price": ""
+            },
+            {
+                "item_code": "THR002",
+                "item_description": "Thread Tape Big",
+                "price": ""
+            },
+            {
+                "item_code": "TIS001",
+                "item_description": "Tissue Holder",
+                "price": ""
+            },
+            {
+                "item_code": "TIS004",
+                "item_description": "Tissue Holder Metallic",
+                "price": ""
+            },
+            {
+                "item_code": "TIS006",
+                "item_description": "Tissue Holder N020",
+                "price": ""
+            },
+            {
+                "item_code": "TIS007",
+                "item_description": "Tissue Holder N295b",
+                "price": ""
+            },
+            {
+                "item_code": "TOI001",
+                "item_description": "Toilet P-Trap",
+                "price": ""
+            },
+            {
+                "item_code": "TOI004",
+                "item_description": "Toilet S-Trap",
+                "price": ""
+            },
+            {
+                "item_code": "TOW002",
+                "item_description": "Towel Brackets",
+                "price": ""
+            },
+            {
+                "item_code": "TOW004",
+                "item_description": "Towel Holder Ring-chrome",
+                "price": ""
+            },
+            {
+                "item_code": "TOW005",
+                "item_description": "Towel Rail 14",
+                "price": ""
+            },
+            {
+                "item_code": "TOW006",
+                "item_description": "Towel Rail 18",
+                "price": ""
+            },
+            {
+                "item_code": "TRA001",
+                "item_description": "Trans Africa Q35-Hm",
+                "price": ""
+            },
+            {
+                "item_code": "TRA004",
+                "item_description": "Transafrica Sdw750",
+                "price": ""
+            },
+            {
+                "item_code": "TRA005",
+                "item_description": "Transafrica Sq35",
+                "price": ""
+            },
+            {
+                "item_code": "TRA006",
+                "item_description": "Transafrica Sub Sm5",
+                "price": ""
+            },
+            {
+                "item_code": "TRI005",
+                "item_description": "Tripple Towel Bar",
+                "price": ""
+            },
+            {
+                "item_code": "URI001",
+                "item_description": "Urinal Bowl",
+                "price": ""
+            },
+            {
+                "item_code": "VAL002",
+                "item_description": "Valve Socket 1",
+                "price": ""
+            },
+            {
+                "item_code": "VAL003",
+                "item_description": "Valve Socket 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "VAL004",
+                "item_description": "Valve Socket 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "VAL005",
+                "item_description": "Valve Socket 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "VAL008",
+                "item_description": "Valve Socket 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "WAL014",
+                "item_description": "Wall Tap Short Neck",
+                "price": ""
+            },
+            {
+                "item_code": "WAL015",
+                "item_description": "Wall Tap Long  Neck",
+                "price": ""
+            },
+            {
+                "item_code": "WAL016",
+                "item_description": "Wall Tap Sprout 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "WAS001",
+                "item_description": "Wash Hand Basin 14",
+                "price": ""
+            },
+            {
+                "item_code": "WAS002",
+                "item_description": "Wash Hand Basin 18",
+                "price": ""
+            },
+            {
+                "item_code": "WAS003",
+                "item_description": "Wash Hand Basin 18x12",
+                "price": ""
+            },
+            {
+                "item_code": "WAS004",
+                "item_description": "Wash Hand Basin 22",
+                "price": ""
+            },
+            {
+                "item_code": "WAS005",
+                "item_description": "Wash Hand Basin 22x16",
+                "price": ""
+            },
+            {
+                "item_code": "WAS006",
+                "item_description": "Wash Hand Basin Corner",
+                "price": ""
+            },
+            {
+                "item_code": "WAS007",
+                "item_description": "Wash Hand Basin Screw",
+                "price": ""
+            },
+            {
+                "item_code": "WAT003",
+                "item_description": "Water Meter Davis 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "WAT004",
+                "item_description": "Water Meter Kent 1",
+                "price": ""
+            },
+            {
+                "item_code": "WAT005",
+                "item_description": "Water Meter Kent 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "WAT006",
+                "item_description": "Water Meter Kent 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "WAT020",
+                "item_description": "Waterpump Alpha 1.0hp",
+                "price": ""
+            },
+            {
+                "item_code": "WAT021",
+                "item_description": "Waterpump Dab 0.5hp",
+                "price": ""
+            },
+            {
+                "item_code": "WAT022",
+                "item_description": "Waterpump Dab 1.0hp",
+                "price": ""
+            },
+            {
+                "item_code": "WAT023",
+                "item_description": "Waterpump Dayliff 1HP",
+                "price": ""
+            },
+            {
+                "item_code": "WAT024",
+                "item_description": "Waterpump Pedrallo 0.5HP",
+                "price": ""
+            },
+            {
+                "item_code": "PVC095",
+                "item_description": "PVC w/pipe HG 4\"",
+                "price": ""
+            },
+            {
+                "item_code": "PRE003",
+                "item_description": "Pressure Vessel",
+                "price": ""
+            },
+            {
+                "item_code": "PVC096",
+                "item_description": "Pvc W/Pipe Metro 11/4\"",
+                "price": ""
+            },
+            {
+                "item_code": "PPR153",
+                "item_description": "Ppr clip 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "PPR154",
+                "item_description": "Ppr clip 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "FLE012",
+                "item_description": "Flex Tube Metallic 1/2x1ft",
+                "price": ""
+            },
+            {
+                "item_code": "PPR155",
+                "item_description": "Ppr Pipe Danco 63mm",
+                "price": ""
+            },
+            {
+                "item_code": "HDP005",
+                "item_description": "Hdpe pipe roll 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "HDP006",
+                "item_description": "Hdpe pipe roll 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "GIR001",
+                "item_description": "Gi Red Bush 11/2x1/2",
+                "price": ""
+            },
+            {
+                "item_code": "PPR156",
+                "item_description": "Ppr M/Elbow 63x2",
+                "price": ""
+            },
+            {
+                "item_code": "BAL024",
+                "item_description": "Ball Valve 11/4 pegler",
+                "price": ""
+            },
+            {
+                "item_code": "TIS008",
+                "item_description": "Tissue Holder NEMSI Silver",
+                "price": ""
+            },
+            {
+                "item_code": "TIS009",
+                "item_description": "Tissue Holder NEMSI Black",
+                "price": ""
+            },
+            {
+                "item_code": "BAL025",
+                "item_description": "Ball Cork 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "TOW015",
+                "item_description": "Towel Bar-single",
+                "price": ""
+            },
+            {
+                "item_code": "TOW016",
+                "item_description": "Towel Holder -Premium square-black",
+                "price": ""
+            },
+            {
+                "item_code": "SPR025",
+                "item_description": "Sprinkler 3 arms-schneeberg",
+                "price": ""
+            },
+            {
+                "item_code": "SHO014",
+                "item_description": "Shower Concealed 4way",
+                "price": ""
+            },
+            {
+                "item_code": "SHO015",
+                "item_description": "Shower Concealed 5way",
+                "price": ""
+            },
+            {
+                "item_code": "KIT008",
+                "item_description": "Kitchen Sink S/B S/D Light",
+                "price": ""
+            },
+            {
+                "item_code": "KIT009",
+                "item_description": "Kitchen Sink Pamofit SB/SD",
+                "price": ""
+            },
+            {
+                "item_code": "KIT010",
+                "item_description": "Kitchen Sink Pamofit DB/SD",
+                "price": ""
+            },
+            {
+                "item_code": "PPR158",
+                "item_description": "Ppr F/Thread Union 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "BAL026",
+                "item_description": "Ball Valve 3/4-Lirlee",
+                "price": ""
+            },
+            {
+                "item_code": "MAG001",
+                "item_description": "Magic Connector 11/2 CHROME",
+                "price": ""
+            },
+            {
+                "item_code": "MAG002",
+                "item_description": "Magic Connector 11/4 CHROME",
+                "price": ""
+            }
+
+        ]
+    }
+]

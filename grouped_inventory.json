@@ -1,0 +1,2563 @@
+[
+    {
+        "category_name": "GENERAL HARDWARE",
+        "products": [
+            {
+                "item_code": "ALL001",
+                "item_description": "Allan Key Big",
+                "price": ""
+            },
+            {
+                "item_code": "ANG001",
+                "item_description": "Angle Brackets",
+                "price": ""
+            },
+            {
+                "item_code": "BAL002",
+                "item_description": "Ball Catch Gold Small",
+                "price": ""
+            },
+            {
+                "item_code": "BAS070",
+                "item_description": "Basin Screw",
+                "price": ""
+            },
+            {
+                "item_code": "BLA014",
+                "item_description": "Bladder",
+                "price": ""
+            },
+            {
+                "item_code": "BOL001",
+                "item_description": "Bolt & Nut 10x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "BOL002",
+                "item_description": "Bolt & Nut 10x2",
+                "price": ""
+            },
+            {
+                "item_code": "BOL003",
+                "item_description": "Bolt & Nut 10x21/2",
+                "price": ""
+            },
+            {
+                "item_code": "BOL004",
+                "item_description": "Bolt & Nut 10x3",
+                "price": ""
+            },
+            {
+                "item_code": "BOL005",
+                "item_description": "Bolt & Nut 12x11/2",
+                "price": ""
+            },
+            {
+                "item_code": "BOL006",
+                "item_description": "Bolt & Nut 12x2",
+                "price": ""
+            },
+            {
+                "item_code": "BOL007",
+                "item_description": "Bolt & Nut No 10",
+                "price": ""
+            },
+            {
+                "item_code": "BOL008",
+                "item_description": "Bolt & Nut No 12",
+                "price": ""
+            },
+            {
+                "item_code": "BOL009",
+                "item_description": "Bolt & Nut No 13",
+                "price": ""
+            },
+            {
+                "item_code": "BOL010",
+                "item_description": "Bolt & Nut No 14",
+                "price": ""
+            },
+            {
+                "item_code": "BOL011",
+                "item_description": "Bolt & Nut No 17",
+                "price": ""
+            },
+            {
+                "item_code": "BOL012",
+                "item_description": "Bolt & Nut No 22",
+                "price": ""
+            },
+            {
+                "item_code": "BRA001",
+                "item_description": "Construction Net Mtrs",
+                "price": ""
+            },
+            {
+                "item_code": "BRA002",
+                "item_description": "Brazafric Shade Net Roll",
+                "price": ""
+            },
+            {
+                "item_code": "BRA003",
+                "item_description": "Brazafric Shade Mtrs",
+                "price": ""
+            },
+            {
+                "item_code": "BUC001",
+                "item_description": "Buckets",
+                "price": ""
+            },
+            {
+                "item_code": "BUS019",
+                "item_description": "Bush smooth 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "CAR001",
+                "item_description": "Carbon Brush Bosch",
+                "price": ""
+            },
+            {
+                "item_code": "CAR002",
+                "item_description": "Carbon Brush Dewal",
+                "price": ""
+            },
+            {
+                "item_code": "CAR003",
+                "item_description": "Carbon Brush Small",
+                "price": ""
+            },
+            {
+                "item_code": "CAR004",
+                "item_description": "Carpet Brush",
+                "price": ""
+            },
+            {
+                "item_code": "CER002",
+                "item_description": "Cerrazo 1l",
+                "price": ""
+            },
+            {
+                "item_code": "CER003",
+                "item_description": "Cerrazo 5l",
+                "price": ""
+            },
+            {
+                "item_code": "CHA011",
+                "item_description": "Chair Rubber Square 1",
+                "price": ""
+            },
+            {
+                "item_code": "CHA012",
+                "item_description": "Chair Rubber Square 2",
+                "price": ""
+            },
+            {
+                "item_code": "CHA013",
+                "item_description": "Chair Rubber Square 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "CHA014",
+                "item_description": "Chalk pcs",
+                "price": ""
+            },
+            {
+                "item_code": "CHA015",
+                "item_description": "Chalk Line",
+                "price": ""
+            },
+            {
+                "item_code": "CHA016",
+                "item_description": "Chalk pkt",
+                "price": ""
+            },
+            {
+                "item_code": "CHR001",
+                "item_description": "Chrome Brackets 1",
+                "price": ""
+            },
+            {
+                "item_code": "CHR002",
+                "item_description": "Chrome Brackets 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "CHR003",
+                "item_description": "Chrome Brackets 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "CHR004",
+                "item_description": "Chrome Pipe 1",
+                "price": ""
+            },
+            {
+                "item_code": "CHR005",
+                "item_description": "Chrome Pipe 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "CLE001",
+                "item_description": "Cleanox 1l",
+                "price": ""
+            },
+            {
+                "item_code": "CLE003",
+                "item_description": "Clear Tape",
+                "price": ""
+            },
+            {
+                "item_code": "CLE004",
+                "item_description": "Clear Tape Big",
+                "price": ""
+            },
+            {
+                "item_code": "CLO006",
+                "item_description": "Cloth Line",
+                "price": ""
+            },
+            {
+                "item_code": "COA002",
+                "item_description": "Coat Hook Double",
+                "price": ""
+            },
+            {
+                "item_code": "COA003",
+                "item_description": "Coat Hook Single",
+                "price": ""
+            },
+            {
+                "item_code": "COA004",
+                "item_description": "Coat Hook Tripple",
+                "price": ""
+            },
+            {
+                "item_code": "COM001",
+                "item_description": "Complete Hinges 1",
+                "price": ""
+            },
+            {
+                "item_code": "CON012",
+                "item_description": "Construction Net",
+                "price": ""
+            },
+            {
+                "item_code": "COR010",
+                "item_description": "Gypsum Corner Tape",
+                "price": ""
+            },
+            {
+                "item_code": "COU001",
+                "item_description": "Counter Sunk Screw 1",
+                "price": ""
+            },
+            {
+                "item_code": "COU002",
+                "item_description": "Counter Sunk Screw 1.5",
+                "price": ""
+            },
+            {
+                "item_code": "COU003",
+                "item_description": "Counter Sunk Screw 2 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "COU004",
+                "item_description": "Counter Sunk Screw 2",
+                "price": ""
+            },
+            {
+                "item_code": "COU005",
+                "item_description": "Counter Sunk Screw Pcs",
+                "price": ""
+            },
+            {
+                "item_code": "COU006",
+                "item_description": "Countersank Screws 1",
+                "price": ""
+            },
+            {
+                "item_code": "CUP001",
+                "item_description": "Cup Washers",
+                "price": ""
+            },
+            {
+                "item_code": "CUR001",
+                "item_description": "Curtain Balls Black",
+                "price": ""
+            },
+            {
+                "item_code": "CUR002",
+                "item_description": "Curtain Balls Copper",
+                "price": ""
+            },
+            {
+                "item_code": "CUR003",
+                "item_description": "Curtain Balls Gold",
+                "price": ""
+            },
+            {
+                "item_code": "CUR004",
+                "item_description": "Curtain Balls Silver",
+                "price": ""
+            },
+            {
+                "item_code": "CUR005",
+                "item_description": "Curtain Balls White",
+                "price": ""
+            },
+            {
+                "item_code": "CUR006",
+                "item_description": "Curtain Brackets Black",
+                "price": ""
+            },
+            {
+                "item_code": "CUR007",
+                "item_description": "Curtain Brackets Copper",
+                "price": ""
+            },
+            {
+                "item_code": "CUR008",
+                "item_description": "Curtain Brackets White",
+                "price": ""
+            },
+            {
+                "item_code": "CUR009",
+                "item_description": "Curtain Caps Black",
+                "price": ""
+            },
+            {
+                "item_code": "CUR010",
+                "item_description": "Curtain Caps Copper",
+                "price": ""
+            },
+            {
+                "item_code": "CUR011",
+                "item_description": "Curtain Caps Gold",
+                "price": ""
+            },
+            {
+                "item_code": "CUR012",
+                "item_description": "Curtain Caps Silver",
+                "price": ""
+            },
+            {
+                "item_code": "CUR013",
+                "item_description": "Curtain Caps White",
+                "price": ""
+            },
+            {
+                "item_code": "CUR014",
+                "item_description": "Curtain Hooks",
+                "price": ""
+            },
+            {
+                "item_code": "CUR015",
+                "item_description": "Curtain Hooks Roller",
+                "price": ""
+            },
+            {
+                "item_code": "CUR016",
+                "item_description": "Curtain Line",
+                "price": ""
+            },
+            {
+                "item_code": "CUR017",
+                "item_description": "Curtain Ring",
+                "price": ""
+            },
+            {
+                "item_code": "CUR018",
+                "item_description": "Curtain Rod 2m",
+                "price": ""
+            },
+            {
+                "item_code": "CUR019",
+                "item_description": "Curtain Rod 3m",
+                "price": ""
+            },
+            {
+                "item_code": "CUR020",
+                "item_description": "Curtain Rod Cap",
+                "price": ""
+            },
+            {
+                "item_code": "CUR021",
+                "item_description": "Curtain Rod Imp 2m",
+                "price": ""
+            },
+            {
+                "item_code": "CUR022",
+                "item_description": "Curtain Rod Imp 3m",
+                "price": ""
+            },
+            {
+                "item_code": "CUR023",
+                "item_description": "Curtain Rod Jk 2m Bronze",
+                "price": ""
+            },
+            {
+                "item_code": "CUR024",
+                "item_description": "Curtain Rod Jk 2m Gold",
+                "price": ""
+            },
+            {
+                "item_code": "CUR025",
+                "item_description": "Curtain Rod Jk 2m White",
+                "price": ""
+            },
+            {
+                "item_code": "CUR026",
+                "item_description": "Curtain Rod Jk 3m Bronze",
+                "price": ""
+            },
+            {
+                "item_code": "CUR027",
+                "item_description": "Curtain Rod Jk 3m White",
+                "price": ""
+            },
+            {
+                "item_code": "CUR028",
+                "item_description": "Curtain Rod Jk 6m Black",
+                "price": ""
+            },
+            {
+                "item_code": "CUR029",
+                "item_description": "Curtain Rod Jk 6m White",
+                "price": ""
+            },
+            {
+                "item_code": "DOG001",
+                "item_description": "Dog Chain No35",
+                "price": ""
+            },
+            {
+                "item_code": "DOG002",
+                "item_description": "Dog Chain No45",
+                "price": ""
+            },
+            {
+                "item_code": "DOO003",
+                "item_description": "Door Closer",
+                "price": ""
+            },
+            {
+                "item_code": "DOO006",
+                "item_description": "Door Stopper Steel",
+                "price": ""
+            },
+            {
+                "item_code": "DOO013",
+                "item_description": "Double Sided Tape",
+                "price": ""
+            },
+            {
+                "item_code": "DPC001",
+                "item_description": "Dpc",
+                "price": ""
+            },
+            {
+                "item_code": "DRA004",
+                "item_description": "Drawer Handle Big",
+                "price": ""
+            },
+            {
+                "item_code": "DRA005",
+                "item_description": "Drawer Handle Small Gold",
+                "price": ""
+            },
+            {
+                "item_code": "DRA006",
+                "item_description": "Drawer Handle Small Silver",
+                "price": ""
+            },
+            {
+                "item_code": "DRA007",
+                "item_description": "Drawer Handles Brass 6",
+                "price": ""
+            },
+            {
+                "item_code": "DRA008",
+                "item_description": "Drawer Handles Brass 9",
+                "price": ""
+            },
+            {
+                "item_code": "DRA010",
+                "item_description": "Drawer Handles Silver 9",
+                "price": ""
+            },
+            {
+                "item_code": "DRA011",
+                "item_description": "Drawer Knob Big",
+                "price": ""
+            },
+            {
+                "item_code": "DRA012",
+                "item_description": "Drawer Knob Gold",
+                "price": ""
+            },
+            {
+                "item_code": "DRA013",
+                "item_description": "Drawer Knob Plastic",
+                "price": ""
+            },
+            {
+                "item_code": "DRA014",
+                "item_description": "Drawer Knobs",
+                "price": ""
+            },
+            {
+                "item_code": "DRA016",
+                "item_description": "Drawer Lock Evergood",
+                "price": ""
+            },
+            {
+                "item_code": "DRA017",
+                "item_description": "Drawer Lock Moon",
+                "price": ""
+            },
+            {
+                "item_code": "DRA018",
+                "item_description": "Drawer Rail 10",
+                "price": ""
+            },
+            {
+                "item_code": "DRA020",
+                "item_description": "Drawer Rail D/Extension 12",
+                "price": ""
+            },
+            {
+                "item_code": "DRA022",
+                "item_description": "Drawer Rail Hydro 14",
+                "price": ""
+            },
+            {
+                "item_code": "DRA023",
+                "item_description": "Drawer Rail D/Extension 16",
+                "price": ""
+            },
+            {
+                "item_code": "DRA024",
+                "item_description": "Drawer Rail Hydro 18",
+                "price": ""
+            },
+            {
+                "item_code": "DRA025",
+                "item_description": "Drawer Rail Hydro 20",
+                "price": ""
+            },
+            {
+                "item_code": "DRA026",
+                "item_description": "Drawer Rail Hydro 12",
+                "price": ""
+            },
+            {
+                "item_code": "DRA028",
+                "item_description": "Drawer Handles Brass 8",
+                "price": ""
+            },
+            {
+                "item_code": "DUC001",
+                "item_description": "Duct Tape",
+                "price": ""
+            },
+            {
+                "item_code": "DUC002",
+                "item_description": "Duct Tape 2",
+                "price": ""
+            },
+            {
+                "item_code": "DUS001",
+                "item_description": "Dust Mask Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "DUS002",
+                "item_description": "Dust Mask Plastic",
+                "price": ""
+            },
+            {
+                "item_code": "DUS003",
+                "item_description": "Dust Mask Pcs",
+                "price": ""
+            },
+            {
+                "item_code": "EAR001",
+                "item_description": "Earthrod 4FT",
+                "price": ""
+            },
+            {
+                "item_code": "EAR002",
+                "item_description": "Earthrod 5FT",
+                "price": ""
+            },
+            {
+                "item_code": "EME001",
+                "item_description": "Emery Cloth No. 0",
+                "price": ""
+            },
+            {
+                "item_code": "EYE001",
+                "item_description": "Eye Hook 4",
+                "price": ""
+            },
+            {
+                "item_code": "EYE002",
+                "item_description": "Eye Hook No 10",
+                "price": ""
+            },
+            {
+                "item_code": "EYE003",
+                "item_description": "Eye Hook No 12",
+                "price": ""
+            },
+            {
+                "item_code": "EYE004",
+                "item_description": "Eye Hook No 2",
+                "price": ""
+            },
+            {
+                "item_code": "EYE005",
+                "item_description": "Eye Hook No 3",
+                "price": ""
+            },
+            {
+                "item_code": "EYE006",
+                "item_description": "Eye Hook No 4",
+                "price": ""
+            },
+            {
+                "item_code": "EYE007",
+                "item_description": "Eye Hook No 6",
+                "price": ""
+            },
+            {
+                "item_code": "EYE008",
+                "item_description": "Eye Hook No 8",
+                "price": ""
+            },
+            {
+                "item_code": "FLA006",
+                "item_description": "Flashband 1m",
+                "price": ""
+            },
+            {
+                "item_code": "FLA007",
+                "item_description": "Flusher Plugs pcs",
+                "price": ""
+            },
+            {
+                "item_code": "FLA008",
+                "item_description": "Flashing Handle L-G",
+                "price": ""
+            },
+            {
+                "item_code": "FLA009",
+                "item_description": "Flashing Handle H/G",
+                "price": ""
+            },
+            {
+                "item_code": "GLA003",
+                "item_description": "Gladiator 500ml",
+                "price": ""
+            },
+            {
+                "item_code": "GLO002",
+                "item_description": "Gloves Leather 10",
+                "price": ""
+            },
+            {
+                "item_code": "GLO004",
+                "item_description": "Gloves Leather H/G",
+                "price": ""
+            },
+            {
+                "item_code": "GLO005",
+                "item_description": "Gloves Leather Hg 14'",
+                "price": ""
+            },
+            {
+                "item_code": "GLO007",
+                "item_description": "Gloves Rubber H/G",
+                "price": ""
+            },
+            {
+                "item_code": "GLO008",
+                "item_description": "Gloves Rubber L/G",
+                "price": ""
+            },
+            {
+                "item_code": "GRA001",
+                "item_description": "Gratings 4",
+                "price": ""
+            },
+            {
+                "item_code": "GRA002",
+                "item_description": "Gratings Metal",
+                "price": ""
+            },
+            {
+                "item_code": "GRE002",
+                "item_description": "Grey Oxide Powder 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "GRE003",
+                "item_description": "Green  Oxide 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "GUM004",
+                "item_description": "Gumboot  No 6",
+                "price": ""
+            },
+            {
+                "item_code": "GUM005",
+                "item_description": "Gumboot  No 7",
+                "price": ""
+            },
+            {
+                "item_code": "GUM006",
+                "item_description": "Gumboot  No 8",
+                "price": ""
+            },
+            {
+                "item_code": "GUM007",
+                "item_description": "Gumboot  No 10",
+                "price": ""
+            },
+            {
+                "item_code": "GYP002",
+                "item_description": "Gypsum Angle Line",
+                "price": ""
+            },
+            {
+                "item_code": "GYP011",
+                "item_description": "Gypsum Channel",
+                "price": ""
+            },
+            {
+                "item_code": "GYP013",
+                "item_description": "Gypsum Corner Bead",
+                "price": ""
+            },
+            {
+                "item_code": "GYP016",
+                "item_description": "Gypsum Fibre Tape",
+                "price": ""
+            },
+            {
+                "item_code": "GYP023",
+                "item_description": "Gypsum Scissors",
+                "price": ""
+            },
+            {
+                "item_code": "GYP024",
+                "item_description": "Gypsum Screw 1.5",
+                "price": ""
+            },
+            {
+                "item_code": "GYP025",
+                "item_description": "Gypsum Screws 1 *1000pcs",
+                "price": ""
+            },
+            {
+                "item_code": "GYP026",
+                "item_description": "Gypsum Screws 1 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "GYP027",
+                "item_description": "Gypsum Screws 11/2 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "GYP028",
+                "item_description": "Gypsum Screws 11/4",
+                "price": ""
+            },
+            {
+                "item_code": "GYP029",
+                "item_description": "Gypsum Screws 2 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "GYP030",
+                "item_description": "Gypsum Screws 3/4 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "GYP031",
+                "item_description": "Gypsum Screws 3/4 *1000pcs",
+                "price": ""
+            },
+            {
+                "item_code": "GYP032",
+                "item_description": "Gypsum Screws Assorted",
+                "price": ""
+            },
+            {
+                "item_code": "GYP034",
+                "item_description": "Gypsum Stud",
+                "price": ""
+            },
+            {
+                "item_code": "HAS001",
+                "item_description": "Hasp & Staple 2",
+                "price": ""
+            },
+            {
+                "item_code": "HAS002",
+                "item_description": "Hasp & Staple 21/2",
+                "price": ""
+            },
+            {
+                "item_code": "HAS003",
+                "item_description": "Hasp & Staple 3",
+                "price": ""
+            },
+            {
+                "item_code": "HAS004",
+                "item_description": "Hasp & Staple 4",
+                "price": ""
+            },
+            {
+                "item_code": "HAS005",
+                "item_description": "Hasp Juakali",
+                "price": ""
+            },
+            {
+                "item_code": "HEL001",
+                "item_description": "Helmets Red",
+                "price": ""
+            },
+            {
+                "item_code": "HEL002",
+                "item_description": "Helmets Blue",
+                "price": ""
+            },
+            {
+                "item_code": "HEL003",
+                "item_description": "Helmets white",
+                "price": ""
+            },
+            {
+                "item_code": "HEL004",
+                "item_description": "Helmets yellow",
+                "price": ""
+            },
+            {
+                "item_code": "HIN002",
+                "item_description": "Hinges 1.5",
+                "price": ""
+            },
+            {
+                "item_code": "HIN003",
+                "item_description": "Hinges 2",
+                "price": ""
+            },
+            {
+                "item_code": "HIN004",
+                "item_description": "Hinges 2.5",
+                "price": ""
+            },
+            {
+                "item_code": "HIN005",
+                "item_description": "Hinges 3",
+                "price": ""
+            },
+            {
+                "item_code": "HIN006",
+                "item_description": "Hinges 4",
+                "price": ""
+            },
+            {
+                "item_code": "HIN009",
+                "item_description": "Hinges Butterfly",
+                "price": ""
+            },
+            {
+                "item_code": "HIN010",
+                "item_description": "Hinges Chrome 4",
+                "price": ""
+            },
+            {
+                "item_code": "HIN011",
+                "item_description": "Hinges Double Action 4",
+                "price": ""
+            },
+            {
+                "item_code": "HIN015",
+                "item_description": "Hinges Oxford Brass",
+                "price": ""
+            },
+            {
+                "item_code": "HIN016",
+                "item_description": "Hinges Oxford Silver",
+                "price": ""
+            },
+            {
+                "item_code": "HOS001",
+                "item_description": "Hose Clip 1",
+                "price": ""
+            },
+            {
+                "item_code": "HOS002",
+                "item_description": "Hose Clip 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "HOS003",
+                "item_description": "Hose Clip 2",
+                "price": ""
+            },
+            {
+                "item_code": "HOS004",
+                "item_description": "Hose Clip 4",
+                "price": ""
+            },
+            {
+                "item_code": "HOS005",
+                "item_description": "Hose Clip Hd 1",
+                "price": ""
+            },
+            {
+                "item_code": "HOS006",
+                "item_description": "Hose Clip Hd 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "HOS007",
+                "item_description": "Hose Clip Hd 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "HOS008",
+                "item_description": "Hose Connector 1/2:",
+                "price": ""
+            },
+            {
+                "item_code": "KHA001",
+                "item_description": "KHAKI BAGS NO5",
+                "price": ""
+            },
+            {
+                "item_code": "KHA002",
+                "item_description": "KHAKI BAG NO 2",
+                "price": ""
+            },
+            {
+                "item_code": "KHA003",
+                "item_description": "KHAKI BAG NO 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "LIM001",
+                "item_description": "Lime 25kg",
+                "price": ""
+            },
+            {
+                "item_code": "LOU001",
+                "item_description": "Louver Frame",
+                "price": ""
+            },
+            {
+                "item_code": "MAC001",
+                "item_description": "Machine Oil",
+                "price": ""
+            },
+            {
+                "item_code": "MAG004",
+                "item_description": "Magnetic Socket 10mm",
+                "price": ""
+            },
+            {
+                "item_code": "MAG005",
+                "item_description": "Magnetic Socket 8mm",
+                "price": ""
+            },
+            {
+                "item_code": "MAL003",
+                "item_description": "Malpha Hinges Hydraulic",
+                "price": ""
+            },
+            {
+                "item_code": "MAN007",
+                "item_description": "Manilla Roll 100m",
+                "price": ""
+            },
+            {
+                "item_code": "MAN008",
+                "item_description": "Manilla Roll 500m",
+                "price": ""
+            },
+            {
+                "item_code": "MAN009",
+                "item_description": "Manilla Rope 10mm",
+                "price": ""
+            },
+            {
+                "item_code": "MAN010",
+                "item_description": "Manilla Rope 12mm",
+                "price": ""
+            },
+            {
+                "item_code": "MAN011",
+                "item_description": "Manilla Rope 14mm",
+                "price": ""
+            },
+            {
+                "item_code": "MAN012",
+                "item_description": "Manilla Rope 16mm",
+                "price": ""
+            },
+            {
+                "item_code": "MAN013",
+                "item_description": "Manilla Rope 18ply",
+                "price": ""
+            },
+            {
+                "item_code": "MAN014",
+                "item_description": "Manilla Rope 42ply",
+                "price": ""
+            },
+            {
+                "item_code": "MAN015",
+                "item_description": "Manilla Rope 6mm",
+                "price": ""
+            },
+            {
+                "item_code": "MAN016",
+                "item_description": "Manilla Rope 8mm",
+                "price": ""
+            },
+            {
+                "item_code": "MAN017",
+                "item_description": "Manilla  Roll 1000m",
+                "price": ""
+            },
+            {
+                "item_code": "MAN020",
+                "item_description": "Manilla rope 10mm roll",
+                "price": ""
+            },
+            {
+                "item_code": "MDF010",
+                "item_description": "Mdf Screw 2 Blue Essential",
+                "price": ""
+            },
+            {
+                "item_code": "MDF011",
+                "item_description": "Mdf Screw 2.5 Blue Essential",
+                "price": ""
+            },
+            {
+                "item_code": "MDF012",
+                "item_description": "Mdf Screws 1 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "MDF013",
+                "item_description": "Mdf Screws 1/12 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "MDF014",
+                "item_description": "Mdf Screws 11/4 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "MDF015",
+                "item_description": "Mdf Screws 2 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "MDF016",
+                "item_description": "Mdf Screws 21/2 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "MDF017",
+                "item_description": "Mdf Screws 3 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "MDF018",
+                "item_description": "Mdf Screws 3/4 Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "MDF019",
+                "item_description": "MDF SCREWS 4 PKT",
+                "price": ""
+            },
+            {
+                "item_code": "MIR001",
+                "item_description": "Mirror Screws Pcs",
+                "price": ""
+            },
+            {
+                "item_code": "MIR002",
+                "item_description": "Mirror Screws Pkt",
+                "price": ""
+            },
+            {
+                "item_code": "NUT001",
+                "item_description": "Nut Screw",
+                "price": ""
+            },
+            {
+                "item_code": "PAC001",
+                "item_description": "Packing Tape Clear",
+                "price": ""
+            },
+             {
+                "item_code": "PAC002",
+                "item_description": "PACKING BAG BIG",
+                "price": ""
+            },
+            {
+                "item_code": "PAC003",
+                "item_description": "PACKING BAG MEDIUM",
+                "price": ""
+            },
+            {
+                "item_code": "PAC004",
+                "item_description": "PACKING BAG SMALL",
+                "price": ""
+            },
+            {
+                "item_code": "PAD001",
+                "item_description": "Padbolt 6",
+                "price": ""
+            },
+            {
+                "item_code": "PAD002",
+                "item_description": "Padbolt China",
+                "price": ""
+            },
+            {
+                "item_code": "PAD004",
+                "item_description": "Padbolt Jk Big",
+                "price": ""
+            },
+            {
+                "item_code": "PAD005",
+                "item_description": "Padbolt Jk Small",
+                "price": ""
+            },
+            {
+                "item_code": "PAD006",
+                "item_description": "Padbolt Juakali",
+                "price": ""
+            },
+            {
+                "item_code": "PIA001",
+                "item_description": "Piano Hinges",
+                "price": ""
+            },
+            {
+                "item_code": "PLA015",
+                "item_description": "Plastic Poles",
+                "price": ""
+            },
+            {
+                "item_code": "POL003",
+                "item_description": "Polythene Black 15kg",
+                "price": ""
+            },
+            {
+                "item_code": "POL004",
+                "item_description": "Polythene Black 20kg",
+                "price": ""
+            },
+            {
+                "item_code": "POL005",
+                "item_description": "Polythene Black Mtrs",
+                "price": ""
+            },
+            {
+                "item_code": "POL006",
+                "item_description": "Polythene Clear Mtrs",
+                "price": ""
+            },
+            {
+                "item_code": "POL007",
+                "item_description": "Polythene Clear Roll",
+                "price": ""
+            },
+            {
+                "item_code": "POP001",
+                "item_description": "Pop Rivets 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "POP002",
+                "item_description": "Pop Rivets 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "RAW001",
+                "item_description": "Rawl Bolt M10",
+                "price": ""
+            },
+            {
+                "item_code": "RAW002",
+                "item_description": "Rawl Bolt M12",
+                "price": ""
+            },
+            {
+                "item_code": "RAW003",
+                "item_description": "Rawl Bolt M6",
+                "price": ""
+            },
+            {
+                "item_code": "RAW004",
+                "item_description": "Rawl Bolt M8",
+                "price": ""
+            },
+            {
+                "item_code": "RED001",
+                "item_description": "Red Oxide 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "REF001",
+                "item_description": "Reflector Vest",
+                "price": ""
+            },
+            {
+                "item_code": "RHI001",
+                "item_description": "Rhino Cement",
+                "price": ""
+            },
+            {
+                "item_code": "RIV001",
+                "item_description": "Rivet 1",
+                "price": ""
+            },
+            {
+                "item_code": "RIV002",
+                "item_description": "Rivet 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "RIV003",
+                "item_description": "Rivet Pcs",
+                "price": ""
+            },
+            {
+                "item_code": "RIV004",
+                "item_description": "Rivets 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "ROO001",
+                "item_description": "Roofing Bolt 1",
+                "price": ""
+            },
+            {
+                "item_code": "ROO002",
+                "item_description": "Roofing Bolt 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "ROO004",
+                "item_description": "Roofing Bolt 2.5",
+                "price": ""
+            },
+            {
+                "item_code": "ROO005",
+                "item_description": "Roofing Bolt 3",
+                "price": ""
+            },
+            {
+                "item_code": "ROO007",
+                "item_description": "Roofing Insulation 2mm-Roll",
+                "price": ""
+            },
+            {
+                "item_code": "ROO008",
+                "item_description": "Roofing Insulation 3mm-Roll",
+                "price": ""
+            },
+            {
+                "item_code": "ROO009",
+                "item_description": "Roofing Insulation 5mm-Roll",
+                "price": ""
+            },
+            {
+                "item_code": "ROO010",
+                "item_description": "Roofing Screw 1",
+                "price": ""
+            },
+            {
+                "item_code": "ROO011",
+                "item_description": "Roofing Screw 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "ROO012",
+                "item_description": "Roofing Screw 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "ROO013",
+                "item_description": "Roofing Washers",
+                "price": ""
+            },
+            {
+                "item_code": "ROO014",
+                "item_description": "Roofing Screw 2",
+                "price": ""
+            },
+            {
+                "item_code": "ROO015",
+                "item_description": "Roofing Bolt 2",
+                "price": ""
+            },
+            {
+                "item_code": "ROO016",
+                "item_description": "Roofing Screw 2.5\"",
+                "price": ""
+            },
+            {
+                "item_code": "SAC001",
+                "item_description": "Sacks",
+                "price": ""
+            },
+            {
+                "item_code": "SAD001",
+                "item_description": "Saddle Clips 1",
+                "price": ""
+            },
+            {
+                "item_code": "SAD002",
+                "item_description": "Saddle Clips 1/2 Hose",
+                "price": ""
+            },
+            {
+                "item_code": "SAD003",
+                "item_description": "Saddle Clips 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "SAD004",
+                "item_description": "Saddle Clips 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "SAD005",
+                "item_description": "Saddle Clips 2",
+                "price": ""
+            },
+            {
+                "item_code": "SAD006",
+                "item_description": "Saddle Clips 3",
+                "price": ""
+            },
+            {
+                "item_code": "SAD007",
+                "item_description": "Saddle Clips 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "SAD008",
+                "item_description": "Saddle Clips 4",
+                "price": ""
+            },
+            {
+                "item_code": "SAD009",
+                "item_description": "Saddle Clips Plastic 20mm",
+                "price": ""
+            },
+            {
+                "item_code": "SAD010",
+                "item_description": "Saddle Clips Plastic 25mm",
+                "price": ""
+            },
+            {
+                "item_code": "SAD011",
+                "item_description": "Saddle Clips Plastic 32mm",
+                "price": ""
+            },
+            {
+                "item_code": "SAD012",
+                "item_description": "Saddle Clips Plastic 38mm",
+                "price": ""
+            },
+            {
+                "item_code": "SAF001",
+                "item_description": "Safety Gloves",
+                "price": ""
+            },
+            {
+                "item_code": "SAN004",
+                "item_description": "Sand Paper No 0",
+                "price": ""
+            },
+            {
+                "item_code": "SAN005",
+                "item_description": "Sand Paper No 1",
+                "price": ""
+            },
+            {
+                "item_code": "SAN006",
+                "item_description": "Sand Paper P100 Roll",
+                "price": ""
+            },
+            {
+                "item_code": "SAN007",
+                "item_description": "Sand Paper P120 Roll",
+                "price": ""
+            },
+            {
+                "item_code": "SAN008",
+                "item_description": "Sand Paper P36 Roll",
+                "price": ""
+            },
+            {
+                "item_code": "SAN009",
+                "item_description": "Sand Paper P40 Roll",
+                "price": ""
+            },
+            {
+                "item_code": "SAN010",
+                "item_description": "Sand Paper P60 Roll",
+                "price": ""
+            },
+            {
+                "item_code": "SAN011",
+                "item_description": "Sand Paper P80 Roll",
+                "price": ""
+            },
+            {
+                "item_code": "SAN014",
+                "item_description": "Sanding Belt",
+                "price": ""
+            },
+            {
+                "item_code": "SAN015",
+                "item_description": "Sanding Disk 4",
+                "price": ""
+            },
+            {
+                "item_code": "SAN016",
+                "item_description": "Sanding Disk 7",
+                "price": ""
+            },
+            {
+                "item_code": "SAN017",
+                "item_description": "Sand Paper Water Proof",
+                "price": ""
+            },
+            {
+                "item_code": "SAN018",
+                "item_description": "Sand Paper P100 Ft",
+                "price": ""
+            },
+            {
+                "item_code": "SAN019",
+                "item_description": "Sand Paper P120 Ft",
+                "price": ""
+            },
+            {
+                "item_code": "SAN020",
+                "item_description": "Sand Paper P36 Ft",
+                "price": ""
+            },
+            {
+                "item_code": "SAN021",
+                "item_description": "Sand Paper P40 Ft",
+                "price": ""
+            },
+            {
+                "item_code": "SAN022",
+                "item_description": "Sand Paper P60 Ft",
+                "price": ""
+            },
+            {
+                "item_code": "SAN023",
+                "item_description": "Sand Paper P80 Ft",
+                "price": ""
+            },
+            {
+                "item_code": "SEL002",
+                "item_description": "Self Drilling Screws 1.5",
+                "price": ""
+            },
+            {
+                "item_code": "SEL003",
+                "item_description": "Self Drilling Screws 2",
+                "price": ""
+            },
+            {
+                "item_code": "SEL004",
+                "item_description": "Self Tapping 2",
+                "price": ""
+            },
+            {
+                "item_code": "SEL005",
+                "item_description": "Self Tapping 11/2",
+                "price": ""
+            },
+            {
+                "item_code": "SEL006",
+                "item_description": "Self Drilling Screws 1\"",
+                "price": ""
+            },
+            {
+                "item_code": "SEL007",
+                "item_description": "Self Drilling Screws 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "SHE004",
+                "item_description": "Shelf Bracket 10x12",
+                "price": ""
+            },
+            {
+                "item_code": "SHE005",
+                "item_description": "Shelf Bracket 8x10",
+                "price": ""
+            },
+            {
+                "item_code": "SHE007",
+                "item_description": "Shelf Brackets 6x10",
+                "price": ""
+            },
+            {
+                "item_code": "SHE008",
+                "item_description": "Shelf Brackets 6x8",
+                "price": ""
+            },
+            {
+                "item_code": "SHE010",
+                "item_description": "Orion Shellac Heavy 1l",
+                "price": ""
+            },
+            {
+                "item_code": "SHE011",
+                "item_description": "Orion Shellac Light 1/2l",
+                "price": ""
+            },
+            {
+                "item_code": "SHE012",
+                "item_description": "Orion Shellac Light 1l",
+                "price": ""
+            },
+            
+            {
+                "item_code": "SHE013",
+                "item_description": "Shelf Bracket 12x14",
+                "price": ""
+            },
+            {
+                "item_code": "SHE014",
+                "item_description": "Orion Shellac Heavy 1/2L",
+                "price": ""
+            },
+            {
+                "item_code": "SIS001",
+                "item_description": "Sisal Rope Big",
+                "price": ""
+            },
+            {
+                "item_code": "SIS002",
+                "item_description": "Sisal Rope Small",
+                "price": ""
+            },
+            {
+                "item_code": "SIS003",
+                "item_description": "Sisal Twine 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "SIS004",
+                "item_description": "Sisal Twine 2kg",
+                "price": ""
+            },
+            {
+                "item_code": "STY001",
+                "item_description": "Styro Foam 1",
+                "price": ""
+            },
+            {
+                "item_code": "STY002",
+                "item_description": "Styro Foam 1/2",
+                "price": ""
+            },
+            {
+                "item_code": "STY003",
+                "item_description": "Styro Foam 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "SUP001",
+                "item_description": "Super Glue Big",
+                "price": ""
+            },
+            {
+                "item_code": "TEE004",
+                "item_description": "Tee Hinges 4",
+                "price": ""
+            },
+            {
+                "item_code": "TEE005",
+                "item_description": "Tee Hinges 6",
+                "price": ""
+            },
+            {
+                "item_code": "TEE006",
+                "item_description": "Tee Hinges 8",
+                "price": ""
+            },
+            {
+                "item_code": "TIE007",
+                "item_description": "Tie Wrap White Pcs",
+                "price": ""
+            },
+            {
+                "item_code": "TOI002",
+                "item_description": "Toilet Screw",
+                "price": ""
+            },
+            {
+                "item_code": "TOI003",
+                "item_description": "Toilet Screws 3",
+                "price": ""
+            },
+            {
+                "item_code": "TOW009",
+                "item_description": "Tower Bolt Aluminium 2",
+                "price": ""
+            },
+            {
+                "item_code": "TOW010",
+                "item_description": "Tower Bolt Aluminium 3",
+                "price": ""
+            },
+            {
+                "item_code": "TOW011",
+                "item_description": "Tower Bolt Aluminium 4",
+                "price": ""
+            },
+            {
+                "item_code": "TOW012",
+                "item_description": "Tower Bolt Aluminium 6",
+                "price": ""
+            },
+            {
+                "item_code": "TOW013",
+                "item_description": "Tower Bolt China",
+                "price": ""
+            },
+            {
+                "item_code": "TOW014",
+                "item_description": "Tower Bolt Juakali",
+                "price": ""
+            },
+            {
+                "item_code": "UND001",
+                "item_description": "Undertaker 100ml",
+                "price": ""
+            },
+            {
+                "item_code": "UND002",
+                "item_description": "Undertaker 1l",
+                "price": ""
+            },
+            {
+                "item_code": "UND003",
+                "item_description": "Undertaker 250ml",
+                "price": ""
+            },
+            {
+                "item_code": "USP001",
+                "item_description": "Uspro Foam Premium 750ml",
+                "price": ""
+            },
+            {
+                "item_code": "USP002",
+                "item_description": "Uspro Foam Economy 750ml",
+                "price": ""
+            },
+            {
+                "item_code": "WAL006",
+                "item_description": "Wall Pass",
+                "price": ""
+            },
+            {
+                "item_code": "WAL007",
+                "item_description": "Wall Plug 10mm",
+                "price": ""
+            },
+            {
+                "item_code": "WAL008",
+                "item_description": "Wall Plug 12mm",
+                "price": ""
+            },
+            {
+                "item_code": "WAL009",
+                "item_description": "Wall Plug 6mm",
+                "price": ""
+            },
+            {
+                "item_code": "WAL010",
+                "item_description": "Wall Plug 8mm",
+                "price": ""
+            },
+            {
+                "item_code": "WAL011",
+                "item_description": "Wall Plug Pcs",
+                "price": ""
+            },
+            {
+                "item_code": "WAR001",
+                "item_description": "Warning Tape Red",
+                "price": ""
+            },
+            {
+                "item_code": "WAR002",
+                "item_description": "Warning Tape Yellow",
+                "price": ""
+            },
+            {
+                "item_code": "WAS008",
+                "item_description": "Washers Metal Large",
+                "price": ""
+            },
+            {
+                "item_code": "WAS009",
+                "item_description": "Washers Metal Small",
+                "price": ""
+            },
+            {
+                "item_code": "WAT018",
+                "item_description": "Waterproof Tape 10 Mtrs",
+                "price": ""
+            },
+            {
+                "item_code": "WAT019",
+                "item_description": "Waterproof Tape In Mtrs",
+                "price": ""
+            },
+            {
+                "item_code": "WIN001",
+                "item_description": "Window Fastener",
+                "price": ""
+            },
+            {
+                "item_code": "WIN002",
+                "item_description": "Window Fastener J.K",
+                "price": ""
+            },
+            {
+                "item_code": "WIN003",
+                "item_description": "Window Handle",
+                "price": ""
+            },
+            {
+                "item_code": "WIN004",
+                "item_description": "Window  Fastener Kent",
+                "price": ""
+            },
+            {
+                "item_code": "WIN005",
+                "item_description": "Window Stay",
+                "price": ""
+            },
+            {
+                "item_code": "WIN006",
+                "item_description": "Window Stay J.K",
+                "price": ""
+            },
+            {
+                "item_code": "WIN007",
+                "item_description": "Window Stay Kent",
+                "price": ""
+            },
+            {
+                "item_code": "WOO008",
+                "item_description": "Wood Screw Assorted",
+                "price": ""
+            },
+            {
+                "item_code": "WOO009",
+                "item_description": "Wood Screw Pkt 1",
+                "price": ""
+            },
+            {
+                "item_code": "WOO010",
+                "item_description": "Wood Screw Pkt 1.5",
+                "price": ""
+            },
+            {
+                "item_code": "WOO011",
+                "item_description": "Wood Screw Pkt 2",
+                "price": ""
+            },
+            {
+                "item_code": "WOO012",
+                "item_description": "Wood Screw Pkt 2.5",
+                "price": ""
+            },
+            {
+                "item_code": "WOO013",
+                "item_description": "Wood Screw Pkt 3",
+                "price": ""
+            },
+            {
+                "item_code": "WOO014",
+                "item_description": "Wood Screw Pkt 3/4",
+                "price": ""
+            },
+            {
+                "item_code": "WOO015",
+                "item_description": "Wood Screw Pkt 4",
+                "price": ""
+            },
+            {
+                "item_code": "WOO016",
+                "item_description": "Wood preservative Black 20l",
+                "price": ""
+            },
+            {
+                "item_code": "WOO017",
+                "item_description": "Wood preservative Black 5l",
+                "price": ""
+            },
+            {
+                "item_code": "WOO018",
+                "item_description": "Wood preservative Green 20l",
+                "price": ""
+            },
+            {
+                "item_code": "WOO019",
+                "item_description": "Wood preservative Green 5l",
+                "price": ""
+            },
+            {
+                "item_code": "YEL001",
+                "item_description": "Yellow Oxide 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "ZED003",
+                "item_description": "Zed Stopper",
+                "price": ""
+            }
+        ]
+    },
+    {
+        "category_name": "GLUES & SEALANTS",
+        "products": [
+            {
+                "item_code": "ARA003",
+                "item_description": "Araldite Glue",
+                "price": ""
+            },
+            {
+                "item_code": "BIT001",
+                "item_description": "Bituseal Typ 3 4kg",
+                "price": ""
+            },
+            {
+                "item_code": "BIT002",
+                "item_description": "Bituseal Typ 5 4kg",
+                "price": ""
+            },
+            {
+                "item_code": "BIT003",
+                "item_description": "Bituseal Type 3",
+                "price": ""
+            },
+            {
+                "item_code": "BIT004",
+                "item_description": "Bituseal Type 5",
+                "price": ""
+            },
+            {
+                "item_code": "BOD001",
+                "item_description": "Bodex 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "BOD002",
+                "item_description": "Bodex 200g",
+                "price": ""
+            },
+            {
+                "item_code": "BOD003",
+                "item_description": "Bodex 300g",
+                "price": ""
+            },
+            {
+                "item_code": "BOD007",
+                "item_description": "Bodyfiller 1/2kg",
+                "price": ""
+            },
+            {
+                "item_code": "BOD008",
+                "item_description": "Bodyfiller 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "BOD009",
+                "item_description": "Body filler 2.5kg",
+                "price": ""
+            },
+            {
+                "item_code": "BOD010",
+                "item_description": "Bodyfiller 4.5kg neo",
+                "price": ""
+            },
+            {
+                "item_code": "BOR001",
+                "item_description": "Bordex 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "BOR002",
+                "item_description": "Bordex 200g",
+                "price": ""
+            },
+            {
+                "item_code": "BOR003",
+                "item_description": "Bordex 300g",
+                "price": ""
+            },
+            {
+                "item_code": "CON021",
+                "item_description": "Conta 1/2kg",
+                "price": ""
+            },
+            {
+                "item_code": "CON022",
+                "item_description": "Conta 1/4kg",
+                "price": ""
+            },
+            {
+                "item_code": "CON023",
+                "item_description": "Conta 100ml",
+                "price": ""
+            },
+            {
+                "item_code": "CON024",
+                "item_description": "Conta 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "CON025",
+                "item_description": "Conta 4kg",
+                "price": ""
+            },
+            {
+                "item_code": "CON026",
+                "item_description": "Conta 50ml",
+                "price": ""
+            },
+            {
+                "item_code": "COR001",
+                "item_description": "Cornace Super Fix 2kg",
+                "price": ""
+            },
+            {
+                "item_code": "COR011",
+                "item_description": "Cornace Super Fix 5kg",
+                "price": ""
+            },
+            {
+                "item_code": "CRA001",
+                "item_description": "Crack Filla 1/2kg",
+                "price": ""
+            },
+            {
+                "item_code": "CRA002",
+                "item_description": "Crack Filla 21/2 Kg",
+                "price": ""
+            },
+            {
+                "item_code": "DRF001",
+                "item_description": "Dr Fixit FastFlex 12kg",
+                "price": ""
+            },
+            {
+                "item_code": "FEV002",
+                "item_description": "Fevicol Marine Plus 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "FEV003",
+                "item_description": "Fevicol Pur 150g",
+                "price": ""
+            },
+            {
+                "item_code": "FEV004",
+                "item_description": "Fevicol Pur 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "FEV005",
+                "item_description": "Fevicol Pur 500gm",
+                "price": ""
+            },
+            {
+                "item_code": "FEV006",
+                "item_description": "Fevicol Pur 70gm",
+                "price": ""
+            },
+            {
+                "item_code": "KEN001",
+                "item_description": "KenSeal4KG",
+                "price": ""
+            },
+            {
+                "item_code": "LOR001",
+                "item_description": "Lordex 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "LOR002",
+                "item_description": "Lordex 300g",
+                "price": ""
+            },
+            {
+                "item_code": "MAG006",
+                "item_description": "Magpow 250ml",
+                "price": ""
+            },
+            {
+                "item_code": "MET009",
+                "item_description": "Metro Glue 250gms",
+                "price": ""
+            },
+            {
+                "item_code": "PON001",
+                "item_description": "Ponal Glue 1/2l",
+                "price": ""
+            },
+            {
+                "item_code": "PON002",
+                "item_description": "Ponal Glue 1/4l",
+                "price": ""
+            },
+            {
+                "item_code": "PON003",
+                "item_description": "Ponal Glue 1l",
+                "price": ""
+            },
+            {
+                "item_code": "PON005",
+                "item_description": "Ponal Glue 4l",
+                "price": ""
+            },
+            {
+                "item_code": "SIL002",
+                "item_description": "Silicon Gun Sausage",
+                "price": ""
+            },
+            {
+                "item_code": "SIL003",
+                "item_description": "Silicon Hi Tech Black",
+                "price": ""
+            },
+            {
+                "item_code": "SIL004",
+                "item_description": "Silicon Hi Tech Clear",
+                "price": ""
+            },
+            {
+                "item_code": "SIL005",
+                "item_description": "Silicon Rtv 15g Clear",
+                "price": ""
+            },
+            {
+                "item_code": "SIL006",
+                "item_description": "Silicon Rtv 85g Black",
+                "price": ""
+            },
+            {
+                "item_code": "SIL007",
+                "item_description": "Silicon Rtv 85g Clear",
+                "price": ""
+            },
+            {
+                "item_code": "SIL008",
+                "item_description": "Silicon Rtv 85g Grey",
+                "price": ""
+            },
+            {
+                "item_code": "SIL010",
+                "item_description": "Silicon Sausage Clear",
+                "price": ""
+            },
+            {
+                "item_code": "SIL011",
+                "item_description": "Silicon Sausage White",
+                "price": ""
+            },
+            {
+                "item_code": "SIL013",
+                "item_description": "Silicon Tube Black",
+                "price": ""
+            },
+            {
+                "item_code": "SIL014",
+                "item_description": "Silicon Tube Clear",
+                "price": ""
+            },
+            {
+                "item_code": "SIL015",
+                "item_description": "Silicon Tube White",
+                "price": ""
+            },
+            {
+                "item_code": "SIL016",
+                "item_description": "Silicon Solution  5L",
+                "price": ""
+            },
+            {
+                "item_code": "SIL017",
+                "item_description": "Silicon Sausage Black",
+                "price": ""
+            },
+            {
+                "item_code": "STR005",
+                "item_description": "Stronghold Parquet Crown 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "STR006",
+                "item_description": "Stronghold Parquet Crown 20k",
+                "price": ""
+            },
+            {
+                "item_code": "STR007",
+                "item_description": "Stronghold Parquet Crown 25k",
+                "price": ""
+            },
+            {
+                "item_code": "STR008",
+                "item_description": "Stronghold Parquet Crown 4kg",
+                "price": ""
+            },
+            {
+                "item_code": "STR009",
+                "item_description": "Stronghold Parquet Dura 4kg",
+                "price": ""
+            },
+            {
+                "item_code": "STR010",
+                "item_description": "Stronghold T/Adhesive 1kg",
+                "price": ""
+            },
+            {
+                "item_code": "STR011",
+                "item_description": "Stronghold T/Adhesive 25k",
+                "price": ""
+            },
+            {
+                "item_code": "STR012",
+                "item_description": "Stronghold T/Adhesive 4kg",
+                "price": ""
+            },
+            {
+                "item_code": "STR015",
+                "item_description": "Stronghold Tile Glue Dura 4kg",
+                "price": ""
+            },
+            {
+                "item_code": "SUP002",
+                "item_description": "Super Glue Small",
+                "price": ""
+            },
+            {
+                "item_code": "TAN001",
+                "item_description": "Tangit 1000ml",
+                "price": ""
+            },
+            {
+                "item_code": "TAN002",
+                "item_description": "Tangit 100ml",
+                "price": ""
+            },
+            {
+                "item_code": "TAN003",
+                "item_description": "Tangit 250ml",
+                "price": ""
+            },
+            {
+                "item_code": "TAN004",
+                "item_description": "Tangit 500ml",
+                "price": ""
+            },
+            {
+                "item_code": "TAN005",
+                "item_description": "Tangit 50ml",
+                "price": ""
+            },
+            {
+                "item_code": "WD4001",
+                "item_description": "Wd40 120ml",
+                "price": ""
+            },
+            {
+                "item_code": "WD4002",
+                "item_description": "Wd40 250ml",
+                "price": ""
+            },
+            {
+                "item_code": "WD4003",
+                "item_description": "Wd40 500ml",
+                "price": ""
+            },
+            {
+                "item_code": "WOO006",
+                "item_description": "Wood Filla Mahogany",
+                "price": ""
+            },
+            {
+                "item_code": "WOO007",
+                "item_description": "Wood Filla Pine",
+                "price": ""
+            }
+        ]
+    },
+    {
+        "category_name": "AGRICULTURAL TOOLS",
+        "products": [
+            {
+                "item_code": "AXE001",
+                "item_description": "Axe 2.5LB",
+                "price": ""
+            },
+            {
+                "item_code": "AXE002",
+                "item_description": "Axe 2LB",
+                "price": ""
+            },
+            {
+                "item_code": "AXE003",
+                "item_description": "Axe 3.5LB",
+                "price": ""
+            },
+            {
+                "item_code": "AXE004",
+                "item_description": "Axe 3LB",
+                "price": ""
+            },
+            {
+                "item_code": "FOR002",
+                "item_description": "Fork Jembe 1.5LB",
+                "price": ""
+            },
+            {
+                "item_code": "FOR003",
+                "item_description": "Fork Jembe 2.5LB",
+                "price": ""
+            },
+            {
+                "item_code": "FOR004",
+                "item_description": "Fork Jembe 3.5LB",
+                "price": ""
+            },
+            {
+                "item_code": "FOR005",
+                "item_description": "Fork Jembe Combined",
+                "price": ""
+            },
+               {
+                "item_code": "GAR007",
+                "item_description": "GARDENA HOSE CONNECTOR",
+                "price": ""
+            },
+            {
+                "item_code": "JEM001",
+                "item_description": "Jembe 1.5LB",
+                "price": ""
+            },
+            {
+                "item_code": "JEM002",
+                "item_description": "Jembe 2.5LB",
+                "price": ""
+            },
+            {
+                "item_code": "JEM003",
+                "item_description": "Jembe 2LB",
+                "price": ""
+            },
+            {
+                "item_code": "JEM004",
+                "item_description": "Jembe 3LB",
+                "price": ""
+            },
+            {
+                "item_code": "JEM005",
+                "item_description": "Jembe Handle",
+                "price": ""
+            },
+            {
+                "item_code": "MAT001",
+                "item_description": "Mattock Combined",
+                "price": ""
+            },
+            {
+                "item_code": "PAN001",
+                "item_description": "Panga",
+                "price": ""
+            },
+            {
+                "item_code": "PAN002",
+                "item_description": "Panga H/G",
+                "price": ""
+            },
+            {
+                "item_code": "SLA001",
+                "item_description": "Slasher",
+                "price": ""
+            }
+        ]
+    },
+    {
+        "category_name": "IRON SHEETS & PLATES",
+        "products": [
+            {
+                "item_code": "BLA009",
+                "item_description": "Black Sheet 8x4x14g",
+                "price": ""
+            },
+            {
+                "item_code": "BLA010",
+                "item_description": "Black Sheet 8x4x16g",
+                "price": ""
+            },
+            {
+                "item_code": "BLA011",
+                "item_description": "Black Sheet 8x4x18g",
+                "price": ""
+            },
+            {
+                "item_code": "BLA019",
+                "item_description": "BLACKSHEET 8X4X3MM",
+                "price": ""
+            },
+            {
+                "item_code": "CHE001",
+                "item_description": "Chequered Plate 16g",
+                "price": ""
+            },
+            {
+                "item_code": "CHE002",
+                "item_description": "Chequered Plate 2mm",
+                "price": ""
+            },
+            {
+                "item_code": "CHE003",
+                "item_description": "Chequered Plate 3mm",
+                "price": ""
+            },
+            {
+                "item_code": "DEC001",
+                "item_description": "Decra Ridges",
+                "price": ""
+            },
+            {
+                "item_code": "DEC002",
+                "item_description": "Decra Roofing Sheet",
+                "price": ""
+            },
+            {
+                "item_code": "DEC003",
+                "item_description": "Decra Valleys",
+                "price": ""
+            },
+            {
+                "item_code": "PER001",
+                "item_description": "Perforated Sheets2mx1x1.02mhole diameter",
+                "price": ""
+            },
+            {
+                "item_code": "PLA001",
+                "item_description": "Plain Sheet Roll 30g",
+                "price": ""
+            },
+            {
+                "item_code": "PLA002",
+                "item_description": "Plain Sheet Roll 32g",
+                "price": ""
+            },
+            {
+                "item_code": "PLA016",
+                "item_description": "Plain sheet 30g mtrs",
+                "price": ""
+            },
+            {
+                "item_code": "PLA017",
+                "item_description": "Plain sheet 32g mtrs",
+                "price": ""
+            },
+            {
+                "item_code": "RID002",
+                "item_description": "Ridges 30g",
+                "price": ""
+            },
+            {
+                "item_code": "RID003",
+                "item_description": "Ridges 32g",
+                "price": ""
+            },
+            {
+                "item_code": "RID004",
+                "item_description": "RIDGES BLUE 30G",
+                "price": ""
+            },
+            {
+                "item_code": "RID005",
+                "item_description": "RIDGES RED 30G",
+                "price": ""
+            },
+            {
+                "item_code": "RSB001",
+                "item_description": "R/S Box charcoal grey 2m",
+                "price": ""
+            },
+            {
+                "item_code": "RSB002",
+                "item_description": "R/S Box Clear 2m IT4",
+                "price": ""
+            },
+            {
+                "item_code": "RSB003",
+                "item_description": "R/S Box Clear 2.5m IT4",
+                "price": ""
+            },
+            {
+                "item_code": "RSB004",
+                "item_description": "R/S Box Clear 3m IT4",
+                "price": ""
+            },
+            {
+                "item_code": "RSR001",
+                "item_description": "R/S ROMAN TILE 2.5X30G",
+                "price": ""
+            }
+        ]
+    },
+
+    {
+        "category_name": "GLASSWARE",
+        "products": [
+            {
+                "item_code": "GLA005",
+                "item_description": "Glass Block Clear",
+                "price": ""
+            },
+            {
+                "item_code": "GLA006",
+                "item_description": "Glass Clear 3mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA007",
+                "item_description": "Glass Clear 4mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA008",
+                "item_description": "Glass Clear 5mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA009",
+                "item_description": "Glass Clear 6mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA010",
+                "item_description": "Glass Cutter H/G",
+                "price": ""
+            },
+            {
+                "item_code": "GLA012",
+                "item_description": "Glass Flowered 3mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA013",
+                "item_description": "Glass Gold Bronze 4mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA014",
+                "item_description": "Glass Mirror 3mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA015",
+                "item_description": "Glass Mirror 4mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA016",
+                "item_description": "Glass Mirror 5mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA017",
+                "item_description": "Glass Obs Blue 3mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA018",
+                "item_description": "Glass One Way Blue",
+                "price": ""
+            },
+            {
+                "item_code": "GLA020",
+                "item_description": "Glass One Way Gold",
+                "price": ""
+            },
+            {
+                "item_code": "GLA021",
+                "item_description": "Glass One Way Grey",
+                "price": ""
+            },
+            {
+                "item_code": "GLA022",
+                "item_description": "Glass Square Type Grey Obs",
+                "price": ""
+            },
+            {
+                "item_code": "GLA023",
+                "item_description": "Glass Tint Grey 4mm",
+                "price": ""
+            },
+            {
+                "item_code": "GLA024",
+                "item_description": "Glass Tint Grey Indi",
+                "price": ""
+            },
+            {
+                "item_code": "LOU002",
+                "item_description": "louvres 72\"",
+                "price": ""
+            },
+            {
+                "item_code": "PUT003",
+                "item_description": "Putty Per Kg",
+                "price": ""
+            },
+            {
+                "item_code": "PUT004",
+                "item_description": "Putty Premium 40kg",
+                "price": ""
+            }
+        ]
+    }
+ 
+   
+    
+   
+]
