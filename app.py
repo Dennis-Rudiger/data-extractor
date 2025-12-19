@@ -76,7 +76,7 @@ def parse_pdf_data(text):
             group_regex = re.escape(current_group)
             
             # Pattern explanation:
-            # ^([A-Z0-9\s]+?\d{3,}) : Code. Starts with A-Z, 0-9, space. Must end with at least 3 digits. Non-greedy start.
+            # ^([A-Z0-9\s/\-]+?\d{3,}) : Code. Starts with A-Z, 0-9, space, /, -. Must end with at least 3 digits. Non-greedy start.
             # \s+ : Separator
             # (.*?) : Description. Non-greedy.
             # \s+ : Separator
@@ -84,7 +84,7 @@ def parse_pdf_data(text):
             # \s+ : Separator before the rest of the line (prices etc)
             # (.*)$ : Capture the rest of the line (Qty, Whse, Value, Unit Cost)
             
-            pattern_str = r'^([A-Z0-9\s]+?\d{3,})\s+(.*?)\s+' + group_regex + r'\s+(.*)$'
+            pattern_str = r'^([A-Z0-9\s/\-]+?\d{3,})\s+(.*?)\s+' + group_regex + r'\s+(.*)$'
             match = re.match(pattern_str, line)
             
             if match:
