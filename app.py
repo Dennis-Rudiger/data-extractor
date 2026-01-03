@@ -135,23 +135,27 @@ def generate_pdf(data, output_filename):
     elements.append(Spacer(1, 12))
     
     # Table Header
-    table_data = [['Item Code', 'Description', 'Category', 'Unit Cost', 'Buying Price (16% VAT)']]
+    table_data = [['Item Code', 'Description', 'Category', 'Unit Cost', 'Buying Price', 'Selling Price']]
     
     for group in data:
         category_name = group['category_name']
         for product in group['products']:
+            selling_price = product.get('selling_price', 0)
             row = [
                 product['item_code'],
                 product['item_description'],
                 category_name,
                 f"{product['unit_cost']:,.2f}",
-                f"{product['buying_price']:,.2f}"
+                f"{product['buying_price']:,.2f}",
+                f"{selling_price:,.2f}"
             ]
             table_data.append(row)
             
     # Create Table
     # Adjust column widths for A4 Portrait (Total width approx 540 points)
-    t = Table(table_data, colWidths=[60, 200, 100, 70, 90])
+    # Old widths: [60, 200, 100, 70, 90] -> Total 520
+    # New widths: [50, 180, 90, 60, 70, 70] -> Total 520
+    t = Table(table_data, colWidths=[50, 180, 90, 60, 70, 70])
     
     # Add style
     style = TableStyle([
