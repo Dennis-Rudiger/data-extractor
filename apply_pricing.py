@@ -490,7 +490,7 @@ def apply_pricing():
             'name': 'Iron Sheets & Plates (<= 2000)',
             'category_name': 'IRON SHEETS & PLATES',
             'filter': lambda p: p['buying_price'] <= 2000,
-            'margin': 18
+            'margin': 24
         },
         {
             'name': 'Iron Sheets & Plates (> 2000)',
@@ -648,18 +648,18 @@ def apply_pricing():
             'name': 'Paints',
             'category_name': 'PAINTS',
             'min_margin': 8.9,
-            'max_margin': 10
+            'max_margin': 12
         },
         {
             'name': 'Agricultural Tools',
             'category_name': 'AGRICULTURAL TOOLS',
-            'min_margin': 30,
-            'max_margin': 40
+            'min_margin': 67,
+            'max_margin': 77
         },
         {
             'name': 'Cement',
             'category_name': 'CEMENT',
-            'margin': 6
+            'margin': 4.5
         },
         {
             'name': 'Concrete & Yard',
@@ -670,20 +670,20 @@ def apply_pricing():
         {
             'name': 'Jua Kali Products',
             'category_name': 'JUA KALI PRODUCTS',
-            'min_margin': 10,
-            'max_margin': 25
+            'min_margin': 50,
+            'max_margin': 75
         },
         {
             'name': 'Steel',
             'category_name': 'STEEL',
-            'min_margin': 6,
-            'max_margin': 8
+            'min_margin': 5.5,
+            'max_margin': 7
         },
         {
             'name': 'Tiles & Accessories',
             'category_name': 'TILES & ACCESSORIES',
-            'min_margin': 15,
-            'max_margin': 30
+            'min_margin': 25,
+            'max_margin': 40
         },
         {
             'name': 'Timber Products',

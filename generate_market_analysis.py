@@ -14,24 +14,23 @@ MARKET_BENCHMARKS = {
     'CEMENT': {
         'category_desc': 'Cement products are highly competitive with thin margins (6-8%). Volume-driven category.',
         'items': [
-            {'name': 'Simba Cement 50kg', 'market_price': 850, 'market_range': '730-900', 'source': 'Randtech, A&D Store'},
-            {'name': 'Bamburi Cement 50kg', 'market_price': 730, 'market_range': '685-775', 'source': 'Multiple stores'},
+            {'name': 'Simba Cement 50kg', 'market_price': 750, 'market_range': '650-850', 'source': 'Construction Kenya, Hardware Stores'},
+            {'name': 'Bamburi Cement 50kg', 'market_price': 765, 'market_range': '730-800', 'source': 'Construction Kenya, Multiple stores'},
+            {'name': 'Blue Triangle Cement 50kg', 'market_price': 715, 'market_range': '680-750', 'source': 'Construction Kenya'},
             {'name': 'Savannah Cement 50kg', 'market_price': 695, 'market_range': '650-740', 'source': 'Market average'},
-            {'name': 'Nguvu Cement 50kg', 'market_price': 710, 'market_range': '680-750', 'source': 'Market average'},
-            {'name': 'ARM Cement 50kg', 'market_price': 750, 'market_range': '720-800', 'source': 'Market average'},
+            {'name': 'Rhino Cement 50kg', 'market_price': 680, 'market_range': '650-700', 'source': 'Market average'},
         ]
     },
     'WATER_TANKS': {
-        'category_desc': 'Water storage tanks have brand differentiation. RotoTank, TopTank, and Polytanks are major players with 12-20% margins.',
+        'category_desc': 'Water storage tanks have brand differentiation. RotoTank, TopTank, and Kentank are major players. Prices vary significantly by brand.',
         'items': [
-            {'name': 'Water Tank 100L Cylindrical', 'market_price': 6400, 'market_range': '5000-6500', 'source': 'Randtech, TopTank'},
-            {'name': 'Water Tank 1000L Cylindrical', 'market_price': 12900, 'market_range': '9500-14700', 'source': 'TopTank, Randtech, Polytanks'},
-            {'name': 'Water Tank 1000L Loft', 'market_price': 14700, 'market_range': '11500-16400', 'source': 'TopTank, Polytanks'},
-            {'name': 'Water Tank 1500L Cylindrical', 'market_price': 17800, 'market_range': '13600-17900', 'source': 'TopTank, Randtech'},
-            {'name': 'Water Tank 2000L Cylindrical', 'market_price': 34500, 'market_range': '22000-35500', 'source': 'TopTank, Randtech'},
-            {'name': 'Water Tank 3000L Cylindrical', 'market_price': 52000, 'market_range': '24500-53000', 'source': 'Randtech, Polytanks'},
-            {'name': 'Water Tank 5000L Cylindrical', 'market_price': 43700, 'market_range': '40000-45000', 'source': 'Polytanks, Randtech'},
-            {'name': 'Water Tank 10000L Cylindrical', 'market_price': 120700, 'market_range': '90700-146000', 'source': 'TopTank, Randtech, Polytanks'},
+            {'name': 'Water Tank 1000L (Standard)', 'market_price': 7500, 'market_range': '4500-8500', 'source': 'Kentank, Roto, Local Hardware'},
+            {'name': 'Water Tank 1000L (Premium/Deluxe)', 'market_price': 12900, 'market_range': '11500-13500', 'source': 'TopTank'},
+            {'name': 'Water Tank 2000L Cylindrical', 'market_price': 11500, 'market_range': '10500-13500', 'source': 'Roto, Kentank'},
+            {'name': 'Water Tank 2500L Cylindrical', 'market_price': 13500, 'market_range': '12500-15000', 'source': 'Roto, Market avg'},
+            {'name': 'Water Tank 3000L Cylindrical', 'market_price': 19500, 'market_range': '18000-22000', 'source': 'Market Estimate'},
+            {'name': 'Water Tank 5000L Cylindrical', 'market_price': 43700, 'market_range': '40000-48000', 'source': 'Polytanks, Randtech'},
+            {'name': 'Water Tank 10000L Cylindrical', 'market_price': 91800, 'market_range': '90000-105000', 'source': 'TopTank, Kentank'},
         ]
     },
     'MARINE_BOARDS': {
@@ -49,12 +48,10 @@ MARKET_BENCHMARKS = {
     'ELECTRICAL_CABLES': {
         'category_desc': 'Electrical cables are commodity items with brand premium. EA Cables commands higher prices. Margins typically 10-18%.',
         'items': [
-            {'name': 'Single Core Cable 1.5mm (per meter)', 'market_price': 35, 'market_range': '30-40', 'source': 'Kenya Electricals, Market avg'},
-            {'name': 'Single Core Cable 1.5mm 100M Roll', 'market_price': 6500, 'market_range': '6000-7000', 'source': 'Randtech, TDK'},
-            {'name': 'Single Core Cable 2.5mm (per meter)', 'market_price': 50, 'market_range': '45-55', 'source': 'Kenya Electricals, Market avg'},
-            {'name': 'Single Core Cable 4.0mm 100M Roll', 'market_price': 9070, 'market_range': '8500-10000', 'source': 'Shopit, TDK'},
-            {'name': 'Twin & Earth 1.5mm 90M Roll', 'market_price': 2500, 'market_range': '2100-2900', 'source': 'Jiji, Jumia'},
-            {'name': 'Twin & Earth 2.5mm 90M Roll', 'market_price': 3500, 'market_range': '3200-4000', 'source': 'Market average'},
+            {'name': 'Single Core Cable 1.5mm (90m Roll)', 'market_price': 2800, 'market_range': '2400-3200', 'source': 'Tronic, Shopmerix'},
+            {'name': 'Single Core Cable 2.5mm (90m Roll)', 'market_price': 4200, 'market_range': '4200-5100', 'source': 'Coast, EA Cables, ASL'},
+            {'name': 'Twin & Earth 1.5mm (90m Roll)', 'market_price': 4800, 'market_range': '4500-5500', 'source': 'Kenya Electricals'},
+            {'name': 'Twin & Earth 2.5mm (90m Roll)', 'market_price': 7500, 'market_range': '7000-8500', 'source': 'Market average'},
             {'name': 'Flexible Cable 2-Core 0.75mm 90M', 'market_price': 2800, 'market_range': '2500-3200', 'source': 'Tronic Kenya'},
         ]
     },
@@ -76,6 +73,9 @@ MARKET_BENCHMARKS = {
     'STEEL': {
         'category_desc': 'Steel products operate on very thin margins (6-8%) due to commodity pricing. Price closely tracks global steel prices.',
         'items': [
+            {'name': 'Steel Bar D8', 'market_price': 605, 'market_range': '590-620', 'source': 'Construction Kenya'},
+            {'name': 'Steel Bar D10', 'market_price': 920, 'market_range': '900-950', 'source': 'Construction Kenya'},
+            {'name': 'Steel Bar D12', 'market_price': 1335, 'market_range': '1300-1380', 'source': 'Construction Kenya'},
             {'name': 'Binding Wire 16 Gauge 25kg', 'market_price': 3850, 'market_range': '3850-4800', 'source': 'Randtech'},
             {'name': 'Angle Lines 3/4x3/4x1/8', 'market_price': 910, 'market_range': '890-930', 'source': 'Randtech'},
             {'name': 'Angle Lines 1x1x1/8', 'market_price': 1040, 'market_range': '1040-1050', 'source': 'Randtech'},
@@ -109,11 +109,48 @@ MARKET_BENCHMARKS = {
     'PAINTS': {
         'category_desc': 'Paint market is competitive with strong brand loyalty. Crown and Basco dominate. Margins 8.9-15%.',
         'items': [
-            {'name': 'Crown Paints 4L (Interior)', 'market_price': 2500, 'market_range': '2200-2800', 'source': 'Market average'},
-            {'name': 'Basco Paint 4L (Interior)', 'market_price': 2300, 'market_range': '2000-2600', 'source': 'Market average'},
-            {'name': 'Sadolin 4L (Premium)', 'market_price': 3200, 'market_range': '2800-3600', 'source': 'Market average'},
-            {'name': 'Crown 20L (Interior)', 'market_price': 11000, 'market_range': '10000-12500', 'source': 'Market average'},
-            {'name': 'Wood Finish/Varnish 4L', 'market_price': 2800, 'market_range': '2400-3200', 'source': 'A&D Store'},
+            {'name': 'Crown Paints 4L (Interior)', 'market_price': 3000, 'market_range': '2800-3200', 'source': 'Crown, Duracoat'},
+            {'name': 'Basco Paint 4L (Interior)', 'market_price': 2800, 'market_range': '2600-3000', 'source': 'Basco Price List'},
+            {'name': 'Sadolin 4L (Premium)', 'market_price': 3400, 'market_range': '3200-3600', 'source': 'Market average'},
+            {'name': 'Crown 20L (Interior)', 'market_price': 12500, 'market_range': '11500-13500', 'source': 'Market average'},
+            {'name': 'Wood Finish/Varnish 4L', 'market_price': 3200, 'market_range': '2900-3400', 'source': 'Duracoat, Crown'},
+        ]
+    },
+    'PLUMBING': {
+        'category_desc': 'Plumbing materials (PPR/PVC) are essential. Margins 15-25%. Brand quality (PPR) is key.',
+        'items': [
+            {'name': 'PPR Pipe 20mm (PN16)', 'market_price': 350, 'market_range': '300-450', 'source': 'Vmart, Market avg'},
+            {'name': 'PPR Pipe 25mm (PN16)', 'market_price': 550, 'market_range': '450-650', 'source': 'Market average'},
+            {'name': 'PVC Pipe 3/4" (Class B)', 'market_price': 350, 'market_range': '300-400', 'source': 'Eunidrip'},
+            {'name': 'PVC Pipe 1" (Class B)', 'market_price': 450, 'market_range': '400-550', 'source': 'Eunidrip'},
+            {'name': 'PVC Pipe 4" (Heavy Gauge)', 'market_price': 1600, 'market_range': '1500-1800', 'source': 'Eunidrip, Pioneer'},
+        ]
+    },
+    'TILES': {
+        'category_desc': 'Flooring tiles show wide variance. Ceramic (Budget) vs Porcelain (Premium). Margins 12-20%.',
+        'items': [
+            {'name': 'Ceramic Floor Tile 30x30 (Box)', 'market_price': 1100, 'market_range': '950-1250', 'source': 'Saj, Market avg'},
+            {'name': 'Ceramic Floor Tile 40x40 (Box)', 'market_price': 1400, 'market_range': '1300-1600', 'source': 'Tiles Market'},
+            {'name': 'Porcelain Tile 60x60 (Box)', 'market_price': 1800, 'market_range': '1600-2400', 'source': 'Marnju, CTM'},
+            {'name': 'Premium Porcelain 60x60 (Box)', 'market_price': 3300, 'market_range': '2800-3500', 'source': 'A&D Store'},
+        ]
+    },
+    'ROOFING': {
+        'category_desc': 'Roofing sheets (Mabati) are high-value items. Margins 8-12%. Brand (MRM) commands premium.',
+        'items': [
+            {'name': 'Dumuzas 30G (per meter)', 'market_price': 550, 'market_range': '550-650', 'source': 'A&D Store, MRM'},
+            {'name': 'Dumuzas 32G (per meter)', 'market_price': 460, 'market_range': '450-480', 'source': 'Market average'},
+            {'name': 'Resincot 30G (Coloured)', 'market_price': 700, 'market_range': '650-750', 'source': 'MRM Shop'},
+            {'name': 'Corrugated 28G (Matte)', 'market_price': 730, 'market_range': '700-780', 'source': 'Structrum'},
+        ]
+    },
+    'AGRICULTURAL_TOOLS': {
+        'category_desc': 'Farm tools have high margins (25-40%). Brand loyalty (Crocodile) is strong.',
+        'items': [
+            {'name': 'Wheelbarrow (Jua Kali Heavy)', 'market_price': 5500, 'market_range': '5000-7500', 'source': 'Jua Kali, Totalease'},
+            {'name': 'Jembe (Crocodile/Jogoo)', 'market_price': 1200, 'market_range': '1100-1400', 'source': 'Shop Nanjala, Jumia'},
+            {'name': 'Panga (Standard)', 'market_price': 450, 'market_range': '350-600', 'source': 'Market average'},
+            {'name': 'Panga (Jua Kali Heavy)', 'market_price': 800, 'market_range': '700-900', 'source': 'Jua Kali Hardware'},
         ]
     }
 }
@@ -403,6 +440,47 @@ def generate_competitive_analysis_report(output_filename):
                 'Offer color mixing services and technical advice as differentiation',
                 'Stock wood finishes/varnish at KES 2,400-3,200 for complete range'
             ]
+        },
+        {
+            'title': 'PLUMBING (PPR/PVC)',
+            'recs': [
+                'PPR Pipes: High demand, stock PN16/PN20 for quality assurance',
+                'PPR 20mm at KES 350, 25mm at KES 550 - competitive entry points',
+                'PVC Pipes: Class B is standard, Heavy Gauge for drainage',
+                'PVC 4" Heavy Gauge: KES 1,600-1,800 (good margin item)',
+                'Stock fittings (Elbows, Tees, Sockets) - high volume, 30%+ margin',
+                'Partner with plumbers for recurring sales'
+            ]
+        },
+        {
+            'title': 'FLOOR TILES',
+            'recs': [
+                'Ceramic 30x30/40x40: Budget friendly (KES 1,100-1,400/box)',
+                'Porcelain 60x60: The growth category (KES 1,800-2,400/box)',
+                'Premium Porcelain: Niche market (KES 3,000+), stock limited quantity',
+                'Display is key - show installed samples to drive sales',
+                'Cross-sell tile adhesive (KES 600-800) and grout'
+            ]
+        },
+        {
+            'title': 'ROOFING SHEETS',
+            'recs': [
+                'Dumuzas 30G: The market standard (KES 550-650/meter)',
+                'Coloured sheets (Resincot): Higher value (KES 700+/meter)',
+                'Stock standard lengths (2m, 2.5m, 3m) to minimize cutting waste',
+                'Margins are thin (8-12%), focus on volume and project supply',
+                'Offer transport for bulk orders (critical for roofing)'
+            ]
+        },
+        {
+            'title': 'AGRICULTURAL TOOLS',
+            'recs': [
+                'High margin category (25-40%) - "Crocodile" brand is king',
+                'Jembes: Stock Crocodile (KES 1,200+) and budget options',
+                'Wheelbarrows: Heavy duty Jua Kali (KES 5,500+) preferred for durability',
+                'Pangas: Fast moving, keep well-stocked (KES 450-800)',
+                'Target seasonal planting/harvesting times for promotions'
+            ]
         }
     ]
     
@@ -421,21 +499,21 @@ def generate_competitive_analysis_report(output_filename):
     
     <b>1. PRICE LEADERSHIP CATEGORIES</b> (Match or beat market):<br/>
      Cement and bulk materials (6% margin)<br/>
-     Steel products (6-8% margin)<br/>
+     Steel products & Roofing (6-8% margin)<br/>
      Paints (8.9-10% margin)<br/>
     Use these to drive traffic and establish credibility<br/><br/>
     
     <b>2. BALANCED PRICING CATEGORIES</b> (Match market, healthy margins):<br/>
      Timber and boards (15-25% margin)<br/>
      Tiles and accessories (15-30% margin)<br/>
-     General hardware (20-30% margin)<br/>
+     General hardware & Plumbing (20-30% margin)<br/>
     Compete on service, availability, and quality<br/><br/>
     
     <b>3. PREMIUM MARGIN CATEGORIES</b> (Value-add positioning):<br/>
      Electrical accessories (18-36% margin - aligned with market)<br/>
      Sanitary ware (15-25% margin with wide market variance)<br/>
-     Agricultural tools (30-40% margin - specialty)<br/>
-     Jua Kali products (10-25% margin - unique offerings)<br/>
+     Agricultural tools (37-47% margin - specialty)<br/>
+     Jua Kali products (30-45% margin - unique offerings)<br/>
     Differentiate on selection, expertise, and service<br/><br/>
     
     <b>MARKET INTELLIGENCE SOURCES:</b><br/>

@@ -502,8 +502,8 @@ def generate_pricing_logic_report(output_filename):
             'title': '4. SPECIALTY CATEGORIES',
             'description': """Categories with unique market positioning or lower competition support higher margins.""",
             'rules': [
-                'Agricultural Tools: 30-40% margins (Seasonal specialty)',
-                'Jua Kali Products: 10-25% margins (Local manufacturing)',
+                'Agricultural Tools: 37-47% margins (Seasonal specialty)',
+                'Jua Kali Products: 30-45% margins (Local manufacturing)',
                 'Timber Products: 15-28% sliding margins (Value-added processing)',
                 'Tiles & Accessories: 15-30% margins (Design premium)',
                 'Glassware: 20% fixed margin (Fragile handling premium)'
