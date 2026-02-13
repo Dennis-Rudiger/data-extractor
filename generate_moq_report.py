@@ -34,7 +34,7 @@ class MOQReport:
         canvas.saveState()
         canvas.setFont('Helvetica-Bold', 9)
         canvas.setFillColor(colors.HexColor('#1a5276'))
-        canvas.drawString(self.margin, self.page_height - 0.35*inch, 'WEEKLY MOQ REPORT - JANUARY 2026 (19 Working Days)')
+        canvas.drawString(self.margin, self.page_height - 0.35*inch, 'MOQ REPORT - JANUARY 2026 (24 Working Days) | Formula: 6 x Daily Consumption')
         canvas.setFont('Helvetica', 8)
         canvas.setFillColor(colors.HexColor('#7f8c8d'))
         canvas.drawRightString(self.page_width - self.margin, self.page_height - 0.35*inch, f'Page {doc.page}')
@@ -75,7 +75,7 @@ class MOQReport:
         
         # PAGE 1: SUMMARY
         elements.append(Paragraph('INVENTORY MOVEMENT ANALYSIS', self.styles['title']))
-        elements.append(Paragraph(f"Period: 19 Working Days | Formula: Daily Avg = Qty Out / 19 | Weekly MOQ = Daily Avg x 6", self.styles['subtitle']))
+        elements.append(Paragraph(f"Period: 24 Working Days (4 weeks x 6 days) | Formula: Daily Avg = Qty Out / 24 | MOQ = Daily Avg x 6", self.styles['subtitle']))
         
         summary = data['summary']
         metrics = [

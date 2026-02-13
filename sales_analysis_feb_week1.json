@@ -1,0 +1,169 @@
+{
+  "period": "February 1-7, 2026",
+  "categories": {
+    "PLUMBING": {
+      "Betha Odumo": {
+        "qty": 25,
+        "sales_incl": 5790,
+        "cost": 3563.36,
+        "profit": 1428.02
+      },
+      "Bonface Kitheka": {
+        "qty": 149,
+        "sales_incl": 74120,
+        "cost": 50318.18,
+        "profit": 13578.36
+      },
+      "Bonface Muriu": {
+        "qty": 59,
+        "sales_incl": 21120,
+        "cost": 14755.56,
+        "profit": 3451.33
+      },
+      "Eliza": {
+        "qty": 392,
+        "sales_incl": 100035,
+        "cost": 63234.79,
+        "profit": 23002.29
+      },
+      "Gladys": {
+        "qty": 99,
+        "sales_incl": 58630,
+        "cost": 38174.12,
+        "profit": 12368.98
+      },
+      "Lewis": {
+        "qty": 538,
+        "sales_incl": 208330,
+        "cost": 135995.12,
+        "profit": 43599.69
+      },
+      "Stephen": {
+        "qty": 36,
+        "sales_incl": 156730,
+        "cost": 114305.37,
+        "profit": 20806.71
+      }
+    },
+    "ELECTRICALS": {
+      "Betha Odumo": {
+        "qty": 29,
+        "sales_incl": 4640,
+        "cost": 3270.29,
+        "profit": 729.71
+      },
+      "Bonface Kitheka": {
+        "qty": 421,
+        "sales_incl": 37635,
+        "cost": 21481.84,
+        "profit": 10962.11
+      },
+      "Bonface Muriu": {
+        "qty": 103,
+        "sales_incl": 26760,
+        "cost": 12548.86,
+        "profit": 10520.1
+      },
+      "Eliza": {
+        "qty": 339,
+        "sales_incl": 38940,
+        "cost": 26449.59,
+        "profit": 7119.38
+      },
+      "Lewis": {
+        "qty": 21,
+        "sales_incl": 4840,
+        "cost": 3229.89,
+        "profit": 942.51
+      }
+    },
+    "PAINTS": {
+      "Betha Odumo": {
+        "qty": 135,
+        "sales_incl": 109900,
+        "cost": 74676.1,
+        "profit": 20065.3
+      },
+      "Bonface Kitheka": {
+        "qty": 113,
+        "sales_incl": 142420,
+        "cost": 107533.97,
+        "profit": 15241.91
+      },
+      "Bonface Muriu": {
+        "qty": 329,
+        "sales_incl": 323270,
+        "cost": 229016.28,
+        "profit": 49664.73
+      },
+      "Eliza": {
+        "qty": 523,
+        "sales_incl": 595550,
+        "cost": 438908.57,
+        "profit": 74496.57
+      },
+      "Gladys": {
+        "qty": 18,
+        "sales_incl": 33800,
+        "cost": 23375.42,
+        "profit": 5762.51
+      },
+      "Lewis": {
+        "qty": 103,
+        "sales_incl": 71660,
+        "cost": 47183.19,
+        "profit": 14592.67
+      },
+      "Stephen": {
+        "qty": 67,
+        "sales_incl": 74360,
+        "cost": 51984.76,
+        "profit": 12118.68
+      }
+    },
+    "GENERAL HARDWARE": {
+      "Betha Odumo": {
+        "qty": 2996,
+        "sales_incl": 2163840,
+        "cost": 1703316.1,
+        "profit": 162063.16
+      },
+      "Bonface Kitheka": {
+        "qty": 420,
+        "sales_incl": 232485,
+        "cost": 171841.89,
+        "profit": 28576.2
+      },
+      "Bonface Muriu": {
+        "qty": 1175,
+        "sales_incl": 1128619,
+        "cost": 864689.69,
+        "profit": 108257.76
+      },
+      "Eliza": {
+        "qty": 2292,
+        "sales_incl": 1636135,
+        "cost": 1271278.16,
+        "profit": 139182.99
+      },
+      "Gladys": {
+        "qty": 6661,
+        "sales_incl": 5538955,
+        "cost": 4512274.33,
+        "profit": 262686.92
+      },
+      "Lewis": {
+        "qty": 709.25,
+        "sales_incl": 552707,
+        "cost": 423471.03,
+        "profit": 53000.48
+      },
+      "Stephen": {
+        "qty": 1392.5,
+        "sales_incl": 925821,
+        "cost": 726157.7,
+        "profit": 71963.83
+      }
+    }
+  }
+}
