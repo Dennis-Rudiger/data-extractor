@@ -18,6 +18,12 @@ from openpyxl.styles import Font, Alignment, Border, Side, PatternFill
 from openpyxl.utils import get_column_letter
 from openpyxl.chart import BarChart, PieChart, RadarChart, LineChart, Reference
 from openpyxl.chart.label import DataLabelList
+from docx import Document as DocxDocument
+from docx.shared import Inches, Pt, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.oxml.ns import nsdecls
+from docx.oxml import parse_xml
 
 # Color palette
 COLORS = {
@@ -62,7 +68,7 @@ def get_primary_department(rep_name):
     else:
         return 'GENERAL HARDWARE'
 
-def analyze_performance(reps_data, w1_reps, w2_reps):
+def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None):
     """Generate comprehensive performance analysis for each rep"""
     
     # Calculate team averages
@@ -85,17 +91,32 @@ def analyze_performance(reps_data, w1_reps, w2_reps):
     sorted_by_margin = sorted(reps_data.items(), key=lambda x: x[1]['overall_margin'], reverse=True)
     sorted_by_profit = sorted(reps_data.items(), key=lambda x: x[1]['total_profit'], reverse=True)
     
-    # Calculate week-over-week improvement
-    week_improvements = {}
+    # Calculate week-over-week improvements
+    week_improvements_w1_w2 = {}
+    week_improvements_w2_w3 = {}
+    week_improvements_overall = {}
     for rep_name in reps_data.keys():
         w1_sales = w1_reps.get(rep_name, {}).get('total_sales', 0)
         w2_sales = w2_reps.get(rep_name, {}).get('total_sales', 0)
+        w3_sales = w3_reps.get(rep_name, {}).get('total_sales', 0) if w3_reps else 0
+        
         if w1_sales > 0:
-            week_improvements[rep_name] = ((w2_sales - w1_sales) / w1_sales) * 100
+            week_improvements_w1_w2[rep_name] = ((w2_sales - w1_sales) / w1_sales) * 100
         else:
-            week_improvements[rep_name] = 100 if w2_sales > 0 else 0
+            week_improvements_w1_w2[rep_name] = 100 if w2_sales > 0 else 0
+        
+        if w3_reps:
+            if w2_sales > 0:
+                week_improvements_w2_w3[rep_name] = ((w3_sales - w2_sales) / w2_sales) * 100
+            else:
+                week_improvements_w2_w3[rep_name] = 100 if w3_sales > 0 else 0
+            if w1_sales > 0:
+                week_improvements_overall[rep_name] = ((w3_sales - w1_sales) / w1_sales) * 100
+            else:
+                week_improvements_overall[rep_name] = 100 if w3_sales > 0 else 0
     
-    most_improved = max(week_improvements.items(), key=lambda x: x[1])
+    most_improved_w1w2 = max(week_improvements_w1_w2.items(), key=lambda x: x[1])
+    most_improved_w2w3 = max(week_improvements_w2_w3.items(), key=lambda x: x[1]) if w3_reps else (None, 0)
     
     # Build performance analysis for each rep
     analysis = {}
@@ -117,7 +138,9 @@ def analyze_performance(reps_data, w1_reps, w2_reps):
             badges.append("💎 BEST MARGIN")
         if profit_rank == 1:
             badges.append("💰 TOP PROFIT")
-        if rep_name == most_improved[0] and most_improved[1] > 20:
+        if w3_reps and rep_name == most_improved_w2w3[0] and most_improved_w2w3[1] > 20:
+            badges.append("📈 MOST IMPROVED")
+        elif not w3_reps and rep_name == most_improved_w1w2[0] and most_improved_w1w2[1] > 20:
             badges.append("📈 MOST IMPROVED")
         
         # Performance notes
@@ -138,12 +161,38 @@ def analyze_performance(reps_data, w1_reps, w2_reps):
         elif rep_data['overall_margin'] < avg_margin - 2:
             notes.append(f"Margin at {rep_data['overall_margin']:.1f}% below team average of {avg_margin:.1f}%")
         
-        # Week improvement
-        week_imp = week_improvements.get(rep_name, 0)
-        if week_imp > 30:
-            notes.append(f"Strong growth: Week 2 sales up {week_imp:.1f}% vs Week 1")
-        elif week_imp < -10:
-            notes.append(f"Week 2 declined by {abs(week_imp):.1f}% - review required")
+        # Weekly progress commentary
+        w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
+        w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
+        w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0) if w3_reps else 0
+        
+        imp_w1w2 = week_improvements_w1_w2.get(rep_name, 0)
+        if imp_w1w2 > 30:
+            notes.append(f"W1→W2: Strong growth +{imp_w1w2:.1f}% (KES {w1_s/1000:,.0f}K → {w2_s/1000:,.0f}K)")
+        elif imp_w1w2 < -10:
+            notes.append(f"W1→W2: Declined {imp_w1w2:.1f}% (KES {w1_s/1000:,.0f}K → {w2_s/1000:,.0f}K)")
+        else:
+            notes.append(f"W1→W2: Steady {imp_w1w2:+.1f}% (KES {w1_s/1000:,.0f}K → {w2_s/1000:,.0f}K)")
+        
+        if w3_reps:
+            imp_w2w3 = week_improvements_w2_w3.get(rep_name, 0)
+            if imp_w2w3 > 30:
+                notes.append(f"W2→W3: Strong growth +{imp_w2w3:.1f}% (KES {w2_s/1000:,.0f}K → {w3_s/1000:,.0f}K)")
+            elif imp_w2w3 < -10:
+                notes.append(f"W2→W3: Declined {imp_w2w3:.1f}% (KES {w2_s/1000:,.0f}K → {w3_s/1000:,.0f}K)")
+            else:
+                notes.append(f"W2→W3: Steady {imp_w2w3:+.1f}% (KES {w2_s/1000:,.0f}K → {w3_s/1000:,.0f}K)")
+            
+            # Overall trajectory
+            imp_overall = week_improvements_overall.get(rep_name, 0)
+            if imp_w1w2 > 0 and imp_w2w3 > 0:
+                notes.append(f"📈 Consistent upward trend over 3 weeks (+{imp_overall:.1f}% overall)")
+            elif imp_w1w2 < 0 and imp_w2w3 < 0:
+                notes.append(f"📉 Declining trend over 3 weeks ({imp_overall:.1f}% overall) - urgent review")
+            elif imp_w1w2 > 0 and imp_w2w3 < 0:
+                notes.append(f"⚠️ Week 3 reversal after Week 2 growth - monitor closely")
+            elif imp_w1w2 < 0 and imp_w2w3 > 0:
+                notes.append(f"✓ Recovery in Week 3 after Week 2 dip - positive momentum")
         
         # Department head specific analysis
         if primary_dept != 'GENERAL HARDWARE' and primary_dept in rep_data['categories']:
@@ -201,7 +250,9 @@ def analyze_performance(reps_data, w1_reps, w2_reps):
             'sales_rank': sales_rank,
             'margin_rank': margin_rank,
             'profit_rank': profit_rank,
-            'week_improvement': week_imp,
+            'week_improvement': week_improvements_overall.get(rep_name, imp_w1w2) if w3_reps else imp_w1w2,
+            'week_improvement_w1w2': imp_w1w2,
+            'week_improvement_w2w3': week_improvements_w2_w3.get(rep_name, 0) if w3_reps else 0,
             'sales_vs_avg': sales_vs_avg
         }
     
@@ -298,6 +349,50 @@ week2_raw = {
     }
 }
 
+
+# Week 3 Data (Feb 16-21, 2026) - 6 working days
+week3_raw = {
+    "period": "February 16-21, 2026",
+    "working_days": 6,
+    "categories": {
+        "PLUMBING": {
+            "Betha Odumo": {"qty": 55, "sales_incl": 25330, "cost": 14933.85, "profit": 6902.35},
+            "Bonface Kitheka": {"qty": 118, "sales_incl": 39625, "cost": 25840.81, "profit": 8318.65},
+            "Bonface Muriu": {"qty": 16, "sales_incl": 10150, "cost": 5665.85, "profit": 3084.15},
+            "Eliza": {"qty": 192, "sales_incl": 64080, "cost": 34432.65, "profit": 20808.71},
+            "Gladys": {"qty": 24, "sales_incl": 17080, "cost": 9388.57, "profit": 5335.56},
+            "Lewis": {"qty": 767, "sales_incl": 253960, "cost": 161899.91, "profit": 57031.15},
+            "Stephen": {"qty": 27, "sales_incl": 34950, "cost": 25984.77, "profit": 4144.53}
+        },
+        "ELECTRICALS": {
+            "Betha Odumo": {"qty": 6, "sales_incl": 1250, "cost": 545.17, "profit": 532.41},
+            "Bonface Kitheka": {"qty": 553, "sales_incl": 54340, "cost": 36305.01, "profit": 10539.80},
+            "Eliza": {"qty": 51, "sales_incl": 9150, "cost": 5850.41, "profit": 2037.52},
+            "Gladys": {"qty": 2, "sales_incl": 140, "cost": 66.86, "profit": 53.82},
+            "Lewis": {"qty": 127, "sales_incl": 19330, "cost": 13105.12, "profit": 3558.67}
+        },
+        "PAINTS": {
+            "Betha Odumo": {"qty": 229, "sales_incl": 151850, "cost": 107513.05, "profit": 23392.10},
+            "Bonface Kitheka": {"qty": 118, "sales_incl": 50180, "cost": 32675.91, "profit": 10582.73},
+            "Bonface Muriu": {"qty": 422, "sales_incl": 734470, "cost": 528075.84, "profit": 105087.98},
+            "Eliza": {"qty": 429, "sales_incl": 455820, "cost": 331031.91, "profit": 61916.40},
+            "Gladys": {"qty": 66, "sales_incl": 60230, "cost": 42141.40, "profit": 9781.00},
+            "Lewis": {"qty": 58, "sales_incl": 35800, "cost": 24088.69, "profit": 6773.36},
+            "Stephen": {"qty": 104, "sales_incl": 74140, "cost": 50732.39, "profit": 13181.39}
+        },
+        "GENERAL HARDWARE": {
+            "Betha Odumo": {"qty": 4389, "sales_incl": 3470400, "cost": 2778307.33, "profit": 213416.77},
+            "Bonface Kitheka": {"qty": 625, "sales_incl": 390480, "cost": 307724.97, "profit": 28895.74},
+            "Bonface Muriu": {"qty": 829.5, "sales_incl": 413020, "cost": 316847.72, "profit": 39204.00},
+            "Eliza": {"qty": 3740, "sales_incl": 2874155, "cost": 2304639.44, "profit": 173080.36},
+            "Gladys": {"qty": 6110, "sales_incl": 4614165, "cost": 3742604.58, "profit": 235123.91},
+            "Lewis": {"qty": 405, "sales_incl": 242150, "cost": 177858.38, "profit": 30891.59},
+            "Stephen": {"qty": 1953.5, "sales_incl": 1239840, "cost": 974209.68, "profit": 94617.85},
+            "WALK IN-BOMAS": {"qty": 2, "sales_incl": 1300, "cost": 1091.00, "profit": 29.69}
+        }
+    }
+}
+
 def merge_reps(data):
     """Merge Magdalene into Betha Odumo, and WALK IN-BOMAS into Bonface Kitheka"""
     merged = {"period": data["period"], "working_days": data["working_days"], "categories": {}}
@@ -323,27 +418,27 @@ def merge_reps(data):
     
     return merged
 
-# Apply merges: Magdalene → Betha Odumo, WALK IN-BOMAS + Dennis Rudiga → Bonface Kitheka
+# Apply merges: Magdalene → Betha Odumo, WALK IN-BOMAS → Bonface Kitheka
 week1_merged = merge_reps(week1_data)
 week2_data = merge_reps(week2_raw)
+week3_data = merge_reps(week3_raw)
 
-def combine_data(w1, w2):
+def combine_data(*weeks):
+    """Combine data from multiple weeks"""
     combined = {"categories": {}}
-    all_cats = set(w1["categories"].keys()) | set(w2["categories"].keys())
-    for cat in all_cats:
-        combined["categories"][cat] = {}
-        reps1 = w1["categories"].get(cat, {})
-        reps2 = w2["categories"].get(cat, {})
-        all_reps = set(reps1.keys()) | set(reps2.keys())
-        for rep in all_reps:
-            v1 = reps1.get(rep, {"qty": 0, "sales_incl": 0, "cost": 0, "profit": 0})
-            v2 = reps2.get(rep, {"qty": 0, "sales_incl": 0, "cost": 0, "profit": 0})
-            combined["categories"][cat][rep] = {
-                "qty": v1["qty"] + v2["qty"],
-                "sales_incl": v1["sales_incl"] + v2["sales_incl"],
-                "cost": v1["cost"] + v2["cost"],
-                "profit": v1["profit"] + v2["profit"]
-            }
+    for w in weeks:
+        if not w.get("categories"):
+            continue
+        for cat in w["categories"]:
+            if cat not in combined["categories"]:
+                combined["categories"][cat] = {}
+            for rep, vals in w["categories"][cat].items():
+                if rep not in combined["categories"][cat]:
+                    combined["categories"][cat][rep] = {"qty": 0, "sales_incl": 0, "cost": 0, "profit": 0}
+                combined["categories"][cat][rep]["qty"] += vals["qty"]
+                combined["categories"][cat][rep]["sales_incl"] += vals["sales_incl"]
+                combined["categories"][cat][rep]["cost"] += vals["cost"]
+                combined["categories"][cat][rep]["profit"] += vals["profit"]
     return combined
 
 def get_rep_data(combined):
@@ -438,8 +533,8 @@ def create_sales_vs_profit_bar(rep_name, rep_data, output_dir="charts"):
     x = np.arange(len(categories))
     width = 0.35
     
-    bars1 = ax.bar(x - width/2, sales, width, label='Sales', color='#3498db', edgecolor='white')
-    bars2 = ax.bar(x + width/2, profits, width, label='Profit', color='#27ae60', edgecolor='white')
+    bars1 = ax.bar(x - width/2, sales, width, label='Sales', color="#0494f5", edgecolor='white')
+    bars2 = ax.bar(x + width/2, profits, width, label='Profit', color="#08f169", edgecolor='white')
     
     # Add value labels
     for bar in bars1:
@@ -715,31 +810,52 @@ def create_rep_contribution_chart(reps_data, output_dir="charts"):
     plt.close()
     return filename
 
-def create_week_grouped_bar(w1_reps, w2_reps, output_dir="charts"):
-    """Grouped bar chart comparing Week 1 vs Week 2 per rep"""
+def create_week_grouped_bar(w1_reps, w2_reps, w3_reps=None, output_dir="charts"):
+    """Grouped bar chart comparing Week 1 vs Week 2 vs Week 3 per rep"""
     os.makedirs(output_dir, exist_ok=True)
     
-    all_reps = sorted(set(w1_reps.keys()) | set(w2_reps.keys()), 
-                      key=lambda r: w1_reps.get(r, {"total_sales": 0})["total_sales"] + 
-                                    w2_reps.get(r, {"total_sales": 0})["total_sales"], reverse=True)
+    all_keys = set(w1_reps.keys()) | set(w2_reps.keys())
+    if w3_reps:
+        all_keys |= set(w3_reps.keys())
+    all_reps = sorted(all_keys, 
+                      key=lambda r: (w1_reps.get(r, {"total_sales": 0})["total_sales"] + 
+                                     w2_reps.get(r, {"total_sales": 0})["total_sales"] +
+                                     (w3_reps.get(r, {"total_sales": 0})["total_sales"] if w3_reps else 0)),
+                      reverse=True)
     
     w1_sales = [w1_reps.get(r, {"total_sales": 0})["total_sales"]/1000000 for r in all_reps]
     w2_sales = [w2_reps.get(r, {"total_sales": 0})["total_sales"]/1000000 for r in all_reps]
+    w3_sales = [w3_reps.get(r, {"total_sales": 0})["total_sales"]/1000000 for r in all_reps] if w3_reps else []
     
-    fig, ax = plt.subplots(figsize=(12, 6))
+    fig, ax = plt.subplots(figsize=(14, 7))
     x = np.arange(len(all_reps))
-    width = 0.35
     
-    bars1 = ax.bar(x - width/2, w1_sales, width, label='Week 1 (Feb 1-7)', color='#3498db', edgecolor='white')
-    bars2 = ax.bar(x + width/2, w2_sales, width, label='Week 2 (Feb 9-14)', color='#e74c3c', edgecolor='white')
-    
-    # Value labels with growth indicator
-    for i, (s1, s2) in enumerate(zip(w1_sales, w2_sales)):
-        growth = ((s2 - s1) / s1 * 100) if s1 > 0 else 0
-        color = '#27ae60' if growth > 0 else '#e74c3c'
-        symbol = '' if growth > 0 else ''
-        ax.annotate(f'{symbol}{abs(growth):.0f}%', xy=(i, max(s1, s2) + 0.1), 
-                   ha='center', fontsize=8, fontweight='bold', color=color)
+    if w3_reps:
+        width = 0.25
+        bars1 = ax.bar(x - width, w1_sales, width, label='Week 1 (Feb 1-7)', color='#3498db', edgecolor='white')
+        bars2 = ax.bar(x, w2_sales, width, label='Week 2 (Feb 9-14)', color='#e74c3c', edgecolor='white')
+        bars3 = ax.bar(x + width, w3_sales, width, label='Week 3 (Feb 16-21)', color='#2ecc71', edgecolor='white')
+        
+        # Value labels with W2→W3 growth indicator
+        for i in range(len(all_reps)):
+            s2, s3 = w2_sales[i], w3_sales[i]
+            growth = ((s3 - s2) / s2 * 100) if s2 > 0 else 0
+            color = '#27ae60' if growth > 0 else '#e74c3c'
+            symbol = '▲' if growth > 0 else '▼'
+            peak = max(w1_sales[i], s2, s3)
+            ax.annotate(f'{symbol}{abs(growth):.0f}%', xy=(i, peak + 0.1), 
+                       ha='center', fontsize=7, fontweight='bold', color=color)
+    else:
+        width = 0.35
+        bars1 = ax.bar(x - width/2, w1_sales, width, label='Week 1 (Feb 1-7)', color='#3498db', edgecolor='white')
+        bars2 = ax.bar(x + width/2, w2_sales, width, label='Week 2 (Feb 9-14)', color='#e74c3c', edgecolor='white')
+        
+        for i, (s1, s2) in enumerate(zip(w1_sales, w2_sales)):
+            growth = ((s2 - s1) / s1 * 100) if s1 > 0 else 0
+            color = '#27ae60' if growth > 0 else '#e74c3c'
+            symbol = '▲' if growth > 0 else '▼'
+            ax.annotate(f'{symbol}{abs(growth):.0f}%', xy=(i, max(s1, s2) + 0.1), 
+                       ha='center', fontsize=8, fontweight='bold', color=color)
     
     ax.set_ylabel('Sales (Millions KES)', fontsize=10, fontweight='bold')
     ax.set_title('Week-over-Week Sales Comparison by Rep', fontsize=14, fontweight='bold')
@@ -984,7 +1100,7 @@ def create_category_breakdown_chart(reps_data, output_dir="charts"):
     ax.set_yticks(y)
     ax.set_yticklabels(rep_names, fontsize=11, fontweight='bold')
     ax.set_xlabel('Sales (Millions KES)', fontsize=11, fontweight='bold')
-    ax.set_title('Category Sales Breakdown by Rep\nFebruary 1-14, 2026', fontsize=14, fontweight='bold', pad=15)
+    ax.set_title('Category Sales Breakdown by Rep\nFebruary 1-21, 2026', fontsize=14, fontweight='bold', pad=15)
     
     # Legend at bottom
     ax.legend(title='Categories', loc='upper center', bbox_to_anchor=(0.5, -0.08), 
@@ -1002,7 +1118,7 @@ def create_category_breakdown_chart(reps_data, output_dir="charts"):
     plt.close()
     return filename
 
-def generate_pdf_report(reps_data, w1_reps, w2_reps, output_filename):
+def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     print("Creating enhanced charts for PDF...")
     
     # Summary charts
@@ -1014,7 +1130,7 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, output_filename):
     radar = create_radar_chart(reps_data)
     heatmap = create_heatmap(reps_data)
     rep_contribution = create_rep_contribution_chart(reps_data)
-    week_grouped = create_week_grouped_bar(w1_reps, w2_reps)
+    week_grouped = create_week_grouped_bar(w1_reps, w2_reps, w3_reps)
     waterfall = create_profit_waterfall(reps_data)
     cat_donut = create_category_donut(reps_data)
     margin_line = create_margin_line_chart(reps_data)
@@ -1056,35 +1172,38 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, output_filename):
     elements.append(Spacer(1, 0.2*inch))
     elements.append(Paragraph("SALES REP PERFORMANCE ANALYSIS", title_style))
     elements.append(Paragraph("BOMAS Hardware Store - February 2026", subtitle_style))
-    elements.append(Paragraph("February 1-14, 2026 (12 Working Days)", subtitle_style))
+    elements.append(Paragraph("February 1-21, 2026 (18 Working Days)", subtitle_style))
     elements.append(Spacer(1, 0.15*inch))
     
     elements.append(Paragraph("EXECUTIVE SUMMARY", heading_style))
     
     w1_total = sum(r['total_sales'] for r in w1_reps.values())
     w2_total = sum(r['total_sales'] for r in w2_reps.values())
+    w3_total = sum(r['total_sales'] for r in w3_reps.values())
+    w1_profit = sum(r['total_profit'] for r in w1_reps.values())
+    w2_profit = sum(r['total_profit'] for r in w2_reps.values())
+    w3_profit = sum(r['total_profit'] for r in w3_reps.values())
+    w1_margin = (w1_profit / w1_total * 100) if w1_total > 0 else 0
+    w2_margin = (w2_profit / w2_total * 100) if w2_total > 0 else 0
+    w3_margin = (w3_profit / w3_total * 100) if w3_total > 0 else 0
     
     summary_data = [
-        ["Metric", "Week 1 (Feb 1-7)", "Week 2 (Feb 9-14)", "Combined"],
-        ["Total Sales", f"KES {w1_total:,.0f}", f"KES {w2_total:,.0f}", f"KES {total_sales:,.0f}"],
-        ["Total Profit", f"KES {sum(r['total_profit'] for r in w1_reps.values()):,.0f}",
-                         f"KES {sum(r['total_profit'] for r in w2_reps.values()):,.0f}",
-                         f"KES {total_profit:,.0f}"],
-        ["Daily Average", f"KES {w1_total/6:,.0f}", f"KES {w2_total/6:,.0f}", f"KES {total_sales/12:,.0f}"],
-        ["Overall Margin", f"{(sum(r['total_profit'] for r in w1_reps.values())/w1_total*100):.1f}%",
-                           f"{(sum(r['total_profit'] for r in w2_reps.values())/w2_total*100):.1f}%",
-                           f"{overall_margin:.1f}%"],
+        ["Metric", "Week 1 (Feb 1-7)", "Week 2 (Feb 9-14)", "Week 3 (Feb 16-21)", "Combined"],
+        ["Total Sales", f"KES {w1_total:,.0f}", f"KES {w2_total:,.0f}", f"KES {w3_total:,.0f}", f"KES {total_sales:,.0f}"],
+        ["Total Profit", f"KES {w1_profit:,.0f}", f"KES {w2_profit:,.0f}", f"KES {w3_profit:,.0f}", f"KES {total_profit:,.0f}"],
+        ["Daily Average", f"KES {w1_total/6:,.0f}", f"KES {w2_total/6:,.0f}", f"KES {w3_total/6:,.0f}", f"KES {total_sales/18:,.0f}"],
+        ["Overall Margin", f"{w1_margin:.1f}%", f"{w2_margin:.1f}%", f"{w3_margin:.1f}%", f"{overall_margin:.1f}%"],
     ]
     
-    summary_table = Table(summary_data, colWidths=[1.3*inch, 1.7*inch, 1.7*inch, 1.7*inch])
+    summary_table = Table(summary_data, colWidths=[1.1*inch, 1.3*inch, 1.3*inch, 1.3*inch, 1.3*inch])
     summary_table.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#2c3e50')),
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
         ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
         ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-        ('FONTSIZE', (0, 0), (-1, -1), 9),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 8),
-        ('TOPPADDING', (0, 0), (-1, -1), 8),
+        ('FONTSIZE', (0, 0), (-1, -1), 8),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ('TOPPADDING', (0, 0), (-1, -1), 6),
         ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor('#ecf0f1')]),
         ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
         ('FONTNAME', (0, 1), (0, -1), 'Helvetica-Bold'),
@@ -1092,11 +1211,26 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, output_filename):
     elements.append(summary_table)
     elements.append(Spacer(1, 0.15*inch))
     
-    daily_change = ((w2_total/6 - w1_total/6) / (w1_total/6)) * 100
-    if daily_change > 0:
-        elements.append(Paragraph(f" Daily sales increased by {daily_change:.1f}% from Week 1 to Week 2", highlight_style))
+    # Weekly progress commentary
+    daily_w1w2 = ((w2_total/6 - w1_total/6) / (w1_total/6)) * 100
+    daily_w2w3 = ((w3_total/6 - w2_total/6) / (w2_total/6)) * 100
+    
+    if daily_w1w2 > 0:
+        elements.append(Paragraph(f"▲ W1→W2: Daily sales increased by {daily_w1w2:.1f}%", highlight_style))
     else:
-        elements.append(Paragraph(f" Daily sales decreased by {abs(daily_change):.1f}% from Week 1 to Week 2", alert_style))
+        elements.append(Paragraph(f"▼ W1→W2: Daily sales decreased by {abs(daily_w1w2):.1f}%", alert_style))
+    
+    if daily_w2w3 > 0:
+        elements.append(Paragraph(f"▲ W2→W3: Daily sales increased by {daily_w2w3:.1f}%", highlight_style))
+    else:
+        elements.append(Paragraph(f"▼ W2→W3: Daily sales decreased by {abs(daily_w2w3):.1f}%", alert_style))
+    
+    # Overall trend
+    overall_daily_change = ((w3_total/6 - w1_total/6) / (w1_total/6)) * 100
+    if overall_daily_change > 0:
+        elements.append(Paragraph(f"📈 Overall 3-week trend: Daily sales UP {overall_daily_change:.1f}% from Week 1 to Week 3", highlight_style))
+    else:
+        elements.append(Paragraph(f"📉 Overall 3-week trend: Daily sales DOWN {abs(overall_daily_change):.1f}% from Week 1 to Week 3", alert_style))
     
     elements.append(Spacer(1, 0.1*inch))
     elements.append(Paragraph("CATEGORY SALES DISTRIBUTION", heading_style))
@@ -1165,10 +1299,11 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, output_filename):
     insights = []
     top_rep = sorted_reps[0]
     top_margin_rep = max(reps_data.items(), key=lambda x: x[1]['overall_margin'])
-    insights.append(f" Top Seller: {top_rep[0]} with KES {top_rep[1]['total_sales']/1000000:.2f}M ({top_rep[1]['total_sales']/total_sales*100:.1f}% of total)")
-    insights.append(f" Highest Margin: {top_margin_rep[0]} at {top_margin_rep[1]['overall_margin']:.1f}%")
-    insights.append(f" Week 2 growth: {daily_change:+.1f}% vs Week 1")
-    insights.append(f" Total profit: KES {total_profit/1000000:.2f}M at {overall_margin:.1f}% margin")
+    insights.append(f"◆ Top Seller: {top_rep[0]} with KES {top_rep[1]['total_sales']/1000000:.2f}M ({top_rep[1]['total_sales']/total_sales*100:.1f}% of total)")
+    insights.append(f"◆ Highest Margin: {top_margin_rep[0]} at {top_margin_rep[1]['overall_margin']:.1f}%")
+    insights.append(f"◆ W1→W2 daily change: {daily_w1w2:+.1f}% | W2→W3 daily change: {daily_w2w3:+.1f}%")
+    insights.append(f"◆ Overall 3-week daily trend: {overall_daily_change:+.1f}%")
+    insights.append(f"◆ Total profit: KES {total_profit/1000000:.2f}M at {overall_margin:.1f}% margin")
     
     for insight in insights:
         elements.append(Paragraph(insight, body_style))
@@ -1177,7 +1312,7 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, output_filename):
     
     # ===== PAGE 7: PERFORMANCE COMMENTARY =====
     # Generate performance analysis
-    perf_analysis = analyze_performance(reps_data, w1_reps, w2_reps)
+    perf_analysis = analyze_performance(reps_data, w1_reps, w2_reps, w3_reps)
     
     elements.append(Paragraph("PERFORMANCE COMMENTARY & AWARDS", title_style))
     elements.append(Spacer(1, 0.15*inch))
@@ -1342,7 +1477,7 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, output_filename):
     doc.build(elements)
     print(f"PDF generated: {output_filename}")
 
-def export_to_excel(reps_data, w1_reps, w2_reps, perf_analysis, output_filename="sales_rep_analysis_feb2026.xlsx"):
+def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_filename="sales_rep_analysis_feb2026.xlsx"):
     """Export sales analysis data to Excel with multiple sheets"""
     wb = Workbook()
     
@@ -1366,7 +1501,7 @@ def export_to_excel(reps_data, w1_reps, w2_reps, perf_analysis, output_filename=
     # Title
     ws_summary['A1'] = "SALES REP PERFORMANCE ANALYSIS"
     ws_summary['A1'].font = Font(bold=True, size=16)
-    ws_summary['A2'] = "BOMAS Hardware Store - February 1-14, 2026 (12 Working Days)"
+    ws_summary['A2'] = "BOMAS  - February 1-21, 2026"
     ws_summary['A2'].font = Font(size=12, italic=True)
     ws_summary['A3'] = f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
     
@@ -1383,7 +1518,7 @@ def export_to_excel(reps_data, w1_reps, w2_reps, perf_analysis, output_filename=
         ["Total Sales", total_sales],
         ["Total Profit", total_profit],
         ["Overall Margin", overall_margin / 100],
-        ["Daily Average", total_sales / 12],
+        ["Daily Average (18 days)", total_sales / 18],
         ["Total Reps", len(reps_data)]
     ]
     
@@ -1405,14 +1540,18 @@ def export_to_excel(reps_data, w1_reps, w2_reps, perf_analysis, output_filename=
     
     w1_total = sum(r['total_sales'] for r in w1_reps.values())
     w2_total = sum(r['total_sales'] for r in w2_reps.values())
+    w3_total = sum(r['total_sales'] for r in w3_reps.values())
     w1_profit = sum(r['total_profit'] for r in w1_reps.values())
     w2_profit = sum(r['total_profit'] for r in w2_reps.values())
+    w3_profit = sum(r['total_profit'] for r in w3_reps.values())
     
     week_data = [
         ["Week", "Sales", "Profit", "Margin", "Daily Avg"],
         ["Week 1 (Feb 1-7)", w1_total, w1_profit, w1_profit/w1_total if w1_total > 0 else 0, w1_total/6],
         ["Week 2 (Feb 9-14)", w2_total, w2_profit, w2_profit/w2_total if w2_total > 0 else 0, w2_total/6],
-        ["Change", w2_total - w1_total, w2_profit - w1_profit, (w2_profit/w2_total - w1_profit/w1_total) if w1_total > 0 and w2_total > 0 else 0, (w2_total - w1_total)/6]
+        ["Week 3 (Feb 16-21)", w3_total, w3_profit, w3_profit/w3_total if w3_total > 0 else 0, w3_total/6],
+        ["W1→W2 Change", w2_total - w1_total, w2_profit - w1_profit, (w2_profit/w2_total - w1_profit/w1_total) if w1_total > 0 and w2_total > 0 else 0, (w2_total - w1_total)/6],
+        ["W2→W3 Change", w3_total - w2_total, w3_profit - w2_profit, (w3_profit/w3_total - w2_profit/w2_total) if w2_total > 0 and w3_total > 0 else 0, (w3_total - w2_total)/6],
     ]
     
     for row_idx, row_data in enumerate(week_data, start=15):
@@ -1745,7 +1884,7 @@ def export_to_excel(reps_data, w1_reps, w2_reps, perf_analysis, output_filename=
     ws_charts['A35'] = "WEEK COMPARISON"
     ws_charts['A35'].font = Font(bold=True, size=12)
     
-    week_headers = ["Rep", "Week 1 Sales", "Week 2 Sales"]
+    week_headers = ["Rep", "Week 1 Sales", "Week 2 Sales", "Week 3 Sales"]
     for col_idx, header in enumerate(week_headers, start=1):
         cell = ws_charts.cell(row=36, column=col_idx, value=header)
         cell.font = header_font
@@ -1756,23 +1895,26 @@ def export_to_excel(reps_data, w1_reps, w2_reps, perf_analysis, output_filename=
     for rep_name, _ in sorted_reps:
         w1_sales = w1_reps.get(rep_name, {}).get('total_sales', 0)
         w2_sales = w2_reps.get(rep_name, {}).get('total_sales', 0)
+        w3_sales = w3_reps.get(rep_name, {}).get('total_sales', 0)
         ws_charts.cell(row=week_row, column=1, value=rep_name).border = thin_border
         ws_charts.cell(row=week_row, column=2, value=w1_sales).border = thin_border
         ws_charts.cell(row=week_row, column=2).number_format = currency_format
         ws_charts.cell(row=week_row, column=3, value=w2_sales).border = thin_border
         ws_charts.cell(row=week_row, column=3).number_format = currency_format
+        ws_charts.cell(row=week_row, column=4, value=w3_sales).border = thin_border
+        ws_charts.cell(row=week_row, column=4).number_format = currency_format
         week_row += 1
     
     # ----- CHART 5: Week Comparison Bar Chart -----
     week_chart = BarChart()
     week_chart.type = "col"
     week_chart.style = 10
-    week_chart.title = "Week 1 vs Week 2 Sales"
+    week_chart.title = "Week 1 vs Week 2 vs Week 3 Sales"
     week_chart.y_axis.title = "Sales (KES)"
     week_chart.x_axis.title = "Sales Rep"
     week_chart.grouping = "clustered"
     
-    week_data = Reference(ws_charts, min_col=2, max_col=3, min_row=36, max_row=36 + len(sorted_reps))
+    week_data = Reference(ws_charts, min_col=2, max_col=4, min_row=36, max_row=36 + len(sorted_reps))
     week_cats = Reference(ws_charts, min_col=1, min_row=37, max_row=36 + len(sorted_reps))
     week_chart.add_data(week_data, titles_from_data=True)
     week_chart.set_categories(week_cats)
@@ -1866,6 +2008,452 @@ def export_to_excel(reps_data, w1_reps, w2_reps, perf_analysis, output_filename=
     wb.save(output_filename)
     print(f"Excel exported: {output_filename}")
 
+def _set_cell_shading(cell, color_hex):
+    """Helper to set table cell background color in Word doc"""
+    shading_elm = parse_xml(r'<w:shd {} w:fill="{}"/>'.format(nsdecls('w'), color_hex))
+    cell._tc.get_or_add_tcPr().append(shading_elm)
+
+def _add_formatted_table_row(table, row_idx, values, bold=False, header=False, bg_color=None, font_color=None):
+    """Helper to populate a row in a Word table with formatting"""
+    row = table.rows[row_idx]
+    for col_idx, value in enumerate(values):
+        cell = row.cells[col_idx]
+        cell.text = ""
+        p = cell.paragraphs[0]
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        run = p.add_run(str(value))
+        run.font.size = Pt(9)
+        if bold or header:
+            run.bold = True
+        if font_color:
+            run.font.color.rgb = RGBColor.from_string(font_color)
+        if header:
+            run.font.color.rgb = RGBColor(255, 255, 255)
+        if bg_color:
+            _set_cell_shading(cell, bg_color)
+
+def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_filename="sales_rep_analysis_feb2026.docx"):
+    """Export comprehensive sales analysis to Word document"""
+    doc = DocxDocument()
+    
+    # --- Styles ---
+    style = doc.styles['Normal']
+    style.font.name = 'Calibri'
+    style.font.size = Pt(10)
+    
+    # ===== TITLE PAGE =====
+    doc.add_paragraph()
+    title = doc.add_heading('SALES REP PERFORMANCE ANALYSIS', level=0)
+    title.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    subtitle = doc.add_paragraph()
+    subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = subtitle.add_run('BOMAS Hardware Store - February 2026')
+    run.font.size = Pt(14)
+    run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
+    
+    period = doc.add_paragraph()
+    period.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = period.add_run('February 1-21, 2026 (18 Working Days)')
+    run.font.size = Pt(12)
+    run.font.color.rgb = RGBColor(0x44, 0x44, 0x44)
+    
+    gen_date = doc.add_paragraph()
+    gen_date.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = gen_date.add_run(f'Generated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
+    run.font.size = Pt(10)
+    run.font.color.rgb = RGBColor(0x99, 0x99, 0x99)
+    run.italic = True
+    
+    doc.add_page_break()
+    
+    # ===== EXECUTIVE SUMMARY =====
+    doc.add_heading('EXECUTIVE SUMMARY', level=1)
+    
+    total_sales = sum(r['total_sales'] for r in reps_data.values())
+    total_profit = sum(r['total_profit'] for r in reps_data.values())
+    overall_margin = (total_profit / total_sales * 100) if total_sales > 0 else 0
+    
+    w1_total = sum(r['total_sales'] for r in w1_reps.values())
+    w2_total = sum(r['total_sales'] for r in w2_reps.values())
+    w3_total = sum(r['total_sales'] for r in w3_reps.values())
+    w1_profit = sum(r['total_profit'] for r in w1_reps.values())
+    w2_profit = sum(r['total_profit'] for r in w2_reps.values())
+    w3_profit = sum(r['total_profit'] for r in w3_reps.values())
+    w1_margin = (w1_profit / w1_total * 100) if w1_total > 0 else 0
+    w2_margin = (w2_profit / w2_total * 100) if w2_total > 0 else 0
+    w3_margin = (w3_profit / w3_total * 100) if w3_total > 0 else 0
+    
+    # Executive summary table
+    summary_headers = ["Metric", "Week 1 (Feb 1-7)", "Week 2 (Feb 9-14)", "Week 3 (Feb 16-21)", "Combined"]
+    summary_rows = [
+        ["Total Sales", f"KES {w1_total:,.0f}", f"KES {w2_total:,.0f}", f"KES {w3_total:,.0f}", f"KES {total_sales:,.0f}"],
+        ["Total Profit", f"KES {w1_profit:,.0f}", f"KES {w2_profit:,.0f}", f"KES {w3_profit:,.0f}", f"KES {total_profit:,.0f}"],
+        ["Daily Average", f"KES {w1_total/6:,.0f}", f"KES {w2_total/6:,.0f}", f"KES {w3_total/6:,.0f}", f"KES {total_sales/18:,.0f}"],
+        ["Overall Margin", f"{w1_margin:.1f}%", f"{w2_margin:.1f}%", f"{w3_margin:.1f}%", f"{overall_margin:.1f}%"],
+    ]
+    
+    table = doc.add_table(rows=1 + len(summary_rows), cols=5)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, summary_headers, header=True, bg_color="2C3E50")
+    for i, row_data in enumerate(summary_rows, start=1):
+        bg = "ECF0F1" if i % 2 == 0 else None
+        _add_formatted_table_row(table, i, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # Weekly progress commentary
+    daily_w1w2 = ((w2_total/6 - w1_total/6) / (w1_total/6)) * 100
+    daily_w2w3 = ((w3_total/6 - w2_total/6) / (w2_total/6)) * 100
+    overall_daily_change = ((w3_total/6 - w1_total/6) / (w1_total/6)) * 100
+    
+    doc.add_heading('Weekly Progress', level=2)
+    
+    p = doc.add_paragraph()
+    symbol = "▲" if daily_w1w2 > 0 else "▼"
+    color = RGBColor(0x27, 0xAE, 0x60) if daily_w1w2 > 0 else RGBColor(0xE7, 0x4C, 0x3C)
+    run = p.add_run(f'{symbol} W1→W2: Daily sales {"increased" if daily_w1w2 > 0 else "decreased"} by {abs(daily_w1w2):.1f}%')
+    run.font.color.rgb = color
+    run.bold = True
+    
+    p = doc.add_paragraph()
+    symbol = "▲" if daily_w2w3 > 0 else "▼"
+    color = RGBColor(0x27, 0xAE, 0x60) if daily_w2w3 > 0 else RGBColor(0xE7, 0x4C, 0x3C)
+    run = p.add_run(f'{symbol} W2→W3: Daily sales {"increased" if daily_w2w3 > 0 else "decreased"} by {abs(daily_w2w3):.1f}%')
+    run.font.color.rgb = color
+    run.bold = True
+    
+    p = doc.add_paragraph()
+    symbol = "📈" if overall_daily_change > 0 else "📉"
+    run = p.add_run(f'{symbol} Overall 3-week trend: Daily sales {"UP" if overall_daily_change > 0 else "DOWN"} {abs(overall_daily_change):.1f}% from Week 1 to Week 3')
+    run.bold = True
+    run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60) if overall_daily_change > 0 else RGBColor(0xE7, 0x4C, 0x3C)
+    
+    # ===== KEY INSIGHTS =====
+    doc.add_heading('Key Insights', level=2)
+    sorted_reps = sorted(reps_data.items(), key=lambda x: x[1]['total_sales'], reverse=True)
+    top_rep = sorted_reps[0]
+    top_margin_rep = max(reps_data.items(), key=lambda x: x[1]['overall_margin'])
+    
+    insights = [
+        f"Top Seller: {top_rep[0]} with KES {top_rep[1]['total_sales']/1000000:.2f}M ({top_rep[1]['total_sales']/total_sales*100:.1f}% of total)",
+        f"Highest Margin: {top_margin_rep[0]} at {top_margin_rep[1]['overall_margin']:.1f}%",
+        f"W1→W2 daily change: {daily_w1w2:+.1f}% | W2→W3 daily change: {daily_w2w3:+.1f}%",
+        f"Overall 3-week daily trend: {overall_daily_change:+.1f}%",
+        f"Total profit: KES {total_profit/1000000:.2f}M at {overall_margin:.1f}% margin",
+    ]
+    for insight in insights:
+        doc.add_paragraph(f"◆ {insight}", style='List Bullet')
+    
+    doc.add_page_break()
+    
+    # ===== CHARTS PAGE =====
+    doc.add_heading('VISUAL ANALYSIS', level=1)
+    
+    # Embed charts if they exist
+    chart_files = [
+        ("Category Sales Distribution", "charts/summary_cat_donut.png"),
+        ("Week-over-Week Comparison", "charts/week_comparison_grouped.png"),
+        ("Sales vs Profit Comparison", "charts/summary_sales_chart.png"),
+        ("Category Breakdown by Rep", "charts/summary_cat_breakdown.png"),
+        ("Rep Contribution Analysis", "charts/rep_contribution.png"),
+        ("Performance Radar", "charts/summary_radar.png"),
+        ("Profit Margin Heatmap", "charts/summary_heatmap.png"),
+        ("Profit Waterfall", "charts/profit_waterfall.png"),
+    ]
+    
+    for chart_title, chart_path in chart_files:
+        if os.path.exists(chart_path):
+            doc.add_heading(chart_title, level=2)
+            doc.add_picture(chart_path, width=Inches(6.0))
+            doc.add_paragraph()
+    
+    doc.add_page_break()
+    
+    # ===== REP PERFORMANCE RANKINGS =====
+    doc.add_heading('SALES REP RANKINGS', level=1)
+    
+    rank_headers = ["Rank", "Rep Name", "Role", "Total Sales", "Total Profit", "Margin %", "Items Sold"]
+    table = doc.add_table(rows=1 + len(sorted_reps), cols=7)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, rank_headers, header=True, bg_color="2C3E50")
+    
+    for idx, (rep_name, rep_data) in enumerate(sorted_reps, start=1):
+        analysis = perf_analysis.get(rep_name, {})
+        row_data = [
+            f"#{idx}",
+            rep_name,
+            analysis.get('role', 'Sales Rep'),
+            f"KES {rep_data['total_sales']:,.0f}",
+            f"KES {rep_data['total_profit']:,.0f}",
+            f"{rep_data['overall_margin']:.1f}%",
+            f"{rep_data['total_qty']:,.0f}",
+        ]
+        bg = "ECF0F1" if idx % 2 == 0 else None
+        _add_formatted_table_row(table, idx, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # ===== WEEK COMPARISON TABLE =====
+    doc.add_heading('WEEK-OVER-WEEK COMPARISON BY REP', level=1)
+    
+    week_headers = ["Rep", "W1 Sales", "W2 Sales", "W3 Sales", "W1→W2 %", "W2→W3 %", "Overall %"]
+    table = doc.add_table(rows=1 + len(sorted_reps), cols=7)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, week_headers, header=True, bg_color="3498DB")
+    
+    for idx, (rep_name, _) in enumerate(sorted_reps, start=1):
+        w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
+        w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
+        w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
+        
+        chg_w1w2 = ((w2_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
+        chg_w2w3 = ((w3_s - w2_s) / w2_s * 100) if w2_s > 0 else 0
+        chg_overall = ((w3_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
+        
+        row_data = [
+            rep_name,
+            f"KES {w1_s:,.0f}",
+            f"KES {w2_s:,.0f}",
+            f"KES {w3_s:,.0f}",
+            f"{chg_w1w2:+.1f}%",
+            f"{chg_w2w3:+.1f}%",
+            f"{chg_overall:+.1f}%",
+        ]
+        bg = "ECF0F1" if idx % 2 == 0 else None
+        _add_formatted_table_row(table, idx, row_data, bg_color=bg)
+    
+    doc.add_page_break()
+    
+    # ===== CATEGORY ANALYSIS =====
+    doc.add_heading('CATEGORY BREAKDOWN', level=1)
+    
+    cat_headers = ["Category", "Total Sales", "Total Profit", "Margin %"]
+    table = doc.add_table(rows=1 + len(CAT_ORDER), cols=4)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, cat_headers, header=True, bg_color="27AE60")
+    
+    for idx, cat in enumerate(CAT_ORDER, start=1):
+        cat_sales = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+        cat_profit = sum(r['categories'].get(cat, {}).get('profit', 0) for r in reps_data.values())
+        cat_margin = (cat_profit / cat_sales * 100) if cat_sales > 0 else 0
+        row_data = [cat, f"KES {cat_sales:,.0f}", f"KES {cat_profit:,.0f}", f"{cat_margin:.1f}%"]
+        bg = "ECF0F1" if idx % 2 == 0 else None
+        _add_formatted_table_row(table, idx, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # ===== DEPARTMENT LEADERSHIP =====
+    doc.add_heading('DEPARTMENT LEADERSHIP', level=1)
+    
+    dept_headers = ["Department", "Head", "Dept Sales", "Dept Margin", "Dept Share"]
+    dept_rows = []
+    for dept in ['PLUMBING', 'PAINTS', 'ELECTRICALS']:
+        head = DEPARTMENT_HEADS.get(dept)
+        if head and head in reps_data:
+            rep_data = reps_data[head]
+            if dept in rep_data['categories']:
+                dept_sales = rep_data['categories'][dept]['sales_incl']
+                dept_margin = rep_data['categories'][dept]['margin_pct']
+                dept_total = sum(r['categories'].get(dept, {}).get('sales_incl', 0) for r in reps_data.values())
+                dept_share = (dept_sales / dept_total * 100) if dept_total > 0 else 0
+                dept_rows.append([dept, head, f"KES {dept_sales:,.0f}", f"{dept_margin:.1f}%", f"{dept_share:.1f}%"])
+    
+    if dept_rows:
+        table = doc.add_table(rows=1 + len(dept_rows), cols=5)
+        table.style = 'Table Grid'
+        table.alignment = WD_TABLE_ALIGNMENT.CENTER
+        _add_formatted_table_row(table, 0, dept_headers, header=True, bg_color="8E44AD")
+        for idx, row_data in enumerate(dept_rows, start=1):
+            bg = "F5F0FA" if idx % 2 == 0 else None
+            _add_formatted_table_row(table, idx, row_data, bg_color=bg)
+    
+    doc.add_page_break()
+    
+    # ===== REP-BY-REP COMMENTARY =====
+    doc.add_heading('REP-BY-REP PERFORMANCE COMMENTARY', level=1)
+    
+    for rep_name, rep_data in sorted_reps:
+        analysis = perf_analysis.get(rep_name, {})
+        role = analysis.get('role', 'Sales Rep')
+        badges = analysis.get('badges', [])
+        notes = analysis.get('notes', [])
+        
+        # Rep heading
+        doc.add_heading(f'{rep_name.upper()} — {role}', level=2)
+        
+        # Badges
+        if badges:
+            p = doc.add_paragraph()
+            run = p.add_run(' '.join(badges))
+            run.font.size = Pt(11)
+            run.bold = True
+            run.font.color.rgb = RGBColor(0x8E, 0x44, 0xAD)
+        
+        # Stats mini-table
+        stats_headers = ["Total Sales", "Total Profit", "Margin", "Items Sold", "Rank"]
+        stats_values = [
+            f"KES {rep_data['total_sales']:,.0f}",
+            f"KES {rep_data['total_profit']:,.0f}",
+            f"{rep_data['overall_margin']:.1f}%",
+            f"{rep_data['total_qty']:,.0f}",
+            f"#{analysis.get('sales_rank', '-')}",
+        ]
+        table = doc.add_table(rows=2, cols=5)
+        table.style = 'Table Grid'
+        table.alignment = WD_TABLE_ALIGNMENT.CENTER
+        _add_formatted_table_row(table, 0, stats_headers, header=True, bg_color="34495E")
+        _add_formatted_table_row(table, 1, stats_values, bold=True)
+        
+        doc.add_paragraph()
+        
+        # Category breakdown for this rep
+        rep_cats = [(cat, rep_data['categories'][cat]) for cat in CAT_ORDER if cat in rep_data['categories']]
+        if rep_cats:
+            cat_headers_rep = ["Category", "Sales", "Profit", "Margin", "Qty"]
+            table = doc.add_table(rows=1 + len(rep_cats), cols=5)
+            table.style = 'Table Grid'
+            table.alignment = WD_TABLE_ALIGNMENT.CENTER
+            _add_formatted_table_row(table, 0, cat_headers_rep, header=True, bg_color="3498DB")
+            for i, (cat, cdata) in enumerate(rep_cats, start=1):
+                row_data = [cat, f"KES {cdata['sales_incl']:,.0f}", f"KES {cdata['profit']:,.0f}",
+                           f"{cdata['margin_pct']:.1f}%", f"{cdata['qty']:,.0f}"]
+                bg = "ECF0F1" if i % 2 == 0 else None
+                _add_formatted_table_row(table, i, row_data, bg_color=bg)
+        
+        doc.add_paragraph()
+        
+        # Performance notes
+        p = doc.add_paragraph()
+        run = p.add_run('PERFORMANCE NOTES')
+        run.bold = True
+        run.font.size = Pt(10)
+        run.font.color.rgb = RGBColor(0x8E, 0x44, 0xAD)
+        
+        for note in notes[:6]:
+            p = doc.add_paragraph(style='List Bullet')
+            run = p.add_run(note)
+            run.font.size = Pt(9)
+            if '✓' in note or 'Excellent' in note or 'Outstanding' in note or 'upward' in note or 'Recovery' in note:
+                run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+            elif '⚠️' in note or 'below' in note or 'Declined' in note or 'Declining' in note or 'reversal' in note:
+                run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+            else:
+                run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
+        
+        # Per-rep charts if they exist
+        rep_safe = rep_name.replace(' ', '_')
+        chart_files_rep = [
+            f"charts/{rep_safe}_donut.png",
+            f"charts/{rep_safe}_sales_profit.png",
+        ]
+        for cf in chart_files_rep:
+            if os.path.exists(cf):
+                doc.add_picture(cf, width=Inches(4.5))
+        
+        doc.add_page_break()
+    
+    # ===== DAILY AVERAGES SUMMARY =====
+    doc.add_heading('DAILY SALES AVERAGES', level=1)
+    
+    p = doc.add_paragraph()
+    run = p.add_run('Average daily sales per rep across 18 working days (6 days per week × 3 weeks)')
+    run.italic = True
+    run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
+    
+    daily_headers = ["Rep", "W1 Daily Avg", "W2 Daily Avg", "W3 Daily Avg", "Overall Daily Avg"]
+    table = doc.add_table(rows=1 + len(sorted_reps) + 1, cols=5)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, daily_headers, header=True, bg_color="2C3E50")
+    
+    for idx, (rep_name, rep_data) in enumerate(sorted_reps, start=1):
+        w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
+        w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
+        w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
+        row_data = [
+            rep_name,
+            f"KES {w1_s/6:,.0f}",
+            f"KES {w2_s/6:,.0f}",
+            f"KES {w3_s/6:,.0f}",
+            f"KES {rep_data['total_sales']/18:,.0f}",
+        ]
+        bg = "ECF0F1" if idx % 2 == 0 else None
+        _add_formatted_table_row(table, idx, row_data, bg_color=bg)
+    
+    # Team total row
+    team_row = [
+        "TEAM TOTAL",
+        f"KES {w1_total/6:,.0f}",
+        f"KES {w2_total/6:,.0f}",
+        f"KES {w3_total/6:,.0f}",
+        f"KES {total_sales/18:,.0f}",
+    ]
+    _add_formatted_table_row(table, len(sorted_reps) + 1, team_row, bold=True, bg_color="D5F5E3")
+    
+    doc.add_paragraph()
+    
+    # ===== CONCLUSION =====
+    doc.add_heading('CONCLUSION & RECOMMENDATIONS', level=1)
+    
+    # Auto-generate conclusions based on data
+    conclusions = []
+    
+    # Overall trend
+    if overall_daily_change > 10:
+        conclusions.append(f"The team has shown strong growth over the 3-week period, with daily sales increasing by {overall_daily_change:.1f}% from Week 1 to Week 3.")
+    elif overall_daily_change > 0:
+        conclusions.append(f"The team has shown modest growth over the 3-week period, with daily sales increasing by {overall_daily_change:.1f}% from Week 1 to Week 3.")
+    else:
+        conclusions.append(f"The team's daily sales have declined by {abs(overall_daily_change):.1f}% from Week 1 to Week 3. Urgent review and corrective action is needed.")
+    
+    # Best performer
+    conclusions.append(f"{top_rep[0]} leads the team with KES {top_rep[1]['total_sales']/1000000:.2f}M in total sales ({top_rep[1]['total_sales']/total_sales*100:.1f}% of team total).")
+    
+    # Margin analysis
+    if overall_margin > 10:
+        conclusions.append(f"The overall profit margin of {overall_margin:.1f}% is healthy. {top_margin_rep[0]} leads margin performance at {top_margin_rep[1]['overall_margin']:.1f}%.")
+    else:
+        conclusions.append(f"The overall profit margin of {overall_margin:.1f}% is below the 10% target. Focus on higher-margin products.")
+    
+    # Reps who declined in W3
+    declining_reps = []
+    for rep_name in reps_data:
+        w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
+        w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
+        if w2_s > 0 and w3_s < w2_s * 0.85:
+            declining_reps.append(rep_name)
+    if declining_reps:
+        conclusions.append(f"The following reps showed significant decline (>15%) in Week 3: {', '.join(declining_reps)}. Individual reviews recommended.")
+    
+    # Improving reps
+    improving_reps = []
+    for rep_name in reps_data:
+        w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
+        w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
+        if w1_s > 0 and w3_s > w1_s * 1.3:
+            improving_reps.append(rep_name)
+    if improving_reps:
+        conclusions.append(f"Strong overall improvement from {', '.join(improving_reps)} — up >30% from Week 1 to Week 3.")
+    
+    for conclusion in conclusions:
+        doc.add_paragraph(conclusion, style='List Bullet')
+    
+    doc.add_paragraph()
+    p = doc.add_paragraph()
+    run = p.add_run('--- End of Report ---')
+    run.italic = True
+    run.font.color.rgb = RGBColor(0x99, 0x99, 0x99)
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    # Save
+    doc.save(output_filename)
+    print(f"Word document exported: {output_filename}")
+
 def main():
     print("=" * 60)
     print("SALES PERFORMANCE ANALYSIS - FEBRUARY 2026")
@@ -1875,15 +2463,19 @@ def main():
     print("Merging WALK IN-BOMAS -> Bonface Kitheka")
     
     print("\nProcessing Week 1 data (Feb 1-7)...")
-    w1_combined = combine_data(week1_merged, {"categories": {}})
+    w1_combined = combine_data(week1_merged)
     w1_reps = get_rep_data(w1_combined)
     
     print("Processing Week 2 data (Feb 9-14)...")
-    w2_combined = combine_data(week2_data, {"categories": {}})
+    w2_combined = combine_data(week2_data)
     w2_reps = get_rep_data(w2_combined)
     
-    print("Combining both weeks...")
-    combined = combine_data(week1_merged, week2_data)
+    print("Processing Week 3 data (Feb 16-21)...")
+    w3_combined = combine_data(week3_data)
+    w3_reps = get_rep_data(w3_combined)
+    
+    print("Combining all three weeks...")
+    combined = combine_data(week1_merged, week2_data, week3_data)
     reps_data = get_rep_data(combined)
     
     total_sales = sum(r['total_sales'] for r in reps_data.values())
@@ -1891,29 +2483,37 @@ def main():
     overall_margin = (total_profit / total_sales * 100) if total_sales > 0 else 0
     
     print("\n" + "=" * 60)
-    print("COMBINED RESULTS (Feb 1-14, 12 Working Days)")
+    print("COMBINED RESULTS (Feb 1-21, 18 Working Days)")
     print("=" * 60)
     print(f"\nTotal Sales: KES {total_sales:,.0f}")
     print(f"Total Profit: KES {total_profit:,.0f}")
     print(f"Overall Margin: {overall_margin:.1f}%")
-    print(f"Daily Average: KES {total_sales/12:,.0f}")
+    print(f"Daily Average: KES {total_sales/18:,.0f}")
     
-    print(f"\n{'Rep':<30} {'Sales':>12} {'Profit':>12} {'Margin':>8}")
+    # Week summaries
+    w1_total = sum(r['total_sales'] for r in w1_reps.values())
+    w2_total = sum(r['total_sales'] for r in w2_reps.values())
+    w3_total = sum(r['total_sales'] for r in w3_reps.values())
+    print(f"\nWeek 1 (Feb 1-7):   KES {w1_total:>12,.0f}  Daily: KES {w1_total/6:>10,.0f}")
+    print(f"Week 2 (Feb 9-14):  KES {w2_total:>12,.0f}  Daily: KES {w2_total/6:>10,.0f}")
+    print(f"Week 3 (Feb 16-21): KES {w3_total:>12,.0f}  Daily: KES {w3_total/6:>10,.0f}")
+    
+    print(f"\n{'Rep':<20} {'Sales':>12} {'Profit':>12} {'Margin':>8}")
     print("-" * 55)
     sorted_reps = sorted(reps_data.items(), key=lambda x: x[1]['total_sales'], reverse=True)
     for rep_name, rep_data in sorted_reps:
         print(f"{rep_name:<20} KES {rep_data['total_sales']:>10,.0f} KES {rep_data['total_profit']:>9,.0f} {rep_data['overall_margin']:>7.1f}%")
     
     print("\nGenerating PDF report with enhanced charts...")
-    generate_pdf_report(reps_data, w1_reps, w2_reps, "sales_rep_analysis_feb2026.pdf")
+    generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, "sales_rep_analysis_feb2026.pdf")
     
     # Generate performance analysis for JSON
-    perf_analysis = analyze_performance(reps_data, w1_reps, w2_reps)
+    perf_analysis = analyze_performance(reps_data, w1_reps, w2_reps, w3_reps)
     
     # Save JSON
     output_json = {
-        "period": "February 1-14, 2026",
-        "working_days": 12,
+        "period": "February 1-21, 2026",
+        "working_days": 18,
         "generated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "department_heads": DEPARTMENT_HEADS,
         "week1": {
@@ -1927,6 +2527,12 @@ def main():
             "days": 6,
             "total_sales": sum(r['total_sales'] for r in w2_reps.values()),
             "total_profit": sum(r['total_profit'] for r in w2_reps.values())
+        },
+        "week3": {
+            "period": "February 16-21, 2026",
+            "days": 6,
+            "total_sales": sum(r['total_sales'] for r in w3_reps.values()),
+            "total_profit": sum(r['total_profit'] for r in w3_reps.values())
         },
         "reps": {}
     }
@@ -1955,7 +2561,10 @@ def main():
     print("JSON saved: sales_rep_analysis_feb2026.json")
     
     # Export to Excel
-    export_to_excel(reps_data, w1_reps, w2_reps, perf_analysis, "sales_rep_analysis_feb2026.xlsx")
+    export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, "sales_rep_analysis_feb2026.xlsx")
+    
+    # Export to Word
+    export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, "sales_rep_analysis_feb2026.docx")
     
     print("\nDone!")
 
