@@ -2454,6 +2454,421 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     doc.save(output_filename)
     print(f"Word document exported: {output_filename}")
 
+def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps, reps_data, perf_analysis, output_dir="rep_reports"):
+    """Generate a standalone Word document report for a single sales rep"""
+    os.makedirs(output_dir, exist_ok=True)
+    
+    analysis = perf_analysis.get(rep_name, {})
+    role = analysis.get('role', 'Sales Rep')
+    badges = analysis.get('badges', [])
+    notes = analysis.get('notes', [])
+    
+    total_team_sales = sum(r['total_sales'] for r in reps_data.values())
+    total_team_profit = sum(r['total_profit'] for r in reps_data.values())
+    team_margin = (total_team_profit / total_team_sales * 100) if total_team_sales > 0 else 0
+    
+    w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
+    w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
+    w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
+    w1_p = w1_reps.get(rep_name, {}).get('total_profit', 0)
+    w2_p = w2_reps.get(rep_name, {}).get('total_profit', 0)
+    w3_p = w3_reps.get(rep_name, {}).get('total_profit', 0)
+    
+    chg_w1w2 = ((w2_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
+    chg_w2w3 = ((w3_s - w2_s) / w2_s * 100) if w2_s > 0 else 0
+    chg_overall = ((w3_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
+    
+    doc = DocxDocument()
+    style = doc.styles['Normal']
+    style.font.name = 'Calibri'
+    style.font.size = Pt(10)
+    
+    # ===== TITLE PAGE =====
+    doc.add_paragraph()
+    doc.add_paragraph()
+    
+    title = doc.add_heading(f'INDIVIDUAL PERFORMANCE REPORT', level=0)
+    title.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run(rep_name.upper())
+    run.font.size = Pt(22)
+    run.bold = True
+    run.font.color.rgb = RGBColor(0x2C, 0x3E, 0x50)
+    
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run(role)
+    run.font.size = Pt(14)
+    run.italic = True
+    run.font.color.rgb = RGBColor(0x7F, 0x8C, 0x8D)
+    
+    if badges:
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        run = p.add_run(' '.join(badges))
+        run.font.size = Pt(13)
+        run.bold = True
+        run.font.color.rgb = RGBColor(0x8E, 0x44, 0xAD)
+    
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run('BOMAS Hardware Store')
+    run.font.size = Pt(12)
+    run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
+    
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run('February 1-21, 2026 (18 Working Days)')
+    run.font.size = Pt(11)
+    run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
+    
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run(f'Generated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
+    run.font.size = Pt(9)
+    run.italic = True
+    run.font.color.rgb = RGBColor(0x99, 0x99, 0x99)
+    
+    doc.add_page_break()
+    
+    # ===== PAGE 2: PERFORMANCE SNAPSHOT =====
+    doc.add_heading('PERFORMANCE SNAPSHOT', level=1)
+    
+    # Overall stats table
+    stats_headers = ["Metric", "Value", "Team Comparison"]
+    team_avg_sales = total_team_sales / len(reps_data)
+    sales_vs_avg = ((rep_data['total_sales'] - team_avg_sales) / team_avg_sales) * 100
+    
+    stats_rows = [
+        ["Total Sales", f"KES {rep_data['total_sales']:,.0f}", f"{'▲' if sales_vs_avg > 0 else '▼'} {abs(sales_vs_avg):.1f}% vs team avg"],
+        ["Total Profit", f"KES {rep_data['total_profit']:,.0f}", f"{rep_data['total_profit']/total_team_profit*100:.1f}% of team total"],
+        ["Profit Margin", f"{rep_data['overall_margin']:.1f}%", f"Team avg: {team_margin:.1f}%"],
+        ["Items Sold", f"{rep_data['total_qty']:,.0f}", ""],
+        ["Daily Avg Sales", f"KES {rep_data['total_sales']/18:,.0f}", ""],
+        ["Daily Avg Profit", f"KES {rep_data['total_profit']/18:,.0f}", ""],
+        ["Team Share", f"{rep_data['total_sales']/total_team_sales*100:.1f}%", f"#{analysis.get('sales_rank', '-')} of {len(reps_data)} reps"],
+        ["Sales Rank", f"#{analysis.get('sales_rank', '-')}", ""],
+        ["Margin Rank", f"#{analysis.get('margin_rank', '-')}", ""],
+    ]
+    
+    table = doc.add_table(rows=1 + len(stats_rows), cols=3)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, stats_headers, header=True, bg_color="2C3E50")
+    for i, row_data in enumerate(stats_rows, start=1):
+        bg = "ECF0F1" if i % 2 == 0 else None
+        _add_formatted_table_row(table, i, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # ===== WEEKLY BREAKDOWN =====
+    doc.add_heading('WEEKLY SALES BREAKDOWN', level=1)
+    
+    week_headers = ["Week", "Sales", "Profit", "Margin", "Daily Avg", "Change"]
+    w1_margin = (w1_p / w1_s * 100) if w1_s > 0 else 0
+    w2_margin = (w2_p / w2_s * 100) if w2_s > 0 else 0
+    w3_margin = (w3_p / w3_s * 100) if w3_s > 0 else 0
+    
+    week_rows = [
+        ["Week 1 (Feb 1-7)", f"KES {w1_s:,.0f}", f"KES {w1_p:,.0f}", f"{w1_margin:.1f}%", f"KES {w1_s/6:,.0f}", "—"],
+        ["Week 2 (Feb 9-14)", f"KES {w2_s:,.0f}", f"KES {w2_p:,.0f}", f"{w2_margin:.1f}%", f"KES {w2_s/6:,.0f}", f"{chg_w1w2:+.1f}%"],
+        ["Week 3 (Feb 16-21)", f"KES {w3_s:,.0f}", f"KES {w3_p:,.0f}", f"{w3_margin:.1f}%", f"KES {w3_s/6:,.0f}", f"{chg_w2w3:+.1f}%"],
+        ["TOTAL", f"KES {rep_data['total_sales']:,.0f}", f"KES {rep_data['total_profit']:,.0f}", f"{rep_data['overall_margin']:.1f}%", f"KES {rep_data['total_sales']/18:,.0f}", f"{chg_overall:+.1f}%"],
+    ]
+    
+    table = doc.add_table(rows=1 + len(week_rows), cols=6)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, week_headers, header=True, bg_color="3498DB")
+    for i, row_data in enumerate(week_rows, start=1):
+        bg = "D5F5E3" if i == len(week_rows) else ("ECF0F1" if i % 2 == 0 else None)
+        bold = i == len(week_rows)
+        _add_formatted_table_row(table, i, row_data, bold=bold, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # Weekly trend commentary
+    doc.add_heading('Weekly Progress', level=2)
+    
+    p = doc.add_paragraph()
+    symbol = "▲" if chg_w1w2 > 0 else "▼"
+    color = RGBColor(0x27, 0xAE, 0x60) if chg_w1w2 > 0 else RGBColor(0xE7, 0x4C, 0x3C)
+    run = p.add_run(f'{symbol} W1→W2: Sales {"increased" if chg_w1w2 > 0 else "decreased"} by {abs(chg_w1w2):.1f}% (KES {w1_s/1000:,.0f}K → {w2_s/1000:,.0f}K)')
+    run.font.color.rgb = color
+    run.bold = True
+    
+    p = doc.add_paragraph()
+    symbol = "▲" if chg_w2w3 > 0 else "▼"
+    color = RGBColor(0x27, 0xAE, 0x60) if chg_w2w3 > 0 else RGBColor(0xE7, 0x4C, 0x3C)
+    run = p.add_run(f'{symbol} W2→W3: Sales {"increased" if chg_w2w3 > 0 else "decreased"} by {abs(chg_w2w3):.1f}% (KES {w2_s/1000:,.0f}K → {w3_s/1000:,.0f}K)')
+    run.font.color.rgb = color
+    run.bold = True
+    
+    p = doc.add_paragraph()
+    if chg_w1w2 > 0 and chg_w2w3 > 0:
+        run = p.add_run(f'📈 Consistent upward trend over 3 weeks (+{chg_overall:.1f}% overall)')
+        run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+    elif chg_w1w2 < 0 and chg_w2w3 < 0:
+        run = p.add_run(f'📉 Declining trend over 3 weeks ({chg_overall:.1f}% overall) — needs urgent attention')
+        run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+    elif chg_w1w2 > 0 and chg_w2w3 < 0:
+        run = p.add_run(f'⚠️ Week 3 reversal after Week 2 growth — monitor closely')
+        run.font.color.rgb = RGBColor(0xE6, 0x7E, 0x22)
+    elif chg_w1w2 < 0 and chg_w2w3 > 0:
+        run = p.add_run(f'✓ Recovery in Week 3 after Week 2 dip — positive momentum')
+        run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+    else:
+        run = p.add_run(f'Stable performance across 3 weeks ({chg_overall:+.1f}% overall)')
+        run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
+    run.bold = True
+    
+    doc.add_page_break()
+    
+    # ===== PAGE 3: CATEGORY ANALYSIS =====
+    doc.add_heading('CATEGORY PERFORMANCE', level=1)
+    
+    rep_cats = [(cat, rep_data['categories'][cat]) for cat in CAT_ORDER if cat in rep_data['categories']]
+    
+    if rep_cats:
+        cat_headers = ["Category", "Sales", "Profit", "Margin %", "Qty", "% of Total"]
+        table = doc.add_table(rows=1 + len(rep_cats) + 1, cols=6)
+        table.style = 'Table Grid'
+        table.alignment = WD_TABLE_ALIGNMENT.CENTER
+        _add_formatted_table_row(table, 0, cat_headers, header=True, bg_color="27AE60")
+        
+        for i, (cat, cdata) in enumerate(rep_cats, start=1):
+            pct_total = (cdata['sales_incl'] / rep_data['total_sales'] * 100) if rep_data['total_sales'] > 0 else 0
+            row_data = [cat, f"KES {cdata['sales_incl']:,.0f}", f"KES {cdata['profit']:,.0f}",
+                       f"{cdata['margin_pct']:.1f}%", f"{cdata['qty']:,.0f}", f"{pct_total:.1f}%"]
+            bg = "ECF0F1" if i % 2 == 0 else None
+            _add_formatted_table_row(table, i, row_data, bg_color=bg)
+        
+        # Total row
+        total_row = ["TOTAL", f"KES {rep_data['total_sales']:,.0f}", f"KES {rep_data['total_profit']:,.0f}",
+                     f"{rep_data['overall_margin']:.1f}%", f"{rep_data['total_qty']:,.0f}", "100.0%"]
+        _add_formatted_table_row(table, len(rep_cats) + 1, total_row, bold=True, bg_color="D5F5E3")
+    
+    doc.add_paragraph()
+    
+    # Category week-over-week breakdown per category
+    doc.add_heading('Category Weekly Trends', level=2)
+    
+    for cat in CAT_ORDER:
+        if cat not in rep_data['categories']:
+            continue
+        
+        w1_cat_s = w1_reps.get(rep_name, {}).get('categories', {}).get(cat, {}).get('sales_incl', 0)
+        w2_cat_s = w2_reps.get(rep_name, {}).get('categories', {}).get(cat, {}).get('sales_incl', 0)
+        w3_cat_s = w3_reps.get(rep_name, {}).get('categories', {}).get(cat, {}).get('sales_incl', 0)
+        
+        p = doc.add_paragraph()
+        run = p.add_run(f'{cat}: ')
+        run.bold = True
+        run.font.size = Pt(10)
+        
+        parts = [f"W1: KES {w1_cat_s:,.0f}", f"W2: KES {w2_cat_s:,.0f}", f"W3: KES {w3_cat_s:,.0f}"]
+        if w1_cat_s > 0:
+            cat_chg = ((w3_cat_s - w1_cat_s) / w1_cat_s * 100)
+            symbol = "▲" if cat_chg > 0 else "▼"
+            parts.append(f"Overall: {symbol}{abs(cat_chg):.0f}%")
+        
+        run = p.add_run(' → '.join(parts))
+        run.font.size = Pt(9)
+        run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
+    
+    doc.add_page_break()
+    
+    # ===== PAGE 4: CHARTS =====
+    doc.add_heading('VISUAL ANALYSIS', level=1)
+    
+    rep_safe = rep_name.replace(' ', '_')
+    chart_map = [
+        ("Sales Distribution by Category", f"charts/{rep_safe}_donut.png"),
+        ("Sales vs Profit by Category", f"charts/{rep_safe}_sales_profit.png"),
+        ("Profit Margin Gauge", f"charts/{rep_safe}_gauge.png"),
+    ]
+    
+    for chart_title, chart_path in chart_map:
+        if os.path.exists(chart_path):
+            doc.add_heading(chart_title, level=2)
+            doc.add_picture(chart_path, width=Inches(5.5))
+            doc.add_paragraph()
+    
+    doc.add_page_break()
+    
+    # ===== PAGE 5: TEAM CONTEXT =====
+    doc.add_heading('TEAM CONTEXT', level=1)
+    
+    p = doc.add_paragraph()
+    run = p.add_run(f'How {rep_name} compares to the rest of the team:')
+    run.italic = True
+    run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
+    doc.add_paragraph()
+    
+    sorted_team = sorted(reps_data.items(), key=lambda x: x[1]['total_sales'], reverse=True)
+    
+    team_headers = ["Rank", "Rep", "Total Sales", "Margin %", "Team Share"]
+    table = doc.add_table(rows=1 + len(sorted_team), cols=5)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, team_headers, header=True, bg_color="2C3E50")
+    
+    for idx, (rname, rdata) in enumerate(sorted_team, start=1):
+        share = (rdata['total_sales'] / total_team_sales * 100) if total_team_sales > 0 else 0
+        row_data = [f"#{idx}", rname, f"KES {rdata['total_sales']:,.0f}", f"{rdata['overall_margin']:.1f}%", f"{share:.1f}%"]
+        # Highlight the current rep's row
+        if rname == rep_name:
+            _add_formatted_table_row(table, idx, row_data, bold=True, bg_color="D4E6F1")
+        else:
+            bg = "ECF0F1" if idx % 2 == 0 else None
+            _add_formatted_table_row(table, idx, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # Week comparison vs team chart
+    if os.path.exists("charts/week_comparison_grouped.png"):
+        doc.add_heading('Team Week-over-Week Comparison', level=2)
+        doc.add_picture("charts/week_comparison_grouped.png", width=Inches(6.0))
+    
+    doc.add_page_break()
+    
+    # ===== PAGE 6: DEPARTMENT ANALYSIS (for dept heads) =====
+    primary_dept = get_primary_department(rep_name)
+    if primary_dept != 'GENERAL HARDWARE':
+        doc.add_heading(f'DEPARTMENT LEADERSHIP: {primary_dept}', level=1)
+        
+        # Show all reps' contributions to this department
+        dept_reps = []
+        dept_total_sales = 0
+        for rname, rdata in reps_data.items():
+            if primary_dept in rdata['categories']:
+                dept_sales = rdata['categories'][primary_dept]['sales_incl']
+                dept_profit = rdata['categories'][primary_dept]['profit']
+                dept_margin = rdata['categories'][primary_dept]['margin_pct']
+                dept_reps.append((rname, dept_sales, dept_profit, dept_margin))
+                dept_total_sales += dept_sales
+        
+        dept_reps.sort(key=lambda x: x[1], reverse=True)
+        
+        dept_headers = ["Rep", "Dept Sales", "Dept Profit", "Margin", "Dept Share"]
+        table = doc.add_table(rows=1 + len(dept_reps), cols=5)
+        table.style = 'Table Grid'
+        table.alignment = WD_TABLE_ALIGNMENT.CENTER
+        _add_formatted_table_row(table, 0, dept_headers, header=True, bg_color="8E44AD")
+        
+        for i, (rname, ds, dp, dm) in enumerate(dept_reps, start=1):
+            share = (ds / dept_total_sales * 100) if dept_total_sales > 0 else 0
+            row_data = [rname, f"KES {ds:,.0f}", f"KES {dp:,.0f}", f"{dm:.1f}%", f"{share:.1f}%"]
+            if rname == rep_name:
+                _add_formatted_table_row(table, i, row_data, bold=True, bg_color="F5EEF8")
+            else:
+                bg = "ECF0F1" if i % 2 == 0 else None
+                _add_formatted_table_row(table, i, row_data, bg_color=bg)
+        
+        doc.add_paragraph()
+        
+        p = doc.add_paragraph()
+        own_share = 0
+        for rname, ds, dp, dm in dept_reps:
+            if rname == rep_name:
+                own_share = (ds / dept_total_sales * 100) if dept_total_sales > 0 else 0
+        
+        if own_share >= 40:
+            run = p.add_run(f'✓ Strong department leadership — {rep_name} controls {own_share:.1f}% of {primary_dept} sales')
+            run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+        else:
+            run = p.add_run(f'⚠️ As Department Head, {rep_name} contributes {own_share:.1f}% of {primary_dept} sales — consider increasing dept focus')
+            run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+        run.bold = True
+        
+        doc.add_page_break()
+    
+    # ===== PERFORMANCE NOTES & RECOMMENDATIONS =====
+    doc.add_heading('PERFORMANCE NOTES', level=1)
+    
+    for note in notes:
+        p = doc.add_paragraph(style='List Bullet')
+        run = p.add_run(note)
+        run.font.size = Pt(10)
+        if '✓' in note or 'Excellent' in note or 'Outstanding' in note or 'upward' in note or 'Recovery' in note or 'Strong' in note:
+            run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+        elif '⚠️' in note or 'below' in note or 'Declined' in note or 'Declining' in note or 'reversal' in note or 'urgent' in note:
+            run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+        else:
+            run.font.color.rgb = RGBColor(0x34, 0x49, 0x5E)
+    
+    doc.add_paragraph()
+    
+    # Recommendations
+    doc.add_heading('RECOMMENDATIONS', level=1)
+    
+    recommendations = []
+    
+    # Margin-based recommendation
+    if rep_data['overall_margin'] < team_margin:
+        recommendations.append(f"Focus on higher-margin products to improve margin from {rep_data['overall_margin']:.1f}% toward the team average of {team_margin:.1f}%.")
+    else:
+        recommendations.append(f"Maintain excellent margin discipline at {rep_data['overall_margin']:.1f}% (above team avg of {team_margin:.1f}%).")
+    
+    # Growth-based recommendation
+    if chg_w2w3 < -10:
+        recommendations.append(f"Week 3 showed a {abs(chg_w2w3):.1f}% decline. Review customer activity and pipeline for Week 4.")
+    elif chg_w2w3 > 20:
+        recommendations.append(f"Outstanding Week 3 growth of +{chg_w2w3:.1f}%. Maintain this momentum into Week 4.")
+    
+    # Cross-selling recommendation
+    cats_sold = len(rep_data['categories'])
+    if cats_sold < 4:
+        missing = [c for c in CAT_ORDER if c not in rep_data['categories']]
+        recommendations.append(f"Expand into {', '.join(missing)} to increase cross-selling coverage (currently {cats_sold}/4 categories).")
+    else:
+        recommendations.append("Selling across all 4 categories — excellent product range coverage.")
+    
+    # Volume recommendation
+    if rep_data['total_sales'] < total_team_sales / len(reps_data) * 0.5:
+        recommendations.append("Sales are significantly below team average. Consider additional training or customer assignment review.")
+    
+    # Department head recommendation
+    if primary_dept != 'GENERAL HARDWARE':
+        dept_cat_data = rep_data['categories'].get(primary_dept, {})
+        if dept_cat_data:
+            dept_pct = (dept_cat_data.get('sales_incl', 0) / rep_data['total_sales'] * 100) if rep_data['total_sales'] > 0 else 0
+            if dept_pct < 30:
+                recommendations.append(f"As {primary_dept} Department Head, only {dept_pct:.1f}% of your sales are in your department. Consider refocusing.")
+    
+    for rec in recommendations:
+        doc.add_paragraph(rec, style='List Bullet')
+    
+    doc.add_paragraph()
+    p = doc.add_paragraph()
+    run = p.add_run('--- End of Individual Report ---')
+    run.italic = True
+    run.font.color.rgb = RGBColor(0x99, 0x99, 0x99)
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    # Save
+    safe_name = rep_name.replace(' ', '_')
+    filepath = os.path.join(output_dir, f"{safe_name}_performance_report.docx")
+    doc.save(filepath)
+    return filepath
+
+def generate_all_individual_reports(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_dir="rep_reports"):
+    """Generate individual Word reports for all reps"""
+    os.makedirs(output_dir, exist_ok=True)
+    sorted_reps = sorted(reps_data.items(), key=lambda x: x[1]['total_sales'], reverse=True)
+    
+    generated = []
+    for rep_name, rep_data in sorted_reps:
+        filepath = generate_individual_rep_report(
+            rep_name, rep_data, w1_reps, w2_reps, w3_reps, reps_data, perf_analysis, output_dir
+        )
+        generated.append(filepath)
+        print(f"  Generated: {filepath}")
+    
+    return generated
+
 def main():
     print("=" * 60)
     print("SALES PERFORMANCE ANALYSIS - FEBRUARY 2026")
@@ -2565,6 +2980,11 @@ def main():
     
     # Export to Word
     export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, "sales_rep_analysis_feb2026.docx")
+    
+    # Generate Individual Rep Reports
+    print("\n--- Generating Individual Rep Reports ---")
+    generated_files = generate_all_individual_reports(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis)
+    print(f"\n{len(generated_files)} individual reports generated in 'rep_reports/' folder")
     
     print("\nDone!")
 
