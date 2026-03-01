@@ -46,6 +46,122 @@ DEPARTMENT_HEADS = {
     'GENERAL HARDWARE': ['Gladys', 'Betha Odumo', 'Eliza', 'Stephen']
 }
 
+# Monthly Sales Targets (February 2026)
+MONTHLY_TARGETS = {
+    'OVERALL': 60_000_000,
+    'PAINTS': 7_000_000,
+    'PLUMBING': 4_000_000,
+    'ELECTRICALS': 2_000_000,
+    'GENERAL HARDWARE': 47_000_000,  # 60M - 7M - 4M - 2M
+}
+
+def get_target_analysis(actual, target):
+    """Return dict with target vs actual analysis"""
+    variance = actual - target
+    variance_pct = (variance / target * 100) if target > 0 else 0
+    achieved = actual >= target
+    return {
+        'actual': actual,
+        'target': target,
+        'variance': variance,
+        'variance_pct': variance_pct,
+        'achieved': achieved,
+    }
+
+def get_category_contribution(w1_reps, w2_reps, w3_reps, w4_reps, reps_data):
+    """Calculate category contribution % for each week and full month, plus trend."""
+    weeks = [
+        ("Week 1", w1_reps),
+        ("Week 2", w2_reps),
+        ("Week 3", w3_reps),
+        ("Week 4", w4_reps),
+    ]
+    result = {}  # cat -> {week_label: pct, ..., 'full_month': pct, 'trend': str}
+    for cat in CAT_ORDER:
+        result[cat] = {}
+    
+    for label, w_reps in weeks:
+        w_total = sum(r['total_sales'] for r in w_reps.values()) if w_reps else 0
+        for cat in CAT_ORDER:
+            cat_sales = 0
+            for rep_data in w_reps.values():
+                if cat in rep_data.get('categories', {}):
+                    cat_sales += rep_data['categories'][cat]['sales_incl']
+            result[cat][label] = round((cat_sales / w_total * 100) if w_total > 0 else 0, 1)
+    
+    # Full month
+    full_total = sum(r['total_sales'] for r in reps_data.values())
+    for cat in CAT_ORDER:
+        cat_sales = 0
+        for rep_data in reps_data.values():
+            if cat in rep_data.get('categories', {}):
+                cat_sales += rep_data['categories'][cat]['sales_incl']
+        result[cat]['Full Month'] = round((cat_sales / full_total * 100) if full_total > 0 else 0, 1)
+        # Trend: compare W1 to W4
+        w1_pct = result[cat].get('Week 1', 0)
+        w4_pct = result[cat].get('Week 4', 0)
+        diff = w4_pct - w1_pct
+        if diff > 1.5:
+            result[cat]['trend'] = f"↑ Growing (+{diff:.1f}pp)"
+        elif diff < -1.5:
+            result[cat]['trend'] = f"↓ Shrinking ({diff:.1f}pp)"
+        else:
+            result[cat]['trend'] = f"→ Stable ({diff:+.1f}pp)"
+        result[cat]['trend_diff'] = diff
+    return result
+
+def get_cumulative_target_tracking(w1_reps, w2_reps, w3_reps, w4_reps):
+    """Show cumulative sales vs target after each week — overall + per category."""
+    target_overall = MONTHLY_TARGETS['OVERALL']
+    weeks_data = [
+        ("Week 1", w1_reps),
+        ("Week 2", w2_reps),
+        ("Week 3", w3_reps),
+        ("Week 4", w4_reps),
+    ]
+    
+    result = {'OVERALL': [], **{cat: [] for cat in CAT_ORDER}}
+    cumulative_overall = 0
+    cumulative_cats = {cat: 0 for cat in CAT_ORDER}
+    
+    for idx, (label, w_reps) in enumerate(weeks_data, 1):
+        w_total = sum(r['total_sales'] for r in w_reps.values()) if w_reps else 0
+        cumulative_overall += w_total
+        pct_of_target = (cumulative_overall / target_overall * 100) if target_overall > 0 else 0
+        # Expected pace: after week N of 4 weeks, should be at N/4 * 100%
+        expected_pct = (idx / 4) * 100
+        pace = "Ahead" if pct_of_target >= expected_pct else "Behind"
+        result['OVERALL'].append({
+            'week': label,
+            'week_sales': w_total,
+            'cumulative': cumulative_overall,
+            'target': target_overall,
+            'pct_of_target': round(pct_of_target, 1),
+            'expected_pct': round(expected_pct, 1),
+            'pace': pace,
+        })
+        
+        # Per category
+        for cat in CAT_ORDER:
+            cat_week_sales = 0
+            for rep_data in w_reps.values():
+                if cat in rep_data.get('categories', {}):
+                    cat_week_sales += rep_data['categories'][cat]['sales_incl']
+            cumulative_cats[cat] += cat_week_sales
+            cat_target = MONTHLY_TARGETS.get(cat, 0)
+            cat_pct = (cumulative_cats[cat] / cat_target * 100) if cat_target > 0 else 0
+            result[cat].append({
+                'week': label,
+                'week_sales': cat_week_sales,
+                'cumulative': cumulative_cats[cat],
+                'target': cat_target,
+                'pct_of_target': round(cat_pct, 1),
+                'expected_pct': round(expected_pct, 1),
+                'pace': "Ahead" if cat_pct >= expected_pct else "Behind",
+            })
+    
+    return result
+
 def get_rep_role(rep_name):
     """Get the role/department assignment for a rep"""
     if rep_name == 'Lewis':
@@ -68,7 +184,7 @@ def get_primary_department(rep_name):
     else:
         return 'GENERAL HARDWARE'
 
-def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None):
+def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None, w4_reps=None):
     """Generate comprehensive performance analysis for each rep"""
     
     # Calculate team averages
@@ -94,11 +210,13 @@ def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None):
     # Calculate week-over-week improvements
     week_improvements_w1_w2 = {}
     week_improvements_w2_w3 = {}
+    week_improvements_w3_w4 = {}
     week_improvements_overall = {}
     for rep_name in reps_data.keys():
         w1_sales = w1_reps.get(rep_name, {}).get('total_sales', 0)
         w2_sales = w2_reps.get(rep_name, {}).get('total_sales', 0)
         w3_sales = w3_reps.get(rep_name, {}).get('total_sales', 0) if w3_reps else 0
+        w4_sales = w4_reps.get(rep_name, {}).get('total_sales', 0) if w4_reps else 0
         
         if w1_sales > 0:
             week_improvements_w1_w2[rep_name] = ((w2_sales - w1_sales) / w1_sales) * 100
@@ -110,13 +228,23 @@ def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None):
                 week_improvements_w2_w3[rep_name] = ((w3_sales - w2_sales) / w2_sales) * 100
             else:
                 week_improvements_w2_w3[rep_name] = 100 if w3_sales > 0 else 0
-            if w1_sales > 0:
-                week_improvements_overall[rep_name] = ((w3_sales - w1_sales) / w1_sales) * 100
+        
+        if w4_reps:
+            if w3_sales > 0:
+                week_improvements_w3_w4[rep_name] = ((w4_sales - w3_sales) / w3_sales) * 100
             else:
-                week_improvements_overall[rep_name] = 100 if w3_sales > 0 else 0
+                week_improvements_w3_w4[rep_name] = 100 if w4_sales > 0 else 0
+        
+        # Overall: W1 → latest week
+        latest_sales = w4_sales if w4_reps else (w3_sales if w3_reps else w2_sales)
+        if w1_sales > 0:
+            week_improvements_overall[rep_name] = ((latest_sales - w1_sales) / w1_sales) * 100
+        else:
+            week_improvements_overall[rep_name] = 100 if latest_sales > 0 else 0
     
     most_improved_w1w2 = max(week_improvements_w1_w2.items(), key=lambda x: x[1])
     most_improved_w2w3 = max(week_improvements_w2_w3.items(), key=lambda x: x[1]) if w3_reps else (None, 0)
+    most_improved_w3w4 = max(week_improvements_w3_w4.items(), key=lambda x: x[1]) if w4_reps else (None, 0)
     
     # Build performance analysis for each rep
     analysis = {}
@@ -138,7 +266,9 @@ def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None):
             badges.append("💎 BEST MARGIN")
         if profit_rank == 1:
             badges.append("💰 TOP PROFIT")
-        if w3_reps and rep_name == most_improved_w2w3[0] and most_improved_w2w3[1] > 20:
+        if w4_reps and rep_name == most_improved_w3w4[0] and most_improved_w3w4[1] > 20:
+            badges.append("📈 MOST IMPROVED")
+        elif w3_reps and rep_name == most_improved_w2w3[0] and most_improved_w2w3[1] > 20:
             badges.append("📈 MOST IMPROVED")
         elif not w3_reps and rep_name == most_improved_w1w2[0] and most_improved_w1w2[1] > 20:
             badges.append("📈 MOST IMPROVED")
@@ -165,6 +295,7 @@ def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None):
         w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
         w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
         w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0) if w3_reps else 0
+        w4_s = w4_reps.get(rep_name, {}).get('total_sales', 0) if w4_reps else 0
         
         imp_w1w2 = week_improvements_w1_w2.get(rep_name, 0)
         if imp_w1w2 > 30:
@@ -182,9 +313,36 @@ def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None):
                 notes.append(f"W2→W3: Declined {imp_w2w3:.1f}% (KES {w2_s/1000:,.0f}K → {w3_s/1000:,.0f}K)")
             else:
                 notes.append(f"W2→W3: Steady {imp_w2w3:+.1f}% (KES {w2_s/1000:,.0f}K → {w3_s/1000:,.0f}K)")
+        
+        if w4_reps:
+            imp_w3w4 = week_improvements_w3_w4.get(rep_name, 0)
+            if imp_w3w4 > 30:
+                notes.append(f"W3→W4: Strong growth +{imp_w3w4:.1f}% (KES {w3_s/1000:,.0f}K → {w4_s/1000:,.0f}K)")
+            elif imp_w3w4 < -10:
+                notes.append(f"W3→W4: Declined {imp_w3w4:.1f}% (KES {w3_s/1000:,.0f}K → {w4_s/1000:,.0f}K)")
+            else:
+                notes.append(f"W3→W4: Steady {imp_w3w4:+.1f}% (KES {w3_s/1000:,.0f}K → {w4_s/1000:,.0f}K)")
             
-            # Overall trajectory
+            # Overall 4-week trajectory
             imp_overall = week_improvements_overall.get(rep_name, 0)
+            up_count = sum(1 for x in [imp_w1w2, imp_w2w3, imp_w3w4] if x > 0)
+            down_count = sum(1 for x in [imp_w1w2, imp_w2w3, imp_w3w4] if x < 0)
+            
+            if up_count == 3:
+                notes.append(f"📈 Consistent upward trend all 4 weeks (+{imp_overall:.1f}% overall)")
+            elif down_count == 3:
+                notes.append(f"📉 Declining trend all 4 weeks ({imp_overall:.1f}% overall) - urgent review")
+            elif up_count >= 2:
+                notes.append(f"📊 Mostly positive trend over 4 weeks ({imp_overall:+.1f}% overall)")
+            elif down_count >= 2:
+                notes.append(f"⚠️ Mostly declining trend over 4 weeks ({imp_overall:+.1f}% overall)")
+            else:
+                notes.append(f"📊 Mixed performance over 4 weeks ({imp_overall:+.1f}% overall)")
+        
+        elif w3_reps:
+            # Overall trajectory for 3 weeks
+            imp_overall = week_improvements_overall.get(rep_name, 0)
+            imp_w2w3 = week_improvements_w2_w3.get(rep_name, 0)
             if imp_w1w2 > 0 and imp_w2w3 > 0:
                 notes.append(f"📈 Consistent upward trend over 3 weeks (+{imp_overall:.1f}% overall)")
             elif imp_w1w2 < 0 and imp_w2w3 < 0:
@@ -250,9 +408,10 @@ def analyze_performance(reps_data, w1_reps, w2_reps, w3_reps=None):
             'sales_rank': sales_rank,
             'margin_rank': margin_rank,
             'profit_rank': profit_rank,
-            'week_improvement': week_improvements_overall.get(rep_name, imp_w1w2) if w3_reps else imp_w1w2,
+            'week_improvement': week_improvements_overall.get(rep_name, imp_w1w2),
             'week_improvement_w1w2': imp_w1w2,
             'week_improvement_w2w3': week_improvements_w2_w3.get(rep_name, 0) if w3_reps else 0,
+            'week_improvement_w3w4': week_improvements_w3_w4.get(rep_name, 0) if w4_reps else 0,
             'sales_vs_avg': sales_vs_avg
         }
     
@@ -393,6 +552,49 @@ week3_raw = {
     }
 }
 
+# Week 4 Data (Feb 23-28, 2026) - 6 working days
+week4_raw = {
+    "period": "February 23-28, 2026",
+    "working_days": 6,
+    "categories": {
+        "PLUMBING": {
+            "Betha Odumo": {"qty": 312, "sales_incl": 166720, "cost": 107534.08, "profit": 36190.04},
+            "Bonface Kitheka": {"qty": 144, "sales_incl": 61260, "cost": 40466.46, "profit": 12343.88},
+            "Bonface Muriu": {"qty": 81, "sales_incl": 15450, "cost": 7830.21, "profit": 5488.76},
+            "Eliza": {"qty": 170, "sales_incl": 67710, "cost": 44535.37, "profit": 13835.34},
+            "Gladys": {"qty": 1, "sales_incl": 350, "cost": 180.46, "profit": 121.26},
+            "Lewis": {"qty": 344, "sales_incl": 40590, "cost": 23505.46, "profit": 11485.83},
+            "Stephen": {"qty": 1, "sales_incl": 3280, "cost": 1676.14, "profit": 1151.45}
+        },
+        "ELECTRICALS": {
+            "Betha Odumo": {"qty": 45, "sales_incl": 8925, "cost": 5418.66, "profit": 2275.30},
+            "Bonface Kitheka": {"qty": 949, "sales_incl": 113640, "cost": 74107.08, "profit": 23858.38},
+            "Eliza": {"qty": 147, "sales_incl": 6280, "cost": 4300.67, "profit": 1113.10},
+            "Gladys": {"qty": 8, "sales_incl": 1200, "cost": 543.27, "profit": 491.21},
+            "Lewis": {"qty": 30, "sales_incl": 9095, "cost": 5363.63, "profit": 2476.88}
+        },
+        "PAINTS": {
+            "Betha Odumo": {"qty": 216, "sales_incl": 133000, "cost": 90671.25, "profit": 23983.90},
+            "Bonface Kitheka": {"qty": 73, "sales_incl": 19000, "cost": 11615.39, "profit": 4763.90},
+            "Bonface Muriu": {"qty": 660, "sales_incl": 1044445, "cost": 745008.03, "profit": 155375.59},
+            "Eliza": {"qty": 155, "sales_incl": 71420, "cost": 47437.66, "profit": 14131.29},
+            "Gladys": {"qty": 42, "sales_incl": 43770, "cost": 30948.25, "profit": 6784.51},
+            "Lewis": {"qty": 109.5, "sales_incl": 198920, "cost": 150621.18, "profit": 20861.57},
+            "Stephen": {"qty": 10, "sales_incl": 8100, "cost": 5534.79, "profit": 1447.97}
+        },
+        "GENERAL HARDWARE": {
+            "Betha Odumo": {"qty": 4868.5, "sales_incl": 3689863, "cost": 2933190.36, "profit": 247726.02},
+            "Bonface Kitheka": {"qty": 232, "sales_incl": 90575, "cost": 62740.95, "profit": 15340.90},
+            "Bonface Muriu": {"qty": 883.5, "sales_incl": 382870, "cost": 273805.92, "profit": 56254.39},
+            "Eliza": {"qty": 3809, "sales_incl": 2765615, "cost": 2222724.81, "profit": 161426.04},
+            "Gladys": {"qty": 6451, "sales_incl": 5845910, "cost": 4750442.24, "profit": 289135.31},
+            "Lewis": {"qty": 272.5, "sales_incl": 101320, "cost": 73294.31, "profit": 14050.52},
+            "Stephen": {"qty": 1719.75, "sales_incl": 1106573, "cost": 851774.71, "profit": 102167.48},
+            "WALK IN-BOMAS": {"qty": 2, "sales_incl": 4990, "cost": 5119.23, "profit": -817.51}
+        }
+    }
+}
+
 def merge_reps(data):
     """Merge Magdalene into Betha Odumo, and WALK IN-BOMAS into Bonface Kitheka"""
     merged = {"period": data["period"], "working_days": data["working_days"], "categories": {}}
@@ -422,6 +624,7 @@ def merge_reps(data):
 week1_merged = merge_reps(week1_data)
 week2_data = merge_reps(week2_raw)
 week3_data = merge_reps(week3_raw)
+week4_data = merge_reps(week4_raw)
 
 def combine_data(*weeks):
     """Combine data from multiple weeks"""
@@ -810,33 +1013,52 @@ def create_rep_contribution_chart(reps_data, output_dir="charts"):
     plt.close()
     return filename
 
-def create_week_grouped_bar(w1_reps, w2_reps, w3_reps=None, output_dir="charts"):
-    """Grouped bar chart comparing Week 1 vs Week 2 vs Week 3 per rep"""
+def create_week_grouped_bar(w1_reps, w2_reps, w3_reps=None, w4_reps=None, output_dir="charts"):
+    """Grouped bar chart comparing Week 1 vs Week 2 vs Week 3 vs Week 4 per rep"""
     os.makedirs(output_dir, exist_ok=True)
     
     all_keys = set(w1_reps.keys()) | set(w2_reps.keys())
     if w3_reps:
         all_keys |= set(w3_reps.keys())
+    if w4_reps:
+        all_keys |= set(w4_reps.keys())
     all_reps = sorted(all_keys, 
                       key=lambda r: (w1_reps.get(r, {"total_sales": 0})["total_sales"] + 
                                      w2_reps.get(r, {"total_sales": 0})["total_sales"] +
-                                     (w3_reps.get(r, {"total_sales": 0})["total_sales"] if w3_reps else 0)),
+                                     (w3_reps.get(r, {"total_sales": 0})["total_sales"] if w3_reps else 0) +
+                                     (w4_reps.get(r, {"total_sales": 0})["total_sales"] if w4_reps else 0)),
                       reverse=True)
     
     w1_sales = [w1_reps.get(r, {"total_sales": 0})["total_sales"]/1000000 for r in all_reps]
     w2_sales = [w2_reps.get(r, {"total_sales": 0})["total_sales"]/1000000 for r in all_reps]
     w3_sales = [w3_reps.get(r, {"total_sales": 0})["total_sales"]/1000000 for r in all_reps] if w3_reps else []
+    w4_sales = [w4_reps.get(r, {"total_sales": 0})["total_sales"]/1000000 for r in all_reps] if w4_reps else []
     
     fig, ax = plt.subplots(figsize=(14, 7))
     x = np.arange(len(all_reps))
     
-    if w3_reps:
+    if w4_reps:
+        width = 0.2
+        bars1 = ax.bar(x - 1.5*width, w1_sales, width, label='Week 1 (Feb 1-7)', color='#3498db', edgecolor='white')
+        bars2 = ax.bar(x - 0.5*width, w2_sales, width, label='Week 2 (Feb 9-14)', color='#e74c3c', edgecolor='white')
+        bars3 = ax.bar(x + 0.5*width, w3_sales, width, label='Week 3 (Feb 16-21)', color='#2ecc71', edgecolor='white')
+        bars4 = ax.bar(x + 1.5*width, w4_sales, width, label='Week 4 (Feb 23-28)', color='#f39c12', edgecolor='white')
+        
+        # Value labels with W3→W4 growth indicator
+        for i in range(len(all_reps)):
+            s3, s4 = w3_sales[i], w4_sales[i]
+            growth = ((s4 - s3) / s3 * 100) if s3 > 0 else 0
+            color = '#27ae60' if growth > 0 else '#e74c3c'
+            symbol = '▲' if growth > 0 else '▼'
+            peak = max(w1_sales[i], w2_sales[i], s3, s4)
+            ax.annotate(f'{symbol}{abs(growth):.0f}%', xy=(i, peak + 0.1), 
+                       ha='center', fontsize=7, fontweight='bold', color=color)
+    elif w3_reps:
         width = 0.25
         bars1 = ax.bar(x - width, w1_sales, width, label='Week 1 (Feb 1-7)', color='#3498db', edgecolor='white')
         bars2 = ax.bar(x, w2_sales, width, label='Week 2 (Feb 9-14)', color='#e74c3c', edgecolor='white')
         bars3 = ax.bar(x + width, w3_sales, width, label='Week 3 (Feb 16-21)', color='#2ecc71', edgecolor='white')
         
-        # Value labels with W2→W3 growth indicator
         for i in range(len(all_reps)):
             s2, s3 = w2_sales[i], w3_sales[i]
             growth = ((s3 - s2) / s2 * 100) if s2 > 0 else 0
@@ -1118,7 +1340,7 @@ def create_category_breakdown_chart(reps_data, output_dir="charts"):
     plt.close()
     return filename
 
-def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
+def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, w4_reps, output_filename):
     print("Creating enhanced charts for PDF...")
     
     # Summary charts
@@ -1130,7 +1352,7 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     radar = create_radar_chart(reps_data)
     heatmap = create_heatmap(reps_data)
     rep_contribution = create_rep_contribution_chart(reps_data)
-    week_grouped = create_week_grouped_bar(w1_reps, w2_reps, w3_reps)
+    week_grouped = create_week_grouped_bar(w1_reps, w2_reps, w3_reps, w4_reps)
     waterfall = create_profit_waterfall(reps_data)
     cat_donut = create_category_donut(reps_data)
     margin_line = create_margin_line_chart(reps_data)
@@ -1158,6 +1380,10 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
                                      spaceAfter=12, alignment=TA_CENTER)
     heading_style = ParagraphStyle('Heading', parent=styles['Heading2'], fontSize=14, textColor=colors.HexColor('#2c3e50'), 
                                     spaceAfter=10, spaceBefore=10, fontName='Helvetica-Bold')
+    sub_heading_style = ParagraphStyle('SubHeading', parent=styles['Heading3'], fontSize=11, textColor=colors.HexColor('#34495e'),
+                                        spaceAfter=6, spaceBefore=6, fontName='Helvetica-Bold')
+    normal_style = ParagraphStyle('NormalBody', parent=styles['Normal'], fontSize=8, textColor=colors.HexColor('#555555'),
+                                   spaceAfter=4)
     body_style = ParagraphStyle('Body', parent=styles['Normal'], fontSize=9, textColor=colors.HexColor('#2c3e50'), spaceAfter=4)
     highlight_style = ParagraphStyle('Highlight', parent=styles['Normal'], fontSize=10, textColor=colors.HexColor('#27ae60'), 
                                       spaceAfter=6, fontName='Helvetica-Bold')
@@ -1172,7 +1398,7 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     elements.append(Spacer(1, 0.2*inch))
     elements.append(Paragraph("SALES REP PERFORMANCE ANALYSIS", title_style))
     elements.append(Paragraph("BOMAS Hardware Store - February 2026", subtitle_style))
-    elements.append(Paragraph("February 1-21, 2026 (18 Working Days)", subtitle_style))
+    elements.append(Paragraph("February 1-28, 2026 (24 Working Days)", subtitle_style))
     elements.append(Spacer(1, 0.15*inch))
     
     elements.append(Paragraph("EXECUTIVE SUMMARY", heading_style))
@@ -1180,22 +1406,25 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     w1_total = sum(r['total_sales'] for r in w1_reps.values())
     w2_total = sum(r['total_sales'] for r in w2_reps.values())
     w3_total = sum(r['total_sales'] for r in w3_reps.values())
+    w4_total = sum(r['total_sales'] for r in w4_reps.values())
     w1_profit = sum(r['total_profit'] for r in w1_reps.values())
     w2_profit = sum(r['total_profit'] for r in w2_reps.values())
     w3_profit = sum(r['total_profit'] for r in w3_reps.values())
+    w4_profit = sum(r['total_profit'] for r in w4_reps.values())
     w1_margin = (w1_profit / w1_total * 100) if w1_total > 0 else 0
     w2_margin = (w2_profit / w2_total * 100) if w2_total > 0 else 0
     w3_margin = (w3_profit / w3_total * 100) if w3_total > 0 else 0
+    w4_margin = (w4_profit / w4_total * 100) if w4_total > 0 else 0
     
     summary_data = [
-        ["Metric", "Week 1 (Feb 1-7)", "Week 2 (Feb 9-14)", "Week 3 (Feb 16-21)", "Combined"],
-        ["Total Sales", f"KES {w1_total:,.0f}", f"KES {w2_total:,.0f}", f"KES {w3_total:,.0f}", f"KES {total_sales:,.0f}"],
-        ["Total Profit", f"KES {w1_profit:,.0f}", f"KES {w2_profit:,.0f}", f"KES {w3_profit:,.0f}", f"KES {total_profit:,.0f}"],
-        ["Daily Average", f"KES {w1_total/6:,.0f}", f"KES {w2_total/6:,.0f}", f"KES {w3_total/6:,.0f}", f"KES {total_sales/18:,.0f}"],
-        ["Overall Margin", f"{w1_margin:.1f}%", f"{w2_margin:.1f}%", f"{w3_margin:.1f}%", f"{overall_margin:.1f}%"],
+        ["Metric", "Week 1\n(Feb 1-7)", "Week 2\n(Feb 9-14)", "Week 3\n(Feb 16-21)", "Week 4\n(Feb 23-28)", "Full Month"],
+        ["Total Sales", f"KES {w1_total:,.0f}", f"KES {w2_total:,.0f}", f"KES {w3_total:,.0f}", f"KES {w4_total:,.0f}", f"KES {total_sales:,.0f}"],
+        ["Total Profit", f"KES {w1_profit:,.0f}", f"KES {w2_profit:,.0f}", f"KES {w3_profit:,.0f}", f"KES {w4_profit:,.0f}", f"KES {total_profit:,.0f}"],
+        ["Daily Average", f"KES {w1_total/6:,.0f}", f"KES {w2_total/6:,.0f}", f"KES {w3_total/6:,.0f}", f"KES {w4_total/6:,.0f}", f"KES {total_sales/24:,.0f}"],
+        ["Margin", f"{w1_margin:.1f}%", f"{w2_margin:.1f}%", f"{w3_margin:.1f}%", f"{w4_margin:.1f}%", f"{overall_margin:.1f}%"],
     ]
     
-    summary_table = Table(summary_data, colWidths=[1.1*inch, 1.3*inch, 1.3*inch, 1.3*inch, 1.3*inch])
+    summary_table = Table(summary_data, colWidths=[0.9*inch, 1.05*inch, 1.05*inch, 1.05*inch, 1.05*inch, 1.15*inch])
     summary_table.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#2c3e50')),
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
@@ -1211,9 +1440,69 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     elements.append(summary_table)
     elements.append(Spacer(1, 0.15*inch))
     
+    # ===== MONTHLY TARGET ANALYSIS =====
+    elements.append(Paragraph("MONTHLY TARGET PERFORMANCE", heading_style))
+    
+    # Compute category actuals
+    cat_actuals = {}
+    for cat in CAT_ORDER:
+        cat_actuals[cat] = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+    
+    overall_ta = get_target_analysis(total_sales, MONTHLY_TARGETS['OVERALL'])
+    target_rows = [
+        ["Category", "Target", "Actual", "Variance", "Status"],
+        ["OVERALL SHOP", f"KES {MONTHLY_TARGETS['OVERALL']:,.0f}", f"KES {total_sales:,.0f}",
+         f"{'+'if overall_ta['variance']>=0 else ''}KES {overall_ta['variance']:,.0f} ({overall_ta['variance_pct']:+.1f}%)",
+         "✓ ACHIEVED" if overall_ta['achieved'] else "✗ MISSED"],
+    ]
+    for cat in CAT_ORDER:
+        ta = get_target_analysis(cat_actuals[cat], MONTHLY_TARGETS.get(cat, 0))
+        target_rows.append([
+            cat,
+            f"KES {MONTHLY_TARGETS.get(cat, 0):,.0f}",
+            f"KES {cat_actuals[cat]:,.0f}",
+            f"{'+'if ta['variance']>=0 else ''}KES {ta['variance']:,.0f} ({ta['variance_pct']:+.1f}%)",
+            "✓ ACHIEVED" if ta['achieved'] else "✗ MISSED",
+        ])
+    
+    target_table = Table(target_rows, colWidths=[1.2*inch, 1.2*inch, 1.2*inch, 1.6*inch, 1.1*inch])
+    target_table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#8e44ad')),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 8),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ('TOPPADDING', (0, 0), (-1, -1), 6),
+        ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor('#f5eef8')]),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+        ('FONTNAME', (0, 1), (0, -1), 'Helvetica-Bold'),
+    ]))
+    elements.append(target_table)
+    elements.append(Spacer(1, 0.1*inch))
+    
+    # Target commentary
+    if overall_ta['achieved']:
+        elements.append(Paragraph(f"✓ Overall monthly target of KES {MONTHLY_TARGETS['OVERALL']/1000000:.0f}M ACHIEVED — surpassed by KES {overall_ta['variance']/1000000:.1f}M ({overall_ta['variance_pct']:+.1f}%)", highlight_style))
+    else:
+        elements.append(Paragraph(f"✗ Overall monthly target of KES {MONTHLY_TARGETS['OVERALL']/1000000:.0f}M MISSED by KES {abs(overall_ta['variance'])/1000000:.1f}M ({overall_ta['variance_pct']:+.1f}%)", alert_style))
+    
+    missed_cats = []
+    for cat in ['PAINTS', 'PLUMBING', 'ELECTRICALS']:
+        ta = get_target_analysis(cat_actuals[cat], MONTHLY_TARGETS[cat])
+        if not ta['achieved']:
+            shortfall = abs(ta['variance'])
+            missed_cats.append(f"{cat}: KES {shortfall/1000000:.1f}M short ({ta['variance_pct']:+.1f}%)")
+    
+    if missed_cats:
+        elements.append(Paragraph(f"⚠️ Department targets missed: {'; '.join(missed_cats)}", alert_style))
+    
+    elements.append(Spacer(1, 0.15*inch))
+    
     # Weekly progress commentary
     daily_w1w2 = ((w2_total/6 - w1_total/6) / (w1_total/6)) * 100
     daily_w2w3 = ((w3_total/6 - w2_total/6) / (w2_total/6)) * 100
+    daily_w3w4 = ((w4_total/6 - w3_total/6) / (w3_total/6)) * 100
     
     if daily_w1w2 > 0:
         elements.append(Paragraph(f"▲ W1→W2: Daily sales increased by {daily_w1w2:.1f}%", highlight_style))
@@ -1225,14 +1514,146 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     else:
         elements.append(Paragraph(f"▼ W2→W3: Daily sales decreased by {abs(daily_w2w3):.1f}%", alert_style))
     
-    # Overall trend
-    overall_daily_change = ((w3_total/6 - w1_total/6) / (w1_total/6)) * 100
-    if overall_daily_change > 0:
-        elements.append(Paragraph(f"📈 Overall 3-week trend: Daily sales UP {overall_daily_change:.1f}% from Week 1 to Week 3", highlight_style))
+    if daily_w3w4 > 0:
+        elements.append(Paragraph(f"▲ W3→W4: Daily sales increased by {daily_w3w4:.1f}%", highlight_style))
     else:
-        elements.append(Paragraph(f"📉 Overall 3-week trend: Daily sales DOWN {abs(overall_daily_change):.1f}% from Week 1 to Week 3", alert_style))
+        elements.append(Paragraph(f"▼ W3→W4: Daily sales decreased by {abs(daily_w3w4):.1f}%", alert_style))
+    
+    # Overall trend
+    overall_daily_change = ((w4_total/6 - w1_total/6) / (w1_total/6)) * 100
+    if overall_daily_change > 0:
+        elements.append(Paragraph(f"📈 Overall monthly trend: Daily sales UP {overall_daily_change:.1f}% from Week 1 to Week 4", highlight_style))
+    else:
+        elements.append(Paragraph(f"📉 Overall monthly trend: Daily sales DOWN {abs(overall_daily_change):.1f}% from Week 1 to Week 4", alert_style))
     
     elements.append(Spacer(1, 0.1*inch))
+    
+    # ===== CUMULATIVE TARGET TRACKING =====
+    elements.append(Paragraph("CUMULATIVE TARGET TRACKING", heading_style))
+    elements.append(Paragraph("Shows progress toward the KES 60M monthly target after each week. Expected pace assumes equal distribution across 4 weeks.", normal_style))
+    elements.append(Spacer(1, 0.05*inch))
+    
+    cumulative = get_cumulative_target_tracking(w1_reps, w2_reps, w3_reps, w4_reps)
+    cum_rows = [["Week", "Week Sales", "Cumulative", "% of Target", "Expected %", "Pace"]]
+    for entry in cumulative['OVERALL']:
+        pace_str = "✓ Ahead" if entry['pace'] == 'Ahead' else "✗ Behind"
+        cum_rows.append([
+            entry['week'],
+            f"KES {entry['week_sales']:,.0f}",
+            f"KES {entry['cumulative']:,.0f}",
+            f"{entry['pct_of_target']:.1f}%",
+            f"{entry['expected_pct']:.1f}%",
+            pace_str,
+        ])
+    
+    cum_table = Table(cum_rows, colWidths=[0.8*inch, 1.3*inch, 1.3*inch, 1*inch, 1*inch, 0.9*inch])
+    cum_style_cmds = [
+        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#2c3e50')),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 8),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 5),
+        ('TOPPADDING', (0, 0), (-1, -1), 5),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+    ]
+    # Color-code pace column
+    for row_idx in range(1, len(cum_rows)):
+        if cumulative['OVERALL'][row_idx - 1]['pace'] == 'Ahead':
+            cum_style_cmds.append(('BACKGROUND', (-1, row_idx), (-1, row_idx), colors.HexColor('#d5f4e6')))
+        else:
+            cum_style_cmds.append(('BACKGROUND', (-1, row_idx), (-1, row_idx), colors.HexColor('#fadbd8')))
+    
+    cum_table.setStyle(TableStyle(cum_style_cmds))
+    elements.append(cum_table)
+    elements.append(Spacer(1, 0.08*inch))
+    
+    # Per-category cumulative mini-table
+    elements.append(Paragraph("Category-Level Cumulative Tracking (Final Week 4 Status)", sub_heading_style))
+    cat_cum_rows = [["Category", "Target", "Actual", "% Achieved", "Final Pace"]]
+    for cat in CAT_ORDER:
+        final = cumulative[cat][-1]
+        pace_str = "✓ Ahead" if final['pace'] == 'Ahead' else "✗ Behind"
+        cat_cum_rows.append([
+            cat,
+            f"KES {final['target']:,.0f}",
+            f"KES {final['cumulative']:,.0f}",
+            f"{final['pct_of_target']:.1f}%",
+            pace_str,
+        ])
+    
+    cat_cum_table = Table(cat_cum_rows, colWidths=[1.4*inch, 1.2*inch, 1.2*inch, 1*inch, 1*inch])
+    cat_cum_style = [
+        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#34495e')),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 8),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 5),
+        ('TOPPADDING', (0, 0), (-1, -1), 5),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+        ('FONTNAME', (0, 1), (0, -1), 'Helvetica-Bold'),
+    ]
+    for row_idx in range(1, len(cat_cum_rows)):
+        final = cumulative[CAT_ORDER[row_idx - 1]][-1]
+        if final['pace'] == 'Ahead':
+            cat_cum_style.append(('BACKGROUND', (-1, row_idx), (-1, row_idx), colors.HexColor('#d5f4e6')))
+        else:
+            cat_cum_style.append(('BACKGROUND', (-1, row_idx), (-1, row_idx), colors.HexColor('#fadbd8')))
+    cat_cum_table.setStyle(TableStyle(cat_cum_style))
+    elements.append(cat_cum_table)
+    elements.append(Spacer(1, 0.15*inch))
+    
+    # ===== CATEGORY CONTRIBUTION % =====
+    elements.append(Paragraph("CATEGORY CONTRIBUTION % (Share of Total Sales)", heading_style))
+    elements.append(Paragraph("Shows what percentage of total shop sales each category contributes per week, and the trend from Week 1 to Week 4.", normal_style))
+    elements.append(Spacer(1, 0.05*inch))
+    
+    contrib = get_category_contribution(w1_reps, w2_reps, w3_reps, w4_reps, reps_data)
+    contrib_rows = [["Category", "Week 1", "Week 2", "Week 3", "Week 4", "Full Month", "Trend"]]
+    for cat in CAT_ORDER:
+        c = contrib[cat]
+        trend_diff = c['trend_diff']
+        if trend_diff > 1.5:
+            trend_label = f"↑ +{trend_diff:.1f}pp"
+        elif trend_diff < -1.5:
+            trend_label = f"↓ {trend_diff:.1f}pp"
+        else:
+            trend_label = f"→ {trend_diff:+.1f}pp"
+        contrib_rows.append([
+            cat,
+            f"{c['Week 1']:.1f}%",
+            f"{c['Week 2']:.1f}%",
+            f"{c['Week 3']:.1f}%",
+            f"{c['Week 4']:.1f}%",
+            f"{c['Full Month']:.1f}%",
+            trend_label,
+        ])
+    
+    contrib_table = Table(contrib_rows, colWidths=[1.3*inch, 0.8*inch, 0.8*inch, 0.8*inch, 0.8*inch, 0.9*inch, 0.9*inch])
+    contrib_style_cmds = [
+        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#16a085')),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 8),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 5),
+        ('TOPPADDING', (0, 0), (-1, -1), 5),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+        ('FONTNAME', (0, 1), (0, -1), 'Helvetica-Bold'),
+        ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor('#e8f8f5')]),
+    ]
+    # Color-code trend column
+    for row_idx in range(1, len(contrib_rows)):
+        td = contrib[CAT_ORDER[row_idx - 1]]['trend_diff']
+        if td > 1.5:
+            contrib_style_cmds.append(('BACKGROUND', (-1, row_idx), (-1, row_idx), colors.HexColor('#d5f4e6')))
+        elif td < -1.5:
+            contrib_style_cmds.append(('BACKGROUND', (-1, row_idx), (-1, row_idx), colors.HexColor('#fadbd8')))
+    contrib_table.setStyle(TableStyle(contrib_style_cmds))
+    elements.append(contrib_table)
+    elements.append(Spacer(1, 0.15*inch))
+    
     elements.append(Paragraph("CATEGORY SALES DISTRIBUTION", heading_style))
     if cat_donut and os.path.exists(cat_donut):
         elements.append(Image(cat_donut, width=5.5*inch, height=4*inch))
@@ -1301,9 +1722,41 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     top_margin_rep = max(reps_data.items(), key=lambda x: x[1]['overall_margin'])
     insights.append(f"◆ Top Seller: {top_rep[0]} with KES {top_rep[1]['total_sales']/1000000:.2f}M ({top_rep[1]['total_sales']/total_sales*100:.1f}% of total)")
     insights.append(f"◆ Highest Margin: {top_margin_rep[0]} at {top_margin_rep[1]['overall_margin']:.1f}%")
-    insights.append(f"◆ W1→W2 daily change: {daily_w1w2:+.1f}% | W2→W3 daily change: {daily_w2w3:+.1f}%")
-    insights.append(f"◆ Overall 3-week daily trend: {overall_daily_change:+.1f}%")
+    insights.append(f"◆ W1→W2 daily change: {daily_w1w2:+.1f}% | W2→W3: {daily_w2w3:+.1f}% | W3→W4: {daily_w3w4:+.1f}%")
+    insights.append(f"◆ Overall monthly daily trend: {overall_daily_change:+.1f}%")
     insights.append(f"◆ Total profit: KES {total_profit/1000000:.2f}M at {overall_margin:.1f}% margin")
+    overall_target = MONTHLY_TARGETS['OVERALL']
+    overall_variance = total_sales - overall_target
+    if total_sales >= overall_target:
+        target_status = f"✓ SURPASSED by KES {overall_variance/1000000:.1f}M"
+    else:
+        target_status = f"✗ MISSED by KES {abs(overall_variance)/1000000:.1f}M"
+    insights.append(f"◆ Monthly Target: KES {overall_target/1000000:.0f}M → Actual: KES {total_sales/1000000:.1f}M ({target_status})")
+    
+    # Category target insights
+    for cat in ['PAINTS', 'PLUMBING', 'ELECTRICALS']:
+        cat_actual = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+        cat_target = MONTHLY_TARGETS.get(cat, 0)
+        ta = get_target_analysis(cat_actual, cat_target)
+        status = f"✓ +{ta['variance_pct']:.0f}%" if ta['achieved'] else f"✗ {ta['variance_pct']:+.0f}%"
+        insights.append(f"◆ {cat} Target: KES {cat_target/1000000:.0f}M → Actual: KES {cat_actual/1000000:.2f}M ({status})")
+    
+    # Cumulative tracking insight
+    cumulative_pdf = get_cumulative_target_tracking(w1_reps, w2_reps, w3_reps, w4_reps)
+    w2_cum = cumulative_pdf['OVERALL'][1]
+    w2_pace = w2_cum['pace']
+    insights.append(f"◆ Target Pace: After Week 2, shop was at {w2_cum['pct_of_target']:.1f}% of target ({'on track' if w2_pace == 'Ahead' else 'behind pace'}) — finished at {cumulative_pdf['OVERALL'][-1]['pct_of_target']:.1f}%")
+    
+    # Category contribution insight
+    contrib_pdf = get_category_contribution(w1_reps, w2_reps, w3_reps, w4_reps, reps_data)
+    gh_month = contrib_pdf['GENERAL HARDWARE']['Full Month']
+    insights.append(f"◆ General Hardware dominates at {gh_month:.1f}% of total sales")
+    shrinking = [cat for cat in CAT_ORDER if contrib_pdf[cat]['trend_diff'] < -1.5]
+    growing = [cat for cat in CAT_ORDER if contrib_pdf[cat]['trend_diff'] > 1.5]
+    if shrinking:
+        insights.append(f"◆ Shrinking share: {', '.join(shrinking)} — losing contribution from W1 to W4")
+    if growing:
+        insights.append(f"◆ Growing share: {', '.join(growing)} — gaining contribution from W1 to W4")
     
     for insight in insights:
         elements.append(Paragraph(insight, body_style))
@@ -1312,7 +1765,7 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     
     # ===== PAGE 7: PERFORMANCE COMMENTARY =====
     # Generate performance analysis
-    perf_analysis = analyze_performance(reps_data, w1_reps, w2_reps, w3_reps)
+    perf_analysis = analyze_performance(reps_data, w1_reps, w2_reps, w3_reps, w4_reps)
     
     elements.append(Paragraph("PERFORMANCE COMMENTARY & AWARDS", title_style))
     elements.append(Spacer(1, 0.15*inch))
@@ -1477,7 +1930,7 @@ def generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, output_filename):
     doc.build(elements)
     print(f"PDF generated: {output_filename}")
 
-def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_filename="sales_rep_analysis_feb2026.xlsx"):
+def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, w4_reps, perf_analysis, output_filename="sales_rep_analysis_feb2026.xlsx"):
     """Export sales analysis data to Excel with multiple sheets"""
     wb = Workbook()
     
@@ -1501,7 +1954,7 @@ def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_
     # Title
     ws_summary['A1'] = "SALES REP PERFORMANCE ANALYSIS"
     ws_summary['A1'].font = Font(bold=True, size=16)
-    ws_summary['A2'] = "BOMAS  - February 1-21, 2026"
+    ws_summary['A2'] = "BOMAS  - February 1-28, 2026 (Full Month)"
     ws_summary['A2'].font = Font(size=12, italic=True)
     ws_summary['A3'] = f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
     
@@ -1518,7 +1971,7 @@ def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_
         ["Total Sales", total_sales],
         ["Total Profit", total_profit],
         ["Overall Margin", overall_margin / 100],
-        ["Daily Average (18 days)", total_sales / 18],
+        ["Daily Average (24 days)", total_sales / 24],
         ["Total Reps", len(reps_data)]
     ]
     
@@ -1541,17 +1994,21 @@ def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_
     w1_total = sum(r['total_sales'] for r in w1_reps.values())
     w2_total = sum(r['total_sales'] for r in w2_reps.values())
     w3_total = sum(r['total_sales'] for r in w3_reps.values())
+    w4_total = sum(r['total_sales'] for r in w4_reps.values())
     w1_profit = sum(r['total_profit'] for r in w1_reps.values())
     w2_profit = sum(r['total_profit'] for r in w2_reps.values())
     w3_profit = sum(r['total_profit'] for r in w3_reps.values())
+    w4_profit = sum(r['total_profit'] for r in w4_reps.values())
     
     week_data = [
         ["Week", "Sales", "Profit", "Margin", "Daily Avg"],
         ["Week 1 (Feb 1-7)", w1_total, w1_profit, w1_profit/w1_total if w1_total > 0 else 0, w1_total/6],
         ["Week 2 (Feb 9-14)", w2_total, w2_profit, w2_profit/w2_total if w2_total > 0 else 0, w2_total/6],
         ["Week 3 (Feb 16-21)", w3_total, w3_profit, w3_profit/w3_total if w3_total > 0 else 0, w3_total/6],
+        ["Week 4 (Feb 23-28)", w4_total, w4_profit, w4_profit/w4_total if w4_total > 0 else 0, w4_total/6],
         ["W1→W2 Change", w2_total - w1_total, w2_profit - w1_profit, (w2_profit/w2_total - w1_profit/w1_total) if w1_total > 0 and w2_total > 0 else 0, (w2_total - w1_total)/6],
         ["W2→W3 Change", w3_total - w2_total, w3_profit - w2_profit, (w3_profit/w3_total - w2_profit/w2_total) if w2_total > 0 and w3_total > 0 else 0, (w3_total - w2_total)/6],
+        ["W3→W4 Change", w4_total - w3_total, w4_profit - w3_profit, (w4_profit/w4_total - w3_profit/w3_total) if w3_total > 0 and w4_total > 0 else 0, (w4_total - w3_total)/6],
     ]
     
     for row_idx, row_data in enumerate(week_data, start=15):
@@ -1572,6 +2029,138 @@ def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_
     ws_summary.column_dimensions['C'].width = 15
     ws_summary.column_dimensions['D'].width = 12
     ws_summary.column_dimensions['E'].width = 15
+    ws_summary.column_dimensions['F'].width = 20
+    
+    # ===== TARGET PERFORMANCE (on Summary sheet) =====
+    target_start_row = 25
+    ws_summary.cell(row=target_start_row, column=1, value="MONTHLY TARGET PERFORMANCE").font = Font(bold=True, size=12)
+    
+    header_fill_target = PatternFill(start_color="8E44AD", end_color="8E44AD", fill_type="solid")
+    achieved_fill = PatternFill(start_color="D5F5E3", end_color="D5F5E3", fill_type="solid")
+    missed_fill = PatternFill(start_color="FADBD8", end_color="FADBD8", fill_type="solid")
+    
+    cat_actuals_xl = {}
+    for cat in CAT_ORDER:
+        cat_actuals_xl[cat] = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+    
+    target_headers = ["Category", "Target", "Actual", "Variance", "Variance %", "Status"]
+    for col_idx, header in enumerate(target_headers, start=1):
+        cell = ws_summary.cell(row=target_start_row + 1, column=col_idx, value=header)
+        cell.font = header_font
+        cell.fill = header_fill_target
+        cell.border = thin_border
+        cell.alignment = Alignment(horizontal='center')
+    
+    target_items = [
+        ("OVERALL SHOP", MONTHLY_TARGETS['OVERALL'], total_sales),
+    ]
+    for cat in CAT_ORDER:
+        target_items.append((cat, MONTHLY_TARGETS.get(cat, 0), cat_actuals_xl[cat]))
+    
+    for i, (label, target, actual) in enumerate(target_items, start=target_start_row + 2):
+        ta = get_target_analysis(actual, target)
+        ws_summary.cell(row=i, column=1, value=label).border = thin_border
+        ws_summary.cell(row=i, column=2, value=target).border = thin_border
+        ws_summary.cell(row=i, column=2).number_format = currency_format
+        ws_summary.cell(row=i, column=3, value=actual).border = thin_border
+        ws_summary.cell(row=i, column=3).number_format = currency_format
+        ws_summary.cell(row=i, column=4, value=ta['variance']).border = thin_border
+        ws_summary.cell(row=i, column=4).number_format = currency_format
+        ws_summary.cell(row=i, column=5, value=ta['variance_pct'] / 100).border = thin_border
+        ws_summary.cell(row=i, column=5).number_format = '+0.0%;-0.0%'
+        status_cell = ws_summary.cell(row=i, column=6, value="✓ ACHIEVED" if ta['achieved'] else "✗ MISSED")
+        status_cell.border = thin_border
+        status_cell.alignment = Alignment(horizontal='center')
+        row_fill = achieved_fill if ta['achieved'] else missed_fill
+        for c in range(1, 7):
+            ws_summary.cell(row=i, column=c).fill = row_fill
+    
+    # ===== CUMULATIVE TARGET TRACKING (on Summary sheet) =====
+    cum_start_row = target_start_row + 2 + len(target_items) + 2  # 2 rows gap after targets
+    ws_summary.cell(row=cum_start_row, column=1, value="CUMULATIVE TARGET TRACKING").font = Font(bold=True, size=12)
+    
+    cumulative = get_cumulative_target_tracking(w1_reps, w2_reps, w3_reps, w4_reps)
+    cum_headers = ["Week", "Week Sales", "Cumulative", "% of Target", "Expected %", "Pace"]
+    cum_header_fill = PatternFill(start_color="2C3E50", end_color="2C3E50", fill_type="solid")
+    ahead_fill = PatternFill(start_color="D5F5E3", end_color="D5F5E3", fill_type="solid")
+    behind_fill = PatternFill(start_color="FADBD8", end_color="FADBD8", fill_type="solid")
+    
+    for col_idx, header in enumerate(cum_headers, start=1):
+        cell = ws_summary.cell(row=cum_start_row + 1, column=col_idx, value=header)
+        cell.font = header_font
+        cell.fill = cum_header_fill
+        cell.border = thin_border
+        cell.alignment = Alignment(horizontal='center')
+    
+    for w_idx, entry in enumerate(cumulative['OVERALL']):
+        row = cum_start_row + 2 + w_idx
+        ws_summary.cell(row=row, column=1, value=entry['week']).border = thin_border
+        ws_summary.cell(row=row, column=2, value=entry['week_sales']).border = thin_border
+        ws_summary.cell(row=row, column=2).number_format = currency_format
+        ws_summary.cell(row=row, column=3, value=entry['cumulative']).border = thin_border
+        ws_summary.cell(row=row, column=3).number_format = currency_format
+        ws_summary.cell(row=row, column=4, value=entry['pct_of_target'] / 100).border = thin_border
+        ws_summary.cell(row=row, column=4).number_format = '0.0%'
+        ws_summary.cell(row=row, column=5, value=entry['expected_pct'] / 100).border = thin_border
+        ws_summary.cell(row=row, column=5).number_format = '0.0%'
+        pace_cell = ws_summary.cell(row=row, column=6, value=f"{'✓ Ahead' if entry['pace'] == 'Ahead' else '✗ Behind'}")
+        pace_cell.border = thin_border
+        pace_cell.alignment = Alignment(horizontal='center')
+        row_fill_cum = ahead_fill if entry['pace'] == 'Ahead' else behind_fill
+        for c in range(1, 7):
+            ws_summary.cell(row=row, column=c).fill = row_fill_cum
+    
+    # ===== CATEGORY CONTRIBUTION % (on Summary sheet) =====
+    contrib_start_row = cum_start_row + 2 + 4 + 2  # after 4 data rows + 2 gap
+    ws_summary.cell(row=contrib_start_row, column=1, value="CATEGORY CONTRIBUTION %").font = Font(bold=True, size=12)
+    ws_summary.cell(row=contrib_start_row + 1, column=1, value="Share of total sales per week").font = Font(italic=True, size=9, color="555555")
+    
+    contrib = get_category_contribution(w1_reps, w2_reps, w3_reps, w4_reps, reps_data)
+    contrib_headers = ["Category", "Week 1", "Week 2", "Week 3", "Week 4", "Full Month", "Trend (W1→W4)"]
+    contrib_header_fill = PatternFill(start_color="16A085", end_color="16A085", fill_type="solid")
+    growing_fill = PatternFill(start_color="D5F5E3", end_color="D5F5E3", fill_type="solid")
+    shrinking_fill = PatternFill(start_color="FADBD8", end_color="FADBD8", fill_type="solid")
+    stable_fill = PatternFill(start_color="FCF3CF", end_color="FCF3CF", fill_type="solid")
+    
+    for col_idx, header in enumerate(contrib_headers, start=1):
+        cell = ws_summary.cell(row=contrib_start_row + 2, column=col_idx, value=header)
+        cell.font = header_font
+        cell.fill = contrib_header_fill
+        cell.border = thin_border
+        cell.alignment = Alignment(horizontal='center')
+    
+    for cat_idx, cat in enumerate(CAT_ORDER):
+        row = contrib_start_row + 3 + cat_idx
+        c = contrib[cat]
+        ws_summary.cell(row=row, column=1, value=cat).border = thin_border
+        ws_summary.cell(row=row, column=1).font = Font(bold=True)
+        ws_summary.cell(row=row, column=2, value=c['Week 1'] / 100).border = thin_border
+        ws_summary.cell(row=row, column=2).number_format = '0.0%'
+        ws_summary.cell(row=row, column=3, value=c['Week 2'] / 100).border = thin_border
+        ws_summary.cell(row=row, column=3).number_format = '0.0%'
+        ws_summary.cell(row=row, column=4, value=c['Week 3'] / 100).border = thin_border
+        ws_summary.cell(row=row, column=4).number_format = '0.0%'
+        ws_summary.cell(row=row, column=5, value=c['Week 4'] / 100).border = thin_border
+        ws_summary.cell(row=row, column=5).number_format = '0.0%'
+        ws_summary.cell(row=row, column=6, value=c['Full Month'] / 100).border = thin_border
+        ws_summary.cell(row=row, column=6).number_format = '0.0%'
+        td = c['trend_diff']
+        if td > 1.5:
+            trend_label = f"↑ Growing (+{td:.1f}pp)"
+            trend_fill = growing_fill
+        elif td < -1.5:
+            trend_label = f"↓ Shrinking ({td:.1f}pp)"
+            trend_fill = shrinking_fill
+        else:
+            trend_label = f"→ Stable ({td:+.1f}pp)"
+            trend_fill = stable_fill
+        trend_cell = ws_summary.cell(row=row, column=7, value=trend_label)
+        trend_cell.border = thin_border
+        trend_cell.alignment = Alignment(horizontal='center')
+        trend_cell.fill = trend_fill
+    
+    # Widen column G for trend text
+    ws_summary.column_dimensions['G'].width = 22
     
     # ===== SHEET 2: Rep Performance =====
     ws_reps = wb.create_sheet("Rep Performance")
@@ -1884,7 +2473,7 @@ def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_
     ws_charts['A35'] = "WEEK COMPARISON"
     ws_charts['A35'].font = Font(bold=True, size=12)
     
-    week_headers = ["Rep", "Week 1 Sales", "Week 2 Sales", "Week 3 Sales"]
+    week_headers = ["Rep", "Week 1 Sales", "Week 2 Sales", "Week 3 Sales", "Week 4 Sales"]
     for col_idx, header in enumerate(week_headers, start=1):
         cell = ws_charts.cell(row=36, column=col_idx, value=header)
         cell.font = header_font
@@ -1896,6 +2485,7 @@ def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_
         w1_sales = w1_reps.get(rep_name, {}).get('total_sales', 0)
         w2_sales = w2_reps.get(rep_name, {}).get('total_sales', 0)
         w3_sales = w3_reps.get(rep_name, {}).get('total_sales', 0)
+        w4_sales_val = w4_reps.get(rep_name, {}).get('total_sales', 0)
         ws_charts.cell(row=week_row, column=1, value=rep_name).border = thin_border
         ws_charts.cell(row=week_row, column=2, value=w1_sales).border = thin_border
         ws_charts.cell(row=week_row, column=2).number_format = currency_format
@@ -1903,18 +2493,20 @@ def export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_
         ws_charts.cell(row=week_row, column=3).number_format = currency_format
         ws_charts.cell(row=week_row, column=4, value=w3_sales).border = thin_border
         ws_charts.cell(row=week_row, column=4).number_format = currency_format
+        ws_charts.cell(row=week_row, column=5, value=w4_sales_val).border = thin_border
+        ws_charts.cell(row=week_row, column=5).number_format = currency_format
         week_row += 1
     
     # ----- CHART 5: Week Comparison Bar Chart -----
     week_chart = BarChart()
     week_chart.type = "col"
     week_chart.style = 10
-    week_chart.title = "Week 1 vs Week 2 vs Week 3 Sales"
+    week_chart.title = "Week 1 vs Week 2 vs Week 3 vs Week 4 Sales"
     week_chart.y_axis.title = "Sales (KES)"
     week_chart.x_axis.title = "Sales Rep"
     week_chart.grouping = "clustered"
     
-    week_data = Reference(ws_charts, min_col=2, max_col=4, min_row=36, max_row=36 + len(sorted_reps))
+    week_data = Reference(ws_charts, min_col=2, max_col=5, min_row=36, max_row=36 + len(sorted_reps))
     week_cats = Reference(ws_charts, min_col=1, min_row=37, max_row=36 + len(sorted_reps))
     week_chart.add_data(week_data, titles_from_data=True)
     week_chart.set_categories(week_cats)
@@ -2032,7 +2624,7 @@ def _add_formatted_table_row(table, row_idx, values, bold=False, header=False, b
         if bg_color:
             _set_cell_shading(cell, bg_color)
 
-def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_filename="sales_rep_analysis_feb2026.docx"):
+def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, w4_reps, perf_analysis, output_filename="sales_rep_analysis_feb2026.docx"):
     """Export comprehensive sales analysis to Word document"""
     doc = DocxDocument()
     
@@ -2054,7 +2646,7 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     
     period = doc.add_paragraph()
     period.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = period.add_run('February 1-21, 2026 (18 Working Days)')
+    run = period.add_run('February 1-28, 2026 (24 Working Days — Full Month)')
     run.font.size = Pt(12)
     run.font.color.rgb = RGBColor(0x44, 0x44, 0x44)
     
@@ -2077,23 +2669,26 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     w1_total = sum(r['total_sales'] for r in w1_reps.values())
     w2_total = sum(r['total_sales'] for r in w2_reps.values())
     w3_total = sum(r['total_sales'] for r in w3_reps.values())
+    w4_total = sum(r['total_sales'] for r in w4_reps.values())
     w1_profit = sum(r['total_profit'] for r in w1_reps.values())
     w2_profit = sum(r['total_profit'] for r in w2_reps.values())
     w3_profit = sum(r['total_profit'] for r in w3_reps.values())
+    w4_profit = sum(r['total_profit'] for r in w4_reps.values())
     w1_margin = (w1_profit / w1_total * 100) if w1_total > 0 else 0
     w2_margin = (w2_profit / w2_total * 100) if w2_total > 0 else 0
     w3_margin = (w3_profit / w3_total * 100) if w3_total > 0 else 0
+    w4_margin = (w4_profit / w4_total * 100) if w4_total > 0 else 0
     
     # Executive summary table
-    summary_headers = ["Metric", "Week 1 (Feb 1-7)", "Week 2 (Feb 9-14)", "Week 3 (Feb 16-21)", "Combined"]
+    summary_headers = ["Metric", "Week 1\n(Feb 1-7)", "Week 2\n(Feb 9-14)", "Week 3\n(Feb 16-21)", "Week 4\n(Feb 23-28)", "Full Month"]
     summary_rows = [
-        ["Total Sales", f"KES {w1_total:,.0f}", f"KES {w2_total:,.0f}", f"KES {w3_total:,.0f}", f"KES {total_sales:,.0f}"],
-        ["Total Profit", f"KES {w1_profit:,.0f}", f"KES {w2_profit:,.0f}", f"KES {w3_profit:,.0f}", f"KES {total_profit:,.0f}"],
-        ["Daily Average", f"KES {w1_total/6:,.0f}", f"KES {w2_total/6:,.0f}", f"KES {w3_total/6:,.0f}", f"KES {total_sales/18:,.0f}"],
-        ["Overall Margin", f"{w1_margin:.1f}%", f"{w2_margin:.1f}%", f"{w3_margin:.1f}%", f"{overall_margin:.1f}%"],
+        ["Total Sales", f"KES {w1_total:,.0f}", f"KES {w2_total:,.0f}", f"KES {w3_total:,.0f}", f"KES {w4_total:,.0f}", f"KES {total_sales:,.0f}"],
+        ["Total Profit", f"KES {w1_profit:,.0f}", f"KES {w2_profit:,.0f}", f"KES {w3_profit:,.0f}", f"KES {w4_profit:,.0f}", f"KES {total_profit:,.0f}"],
+        ["Daily Average", f"KES {w1_total/6:,.0f}", f"KES {w2_total/6:,.0f}", f"KES {w3_total/6:,.0f}", f"KES {w4_total/6:,.0f}", f"KES {total_sales/24:,.0f}"],
+        ["Margin", f"{w1_margin:.1f}%", f"{w2_margin:.1f}%", f"{w3_margin:.1f}%", f"{w4_margin:.1f}%", f"{overall_margin:.1f}%"],
     ]
     
-    table = doc.add_table(rows=1 + len(summary_rows), cols=5)
+    table = doc.add_table(rows=1 + len(summary_rows), cols=6)
     table.style = 'Table Grid'
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     _add_formatted_table_row(table, 0, summary_headers, header=True, bg_color="2C3E50")
@@ -2103,10 +2698,219 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     
     doc.add_paragraph()
     
+    # ===== MONTHLY TARGET PERFORMANCE =====
+    doc.add_heading('Monthly Target Performance', level=2)
+    
+    # Compute category actuals
+    cat_actuals = {}
+    for cat in CAT_ORDER:
+        cat_actuals[cat] = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+    
+    target_headers = ["Category", "Target", "Actual", "Variance", "Status"]
+    target_rows = []
+    
+    # Overall
+    overall_ta = get_target_analysis(total_sales, MONTHLY_TARGETS['OVERALL'])
+    target_rows.append([
+        "OVERALL SHOP",
+        f"KES {MONTHLY_TARGETS['OVERALL']:,.0f}",
+        f"KES {total_sales:,.0f}",
+        f"{'+'if overall_ta['variance']>=0 else ''}KES {overall_ta['variance']:,.0f} ({overall_ta['variance_pct']:+.1f}%)",
+        "✓ ACHIEVED" if overall_ta['achieved'] else "✗ MISSED",
+    ])
+    
+    # Per category
+    for cat in CAT_ORDER:
+        ta = get_target_analysis(cat_actuals[cat], MONTHLY_TARGETS.get(cat, 0))
+        target_rows.append([
+            cat,
+            f"KES {MONTHLY_TARGETS.get(cat, 0):,.0f}",
+            f"KES {cat_actuals[cat]:,.0f}",
+            f"{'+'if ta['variance']>=0 else ''}KES {ta['variance']:,.0f} ({ta['variance_pct']:+.1f}%)",
+            "✓ ACHIEVED" if ta['achieved'] else "✗ MISSED",
+        ])
+    
+    table = doc.add_table(rows=1 + len(target_rows), cols=5)
+    table.style = 'Table Grid'
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(table, 0, target_headers, header=True, bg_color="8E44AD")
+    for i, row_data in enumerate(target_rows, start=1):
+        ta = get_target_analysis(
+            total_sales if i == 1 else cat_actuals[CAT_ORDER[i-2]],
+            MONTHLY_TARGETS['OVERALL'] if i == 1 else MONTHLY_TARGETS.get(CAT_ORDER[i-2], 0)
+        )
+        bg = "D5F5E3" if ta['achieved'] else "FADBD8"
+        _add_formatted_table_row(table, i, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # Target commentary paragraphs
+    if overall_ta['achieved']:
+        p = doc.add_paragraph()
+        run = p.add_run(f'✓ OVERALL TARGET ACHIEVED — The shop surpassed its KES {MONTHLY_TARGETS["OVERALL"]/1000000:.0f}M monthly target by KES {overall_ta["variance"]/1000000:.1f}M ({overall_ta["variance_pct"]:+.1f}%). ')
+        run.bold = True
+        run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+        run = p.add_run(f'General Hardware was the primary driver, exceeding its KES {MONTHLY_TARGETS["GENERAL HARDWARE"]/1000000:.0f}M target by KES {(cat_actuals["GENERAL HARDWARE"]-MONTHLY_TARGETS["GENERAL HARDWARE"])/1000000:.1f}M and compensating for shortfalls in other departments.')
+        run.font.color.rgb = RGBColor(0x34, 0x49, 0x5E)
+    
+    # Missed category targets with actionable recommendations
+    missed_dept_recs = {
+        'PAINTS': {
+            'head': DEPARTMENT_HEADS['PAINTS'],
+            'actions': [
+                "Increase paint promotion and visibility — consider bundle deals with brushes, rollers, and thinners",
+                "Review pricing competitiveness vs local competition for popular paint brands",
+                "Target construction sites and contractors for bulk paint orders",
+                "Assign more reps to actively cross-sell paints alongside hardware purchases",
+            ]
+        },
+        'PLUMBING': {
+            'head': DEPARTMENT_HEADS['PLUMBING'],
+            'actions': [
+                "Expand plumbing product range — stock more high-demand fittings, pipes, and water tanks",
+                "Develop plumber partnerships and trade accounts for recurring orders",
+                "Run plumbing promotions targeting ongoing construction projects in the area",
+                "Improve department visibility and in-store signage to drive walk-in plumbing sales",
+            ]
+        },
+        'ELECTRICALS': {
+            'head': DEPARTMENT_HEADS['ELECTRICALS'],
+            'actions': [
+                "Significantly expand electricals inventory — current sales suggest limited stock or range",
+                "Partner with electrical contractors and electricians for bulk wiring/fitting orders",
+                "Introduce lighting, switches, and cable accessories to broaden the category",
+                "Cross-sell electrical items with construction hardware orders (e.g., conduit with cement)",
+            ]
+        },
+    }
+    
+    for cat in ['PAINTS', 'PLUMBING', 'ELECTRICALS']:
+        ta = get_target_analysis(cat_actuals[cat], MONTHLY_TARGETS[cat])
+        if not ta['achieved']:
+            p = doc.add_paragraph()
+            run = p.add_run(f'\n✗ {cat} TARGET MISSED — ')
+            run.bold = True
+            run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+            run = p.add_run(f'Actual KES {cat_actuals[cat]/1000000:.2f}M vs Target KES {MONTHLY_TARGETS[cat]/1000000:.0f}M (shortfall: KES {abs(ta["variance"])/1000000:.2f}M, {ta["variance_pct"]:+.1f}%). '
+                           f'Department Head: {missed_dept_recs[cat]["head"]}.')
+            run.font.color.rgb = RGBColor(0x34, 0x49, 0x5E)
+            
+            p = doc.add_paragraph()
+            run = p.add_run(f'Recommended Actions for March:')
+            run.bold = True
+            run.font.size = Pt(10)
+            run.font.color.rgb = RGBColor(0x2C, 0x3E, 0x50)
+            
+            for action in missed_dept_recs[cat]['actions']:
+                doc.add_paragraph(action, style='List Bullet')
+    
+    doc.add_paragraph()
+    
+    # ===== CUMULATIVE TARGET TRACKING =====
+    doc.add_heading('Cumulative Target Tracking', level=2)
+    p = doc.add_paragraph()
+    run = p.add_run('Progress toward the KES 60M monthly target after each week. Expected pace assumes equal distribution across 4 weeks.')
+    run.font.size = Pt(9)
+    run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
+    
+    cumulative = get_cumulative_target_tracking(w1_reps, w2_reps, w3_reps, w4_reps)
+    
+    # Overall cumulative table
+    cum_headers = ["Week", "Week Sales", "Cumulative", "% of Target", "Expected %", "Pace"]
+    cum_table = doc.add_table(rows=1 + 4, cols=6)
+    cum_table.style = 'Table Grid'
+    cum_table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(cum_table, 0, cum_headers, header=True, bg_color="2C3E50")
+    for i, entry in enumerate(cumulative['OVERALL'], start=1):
+        pace_str = "✓ Ahead" if entry['pace'] == 'Ahead' else "✗ Behind"
+        row_data = [
+            entry['week'],
+            f"KES {entry['week_sales']:,.0f}",
+            f"KES {entry['cumulative']:,.0f}",
+            f"{entry['pct_of_target']:.1f}%",
+            f"{entry['expected_pct']:.1f}%",
+            pace_str,
+        ]
+        bg = "D5F5E3" if entry['pace'] == 'Ahead' else "FADBD8"
+        _add_formatted_table_row(cum_table, i, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # Per-category final status
+    p = doc.add_paragraph()
+    run = p.add_run('Category-Level Cumulative Tracking (End of Month)')
+    run.bold = True
+    run.font.size = Pt(11)
+    run.font.color.rgb = RGBColor(0x34, 0x49, 0x5E)
+    
+    cat_cum_headers = ["Category", "Target", "Actual", "% Achieved", "Status"]
+    cat_cum_table = doc.add_table(rows=1 + 4, cols=5)
+    cat_cum_table.style = 'Table Grid'
+    cat_cum_table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(cat_cum_table, 0, cat_cum_headers, header=True, bg_color="34495E")
+    for i, cat in enumerate(CAT_ORDER, start=1):
+        final = cumulative[cat][-1]
+        status_str = "✓ Achieved" if final['pace'] == 'Ahead' else "✗ Missed"
+        row_data = [
+            cat,
+            f"KES {final['target']:,.0f}",
+            f"KES {final['cumulative']:,.0f}",
+            f"{final['pct_of_target']:.1f}%",
+            status_str,
+        ]
+        bg = "D5F5E3" if final['pace'] == 'Ahead' else "FADBD8"
+        _add_formatted_table_row(cat_cum_table, i, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
+    # ===== CATEGORY CONTRIBUTION % =====
+    doc.add_heading('Category Contribution % (Share of Total Sales)', level=2)
+    p = doc.add_paragraph()
+    run = p.add_run('Shows what percentage of total shop sales each category contributes per week, and the trend from Week 1 to Week 4.')
+    run.font.size = Pt(9)
+    run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
+    
+    contrib = get_category_contribution(w1_reps, w2_reps, w3_reps, w4_reps, reps_data)
+    contrib_headers = ["Category", "W1", "W2", "W3", "W4", "Month", "Trend"]
+    contrib_table = doc.add_table(rows=1 + 4, cols=7)
+    contrib_table.style = 'Table Grid'
+    contrib_table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _add_formatted_table_row(contrib_table, 0, contrib_headers, header=True, bg_color="16A085")
+    for i, cat in enumerate(CAT_ORDER, start=1):
+        c = contrib[cat]
+        td = c['trend_diff']
+        if td > 1.5:
+            trend_label = f"↑ +{td:.1f}pp"
+        elif td < -1.5:
+            trend_label = f"↓ {td:.1f}pp"
+        else:
+            trend_label = f"→ {td:+.1f}pp"
+        row_data = [
+            cat,
+            f"{c['Week 1']:.1f}%",
+            f"{c['Week 2']:.1f}%",
+            f"{c['Week 3']:.1f}%",
+            f"{c['Week 4']:.1f}%",
+            f"{c['Full Month']:.1f}%",
+            trend_label,
+        ]
+        # Color trend column
+        bg = None
+        if td > 1.5:
+            bg = "D5F5E3"
+        elif td < -1.5:
+            bg = "FADBD8"
+        else:
+            bg = "FCF3CF"
+        _add_formatted_table_row(contrib_table, i, row_data, bg_color=bg)
+    
+    doc.add_paragraph()
+    
     # Weekly progress commentary
     daily_w1w2 = ((w2_total/6 - w1_total/6) / (w1_total/6)) * 100
     daily_w2w3 = ((w3_total/6 - w2_total/6) / (w2_total/6)) * 100
-    overall_daily_change = ((w3_total/6 - w1_total/6) / (w1_total/6)) * 100
+    daily_w3w4 = ((w4_total/6 - w3_total/6) / (w3_total/6)) * 100
+    overall_daily_change = ((w4_total/6 - w1_total/6) / (w1_total/6)) * 100
     
     doc.add_heading('Weekly Progress', level=2)
     
@@ -2125,8 +2929,15 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     run.bold = True
     
     p = doc.add_paragraph()
+    symbol = "▲" if daily_w3w4 > 0 else "▼"
+    color = RGBColor(0x27, 0xAE, 0x60) if daily_w3w4 > 0 else RGBColor(0xE7, 0x4C, 0x3C)
+    run = p.add_run(f'{symbol} W3→W4: Daily sales {"increased" if daily_w3w4 > 0 else "decreased"} by {abs(daily_w3w4):.1f}%')
+    run.font.color.rgb = color
+    run.bold = True
+    
+    p = doc.add_paragraph()
     symbol = "📈" if overall_daily_change > 0 else "📉"
-    run = p.add_run(f'{symbol} Overall 3-week trend: Daily sales {"UP" if overall_daily_change > 0 else "DOWN"} {abs(overall_daily_change):.1f}% from Week 1 to Week 3')
+    run = p.add_run(f'{symbol} Full Month Trend: Daily sales {"UP" if overall_daily_change > 0 else "DOWN"} {abs(overall_daily_change):.1f}% from Week 1 to Week 4')
     run.bold = True
     run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60) if overall_daily_change > 0 else RGBColor(0xE7, 0x4C, 0x3C)
     
@@ -2139,10 +2950,34 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     insights = [
         f"Top Seller: {top_rep[0]} with KES {top_rep[1]['total_sales']/1000000:.2f}M ({top_rep[1]['total_sales']/total_sales*100:.1f}% of total)",
         f"Highest Margin: {top_margin_rep[0]} at {top_margin_rep[1]['overall_margin']:.1f}%",
-        f"W1→W2 daily change: {daily_w1w2:+.1f}% | W2→W3 daily change: {daily_w2w3:+.1f}%",
-        f"Overall 3-week daily trend: {overall_daily_change:+.1f}%",
+        f"W1→W2: {daily_w1w2:+.1f}% | W2→W3: {daily_w2w3:+.1f}% | W3→W4: {daily_w3w4:+.1f}%",
+        f"Full month daily trend: {overall_daily_change:+.1f}%",
         f"Total profit: KES {total_profit/1000000:.2f}M at {overall_margin:.1f}% margin",
+        f"Monthly Target: KES {MONTHLY_TARGETS['OVERALL']/1000000:.0f}M → Actual: KES {total_sales/1000000:.1f}M ({'✓ SURPASSED' if total_sales >= MONTHLY_TARGETS['OVERALL'] else '✗ MISSED'})",
     ]
+    # Category target insights
+    for cat in ['PAINTS', 'PLUMBING', 'ELECTRICALS', 'GENERAL HARDWARE']:
+        cat_actual = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+        cat_target = MONTHLY_TARGETS.get(cat, 0)
+        ta = get_target_analysis(cat_actual, cat_target)
+        status = f"✓ +{ta['variance_pct']:.0f}%" if ta['achieved'] else f"✗ {ta['variance_pct']:+.0f}%"
+        insights.append(f"{cat} Target: KES {cat_target/1000000:.0f}M → KES {cat_actual/1000000:.2f}M ({status})")
+    
+    # Cumulative & contribution insights
+    cumul_word = get_cumulative_target_tracking(w1_reps, w2_reps, w3_reps, w4_reps)
+    w2_cum = cumul_word['OVERALL'][1]
+    insights.append(f"Target Pace: After Week 2, shop was at {w2_cum['pct_of_target']:.1f}% of target — finished at {cumul_word['OVERALL'][-1]['pct_of_target']:.1f}%")
+    
+    contrib_word = get_category_contribution(w1_reps, w2_reps, w3_reps, w4_reps, reps_data)
+    gh_month = contrib_word['GENERAL HARDWARE']['Full Month']
+    insights.append(f"General Hardware dominates at {gh_month:.1f}% of total sales")
+    shrinking_w = [cat for cat in CAT_ORDER if contrib_word[cat]['trend_diff'] < -1.5]
+    growing_w = [cat for cat in CAT_ORDER if contrib_word[cat]['trend_diff'] > 1.5]
+    if shrinking_w:
+        insights.append(f"Shrinking share: {', '.join(shrinking_w)} — losing contribution W1→W4")
+    if growing_w:
+        insights.append(f"Growing share: {', '.join(growing_w)} — gaining contribution W1→W4")
+    
     for insight in insights:
         doc.add_paragraph(f"◆ {insight}", style='List Bullet')
     
@@ -2199,8 +3034,8 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     # ===== WEEK COMPARISON TABLE =====
     doc.add_heading('WEEK-OVER-WEEK COMPARISON BY REP', level=1)
     
-    week_headers = ["Rep", "W1 Sales", "W2 Sales", "W3 Sales", "W1→W2 %", "W2→W3 %", "Overall %"]
-    table = doc.add_table(rows=1 + len(sorted_reps), cols=7)
+    week_headers = ["Rep", "W1 Sales", "W2 Sales", "W3 Sales", "W4 Sales", "W1→W2 %", "W2→W3 %", "W3→W4 %", "Overall %"]
+    table = doc.add_table(rows=1 + len(sorted_reps), cols=9)
     table.style = 'Table Grid'
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     _add_formatted_table_row(table, 0, week_headers, header=True, bg_color="3498DB")
@@ -2209,18 +3044,22 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
         w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
         w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
         w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
+        w4_s = w4_reps.get(rep_name, {}).get('total_sales', 0) if w4_reps else 0
         
         chg_w1w2 = ((w2_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
         chg_w2w3 = ((w3_s - w2_s) / w2_s * 100) if w2_s > 0 else 0
-        chg_overall = ((w3_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
+        chg_w3w4 = ((w4_s - w3_s) / w3_s * 100) if w3_s > 0 else 0
+        chg_overall = ((w4_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
         
         row_data = [
             rep_name,
             f"KES {w1_s:,.0f}",
             f"KES {w2_s:,.0f}",
             f"KES {w3_s:,.0f}",
+            f"KES {w4_s:,.0f}",
             f"{chg_w1w2:+.1f}%",
             f"{chg_w2w3:+.1f}%",
+            f"{chg_w3w4:+.1f}%",
             f"{chg_overall:+.1f}%",
         ]
         bg = "ECF0F1" if idx % 2 == 0 else None
@@ -2231,8 +3070,8 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     # ===== CATEGORY ANALYSIS =====
     doc.add_heading('CATEGORY BREAKDOWN', level=1)
     
-    cat_headers = ["Category", "Total Sales", "Total Profit", "Margin %"]
-    table = doc.add_table(rows=1 + len(CAT_ORDER), cols=4)
+    cat_headers = ["Category", "Target", "Actual Sales", "Variance", "Profit", "Margin %", "Status"]
+    table = doc.add_table(rows=1 + len(CAT_ORDER), cols=7)
     table.style = 'Table Grid'
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     _add_formatted_table_row(table, 0, cat_headers, header=True, bg_color="27AE60")
@@ -2241,8 +3080,18 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
         cat_sales = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
         cat_profit = sum(r['categories'].get(cat, {}).get('profit', 0) for r in reps_data.values())
         cat_margin = (cat_profit / cat_sales * 100) if cat_sales > 0 else 0
-        row_data = [cat, f"KES {cat_sales:,.0f}", f"KES {cat_profit:,.0f}", f"{cat_margin:.1f}%"]
-        bg = "ECF0F1" if idx % 2 == 0 else None
+        cat_target = MONTHLY_TARGETS.get(cat, 0)
+        ta = get_target_analysis(cat_sales, cat_target)
+        row_data = [
+            cat,
+            f"KES {cat_target:,.0f}",
+            f"KES {cat_sales:,.0f}",
+            f"{'+'if ta['variance']>=0 else ''}KES {ta['variance']:,.0f}",
+            f"KES {cat_profit:,.0f}",
+            f"{cat_margin:.1f}%",
+            "✓" if ta['achieved'] else "✗",
+        ]
+        bg = "D5F5E3" if ta['achieved'] else "FADBD8"
         _add_formatted_table_row(table, idx, row_data, bg_color=bg)
     
     doc.add_paragraph()
@@ -2361,12 +3210,12 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     doc.add_heading('DAILY SALES AVERAGES', level=1)
     
     p = doc.add_paragraph()
-    run = p.add_run('Average daily sales per rep across 18 working days (6 days per week × 3 weeks)')
+    run = p.add_run('Average daily sales per rep across 24 working days (6 days per week × 4 weeks)')
     run.italic = True
     run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
     
-    daily_headers = ["Rep", "W1 Daily Avg", "W2 Daily Avg", "W3 Daily Avg", "Overall Daily Avg"]
-    table = doc.add_table(rows=1 + len(sorted_reps) + 1, cols=5)
+    daily_headers = ["Rep", "W1 Daily Avg", "W2 Daily Avg", "W3 Daily Avg", "W4 Daily Avg", "Overall Daily Avg"]
+    table = doc.add_table(rows=1 + len(sorted_reps) + 1, cols=6)
     table.style = 'Table Grid'
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     _add_formatted_table_row(table, 0, daily_headers, header=True, bg_color="2C3E50")
@@ -2375,23 +3224,27 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
         w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
         w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
         w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
+        w4_s = w4_reps.get(rep_name, {}).get('total_sales', 0) if w4_reps else 0
         row_data = [
             rep_name,
             f"KES {w1_s/6:,.0f}",
             f"KES {w2_s/6:,.0f}",
             f"KES {w3_s/6:,.0f}",
-            f"KES {rep_data['total_sales']/18:,.0f}",
+            f"KES {w4_s/6:,.0f}",
+            f"KES {rep_data['total_sales']/24:,.0f}",
         ]
         bg = "ECF0F1" if idx % 2 == 0 else None
         _add_formatted_table_row(table, idx, row_data, bg_color=bg)
     
     # Team total row
+    w4_total = sum(r['total_sales'] for r in w4_reps.values()) if w4_reps else 0
     team_row = [
         "TEAM TOTAL",
         f"KES {w1_total/6:,.0f}",
         f"KES {w2_total/6:,.0f}",
         f"KES {w3_total/6:,.0f}",
-        f"KES {total_sales/18:,.0f}",
+        f"KES {w4_total/6:,.0f}",
+        f"KES {total_sales/24:,.0f}",
     ]
     _add_formatted_table_row(table, len(sorted_reps) + 1, team_row, bold=True, bg_color="D5F5E3")
     
@@ -2404,12 +3257,15 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     conclusions = []
     
     # Overall trend
+    w4_daily = (sum(r['total_sales'] for r in w4_reps.values()) / 6) if w4_reps else 0
+    w1_daily_team = w1_total / 6
+    overall_daily_change = ((w4_daily - w1_daily_team) / w1_daily_team * 100) if w1_daily_team > 0 else 0
     if overall_daily_change > 10:
-        conclusions.append(f"The team has shown strong growth over the 3-week period, with daily sales increasing by {overall_daily_change:.1f}% from Week 1 to Week 3.")
+        conclusions.append(f"The team has shown strong growth over the full month, with daily sales increasing by {overall_daily_change:.1f}% from Week 1 to Week 4.")
     elif overall_daily_change > 0:
-        conclusions.append(f"The team has shown modest growth over the 3-week period, with daily sales increasing by {overall_daily_change:.1f}% from Week 1 to Week 3.")
+        conclusions.append(f"The team has shown modest growth over the full month, with daily sales increasing by {overall_daily_change:.1f}% from Week 1 to Week 4.")
     else:
-        conclusions.append(f"The team's daily sales have declined by {abs(overall_daily_change):.1f}% from Week 1 to Week 3. Urgent review and corrective action is needed.")
+        conclusions.append(f"The team's daily sales have declined by {abs(overall_daily_change):.1f}% from Week 1 to Week 4. Urgent review and corrective action is needed.")
     
     # Best performer
     conclusions.append(f"{top_rep[0]} leads the team with KES {top_rep[1]['total_sales']/1000000:.2f}M in total sales ({top_rep[1]['total_sales']/total_sales*100:.1f}% of team total).")
@@ -2420,28 +3276,175 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     else:
         conclusions.append(f"The overall profit margin of {overall_margin:.1f}% is below the 10% target. Focus on higher-margin products.")
     
-    # Reps who declined in W3
+    # Reps who declined in W4
     declining_reps = []
     for rep_name in reps_data:
-        w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
         w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
-        if w2_s > 0 and w3_s < w2_s * 0.85:
+        w4_s = w4_reps.get(rep_name, {}).get('total_sales', 0) if w4_reps else 0
+        if w3_s > 0 and w4_s < w3_s * 0.85:
             declining_reps.append(rep_name)
     if declining_reps:
-        conclusions.append(f"The following reps showed significant decline (>15%) in Week 3: {', '.join(declining_reps)}. Individual reviews recommended.")
+        conclusions.append(f"The following reps showed significant decline (>15%) in Week 4: {', '.join(declining_reps)}. Individual reviews recommended.")
     
-    # Improving reps
+    # Improving reps (overall W1→W4)
     improving_reps = []
     for rep_name in reps_data:
         w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
-        w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
-        if w1_s > 0 and w3_s > w1_s * 1.3:
+        w4_s = w4_reps.get(rep_name, {}).get('total_sales', 0) if w4_reps else 0
+        if w1_s > 0 and w4_s > w1_s * 1.3:
             improving_reps.append(rep_name)
     if improving_reps:
-        conclusions.append(f"Strong overall improvement from {', '.join(improving_reps)} — up >30% from Week 1 to Week 3.")
+        conclusions.append(f"Strong overall improvement from {', '.join(improving_reps)} — up >30% from Week 1 to Week 4.")
     
     for conclusion in conclusions:
         doc.add_paragraph(conclusion, style='List Bullet')
+    
+    doc.add_paragraph()
+    
+    # ===== TARGET ACHIEVEMENT SUMMARY =====
+    doc.add_heading('TARGET ACHIEVEMENT ANALYSIS', level=2)
+    
+    # Overall target
+    overall_ta = get_target_analysis(total_sales, MONTHLY_TARGETS['OVERALL'])
+    p = doc.add_paragraph()
+    if overall_ta['achieved']:
+        run = p.add_run(f'✓ OVERALL SHOP TARGET: ACHIEVED ')
+        run.bold = True
+        run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+        run = p.add_run(f'— KES {total_sales/1000000:.1f}M against a KES {MONTHLY_TARGETS["OVERALL"]/1000000:.0f}M target ({overall_ta["variance_pct"]:+.1f}%). '
+                       f'The team exceeded the target by KES {overall_ta["variance"]/1000000:.1f}M, driven primarily by strong General Hardware performance.')
+        run.font.color.rgb = RGBColor(0x34, 0x49, 0x5E)
+    else:
+        run = p.add_run(f'✗ OVERALL SHOP TARGET: MISSED ')
+        run.bold = True
+        run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+        run = p.add_run(f'— KES {total_sales/1000000:.1f}M against a KES {MONTHLY_TARGETS["OVERALL"]/1000000:.0f}M target. Shortfall of KES {abs(overall_ta["variance"])/1000000:.1f}M.')
+        run.font.color.rgb = RGBColor(0x34, 0x49, 0x5E)
+    
+    # Category targets
+    cat_actuals_concl = {}
+    for cat in CAT_ORDER:
+        cat_actuals_concl[cat] = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+    
+    achieved_cats = []
+    missed_cats = []
+    for cat in CAT_ORDER:
+        ta = get_target_analysis(cat_actuals_concl[cat], MONTHLY_TARGETS.get(cat, 0))
+        if ta['achieved']:
+            achieved_cats.append((cat, ta))
+        else:
+            missed_cats.append((cat, ta))
+    
+    if achieved_cats:
+        for cat, ta in achieved_cats:
+            p = doc.add_paragraph()
+            run = p.add_run(f'✓ {cat}: ')
+            run.bold = True
+            run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+            run = p.add_run(f'Target KES {MONTHLY_TARGETS[cat]/1000000:.0f}M → Actual KES {cat_actuals_concl[cat]/1000000:.2f}M ({ta["variance_pct"]:+.1f}%). Exceeded by KES {ta["variance"]/1000000:.2f}M.')
+            run.font.color.rgb = RGBColor(0x34, 0x49, 0x5E)
+    
+    if missed_cats:
+        for cat, ta in missed_cats:
+            p = doc.add_paragraph()
+            run = p.add_run(f'✗ {cat}: ')
+            run.bold = True
+            run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+            shortfall = abs(ta['variance'])
+            run = p.add_run(f'Target KES {MONTHLY_TARGETS[cat]/1000000:.0f}M → Actual KES {cat_actuals_concl[cat]/1000000:.2f}M ({ta["variance_pct"]:+.1f}%). '
+                           f'Shortfall of KES {shortfall/1000000:.2f}M. Department Head: {DEPARTMENT_HEADS.get(cat, "N/A")}.')
+            run.font.color.rgb = RGBColor(0x34, 0x49, 0x5E)
+    
+    doc.add_paragraph()
+    
+    # ===== MARCH ACTION PLAN =====
+    doc.add_heading('RECOMMENDED ACTION PLAN FOR MARCH', level=2)
+    
+    p = doc.add_paragraph()
+    run = p.add_run('Based on February performance and target gaps, the following actions are recommended for March 2026:')
+    run.italic = True
+    run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
+    
+    # Overall shop recommendation
+    p = doc.add_paragraph()
+    run = p.add_run('1. MAINTAIN OVERALL MOMENTUM')
+    run.bold = True
+    run.font.size = Pt(11)
+    run.font.color.rgb = RGBColor(0x2C, 0x3E, 0x50)
+    if overall_ta['achieved']:
+        doc.add_paragraph("The shop exceeded its KES 60M target — set a stretch target of KES 65-70M for March to maintain growth trajectory.", style='List Bullet')
+        doc.add_paragraph("Continue leveraging General Hardware strength while rebalancing focus toward underperforming departments.", style='List Bullet')
+    
+    # Paints actions
+    paints_ta = get_target_analysis(cat_actuals_concl['PAINTS'], MONTHLY_TARGETS['PAINTS'])
+    if not paints_ta['achieved']:
+        p = doc.add_paragraph()
+        run = p.add_run(f'2. PAINTS DEPARTMENT — Close KES {abs(paints_ta["variance"])/1000000:.2f}M Gap (Dept Head: {DEPARTMENT_HEADS["PAINTS"]})')
+        run.bold = True
+        run.font.size = Pt(11)
+        run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+        paint_actions = [
+            "Run targeted paint promotions — bundle deals with brushes, rollers, thinners, and masking tape to drive basket size",
+            "Review pricing competitiveness against local competitors for popular paint brands",
+            "Target active construction sites and contractors for bulk paint orders — assign dedicated follow-ups",
+            "Ensure all reps cross-sell paints alongside hardware purchases (e.g., 'Are they painting after construction?')",
+            f"Set weekly paint targets of KES {MONTHLY_TARGETS['PAINTS']/4/1000000:.2f}M per week to track progress",
+        ]
+        for action in paint_actions:
+            doc.add_paragraph(action, style='List Bullet')
+    
+    # Plumbing actions
+    plumb_ta = get_target_analysis(cat_actuals_concl['PLUMBING'], MONTHLY_TARGETS['PLUMBING'])
+    if not plumb_ta['achieved']:
+        p = doc.add_paragraph()
+        run = p.add_run(f'3. PLUMBING DEPARTMENT — Close KES {abs(plumb_ta["variance"])/1000000:.2f}M Gap (Dept Head: {DEPARTMENT_HEADS["PLUMBING"]})')
+        run.bold = True
+        run.font.size = Pt(11)
+        run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+        plumb_actions = [
+            "Expand plumbing product range — stock more high-demand fittings, pipes, water tanks, and bathroom accessories",
+            "Develop plumber partnerships and trade accounts for recurring orders",
+            "Run plumbing promotions targeting ongoing construction projects and housing developments",
+            "Improve department visibility with in-store signage and dedicated display areas",
+            f"Set weekly plumbing targets of KES {MONTHLY_TARGETS['PLUMBING']/4/1000000:.2f}M per week",
+        ]
+        for action in plumb_actions:
+            doc.add_paragraph(action, style='List Bullet')
+    
+    # Electricals actions
+    elec_ta = get_target_analysis(cat_actuals_concl['ELECTRICALS'], MONTHLY_TARGETS['ELECTRICALS'])
+    if not elec_ta['achieved']:
+        p = doc.add_paragraph()
+        run = p.add_run(f'4. ELECTRICALS DEPARTMENT — Close KES {abs(elec_ta["variance"])/1000000:.2f}M Gap (Dept Head: {DEPARTMENT_HEADS["ELECTRICALS"]})')
+        run.bold = True
+        run.font.size = Pt(11)
+        run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
+        elec_actions = [
+            "Significantly expand electricals inventory — current low sales suggest limited stock range is the biggest bottleneck",
+            "Partner with electrical contractors and electricians for bulk wiring, conduit, and fitting orders",
+            "Introduce lighting fixtures, switches, cable accessories, and solar products to broaden the category",
+            "Cross-sell electrical items with construction hardware orders (e.g., conduit with cement, wiring with roofing)",
+            f"Set weekly electricals targets of KES {MONTHLY_TARGETS['ELECTRICALS']/4/1000000:.2f}M per week",
+        ]
+        for action in elec_actions:
+            doc.add_paragraph(action, style='List Bullet')
+    
+    # General Hardware
+    gh_ta = get_target_analysis(cat_actuals_concl['GENERAL HARDWARE'], MONTHLY_TARGETS['GENERAL HARDWARE'])
+    if gh_ta['achieved']:
+        p = doc.add_paragraph()
+        run = p.add_run(f'5. GENERAL HARDWARE — Sustain Excellence')
+        run.bold = True
+        run.font.size = Pt(11)
+        run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+        gh_actions = [
+            f"General Hardware exceeded its KES {MONTHLY_TARGETS['GENERAL HARDWARE']/1000000:.0f}M target by KES {gh_ta['variance']/1000000:.1f}M — outstanding performance",
+            "Maintain current sales strategies and customer relationships that drive this category",
+            "Focus on improving profit margins within GH — current overall margin is below 10% target",
+            "Use GH customer traffic to cross-sell into Paints, Plumbing, and Electricals categories",
+        ]
+        for action in gh_actions:
+            doc.add_paragraph(action, style='List Bullet')
     
     doc.add_paragraph()
     p = doc.add_paragraph()
@@ -2450,11 +3453,16 @@ def export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_f
     run.font.color.rgb = RGBColor(0x99, 0x99, 0x99)
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    # Save
-    doc.save(output_filename)
-    print(f"Word document exported: {output_filename}")
+    # Save (with fallback if file is locked)
+    try:
+        doc.save(output_filename)
+        print(f"Word document exported: {output_filename}")
+    except PermissionError:
+        alt_name = output_filename.replace(".docx", "_v2.docx")
+        doc.save(alt_name)
+        print(f"WARNING: '{output_filename}' is locked (close it in Word). Saved as: {alt_name}")
 
-def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps, reps_data, perf_analysis, output_dir="rep_reports"):
+def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps, w4_reps, reps_data, perf_analysis, output_dir="rep_reports"):
     """Generate a standalone Word document report for a single sales rep"""
     os.makedirs(output_dir, exist_ok=True)
     
@@ -2470,13 +3478,16 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
     w1_s = w1_reps.get(rep_name, {}).get('total_sales', 0)
     w2_s = w2_reps.get(rep_name, {}).get('total_sales', 0)
     w3_s = w3_reps.get(rep_name, {}).get('total_sales', 0)
+    w4_s = w4_reps.get(rep_name, {}).get('total_sales', 0) if w4_reps else 0
     w1_p = w1_reps.get(rep_name, {}).get('total_profit', 0)
     w2_p = w2_reps.get(rep_name, {}).get('total_profit', 0)
     w3_p = w3_reps.get(rep_name, {}).get('total_profit', 0)
+    w4_p = w4_reps.get(rep_name, {}).get('total_profit', 0) if w4_reps else 0
     
     chg_w1w2 = ((w2_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
     chg_w2w3 = ((w3_s - w2_s) / w2_s * 100) if w2_s > 0 else 0
-    chg_overall = ((w3_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
+    chg_w3w4 = ((w4_s - w3_s) / w3_s * 100) if w3_s > 0 else 0
+    chg_overall = ((w4_s - w1_s) / w1_s * 100) if w1_s > 0 else 0
     
     doc = DocxDocument()
     style = doc.styles['Normal']
@@ -2520,7 +3531,7 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
     
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = p.add_run('February 1-21, 2026 (18 Working Days)')
+    run = p.add_run('February 1-28, 2026 (24 Working Days — Full Month)')
     run.font.size = Pt(11)
     run.font.color.rgb = RGBColor(0x66, 0x66, 0x66)
     
@@ -2546,8 +3557,8 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
         ["Total Profit", f"KES {rep_data['total_profit']:,.0f}", f"{rep_data['total_profit']/total_team_profit*100:.1f}% of team total"],
         ["Profit Margin", f"{rep_data['overall_margin']:.1f}%", f"Team avg: {team_margin:.1f}%"],
         ["Items Sold", f"{rep_data['total_qty']:,.0f}", ""],
-        ["Daily Avg Sales", f"KES {rep_data['total_sales']/18:,.0f}", ""],
-        ["Daily Avg Profit", f"KES {rep_data['total_profit']/18:,.0f}", ""],
+        ["Daily Avg Sales", f"KES {rep_data['total_sales']/24:,.0f}", ""],
+        ["Daily Avg Profit", f"KES {rep_data['total_profit']/24:,.0f}", ""],
         ["Team Share", f"{rep_data['total_sales']/total_team_sales*100:.1f}%", f"#{analysis.get('sales_rank', '-')} of {len(reps_data)} reps"],
         ["Sales Rank", f"#{analysis.get('sales_rank', '-')}", ""],
         ["Margin Rank", f"#{analysis.get('margin_rank', '-')}", ""],
@@ -2570,12 +3581,14 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
     w1_margin = (w1_p / w1_s * 100) if w1_s > 0 else 0
     w2_margin = (w2_p / w2_s * 100) if w2_s > 0 else 0
     w3_margin = (w3_p / w3_s * 100) if w3_s > 0 else 0
+    w4_margin = (w4_p / w4_s * 100) if w4_s > 0 else 0
     
     week_rows = [
         ["Week 1 (Feb 1-7)", f"KES {w1_s:,.0f}", f"KES {w1_p:,.0f}", f"{w1_margin:.1f}%", f"KES {w1_s/6:,.0f}", "—"],
         ["Week 2 (Feb 9-14)", f"KES {w2_s:,.0f}", f"KES {w2_p:,.0f}", f"{w2_margin:.1f}%", f"KES {w2_s/6:,.0f}", f"{chg_w1w2:+.1f}%"],
         ["Week 3 (Feb 16-21)", f"KES {w3_s:,.0f}", f"KES {w3_p:,.0f}", f"{w3_margin:.1f}%", f"KES {w3_s/6:,.0f}", f"{chg_w2w3:+.1f}%"],
-        ["TOTAL", f"KES {rep_data['total_sales']:,.0f}", f"KES {rep_data['total_profit']:,.0f}", f"{rep_data['overall_margin']:.1f}%", f"KES {rep_data['total_sales']/18:,.0f}", f"{chg_overall:+.1f}%"],
+        ["Week 4 (Feb 23-28)", f"KES {w4_s:,.0f}", f"KES {w4_p:,.0f}", f"{w4_margin:.1f}%", f"KES {w4_s/6:,.0f}", f"{chg_w3w4:+.1f}%"],
+        ["FULL MONTH", f"KES {rep_data['total_sales']:,.0f}", f"KES {rep_data['total_profit']:,.0f}", f"{rep_data['overall_margin']:.1f}%", f"KES {rep_data['total_sales']/24:,.0f}", f"{chg_overall:+.1f}%"],
     ]
     
     table = doc.add_table(rows=1 + len(week_rows), cols=6)
@@ -2607,20 +3620,30 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
     run.bold = True
     
     p = doc.add_paragraph()
-    if chg_w1w2 > 0 and chg_w2w3 > 0:
-        run = p.add_run(f'📈 Consistent upward trend over 3 weeks (+{chg_overall:.1f}% overall)')
+    symbol = "▲" if chg_w3w4 > 0 else "▼"
+    color = RGBColor(0x27, 0xAE, 0x60) if chg_w3w4 > 0 else RGBColor(0xE7, 0x4C, 0x3C)
+    run = p.add_run(f'{symbol} W3→W4: Sales {"increased" if chg_w3w4 > 0 else "decreased"} by {abs(chg_w3w4):.1f}% (KES {w3_s/1000:,.0f}K → {w4_s/1000:,.0f}K)')
+    run.font.color.rgb = color
+    run.bold = True
+    
+    p = doc.add_paragraph()
+    # 4-week trajectory analysis
+    ups = sum(1 for c in [chg_w1w2, chg_w2w3, chg_w3w4] if c > 0)
+    downs = sum(1 for c in [chg_w1w2, chg_w2w3, chg_w3w4] if c < 0)
+    if ups == 3:
+        run = p.add_run(f'📈 Consistent upward trend across all 4 weeks (+{chg_overall:.1f}% overall)')
         run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
-    elif chg_w1w2 < 0 and chg_w2w3 < 0:
-        run = p.add_run(f'📉 Declining trend over 3 weeks ({chg_overall:.1f}% overall) — needs urgent attention')
+    elif downs == 3:
+        run = p.add_run(f'📉 Declining trend across all 4 weeks ({chg_overall:.1f}% overall) — needs urgent attention')
         run.font.color.rgb = RGBColor(0xE7, 0x4C, 0x3C)
-    elif chg_w1w2 > 0 and chg_w2w3 < 0:
-        run = p.add_run(f'⚠️ Week 3 reversal after Week 2 growth — monitor closely')
-        run.font.color.rgb = RGBColor(0xE6, 0x7E, 0x22)
-    elif chg_w1w2 < 0 and chg_w2w3 > 0:
-        run = p.add_run(f'✓ Recovery in Week 3 after Week 2 dip — positive momentum')
+    elif chg_w3w4 > 0 and chg_overall > 0:
+        run = p.add_run(f'✓ Positive finish to the month with Week 4 growth — overall {chg_overall:+.1f}%')
         run.font.color.rgb = RGBColor(0x27, 0xAE, 0x60)
+    elif chg_w3w4 < 0:
+        run = p.add_run(f'⚠️ Week 4 decline ({chg_w3w4:+.1f}%) — ended month on a downward note')
+        run.font.color.rgb = RGBColor(0xE6, 0x7E, 0x22)
     else:
-        run = p.add_run(f'Stable performance across 3 weeks ({chg_overall:+.1f}% overall)')
+        run = p.add_run(f'Mixed performance across 4 weeks ({chg_overall:+.1f}% overall)')
         run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
     run.bold = True
     
@@ -2662,15 +3685,16 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
         w1_cat_s = w1_reps.get(rep_name, {}).get('categories', {}).get(cat, {}).get('sales_incl', 0)
         w2_cat_s = w2_reps.get(rep_name, {}).get('categories', {}).get(cat, {}).get('sales_incl', 0)
         w3_cat_s = w3_reps.get(rep_name, {}).get('categories', {}).get(cat, {}).get('sales_incl', 0)
+        w4_cat_s = w4_reps.get(rep_name, {}).get('categories', {}).get(cat, {}).get('sales_incl', 0) if w4_reps else 0
         
         p = doc.add_paragraph()
         run = p.add_run(f'{cat}: ')
         run.bold = True
         run.font.size = Pt(10)
         
-        parts = [f"W1: KES {w1_cat_s:,.0f}", f"W2: KES {w2_cat_s:,.0f}", f"W3: KES {w3_cat_s:,.0f}"]
+        parts = [f"W1: KES {w1_cat_s:,.0f}", f"W2: KES {w2_cat_s:,.0f}", f"W3: KES {w3_cat_s:,.0f}", f"W4: KES {w4_cat_s:,.0f}"]
         if w1_cat_s > 0:
-            cat_chg = ((w3_cat_s - w1_cat_s) / w1_cat_s * 100)
+            cat_chg = ((w4_cat_s - w1_cat_s) / w1_cat_s * 100)
             symbol = "▲" if cat_chg > 0 else "▼"
             parts.append(f"Overall: {symbol}{abs(cat_chg):.0f}%")
         
@@ -2813,10 +3837,10 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
         recommendations.append(f"Maintain excellent margin discipline at {rep_data['overall_margin']:.1f}% (above team avg of {team_margin:.1f}%).")
     
     # Growth-based recommendation
-    if chg_w2w3 < -10:
-        recommendations.append(f"Week 3 showed a {abs(chg_w2w3):.1f}% decline. Review customer activity and pipeline for Week 4.")
-    elif chg_w2w3 > 20:
-        recommendations.append(f"Outstanding Week 3 growth of +{chg_w2w3:.1f}%. Maintain this momentum into Week 4.")
+    if chg_w3w4 < -10:
+        recommendations.append(f"Week 4 showed a {abs(chg_w3w4):.1f}% decline. Review customer activity and set targets for March.")
+    elif chg_w3w4 > 20:
+        recommendations.append(f"Outstanding Week 4 growth of +{chg_w3w4:.1f}%. Carry this momentum into March.")
     
     # Cross-selling recommendation
     cats_sold = len(rep_data['categories'])
@@ -2837,6 +3861,17 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
             dept_pct = (dept_cat_data.get('sales_incl', 0) / rep_data['total_sales'] * 100) if rep_data['total_sales'] > 0 else 0
             if dept_pct < 30:
                 recommendations.append(f"As {primary_dept} Department Head, only {dept_pct:.1f}% of your sales are in your department. Consider refocusing.")
+        
+        # Department target analysis
+        dept_target = MONTHLY_TARGETS.get(primary_dept, 0)
+        dept_total_actual = sum(r['categories'].get(primary_dept, {}).get('sales_incl', 0) for r in reps_data.values())
+        dept_ta = get_target_analysis(dept_total_actual, dept_target)
+        if dept_ta['achieved']:
+            recommendations.append(f"✓ {primary_dept} department exceeded its KES {dept_target/1000000:.0f}M monthly target (Actual: KES {dept_total_actual/1000000:.2f}M, +{dept_ta['variance_pct']:.1f}%). Keep it up in March.")
+        else:
+            shortfall = abs(dept_ta['variance'])
+            recommendations.append(f"✗ {primary_dept} department MISSED its KES {dept_target/1000000:.0f}M target by KES {shortfall/1000000:.2f}M ({dept_ta['variance_pct']:+.1f}%). "
+                                  f"As Department Head, prioritize closing this gap in March through promotions, new stock, and contractor partnerships.")
     
     for rec in recommendations:
         doc.add_paragraph(rec, style='List Bullet')
@@ -2848,13 +3883,18 @@ def generate_individual_rep_report(rep_name, rep_data, w1_reps, w2_reps, w3_reps
     run.font.color.rgb = RGBColor(0x99, 0x99, 0x99)
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    # Save
+    # Save (with fallback if file is locked)
     safe_name = rep_name.replace(' ', '_')
     filepath = os.path.join(output_dir, f"{safe_name}_performance_report.docx")
-    doc.save(filepath)
+    try:
+        doc.save(filepath)
+    except PermissionError:
+        filepath = os.path.join(output_dir, f"{safe_name}_performance_report_v2.docx")
+        doc.save(filepath)
+        print(f"  WARNING: Original locked, saved as {filepath}")
     return filepath
 
-def generate_all_individual_reports(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, output_dir="rep_reports"):
+def generate_all_individual_reports(reps_data, w1_reps, w2_reps, w3_reps, w4_reps, perf_analysis, output_dir="rep_reports"):
     """Generate individual Word reports for all reps"""
     os.makedirs(output_dir, exist_ok=True)
     sorted_reps = sorted(reps_data.items(), key=lambda x: x[1]['total_sales'], reverse=True)
@@ -2862,7 +3902,7 @@ def generate_all_individual_reports(reps_data, w1_reps, w2_reps, w3_reps, perf_a
     generated = []
     for rep_name, rep_data in sorted_reps:
         filepath = generate_individual_rep_report(
-            rep_name, rep_data, w1_reps, w2_reps, w3_reps, reps_data, perf_analysis, output_dir
+            rep_name, rep_data, w1_reps, w2_reps, w3_reps, w4_reps, reps_data, perf_analysis, output_dir
         )
         generated.append(filepath)
         print(f"  Generated: {filepath}")
@@ -2871,7 +3911,7 @@ def generate_all_individual_reports(reps_data, w1_reps, w2_reps, w3_reps, perf_a
 
 def main():
     print("=" * 60)
-    print("SALES PERFORMANCE ANALYSIS - FEBRUARY 2026")
+    print("SALES PERFORMANCE ANALYSIS - FEBRUARY 2026 (FULL MONTH)")
     print("=" * 60)
     
     print("\nMerging Magdalene -> Betha Odumo")
@@ -2889,8 +3929,12 @@ def main():
     w3_combined = combine_data(week3_data)
     w3_reps = get_rep_data(w3_combined)
     
-    print("Combining all three weeks...")
-    combined = combine_data(week1_merged, week2_data, week3_data)
+    print("Processing Week 4 data (Feb 23-28)...")
+    w4_combined = combine_data(week4_data)
+    w4_reps = get_rep_data(w4_combined)
+    
+    print("Combining all four weeks...")
+    combined = combine_data(week1_merged, week2_data, week3_data, week4_data)
     reps_data = get_rep_data(combined)
     
     total_sales = sum(r['total_sales'] for r in reps_data.values())
@@ -2898,20 +3942,59 @@ def main():
     overall_margin = (total_profit / total_sales * 100) if total_sales > 0 else 0
     
     print("\n" + "=" * 60)
-    print("COMBINED RESULTS (Feb 1-21, 18 Working Days)")
+    print("COMBINED RESULTS (Feb 1-28, 24 Working Days — Full Month)")
     print("=" * 60)
     print(f"\nTotal Sales: KES {total_sales:,.0f}")
     print(f"Total Profit: KES {total_profit:,.0f}")
     print(f"Overall Margin: {overall_margin:.1f}%")
-    print(f"Daily Average: KES {total_sales/18:,.0f}")
+    print(f"Daily Average: KES {total_sales/24:,.0f}")
     
     # Week summaries
     w1_total = sum(r['total_sales'] for r in w1_reps.values())
     w2_total = sum(r['total_sales'] for r in w2_reps.values())
     w3_total = sum(r['total_sales'] for r in w3_reps.values())
+    w4_total = sum(r['total_sales'] for r in w4_reps.values())
     print(f"\nWeek 1 (Feb 1-7):   KES {w1_total:>12,.0f}  Daily: KES {w1_total/6:>10,.0f}")
     print(f"Week 2 (Feb 9-14):  KES {w2_total:>12,.0f}  Daily: KES {w2_total/6:>10,.0f}")
     print(f"Week 3 (Feb 16-21): KES {w3_total:>12,.0f}  Daily: KES {w3_total/6:>10,.0f}")
+    print(f"Week 4 (Feb 23-28): KES {w4_total:>12,.0f}  Daily: KES {w4_total/6:>10,.0f}")
+    print(f"FULL MONTH:         KES {total_sales:>12,.0f}  Daily: KES {total_sales/24:>10,.0f}")
+    
+    # Target performance
+    print("\n" + "=" * 60)
+    print("MONTHLY TARGET PERFORMANCE")
+    print("=" * 60)
+    overall_ta = get_target_analysis(total_sales, MONTHLY_TARGETS['OVERALL'])
+    status = "✓ ACHIEVED" if overall_ta['achieved'] else "✗ MISSED"
+    print(f"\n{'Category':<22} {'Target':>12} {'Actual':>14} {'Variance':>14}  {'Status'}")
+    print("-" * 75)
+    print(f"{'OVERALL SHOP':<22} KES {MONTHLY_TARGETS['OVERALL']:>9,.0f}  KES {total_sales:>10,.0f}  {'+'if overall_ta['variance']>=0 else ''}KES {overall_ta['variance']:>9,.0f}  {status}")
+    for cat in CAT_ORDER:
+        cat_actual = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+        ta = get_target_analysis(cat_actual, MONTHLY_TARGETS.get(cat, 0))
+        status = "✓ ACHIEVED" if ta['achieved'] else "✗ MISSED"
+        print(f"{cat:<22} KES {MONTHLY_TARGETS.get(cat,0):>9,.0f}  KES {cat_actual:>10,.0f}  {'+'if ta['variance']>=0 else ''}KES {ta['variance']:>9,.0f}  {status}")
+    
+    # ===== CUMULATIVE TARGET TRACKING =====
+    cumulative = get_cumulative_target_tracking(w1_reps, w2_reps, w3_reps, w4_reps)
+    print("\n" + "=" * 60)
+    print("CUMULATIVE TARGET TRACKING (Week by Week)")
+    print("=" * 60)
+    print(f"\n{'Week':<10} {'Week Sales':>14} {'Cumulative':>14} {'% of Target':>12} {'Expected':>10} {'Pace'}")
+    print("-" * 75)
+    for entry in cumulative['OVERALL']:
+        print(f"{entry['week']:<10} KES {entry['week_sales']:>10,.0f}  KES {entry['cumulative']:>10,.0f}  {entry['pct_of_target']:>9.1f}%  {entry['expected_pct']:>7.1f}%  {entry['pace']}")
+    
+    # ===== CATEGORY CONTRIBUTION % =====
+    contrib = get_category_contribution(w1_reps, w2_reps, w3_reps, w4_reps, reps_data)
+    print("\n" + "=" * 60)
+    print("CATEGORY CONTRIBUTION % (Share of Total Sales)")
+    print("=" * 60)
+    print(f"\n{'Category':<22} {'W1':>6} {'W2':>6} {'W3':>6} {'W4':>6} {'Month':>6}  {'Trend'}")
+    print("-" * 75)
+    for cat in CAT_ORDER:
+        c = contrib[cat]
+        print(f"{cat:<22} {c['Week 1']:>5.1f}% {c['Week 2']:>5.1f}% {c['Week 3']:>5.1f}% {c['Week 4']:>5.1f}% {c['Full Month']:>5.1f}%  {c['trend']}")
     
     print(f"\n{'Rep':<20} {'Sales':>12} {'Profit':>12} {'Margin':>8}")
     print("-" * 55)
@@ -2920,17 +4003,32 @@ def main():
         print(f"{rep_name:<20} KES {rep_data['total_sales']:>10,.0f} KES {rep_data['total_profit']:>9,.0f} {rep_data['overall_margin']:>7.1f}%")
     
     print("\nGenerating PDF report with enhanced charts...")
-    generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, "sales_rep_analysis_feb2026.pdf")
+    generate_pdf_report(reps_data, w1_reps, w2_reps, w3_reps, w4_reps, "sales_rep_analysis_feb2026.pdf")
     
     # Generate performance analysis for JSON
-    perf_analysis = analyze_performance(reps_data, w1_reps, w2_reps, w3_reps)
+    perf_analysis = analyze_performance(reps_data, w1_reps, w2_reps, w3_reps, w4_reps)
     
     # Save JSON
+    # Compute category actuals for JSON
+    cat_actuals_json = {}
+    for cat in CAT_ORDER:
+        cat_actuals_json[cat] = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in reps_data.values())
+    
     output_json = {
-        "period": "February 1-21, 2026",
-        "working_days": 18,
+        "period": "February 1-28, 2026 (Full Month)",
+        "working_days": 24,
         "generated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "department_heads": DEPARTMENT_HEADS,
+        "monthly_targets": {
+            "overall": {
+                "target": MONTHLY_TARGETS['OVERALL'],
+                "actual": total_sales,
+                "variance": total_sales - MONTHLY_TARGETS['OVERALL'],
+                "variance_pct": round((total_sales - MONTHLY_TARGETS['OVERALL']) / MONTHLY_TARGETS['OVERALL'] * 100, 1),
+                "achieved": total_sales >= MONTHLY_TARGETS['OVERALL'],
+            },
+            "categories": {}
+        },
         "week1": {
             "period": "February 1-7, 2026",
             "days": 6,
@@ -2949,7 +4047,70 @@ def main():
             "total_sales": sum(r['total_sales'] for r in w3_reps.values()),
             "total_profit": sum(r['total_profit'] for r in w3_reps.values())
         },
+        "week4": {
+            "period": "February 23-28, 2026",
+            "days": 6,
+            "total_sales": sum(r['total_sales'] for r in w4_reps.values()),
+            "total_profit": sum(r['total_profit'] for r in w4_reps.values())
+        },
         "reps": {}
+    }
+    
+    # Populate category targets in JSON
+    for cat in CAT_ORDER:
+        ta = get_target_analysis(cat_actuals_json[cat], MONTHLY_TARGETS.get(cat, 0))
+        output_json["monthly_targets"]["categories"][cat] = {
+            "target": MONTHLY_TARGETS.get(cat, 0),
+            "actual": cat_actuals_json[cat],
+            "variance": round(ta['variance'], 2),
+            "variance_pct": round(ta['variance_pct'], 1),
+            "achieved": ta['achieved'],
+            "department_head": DEPARTMENT_HEADS.get(cat, "N/A"),
+        }
+    
+    # Cumulative target tracking for JSON
+    cumulative_json = get_cumulative_target_tracking(w1_reps, w2_reps, w3_reps, w4_reps)
+    output_json["cumulative_target_tracking"] = {
+        "overall": [
+            {
+                "week": e['week'],
+                "week_sales": e['week_sales'],
+                "cumulative": e['cumulative'],
+                "pct_of_target": e['pct_of_target'],
+                "expected_pct": e['expected_pct'],
+                "pace": e['pace'],
+            }
+            for e in cumulative_json['OVERALL']
+        ],
+        "categories": {
+            cat: [
+                {
+                    "week": e['week'],
+                    "week_sales": e['week_sales'],
+                    "cumulative": e['cumulative'],
+                    "pct_of_target": e['pct_of_target'],
+                    "expected_pct": e['expected_pct'],
+                    "pace": e['pace'],
+                }
+                for e in cumulative_json[cat]
+            ]
+            for cat in CAT_ORDER
+        }
+    }
+    
+    # Category contribution % for JSON
+    contrib_json = get_category_contribution(w1_reps, w2_reps, w3_reps, w4_reps, reps_data)
+    output_json["category_contribution_pct"] = {
+        cat: {
+            "week_1": contrib_json[cat]['Week 1'],
+            "week_2": contrib_json[cat]['Week 2'],
+            "week_3": contrib_json[cat]['Week 3'],
+            "week_4": contrib_json[cat]['Week 4'],
+            "full_month": contrib_json[cat]['Full Month'],
+            "trend": contrib_json[cat]['trend'],
+            "trend_diff_pp": round(contrib_json[cat]['trend_diff'], 1),
+        }
+        for cat in CAT_ORDER
     }
     
     for rep_name, rep_data in sorted_reps:
@@ -2976,14 +4137,14 @@ def main():
     print("JSON saved: sales_rep_analysis_feb2026.json")
     
     # Export to Excel
-    export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, "sales_rep_analysis_feb2026.xlsx")
+    export_to_excel(reps_data, w1_reps, w2_reps, w3_reps, w4_reps, perf_analysis, "sales_rep_analysis_feb2026.xlsx")
     
     # Export to Word
-    export_to_word(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis, "sales_rep_analysis_feb2026.docx")
+    export_to_word(reps_data, w1_reps, w2_reps, w3_reps, w4_reps, perf_analysis, "sales_rep_analysis_feb2026.docx")
     
     # Generate Individual Rep Reports
     print("\n--- Generating Individual Rep Reports ---")
-    generated_files = generate_all_individual_reports(reps_data, w1_reps, w2_reps, w3_reps, perf_analysis)
+    generated_files = generate_all_individual_reports(reps_data, w1_reps, w2_reps, w3_reps, w4_reps, perf_analysis)
     print(f"\n{len(generated_files)} individual reports generated in 'rep_reports/' folder")
     
     print("\nDone!")
