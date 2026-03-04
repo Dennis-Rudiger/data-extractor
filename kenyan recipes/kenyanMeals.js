@@ -1,12 +1,18 @@
 /**
  * Collection of traditional Kenyan meals and modern adaptations
  * with nutritional information and budget-friendly details
+ * 
+ * Total recipes: 271
+ * Sources: kenyanMeals.js (Original), Global Give Back Circle,
+ *   IN MY KITCHEN by Kaluhi Adagala, Smart Food Recipe Book Kenya,
+ *   KFM CookBook, Kenya Recipe Book 2018 (FAO/GOK)
  */
 
 export const kenyanMeals = [
   {
     id: "ke-001",
     name: "Ugali na Sukuma Wiki",
+    source: "kenyanMeals.js (Original)",
     type: "dinner, lunch",
     description: "Traditional Kenyan staple of maize meal porridge served with sautéed collard greens. High in fiber and very affordable.",
     preparationTime: 10,
@@ -15,7 +21,11 @@ export const kenyanMeals = [
     totalCost: 120,
     calories: 320,
     image: null,
-    tags: ["Traditional", "Budget-Friendly", "Vegetarian"],
+    tags: [
+      "Traditional",
+      "Budget-Friendly",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Maize Flour", amount: "500g" },
       { name: "Sukuma Wiki (Collard Greens)", amount: "1 bunch" },
@@ -24,6 +34,7 @@ export const kenyanMeals = [
       { name: "Cooking Oil", amount: "2 tbsp" },
       { name: "Salt", amount: "to taste" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 320,
       protein: 8,
@@ -36,6 +47,7 @@ export const kenyanMeals = [
   {
     id: "ke-002",
     name: "Githeri",
+    source: "kenyanMeals.js (Original)",
     type: "lunch",
     description: "Nutritious mix of boiled maize and beans, often served with vegetables. High in protein and fiber while being economical.",
     preparationTime: 15,
@@ -44,7 +56,11 @@ export const kenyanMeals = [
     totalCost: 180,
     calories: 380,
     image: null,
-    tags: ["Traditional", "High Protein", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "High Protein",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Maize (Corn)", amount: "500g" },
       { name: "Kidney Beans", amount: "500g" },
@@ -56,6 +72,7 @@ export const kenyanMeals = [
       { name: "Cooking Oil", amount: "3 tbsp" },
       { name: "Salt", amount: "to taste" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 380,
       protein: 15,
@@ -68,6 +85,7 @@ export const kenyanMeals = [
   {
     id: "ke-003",
     name: "Chapati",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "Kenyan flatbread that's crispy outside and soft inside. Perfect accompaniment for stews or can be eaten on its own.",
     preparationTime: 30,
@@ -76,7 +94,11 @@ export const kenyanMeals = [
     totalCost: 150,
     calories: 210,
     image: null,
-    tags: ["Bread", "Budget-Friendly", "Vegetarian"],
+    tags: [
+      "Bread",
+      "Budget-Friendly",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Wheat Flour", amount: "500g" },
       { name: "Warm Water", amount: "300ml" },
@@ -84,6 +106,7 @@ export const kenyanMeals = [
       { name: "Sugar", amount: "1 tsp" },
       { name: "Cooking Oil", amount: "4 tbsp" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 210,
       protein: 4,
@@ -96,6 +119,7 @@ export const kenyanMeals = [
   {
     id: "ke-004",
     name: "Mandazi",
+    source: "kenyanMeals.js (Original)",
     type: "breakfast",
     description: "East African doughnut-like pastry that's slightly sweet and perfect for breakfast with tea.",
     preparationTime: 15,
@@ -104,7 +128,11 @@ export const kenyanMeals = [
     totalCost: 130,
     calories: 180,
     image: null,
-    tags: ["Breakfast", "Sweet", "Budget-Friendly"],
+    tags: [
+      "Breakfast",
+      "Sweet",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "All-purpose Flour", amount: "500g" },
       { name: "Sugar", amount: "100g" },
@@ -113,6 +141,7 @@ export const kenyanMeals = [
       { name: "Cardamom", amount: "1/2 tsp" },
       { name: "Cooking Oil", amount: "for frying" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 180,
       protein: 3,
@@ -125,6 +154,7 @@ export const kenyanMeals = [
   {
     id: "ke-005",
     name: "Chai",
+    source: "kenyanMeals.js (Original)",
     type: "breakfast",
     description: "Milky and fragrant tea often spiced with cardamom, ginger, and cinnamon. An essential part of Kenyan hospitality.",
     preparationTime: 5,
@@ -133,7 +163,11 @@ export const kenyanMeals = [
     totalCost: 60,
     calories: 110,
     image: null,
-    tags: ["Drink", "Budget-Friendly", "Quick"],
+    tags: [
+      "Drink",
+      "Budget-Friendly",
+      "Quick"
+    ],
     ingredients: [
       { name: "Milk", amount: "500ml" },
       { name: "Water", amount: "500ml" },
@@ -143,6 +177,7 @@ export const kenyanMeals = [
       { name: "Ginger", amount: "1 small piece" },
       { name: "Cinnamon", amount: "1 small stick" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 110,
       protein: 4,
@@ -155,6 +190,7 @@ export const kenyanMeals = [
   {
     id: "ke-006",
     name: "Pilau Rice",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "Aromatic spiced rice often served at celebrations. This budget-friendly version delivers all the flavor without expensive meat.",
     preparationTime: 15,
@@ -163,7 +199,11 @@ export const kenyanMeals = [
     totalCost: 220,
     calories: 310,
     image: null,
-    tags: ["Traditional", "Spiced", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "Spiced",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Rice", amount: "500g" },
       { name: "Onions", amount: "2 large" },
@@ -175,6 +215,7 @@ export const kenyanMeals = [
       { name: "Water or Stock", amount: "1L" },
       { name: "Salt", amount: "to taste" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 310,
       protein: 5,
@@ -187,6 +228,7 @@ export const kenyanMeals = [
   {
     id: "ke-007",
     name: "Irio",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "Traditional Kikuyu dish of mashed potatoes, peas, corn, and greens. Nutritious and filling.",
     preparationTime: 15,
@@ -195,7 +237,11 @@ export const kenyanMeals = [
     totalCost: 160,
     calories: 290,
     image: null,
-    tags: ["Traditional", "Vegetarian", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Potatoes", amount: "1kg" },
       { name: "Green Peas", amount: "250g" },
@@ -204,6 +250,7 @@ export const kenyanMeals = [
       { name: "Onion", amount: "1 medium" },
       { name: "Salt", amount: "to taste" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 290,
       protein: 8,
@@ -216,6 +263,7 @@ export const kenyanMeals = [
   {
     id: "ke-008",
     name: "Mursik",
+    source: "kenyanMeals.js (Original)",
     type: "snack",
     description: "Traditional fermented milk drink from the Kalenjin community. Naturally probiotic and calcium-rich.",
     preparationTime: 10,
@@ -224,11 +272,16 @@ export const kenyanMeals = [
     totalCost: 100,
     calories: 150,
     image: null,
-    tags: ["Drink", "Traditional", "Probiotic"],
+    tags: [
+      "Drink",
+      "Traditional",
+      "Probiotic"
+    ],
     ingredients: [
       { name: "Fresh Milk", amount: "1L" },
       { name: "Special Herb-treated Gourd", amount: "1" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 150,
       protein: 8,
@@ -241,6 +294,7 @@ export const kenyanMeals = [
   {
     id: "ke-009",
     name: "Avocado Smoothie",
+    source: "kenyanMeals.js (Original)",
     type: "breakfast",
     description: "Creamy, nutritious smoothie featuring local Kenyan avocados. Perfect for a quick, filling breakfast.",
     preparationTime: 5,
@@ -249,7 +303,11 @@ export const kenyanMeals = [
     totalCost: 120,
     calories: 280,
     image: null,
-    tags: ["Healthy", "Quick", "Fruit"],
+    tags: [
+      "Healthy",
+      "Quick",
+      "Fruit"
+    ],
     ingredients: [
       { name: "Ripe Avocado", amount: "1 large" },
       { name: "Milk", amount: "250ml" },
@@ -257,6 +315,7 @@ export const kenyanMeals = [
       { name: "Banana", amount: "1 medium" },
       { name: "Ice Cubes", amount: "handful" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 280,
       protein: 6,
@@ -269,6 +328,7 @@ export const kenyanMeals = [
   {
     id: "ke-010",
     name: "Tropical Fruit Salad",
+    source: "kenyanMeals.js (Original)",
     type: "breakfast",
     description: "Refreshing mix of locally available fruits like mango, pineapple, and papaya. Rich in vitamins and fiber.",
     preparationTime: 15,
@@ -277,7 +337,11 @@ export const kenyanMeals = [
     totalCost: 200,
     calories: 120,
     image: null,
-    tags: ["Healthy", "Fruit", "No-Cook"],
+    tags: [
+      "Healthy",
+      "Fruit",
+      "No-Cook"
+    ],
     ingredients: [
       { name: "Mango", amount: "1 large" },
       { name: "Pineapple", amount: "1/2 medium" },
@@ -288,6 +352,7 @@ export const kenyanMeals = [
       { name: "Honey", amount: "2 tbsp" },
       { name: "Lemon Juice", amount: "1 tbsp" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 120,
       protein: 2,
@@ -300,6 +365,7 @@ export const kenyanMeals = [
   {
     id: "ke-011",
     name: "Passion Fruit Juice",
+    source: "kenyanMeals.js (Original)",
     type: "snack, breakfast",
     description: "Tangy and refreshing juice made from locally grown passion fruits. Rich in vitamin C and antioxidants.",
     preparationTime: 10,
@@ -308,13 +374,18 @@ export const kenyanMeals = [
     totalCost: 100,
     calories: 90,
     image: null,
-    tags: ["Drink", "Healthy", "Fruit"],
+    tags: [
+      "Drink",
+      "Healthy",
+      "Fruit"
+    ],
     ingredients: [
       { name: "Passion Fruits", amount: "10" },
       { name: "Water", amount: "1L" },
       { name: "Sugar", amount: "to taste" },
       { name: "Ice Cubes", amount: "as needed" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 90,
       protein: 1,
@@ -327,6 +398,7 @@ export const kenyanMeals = [
   {
     id: "ke-012",
     name: "Matoke (Plantain Stew)",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Hearty stew made with green plantains, often served with rice or chapati. Popular in Western Kenya.",
     preparationTime: 15,
@@ -335,7 +407,11 @@ export const kenyanMeals = [
     totalCost: 200,
     calories: 310,
     image: null,
-    tags: ["Traditional", "Stew", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "Stew",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Green Plantains", amount: "4" },
       { name: "Onions", amount: "2 medium" },
@@ -347,6 +423,7 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Water", amount: "1 cup" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 310,
       protein: 3,
@@ -359,6 +436,7 @@ export const kenyanMeals = [
   {
     id: "ke-013",
     name: "Mukimo",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "Traditional Kikuyu dish of mashed potatoes, beans, corn, and greens. Nutritious and economical.",
     preparationTime: 20,
@@ -367,7 +445,11 @@ export const kenyanMeals = [
     totalCost: 180,
     calories: 300,
     image: null,
-    tags: ["Traditional", "Vegetarian", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Potatoes", amount: "1kg" },
       { name: "Green Peas", amount: "200g" },
@@ -376,6 +458,7 @@ export const kenyanMeals = [
       { name: "Onion", amount: "1 medium" },
       { name: "Salt", amount: "to taste" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 300,
       protein: 8,
@@ -388,6 +471,7 @@ export const kenyanMeals = [
   {
     id: "ke-014",
     name: "Mango Avocado Salad",
+    source: "kenyanMeals.js (Original)",
     type: "lunch",
     description: "Fresh, nutritious salad combining sweet mangoes and creamy avocados. A modern take using locally available produce.",
     preparationTime: 15,
@@ -396,7 +480,11 @@ export const kenyanMeals = [
     totalCost: 150,
     calories: 220,
     image: null,
-    tags: ["Healthy", "Fruit", "No-Cook"],
+    tags: [
+      "Healthy",
+      "Fruit",
+      "No-Cook"
+    ],
     ingredients: [
       { name: "Ripe Mango", amount: "1 large" },
       { name: "Avocado", amount: "1 large" },
@@ -406,6 +494,7 @@ export const kenyanMeals = [
       { name: "Cilantro", amount: "handful, chopped" },
       { name: "Salt and Pepper", amount: "to taste" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 220,
       protein: 3,
@@ -418,6 +507,7 @@ export const kenyanMeals = [
   {
     id: "ke-015",
     name: "Uji (Porridge)",
+    source: "kenyanMeals.js (Original)",
     type: "breakfast",
     description: "Traditional Kenyan fermented porridge made from millet or sorghum flour. Nutritious and gut-friendly.",
     preparationTime: 5,
@@ -426,13 +516,18 @@ export const kenyanMeals = [
     totalCost: 60,
     calories: 150,
     image: null,
-    tags: ["Breakfast", "Traditional", "Budget-Friendly"],
+    tags: [
+      "Breakfast",
+      "Traditional",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Millet or Sorghum Flour", amount: "200g" },
       { name: "Water", amount: "1L" },
       { name: "Sugar or Honey", amount: "to taste" },
       { name: "Lemon Juice", amount: "1 tbsp (optional)" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 150,
       protein: 4,
@@ -445,6 +540,7 @@ export const kenyanMeals = [
   {
     id: "ke-016",
     name: "Sukuma Wiki with Avocado",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Simple yet nutritious meal of sautéed collard greens served with sliced avocado. High in vitamins and good fats.",
     preparationTime: 10,
@@ -453,7 +549,12 @@ export const kenyanMeals = [
     totalCost: 100,
     calories: 200,
     image: null,
-    tags: ["Healthy", "Quick", "Budget-Friendly", "Vegetarian"],
+    tags: [
+      "Healthy",
+      "Quick",
+      "Budget-Friendly",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Sukuma Wiki (Collard Greens)", amount: "1 bunch" },
       { name: "Avocado", amount: "1 large" },
@@ -462,6 +563,7 @@ export const kenyanMeals = [
       { name: "Cooking Oil", amount: "1 tbsp" },
       { name: "Salt", amount: "to taste" }
     ],
+    instructions: [],
     nutritionFacts: {
       calories: 200,
       protein: 5,
@@ -474,6 +576,7 @@ export const kenyanMeals = [
   {
     id: "ke-017",
     name: "Nyama Choma",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "Traditional Kenyan grilled meat, typically goat or beef, marinated with simple spices and slow-cooked over an open flame for a smoky flavor.",
     preparationTime: 30,
@@ -482,7 +585,11 @@ export const kenyanMeals = [
     totalCost: 800,
     calories: 450,
     image: null,
-    tags: ["Traditional", "Protein", "Special Occasion"],
+    tags: [
+      "Traditional",
+      "Protein",
+      "Special Occasion"
+    ],
     ingredients: [
       { name: "Goat or Beef Meat", amount: "1 kg" },
       { name: "Salt", amount: "2 tsp" },
@@ -492,14 +599,6 @@ export const kenyanMeals = [
       { name: "Vegetable Oil", amount: "2 tbsp" },
       { name: "Kachumbari Salad", amount: "to serve" }
     ],
-    nutritionFacts: {
-      calories: 450,
-      protein: 48,
-      carbs: 2,
-      fat: 25,
-      fiber: 0
-    },
-    region: "Nationwide",
     instructions: [
       "Mix salt, black pepper, crushed garlic, lemon juice, and oil to make a marinade.",
       "Cut meat into large chunks and coat with the marinade. Let it rest for at least 30 minutes.",
@@ -508,12 +607,21 @@ export const kenyanMeals = [
       "Let meat rest for 10 minutes before cutting into smaller pieces.",
       "Serve hot with kachumbari salad and ugali."
     ],
+    nutritionFacts: {
+      calories: 450,
+      protein: 48,
+      carbs: 2,
+      fat: 25,
+      fiber: 0
+    },
+    region: "Nationwide",
     pdfUrl: "https://example.com/recipes/nyama-choma.pdf",
     videoUrl: "https://www.youtube.com/embed/example"
   },
   {
     id: "ke-018",
     name: "Kachumbari",
+    source: "kenyanMeals.js (Original)",
     type: "snack",
     description: "Fresh and tangy Kenyan salad made with tomatoes, onions, and cilantro. It's the perfect accompaniment to grilled meats and other main dishes.",
     preparationTime: 10,
@@ -522,7 +630,12 @@ export const kenyanMeals = [
     totalCost: 100,
     calories: 60,
     image: null,
-    tags: ["Salad", "Quick", "No-Cook", "Vegetarian"],
+    tags: [
+      "Salad",
+      "Quick",
+      "No-Cook",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Tomatoes", amount: "3 medium, diced" },
       { name: "Red Onion", amount: "1 medium, finely sliced" },
@@ -531,14 +644,6 @@ export const kenyanMeals = [
       { name: "Lemon or Lime Juice", amount: "2 tbsp" },
       { name: "Salt", amount: "to taste" }
     ],
-    nutritionFacts: {
-      calories: 60,
-      protein: 2,
-      carbs: 13,
-      fat: 0,
-      fiber: 3
-    },
-    region: "Nationwide",
     instructions: [
       "Soak sliced onions in cold water for 5-10 minutes to reduce sharpness, then drain well.",
       "In a bowl, combine diced tomatoes and sliced onions.",
@@ -546,11 +651,20 @@ export const kenyanMeals = [
       "Drizzle with lemon or lime juice.",
       "Season with salt and toss gently to combine.",
       "Let the salad sit for about 5 minutes to allow flavors to meld before serving."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 60,
+      protein: 2,
+      carbs: 13,
+      fat: 0,
+      fiber: 3
+    },
+    region: "Nationwide"
   },
   {
     id: "ke-019",
     name: "Samosas",
+    source: "kenyanMeals.js (Original)",
     type: "snack, breakfast",
     description: "Popular Kenyan street food with Indian influence - crispy triangular pastries filled with seasoned minced meat or vegetables.",
     preparationTime: 45,
@@ -559,7 +673,11 @@ export const kenyanMeals = [
     totalCost: 350,
     calories: 180,
     image: null,
-    tags: ["Snack", "Street Food", "Indian Influence"],
+    tags: [
+      "Snack",
+      "Street Food",
+      "Indian Influence"
+    ],
     ingredients: [
       { name: "All-purpose Flour", amount: "2 cups" },
       { name: "Salt", amount: "1 tsp" },
@@ -575,14 +693,6 @@ export const kenyanMeals = [
       { name: "Green Peas", amount: "1/2 cup" },
       { name: "Cilantro/Coriander", amount: "1/4 cup, chopped" }
     ],
-    nutritionFacts: {
-      calories: 180,
-      protein: 8,
-      carbs: 15,
-      fat: 10,
-      fiber: 1
-    },
-    region: "Urban Kenya",
     instructions: [
       "For the dough: Mix flour and salt in a bowl. Add oil and rub until mixture resembles breadcrumbs. Add water gradually and knead to form a stiff dough. Cover and rest for 30 minutes.",
       "For the filling: Heat oil in a pan, add onions and sauté until golden. Add garlic and ginger, cook for 1 minute.",
@@ -592,11 +702,20 @@ export const kenyanMeals = [
       "Form each half into a cone, fill with the meat mixture, seal the edges with water.",
       "Deep fry the samosas in hot oil until golden brown and crispy.",
       "Drain on paper towels and serve hot with ketchup or chutney."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 180,
+      protein: 8,
+      carbs: 15,
+      fat: 10,
+      fiber: 1
+    },
+    region: "Urban Kenya"
   },
   {
     id: "ke-020",
     name: "Maharagwe (Bean Stew)",
+    source: "kenyanMeals.js (Original)",
     type: "lunch",
     description: "Hearty Kenyan red kidney bean stew cooked with coconut milk and spices. A protein-rich, budget-friendly meal perfect for everyday dining.",
     preparationTime: 15,
@@ -605,7 +724,12 @@ export const kenyanMeals = [
     totalCost: 220,
     calories: 310,
     image: null,
-    tags: ["Stew", "Budget-Friendly", "Vegetarian", "High Protein"],
+    tags: [
+      "Stew",
+      "Budget-Friendly",
+      "Vegetarian",
+      "High Protein"
+    ],
     ingredients: [
       { name: "Red Kidney Beans", amount: "500g, soaked overnight" },
       { name: "Coconut Milk", amount: "400ml" },
@@ -619,14 +743,6 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Fresh Cilantro/Coriander", amount: "handful, chopped" }
     ],
-    nutritionFacts: {
-      calories: 310,
-      protein: 16,
-      carbs: 42,
-      fat: 10,
-      fiber: 12
-    },
-    region: "Coastal Kenya",
     instructions: [
       "Drain and rinse the soaked beans, then place in a pot with enough fresh water to cover. Bring to a boil and cook until beans are tender, about 40-50 minutes.",
       "In a separate pan, heat oil and sauté onions until golden brown.",
@@ -636,11 +752,20 @@ export const kenyanMeals = [
       "Add the cooked beans with some of their cooking liquid, coconut milk, and salt.",
       "Simmer on low heat for 15-20 minutes until the stew thickens.",
       "Garnish with fresh cilantro and serve hot with rice, chapati, or ugali."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 310,
+      protein: 16,
+      carbs: 42,
+      fat: 10,
+      fiber: 12
+    },
+    region: "Coastal Kenya"
   },
   {
     id: "ke-021",
     name: "Chipo (Kenyan Potato Fritters)",
+    source: "kenyanMeals.js (Original)",
     type: "snack",
     description: "Crispy on the outside, soft on the inside - these spiced potato fritters are a popular street food in Kenyan coastal regions.",
     preparationTime: 20,
@@ -649,7 +774,12 @@ export const kenyanMeals = [
     totalCost: 150,
     calories: 270,
     image: null,
-    tags: ["Street Food", "Coastal", "Snack", "Vegetarian"],
+    tags: [
+      "Street Food",
+      "Coastal",
+      "Snack",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Large Potatoes", amount: "4, peeled and cut into 1/2 inch slices" },
       { name: "Gram Flour (Chickpea Flour)", amount: "1 cup" },
@@ -663,14 +793,6 @@ export const kenyanMeals = [
       { name: "Vegetable Oil", amount: "for deep frying" },
       { name: "Fresh Cilantro/Coriander", amount: "2 tbsp, finely chopped" }
     ],
-    nutritionFacts: {
-      calories: 270,
-      protein: 7,
-      carbs: 40,
-      fat: 9,
-      fiber: 5
-    },
-    region: "Coastal Kenya",
     instructions: [
       "Parboil potato slices until slightly soft but still firm, about 5-7 minutes. Drain and set aside.",
       "In a bowl, make a thick batter by mixing gram flour, turmeric, chili powder, garlic paste, ginger paste, lemon juice, salt, and water.",
@@ -680,11 +802,20 @@ export const kenyanMeals = [
       "Carefully drop coated potato slices into hot oil and fry until golden brown and crispy.",
       "Remove with a slotted spoon and drain on paper towels.",
       "Serve hot with tamarind chutney or ketchup."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 270,
+      protein: 7,
+      carbs: 40,
+      fat: 9,
+      fiber: 5
+    },
+    region: "Coastal Kenya"
   },
   {
     id: "ke-022",
     name: "Mahamri (Coconut Donuts)",
+    source: "kenyanMeals.js (Original)",
     type: "breakfast",
     description: "Sweet, triangular-shaped deep-fried pastries flavored with cardamom and coconut milk. A breakfast favorite along the Kenyan coast.",
     preparationTime: 120,
@@ -693,7 +824,12 @@ export const kenyanMeals = [
     totalCost: 200,
     calories: 160,
     image: null,
-    tags: ["Breakfast", "Sweet", "Coastal", "Snack"],
+    tags: [
+      "Breakfast",
+      "Sweet",
+      "Coastal",
+      "Snack"
+    ],
     ingredients: [
       { name: "All-purpose Flour", amount: "4 cups" },
       { name: "Yeast", amount: "1 tbsp" },
@@ -703,14 +839,6 @@ export const kenyanMeals = [
       { name: "Water", amount: "1/4 cup, warm" },
       { name: "Vegetable Oil", amount: "for deep frying" }
     ],
-    nutritionFacts: {
-      calories: 160,
-      protein: 2,
-      carbs: 25,
-      fat: 6,
-      fiber: 1
-    },
-    region: "Coastal Kenya",
     instructions: [
       "In a large bowl, mix flour, sugar, cardamom powder, and yeast.",
       "Add warm coconut milk and water, mix to form a soft dough.",
@@ -721,11 +849,20 @@ export const kenyanMeals = [
       "Let the triangles rest for 20 minutes.",
       "Heat oil in a deep pan. When hot, carefully drop the triangles in and fry until golden brown on both sides.",
       "Drain on paper towels and serve warm with Kenyan chai."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 160,
+      protein: 2,
+      carbs: 25,
+      fat: 6,
+      fiber: 1
+    },
+    region: "Coastal Kenya"
   },
   {
     id: "ke-023",
     name: "Tilapia with Ugali",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "Fresh tilapia fish fried to perfection, served with traditional ugali and sukuma wiki. A staple meal from the Lake Victoria region.",
     preparationTime: 20,
@@ -734,7 +871,12 @@ export const kenyanMeals = [
     totalCost: 700,
     calories: 550,
     image: null,
-    tags: ["Traditional", "Fish", "Lake Region", "Protein"],
+    tags: [
+      "Traditional",
+      "Fish",
+      "Lake Region",
+      "Protein"
+    ],
     ingredients: [
       { name: "Whole Tilapia Fish", amount: "4, cleaned" },
       { name: "Lemon", amount: "1, juiced" },
@@ -748,14 +890,6 @@ export const kenyanMeals = [
       { name: "Onion", amount: "1, chopped" },
       { name: "Tomatoes", amount: "2, chopped" }
     ],
-    nutritionFacts: {
-      calories: 550,
-      protein: 45,
-      carbs: 55,
-      fat: 15,
-      fiber: 4
-    },
-    region: "Lake Victoria Region",
     instructions: [
       "For the fish: Make deep cuts on both sides of each fish. Mix lemon juice, crushed garlic, salt, and pepper and rub the mixture all over the fish, including inside the cuts. Let marinate for 15 minutes.",
       "Heat oil in a large pan and fry the fish until crispy and golden on both sides, about 7-10 minutes per side.",
@@ -764,11 +898,20 @@ export const kenyanMeals = [
       "For sukuma wiki: In a separate pan, sauté onions until translucent. Add chopped tomatoes and cook until soft.",
       "Add chopped collard greens, salt, and a little water if needed. Cover and cook until greens are tender.",
       "Serve the fried fish with ugali and sukuma wiki on the side."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 550,
+      protein: 45,
+      carbs: 55,
+      fat: 15,
+      fiber: 4
+    },
+    region: "Lake Victoria Region"
   },
   {
     id: "ke-024",
     name: "Bhajia (Potato Fritters)",
+    source: "kenyanMeals.js (Original)",
     type: "snack, lunch",
     description: "Kenyan-style potato fritters with Indian influence, made with thinly sliced potatoes in a spiced gram flour batter. A popular street food.",
     preparationTime: 15,
@@ -777,7 +920,12 @@ export const kenyanMeals = [
     totalCost: 150,
     calories: 280,
     image: null,
-    tags: ["Snack", "Street Food", "Indian Influence", "Vegetarian"],
+    tags: [
+      "Snack",
+      "Street Food",
+      "Indian Influence",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Potatoes", amount: "4 large, thinly sliced" },
       { name: "Gram Flour (Besan)", amount: "1 cup" },
@@ -790,14 +938,6 @@ export const kenyanMeals = [
       { name: "Green Chili", amount: "1, finely chopped" },
       { name: "Vegetable Oil", amount: "for deep frying" }
     ],
-    nutritionFacts: {
-      calories: 280,
-      protein: 5,
-      carbs: 38,
-      fat: 12,
-      fiber: 4
-    },
-    region: "Urban Kenya",
     instructions: [
       "In a bowl, mix gram flour with all the spices, salt, and chopped cilantro.",
       "Gradually add water to make a thick batter that can coat the back of a spoon.",
@@ -807,11 +947,20 @@ export const kenyanMeals = [
       "Carefully slide the coated slices into hot oil and fry until golden brown and crispy.",
       "Remove with a slotted spoon and drain on paper towels to remove excess oil.",
       "Serve hot with ketchup or tamarind chutney."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 280,
+      protein: 5,
+      carbs: 38,
+      fat: 12,
+      fiber: 4
+    },
+    region: "Urban Kenya"
   },
   {
     id: "ke-025",
     name: "Mutura (Kenyan Sausage)",
+    source: "kenyanMeals.js (Original)",
     type: "snack",
     description: "Traditional Kenyan sausage made from a mixture of meat, offal, and blood, stuffed into intestine casings and grilled. A popular street food with a unique smoky flavor.",
     preparationTime: 40,
@@ -820,7 +969,12 @@ export const kenyanMeals = [
     totalCost: 400,
     calories: 320,
     image: null,
-    tags: ["Street Food", "Traditional", "Meat", "Protein"],
+    tags: [
+      "Street Food",
+      "Traditional",
+      "Meat",
+      "Protein"
+    ],
     ingredients: [
       { name: "Goat or Beef Intestines", amount: "for casings" },
       { name: "Goat or Beef Meat", amount: "500g, chopped" },
@@ -834,14 +988,6 @@ export const kenyanMeals = [
       { name: "Coriander Powder", amount: "1 tsp" },
       { name: "Cumin Powder", amount: "1/2 tsp" }
     ],
-    nutritionFacts: {
-      calories: 320,
-      protein: 22,
-      carbs: 8,
-      fat: 23,
-      fiber: 1
-    },
-    region: "Central Kenya",
     instructions: [
       "Clean the intestines thoroughly by turning them inside out, washing with salt and water, then soaking in lemon water.",
       "In a large bowl, mix the chopped meat with all the spices, onions, chili, garlic, and ginger.",
@@ -851,11 +997,20 @@ export const kenyanMeals = [
       "Remove the sausages and allow to dry slightly.",
       "Grill the sausages over an open flame until charred and crispy on the outside.",
       "Cut into pieces and serve hot with kachumbari salad."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 320,
+      protein: 22,
+      carbs: 8,
+      fat: 23,
+      fiber: 1
+    },
+    region: "Central Kenya"
   },
   {
     id: "ke-026",
     name: "Kunde (Black-eyed Peas Stew)",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Nutritious stew made with black-eyed peas, often cooked with tomatoes and onions. A protein-rich vegetarian dish popular in rural Kenya.",
     preparationTime: 15,
@@ -864,7 +1019,12 @@ export const kenyanMeals = [
     totalCost: 180,
     calories: 260,
     image: null,
-    tags: ["Vegetarian", "Stew", "High Protein", "Budget-Friendly"],
+    tags: [
+      "Vegetarian",
+      "Stew",
+      "High Protein",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Black-eyed Peas", amount: "500g, soaked overnight" },
       { name: "Onion", amount: "1 large, chopped" },
@@ -875,14 +1035,6 @@ export const kenyanMeals = [
       { name: "Fresh Cilantro", amount: "handful, chopped" },
       { name: "Water", amount: "as needed" }
     ],
-    nutritionFacts: {
-      calories: 260,
-      protein: 17,
-      carbs: 45,
-      fat: 2,
-      fiber: 11
-    },
-    region: "Western Kenya",
     instructions: [
       "Drain the soaked black-eyed peas and rinse well.",
       "In a pot, heat oil and sauté onions until translucent.",
@@ -892,11 +1044,20 @@ export const kenyanMeals = [
       "Bring to a boil, then reduce heat, cover, and simmer for about 45 minutes or until peas are tender.",
       "Add salt to taste and garnish with chopped cilantro before serving.",
       "Serve hot with ugali, rice, or chapati."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 260,
+      protein: 17,
+      carbs: 45,
+      fat: 2,
+      fiber: 11
+    },
+    region: "Western Kenya"
   },
   {
     id: "ke-027",
     name: "Mbaazi wa Nazi (Pigeon Peas in Coconut Milk)",
+    source: "kenyanMeals.js (Original)",
     type: "lunch",
     description: "A flavorful coastal Kenyan dish made with pigeon peas slow-cooked in coconut milk. Often served for lunch with rice or chapati.",
     preparationTime: 20,
@@ -905,7 +1066,12 @@ export const kenyanMeals = [
     totalCost: 220,
     calories: 300,
     image: null,
-    tags: ["Traditional", "Coastal", "Vegetarian", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "Coastal",
+      "Vegetarian",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Pigeon Peas", amount: "500g, dried and soaked overnight" },
       { name: "Coconut Milk", amount: "500ml" },
@@ -920,14 +1086,6 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Fresh Cilantro", amount: "handful, chopped" }
     ],
-    nutritionFacts: {
-      calories: 300,
-      protein: 16,
-      carbs: 40,
-      fat: 12,
-      fiber: 14
-    },
-    region: "Coastal Kenya",
     instructions: [
       "Rinse the soaked pigeon peas and cook them in plenty of water until tender, about 40-45 minutes. Drain and set aside.",
       "In a large pot, heat oil and add cumin seeds. Let them splutter.",
@@ -938,11 +1096,20 @@ export const kenyanMeals = [
       "Pour in coconut milk, mix thoroughly, and bring to a simmer.",
       "Cover and cook on low heat for 15-20 minutes, stirring occasionally to prevent sticking.",
       "Garnish with fresh cilantro and serve hot with rice, chapati, or cassava."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 300,
+      protein: 16,
+      carbs: 40,
+      fat: 12,
+      fiber: 14
+    },
+    region: "Coastal Kenya"
   },
   {
     id: "ke-028",
     name: "Matumbo (Tripe Stew)",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "A hearty traditional Kenyan stew made from beef tripe, slow-cooked with aromatic spices and vegetables. A favorite at local eateries.",
     preparationTime: 30,
@@ -951,7 +1118,12 @@ export const kenyanMeals = [
     totalCost: 450,
     calories: 380,
     image: null,
-    tags: ["Traditional", "Meat", "Budget-Friendly", "Stew"],
+    tags: [
+      "Traditional",
+      "Meat",
+      "Budget-Friendly",
+      "Stew"
+    ],
     ingredients: [
       { name: "Beef Tripe", amount: "1kg, thoroughly cleaned" },
       { name: "Onions", amount: "2 large, chopped" },
@@ -968,14 +1140,6 @@ export const kenyanMeals = [
       { name: "Fresh Cilantro", amount: "handful, chopped" },
       { name: "Water", amount: "as needed" }
     ],
-    nutritionFacts: {
-      calories: 380,
-      protein: 32,
-      carbs: 12,
-      fat: 24,
-      fiber: 3
-    },
-    region: "Nationwide",
     instructions: [
       "Cut cleaned tripe into bite-sized pieces and place in a large pot with enough water to cover.",
       "Bring to a boil and simmer on medium heat for about 60-90 minutes until tender. Drain and set aside.",
@@ -988,11 +1152,20 @@ export const kenyanMeals = [
       "Cover and simmer on low heat for 30 minutes, stirring occasionally.",
       "Season with salt to taste and garnish with fresh cilantro.",
       "Serve hot with ugali, chapati, or rice."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 380,
+      protein: 32,
+      carbs: 12,
+      fat: 24,
+      fiber: 3
+    },
+    region: "Nationwide"
   },
   {
     id: "ke-029",
     name: "Omena (Silver Cyprinid) with Kale",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Small dried fish from Lake Victoria cooked with kale to create a nutrient-dense, affordable meal that's popular in Western Kenya.",
     preparationTime: 20,
@@ -1001,7 +1174,13 @@ export const kenyanMeals = [
     totalCost: 180,
     calories: 290,
     image: null,
-    tags: ["Traditional", "Fish", "Budget-Friendly", "High Protein", "Lake Region"],
+    tags: [
+      "Traditional",
+      "Fish",
+      "Budget-Friendly",
+      "High Protein",
+      "Lake Region"
+    ],
     ingredients: [
       { name: "Omena (Dried Small Fish)", amount: "250g" },
       { name: "Kale or Sukuma Wiki", amount: "1 large bunch, chopped" },
@@ -1012,14 +1191,6 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Water", amount: "1/2 cup" }
     ],
-    nutritionFacts: {
-      calories: 290,
-      protein: 38,
-      carbs: 14,
-      fat: 12,
-      fiber: 5
-    },
-    region: "Lake Victoria Region",
     instructions: [
       "Rinse the dried omena thoroughly to remove dust and debris.",
       "Soak the omena in warm water for about 5-10 minutes, then drain well.",
@@ -1031,11 +1202,20 @@ export const kenyanMeals = [
       "Add the chopped kale, salt, and mix well.",
       "Cover and cook for another 5-7 minutes until kale is tender but still bright green.",
       "Serve hot with ugali or rice."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 290,
+      protein: 38,
+      carbs: 14,
+      fat: 12,
+      fiber: 5
+    },
+    region: "Lake Victoria Region"
   },
   {
     id: "ke-030",
     name: "Nduma na Nyama (Arrowroot with Meat)",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "Tender pieces of arrowroot cooked with meat in a flavorful stew. A hearty and satisfying dish popular in Central Kenya.",
     preparationTime: 25,
@@ -1044,7 +1224,12 @@ export const kenyanMeals = [
     totalCost: 400,
     calories: 420,
     image: null,
-    tags: ["Traditional", "Meat", "Central Region", "Stew"],
+    tags: [
+      "Traditional",
+      "Meat",
+      "Central Region",
+      "Stew"
+    ],
     ingredients: [
       { name: "Arrowroot", amount: "4 medium, peeled and cut into chunks" },
       { name: "Beef or Goat Meat", amount: "500g, cubed" },
@@ -1059,14 +1244,6 @@ export const kenyanMeals = [
       { name: "Fresh Cilantro", amount: "handful, chopped" },
       { name: "Water", amount: "2 cups" }
     ],
-    nutritionFacts: {
-      calories: 420,
-      protein: 28,
-      carbs: 45,
-      fat: 15,
-      fiber: 6
-    },
-    region: "Central Kenya",
     instructions: [
       "In a large pot, heat oil and brown the meat cubes on all sides.",
       "Add chopped onions and sauté until translucent.",
@@ -1078,11 +1255,20 @@ export const kenyanMeals = [
       "If needed, add a little more water during cooking to maintain a stew-like consistency.",
       "Garnish with fresh cilantro before serving.",
       "Serve hot as a complete meal or with a side of vegetables."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 420,
+      protein: 28,
+      carbs: 45,
+      fat: 15,
+      fiber: 6
+    },
+    region: "Central Kenya"
   },
   {
     id: "ke-031",
     name: "Wimbi Porridge (Finger Millet Porridge)",
+    source: "kenyanMeals.js (Original)",
     type: "breakfast",
     description: "Nutritious finger millet porridge, often fermented for a tangy flavor. Rich in iron and calcium, it's a traditional Kenyan energy breakfast.",
     preparationTime: 5,
@@ -1091,7 +1277,13 @@ export const kenyanMeals = [
     totalCost: 70,
     calories: 180,
     image: null,
-    tags: ["Traditional", "Breakfast", "Vegetarian", "Budget-Friendly", "Healthy"],
+    tags: [
+      "Traditional",
+      "Breakfast",
+      "Vegetarian",
+      "Budget-Friendly",
+      "Healthy"
+    ],
     ingredients: [
       { name: "Finger Millet Flour", amount: "1 cup" },
       { name: "Cold Water", amount: "1 cup" },
@@ -1100,14 +1292,6 @@ export const kenyanMeals = [
       { name: "Lemon Juice", amount: "1 tbsp (optional)" },
       { name: "Milk", amount: "to serve (optional)" }
     ],
-    nutritionFacts: {
-      calories: 180,
-      protein: 5,
-      carbs: 35,
-      fat: 1,
-      fiber: 4
-    },
-    region: "Nationwide",
     instructions: [
       "Mix the finger millet flour with cold water to form a smooth paste without lumps.",
       "Bring 4 cups of water to a boil in a large pot.",
@@ -1117,11 +1301,20 @@ export const kenyanMeals = [
       "Add sugar or honey to taste and stir well.",
       "For a tangy flavor, add a tablespoon of lemon juice (optional).",
       "Serve hot, with or without milk according to preference."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 180,
+      protein: 5,
+      carbs: 35,
+      fat: 1,
+      fiber: 4
+    },
+    region: "Nationwide"
   },
   {
     id: "ke-032",
     name: "Malenge na Nazi (Pumpkin in Coconut Milk)",
+    source: "kenyanMeals.js (Original)",
     type: "lunch",
     description: "Sweet pumpkin pieces cooked in creamy coconut milk. A simple yet delicious vegetarian dish from coastal Kenya.",
     preparationTime: 15,
@@ -1130,7 +1323,12 @@ export const kenyanMeals = [
     totalCost: 180,
     calories: 240,
     image: null,
-    tags: ["Vegetarian", "Coastal", "Budget-Friendly", "Sweet"],
+    tags: [
+      "Vegetarian",
+      "Coastal",
+      "Budget-Friendly",
+      "Sweet"
+    ],
     ingredients: [
       { name: "Pumpkin", amount: "1 medium, peeled and cut into chunks" },
       { name: "Coconut Milk", amount: "400ml" },
@@ -1142,14 +1340,6 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Water", amount: "1/2 cup (if needed)" }
     ],
-    nutritionFacts: {
-      calories: 240,
-      protein: 4,
-      carbs: 28,
-      fat: 14,
-      fiber: 6
-    },
-    region: "Coastal Kenya",
     instructions: [
       "In a large pot, sauté chopped onions until translucent.",
       "Add minced garlic, cardamom pods, and cinnamon stick, cook for 30 seconds until fragrant.",
@@ -1159,11 +1349,20 @@ export const kenyanMeals = [
       "Bring to a simmer, then reduce heat to low, cover, and cook for about 20-25 minutes until the pumpkin is tender but not mushy.",
       "Check seasoning and adjust as needed.",
       "Serve hot as a side dish with rice or chapati, or as a light main course."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 240,
+      protein: 4,
+      carbs: 28,
+      fat: 14,
+      fiber: 6
+    },
+    region: "Coastal Kenya"
   },
   {
     id: "ke-033",
     name: "Masala Chips (Kenyan Spiced Fries)",
+    source: "kenyanMeals.js (Original)",
     type: "snack, lunch",
     description: "A popular Kenyan street food - French fries tossed with a spicy tomato sauce. Found at roadside kiosks throughout urban Kenya.",
     preparationTime: 15,
@@ -1172,7 +1371,12 @@ export const kenyanMeals = [
     totalCost: 200,
     calories: 380,
     image: null,
-    tags: ["Street Food", "Spicy", "Urban", "Vegetarian"],
+    tags: [
+      "Street Food",
+      "Spicy",
+      "Urban",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Potatoes", amount: "1kg, cut into fries" },
       { name: "Vegetable Oil", amount: "for deep frying" },
@@ -1187,14 +1391,6 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Fresh Cilantro", amount: "handful, chopped" }
     ],
-    nutritionFacts: {
-      calories: 380,
-      protein: 5,
-      carbs: 50,
-      fat: 18,
-      fiber: 5
-    },
-    region: "Urban Kenya",
     instructions: [
       "Rinse and pat dry the potato fries. Heat oil for deep frying.",
       "Fry the potatoes in batches until golden and crispy. Drain on paper towels and set aside.",
@@ -1205,11 +1401,20 @@ export const kenyanMeals = [
       "Season with salt and lemon juice, adjust to taste.",
       "Add the fried potatoes to the sauce and toss gently to coat all fries with the sauce.",
       "Garnish with fresh cilantro and serve hot as a snack or side dish."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 380,
+      protein: 5,
+      carbs: 50,
+      fat: 18,
+      fiber: 5
+    },
+    region: "Urban Kenya"
   },
   {
     id: "ke-034",
     name: "Kuku wa Kupaka (Chicken in Coconut Sauce)",
+    source: "kenyanMeals.js (Original)",
     type: "dinner",
     description: "Grilled chicken smothered in a rich coconut curry sauce. A coastal delicacy that combines African and Arab influences.",
     preparationTime: 30,
@@ -1218,7 +1423,12 @@ export const kenyanMeals = [
     totalCost: 650,
     calories: 520,
     image: null,
-    tags: ["Coastal", "Special Occasion", "Meat", "Spicy"],
+    tags: [
+      "Coastal",
+      "Special Occasion",
+      "Meat",
+      "Spicy"
+    ],
     ingredients: [
       { name: "Chicken Pieces", amount: "1kg, bone-in" },
       { name: "Coconut Milk", amount: "500ml" },
@@ -1236,14 +1446,6 @@ export const kenyanMeals = [
       { name: "Fresh Cilantro", amount: "handful, chopped" },
       { name: "Salt", amount: "to taste" }
     ],
-    nutritionFacts: {
-      calories: 520,
-      protein: 42,
-      carbs: 10,
-      fat: 36,
-      fiber: 3
-    },
-    region: "Coastal Kenya",
     instructions: [
       "Marinate chicken pieces with half of the minced garlic, ginger, lemon juice, and salt for at least 30 minutes.",
       "Grill or pan-fry the marinated chicken until golden brown on all sides. Set aside.",
@@ -1256,11 +1458,20 @@ export const kenyanMeals = [
       "Cover and simmer on low heat for about 20 minutes until chicken is fully cooked and tender.",
       "Adjust seasoning if needed and garnish with fresh cilantro.",
       "Serve hot with rice or chapati."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 520,
+      protein: 42,
+      carbs: 10,
+      fat: 36,
+      fiber: 3
+    },
+    region: "Coastal Kenya"
   },
   {
     id: "ke-035",
     name: "Ndizi Kaanga (Fried Plantains)",
+    source: "kenyanMeals.js (Original)",
     type: "snack, lunch",
     description: "Sweet ripe plantains fried to golden perfection. A popular street snack or side dish in many parts of Kenya.",
     preparationTime: 5,
@@ -1269,7 +1480,13 @@ export const kenyanMeals = [
     totalCost: 100,
     calories: 220,
     image: null,
-    tags: ["Snack", "Sweet", "Budget-Friendly", "Quick", "Vegetarian"],
+    tags: [
+      "Snack",
+      "Sweet",
+      "Budget-Friendly",
+      "Quick",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Ripe Plantains", amount: "3 large" },
       { name: "Vegetable Oil", amount: "3 tbsp" },
@@ -1277,14 +1494,6 @@ export const kenyanMeals = [
       { name: "Ground Cinnamon", amount: "1/4 tsp (optional)" },
       { name: "Honey or Maple Syrup", amount: "for drizzling (optional)" }
     ],
-    nutritionFacts: {
-      calories: 220,
-      protein: 1,
-      carbs: 48,
-      fat: 5,
-      fiber: 3
-    },
-    region: "Nationwide",
     instructions: [
       "Peel the ripe plantains and slice them diagonally into 1/2-inch thick pieces.",
       "Heat oil in a large frying pan over medium heat.",
@@ -1293,12 +1502,21 @@ export const kenyanMeals = [
       "Sprinkle with a tiny pinch of salt if desired, or dust with cinnamon for a sweet version.",
       "For extra sweetness, drizzle lightly with honey or maple syrup.",
       "Serve warm as a snack, dessert, or side dish."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 220,
+      protein: 1,
+      carbs: 48,
+      fat: 5,
+      fiber: 3
+    },
+    region: "Nationwide"
   },
   {
     id: "ke-036",
     name: "Terere (Amaranth Leaves Stew)",
-    type: "lunch, dinner", 
+    source: "kenyanMeals.js (Original)",
+    type: "lunch, dinner",
     description: "Nutritious indigenous vegetable stew made with amaranth leaves. High in iron, vitamins, and fiber.",
     preparationTime: 15,
     cookingTime: 25,
@@ -1306,7 +1524,13 @@ export const kenyanMeals = [
     totalCost: 120,
     calories: 150,
     image: null,
-    tags: ["Traditional", "Vegetarian", "Healthy", "Budget-Friendly", "Indigenous"],
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "Healthy",
+      "Budget-Friendly",
+      "Indigenous"
+    ],
     ingredients: [
       { name: "Amaranth Leaves (Terere)", amount: "2 large bunches, chopped" },
       { name: "Onion", amount: "1 medium, chopped" },
@@ -1315,14 +1539,6 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Water", amount: "1/2 cup" }
     ],
-    nutritionFacts: {
-      calories: 150,
-      protein: 8,
-      carbs: 18,
-      fat: 7,
-      fiber: 7
-    },
-    region: "Nationwide",
     instructions: [
       "Wash the amaranth leaves thoroughly and drain well.",
       "Heat oil in a large pot and sauté chopped onions until translucent.",
@@ -1332,11 +1548,20 @@ export const kenyanMeals = [
       "Cook for about 15-20 minutes until the leaves are tender but still vibrant.",
       "Season with salt to taste.",
       "Serve hot with ugali, chapati, or rice."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 150,
+      protein: 8,
+      carbs: 18,
+      fat: 7,
+      fiber: 7
+    },
+    region: "Nationwide"
   },
   {
     id: "ke-037",
     name: "Sukuma Wiki na Nyama",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Collard greens cooked with beef, a nutritious and hearty meal.",
     preparationTime: 15,
@@ -1345,7 +1570,11 @@ export const kenyanMeals = [
     totalCost: 300,
     calories: 350,
     image: null,
-    tags: ["Traditional", "High Protein", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "High Protein",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Beef", amount: "500g" },
       { name: "Sukuma Wiki (Collard Greens)", amount: "1 bunch" },
@@ -1355,14 +1584,6 @@ export const kenyanMeals = [
       { name: "Cooking Oil", amount: "2 tbsp" },
       { name: "Salt", amount: "to taste" }
     ],
-    nutritionFacts: {
-      calories: 350,
-      protein: 25,
-      carbs: 10,
-      fat: 20,
-      fiber: 5
-    },
-    region: "Nationwide",
     instructions: [
       "Cut beef into small pieces and cook in a pot until browned.",
       "Add chopped onions and garlic, sauté until translucent.",
@@ -1370,11 +1591,20 @@ export const kenyanMeals = [
       "Add chopped sukuma wiki and salt, stir well.",
       "Cover and cook for 10-15 minutes until greens are tender.",
       "Serve hot with ugali or rice."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 350,
+      protein: 25,
+      carbs: 10,
+      fat: 20,
+      fiber: 5
+    },
+    region: "Nationwide"
   },
   {
     id: "ke-038",
     name: "Tilapia Fry",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Crispy fried tilapia served with kachumbari and ugali.",
     preparationTime: 20,
@@ -1383,7 +1613,11 @@ export const kenyanMeals = [
     totalCost: 600,
     calories: 450,
     image: null,
-    tags: ["Fish", "Traditional", "High Protein"],
+    tags: [
+      "Fish",
+      "Traditional",
+      "High Protein"
+    ],
     ingredients: [
       { name: "Tilapia Fish", amount: "4 whole" },
       { name: "Lemon", amount: "1" },
@@ -1393,6 +1627,12 @@ export const kenyanMeals = [
       { name: "Kachumbari", amount: "to serve" },
       { name: "Ugali", amount: "to serve" }
     ],
+    instructions: [
+      "Clean and score the tilapia fish.",
+      "Rub with lemon juice, crushed garlic, and salt.",
+      "Heat oil in a frying pan and fry the fish until golden brown and crispy.",
+      "Serve hot with kachumbari and ugali."
+    ],
     nutritionFacts: {
       calories: 450,
       protein: 40,
@@ -1400,17 +1640,12 @@ export const kenyanMeals = [
       fat: 25,
       fiber: 2
     },
-    region: "Lake Victoria Region",
-    instructions: [
-      "Clean and score the tilapia fish.",
-      "Rub with lemon juice, crushed garlic, and salt.",
-      "Heat oil in a frying pan and fry the fish until golden brown and crispy.",
-      "Serve hot with kachumbari and ugali."
-    ]
+    region: "Lake Victoria Region"
   },
   {
     id: "ke-039",
     name: "Matumbo Fry",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Fried tripe with onions and tomatoes, a flavorful and hearty dish.",
     preparationTime: 20,
@@ -1419,7 +1654,11 @@ export const kenyanMeals = [
     totalCost: 350,
     calories: 300,
     image: null,
-    tags: ["Traditional", "High Protein", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "High Protein",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Tripe", amount: "500g" },
       { name: "Onion", amount: "1 large" },
@@ -1428,14 +1667,6 @@ export const kenyanMeals = [
       { name: "Cooking Oil", amount: "2 tbsp" },
       { name: "Salt", amount: "to taste" }
     ],
-    nutritionFacts: {
-      calories: 300,
-      protein: 20,
-      carbs: 5,
-      fat: 20,
-      fiber: 2
-    },
-    region: "Nationwide",
     instructions: [
       "Clean and cut tripe into small pieces.",
       "Boil tripe in water until tender, about 40 minutes.",
@@ -1445,11 +1676,20 @@ export const kenyanMeals = [
       "Add boiled tripe and salt, stir well.",
       "Fry for 10-15 minutes until tripe is crispy.",
       "Serve hot with ugali or rice."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 300,
+      protein: 20,
+      carbs: 5,
+      fat: 20,
+      fiber: 2
+    },
+    region: "Nationwide"
   },
   {
     id: "ke-040",
     name: "Kuku Paka",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Grilled chicken in a rich coconut curry sauce, a coastal delicacy.",
     preparationTime: 30,
@@ -1458,7 +1698,12 @@ export const kenyanMeals = [
     totalCost: 650,
     calories: 520,
     image: null,
-    tags: ["Coastal", "Special Occasion", "Meat", "Spicy"],
+    tags: [
+      "Coastal",
+      "Special Occasion",
+      "Meat",
+      "Spicy"
+    ],
     ingredients: [
       { name: "Chicken Pieces", amount: "1kg, bone-in" },
       { name: "Coconut Milk", amount: "500ml" },
@@ -1476,14 +1721,6 @@ export const kenyanMeals = [
       { name: "Fresh Cilantro", amount: "handful, chopped" },
       { name: "Salt", amount: "to taste" }
     ],
-    nutritionFacts: {
-      calories: 520,
-      protein: 42,
-      carbs: 10,
-      fat: 36,
-      fiber: 3
-    },
-    region: "Coastal Kenya",
     instructions: [
       "Marinate chicken pieces with half of the minced garlic, ginger, lemon juice, and salt for at least 30 minutes.",
       "Grill or pan-fry the marinated chicken until golden brown on all sides. Set aside.",
@@ -1496,11 +1733,20 @@ export const kenyanMeals = [
       "Cover and simmer on low heat for about 20 minutes until chicken is fully cooked and tender.",
       "Adjust seasoning if needed and garnish with fresh cilantro.",
       "Serve hot with rice or chapati."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 520,
+      protein: 42,
+      carbs: 10,
+      fat: 36,
+      fiber: 3
+    },
+    region: "Coastal Kenya"
   },
   {
     id: "ke-041",
     name: "Mokimo",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Mashed potatoes with green peas, corn, and pumpkin leaves, a traditional Kikuyu dish.",
     preparationTime: 20,
@@ -1509,7 +1755,11 @@ export const kenyanMeals = [
     totalCost: 200,
     calories: 250,
     image: null,
-    tags: ["Traditional", "Vegetarian", "Budget-Friendly"],
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Potatoes", amount: "1kg" },
       { name: "Green Peas", amount: "200g" },
@@ -1518,14 +1768,6 @@ export const kenyanMeals = [
       { name: "Onion", amount: "1 medium" },
       { name: "Salt", amount: "to taste" }
     ],
-    nutritionFacts: {
-      calories: 250,
-      protein: 6,
-      carbs: 50,
-      fat: 2,
-      fiber: 8
-    },
-    region: "Central Kenya",
     instructions: [
       "Peel and cut potatoes into chunks, then boil until soft.",
       "Cook green peas and corn separately.",
@@ -1533,11 +1775,20 @@ export const kenyanMeals = [
       "Sauté the onions until golden.",
       "Mash the potatoes and mix in all other ingredients.",
       "Season with salt and serve hot."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 250,
+      protein: 6,
+      carbs: 50,
+      fat: 2,
+      fiber: 8
+    },
+    region: "Central Kenya"
   },
   {
     id: "ke-042",
     name: "Kuku Choma",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Grilled chicken marinated with spices, a popular Kenyan barbecue dish.",
     preparationTime: 30,
@@ -1546,7 +1797,11 @@ export const kenyanMeals = [
     totalCost: 600,
     calories: 500,
     image: null,
-    tags: ["Traditional", "High Protein", "Special Occasion"],
+    tags: [
+      "Traditional",
+      "High Protein",
+      "Special Occasion"
+    ],
     ingredients: [
       { name: "Chicken Pieces", amount: "1kg" },
       { name: "Lemon", amount: "1" },
@@ -1557,6 +1812,11 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Vegetable Oil", amount: "2 tbsp" }
     ],
+    instructions: [
+      "Marinate chicken pieces with lemon juice, crushed garlic, grated ginger, paprika, cumin powder, salt, and vegetable oil for at least 30 minutes.",
+      "Grill the marinated chicken over medium heat until fully cooked and slightly charred.",
+      "Serve hot with kachumbari and ugali."
+    ],
     nutritionFacts: {
       calories: 500,
       protein: 40,
@@ -1564,16 +1824,12 @@ export const kenyanMeals = [
       fat: 35,
       fiber: 2
     },
-    region: "Nationwide",
-    instructions: [
-      "Marinate chicken pieces with lemon juice, crushed garlic, grated ginger, paprika, cumin powder, salt, and vegetable oil for at least 30 minutes.",
-      "Grill the marinated chicken over medium heat until fully cooked and slightly charred.",
-      "Serve hot with kachumbari and ugali."
-    ]
+    region: "Nationwide"
   },
   {
     id: "ke-043",
     name: "Maharagwe ya Nazi",
+    source: "kenyanMeals.js (Original)",
     type: "lunch, dinner",
     description: "Red kidney beans cooked in coconut milk, a creamy and flavorful dish.",
     preparationTime: 15,
@@ -1582,7 +1838,11 @@ export const kenyanMeals = [
     totalCost: 250,
     calories: 300,
     image: null,
-    tags: ["Vegetarian", "High Protein", "Budget-Friendly"],
+    tags: [
+      "Vegetarian",
+      "High Protein",
+      "Budget-Friendly"
+    ],
     ingredients: [
       { name: "Red Kidney Beans", amount: "500g, soaked overnight" },
       { name: "Coconut Milk", amount: "400ml" },
@@ -1596,14 +1856,6 @@ export const kenyanMeals = [
       { name: "Salt", amount: "to taste" },
       { name: "Fresh Cilantro/Coriander", amount: "handful, chopped" }
     ],
-    nutritionFacts: {
-      calories: 300,
-      protein: 16,
-      carbs: 42,
-      fat: 10,
-      fiber: 12
-    },
-    region: "Coastal Kenya",
     instructions: [
       "Drain and rinse the soaked beans, then place in a pot with enough fresh water to cover. Bring to a boil and cook until beans are tender, about 40-50 minutes.",
       "In a separate pan, heat oil and sauté onions until golden brown.",
@@ -1613,11 +1865,20 @@ export const kenyanMeals = [
       "Add the cooked beans with some of their cooking liquid, coconut milk, and salt.",
       "Simmer on low heat for 15-20 minutes until the stew thickens.",
       "Garnish with fresh cilantro and serve hot with rice, chapati, or ugali."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 300,
+      protein: 16,
+      carbs: 42,
+      fat: 10,
+      fiber: 12
+    },
+    region: "Coastal Kenya"
   },
   {
     id: "ke-044",
     name: "Kachumbari",
+    source: "kenyanMeals.js (Original)",
     type: "snack, side",
     description: "Fresh and tangy Kenyan salad made with tomatoes, onions, and cilantro. It's the perfect accompaniment to grilled meats and other main dishes.",
     preparationTime: 10,
@@ -1626,7 +1887,12 @@ export const kenyanMeals = [
     totalCost: 100,
     calories: 60,
     image: null,
-    tags: ["Salad", "Quick", "No-Cook", "Vegetarian"],
+    tags: [
+      "Salad",
+      "Quick",
+      "No-Cook",
+      "Vegetarian"
+    ],
     ingredients: [
       { name: "Tomatoes", amount: "3 medium, diced" },
       { name: "Red Onion", amount: "1 medium, finely sliced" },
@@ -1635,14 +1901,6 @@ export const kenyanMeals = [
       { name: "Lemon or Lime Juice", amount: "2 tbsp" },
       { name: "Salt", amount: "to taste" }
     ],
-    nutritionFacts: {
-      calories: 60,
-      protein: 2,
-      carbs: 13,
-      fat: 0,
-      fiber: 3
-    },
-    region: "Nationwide",
     instructions: [
       "Soak sliced onions in cold water for 5-10 minutes to reduce sharpness, then drain well.",
       "In a bowl, combine diced tomatoes and sliced onions.",
@@ -1650,11 +1908,20 @@ export const kenyanMeals = [
       "Drizzle with lemon or lime juice.",
       "Season with salt and toss gently to combine.",
       "Let the salad sit for about 5 minutes to allow flavors to meld before serving."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 60,
+      protein: 2,
+      carbs: 13,
+      fat: 0,
+      fiber: 3
+    },
+    region: "Nationwide"
   },
   {
     id: "ke-045",
     name: "Samosas",
+    source: "kenyanMeals.js (Original)",
     type: "snack, breakfast",
     description: "Popular Kenyan street food with Indian influence - crispy triangular pastries filled with seasoned minced meat or vegetables.",
     preparationTime: 45,
@@ -1663,7 +1930,11 @@ export const kenyanMeals = [
     totalCost: 350,
     calories: 180,
     image: null,
-    tags: ["Snack", "Street Food", "Indian Influence"],
+    tags: [
+      "Snack",
+      "Street Food",
+      "Indian Influence"
+    ],
     ingredients: [
       { name: "All-purpose Flour", amount: "2 cups" },
       { name: "Salt", amount: "1 tsp" },
@@ -1679,14 +1950,6 @@ export const kenyanMeals = [
       { name: "Green Peas", amount: "1/2 cup" },
       { name: "Cilantro/Coriander", amount: "1/4 cup, chopped" }
     ],
-    nutritionFacts: {
-      calories: 180,
-      protein: 8,
-      carbs: 15,
-      fat: 10,
-      fiber: 1
-    },
-    region: "Urban Kenya",
     instructions: [
       "For the dough: Mix flour and salt in a bowl. Add oil and rub until mixture resembles breadcrumbs. Add water gradually and knead to form a stiff dough. Cover and rest for 30 minutes.",
       "For the filling: Heat oil in a pan, add onions and sauté until golden. Add garlic and ginger, cook for 1 minute.",
@@ -1696,8 +1959,10392 @@ export const kenyanMeals = [
       "Form each half into a cone, fill with the meat mixture, seal the edges with water.",
       "Deep fry the samosas in hot oil until golden brown and crispy.",
       "Drain on paper towels and serve hot with ketchup or chutney."
-    ]
+    ],
+    nutritionFacts: {
+      calories: 180,
+      protein: 8,
+      carbs: 15,
+      fat: 10,
+      fiber: 1
+    },
+    region: "Urban Kenya"
+  },
+  {
+    id: "ke-046",
+    name: "Chapati",
+    source: "Global Give Back Circle",
+    type: "dinner, lunch",
+    description: "Chapati is unleavened flat bread adopted from the Indian Rotti. It was first introduced to Kenya during colonial times as Indian laborers constructed the railroads throughout East Africa. After decades of integration, Kenyan Chapati has become a more layered and thicker version of Indian Rotti. Today, Kenyans prepare Chapati as part of a celebratory meal or to welcome special guests.",
+    preparationTime: 30,
+    cookingTime: 20,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Bread",
+      "Budget-Friendly"
+    ],
+    ingredients: [
+      { name: "Wheat Flour", amount: "3 cups" },
+      { name: "Warm Water", amount: "1 1/2 cups" },
+      { name: "Salt", amount: "2 tsp" },
+      { name: "Vegetable Oil", amount: "5-6 tbsp" },
+      { name: "Lemon Rind", amount: "1, grated" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "In a large bowl add flour and salt. Incorporate the grated lemon rind to the flour, followed by 3 tablespoons of vegetable oil and mix well.",
+      "Make a hole in the middle of the flour mixture; add the warm water and start kneading until the water has been absorbed.",
+      "Knead the mixture for 5-10 minutes and add flour if needed, until the dough is non-sticky on your bowl and hands.",
+      "Add 2-3 tablespoons of vegetable oil and continue kneading until the oil mixes well and the dough feels soft.",
+      "Cover the dough and leave it to rest for 20-30 minutes.",
+      "On a smooth flat surface, roll out the kneaded dough using a rolling pin (make sure the surface is dusted with flour).",
+      "After completely stretching it out, divide it into 8 straight strips using a sharp knife. Coil each of the strips to form a ball-like shape.",
+      "Dust the flat surface with more flour and take one of the balls and roll it out using a rolling pin to a flat circular shape.",
+      "On a hot pan, place the rolled out circular Chapati and fry (using medium heat) each side with a little bit of vegetable oil until its golden brown.",
+      "Place your cooked Chapati on a flat plate and cover with aluminum foil or store them in a hot pot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-047",
+    name: "Mahamri",
+    source: "Global Give Back Circle",
+    type: "breakfast, snack",
+    description: "Mahamri is a type of doughnut incorporating special ingredients such as coconut milk and cardamom. This authentic type of snack originated from the Swahili coastal regions of Kenya and Tanzania and is still very popular in both regions. Normally, it is eaten at breakfast, accompanied by Kenyan Chai.",
+    preparationTime: 60,
+    cookingTime: 20,
+    servings: 20,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Breakfast",
+      "Sweet",
+      "Coastal",
+      "Snack"
+    ],
+    ingredients: [
+      { name: "Wheat Flour", amount: "3 cups" },
+      { name: "Raw Sugar", amount: "8-10 tbsp" },
+      { name: "Instant Yeast", amount: "1 tsp" },
+      { name: "Cardamom", amount: "1 tsp" },
+      { name: "Butter or Margarine", amount: "1 tsp" },
+      { name: "Egg", amount: "1 medium (optional)" },
+      { name: "Coconut Milk", amount: "1 cup" },
+      { name: "Vegetable Oil", amount: "for deep frying" }
+    ],
+    instructions: [
+      "In a mixing bowl add flour, sugar, yeast and cardamom, butter/margarine, and the egg. Mix the ingredients together. Slowly add coconut milk, a little at a time, as you knead the dough.",
+      "Knead the dough for a minimum of 15-20 minutes until it is soft, smooth and not sticky.",
+      "Place the dough in a container and cover it. Let it rest and rise for at least 3-4 hours at room temperature. The dough should double in size.",
+      "Using a dough cutter or knife, divide the dough into 4-5 equal balls and coat each with flour, cover them again for 15 minutes and let them rise.",
+      "Roll each ball of dough into a circle of about 6 inches. Cut each of the dough circles into 4 pieces.",
+      "Heat the vegetable oil in a frying pan or a wok.",
+      "Fry 4 Mahamris at a time. Use your metal strainer to splash oil over the top to help them puff up. Turn them until they have a nice golden-brown color on both sides.",
+      "Remove from the hot oil and place on a serving plate lined with paper towels. Serve warm with Kenyan Chai."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Coastal Kenya"
+  },
+  {
+    id: "ke-048",
+    name: "Chai (Kenyan Tea)",
+    source: "Global Give Back Circle",
+    type: "breakfast, snack",
+    description: "In Kenya, any time is considered Tea Time. Chai is a beverage guaranteed to be in any Kenyan family's menu. It is the most common beverage enjoyed by Kenyans for breakfast and the first beverage offered to visiting guests.",
+    preparationTime: 5,
+    cookingTime: 10,
+    servings: 1,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Drink",
+      "Traditional",
+      "Quick",
+      "Budget-Friendly"
+    ],
+    ingredients: [
+      { name: "Milk", amount: "1 cup" },
+      { name: "Chopped Tea Leaves", amount: "2 tsp" },
+      { name: "Water", amount: "1/4 cup" },
+      { name: "Sugar", amount: "3 tsp" }
+    ],
+    instructions: [
+      "Boil water in a saucepan.",
+      "Add sugar and tea and boil for 3-4 minutes on medium flame.",
+      "Add milk and boil it over medium flame for 6-7 minutes or until bubbles start to rise.",
+      "Turn off the gas and strain the tea in cups.",
+      "Serve with cookies, Mahamri, Bread or Chapati."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-049",
+    name: "Dawa",
+    source: "Global Give Back Circle",
+    type: "drink",
+    description: "The Dawa (medicine) cocktail, invented in Nairobi, was inspired by the Brazilian Caipirinha drink. Dawa is commonly prepared when fighting a cold or sore throat. Today Dawa is a very popular drink found at tables and cafes throughout Kenya, loved for its strong ginger aroma.",
+    preparationTime: 5,
+    cookingTime: 5,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Drink",
+      "Healthy",
+      "Traditional"
+    ],
+    ingredients: [
+      { name: "Ginger Root", amount: "1 piece, grated" },
+      { name: "Root Turmeric", amount: "1 tbsp (or 1/2 tbsp ground)" },
+      { name: "Lemon Juice", amount: "from 1 lemon" },
+      { name: "Honey", amount: "to sweeten (optional)" },
+      { name: "Water", amount: "2 glasses" }
+    ],
+    instructions: [
+      "In a pot, add 2 glasses of water, ginger, and turmeric.",
+      "Once it boils, reduce heat and simmer for 3-4 minutes.",
+      "Remove from heat and settle for 1-2 minutes.",
+      "Strain, add honey, and serve.",
+      "Dawa can either be served chilled or hot. In the summer, it is lovely over ice with fresh mint."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nairobi"
+  },
+  {
+    id: "ke-050",
+    name: "Ugali",
+    source: "Global Give Back Circle",
+    type: "lunch, dinner",
+    description: "Ugali is the most common staple food in Kenya. It is a polenta-like dish made from maize, millet or sorghum flour, added to boiling water and cooked until it becomes a dense block. It is usually eaten with meat stew, Nyama Choma or most commonly with Sukuma Wiki.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Staple",
+      "Budget-Friendly"
+    ],
+    ingredients: [
+      { name: "Maize (Corn) Flour", amount: "1 cup" },
+      { name: "Water", amount: "2 cups" }
+    ],
+    instructions: [
+      "Boil water until it bubbles. The water should be very hot.",
+      "Add a cup of maize flour into the water. Let it cook a few seconds until water starts to cover the flour.",
+      "Use a wooden spoon to quickly start mixing the flour and water.",
+      "Add a handful of flour and continue to mix the water and flour as it starts to come together.",
+      "Reduce heat to medium and keep turning the Ugali as it continues to stick together.",
+      "Gather the Ugali and press it onto the side of the cooking pot.",
+      "Place the wooden spoon under the Ugali and form into a ball in the middle of the cooking pot.",
+      "Repeat pressing the Ugali on the side of the cooking pot and turning it to the middle.",
+      "Once the Ugali has become firm, turn it once more and smoothen it into a round.",
+      "Place the cooked Ugali over onto a plate and smooth into a ball.",
+      "Serve the Ugali whole or sliced with your favorite stew, meat, veggies, fish and more."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-051",
+    name: "Sukuma Wiki",
+    source: "Global Give Back Circle",
+    type: "lunch, dinner",
+    description: "Sukuma Wiki is a Swahili phrase meaning push the week. What is really being pushed is the family food budget to stretch a bit longer. Sukuma wiki is a mixture of kale, meat, spices and at times spinach to make a savory dish. It is commonly served alongside Ugali.",
+    preparationTime: 10,
+    cookingTime: 10,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "Budget-Friendly",
+      "Quick"
+    ],
+    ingredients: [
+      { name: "Kale and Spinach", amount: "1 bunch each" },
+      { name: "Vegetable Oil", amount: "3 tbsp" },
+      { name: "Salt", amount: "a pinch" },
+      { name: "Tomatoes", amount: "2" },
+      { name: "Beef Bouillon Cubes", amount: "2" },
+      { name: "Onion", amount: "1 large" }
+    ],
+    instructions: [
+      "Remove the stalks from the vegetable.",
+      "Shred them into your desired size using a sharp knife.",
+      "In a saucepan, heat oil then brown the onions.",
+      "Chop the tomatoes and add them into the light brown onions.",
+      "Add salt and crush the bouillon cubes and cook for 1 min.",
+      "Add the cut vegetables and cook for 3 mins.",
+      "Remove from fire and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-052",
+    name: "Pilau",
+    source: "Global Give Back Circle",
+    type: "dinner, lunch",
+    description: "A wedding in Kenya without Pilau is a big No-No. Pilau is a traditional meal among the coastal people of Kenya and Tanzania. It is a fragrant rice dish cooked using whole organic spices, beef, chicken or mutton, and is commonly served with Kachumbari.",
+    preparationTime: 15,
+    cookingTime: 45,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Spiced",
+      "Celebratory",
+      "Coastal"
+    ],
+    ingredients: [
+      { name: "Long Grain Basmati Rice", amount: "2 cups" },
+      { name: "Water", amount: "4 cups" },
+      { name: "Onion", amount: "1, sliced" },
+      { name: "Chicken", amount: "1/2, sliced into bite-size pieces" },
+      { name: "Vegetable Oil", amount: "as needed" },
+      { name: "Whole Cloves", amount: "4" },
+      { name: "Cinnamon Sticks", amount: "2, whole" },
+      { name: "Cardamoms", amount: "5, whole" },
+      { name: "Black Peppercorns", amount: "9, whole" },
+      { name: "Cumin Seeds", amount: "1 tsp" },
+      { name: "Ginger and Garlic", amount: "1 tsp each, crushed" },
+      { name: "Potatoes", amount: "2, peeled (optional)" },
+      { name: "Salt", amount: "to taste" }
+    ],
+    instructions: [
+      "In a cooking pot, add onions and vegetable oil and cook until the onions start to brown.",
+      "Add all whole spices and fry for 1 minute.",
+      "Add chicken and fry for 6 minutes.",
+      "Add potatoes (optional) and water and bring it to boil.",
+      "Add salt to taste.",
+      "Once the water boils, add rice and simmer until the rice is a little wet, not completely dry.",
+      "Place the cooking pan in an oven, cover it and let it cook in a little water so it does not become completely dry.",
+      "Serve hot with salad, gravy, chili or Kachumbari."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Coastal Kenya"
+  },
+  {
+    id: "ke-053",
+    name: "Kachumbari",
+    source: "Global Give Back Circle",
+    type: "side dish, salad",
+    description: "For Kenyans, a Pilau dish is not complete without a side dish of Kachumbari. Kachumbari is a popular accompaniment for main dishes like Pilau, Nyama Choma and Ugali.",
+    preparationTime: 15,
+    cookingTime: 0,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Salad",
+      "No-Cook",
+      "Quick",
+      "Vegetarian"
+    ],
+    ingredients: [
+      { name: "Tomatoes", amount: "4 large" },
+      { name: "Onions", amount: "2 medium" },
+      { name: "Coriander", amount: "1 bunch" },
+      { name: "Lemons", amount: "2" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Vinegar", amount: "optional" },
+      { name: "Chili Pepper", amount: "optional" }
+    ],
+    instructions: [
+      "Clean the tomatoes and chop into small pieces and set aside.",
+      "Dice the onions, finely chop the coriander and slice the lemons into halves.",
+      "Place the ingredients in one bowl and gently mix.",
+      "Squeeze the lemon juice into your kachumbari and mix again adding a pinch of salt and the vinegar to taste.",
+      "Leave to set for 10 minutes."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-054",
+    name: "Matoke",
+    source: "Global Give Back Circle",
+    type: "lunch, dinner",
+    description: "Matoke is a dish originating from Uganda and a very popular dish among Kenyans. Though the original recipe from Uganda uses unripe bananas as the main ingredient, Kenyans have their own version with an addition of potatoes and sometimes arrow roots.",
+    preparationTime: 20,
+    cookingTime: 50,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Stew",
+      "Budget-Friendly"
+    ],
+    ingredients: [
+      { name: "Green Bananas", amount: "8 medium size (not quite ripe)" },
+      { name: "Potatoes", amount: "4" },
+      { name: "Beef", amount: "2 pounds, chopped" },
+      { name: "Tomatoes", amount: "3, chopped" },
+      { name: "Onion", amount: "1 large, chopped" },
+      { name: "Carrots", amount: "2, cubed" },
+      { name: "Coriander", amount: "small bunch, chopped" },
+      { name: "Salt", amount: "1 tbsp" },
+      { name: "Curry Powder", amount: "1 tbsp" },
+      { name: "Vegetable Oil", amount: "as needed" }
+    ],
+    instructions: [
+      "Prepare the ingredients by covering your hands with cooking oil, then peel the unripe bananas.",
+      "Peel the potatoes and cut them into even wedges.",
+      "Put the beef in a cooking pot with a pinch of salt and add one cup of water, then place on heat and cover. Let it boil for 30 minutes till the meat is tender.",
+      "Drain the broth and put aside for soup later. Add oil to the meat and heat for a few minutes, then add the onion. Let the onions fry with the meat for 3 minutes then add tomatoes and carrots, stir to mix, then cover and simmer until the tomatoes have softened.",
+      "Add the bananas and the potato wedges to beef and stir. Then add the preserved meat broth.",
+      "Add coriander and curry powder. Cover then let it simmer for 15 minutes or until the bananas and potatoes are soft.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Western Kenya"
+  },
+  {
+    id: "ke-055",
+    name: "Kachumbari with Basil Honey Vinaigrette",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "salad, side dish",
+    description: "A gourmet twist on the cherished Kenyan tomato salsa, inspired by street food sausages with kachumbari filling. Features a delicious basil honey vinaigrette.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Salad",
+      "Modern Adaptation",
+      "Vegetarian"
+    ],
+    ingredients: [
+      { name: "Tomatoes", amount: "2, diced" },
+      { name: "Red Onion", amount: "1, finely diced" },
+      { name: "Fresh Basil", amount: "a handful" },
+      { name: "Honey", amount: "1 tbsp" },
+      { name: "Olive Oil", amount: "2 tbsp" },
+      { name: "Lemon Juice", amount: "1 tbsp" },
+      { name: "Salt and Pepper", amount: "to taste" }
+    ],
+    instructions: [
+      "Dice your red onion and soak it in hot water and 1/2 a teaspoon of vinegar for 10 minutes to reduce sharpness.",
+      "Dice the tomatoes and place in a serving bowl.",
+      "Make the vinaigrette by whisking together honey, olive oil, lemon juice, and finely chopped basil.",
+      "Drain the onions and add to the tomatoes.",
+      "Drizzle with the basil honey vinaigrette, toss gently and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-056",
+    name: "Coconut Oil Sauteed Sukuma Wiki and Spinach",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "lunch, dinner",
+    description: "A delicious combination of kale and spinach sauteed in coconut oil with garlic and ginger. A healthier and more flavorful take on the classic Kenyan veggie.",
+    preparationTime: 15,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Vegetarian",
+      "Healthy",
+      "Traditional"
+    ],
+    ingredients: [
+      { name: "Kale", amount: "500g, finely chopped" },
+      { name: "Spinach", amount: "500g, finely chopped" },
+      { name: "Coconut Oil", amount: "2 tbsp" },
+      { name: "Red Onion", amount: "1, diced" },
+      { name: "Ginger", amount: "1 thumb-sized, minced" },
+      { name: "Garlic", amount: "4 cloves, minced" },
+      { name: "Salt", amount: "to taste" }
+    ],
+    instructions: [
+      "Finely chop the kale and spinach.",
+      "Heat coconut oil in a sufuria and add the diced red onion, ginger and garlic.",
+      "Saute until fragrant, then add the kale and spinach.",
+      "Cook until the vegetables are tender but still vibrant.",
+      "Season with salt and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-057",
+    name: "Pineapple Glazed Honey Carrots",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "side dish",
+    description: "Sweet pineapple glazed honey carrots that capture the true essence of sunny days in Nairobi. A simple yet elegant side dish.",
+    preparationTime: 5,
+    cookingTime: 15,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Vegetarian",
+      "Healthy",
+      "Quick",
+      "Side Dish"
+    ],
+    ingredients: [
+      { name: "Fresh Pineapple", amount: "1 cup, diced" },
+      { name: "Carrots", amount: "3, sliced" },
+      { name: "Honey", amount: "2 tbsp" },
+      { name: "Butter", amount: "1 tbsp" },
+      { name: "Salt", amount: "to taste" }
+    ],
+    instructions: [
+      "Slice the carrots and boil until just tender.",
+      "In a pan, melt butter and add the diced pineapple.",
+      "Add honey and cook until it forms a glaze.",
+      "Add the cooked carrots and toss in the pineapple honey glaze.",
+      "Serve as a side dish."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-058",
+    name: "Creamed Managu",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "lunch, dinner",
+    description: "A rich and creamy take on the traditional Luhya vegetable dish. Managu (African nightshade) is known for its high nutritional value and rich taste.",
+    preparationTime: 10,
+    cookingTime: 40,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "Luhya"
+    ],
+    ingredients: [
+      { name: "Managu Leaves", amount: "900g" },
+      { name: "Heavy Cream", amount: "1 cup" },
+      { name: "Red Onion", amount: "1, diced" },
+      { name: "Garlic", amount: "3 cloves, minced" },
+      { name: "Salt", amount: "to taste" }
+    ],
+    instructions: [
+      "Wash your managu leaves and dry them.",
+      "Fold the leaves into a roll then finely chop them.",
+      "Saute onion and garlic in oil until fragrant.",
+      "Add the managu and cook for about 15 minutes.",
+      "Pour in the heavy cream and let it simmer until the sauce thickens.",
+      "Season with salt and serve with ugali or rice."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Western Kenya"
+  },
+  {
+    id: "ke-059",
+    name: "Nutmeg and Cinnamon Drop Scones",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "breakfast",
+    description: "Perfect drop scones with nutmeg and cinnamon. A breakfast favorite with small tweaks that make them irresistible.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 3,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Breakfast",
+      "Sweet",
+      "Quick"
+    ],
+    ingredients: [
+      { name: "Flour", amount: "1 1/2 cups" },
+      { name: "Milk", amount: "250ml" },
+      { name: "Sugar", amount: "4 spoons" },
+      { name: "Egg", amount: "1" },
+      { name: "Nutmeg", amount: "1/2 tsp" },
+      { name: "Cinnamon", amount: "1/2 tsp" },
+      { name: "Baking Powder", amount: "1 tsp" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Crack your egg into a bowl and add the sugar. Whisk until frothy and pale yellow.",
+      "Add milk and mix well.",
+      "Sift in flour, baking powder, nutmeg and cinnamon. Mix until smooth.",
+      "Heat a pan with a little oil.",
+      "Drop spoonfuls of batter onto the pan.",
+      "Cook until bubbles form on the surface, then flip and cook the other side until golden.",
+      "Serve warm with tea or honey."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-060",
+    name: "Chili and Garlic Matumbo",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dinner, lunch",
+    description: "Tripe (matumbo) cooked with chili and garlic in a rich tomato base. A beloved family recipe that transforms this humble cut into a delicacy.",
+    preparationTime: 180,
+    cookingTime: 40,
+    servings: 3,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Protein",
+      "Spicy"
+    ],
+    ingredients: [
+      { name: "Tripe", amount: "1/2 kg" },
+      { name: "Garlic", amount: "5 cloves" },
+      { name: "Tomatoes", amount: "4, roughly chopped" },
+      { name: "Fresh Coriander", amount: "finely chopped" },
+      { name: "Royco All Spice Mix", amount: "1 1/2 tbsp" },
+      { name: "Red Onion", amount: "1 large, diced" },
+      { name: "Milk", amount: "1 cup" },
+      { name: "Birds Eye Chili", amount: "2" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Thoroughly wash your matumbo until the water runs clear.",
+      "Boil the tripe until it tenderizes. Add the chili and milk after about 2 hours and let simmer for 45 minutes.",
+      "Remove from the heat, chop into bite-sized pieces and set aside.",
+      "Pound garlic cloves into a paste. Dice onions and add into sufuria with heated oil and the minced garlic.",
+      "Add salt and let these saute until the onions are soft. Add tomatoes and let simmer for about 5 minutes.",
+      "Add the chili-infused boiled matumbo and mix in. Let simmer for about 2 minutes.",
+      "Add royco all spice mix, 1/4 cup of water, cover and simmer for 10-20 minutes.",
+      "Add finely chopped coriander and serve immediately."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-061",
+    name: "Sweet Chili Nyama Choma Dry Fry",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dinner",
+    description: "A twist on the traditional Kenyan grilled goat meat. Flame-grilled goat meat strips tossed in a sweet chili sauce that takes nyama choma to another level.",
+    preparationTime: 10,
+    cookingTime: 45,
+    servings: 3,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Protein",
+      "Spicy",
+      "Special Occasion"
+    ],
+    ingredients: [
+      { name: "Goat Meat, boneless", amount: "1 kg" },
+      { name: "Spring Onion", amount: "1/2 cup, finely chopped" },
+      { name: "Tomato Paste", amount: "1 tbsp" },
+      { name: "Brown Sugar", amount: "2 tbsp" },
+      { name: "Cayenne Pepper", amount: "1/2 tbsp" },
+      { name: "Soy Sauce", amount: "1 tbsp" },
+      { name: "Garlic", amount: "4 cloves, minced" },
+      { name: "Ginger Root", amount: "1/2 thumb-sized, minced" },
+      { name: "Black Pepper", amount: "1/2 tsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Onion Chives", amount: "for garnish" }
+    ],
+    instructions: [
+      "Take your goat meat and flame grill it until the outside has just browned.",
+      "Once done, slice it up into 3 inch strips and set aside.",
+      "In a pan, add spring onion, minced ginger and garlic and saute until soft and fragrant.",
+      "Add tomato paste, soy sauce, cayenne pepper, sugar, black pepper together with 1/2 a cup of hot water.",
+      "Let this simmer for about 10-15 minutes on medium low heat until it thickens.",
+      "Add the goat meat strips and toss them in the sauce for 2-3 minutes.",
+      "Once fully coated, garnish with onion chives and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-062",
+    name: "Thyme and Chili Liver",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dinner, lunch",
+    description: "Liver cooked with thyme and chili in a rich tomato sauce. A nutritious recipe passed down through generations.",
+    preparationTime: 10,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Protein",
+      "Healthy",
+      "Quick"
+    ],
+    ingredients: [
+      { name: "Liver", amount: "1/2 kg" },
+      { name: "Garlic", amount: "6 cloves, minced" },
+      { name: "Ginger Root", amount: "1/2 thumb-sized" },
+      { name: "Red Onion", amount: "1 large, finely diced" },
+      { name: "Green Bell Pepper", amount: "1 large, finely diced" },
+      { name: "Tomatoes", amount: "2, blended" },
+      { name: "Tomato Paste", amount: "1 tbsp" },
+      { name: "Coriander Powder", amount: "1 tbsp" },
+      { name: "Milk", amount: "1 cup" },
+      { name: "Black Pepper", amount: "1 tbsp" },
+      { name: "Birds Eye Chili", amount: "2" },
+      { name: "Dried Thyme", amount: "1/2 tsp" },
+      { name: "Fresh Coriander", amount: "for garnish" }
+    ],
+    instructions: [
+      "Chop liver into bite-size pieces. Rinse with clean water until most blood is rinsed off (about 3 rinses).",
+      "Pour in milk and allow to sit for about 30 minutes. The milk draws out the excess blood.",
+      "Put garlic, ginger, chopped chilies and dried thyme in a kinu and grind until they form a paste.",
+      "In a saucepan, heat oil and add onion and garlic-ginger-thyme paste. Saute until fragrant.",
+      "Add tomato paste and tomatoes with 1/4 cup of hot water. Simmer for about 5 minutes.",
+      "Add liver and green bell pepper, let simmer for about 7-10 minutes.",
+      "Once tender and cooked through, remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-063",
+    name: "Lamb Samosa",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack",
+    description: "A gourmet twist on the classic Kenyan samosa using tender minced lamb with mustard, cayenne and fresh mint leaves.",
+    preparationTime: 30,
+    cookingTime: 30,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Snack",
+      "Street Food",
+      "Meat",
+      "Modern Adaptation"
+    ],
+    ingredients: [
+      { name: "Minced Lamb", amount: "1 kg" },
+      { name: "Mustard Powder", amount: "1/2 tsp" },
+      { name: "Cayenne Pepper", amount: "1/2 tsp" },
+      { name: "Fresh Mint Leaves", amount: "7, finely chopped" },
+      { name: "Garlic", amount: "4 cloves, minced" },
+      { name: "Lemon", amount: "1/2, juice and zest" },
+      { name: "Black Pepper", amount: "1 tsp" },
+      { name: "Spring Onion", amount: "1 cup, finely chopped" },
+      { name: "Coriander", amount: "1 bunch, finely chopped" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Hot Water", amount: "1 cup (for crust)" },
+      { name: "All Purpose Flour", amount: "as needed (for crust)" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "For the crust: Pour hot water in a bowl. Add the salt, oil. Add flour bit by bit while mixing. Knead until it stops being sticky. Allow to rest for about 30 minutes.",
+      "Heat some vegetable oil and add spring onion, half of the coriander, and garlic. Saute until softened.",
+      "Add minced lamb, cayenne pepper, lemon juice and zest, mint leaves and mustard powder. Cook for 5-7 minutes.",
+      "Divide dough into golf ball size portions. Roll them out into a circular shape then cut into quarters.",
+      "Fold the ends of the circular part towards the center. Add the lamb filling and fold the remaining flap over.",
+      "Use some dough as glue to seal.",
+      "Flash fry for about 2-3 minutes in hot oil until golden brown then serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-064",
+    name: "Lemon Infused Chili Omena",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "lunch, dinner",
+    description: "Sun-dried omena (small fish from Lake Victoria) cooked with plenty of lemon flavor, chili and garlic. Arguably the best omena recipe, rich in flavor and nutrition.",
+    preparationTime: 90,
+    cookingTime: 35,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Protein",
+      "Lake Region",
+      "Budget-Friendly"
+    ],
+    ingredients: [
+      { name: "Sun Dried Omena", amount: "125g" },
+      { name: "Apple Cider Vinegar", amount: "3 tbsp" },
+      { name: "Lemon", amount: "1, squeezed" },
+      { name: "Lemon Zest", amount: "1 tsp" },
+      { name: "Black Pepper Seeds", amount: "1/2 tsp, crushed" },
+      { name: "Garlic", amount: "6 cloves" },
+      { name: "Red Onion", amount: "1, finely chopped" },
+      { name: "Ginger Root", amount: "1/2 thumb-sized" },
+      { name: "Birds Eye Chili", amount: "1" },
+      { name: "Tomatoes", amount: "2, grated" },
+      { name: "Coriander", amount: "finely chopped" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Place omena in a bowl. Add hot water and apple cider vinegar and soak for about 45 minutes.",
+      "Crush black pepper, garlic and chili in a kinu until it forms a paste.",
+      "Heat oil and add the red onion, garlic and ginger paste. Saute until fragrant.",
+      "Add tomatoes and tomato paste and let simmer for 5-7 minutes.",
+      "Completely drain the water from the omena and add to the tomatoes.",
+      "Pour the lemon juice over it. Mix and allow to simmer for 5 minutes.",
+      "Add the lemon zest and cook for a further 10 minutes.",
+      "Add finely chopped coriander and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Lake Victoria Region"
+  },
+  {
+    id: "ke-065",
+    name: "Mbuzi Meatball Mshikaki",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack, dinner",
+    description: "Goat meat meatballs on skewers, tossed in barbecue sauce. A spicy and flavorful twist on the traditional mshikaki.",
+    preparationTime: 10,
+    cookingTime: 20,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Street Food",
+      "Protein",
+      "Spicy",
+      "Modern Adaptation"
+    ],
+    ingredients: [
+      { name: "Minced Goat Meat", amount: "1/2 kg" },
+      { name: "Red Onion", amount: "1, finely diced" },
+      { name: "Coriander", amount: "1/2 cup, finely chopped" },
+      { name: "Garlic", amount: "6 cloves" },
+      { name: "Ginger Root", amount: "1/2 thumb-sized" },
+      { name: "Cayenne Pepper", amount: "1 tsp" },
+      { name: "Garam Masala", amount: "1/2 tbsp" },
+      { name: "Salt", amount: "1/2 tsp" },
+      { name: "Egg", amount: "1" },
+      { name: "Bread Crumbs", amount: "3/4 cup" },
+      { name: "Barbecue Sauce", amount: "to taste" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Put minced goat meat in a bowl. Add coriander, red onion, ginger and garlic, spices and roughly mix.",
+      "Add the egg and bread crumbs then mix until evenly distributed.",
+      "Roll into plum-sized balls.",
+      "Heat vegetable oil and shallow fry meatballs until they have a lovely char and are cooked through (5-8 minutes).",
+      "Toss in your favorite barbecue sauce and skewer them.",
+      "Garnish with finely chopped onion chives and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-066",
+    name: "Peppery Carrot and Garlic Ndengu",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "lunch, dinner",
+    description: "Green grams (ndengu) cooked with plenty of black pepper, garlic and carrots. Their nature allows them to easily absorb flavors of other ingredients.",
+    preparationTime: 60,
+    cookingTime: 35,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Vegetarian",
+      "High Protein",
+      "Budget-Friendly",
+      "Traditional"
+    ],
+    ingredients: [
+      { name: "Ndengu (Green Grams)", amount: "2 cups" },
+      { name: "Tomatoes", amount: "4, grated" },
+      { name: "Spring Onion", amount: "a handful" },
+      { name: "Garlic", amount: "6 cloves, minced" },
+      { name: "Ginger Root", amount: "1 thumb-sized, minced" },
+      { name: "Black Pepper", amount: "1 heaped tbsp" },
+      { name: "Whole Cumin Seeds", amount: "1/2 tbsp" },
+      { name: "Tomato Paste", amount: "2 tbsp" },
+      { name: "Royco", amount: "2 heaped tbsp" },
+      { name: "Carrots", amount: "3, finely diced" }
+    ],
+    instructions: [
+      "Boil your ndengu until tender, then drain excess liquid and set aside.",
+      "In a separate sufuria, heat vegetable oil and add cumin seeds. Once they sizzle, add spring onion.",
+      "Add grated tomatoes, minced ginger and garlic, then add tomato paste with 1/4 cup of hot water. Simmer for 5 minutes.",
+      "Add ndengu and diced carrots and mix in.",
+      "Mix royco and black pepper with some water to form a paste. Add to the ndengu with 1/2 a cup of hot water.",
+      "Cover and simmer for 10-15 minutes so all flavors meld.",
+      "Serve with your favorite starch."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-067",
+    name: "Curry and Cumin Seed Matoke",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "lunch, dinner",
+    description: "A culinary transformation of one of Kenya's signature meals. Green bananas cooked with curry, cumin and mustard seeds for an aromatic experience.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "Spiced"
+    ],
+    ingredients: [
+      { name: "Matoke (Green Bananas)", amount: "10, peeled and chopped" },
+      { name: "Garlic", amount: "4 cloves, minced" },
+      { name: "Ginger", amount: "1/4 tsp, grated" },
+      { name: "Tomatoes", amount: "3, grated" },
+      { name: "Tomato Paste", amount: "1 tbsp" },
+      { name: "Red Onion", amount: "1 large, diced" },
+      { name: "Turmeric", amount: "1/4 tsp" },
+      { name: "Curry Powder", amount: "1/4 tsp" },
+      { name: "Mustard Seeds", amount: "1/2 tsp" },
+      { name: "Cumin Seeds", amount: "1/2 tsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Vegetable Oil", amount: "for frying" },
+      { name: "Garlic Chives", amount: "for garnish" }
+    ],
+    instructions: [
+      "Put the cumin and mustard seeds in a sufuria with vegetable oil on low heat until fragrant.",
+      "Add onions, garlic and ginger. Cook until softened.",
+      "Add tomatoes and tomato paste. Simmer for 3-8 minutes.",
+      "Add the peeled and sliced matoke with curry powder, salt and turmeric.",
+      "Pour in a cup of hot water or vegetable stock.",
+      "Simmer on medium low heat for about 20 minutes until matoke are tender and yellow.",
+      "Garnish with garlic chives or fresh coriander and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Western Kenya"
+  },
+  {
+    id: "ke-068",
+    name: "Garlic Mukimo",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dinner, lunch",
+    description: "Mashed potatoes on steroids! Traditional mukimo elevated with garlic, parmesan cheese, dill and blended pumpkin leaves for an incredibly flavorful dish.",
+    preparationTime: 15,
+    cookingTime: 25,
+    servings: 3,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Kikuyu",
+      "Vegetarian",
+      "Modern Adaptation"
+    ],
+    ingredients: [
+      { name: "Large Potatoes", amount: "5" },
+      { name: "Tender Boiled Maize", amount: "250g" },
+      { name: "Large Pumpkin Leaves", amount: "3" },
+      { name: "Coriander", amount: "1 bunch" },
+      { name: "Garlic", amount: "2 cloves" },
+      { name: "Dill", amount: "1 tbsp, finely chopped" },
+      { name: "Spring Onion", amount: "1 cup, finely chopped" },
+      { name: "Parmesan Cheese", amount: "1/2 cup" },
+      { name: "Milk", amount: "1/4 cup" }
+    ],
+    instructions: [
+      "Skin pumpkin leaves and finely chop them. Blanch for about 5 minutes.",
+      "Put blanched leaves in a blender with garlic, coriander, dill and 1/4 cup milk. Blend until it forms a paste.",
+      "Boil potatoes in salty water until tender, then begin mashing.",
+      "Add finely chopped spring onion, blended greens, cheese and mix in.",
+      "Add tender maize and fold in until distributed throughout.",
+      "Let stay on heat for a minute or two then serve with spicy meat balls or chicken gravy."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Central Kenya"
+  },
+  {
+    id: "ke-069",
+    name: "Raisin and Carrot Fried Rice",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dinner, lunch",
+    description: "A speedy and delicious fried rice with raisins, carrots and groundnuts. Perfect for weeknight dinners.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Quick",
+      "Modern Adaptation",
+      "Rice"
+    ],
+    ingredients: [
+      { name: "Pishori Rice", amount: "1 cup" },
+      { name: "Ground Nuts", amount: "a handful" },
+      { name: "Carrots", amount: "a handful, finely diced" },
+      { name: "Raisins", amount: "1/2 handful" },
+      { name: "Red Onion", amount: "1, finely chopped" },
+      { name: "Soy Sauce", amount: "2 tbsp" },
+      { name: "Ginger Root", amount: "1/2 thumb-sized, minced" },
+      { name: "Garam Masala", amount: "1 tbsp" },
+      { name: "Coriander Spice", amount: "1 tbsp" },
+      { name: "Black Pepper", amount: "1 tsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Cook rice until just done. Remove from heat and set aside.",
+      "In a separate sufuria, add red onion, carrots, minced ginger, garam masala, coriander powder and ground nuts.",
+      "Cook for about 5 minutes, retaining some texture.",
+      "Add cooked rice, soy sauce and raisins. Toss until everything is evenly distributed.",
+      "Let stay on heat for a minute, garnish with fresh coriander and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-070",
+    name: "Coconut Milk and Cumin Bean Stew",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "lunch, dinner",
+    description: "Beans cooked with cumin seeds and coconut milk for a full-flavored stew. A modified family recipe with an inviting depth of flavor.",
+    preparationTime: 120,
+    cookingTime: 35,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "High Protein",
+      "Budget-Friendly"
+    ],
+    ingredients: [
+      { name: "Cumin Seeds", amount: "2 tbsp" },
+      { name: "Coconut Milk", amount: "125ml" },
+      { name: "Beans", amount: "1 cup" },
+      { name: "Red Onion", amount: "1, finely chopped" },
+      { name: "Tomatoes", amount: "2, grated" },
+      { name: "Tomato Paste", amount: "1 tsp" },
+      { name: "Green Bell Pepper", amount: "1, finely chopped" },
+      { name: "Carrot", amount: "1, finely diced" },
+      { name: "Black Pepper", amount: "1 tbsp" },
+      { name: "Royco", amount: "1 tbsp" }
+    ],
+    instructions: [
+      "Soak beans for 1-2 hours or preferably overnight.",
+      "Boil beans together with cumin seeds until tender. Drain excess liquid.",
+      "In a sufuria, add red onion and finely chopped garlic. Saute until fragrant.",
+      "Add tomatoes and tomato paste, simmer for 5-10 minutes.",
+      "Add carrots, beans, half the green bell pepper and coconut milk.",
+      "Simmer for 10-20 minutes, stirring occasionally.",
+      "Serve with rice or chapati."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-071",
+    name: "Cumin Bhajia with Tzatziki",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack",
+    description: "A global twist on the beloved Kenyan street food bhajia, served with homemade tzatziki sauce.",
+    preparationTime: 15,
+    cookingTime: 35,
+    servings: 3,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Snack",
+      "Street Food",
+      "Modern Adaptation",
+      "Vegetarian"
+    ],
+    ingredients: [
+      { name: "Large Potatoes", amount: "3" },
+      { name: "Gram (Chickpea) Flour", amount: "1 cup" },
+      { name: "Green Bell Pepper", amount: "1/2" },
+      { name: "Ground Cumin", amount: "1 tbsp" },
+      { name: "Ground Coriander", amount: "1 tbsp" },
+      { name: "Turmeric", amount: "1/2 tsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Thick Plain Yogurt", amount: "120g (for tzatziki)" },
+      { name: "Cucumber", amount: "1/2, seeded (for tzatziki)" },
+      { name: "Garlic", amount: "2 cloves, crushed (for tzatziki)" },
+      { name: "Lemon", amount: "1/2, squeezed (for tzatziki)" },
+      { name: "Black Pepper", amount: "1/2 tsp (for tzatziki)" },
+      { name: "Vegetable Oil", amount: "for deep frying" }
+    ],
+    instructions: [
+      "Mix the dry ingredients (ground cumin, salt, ground coriander, turmeric, gram flour) together.",
+      "Add water bit by bit until the mixture has the consistency of yogurt. Add grated bell pepper and mix.",
+      "Boil potatoes until just done. Slice into pieces 1/2 inch thick.",
+      "Dip potato slices in the batter and fry until crispy and golden.",
+      "For the tzatziki: Grate cucumber and drain excess liquid. Mix yogurt, salt, minced garlic, black pepper and lemon juice. Add drained cucumber.",
+      "Serve bhajia with tzatziki."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Urban Kenya"
+  },
+  {
+    id: "ke-072",
+    name: "Chicken Pilau with Garlic Sauce",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dinner, lunch",
+    description: "A pilau with chicken and a rich garlic cream sauce. Strongly mirrors the flavors of the Kenyan coast.",
+    preparationTime: 20,
+    cookingTime: 30,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Spiced",
+      "Coastal",
+      "Protein"
+    ],
+    ingredients: [
+      { name: "Pishori Rice", amount: "2 cups" },
+      { name: "Pilau Masala", amount: "2 1/2 tbsp" },
+      { name: "Black Pepper Seeds", amount: "1 tsp, whole (optional)" },
+      { name: "Tomato Paste", amount: "2 tbsp" },
+      { name: "Chicken Breast", amount: "palm-sized, diced" },
+      { name: "Red Onion", amount: "1, diced" },
+      { name: "Garlic", amount: "6 cloves, minced" },
+      { name: "Heavy Cream", amount: "1/2 cup (for sauce)" },
+      { name: "Hot Water", amount: "1/4 cup (for sauce)" },
+      { name: "Ground Mustard", amount: "1/4 tsp (for sauce)" },
+      { name: "White Pepper", amount: "1/8 tsp (for sauce)" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Vegetable Oil", amount: "1 tbsp (for sauce)" }
+    ],
+    instructions: [
+      "In a sufuria, add onion, garlic and diced chicken breast. Cook until chicken has just turned white (3-5 minutes).",
+      "Add tomato paste, pilau masala and black pepper seeds. Cook for about 5 minutes.",
+      "Add 2 cups of rice followed by 4 cups of hot water. Cover and let cook until done.",
+      "For the sauce: Add minced garlic in a sufuria with heated vegetable oil until softened.",
+      "Add heavy cream, salt, mustard and hot water. Simmer on low heat until thickened.",
+      "Serve pilau with the garlic sauce."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Coastal Kenya"
+  },
+  {
+    id: "ke-073",
+    name: "Wali wa Nazi with Whole Cumin Seeds",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dinner, lunch",
+    description: "Coconut rice with toasted whole cumin seeds that strongly mirrors flavors of the Kenyan coast. Simple yet impressive.",
+    preparationTime: 2,
+    cookingTime: 15,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Coastal",
+      "Quick",
+      "Vegetarian"
+    ],
+    ingredients: [
+      { name: "Basmati Rice", amount: "1 1/2 cups" },
+      { name: "Desiccated Coconut", amount: "50g" },
+      { name: "Coconut Milk", amount: "2 cups" },
+      { name: "Water", amount: "1 cup" },
+      { name: "Cumin Seeds", amount: "1 tbsp" },
+      { name: "Red Onion", amount: "1/2, finely diced" },
+      { name: "Salt", amount: "to taste" }
+    ],
+    instructions: [
+      "Toast cumin seeds in a frying pan until fragrant. Set aside.",
+      "In a sufuria, add toasted cumin seeds, finely chopped red onion, coconut milk, water and salt. Bring to a boil.",
+      "Add rice once it boils.",
+      "After a minute, add desiccated coconut and mix in.",
+      "Turn down the heat, cover with a lid and allow the rice to cook.",
+      "Garnish with fresh coriander and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Coastal Kenya"
+  },
+  {
+    id: "ke-074",
+    name: "Chili and Sage Githeri",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "lunch, dinner",
+    description: "A recipe that transforms the infamous Kenyan boarding school meal into a delicious culinary experience with chili, sage and curry.",
+    preparationTime: 15,
+    cookingTime: 40,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Vegetarian",
+      "High Protein",
+      "Budget-Friendly"
+    ],
+    ingredients: [
+      { name: "Black Pepper Seeds", amount: "1 tsp" },
+      { name: "Birds Eye Chili", amount: "1 medium" },
+      { name: "Dried Sage", amount: "1/2 tsp" },
+      { name: "Curry Powder", amount: "1/2 tsp" },
+      { name: "Garlic", amount: "4 cloves" },
+      { name: "Boiled Githeri (Mixed Maize and Beans)", amount: "900g" },
+      { name: "Red Onion", amount: "1, finely diced" },
+      { name: "Royco All Spice Mix", amount: "3/4 tbsp" },
+      { name: "Tomatoes", amount: "2, grated" },
+      { name: "Tomato Paste", amount: "1 tsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Fresh Coriander", amount: "for garnish" }
+    ],
+    instructions: [
+      "Put garlic, black pepper seeds, diced chili and sage in a kinu and grind into a paste.",
+      "In a sufuria, heat vegetable oil and add red onion and the garlic-chili paste. Simmer until onions soften.",
+      "Add tomatoes, tomato paste and 1/4 cup of hot water. Simmer for about 5 minutes.",
+      "Add the boiled githeri to the tomatoes and mix in.",
+      "Mix royco and curry powder with some water to form a paste. Add with 1/2 a cup of hot water.",
+      "Turn down heat and simmer for 10-15 minutes.",
+      "Chop up fresh coriander, mix in, and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Central Kenya"
+  },
+  {
+    id: "ke-075",
+    name: "Garlic and Red Onion Infused Chapati",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dinner, lunch",
+    description: "Savory chapati infused with garlic and red onion that brings out this flat bread's savoriness beautifully. A must-have from the food baskets from home.",
+    preparationTime: 60,
+    cookingTime: 40,
+    servings: 12,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Bread",
+      "Modern Adaptation",
+      "Vegetarian"
+    ],
+    ingredients: [
+      { name: "Hot Water", amount: "1 cup" },
+      { name: "All Purpose Flour", amount: "as needed" },
+      { name: "Sugar", amount: "2 tbsp" },
+      { name: "Salt", amount: "1 tsp" },
+      { name: "Margarine", amount: "1 tbsp" },
+      { name: "Red Onion", amount: "1" },
+      { name: "Garlic", amount: "4 cloves" }
+    ],
+    instructions: [
+      "Roughly chop red onion and garlic cloves. Put in a food processor until crushed and blended.",
+      "In a bowl, add hot water, sugar, salt and vegetable oil. Mix until dissolved.",
+      "Add flour bit by bit while stirring. Once the dough has come together, remove and start kneading.",
+      "Spread dough and put margarine at the center. Fold in and distribute evenly.",
+      "Cover with cling film and rest for 30 minutes.",
+      "Pinch tangerine-sized dough balls and roll them out. Cut from center outwards and fold into a cone shape.",
+      "Roll out again to a thin circular shape and fry on a hot pan until browned on each side.",
+      "Serve warm."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-076",
+    name: "Mayai ya Kukaanga with Oregano and Cheddar",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "breakfast, lunch",
+    description: "Kenyan scrambled eggs fried in tomatoes and onion, elevated with oregano and cheddar cheese. A gourmet twist on a bachelor and family favorite.",
+    preparationTime: 5,
+    cookingTime: 15,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Breakfast",
+      "Quick",
+      "Modern Adaptation",
+      "Protein"
+    ],
+    ingredients: [
+      { name: "Eggs", amount: "4" },
+      { name: "Tomato", amount: "1, diced" },
+      { name: "Spring Onion", amount: "diced" },
+      { name: "Red Onion", amount: "finely chopped" },
+      { name: "Dried Oregano", amount: "1/2 tsp" },
+      { name: "Cheddar Cheese", amount: "1 tbsp" },
+      { name: "Salt and Pepper", amount: "to taste" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Crack eggs in a bowl and whisk with salt and pepper.",
+      "Heat vegetable oil in a pan. Add spring onion and red onion. Saute until softened.",
+      "Add diced tomatoes and cover until they have reduced.",
+      "Pour the whisked egg over this and mix in. Add the cheddar cheese.",
+      "Turn down heat to low. Scramble the egg and allow it to set and cheese to melt.",
+      "Serve immediately."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-077",
+    name: "Thyme and Lemon Masala Fries",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack, lunch",
+    description: "Masala fries taken to level 100 with fresh thyme, lemon zest and a spicy tomato sauce. A Kenyan street food indulgence elevated.",
+    preparationTime: 15,
+    cookingTime: 30,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Street Food",
+      "Snack",
+      "Modern Adaptation",
+      "Spicy"
+    ],
+    ingredients: [
+      { name: "Large Potatoes", amount: "5" },
+      { name: "Fresh Thyme", amount: "1 sprig" },
+      { name: "Garlic", amount: "3 cloves, chopped" },
+      { name: "Lemon Zest", amount: "1/2 tbsp" },
+      { name: "Red Onion", amount: "1, finely chopped" },
+      { name: "Tomato Paste", amount: "1 tbsp" },
+      { name: "Black Pepper Seeds", amount: "1/2 tsp, crushed" },
+      { name: "Cayenne Pepper", amount: "1/2 tsp" },
+      { name: "Coriander", amount: "finely chopped" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Peel potatoes and chop into fries. Fry in hot oil until done. Set aside.",
+      "In a frying pan, heat oil and add finely chopped onions and garlic. Saute until fragrant.",
+      "Add tomato paste, lemon zest, black pepper and cayenne with 1/4 cup of hot water.",
+      "Allow to cook down for 5-7 minutes on low heat.",
+      "Add fries and finely chopped thyme. Toss in the sauce until evenly coated.",
+      "Garnish with thyme sprigs and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Urban Kenya"
+  },
+  {
+    id: "ke-078",
+    name: "Rosemary and Garlic Viazi Karai",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack",
+    description: "A gourmet twist on the classic Kenyan viazi karai (fried potato wedges in batter). Infused with rosemary and cumin flavors.",
+    preparationTime: 15,
+    cookingTime: 30,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Street Food",
+      "Snack",
+      "Vegetarian",
+      "Modern Adaptation"
+    ],
+    ingredients: [
+      { name: "Potatoes", amount: "7" },
+      { name: "All Purpose Flour", amount: "1 cup" },
+      { name: "Turmeric", amount: "1/4 tsp" },
+      { name: "Cumin Seeds", amount: "1 tbsp" },
+      { name: "Fresh Rosemary", amount: "1 sprig" },
+      { name: "Salt", amount: "1/2 tsp" },
+      { name: "Garlic", amount: "3 cloves" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Peel potatoes and boil with salt, rosemary and cumin seeds until just tender.",
+      "Remove from heat and slice into quarters.",
+      "Crush garlic into a paste. Mix all purpose flour, garlic paste and turmeric with water to form a batter (consistency of yogurt).",
+      "Dip boiled potato quarters in batter and fry until crispy and golden.",
+      "Remove and drain on paper towels. Serve with your favorite dip."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Urban Kenya"
+  },
+  {
+    id: "ke-079",
+    name: "Okra and Rosemary Fried Rice",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "lunch, dinner",
+    description: "A healthy yet far from boring fried rice with okra and rosemary. Light yet filling.",
+    preparationTime: 15,
+    cookingTime: 20,
+    servings: 3,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Healthy",
+      "Quick",
+      "Modern Adaptation"
+    ],
+    ingredients: [
+      { name: "Basmati Rice", amount: "1 cup" },
+      { name: "Red Onion", amount: "1, finely diced" },
+      { name: "Garlic", amount: "5 cloves, minced" },
+      { name: "Okra", amount: "7, thinly sliced" },
+      { name: "Dark Mushroom Soy Sauce", amount: "1 tbsp" },
+      { name: "Carrot", amount: "1 small, finely chopped" },
+      { name: "Rosemary", amount: "1 tsp, finely chopped" },
+      { name: "Garam Masala", amount: "1 tbsp" },
+      { name: "Black Pepper", amount: "1/2 tbsp" },
+      { name: "Vegetable Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Cook rice until almost done. Turn off heat and set aside.",
+      "In a sufuria with heated vegetable oil, add red onion, garlic, garam masala, black pepper, chopped rosemary and carrots.",
+      "Saute for about 4 minutes then add okra. Cook for not longer than 4-5 minutes to maintain texture.",
+      "Add pre-cooked rice and toss together for about a minute.",
+      "Add soy sauce and mix until evenly distributed.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-080",
+    name: "Coconut and Iliki Milkshake",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "drink, snack",
+    description: "A milkshake infused with Kenyan coastal flavors - coconut milk, toasted cardamom and dark chocolate shavings.",
+    preparationTime: 10,
+    cookingTime: 3,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Drink",
+      "Sweet",
+      "Coastal",
+      "Modern Adaptation"
+    ],
+    ingredients: [
+      { name: "Vanilla Ice Cream", amount: "6 scoops" },
+      { name: "Coconut Milk", amount: "50ml" },
+      { name: "Cardamom Seeds", amount: "1/2 tbsp, freshly crushed" },
+      { name: "Dark Chocolate Shavings", amount: "3 tbsp" }
+    ],
+    instructions: [
+      "Toast cardamom seeds in an ungreased pan for a minute or two. Crush until completely pulverized.",
+      "Put ice cream, coconut milk and cardamom powder in a blender. Blitz until smooth.",
+      "Pour into a glass and mix in the chocolate shavings.",
+      "Serve immediately."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Coastal Kenya"
+  },
+  {
+    id: "ke-081",
+    name: "Mango and Lime Dawa",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "drink",
+    description: "A sweet twist on the signature Kenyan vodka cocktail, channeling the flavors of Lamu with mango and lime.",
+    preparationTime: 7,
+    cookingTime: 25,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Drink",
+      "Cocktail",
+      "Modern Adaptation",
+      "Coastal"
+    ],
+    ingredients: [
+      { name: "Vodka", amount: "1/4 cup" },
+      { name: "Limes", amount: "2, squeezed" },
+      { name: "Mango", amount: "1/2, blended" },
+      { name: "Grated Ginger", amount: "1/4 tsp" },
+      { name: "Rosemary Sprigs", amount: "3" },
+      { name: "Water", amount: "1 cup" },
+      { name: "Sparkling Water", amount: "1/2 cup" }
+    ],
+    instructions: [
+      "Combine lime juice, ginger, mango juice and 1 cup of water in a sufuria over medium heat. Bring to a simmer for 10-12 minutes.",
+      "Sieve the mixture and allow it to cool to room temperature.",
+      "Fill two glasses with ice and 4-6 rosemary leaves. Muddle with a wooden spoon.",
+      "Pour the cooled mango-lime juice to half the glass.",
+      "In a cocktail mixer, add vodka, a sprig of rosemary and sparkling water. Shake and strain into the glasses.",
+      "Garnish with remaining rosemary sprigs and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Coastal Kenya"
+  },
+  {
+    id: "ke-082",
+    name: "Vanilla Bean Chai Masala",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "drink, breakfast",
+    description: "An upgraded masala chai with vanilla beans, cardamom seeds and clove. Slow-brewed to allow all flavors to infuse deeply.",
+    preparationTime: 3,
+    cookingTime: 20,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Drink",
+      "Traditional",
+      "Spiced",
+      "Breakfast"
+    ],
+    ingredients: [
+      { name: "Milk", amount: "500ml" },
+      { name: "Hot Water", amount: "1/2 cup" },
+      { name: "Tea Leaves", amount: "1 tbsp" },
+      { name: "Clove", amount: "1, roughly crushed" },
+      { name: "Vanilla Bean Pod", amount: "1, seeded (optional)" },
+      { name: "Cardamom Seeds", amount: "6, split" },
+      { name: "Freshly Grated Ginger", amount: "1/2 tsp" }
+    ],
+    instructions: [
+      "Put milk and water in a sufuria with the clove, vanilla beans, cardamom seeds and ginger powder.",
+      "Bring to a boil at low heat. Slow brewing allows the flavors to really infuse.",
+      "Once the milk has come to a boil, add the tea leaves and stir in.",
+      "Let simmer on low heat until it comes to a boil again.",
+      "Sieve your tea and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-083",
+    name: "Cheesy Mahindi Choma",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack",
+    description: "A cheesy upgrade to the classic Kenyan roasted maize street snack with chili, garam masala, cumin and melted cheddar cheese.",
+    preparationTime: 5,
+    cookingTime: 12,
+    servings: 3,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Snack",
+      "Street Food",
+      "Modern Adaptation"
+    ],
+    ingredients: [
+      { name: "Tender Maize on the Cob", amount: "1" },
+      { name: "Chili Powder", amount: "2 tbsp" },
+      { name: "Garam Masala", amount: "1/2 tsp" },
+      { name: "Coriander Powder", amount: "1/2 tsp" },
+      { name: "Cumin Powder", amount: "1/4 tsp" },
+      { name: "Cheddar Cheese", amount: "1/2 cup" },
+      { name: "Coriander", amount: "finely chopped" }
+    ],
+    instructions: [
+      "Heat coal and place corn cobs over hot embers. Turn every 4 minutes until golden brown.",
+      "Mix all dry spices together in a bowl.",
+      "Once maize is done, toss it in the spices.",
+      "Add grated cheese and microwave for about 30 seconds until melted.",
+      "Add finely chopped coriander over the molten cheese and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-084",
+    name: "Dates and Sesame Seed Bites",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack",
+    description: "Healthy no-bake bites made with dates, coconut, cinnamon and sesame seeds. A sweet treat inspired by childhood break time snacks.",
+    preparationTime: 20,
+    cookingTime: 20,
+    servings: 5,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Snack",
+      "Healthy",
+      "Sweet",
+      "No-Cook"
+    ],
+    ingredients: [
+      { name: "Dates", amount: "1 cup, seeded" },
+      { name: "Coconut Flakes", amount: "1/2 cup" },
+      { name: "Cinnamon", amount: "1/2 tsp" },
+      { name: "Nutmeg", amount: "1/4 tsp" },
+      { name: "Sesame Seeds", amount: "1 cup" }
+    ],
+    instructions: [
+      "Soak dates in warm water to dislodge the skin.",
+      "Put dates in a food processor with cinnamon and nutmeg. Process until it forms a paste.",
+      "Pinch plum-sized pieces of the crushed dates and form a ball.",
+      "Make a hollow and add fresh desiccated coconut. Roll up until the center is covered.",
+      "Roll in sesame seeds or desiccated coconut.",
+      "Serve as a snack."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Coastal Kenya"
+  },
+  {
+    id: "ke-085",
+    name: "Nutmeg Kashata",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack",
+    description: "Homemade coconut candy bars with nutmeg, cardamom and clove. A nutty and fragrant version of the popular coastal sweet.",
+    preparationTime: 3,
+    cookingTime: 20,
+    servings: 10,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Snack",
+      "Sweet",
+      "Coastal",
+      "Traditional"
+    ],
+    ingredients: [
+      { name: "Fresh Desiccated Coconut", amount: "1 1/2 cups" },
+      { name: "Cloves", amount: "2, crushed" },
+      { name: "Cardamom Spice", amount: "1/2 tsp" },
+      { name: "Nutmeg", amount: "1/4 tsp" },
+      { name: "Brown Sugar", amount: "1 cup" },
+      { name: "Water", amount: "1/4 cup" },
+      { name: "Food Color", amount: "of your choice" }
+    ],
+    instructions: [
+      "In a sufuria combine the sugar, food coloring and cup of water. Swirl around until sugar has dissolved. Do not stir as this will cause crystallization.",
+      "Once dissolved and thickened, add the fresh coconut, nutmeg, cardamom and crushed cloves. Mix until it forms a lump and pulls away from the sides (3-6 minutes).",
+      "Remove from heat and spread on a cookie sheet or greased pan at 1/2 inch thickness.",
+      "Allow to completely cool down and firm up.",
+      "Divide into rectangular bars. Store in an airtight container."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Coastal Kenya"
+  },
+  {
+    id: "ke-086",
+    name: "Mango and Dark Chocolate Parfait",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "snack, dessert",
+    description: "A tasty layered dessert with fresh mango, dark chocolate, yogurt, raisins and oats. Packed with antioxidants and vitamins.",
+    preparationTime: 7,
+    cookingTime: 8,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Dessert",
+      "Healthy",
+      "Sweet",
+      "Quick"
+    ],
+    ingredients: [
+      { name: "Apple Mango Cheeks", amount: "2" },
+      { name: "Dark Chocolate", amount: "150g" },
+      { name: "Raisins", amount: "1 handful" },
+      { name: "Oats", amount: "1 handful" },
+      { name: "Plain Yogurt", amount: "50ml" }
+    ],
+    instructions: [
+      "Cube mango cheeks into bite-sized pieces.",
+      "Roughly chop dark chocolate.",
+      "Begin adding each component layer by layer, beginning with yogurt.",
+      "Garnish with raisins and oats, then serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-087",
+    name: "Green Mango Posset",
+    source: "IN MY KITCHEN by Kaluhi Adagala",
+    type: "dessert",
+    description: "A creamy posset made with green mangoes common in East Africa with a distinctive sweet taste and bright orange pulp. A little indulgence that is sheer perfection.",
+    preparationTime: 10,
+    cookingTime: 60,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Dessert",
+      "Sweet",
+      "Modern Adaptation"
+    ],
+    ingredients: [
+      { name: "Green Mango", amount: "1" },
+      { name: "Heavy Cream / Double Cream", amount: "1 1/2 cups" },
+      { name: "Granulated Sugar", amount: "3 tbsp" },
+      { name: "Lemon Slices", amount: "for garnish" }
+    ],
+    instructions: [
+      "Peel mango and slice it up. Put slices into a blender and blend until smooth. Set aside.",
+      "In a sufuria, add double cream and sugar. Bring to a boil while stirring continuously.",
+      "Once it begins to simmer, take from heat and pour in fresh mango pulp. Mix.",
+      "Pour into bowls and let cool for about an hour in the fridge until set.",
+      "Serve and enjoy."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Modern Adaptation"
+  },
+  {
+    id: "ke-088",
+    name: "Finger Millet Porridge",
+    source: "Smart Food Recipe Book Kenya",
+    type: "breakfast",
+    description: "Traditional finger millet porridge. Can be fermented two days before use for added nutrition.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Finger Millet Flour", amount: "45g" },
+      { name: "Sugar", amount: "to taste (optional)" },
+      { name: "Water", amount: "1 litre" },
+      { name: "Milk", amount: "250ml" },
+      { name: "Lemon/Tamarind Juice", amount: "2 tbsp (optional)" }
+    ],
+    instructions: [
+      "Bring 750ml of water to the boil.",
+      "Mix the flour with the remaining 250ml water to make a smooth paste.",
+      "Gradually pour the paste into the boiling water while stirring vigorously to prevent lumps.",
+      "Allow the porridge to simmer for 20 minutes until cooked.",
+      "Add the sugar and simmer for a further 5 minutes.",
+      "Add milk and simmer for a further 5 minutes.",
+      "Remove from heat and add lemon/tamarind juice.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-089",
+    name: "Refreshing Sorghum Milk Drink",
+    source: "Smart Food Recipe Book Kenya",
+    type: "drink, breakfast",
+    description: "A traditional sorghum-based hot drink served with accompaniments like arrowroots or sweet potatoes.",
+    preparationTime: 15,
+    cookingTime: 10,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Sorghum Drinking Powder", amount: "15g" },
+      { name: "Sugar", amount: "40g" },
+      { name: "Milk", amount: "1 litre" },
+      { name: "Water", amount: "1/4 litre" }
+    ],
+    instructions: [
+      "Roast the sorghum grains on a pan until dark brown in color.",
+      "Cool, grind into very fine flour using a pestle and mortar or grinding stone.",
+      "Store in a tightly covered container.",
+      "Bring the water to the boil.",
+      "Make a paste from the sorghum powder using cold water.",
+      "Add the paste to the boiling water and stir until the mixture cooks to a light consistency.",
+      "Add the milk and allow it to boil.",
+      "Serve hot with sweet potatoes or arrowroots."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-090",
+    name: "Pearl Millet Milk Paste",
+    source: "Smart Food Recipe Book Kenya",
+    type: "drink, snack",
+    description: "A cold drink made with fermented milk and roasted pearl millet flour. Simple and refreshing.",
+    preparationTime: 5,
+    cookingTime: 0,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Fermented Milk or Mala", amount: "1 litre" },
+      { name: "Roasted Pearl Millet Flour", amount: "250g" },
+      { name: "Sugar", amount: "to taste (optional)" }
+    ],
+    instructions: [
+      "Pour the fermented milk in a clean jug.",
+      "Add the flour and stir vigorously to the desired consistency.",
+      "Serve cold."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-091",
+    name: "Stewed Cowpeas",
+    source: "Smart Food Recipe Book Kenya",
+    type: "lunch, dinner",
+    description: "A nutritious cowpea stew rich in protein and fiber.",
+    preparationTime: 480,
+    cookingTime: 90,
+    servings: 10,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Cowpeas (dry)", amount: "500g, soaked overnight" },
+      { name: "Onions", amount: "2 medium, chopped" },
+      { name: "Tomatoes", amount: "3, chopped" },
+      { name: "Cooking Oil", amount: "50ml" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Water", amount: "as needed" }
+    ],
+    instructions: [
+      "Soak cowpeas overnight in plenty of water.",
+      "Drain and rinse. Boil in fresh water until tender (about 1 hour).",
+      "Heat oil and saute onions until golden.",
+      "Add tomatoes and cook until soft.",
+      "Add the cooked cowpeas with some cooking liquid.",
+      "Simmer for 20-30 minutes. Season with salt.",
+      "Serve with rice, ugali or chapati."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-092",
+    name: "Creamy Pigeonpea and Sweet Potato Mash",
+    source: "Smart Food Recipe Book Kenya",
+    type: "lunch, dinner",
+    description: "A creamy mash combining pigeonpeas and sweet potatoes. Smart food that is good for you and the planet.",
+    preparationTime: 20,
+    cookingTime: 45,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pigeonpeas", amount: "250g, soaked overnight" },
+      { name: "Sweet Potatoes", amount: "500g, peeled and cubed" },
+      { name: "Onion", amount: "1, chopped" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Cooking Oil", amount: "2 tbsp" }
+    ],
+    instructions: [
+      "Cook soaked pigeonpeas until tender.",
+      "Boil sweet potatoes until soft.",
+      "Mash the sweet potatoes and mix with the cooked pigeonpeas.",
+      "Saute onion in oil until golden, add to the mash.",
+      "Season with salt and mix well.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-093",
+    name: "Finger Millet Ugali",
+    source: "Smart Food Recipe Book Kenya",
+    type: "lunch, dinner",
+    description: "Ugali made with nutritious finger millet flour. Rich in calcium and iron.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Finger Millet Flour", amount: "500g" },
+      { name: "Water", amount: "1 litre" }
+    ],
+    instructions: [
+      "Bring water to a boil.",
+      "Gradually add finger millet flour while stirring continuously.",
+      "Continue stirring until the mixture is thick and pulls away from the sides of the pot.",
+      "Cover and let cook on low heat for 5-10 minutes.",
+      "Serve with vegetables or stew."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-094",
+    name: "Sorghum Pilau",
+    source: "Smart Food Recipe Book Kenya",
+    type: "lunch, dinner",
+    description: "A pilau made with sorghum instead of rice. Nutritious and full of flavor.",
+    preparationTime: 480,
+    cookingTime: 60,
+    servings: 10,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pre-boiled Sorghum", amount: "500g" },
+      { name: "Onions", amount: "2 medium, chopped" },
+      { name: "Cooking Oil", amount: "50ml" },
+      { name: "Pilau Masala", amount: "15g" },
+      { name: "Fresh Ginger", amount: "1 medium, crushed" },
+      { name: "Garlic", amount: "1 clove, crushed" },
+      { name: "Coriander", amount: "1 bunch, chopped" },
+      { name: "Capsicum", amount: "1 large, chopped" },
+      { name: "Tomatoes", amount: "2, chopped" },
+      { name: "Cumin Seeds", amount: "1 tsp" },
+      { name: "Salt", amount: "to taste" }
+    ],
+    instructions: [
+      "Wash and soak the sorghum overnight. Drain and boil until tender.",
+      "Fry onions to golden brown.",
+      "Add garlic and ginger, fry until brown.",
+      "Add pilau masala and cumin seeds, cook evenly.",
+      "Add capsicum and cook until tender.",
+      "Add tomatoes and cook until tender.",
+      "Add the sorghum, mix and simmer for 10 minutes.",
+      "Add chopped coriander and serve hot with vegetable."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-095",
+    name: "Sorghum Chapati",
+    source: "Smart Food Recipe Book Kenya",
+    type: "lunch, dinner",
+    description: "Chapati made with a mix of sorghum and wheat flour. Adds nutrition and a nutty flavor.",
+    preparationTime: 40,
+    cookingTime: 30,
+    servings: 15,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Sorghum Flour", amount: "500g" },
+      { name: "Wheat Flour", amount: "500g" },
+      { name: "Salt", amount: "10g" },
+      { name: "Cooking Fat", amount: "as needed" },
+      { name: "Warm Water", amount: "as needed" }
+    ],
+    instructions: [
+      "Sift the sorghum and wheat flour and salt together.",
+      "Rub in the fat using fingertips until well mixed.",
+      "Using warm water, knead the flour into a stiff dough.",
+      "Allow the dough to rest for 30 minutes.",
+      "Divide the dough into balls.",
+      "Roll each ball into a circle and apply melted fat then fold into a wheel.",
+      "Allow to rest for 10 minutes.",
+      "Roll each ball into a circle and shallow fry each side to golden brown.",
+      "Serve hot with a stew, vegetable or beverage."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-096",
+    name: "Pearl Millet Mahamri",
+    source: "Smart Food Recipe Book Kenya",
+    type: "breakfast, snack",
+    description: "Mahamri made with pearl millet flour for added nutrition. A smart food version of the classic coastal pastry.",
+    preparationTime: 120,
+    cookingTime: 20,
+    servings: 12,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pearl Millet Flour", amount: "250g" },
+      { name: "Wheat Flour", amount: "250g" },
+      { name: "Sugar", amount: "100g" },
+      { name: "Yeast", amount: "1 tbsp" },
+      { name: "Cardamom", amount: "1 tsp" },
+      { name: "Coconut Milk", amount: "250ml" },
+      { name: "Cooking Oil", amount: "for deep frying" }
+    ],
+    instructions: [
+      "Mix dry ingredients together.",
+      "Add warm coconut milk and knead into a soft dough.",
+      "Cover and let rise for 1-2 hours.",
+      "Roll out and cut into triangular shapes.",
+      "Deep fry until golden brown.",
+      "Serve with tea."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-097",
+    name: "Flaky Finger Millet Chapati",
+    source: "Smart Food Recipe Book Kenya",
+    type: "lunch, dinner",
+    description: "A flaky chapati made with pearl millet and wheat flour blend.",
+    preparationTime: 40,
+    cookingTime: 30,
+    servings: 15,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pearl Millet Flour", amount: "500g" },
+      { name: "Wheat Flour", amount: "500g" },
+      { name: "Salt", amount: "10g" },
+      { name: "Cooking Fat", amount: "as needed" },
+      { name: "Warm Water", amount: "as needed" }
+    ],
+    instructions: [
+      "Sift the flour and salt together.",
+      "Rub in the fat using fingertips until well mixed.",
+      "Using warm water, knead into a stiff dough.",
+      "Allow to rest for 30 minutes.",
+      "Divide into 20 balls. Roll each into a circle and apply melted fat then fold into a wheel.",
+      "Allow to rest for 10 minutes.",
+      "Roll each ball into a circle and shallow fry each side to golden brown.",
+      "Serve hot with a stew, vegetable or beverage."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-098",
+    name: "Pigeonpea Chapati",
+    source: "Smart Food Recipe Book Kenya",
+    type: "lunch, dinner",
+    description: "A protein-enriched chapati made with pigeonpea flour and wheat flour.",
+    preparationTime: 40,
+    cookingTime: 30,
+    servings: 12,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pigeonpea Flour", amount: "250g" },
+      { name: "Wheat Flour", amount: "500g" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Cooking Oil", amount: "as needed" },
+      { name: "Warm Water", amount: "as needed" }
+    ],
+    instructions: [
+      "Mix the flours and salt together.",
+      "Add oil and rub in until well mixed.",
+      "Add warm water gradually and knead into a stiff dough.",
+      "Rest for 30 minutes.",
+      "Divide into balls, roll out and shallow fry until golden brown.",
+      "Serve with stew or vegetables."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-099",
+    name: "Pearl Millet Steamed Cake",
+    source: "Smart Food Recipe Book Kenya",
+    type: "snack, dessert",
+    description: "A steamed cake made with pearl millet flour. A healthier alternative to regular cake.",
+    preparationTime: 15,
+    cookingTime: 45,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pearl Millet Flour", amount: "400g" },
+      { name: "Sugar", amount: "200g" },
+      { name: "Margarine", amount: "200g" },
+      { name: "Eggs", amount: "4" },
+      { name: "Baking Powder", amount: "2 tsp" },
+      { name: "Milk", amount: "as needed" },
+      { name: "Vanilla Extract", amount: "1 tsp" }
+    ],
+    instructions: [
+      "Cream sugar and margarine until fluffy.",
+      "Add eggs one at a time, beating well.",
+      "Fold in flour and baking powder.",
+      "Add milk to reach dropping consistency.",
+      "Steam for 45 minutes until a skewer comes out clean.",
+      "Cool and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-100",
+    name: "Pearl Millet Half Cake",
+    source: "Smart Food Recipe Book Kenya",
+    type: "snack, dessert",
+    description: "A quick half cake made with pearl millet flour. Perfect for tea time.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pearl Millet Flour", amount: "300g" },
+      { name: "Sugar", amount: "150g" },
+      { name: "Margarine", amount: "150g" },
+      { name: "Eggs", amount: "3" },
+      { name: "Baking Powder", amount: "1 1/2 tsp" },
+      { name: "Milk", amount: "as needed" }
+    ],
+    instructions: [
+      "Cream sugar and margarine until light and fluffy.",
+      "Add eggs and beat well.",
+      "Fold in flour and baking powder.",
+      "Add milk to get a smooth batter.",
+      "Bake at 180 degrees for 30 minutes.",
+      "Cool and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-101",
+    name: "Finger Millet Cupcakes",
+    source: "Smart Food Recipe Book Kenya",
+    type: "snack, dessert",
+    description: "Nutritious cupcakes made with finger millet flour. Rich in calcium and iron.",
+    preparationTime: 15,
+    cookingTime: 20,
+    servings: 12,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Finger Millet Flour", amount: "300g" },
+      { name: "Sugar", amount: "200g" },
+      { name: "Margarine", amount: "200g" },
+      { name: "Eggs", amount: "4" },
+      { name: "Baking Powder", amount: "2 tsp" },
+      { name: "Milk", amount: "as needed" },
+      { name: "Vanilla Extract", amount: "1 tsp" }
+    ],
+    instructions: [
+      "Preheat oven to 180 degrees.",
+      "Cream sugar and margarine until fluffy.",
+      "Add eggs one at a time, beating well.",
+      "Fold in finger millet flour and baking powder.",
+      "Add milk to dropping consistency.",
+      "Pour into cupcake cases and bake for 15-20 minutes.",
+      "Cool on a wire rack and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-102",
+    name: "Sorghum Cupcakes",
+    source: "Smart Food Recipe Book Kenya",
+    type: "snack, dessert",
+    description: "Cupcakes made with sorghum flour and cardamom. A healthy and delicious treat.",
+    preparationTime: 15,
+    cookingTime: 15,
+    servings: 14,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Sorghum Flour", amount: "400g" },
+      { name: "Margarine", amount: "200g" },
+      { name: "Sugar", amount: "200g" },
+      { name: "Eggs", amount: "8" },
+      { name: "Baking Powder", amount: "8 level tsp" },
+      { name: "Ground Cardamom", amount: "1 tsp" },
+      { name: "Milk", amount: "as needed" }
+    ],
+    instructions: [
+      "Preheat oven to 250 degrees.",
+      "Sift flour, cardamom and baking powder into a bowl.",
+      "Cream sugar and margarine to a fluffy texture.",
+      "Whisk eggs in a separate bowl.",
+      "Gradually add eggs and continue creaming.",
+      "Fold in the flour using a metal spoon.",
+      "Gradually add milk to a dropping consistency.",
+      "Grease cupcake tins, pour mixture to 3/4 full.",
+      "Bake at 220 degrees for 15 minutes.",
+      "Remove, cool and serve with a beverage."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-103",
+    name: "Pearl Millet Muffins",
+    source: "Smart Food Recipe Book Kenya",
+    type: "snack, dessert",
+    description: "Muffins made with pearl millet flour for a nutritious twist on classic muffins.",
+    preparationTime: 15,
+    cookingTime: 25,
+    servings: 12,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pearl Millet Flour", amount: "300g" },
+      { name: "Sugar", amount: "150g" },
+      { name: "Butter", amount: "100g, melted" },
+      { name: "Eggs", amount: "2" },
+      { name: "Baking Powder", amount: "2 tsp" },
+      { name: "Milk", amount: "200ml" },
+      { name: "Vanilla Extract", amount: "1 tsp" }
+    ],
+    instructions: [
+      "Preheat oven to 180 degrees.",
+      "Mix dry ingredients together.",
+      "In a separate bowl, whisk eggs, melted butter, milk and vanilla.",
+      "Combine wet and dry ingredients. Do not overmix.",
+      "Pour into muffin tins and bake for 20-25 minutes.",
+      "Cool and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-104",
+    name: "Pearl Millet and Groundnut Muffins",
+    source: "Smart Food Recipe Book Kenya",
+    type: "snack, dessert",
+    description: "Muffins combining pearl millet flour and groundnuts for extra protein and flavor.",
+    preparationTime: 15,
+    cookingTime: 25,
+    servings: 12,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Pearl Millet Flour", amount: "250g" },
+      { name: "Ground Groundnuts", amount: "100g" },
+      { name: "Sugar", amount: "150g" },
+      { name: "Butter", amount: "100g, melted" },
+      { name: "Eggs", amount: "2" },
+      { name: "Baking Powder", amount: "2 tsp" },
+      { name: "Milk", amount: "200ml" }
+    ],
+    instructions: [
+      "Preheat oven to 180 degrees.",
+      "Mix pearl millet flour, groundnuts, sugar and baking powder.",
+      "Whisk eggs, melted butter and milk separately.",
+      "Combine wet and dry ingredients gently.",
+      "Pour into muffin tins and bake for 20-25 minutes.",
+      "Cool and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-105",
+    name: "Finger Millet Biscuits",
+    source: "Smart Food Recipe Book Kenya",
+    type: "snack",
+    description: "Crunchy biscuits made with finger millet and plain flour. Can be decorated with icing.",
+    preparationTime: 40,
+    cookingTime: 15,
+    servings: 30,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Plain Flour", amount: "250g" },
+      { name: "Finger Millet Flour", amount: "250g" },
+      { name: "Butter or Margarine", amount: "125g" },
+      { name: "Icing Sugar", amount: "125g" },
+      { name: "Vanilla Extract", amount: "2 tsp" },
+      { name: "Eggs", amount: "2" },
+      { name: "Milk", amount: "1 tbsp (optional)" }
+    ],
+    instructions: [
+      "Preheat oven to 220 degrees.",
+      "Place flour, butter and sugar in a bowl. Rub together into fine breadcrumbs.",
+      "Add eggs, vanilla extract and a little milk until mixture sticks together to form a dough.",
+      "Allow dough to rest for 30 minutes in a cool place.",
+      "Roll out to about 5mm thick on a floured surface. Cut out shapes.",
+      "Bake for 12-15 minutes.",
+      "Place on a wire rack to cool and harden.",
+      "Decorate with icing and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-106",
+    name: "Finger Millet Sugarfree Biscuits",
+    source: "Smart Food Recipe Book Kenya",
+    type: "snack",
+    description: "Sugar-free biscuits made with finger millet flour. A healthier snacking option.",
+    preparationTime: 40,
+    cookingTime: 15,
+    servings: 30,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Smart Food",
+      "Nutritious"
+    ],
+    ingredients: [
+      { name: "Plain Flour", amount: "150g" },
+      { name: "Finger Millet Flour", amount: "350g" },
+      { name: "Butter or Margarine", amount: "250g" },
+      { name: "Vanilla Extract", amount: "2 tsp" },
+      { name: "Eggs", amount: "2" }
+    ],
+    instructions: [
+      "Preheat oven to 220 degrees.",
+      "Place sifted flour and butter in a bowl. Rub together into fine breadcrumbs.",
+      "Gradually add eggs and vanilla extract. Knead until mixture sticks together.",
+      "Allow dough to relax for 30 minutes, preferably in a refrigerator.",
+      "Roll out to 5mm thick on a floured surface. Cut out shapes.",
+      "Bake for 12-15 minutes.",
+      "Place on a wire rack to cool. Store in an airtight container."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-107",
+    name: "Dola Butternut Dhania Chapati",
+    source: "KFM CookBook",
+    type: "lunch, dinner",
+    description: "A creative chapati made with blended butternut squash and dhania (coriander). The butternut adds natural sweetness and a beautiful golden color.",
+    preparationTime: 30,
+    cookingTime: 20,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Bread",
+      "Creative",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Butternut Pumpkin", amount: "1 medium" },
+      { name: "All-Purpose Flour", amount: "4 cups" },
+      { name: "Sugar", amount: "2 tbsp" },
+      { name: "Salt", amount: "1 tbsp" },
+      { name: "Dhania (Coriander)", amount: "1 bunch, chopped" },
+      { name: "Melted Butter/Margarine", amount: "as needed" },
+      { name: "Cooking Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Cut the butternut squash into small pieces and boil until soft.",
+      "In a blender, blend the butternut until smooth.",
+      "Add sugar, salt, chopped dhania, and flour. Knead to form a dough.",
+      "Cover to rest for 15-20 minutes.",
+      "Flatten the dough on a flat surface and apply oil. Cut into strips.",
+      "Roll the strips one by one and flatten each strip into a flatbread.",
+      "Fry the flatbread on a pan, adding oil evenly as you flip. Cook until golden brown.",
+      "Serve with a stew of your choice."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-108",
+    name: "Dola Cinnamon Rolls",
+    source: "KFM CookBook",
+    type: "breakfast, snack",
+    description: "Soft and fluffy cinnamon rolls with a sweet icing glaze. Perfect for breakfast or tea time.",
+    preparationTime: 60,
+    cookingTime: 22,
+    servings: 12,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Baking",
+      "Sweet",
+      "Breakfast",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Warm Milk", amount: "1 1/2 cups" },
+      { name: "Yeast", amount: "2 1/2 tbsp" },
+      { name: "Eggs", amount: "2" },
+      { name: "Sugar", amount: "1/2 cup" },
+      { name: "Melted Butter/Margarine", amount: "1/3 cup" },
+      { name: "Salt", amount: "1 tbsp" },
+      { name: "All-Purpose Flour", amount: "4 cups" },
+      { name: "Icing Sugar", amount: "1 cup" },
+      { name: "Cinnamon Powder", amount: "as needed" },
+      { name: "Vanilla Essence", amount: "2 tbsp" }
+    ],
+    instructions: [
+      "In a bowl mix warm milk, 1/2 cup sugar, and yeast. Mix well.",
+      "Add 1/3 cup melted butter/margarine and whisk. Add salt and flour, then knead to a sticky dough.",
+      "Let the dough rest for 30 minutes.",
+      "For the cinnamon filling: In a bowl, add 1/2 cup sugar and 1 tbsp cinnamon powder. Mix.",
+      "Roll out dough, spread cinnamon filling, roll into a log.",
+      "Cut into smaller sizes using string. Place on a greased baking pan.",
+      "Cover for 30 minutes to allow to rise.",
+      "Bake at 180 degrees for 20-22 minutes.",
+      "For glaze: Mix icing sugar, milk, vanilla essence and melted butter. Drizzle over warm rolls."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-109",
+    name: "Dola T-Bone Steak with Ugali",
+    source: "KFM CookBook",
+    type: "dinner",
+    description: "A perfectly pan-seared T-bone steak served with Dola ugali. Seasoned with garlic, rosemary and thyme.",
+    preparationTime: 10,
+    cookingTime: 20,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Protein",
+      "Special Occasion",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "T-Bone Steak Meat", amount: "2 pieces" },
+      { name: "Dola Maize Flour", amount: "2 cups" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Pepper", amount: "to taste" },
+      { name: "Butter", amount: "3 tbsp" },
+      { name: "Garlic", amount: "3 cloves" },
+      { name: "Fresh Rosemary", amount: "2 sprigs" },
+      { name: "Thyme", amount: "2 sprigs" },
+      { name: "Cherry Tomatoes", amount: "a handful" },
+      { name: "Water", amount: "4 cups (for ugali)" }
+    ],
+    instructions: [
+      "Rub the steak with salt and pepper to taste.",
+      "Melt 3 tablespoons of butter in a pan, and place the steak to brown.",
+      "Add garlic, fresh rosemary, thyme and cherry tomatoes into the pan.",
+      "Remember to flip the steak when brown on one side.",
+      "For ugali: Bring 4 cups of water to boil. Add 2 cups of maize flour to the boiling water.",
+      "Add flour in bits as you mix until firm.",
+      "Reduce heat and continue to cook and turn the ugali.",
+      "Serve steak alongside the ugali."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-110",
+    name: "Dola Whole Meal Choco Cookies",
+    source: "KFM CookBook",
+    type: "snack, dessert",
+    description: "Rich chocolate cookies made with Dola All-Purpose Flour, brown sugar, and chocolate chips. Perfect for tea time.",
+    preparationTime: 20,
+    cookingTime: 10,
+    servings: 24,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Baking",
+      "Sweet",
+      "Snack",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola All-Purpose Flour", amount: "2 1/4 cups" },
+      { name: "Salt", amount: "1 tbsp" },
+      { name: "Baking Soda", amount: "1 tbsp" },
+      { name: "Margarine/Butter", amount: "1 cup" },
+      { name: "Sugar", amount: "1/4 cup" },
+      { name: "Brown Sugar", amount: "1 cup" },
+      { name: "Eggs", amount: "2" },
+      { name: "Vanilla Essence", amount: "1 tbsp" },
+      { name: "Chocolate Chips", amount: "1 cup" }
+    ],
+    instructions: [
+      "Mix flour, salt and baking soda. Sift the flour mixture.",
+      "Add margarine, sugar, brown sugar and mix until smooth.",
+      "Add eggs and vanilla essence, mix well.",
+      "Add chocolate chips and fold in.",
+      "Mix until even.",
+      "Add the flour mixture gradually and mix.",
+      "Roll the dough into little balls and put on a baking tray.",
+      "Bake the dough balls at 180 degrees for 10 minutes.",
+      "Serve with a beverage."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-111",
+    name: "Dola Coconut Fish with Ugali",
+    source: "KFM CookBook",
+    type: "lunch, dinner",
+    description: "Fish fillets in a rich coconut sauce with turmeric, paprika and black pepper, served with Dola ugali.",
+    preparationTime: 15,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Seafood",
+      "Coastal",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Fish Fillet", amount: "500g" },
+      { name: "Onion", amount: "1 mid-sized" },
+      { name: "Garlic", amount: "1 tbsp" },
+      { name: "Blended Tomato", amount: "1 large" },
+      { name: "Black Pepper", amount: "1 tbsp" },
+      { name: "Paprika", amount: "1 tbsp" },
+      { name: "Turmeric", amount: "1/4 tsp" },
+      { name: "Tomato Paste", amount: "1 tbsp" },
+      { name: "Coconut Milk", amount: "1 cup" },
+      { name: "Lemon Juice", amount: "1 tbsp" },
+      { name: "Coriander", amount: "for garnish" },
+      { name: "Red Pepper", amount: "1" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Dola Maize Flour", amount: "for ugali" }
+    ],
+    instructions: [
+      "Shallow fry each side of the fish fillet for 3 minutes.",
+      "Add oil to a pan on medium heat, add grated onion and cook till sauteed.",
+      "Add the garlic, blended tomato, black pepper, paprika, turmeric, tomato paste and salt.",
+      "Add red pepper, coconut milk, lemon juice and coriander. Cook until sauce thickens.",
+      "Cook until the fish is ready and the sauce has thickened.",
+      "For ugali: bring water to boil, add maize flour in bits while stirring.",
+      "Cook until firm and serve with the coconut fish."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-112",
+    name: "Dola Savoury Crepes",
+    source: "KFM CookBook",
+    type: "breakfast, snack",
+    description: "Savory crepes made with Dola All-Purpose Flour, eggs and fresh coriander. Simple and delicious.",
+    preparationTime: 10,
+    cookingTime: 15,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Breakfast",
+      "Quick",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola All-Purpose Flour", amount: "2 cups" },
+      { name: "Salt", amount: "1/2 tbsp" },
+      { name: "Black Pepper", amount: "1/2 tbsp" },
+      { name: "Water", amount: "2 cups" },
+      { name: "Eggs", amount: "3" },
+      { name: "Onion", amount: "1 small, chopped" },
+      { name: "Coriander", amount: "1 bunch, chopped" }
+    ],
+    instructions: [
+      "In a bowl, mix flour, salt, black pepper, and water until smooth consistency.",
+      "Add a small chopped onion and coriander and mix.",
+      "Using a scooping spoon, pour sizeable amounts of the batter into a medium heated pan.",
+      "Cook both sides till golden brown.",
+      "Serve and enjoy."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-113",
+    name: "Dola Atta Veggie Foldovers",
+    source: "KFM CookBook",
+    type: "snack, lunch",
+    description: "Vegetable-filled foldovers made with Dola atta flour. Stuffed with peas, carrots, potatoes and tandoori masala.",
+    preparationTime: 30,
+    cookingTime: 25,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Vegetarian",
+      "Snack",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Onion", amount: "1 mid-sized" },
+      { name: "Mustard Seeds", amount: "1 tbsp" },
+      { name: "Garlic", amount: "1 tbsp" },
+      { name: "Green Peas", amount: "1/4 cup" },
+      { name: "Carrots", amount: "1/4 cup, diced" },
+      { name: "Tomato Puree", amount: "1 cup" },
+      { name: "Tandoori Masala", amount: "1 tbsp" },
+      { name: "Cumin Powder", amount: "1/2 tsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Turmeric", amount: "1/4 tsp" },
+      { name: "Potatoes", amount: "4 large" },
+      { name: "Lemon Juice", amount: "1 1/2 tbsp" },
+      { name: "Coriander", amount: "1 bunch" },
+      { name: "Dola Atta Flour", amount: "2 cups" },
+      { name: "Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Put a pan on low heat and add onion, mustard seeds, garlic, peas, carrots, tomato puree, tandoori masala, cumin, salt, turmeric, potatoes, lemon juice and coriander. Mix well.",
+      "In another bowl mix atta flour, salt and water. Knead into a dough.",
+      "Roll out the dough into circles.",
+      "Fill with the vegetable mixture and fold over.",
+      "Seal edges and fry until golden brown.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-114",
+    name: "Dola Maru Bhajia",
+    source: "KFM CookBook",
+    type: "snack",
+    description: "Crispy potato bhajia made with gram flour, Dola All-Purpose Flour and aromatic spices. Served with a tamarind dipping sauce.",
+    preparationTime: 15,
+    cookingTime: 20,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Street Food",
+      "Snack",
+      "Vegetarian",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Potatoes", amount: "4 large" },
+      { name: "Gram Flour", amount: "1 cup" },
+      { name: "Dola All-Purpose Flour", amount: "1/2 cup" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Carom Seeds", amount: "1 tbsp (optional)" },
+      { name: "Turmeric Powder", amount: "1/4 tsp" },
+      { name: "Red Chilies", amount: "1 tbsp" },
+      { name: "Paprika", amount: "1 tbsp" },
+      { name: "Garlic", amount: "1 tbsp" },
+      { name: "Coriander", amount: "2 tbsp" },
+      { name: "Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Peel the potatoes and slice them.",
+      "Coat the sliced potatoes with gram flour, Dola flour, salt, carom seeds, turmeric, red chilies, paprika, garlic and coriander.",
+      "Fry the potato slices in hot oil until golden brown.",
+      "Prepare a dipping sauce with tamarind, sugar and water.",
+      "Serve bhajia with the dipping sauce."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-115",
+    name: "Dola Apple Crumble Cake",
+    source: "KFM CookBook",
+    type: "dessert, snack",
+    description: "A delicious apple crumble cake with cinnamon and a buttery crumble topping.",
+    preparationTime: 20,
+    cookingTime: 35,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Baking",
+      "Dessert",
+      "Sweet",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola All-Purpose Flour", amount: "1 1/2 cups" },
+      { name: "Sugar", amount: "2/3 cup" },
+      { name: "Salt", amount: "1/2 tbsp" },
+      { name: "Cinnamon Powder", amount: "1 tbsp" },
+      { name: "Melted Butter/Margarine", amount: "1/2 cup" },
+      { name: "Apples", amount: "3" },
+      { name: "Vinegar", amount: "1 tbsp" },
+      { name: "Eggs", amount: "2" },
+      { name: "Baking Powder", amount: "1 tsp" },
+      { name: "Milk", amount: "1/4 cup" },
+      { name: "Vanilla Essence", amount: "1 tsp" }
+    ],
+    instructions: [
+      "In a bowl add flour, sugar, salt, cinnamon and melted butter. Crumble with a fork.",
+      "In another bowl, peel and cut apples into cubes. Add vinegar, cinnamon, sugar and mix until coated.",
+      "In another bowl, add eggs, baking powder, milk, vanilla and mix until well combined.",
+      "Pour the liquid mixture into a baking pan, add apples, and top with the crumble mixture.",
+      "Bake at 180 degrees for 30-35 minutes.",
+      "Serve warm."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-116",
+    name: "Dola Mini Pizza",
+    source: "KFM CookBook",
+    type: "snack, lunch",
+    description: "Homemade mini pizzas with Dola flour base and a rich tomato sauce topped with cheese and vegetables.",
+    preparationTime: 45,
+    cookingTime: 15,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Snack",
+      "Baking",
+      "Modern Adaptation",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola All-Purpose Flour", amount: "1 1/2 cups" },
+      { name: "Yeast", amount: "1 tbsp" },
+      { name: "Sugar", amount: "1 tbsp" },
+      { name: "Olive Oil", amount: "1 tbsp" },
+      { name: "Warm Water", amount: "1/2 cup" },
+      { name: "Blended Tomatoes", amount: "2" },
+      { name: "Tomato Paste", amount: "2 tbsp" },
+      { name: "Garlic", amount: "1 tbsp" },
+      { name: "Salt", amount: "1/2 tbsp" },
+      { name: "Paprika", amount: "1/2 tbsp" },
+      { name: "Oregano", amount: "1/2 tbsp" },
+      { name: "Mixed Herbs", amount: "1/2 tbsp" },
+      { name: "Black Pepper", amount: "1/4 tbsp" },
+      { name: "Mozzarella Cheese", amount: "1 cup" }
+    ],
+    instructions: [
+      "For pizza sauce: In a pan add oil, garlic, blended tomatoes, tomato paste, salt, sugar, paprika, oregano, mixed herbs and black pepper. Stir and simmer.",
+      "For base: Mix flour, yeast, sugar, salt and warm water. Knead into a dough.",
+      "Let the dough rest for 30 minutes.",
+      "Divide into small balls and roll into mini pizza bases.",
+      "Spread pizza sauce on each base, add toppings and cheese.",
+      "Bake at 200 degrees for 10-15 minutes until golden.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-117",
+    name: "Dola Stuffed Donuts",
+    source: "KFM CookBook",
+    type: "snack, breakfast",
+    description: "Fluffy stuffed donuts made with Dola All-Purpose Flour, filled with jam or cream.",
+    preparationTime: 75,
+    cookingTime: 15,
+    servings: 12,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Sweet",
+      "Baking",
+      "Snack",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Warm Milk", amount: "1 cup" },
+      { name: "Yeast", amount: "1 1/2 tbsp" },
+      { name: "Dola All-Purpose Flour", amount: "3 cups" },
+      { name: "Sugar", amount: "1/2 cup" },
+      { name: "Butter/Margarine", amount: "3 tbsp" },
+      { name: "Egg", amount: "1" },
+      { name: "Vanilla Essence", amount: "1 tbsp" },
+      { name: "Jam or Cream", amount: "for filling" },
+      { name: "Oil", amount: "for deep frying" },
+      { name: "Icing Sugar", amount: "for dusting" }
+    ],
+    instructions: [
+      "In a bowl mix warm milk, yeast, flour, sugar, butter, egg and vanilla essence.",
+      "Add in the milk mixture and knead the dough.",
+      "Cover and let the dough rest for 1 hour.",
+      "Roll the dough to 1/2 inch thickness. Use a cookie cutter to cut sizeable shapes.",
+      "Deep fry in hot oil until golden brown.",
+      "Fill with jam or cream using a piping bag.",
+      "Dust with icing sugar and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-118",
+    name: "Dola Somali Anjero",
+    source: "KFM CookBook",
+    type: "breakfast, lunch",
+    description: "A traditional Somali pancake (Anjero/Canjeero) made with a fermented batter of Dola flour. Light, spongy and full of flavor.",
+    preparationTime: 180,
+    cookingTime: 15,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Somali",
+      "Breakfast",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola All-Purpose Flour", amount: "1 1/2 cups" },
+      { name: "Dola Maize Flour", amount: "1/4 cup" },
+      { name: "Sugar", amount: "1 tbsp" },
+      { name: "Salt", amount: "3/4 tbsp" },
+      { name: "Yeast", amount: "1 tbsp" },
+      { name: "Warm Water", amount: "1 1/2 cups" }
+    ],
+    instructions: [
+      "In a bowl, mix All-Purpose Flour, Maize Flour, sugar, salt, and yeast. Add warm water and mix till it forms a batter.",
+      "Cover the mixture and put it in a warm place for 3 hours to ferment.",
+      "Using a scooping spoon, take ample portions of the batter, spread on a low heated pan.",
+      "Cover and let it cook on low heat. Do not flip.",
+      "Serve with stew or tea."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-119",
+    name: "Mashujaa Day Cookies",
+    source: "KFM CookBook",
+    type: "snack",
+    description: "Festive cookies decorated in Kenyan flag colors. Perfect for celebrating national holidays.",
+    preparationTime: 30,
+    cookingTime: 9,
+    servings: 20,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Baking",
+      "Sweet",
+      "Festive",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola All-Purpose Flour", amount: "2 cups" },
+      { name: "Butter", amount: "1/2 cup" },
+      { name: "Sugar", amount: "1 cup" },
+      { name: "Egg", amount: "1" },
+      { name: "Vanilla Essence", amount: "1 tbsp" },
+      { name: "Icing Sugar", amount: "2 cups" },
+      { name: "Food Coloring (Red, Green, Black)", amount: "as needed" }
+    ],
+    instructions: [
+      "In a bowl, mix the butter and sugar and beat until creamy.",
+      "Add egg, vanilla essence, and flour. Knead the dough.",
+      "Cover with cling film and chill for 15 minutes.",
+      "Flatten the dough and use a cookie cutter to cut shapes.",
+      "Bake the cookies for 9 minutes at 180 degrees.",
+      "For icing: Mix icing sugar with water, divide and color with food coloring.",
+      "Decorate cookies in Kenyan flag colors and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-120",
+    name: "Dola Ugali Beef Fry",
+    source: "KFM CookBook",
+    type: "lunch, dinner",
+    description: "Tender beef dry fry served with Dola ugali and a fresh tomato and green pepper relish.",
+    preparationTime: 15,
+    cookingTime: 40,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Protein",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Cubed Beef", amount: "500g" },
+      { name: "Hot Water", amount: "2 cups" },
+      { name: "Oil", amount: "2 tbsp" },
+      { name: "Onion", amount: "1 large, chopped" },
+      { name: "Garlic and Ginger Paste", amount: "1 tsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Tomatoes", amount: "2 large, chopped" },
+      { name: "Green Pepper", amount: "1, chopped" },
+      { name: "Dola Maize Flour", amount: "2 cups" },
+      { name: "Water", amount: "4 cups (for ugali)" }
+    ],
+    instructions: [
+      "Put beef in a sufuria with hot water, cover and cook until tender.",
+      "Add oil, onion, garlic and ginger paste, and salt. Stir and cook until brown.",
+      "Add tomatoes, green pepper and cook until soft.",
+      "For ugali: Add 4 cups of water to boil. Add maize flour in bits while mixing.",
+      "Reduce heat, continue turning until firm.",
+      "Serve beef fry with ugali."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-121",
+    name: "Dola Gizzards Dry Fry",
+    source: "KFM CookBook",
+    type: "lunch, dinner",
+    description: "Crunchy and flavorful gizzards dry fry with fried onions and coriander. Served with ugali.",
+    preparationTime: 10,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Protein",
+      "Budget-Friendly",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Gizzards", amount: "500g" },
+      { name: "Salt", amount: "1 tbsp" },
+      { name: "Garlic", amount: "1 tbsp" },
+      { name: "Oil", amount: "for frying" },
+      { name: "Onions", amount: "2 large" },
+      { name: "Coriander", amount: "for garnish" },
+      { name: "Dola Maize Flour", amount: "for ugali" }
+    ],
+    instructions: [
+      "Add the gizzards to a pan with 1 cup of water, salt and garlic.",
+      "Cook till dry.",
+      "In a different pan, fry two large onions till brown.",
+      "Once brown, remove onions and fry the gizzards in the same oil.",
+      "Add the fried onions and coriander.",
+      "Serve with ugali."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-122",
+    name: "Dola Steam Cake",
+    source: "KFM CookBook",
+    type: "snack, dessert",
+    description: "A light and fluffy steamed cake made with Dola All-Purpose Flour. No oven needed!",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Baking",
+      "Sweet",
+      "Budget-Friendly",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Eggs", amount: "4" },
+      { name: "Sugar", amount: "1/2 cup" },
+      { name: "Baking Powder", amount: "1 1/2 tsp" },
+      { name: "Milk", amount: "1/2 cup" },
+      { name: "Oil", amount: "1/4 cup" },
+      { name: "Dola All-Purpose Flour", amount: "4 cups" },
+      { name: "Vanilla Essence", amount: "1 tbsp" }
+    ],
+    instructions: [
+      "In a bowl, beat eggs. Add sugar and baking powder, mix till frothy.",
+      "Add milk and oil, mix well.",
+      "Add flour gradually and whisk the batter.",
+      "Add vanilla essence. Cover with a clean cloth and let it rest for 5 minutes.",
+      "Pour into a greased steaming pot.",
+      "Steam for about 30 minutes until a skewer comes out clean.",
+      "Cool and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-123",
+    name: "Dola Spicy Wings",
+    source: "KFM CookBook",
+    type: "snack, dinner",
+    description: "Crispy fried chicken wings with a spicy sauce. The chicken is coated in a mixture of corn flour and all-purpose flour.",
+    preparationTime: 15,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Snack",
+      "Spicy",
+      "Protein",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Chicken Wings", amount: "1 kg" },
+      { name: "Dola All-Purpose Flour", amount: "1/4 cup" },
+      { name: "Corn Flour", amount: "1 cup" },
+      { name: "Salt", amount: "1 tbsp" },
+      { name: "Garlic Powder", amount: "1 tbsp" },
+      { name: "Paprika Powder", amount: "1 tbsp" },
+      { name: "Baking Powder", amount: "1 tbsp" },
+      { name: "Onion", amount: "1 mid-sized, grated" },
+      { name: "Ginger and Garlic Paste", amount: "1 tbsp" },
+      { name: "Tomato Ketchup", amount: "2 tbsp" },
+      { name: "Soy Sauce", amount: "1 tbsp" },
+      { name: "Honey", amount: "1 tbsp" },
+      { name: "Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "Mix flour, corn flour, salt, garlic powder, paprika and baking powder. Coat the chicken wings.",
+      "Carefully place the chicken in hot oil and fry till golden brown.",
+      "In a different pan, fry grated onion. Add ginger and garlic paste.",
+      "Add tomato ketchup, soy sauce and honey. Mix to make a spicy sauce.",
+      "Toss the fried wings in the sauce.",
+      "Serve with ugali."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-124",
+    name: "Kuku wa Kupaka na Mahamri ya Dola",
+    source: "KFM CookBook",
+    type: "dinner, lunch",
+    description: "Coastal-style chicken in coconut sauce (Kuku wa Kupaka) served with Dola Mahamri. A true taste of Swahili cuisine.",
+    preparationTime: 30,
+    cookingTime: 40,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Coastal",
+      "Traditional",
+      "Protein",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola Flour", amount: "3 cups" },
+      { name: "Yeast", amount: "1 tbsp" },
+      { name: "Warm Coconut Milk", amount: "1 1/4 cups" },
+      { name: "Sugar", amount: "1/2 cup" },
+      { name: "Oil", amount: "1 tbsp" },
+      { name: "Cardamom Powder", amount: "1 tsp" },
+      { name: "Onion", amount: "1 large, grated" },
+      { name: "Ginger/Garlic Paste", amount: "1 tbsp" },
+      { name: "Chicken", amount: "1, cut into pieces" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Coconut Milk", amount: "1 cup (for sauce)" },
+      { name: "Tomato", amount: "1 large, grated" }
+    ],
+    instructions: [
+      "For mahamri: Mix flour and cardamom powder. In a separate bowl add warm coconut milk, sugar, oil and yeast. Let rest for 5 minutes.",
+      "Pour milk mixture into flour and knead. Cover and let rest for 1 hour.",
+      "Roll out and cut into triangular shapes. Deep fry until golden brown.",
+      "For kuku wa kupaka: Saute onion, add ginger/garlic paste.",
+      "Add chicken and salt, saute till dry.",
+      "Add grated tomato and cook until thick.",
+      "Add coconut milk and simmer until chicken is cooked through and sauce is rich.",
+      "Serve chicken with mahamri."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-125",
+    name: "Visheti",
+    source: "KFM CookBook",
+    type: "snack, dessert",
+    description: "Traditional Kenyan twisted doughnuts coated in cardamom sugar syrup. Crispy on the outside, soft on the inside.",
+    preparationTime: 30,
+    cookingTime: 20,
+    servings: 15,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Sweet",
+      "Traditional",
+      "Snack",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Flour", amount: "1 1/4 cups" },
+      { name: "Baking Powder", amount: "1 tsp" },
+      { name: "Salt", amount: "1/2 tsp" },
+      { name: "Eggs", amount: "4" },
+      { name: "Sugar", amount: "1/2 tbsp" },
+      { name: "Melted Butter/Margarine", amount: "1 cup" },
+      { name: "Natural Yoghurt", amount: "4 tsp" },
+      { name: "Warm Milk", amount: "1 3/4 cups" },
+      { name: "Sugar (for syrup)", amount: "1 cup" },
+      { name: "Water (for syrup)", amount: "1/2 cup" },
+      { name: "Whole Cardamom", amount: "for syrup" },
+      { name: "Oil", amount: "for frying" }
+    ],
+    instructions: [
+      "In a bowl mix flour, baking powder, cardamom powder, vanilla essence, and melted butter with warm milk. Knead.",
+      "Cover the dough and let it rest for 30 minutes.",
+      "Roll into strips and twist them.",
+      "Deep fry until golden brown.",
+      "In another cooking pot add sugar, water, and whole cardamoms. Stir to make syrup.",
+      "Coat the visheti in the sugar syrup.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-126",
+    name: "Dola Lamb Chops with Ugali",
+    source: "KFM CookBook",
+    type: "dinner",
+    description: "Succulent lamb chops glazed with soy sauce, ketchup and lemon juice, served with Dola ugali.",
+    preparationTime: 15,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Protein",
+      "Special Occasion",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Oil", amount: "2 tsp" },
+      { name: "Onion", amount: "1 large" },
+      { name: "Lamb Loin Chops", amount: "1 kg" },
+      { name: "Light Soy Sauce", amount: "1/2 cup" },
+      { name: "Ketchup", amount: "3 tbsp" },
+      { name: "Sugar", amount: "1 tsp" },
+      { name: "Lemon Juice", amount: "from 1 lemon" },
+      { name: "Black Pepper", amount: "to taste" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Sesame Seeds", amount: "for garnish" },
+      { name: "Bell Peppers", amount: "for garnish" },
+      { name: "Dola Maize Flour", amount: "for ugali" }
+    ],
+    instructions: [
+      "Clean and bloat the lamb chops with kitchen towel to dry up excess water.",
+      "Season with black pepper and a dash of salt.",
+      "Add oil to a pan. Fry the onion until soft.",
+      "Add the lamb chops and sear until browned.",
+      "Add soy sauce, ketchup, sugar and lemon juice.",
+      "Let simmer on medium heat till the sauce thickens. Keep turning the chops.",
+      "Sprinkle sesame seeds and chopped bell peppers.",
+      "Serve with ugali."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-127",
+    name: "Dola Ugali and Omena in Groundnut Sauce",
+    source: "KFM CookBook",
+    type: "lunch, dinner",
+    description: "Omena (silver fish) cooked in a rich groundnut (peanut) sauce. A nutritious and budget-friendly meal from the Lake Victoria region.",
+    preparationTime: 10,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Budget-Friendly",
+      "Lake Region",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Washed Omena", amount: "1 cup" },
+      { name: "Tomatoes", amount: "2 medium-sized" },
+      { name: "Onions", amount: "1, chopped" },
+      { name: "Cooking Oil", amount: "3 tbsp" },
+      { name: "Garlic Ginger Paste", amount: "1 tsp" },
+      { name: "Tomato Paste", amount: "1 tbsp" },
+      { name: "Curry Powder", amount: "1 tsp" },
+      { name: "Paprika", amount: "1 tsp" },
+      { name: "Groundnut Paste", amount: "3 tbsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Dola Maize Flour", amount: "for ugali" }
+    ],
+    instructions: [
+      "Boil the omena for 10 minutes.",
+      "In a pan, fry the onions, ginger paste, tomatoes, tomato paste, curry powder, paprika and groundnut paste.",
+      "Add the boiled omena and mix well.",
+      "Simmer until the sauce thickens.",
+      "Prepare ugali: Bring water to boil, add maize flour in bits while stirring.",
+      "Serve omena in groundnut sauce with ugali."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-128",
+    name: "Dola Uji (Porridge)",
+    source: "KFM CookBook",
+    type: "breakfast, drink",
+    description: "Traditional Kenyan porridge made with Dola Maize Flour, sweetened with sugar and flavored with cardamom.",
+    preparationTime: 5,
+    cookingTime: 10,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Breakfast",
+      "Traditional",
+      "Budget-Friendly",
+      "Quick",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola Maize Flour", amount: "3 cups" },
+      { name: "Water", amount: "1 1/2 cups" },
+      { name: "Sugar", amount: "3 tbsp" },
+      { name: "Cardamom", amount: "1/2 tsp" },
+      { name: "Milk", amount: "1 cup" }
+    ],
+    instructions: [
+      "In a bowl mix the maize flour and water.",
+      "In a sufuria, add the mixture and more water. Stir continuously.",
+      "Add sugar, cardamom powder, and milk. Stir continuously.",
+      "Serve while still hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-129",
+    name: "Dola Style Omelette with Ugali",
+    source: "KFM CookBook",
+    type: "breakfast",
+    description: "A creative omelette using leftover ugali pieces mixed with eggs, tomatoes and onion. Zero waste cooking!",
+    preparationTime: 5,
+    cookingTime: 10,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Breakfast",
+      "Quick",
+      "Budget-Friendly",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Leftover Ugali", amount: "1/4 cup" },
+      { name: "Eggs", amount: "3" },
+      { name: "Tomato", amount: "1/2, chopped" },
+      { name: "Onion", amount: "1/4, chopped" },
+      { name: "Coriander Leaves", amount: "chopped" },
+      { name: "Milk", amount: "1 tbsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Pepper", amount: "to taste" },
+      { name: "Butter", amount: "for frying" }
+    ],
+    instructions: [
+      "In a bowl, tear leftover ugali into pieces.",
+      "Add eggs, tomatoes, onion, coriander, salt, pepper and milk. Whisk well.",
+      "Heat butter in a pan. Scoop half the mixture and swirl it around.",
+      "Let cook for 1.5 minutes on each side. Fold and serve.",
+      "Serve with toast, sausages and bacon for a full breakfast."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-130",
+    name: "Dola Ugali and Kienyeji Chicken",
+    source: "KFM CookBook",
+    type: "lunch, dinner",
+    description: "Traditional free-range chicken (kienyeji) cooked with sukuma wiki and peanut butter, served with Dola ugali.",
+    preparationTime: 15,
+    cookingTime: 45,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Protein",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Oil", amount: "3 tbsp" },
+      { name: "Onion", amount: "1 large, chopped" },
+      { name: "Garlic", amount: "4 cloves, minced" },
+      { name: "Ginger", amount: "1 tbsp, minced" },
+      { name: "Kienyeji Chicken", amount: "1, cut into pieces" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Tomatoes", amount: "3 large, chopped" },
+      { name: "Peanut Butter", amount: "2 tbsp" },
+      { name: "Sukuma Wiki (Kale)", amount: "1 bunch" },
+      { name: "Dola Maize Flour", amount: "for ugali" }
+    ],
+    instructions: [
+      "Heat oil in a heavy bottomed pan and add the onions. Cook until translucent.",
+      "Add the ginger and garlic followed by kienyeji chicken and salt. Stir, cover and simmer until cooked.",
+      "Add tomatoes and cook until soft.",
+      "In another pan, heat oil and add sliced onions. Once translucent, add peanut butter and stir.",
+      "Stir in the sukuma wiki, cook for 2-3 minutes.",
+      "Prepare ugali and serve with chicken and sukuma wiki."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-131",
+    name: "Dola Chicken Koroga",
+    source: "KFM CookBook",
+    type: "dinner",
+    description: "A rich Kenyan curry-style chicken dish with aromatic whole spices, fenugreek leaves and spinach.",
+    preparationTime: 15,
+    cookingTime: 40,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "Spiced",
+      "Protein",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Oil", amount: "1/4 cup" },
+      { name: "Cinnamon Sticks", amount: "2-3" },
+      { name: "Cloves", amount: "10-12" },
+      { name: "Black Peppercorns", amount: "12-15" },
+      { name: "Cumin Seeds", amount: "1 tbsp" },
+      { name: "Onions", amount: "2, finely sliced" },
+      { name: "Garlic", amount: "6 cloves" },
+      { name: "Ginger", amount: "1 tbsp" },
+      { name: "Chicken", amount: "1, cut into pieces" },
+      { name: "Fenugreek Leaves", amount: "1/2 cup" },
+      { name: "Coriander Leaves", amount: "1 bunch" },
+      { name: "Spinach", amount: "1 cup" },
+      { name: "Tomatoes", amount: "3, chopped" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Dola Maize Flour", amount: "for ugali" }
+    ],
+    instructions: [
+      "Heat oil in a pot and add cinnamon sticks, cloves, black peppercorns and cumin seeds.",
+      "Once cumin seeds start to turn dark, add the onions. Cook for 6-8 minutes until translucent.",
+      "Add garlic and ginger, cook for 2 minutes.",
+      "Add the chicken and sear until browned.",
+      "Add fenugreek leaves, coriander, spinach, tomatoes and salt. Cook for 4-5 minutes.",
+      "Pour in water and simmer until chicken is tender and sauce has thickened.",
+      "Serve with ugali."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-132",
+    name: "Dola Ugali Fries",
+    source: "KFM CookBook",
+    type: "snack",
+    description: "Crispy fried ugali sticks coated in breadcrumbs and egg. A creative way to use leftover ugali.",
+    preparationTime: 20,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Snack",
+      "Creative",
+      "Budget-Friendly",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Dola Maize Meal", amount: "1 1/2 cups" },
+      { name: "Boiling Water", amount: "3 cups" },
+      { name: "Eggs", amount: "2" },
+      { name: "Bread Crumbs", amount: "1 cup" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Oil", amount: "for frying" },
+      { name: "Ketchup", amount: "for dipping" }
+    ],
+    instructions: [
+      "For ugali: Bring water to boil. Add maize meal gradually while stirring.",
+      "Cook until firm. Layer on a baking tray and spread evenly. Let cool.",
+      "Cut the cooled ugali into fry-shaped strips.",
+      "Dip each strip in beaten egg, then coat in bread crumbs.",
+      "Deep fry in hot oil until golden brown.",
+      "Serve with ketchup."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-133",
+    name: "Strawberry Jam and Coconut Cake",
+    source: "KFM CookBook",
+    type: "dessert, snack",
+    description: "A layered cake with strawberry jam filling and desiccated coconut coating.",
+    preparationTime: 15,
+    cookingTime: 35,
+    servings: 8,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Baking",
+      "Sweet",
+      "Dessert",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Flour", amount: "1 1/4 cups" },
+      { name: "Baking Powder", amount: "1 tsp" },
+      { name: "Salt", amount: "1/2 tsp" },
+      { name: "Eggs", amount: "4" },
+      { name: "Sugar", amount: "1/2 tbsp" },
+      { name: "Melted Butter/Margarine", amount: "1 cup" },
+      { name: "Strawberry Jam", amount: "as needed" },
+      { name: "Desiccated Coconut", amount: "1 cup" }
+    ],
+    instructions: [
+      "In a bowl mix flour, baking powder, and a pinch of salt.",
+      "In a different bowl mix eggs, sugar and beat until fluffy.",
+      "Add melted butter and mix well.",
+      "Grease baking tin and pour in cake batter.",
+      "Bake at 180 degrees for 30-35 minutes.",
+      "Apply a coat of fruit jam to the cake.",
+      "Spread desiccated coconut on top of the jam.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-134",
+    name: "Pojo wa Nazi kwa Sima",
+    source: "KFM CookBook",
+    type: "lunch, dinner",
+    description: "Green grams cooked in coconut milk with turmeric and curry powder. A coastal classic served with ugali (sima).",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Coastal",
+      "Traditional",
+      "Vegetarian",
+      "KFM"
+    ],
+    ingredients: [
+      { name: "Oil", amount: "2 tsp" },
+      { name: "Onion", amount: "1 large" },
+      { name: "Tomato", amount: "1 large" },
+      { name: "Turmeric Powder", amount: "1/2 tsp" },
+      { name: "Crushed Garlic", amount: "1 tsp" },
+      { name: "Tomato Paste", amount: "1 tsp" },
+      { name: "Curry Powder", amount: "1 tsp" },
+      { name: "Salt", amount: "to taste" },
+      { name: "Green Grams", amount: "2 cups, boiled" },
+      { name: "Coconut Milk", amount: "1 cup" },
+      { name: "Dola Maize Flour", amount: "for ugali" }
+    ],
+    instructions: [
+      "In a pan brown the onions then add chopped tomato, turmeric, garlic, tomato paste, curry powder and salt. Stir.",
+      "Add the green grams and coconut milk with 1/2 cup of water.",
+      "Simmer until the sauce thickens.",
+      "Prepare ugali: Bring water and salt to a boil. Reduce heat and add maize flour gradually, stirring continuously.",
+      "Serve green grams with ugali."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide"
+  },
+  {
+    id: "ke-135",
+    name: "Kaimati",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "snack",
+    description: "Kaimatis get their unique flavour from the style with which yeast is applied on wheat flour. This traditional breakfast dish or day snack is common among the Swahili and Bajuni communities and was inherited from Arab culture. It serves the whole family.",
+    preparationTime: 20,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, refined", amount: "2 cups (280 g)" },
+      { name: "water", amount: "2 cups (447 g)" },
+      { name: "vanilla essence, clear", amount: "½ tsp. (3 g)" },
+      { name: "cardamoms powder", amount: "½ tsp. (1 g)" },
+      { name: "yeast, dry", amount: "1¼ tbsp. (12 g)" },
+      { name: "cooking oil", amount: "5 1/8 cups (1000 g)" },
+      { name: "sugar", amount: "4 tbsp. (56 g)" },
+      { name: "white sugar", amount: "1 cup (187 g)" },
+      { name: "water", amount: "½ cup (116g)" },
+      { name: "vanilla essence, clear", amount: "½ tsp. (4 g)" }
+    ],
+    instructions: [
+      "Put yeast in a small container.",
+      "Add 50ml of warmed water.",
+      "Add 4 tbsp. of sugar and allow to stand for 3 minutes.",
+      "Meanwhile, warm the rest of the water in a cooking pot.",
+      "Mix dry ingredients together; flour, cardamoms and vanilla essence in a bowl.",
+      "Add ¼ cup (50 g) of oil into the mixture and rub in until finely absorbed.",
+      "Add the yeast preparation to the flour mixture, adding the lukewarm water gradually while mixing to a semi-solid consistency.",
+      "Cover with a dry towel/ cloth and allow to stand for 4 minutes until the dough rises.",
+      "In a pan put the rest of the oil and heat for 7 minutes or until the oil bubbles when a pinch of dough is dropped in the oil.",
+      "Shape the dough into round balls and put into the hot oil, keep turning to cook evenly.",
+      "Deep fry for 3-4 minutes.",
+      "Remove from oil.",
+      "Preparation of sugar syrup;",
+      "Mix the sugar, water and vanilla essence in a cooking pan.",
+      "Put on the heat for 5 minutes.",
+      "Stir to prevent sugar from sticking on the sides of the pan; the mixture should be sticky.",
+      "Add the fried dumplings to the sugar syrup and stir to coat them in the syrup while still on the heat.",
+      "Swirl until the syrup covers all the dumplings.",
+      "Serve as desired."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Fried Dumplings",
+    kfctCode: "15003"
+  },
+  {
+    id: "ke-136",
+    name: "Mahamri",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a typical traditional recipe among the Swahilis. A true delicacy enjoyed by the entire family, serves as a breakfast meal as well as a whole day snack. Mahamri has a unique taste influenced by the freshly squeezed coconut milk.",
+    preparationTime: 60,
+    cookingTime: 5,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour,", amount: "3 ½ cups (525 g)" },
+      { name: "coconut milk", amount: "¾ cup (181 g)" },
+      { name: "white sugar", amount: "9 tbsp. (123 g)" },
+      { name: "dry yeast", amount: "1¼ tbsp. (12 g)" },
+      { name: "cardamom", amount: "1 tsp. (2 g)" },
+      { name: "water", amount: "¾ cups (182 g)" },
+      { name: "cooking oil", amount: "8 1/8 cups (1735 g)" }
+    ],
+    instructions: [
+      "Break the coconut shell, drain the water and grate the flesh.",
+      "Squeeze the coconut milk from the grated coconut flesh using a cloth.",
+      "Set aside the thick coconut milk.",
+      "Add ¼ cup of warm water to squeeze out any remaining milk.",
+      "In a bowl, mix a pinch of sugar with the yeast and add the ¼ cup of water used to squeeze the last batch of coconut milk.",
+      "Stir and set aside for 5 minutes for the yeast to rise.",
+      "In a separate bowl, mix the dry ingredients; sugar, flour and cardamoms.",
+      "Add the yeast mixture to the dry ingredients.",
+      "Add 4 tablespoons of oil and the thick coconut milk into the yeast and dry ingredients mixture.",
+      "Knead the dough as you add the remaining water to a firm feel.",
+      "Set the dough aside for 10 minutes for sugar to dissolve.",
+      "Cover with a cloth.",
+      "Knead the dough again to mix the sugar and to improve the texture.",
+      "Cover with a dry cloth and allow to stand for 30 minutes.",
+      "Divide the dough into small-medium size balls. Set them aside and cover with a dry cloth for 15 minutes.",
+      "When well raised, roll out each ball into flat discs and cut each into four triangle shaped portions.",
+      "Heat the remaining oil for 15 minutes to 173°C.",
+      "Fry the mahamri and turn after 40 seconds. The mahamri will turn golden brown when ready.",
+      "Remove the first batch of mahamri from oil and place onto paper towels to drain the oil.",
+      "Continue frying the rest in batches until all are done.",
+      "Serve as desired."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Swahili Doughnuts",
+    kfctCode: "15004"
+  },
+  {
+    id: "ke-137",
+    name: "Enriched Mandazi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "A popular snack among urban dwellers across the country, enriched mandazi is a doughnut made with eggs plus fresh milk and conditioned with margarine; it is a favourite breakfast item for the entire family.",
+    preparationTime: 45,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "self-raising wheat flour", amount: "7 cups (1063 g)" },
+      { name: "eggs (179 g)", amount: "3" },
+      { name: "margarine", amount: "9 tbsp. (118 g)" },
+      { name: "sugar", amount: "¾ cup (144 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (2 g)" },
+      { name: "cooking fat", amount: "7 cups (1039 g)" },
+      { name: "cow milk", amount: "11/3 cups (289 g)" },
+      { name: "water", amount: "1¼ cups (282 g)" }
+    ],
+    instructions: [
+      "Put flour, salt, sugar and lemon rind into a bowl and mix.",
+      "Mix all the water with the milk and warm.",
+      "Add margarine into the dry ingredients and rub in.",
+      "Add eggs onto the dry ingredients and mix.",
+      "Add the warm diluted milk into the bowl and knead the mixture into a soft dough.",
+      "Cover the dough with a dump cloth for 40 minutes.",
+      "Heat all the cooking fat in a pot for 10 minutes or until the oil bubbles when a pinch of dough is dropped in the oil.",
+      "Roll out the dough into the desired thickness; about a",
+      "¼ of an inch thick.",
+      "Cut the dough into preferred shapes.",
+      "Gently drop the cut-out pieces into the hot oil.",
+      "Fry one side until golden brown and turn.",
+      "Remove from oil and place onto paper towels to drain any excess oil.",
+      "Repeat the process with the rest of the pieces.",
+      "Serve as desired."
+    ],
+    nutritionFacts: {
+      calories: 88,
+      protein: 0.47,
+      fat: 0.36,
+      carbs: 3.0,
+      fiber: 236.0
+    },
+    region: "Nationwide",
+    swahiliName: "East African Doughnuts, Enriched",
+    kfctCode: "15124"
+  },
+  {
+    id: "ke-138",
+    name: "Basic Mandazi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "You will find this recipe in any home across Kenya. Preferred for its simplicity, it serves the entire family and a choice item for breakfast.",
+    preparationTime: 60,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "all-purpose wheat flour", amount: "7 ¼ cups (953 g)" },
+      { name: "baking powder", amount: "3 tbsp. (48 g)" },
+      { name: "sugar", amount: "2/3 cup (128 g)" },
+      { name: "cooking oil", amount: "6 1/3 cups (1235 g)" },
+      { name: "water", amount: "3 1/3 cups (723 g)" }
+    ],
+    instructions: [
+      "Put the wheat flour into a bowl, add baking powder and sugar.",
+      "Add 3 1/3 of cups water and mix properly to make soft dough.",
+      "Add 4 tablespoons of cooking oil and continue kneading.",
+      "Cover and leave to stand for 40 minutes.",
+      "Roll out the dough and cut into desired shapes",
+      "Add the rest of the cooking oil into the pot/ deep frying pan and heat for 10 minutes (use a piece of dough to test).",
+      "Carefully drop the cut-out pieces into the hot oil and fry until golden brown.",
+      "Repeat the process for all the pieces.",
+      "Remove from oil, place on paper towel to drain any excess oil.",
+      "Repeat the process with the rest of the pieces.",
+      "Serve with a hot beverage."
+    ],
+    nutritionFacts: {
+      calories: 48,
+      protein: 1.0,
+      fat: 0.46,
+      carbs: 0.29,
+      fiber: 3.0
+    },
+    region: "Nationwide",
+    swahiliName: "East African Doughnuts, Basic",
+    kfctCode: "15125"
+  },
+  {
+    id: "ke-139",
+    name: "Meat Samosa",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "snack",
+    description: "Nothing more delicious like the Kenyan meaty samosa! Mainly an urban dish, the meaty samosa serves as a breakfast item and a whole day snack. It is enjoyed by the entire family.",
+    preparationTime: 60,
+    cookingTime: 60,
+    servings: 28,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "minced beef", amount: "½ kg" },
+      { name: "coriander, fresh", amount: "30 g" },
+      { name: "leek, unpeeled, raw", amount: "1 stem (356 g)" },
+      { name: "garlic, unpeeled, raw", amount: "1 clove (5 g)" },
+      { name: "chilli pepper, fresh, raw", amount: "¼ tsp. (1 g)" },
+      { name: "wheat flour, refined", amount: "3 cups (475 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (2 g)" },
+      { name: "water", amount: "1¼ cups (264 g)" },
+      { name: "cooking oil", amount: "3 cups (572 g)" }
+    ],
+    instructions: [
+      "Meat Filling:",
+      "Put the meat in a pan over a fire. Stir continuously.",
+      "When the juices start oozing out from the meat, cover to cook.",
+      "Finely chop the leek, coriander and crash the garlic. Mix them together in a bowl.",
+      "Add salt and chilli to the meat after about 10 minutes.",
+      "Continue stirring and crushing the meat to prevent it from forming balls.",
+      "Cook the meat until it dries.",
+      "Add the leek, garlic and coriander after 4 minutes and stir.",
+      "Remove from the fire after 1 minute.",
+      "Let the meat cool before using it to fill the casings.",
+      "To make the paste: cold",
+      "The paste is used to seal the envelopes.",
+      "Mix ¼ cup of water and ½ cup of flour to make a hor- thick paste.",
+      "Make the casings using the paste to bond and seal the edges.",
+      "Filling the Samosa:",
+      "Spoon the cooled meat filling into the casings and h seal off the edges using the paste.",
+      "Do not overfill the casings to prevent it any tears or ed. rips on them. piece.",
+      "Heat the remaining oil in a deep pan up to 170°C or about 6 minutes or until the oil bubbles when a pinch of dough is dropped in the oil.",
+      "Carefully, deep each samosa into the hot oil and ated. cook while turning until golden brown on both ece; sides.",
+      "Remove from the hot oil making sure to let any excess oil drain back into the pan.",
+      "Place onto paper towels to drain any excess oil.",
+      "Repeat the process until all the samosas are cooked.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Sambusa ya Nyama",
+    kfctCode: "15025"
+  },
+  {
+    id: "ke-140",
+    name: "Vegetable Samosa",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "snack",
+    description: "This vegetarian samosa is made with vegetables in season and heavily spiced, giving it a deliciously great taste! Loved for its health consciousness, the vegetable samosa serves as an all-time snack and mainly enjoyed by the whole family.",
+    preparationTime: 60,
+    cookingTime: 90,
+    servings: 23,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cabbage", amount: "557 g" },
+      { name: "garlic, fresh (42 g)", amount: "1 head" },
+      { name: "onions, red skinned, raw, unpeeled (389g)", amount: "4" },
+      { name: "carrots, orange, raw (307 g)", amount: "2" },
+      { name: "ginger, fresh, (34 g)", amount: "3 pieces" },
+      { name: "garden peas, green, raw", amount: "3 cups (363 g)" },
+      { name: "water", amount: "3 ¾ cups (825 g)" },
+      { name: "wheat flour, refined", amount: "4 ¼ cups (608 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (7 g)" },
+      { name: "green chilli, fresh", amount: "1 ½ tsp. (2 g)" },
+      { name: "cooking oil", amount: "4 1/3 cups (857 g)" }
+    ],
+    instructions: [
+      "Samosa filling preparation:",
+      "Wash and finely chop the cabbage.",
+      "Peel the carrots, wash and grate.",
+      "Peel the onion and chop.",
+      "Peel garlic and ginger, then wash and crush with a mortar and pestle.",
+      "Wash peas and boil in 2 cups of water for 15 minutes. bowl or plate and cover to prevent them from drying.",
+      "Spread the next batch of stacked discs and cook for",
+      "1 minute on each side.",
+      "To make the paste:",
+      "The paste is used to seal the envelopes as a bonding agent.",
+      "Mix ¾ cup of wheat flour and ¾ cup of water to make a paste.",
+      "Make the casings using the paste to bond and seal the edges.",
+      "Fold the layers previously covered into 2, cut into half and then into quarters.",
+      "Take a quarter and fold it into a samosa case and apply the paste to hold the edges together.",
+      "Repeat this for the rest of the batches.",
+      "Filling the Samosa:",
+      "Take each piece and fill in the pocket in the previously prepared vegetables.",
+      "Use the wheat flour water paste to seal the samosa case.",
+      "Put the remaining oil onto a pan and heat for 17 minutes or until the oil bubbles when a pinch of dough is dropped in the oil.",
+      "Drop the samosa gently into the oil and cook each side for 2 minutes until golden brown.",
+      "Remove from the oil and place over kitchen towels to drain any excess oil."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Sambusa ya Mboga",
+    kfctCode: "15026"
+  },
+  {
+    id: "ke-141",
+    name: "Pancakes",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "This is a popular recipe among urban dwellers but also common across the country. It is loved for its sim- plicity and ease of preparation as a breakfast dish. Pancakes are eaten by the entire family.",
+    preparationTime: 20,
+    cookingTime: 30,
+    servings: 9,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, refined, all", amount: "3 cups (433 g)" },
+      { name: "eggs, whole (112 g)", amount: "2" },
+      { name: "cow milk, fresh", amount: "2 1/3 cups (528 g)" },
+      { name: "sugar, white", amount: "1/8 cup (22 g)" },
+      { name: "water", amount: "11/3 cups (303 g)" },
+      { name: "cooking oil", amount: "¾ cup (160 g)" }
+    ],
+    instructions: [
+      "Put the wheat flour into a bowl.",
+      "Dissolve sugar into the milk then pour the sugar and milk mixture into the flour.",
+      "Add all the water.",
+      "Start mixing the pancake batter either using an egg whisk or wooden bowl.",
+      "Mix well until it comes to a smooth consistency.",
+      "Break eggs and add into the mixture in the bowl.",
+      "Continue mixing until everything is smooth and with no lumps.",
+      "Put the frying pan onto the fire and let it heat for 2 minutes.",
+      "Pour batter into the frying pan.",
+      "Pour just enough for it to mould into the shape of the pan.",
+      "Let the batter set on one side and then turn over after 2 minutes.",
+      "Once you turn over, apply cooking oil onto the pancake and spread.",
+      "Turnover and repeat the same procedure for the other side.",
+      "Keep turning as needed until it cooks on both sides",
+      "(turns golden brown and is cooked on the inside).",
+      "Remove from the fire and place on paper towels on a plate.",
+      "Repeat the process until all the batter is finished.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Chapati za Maji",
+    kfctCode: "15027"
+  },
+  {
+    id: "ke-142",
+    name: "Drop Scones",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "Commonly referred to as “Drops”, these scones acquired their name from the way the butter is placed on the pan during cooking. A very popular dish in the urban areas, drop scones are served as a breakfast snack. They are enjoyed by the entire family.",
+    preparationTime: 20,
+    cookingTime: 30,
+    servings: 40,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, self-raising", amount: "3 cups (398 g)" },
+      { name: "eggs, whole (183 g)", amount: "3" },
+      { name: "cow milk", amount: "1 3/4 cups (392 g)" },
+      { name: "sugar, white", amount: "½ cup (93 g)" },
+      { name: "margarine", amount: "1/3 cup (63 g)" },
+      { name: "water", amount: "½ cup (121 g)" },
+      { name: "salt, iodized", amount: "1 pinch (2 g)" },
+      { name: "cooking oil", amount: "1 ½ cups (293 g)" }
+    ],
+    instructions: [
+      "Put the wheat flour into a mixing bowl.",
+      "Rub in the margarine until fine.",
+      "Dissolve sugar into the milk and stir.",
+      "Add the sugar and milk mixture into the flour.",
+      "Stir then add all the water till it is smooth with no lumps.",
+      "Break the eggs and add into the mixture.",
+      "Add a pinch of salt and 1 tablespoon cooking oil.",
+      "Continue stirring until it is evenly mixed, and it starts to bubble.",
+      "The consistency of this mixture should be thicker than that of pancake.",
+      "Heat the pan for 3 minutes.",
+      "Put a little cooking oil into the pan.",
+      "Pour a scoop at a time of the batter onto the pan until the surface of the pan is covered by the batter.",
+      "Let the batter drops set on one side then turn.",
+      "Add a little oil and keep turning until the drops turn golden brown.",
+      "Remove from fire and place on paper towels on a tray.",
+      "Repeat the process till all batter is finished,",
+      "Allow to cool and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15029"
+  },
+  {
+    id: "ke-143",
+    name: "Qita",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Qita commands respect among the Burji’s as a breakfast dish and an all-day snack. Uniquely prepared with a mix of corn and wheat flour, Qita is deliciously spiced and is enjoyed by the entire family.",
+    preparationTime: 150,
+    cookingTime: 40,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, refined", amount: "2 cups (312 g)" },
+      { name: "maize flour, white, re-", amount: "3 cups (533 g)" },
+      { name: "yeast, dry", amount: "1 tbsp. (7 g)" },
+      { name: "water", amount: "3 ¼ cups (835 g)" },
+      { name: "salt, iodized", amount: "½ tbsp. (6 g)" },
+      { name: "butter, cow", amount: "4 tbsp. (61 g)" },
+      { name: "mixed spices", amount: "1 tbsp. (13 g)" },
+      { name: "garlic (2 g)", amount: "2 cloves" }
+    ],
+    instructions: [
+      "Measure wheat flour, maize flour, yeast, water and salt.",
+      "Mix the flours (wheat and maize) in a bowl and add the salt.",
+      "Heat the water in a pan until warm. Add ¼ cup of the water into the yeast. Create a hole in the flour and pour in the yeast mixture.",
+      "Mix properly using hands. Keep adding the rest of the water to the flour gradually and mixing by hand.",
+      "Set aside to rise for 2 hours.",
+      "Melt the butter in a cooking pot. Add crushed garlic and mixed spices.",
+      "Once they are evenly mixed, remove from the fire and sieve to remove residue.",
+      "Add the butter preparation to the flour mixture and stir until evenly mixed.",
+      "Heat a cooking pan for 4 minutes. Using a small soup spoon, pour 2 scoops of the batter onto the heated pan.",
+      "Using your hands, spread it out into the desired thickness.",
+      "Cover the pan. After 3 minutes, it will have turned golden brown. Flip it over.",
+      "After 2 minutes, flip it over again.",
+      "Keep turning over until it hardens.",
+      "Add desired batter and spread. One piece takes 8 minutes to cook.",
+      "Again, pour 2 scoops onto the pan. Using the hands, spread to desired size.",
+      "Repeat process until all the batter is used."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Maize & Wheat Flour Pancake",
+    kfctCode: "15042"
+  },
+  {
+    id: "ke-144",
+    name: "Mkate Kuta",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a typical traditional recipe among the Kenyan Nubian’s. Mainly served as a breakfast snack, Mkate Kuta was traditionally served on the wedding day to escort the bride. It is common to this day among the Nubian’s as a snack for the entire family.",
+    preparationTime: 20,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, all-purpose", amount: "3 ½ cups (531 g)" },
+      { name: "wheat flour, self-rising", amount: "3 ½ cups (563 g)" },
+      { name: "sugar", amount: "1 ½ cups (293 g)" },
+      { name: "cooking oil", amount: "6 1/3 cups (1240 g)" },
+      { name: "cardamom powder", amount: "1 ¼ tsp. (2 g)" },
+      { name: "water", amount: "3 ½ cups (783 g)" }
+    ],
+    instructions: [
+      "Put the all-purpose flour and the self-rising flour into a pot.",
+      "Heat 1 cup of oil in a cooking pot for 5 minutes.",
+      "Add heated oil into the flour mixture gradually.",
+      "Mix sugar and cardamom powder separately and then add into the flour mixture and stir.",
+      "Heat the water for 4 minutes or until warm. Add all the water gradually while kneading.",
+      "Knead the mixture to the desired consistency or until a soft dough is achieved.",
+      "Cover the dough and set aside for 20 minutes to allow the sugar to dissolve.",
+      "Knead the dough again for sugar to mix evenly.",
+      "Divide the dough into 2 balls.",
+      "Spread it out into at least 1-inch thickness, cut it lengthways and later into small cubes.",
+      "Heat the remaining oil in a frying pan for 10 minutes or until hot.",
+      "Gently drop the pieces into the hot oil.",
+      "Cook until golden brown and turn.",
+      "Repeat this for all the pieces.",
+      "Remove from oil and place on paper towels to drain the oil. he nutrient content of this dish could not be estimated due to missing yield factors."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15135"
+  },
+  {
+    id: "ke-145",
+    name: "Tosti Mayai",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Egg on toast is a popular recipe used to enrich bread among urban dwellers. It is prepared by simply dipping bread slices on beaten egg, then frying on lightly oiled pan. Mainly serves as a breakfast item and is eaten by the entire family.",
+    preparationTime: 10,
+    cookingTime: 10,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "eggs, whole (134 g)", amount: "2" },
+      { name: "salt, iodized", amount: "1/8 tsp. (1 g)" },
+      { name: "cooking oil", amount: "1/8 cup (28 g)" },
+      { name: "bread, white (123 g)", amount: "4 slices" }
+    ],
+    instructions: [
+      "Break eggs into a clean bowl, add salt and beat.",
+      "Heat a wide pan for 1 minute on high heat.",
+      "Put oil and spread it into the pan. Heat the oil for",
+      "1 minute.",
+      "Dip bread slices into the eggs, turn to coat both sides of each slice.",
+      "Gently place all the egg-soaked bread slices onto the greased pan.",
+      "Cook each side for 1 minute.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Egg Toast",
+    kfctCode: "15028"
+  },
+  {
+    id: "ke-146",
+    name: "Oatmeal",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "This quick to prepare recipe, is eaten mainly for breakfast and is common among urban dwellers. It is eaten by the entire family.",
+    preparationTime: 5,
+    cookingTime: 5,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "oats", amount: "1 cup (119 g)" },
+      { name: "water", amount: "2 1/3 cups (529 g)" },
+      { name: "salt, iodized", amount: "¼ tsp. (1 g)" }
+    ],
+    instructions: [
+      "Put the whole amount of oats and all the water into a pot and place on the stove.",
+      "Add a little salt to taste. Bring to boil while stirring continuously.",
+      "Boil for 1 minute, remove from heat and cover.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.0,
+      fat: 0.13,
+      carbs: 0.03,
+      fiber: 0.2
+    },
+    region: "Nationwide",
+    kfctCode: "15122"
+  },
+  {
+    id: "ke-147",
+    name: "Chai ya Maziwa",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "This is the most popular non-alcoholic beverage in Kenya. Enriched with fresh milk, it is drunk as a break- fast beverage and enjoyed by the entire family.",
+    preparationTime: 5,
+    cookingTime: 60,
+    servings: 17,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "water", amount: "13 cups (2968 g)" },
+      { name: "cow milk", amount: "4 ½ cups (1020 g)" },
+      { name: "sugar", amount: "¾ cup (139 g)" },
+      { name: "tea leaves", amount: "3 tbsp. (12 g)" }
+    ],
+    instructions: [
+      "Bring all the water to a boil.",
+      "Add the tea leaves and continue to cook for 5 minutes.",
+      "Add milk and bring to a boil.",
+      "Add sugar, stir and bring to a boil.",
+      "Turn off the heat and sieve.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 14,
+      protein: 6.0,
+      fat: 0.0,
+      carbs: 0.0,
+      fiber: 0.0
+    },
+    region: "Nationwide",
+    swahiliName: "Mixed Tea",
+    kfctCode: "15081"
+  },
+  {
+    id: "ke-148",
+    name: "Vimumunya vya Chumvi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "“Vimumunya” is a Swahili word that connotes the way this dish is eaten. It is a pumpkin meal that is com- mon among communities at the coastal region particularly among the Mijikenda community. It is served as a main course among the Mijikenda and as a dessert among the Bajuni community.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "salt, iodized", amount: "1 tsp. (6 g)" },
+      { name: "coconut milk", amount: "1 1/8 cups (253 g)" },
+      { name: "water", amount: "1 cup (223 g)" }
+    ],
+    instructions: [
+      "Peel the pumpkin and cut into chunks.",
+      "Put pumpkin into a pot, add all the water and start cooking.",
+      "Add salt and bring to boil for 15 minutes.",
+      "Add coconut milk and boil for 5 minutes.",
+      "Remove from heat.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 176,
+      protein: 1057.0,
+      fat: 0.05,
+      carbs: 0.05,
+      fiber: 0.6
+    },
+    region: "Nationwide",
+    swahiliName: "Pumpkin & Coconut Milk",
+    kfctCode: "15064"
+  },
+  {
+    id: "ke-149",
+    name: "Maize Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "Whole maize flour has been used for many years by many communities in Kenya to prepare porridge. Enriched with milk, it also serves as an infant dish.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "whole maize flour,", amount: "1 ¾ cups (236 g)" },
+      { name: "water", amount: "7 cups (1513 g)" },
+      { name: "cow milk", amount: "1½ cups (330 g)" }
+    ],
+    instructions: [
+      "Put 5 cups of the water into the cooking pot, cover and heat until it boils.",
+      "Meanwhile mix the maize flour with 2 cups cold water separately. Use cold water to avoid forming lumps.",
+      "Stir until smooth.",
+      "Add the mixture into boiling water while stirring and continue stirring to avoid forming lumps.",
+      "Allow to cook for 3 minutes.",
+      "Add milk and cook for a further 7 minutes.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Uji wa Mahindi",
+    kfctCode: "15001"
+  },
+  {
+    id: "ke-150",
+    name: "Sorghum, Finger Millet and Maize Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "This recipe is made from a mixture of 3 grains ground together into flour. It is rich in nutrients and is en- riched with milk. Popular among many households in Kenya as a family dish, the porridge, serves infants/",
+    preparationTime: 5,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "sorghum flour, whole", amount: "8 tbsp. (83 g)" },
+      { name: "finger millet flour,", amount: "6 ½ tbsp. (68 g)" },
+      { name: "maize flour, whole,", amount: "8 ¼ tbsp. (82 g)" },
+      { name: "cow milk", amount: "1 2/3 cups (366 g)" },
+      { name: "water", amount: "7 ¼ cups (1833 g)" }
+    ],
+    instructions: [
+      "Mix the whole maize flour, sorghum flour and finger millet into a bowl.",
+      "Add 2 cups of cold water into the flour mixture, stir until smooth using a wooden cooking stick.",
+      "Bring 5 cups of water to boil in a cooking pot.",
+      "After the water has boiled, add the mixture as you stir. Keep stirring to avoid forming lumps.",
+      "Add milk after 10 minutes of cooking.",
+      "Keep stirring until cooked. If the porridge is too thick add a little water (¼ cup) or until desired consistency is achieved.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15002"
+  },
+  {
+    id: "ke-151",
+    name: "Cassava Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "The ancient cassava has been a traditional staple in most Kenyan communities, particularly Western and Coastal regions. Dried and ground into fine flour, cassava makes refreshing porridge for the entire family.",
+    preparationTime: 2,
+    cookingTime: 20,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cassava flour", amount: "10 tbsp. (100 g)" },
+      { name: "sugar", amount: "2 tbsp. (22 g)" },
+      { name: "water", amount: "8 ½ cups (1840 g)" }
+    ],
+    instructions: [
+      "Boil 6 cups of water in a pot for 6 minutes.",
+      "In a separate bowl, add 2 ½ cups of water to the cassava flour and mix to a medium paste.",
+      "Add the paste to the boiling water and stir continuously until the mixture boils to prevent lumps.",
+      "Continue boiling for 13 minutes and add sugar.",
+      "Stir, remove and serve the porridge."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Uji wa Muhogo",
+    kfctCode: "15013"
+  },
+  {
+    id: "ke-152",
+    name: "Finger Millet Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "This porridge is made from the tiny finger millet grain best known for its characteristic brown colour and good source of fibre. It is common in Western and Eastern parts of Kenya. This porridge is prepared from carefully cleaned and dried finger millet grains. It is commonly enriched with milk or sugar and serves children and adults alike.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "finger millet flour, whole", amount: "1 cup (123 g)" },
+      { name: "sugar, white", amount: "2 ½ tbsp. (35 g)" },
+      { name: "water", amount: "7 cups (1509 g)" }
+    ],
+    instructions: [
+      "Boil 5 cups of water in a pot.",
+      "In a separate bowl, add 2 cups of water to the finger millet flour and mix to a medium paste.",
+      "Add the paste to the boiling water and stir to prevent lumps from forming (do this until the mixture boils).",
+      "Leave to boil for 5 minutes and add sugar.",
+      "Stir, remove and serve the porridge."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Uji wa Wimbi",
+    kfctCode: "15014"
+  },
+  {
+    id: "ke-153",
+    name: "Bulrush Millet Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "This recipe is common among the Bantu communities particularly in Eastern part of Kenya. Bulrush millet is a rich grain. Its porridge was traditionally a special treat during passage rites ceremonies for young boys. In modern times, this porridge is consumed by both children and adults.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "bulrush millet flour", amount: "1 1/3 cups (176 g)" },
+      { name: "sugar", amount: "2 tbsp. (29 g)" },
+      { name: "water", amount: "4 1/3 cups (940 g)" }
+    ],
+    instructions: [
+      "Put 3 1/3 cups of water in a pot and bring to a boil.",
+      "In a separate bowl, add 1 cup of water to bulrush millet flour. Stir to a smooth light consistency.",
+      "Add the paste/ mixture to the boiling water while stirring to prevent lumps. Stir until the mixture starts to boil.",
+      "Add sugar after 5 minutes and continue stirring.",
+      "Cook for 13 minutes and then remove from fire."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Uji wa Mawele",
+    kfctCode: "15015"
+  },
+  {
+    id: "ke-154",
+    name: "Rice Flour Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "Rice flour porridge is a native infant porridge among the Swahilis in Kenya. It is wonderfully flavoured and enriched with coconut milk.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "rice flour", amount: "1 cup (140 g)" },
+      { name: "sugar", amount: "3 ½ tbsp. (49 g)" },
+      { name: "cardamom powder", amount: "½ tsp. (1 g)" },
+      { name: "coconut milk", amount: "2/3 cup (140 g)" },
+      { name: "water", amount: "8 1/8 cups (1780 g)" }
+    ],
+    instructions: [
+      "In a pot, mix 6 cups of water with cardamom powder and bring the mixture to a boil for 5 minutes.",
+      "In a separate bowl, add 2 cups of water to the rice flour and mix to a smooth paste.",
+      "Add the paste to the boiling water gradually and stir continuously to prevent lumps.",
+      "Cook while stirring for 3 minutes then add the coconut milk.",
+      "Stir and add sugar.",
+      "Add 1/8 cup of water while stirring to a smooth medium consistency for 3 minutes.",
+      "Remove from heat."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Uji wa Mchele",
+    kfctCode: "15016"
+  },
+  {
+    id: "ke-155",
+    name: "Cassava, Millet & Sorghum Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "This recipe is common among communities that grow cassava. Dried and ground cassava is mixed with sorghum and millet flour to prepare the porridge. It is considered a family dish.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cassava flour", amount: "1/3 cup (46 g)" },
+      { name: "red sorghum flour", amount: "2 ½ tbsp. (26 g)" },
+      { name: "finger millet flour", amount: "2 ½ tbsp. (25 g)" },
+      { name: "sugar", amount: "3 tbsp. (46 g)" },
+      { name: "water", amount: "7 ½ cups (1607 g)" }
+    ],
+    instructions: [
+      "Blend the cassava, red sorghum and finger millet flour evenly.",
+      "Add 1 ½ cups of water to the blended flours gradually to a medium consistency.",
+      "In a separate pot, bring 6 cups of water to a boil.",
+      "Add the paste to the boiling water and stir until the mixture thickens and starts to bubble to prevent lumps from forming.",
+      "Add sugar, stir and leave it to boil for 10 minutes.",
+      "Remove from fire and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15012"
+  },
+  {
+    id: "ke-156",
+    name: "Finger Millet and Sorghum Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "A mixture of sorghum and finger millet grains provides a classic blend of nutrients in the porridge. Some- times this porridge is enriched with sugar and milk. An excellent complementary food option in most com- munities in Kenya.",
+    preparationTime: 5,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "finger millet flour", amount: "1 cup (128 g)" },
+      { name: "sorghum flour", amount: "5½ tbsp. (56 g)" },
+      { name: "milk", amount: "3 1/3 cups (749 g)" },
+      { name: "water", amount: "3 1/3 cups (733 g)" }
+    ],
+    instructions: [
+      "Boil 3 cups of the water in a pot.",
+      "Mix the finger millet and the sorghum flour in a bowl, add 1 ½ cups of milk and stir to attain a smooth consistency without lumps.",
+      "Add the mixture into the boiling water and stir continuously until it boils.",
+      "Add the rest of the milk and water.",
+      "Continue cooking while stirring until ready (8-10 minutes).",
+      "Remove from heat."
+    ],
+    nutritionFacts: {
+      calories: 23,
+      protein: 10.0,
+      fat: 0.02,
+      carbs: 0.14,
+      fiber: 0.4
+    },
+    region: "Nationwide",
+    kfctCode: "15119"
+  },
+  {
+    id: "ke-157",
+    name: "Oat Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "Oat porridge provides a high satiety value to the family. Mainly an urban dish, it is growing in popularity as an infant dish but also serves as a breakfast option for adults.",
+    preparationTime: 5,
+    cookingTime: 10,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "oatmeal flour", amount: "5 tbsp. (107 g)" },
+      { name: "sugar", amount: "½ cup (105 g)" },
+      { name: "water", amount: "4 ½ cups (990 g)" },
+      { name: "cow milk", amount: "1½ cups (331 g)" }
+    ],
+    instructions: [
+      "Put 1 ½ cups of water into a cup, add oat flour and stir to a smooth consistency.",
+      "Put the rest of the water in a pot and bring to boil.",
+      "Add the flour mixture into the boiling water and stir.",
+      "Continue stirring while cooking for 2 minutes.",
+      "Add milk and heat while stirring for 7 minutes.",
+      "Add sugar and stir to mix.",
+      "Remove and serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 11,
+      protein: 5.0,
+      fat: 0.05,
+      carbs: 0.08,
+      fiber: 0.1
+    },
+    region: "Nationwide",
+    swahiliName: "Uji wa Shayiri",
+    kfctCode: "15123"
+  },
+  {
+    id: "ke-158",
+    name: "“Busara”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "A typically traditional recipe among the Kuria’s, Busara is a very special porridge. Prepared from keenly sprouted finger millet grains, Busara has a distinct flavour and is served traditionally in a gourd. It is given as a special drink to lactating mothers. To date, Busara is the king of porridge in Kuria.",
+    preparationTime: 5,
+    cookingTime: 120,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "maize flour, whole, white", amount: "1 cup (130 g)" },
+      { name: "finger millet flour", amount: "2 1/8 cups (273 g)" },
+      { name: "sprouted finger millet flour", amount: "1 ½ cups (194 g)" },
+      { name: "water", amount: "20 ½ cups (4455 g)" }
+    ],
+    instructions: [
+      "Heat 1 ½ cups of water.",
+      "Put the sprouted finger millet flour and 1 ½ cups of hot water. Swirl the mixture and cover for 5 minutes.",
+      "Mix the remaining dry ingredients (pure finger millet flour and whole maize flour).",
+      "Add 6 cups of water into the dry ingredients and stir to achieve a smooth paste.",
+      "In a cooking pot, add the rest of the water (13 cups) and bring to a boil.",
+      "Add the paste into the boiling water, stir and bring to a boil. Cook for 2 minutes.",
+      "Add the cooked porridge mixture to the sprouted millet mixture in the gourd and stir.",
+      "Cover the gourd and set it aside for 1 hour 30 minutes.",
+      "Serve cold."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Whole Maize and Finger Millet Porridge",
+    kfctCode: "15018"
+  },
+  {
+    id: "ke-159",
+    name: "Wheat Flour Porridge",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "The Nubian community in Kenya consider this recipe special to infant feeding. It is enriched with peanut butter and sugar to give a smooth sweet taste.",
+    preparationTime: 5,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, refined", amount: "¾ cup (112 g)" },
+      { name: "water", amount: "6 cups (1286 g)" },
+      { name: "sugar", amount: "2/3 cup (135 g)" },
+      { name: "peanut butter", amount: "½ cup (119 g)" }
+    ],
+    instructions: [
+      "Put 4 cups of water into a pot and bring to a boil.",
+      "Mix the wheat flour and 1 ½ cups of water in a separate bowl to a smooth consistency.",
+      "Add flour mixture into the boiling water and stir until it starts to bubble.",
+      "Mix the peanut butter with ½ cup of water and add gradually into the boiling porridge while stirring.",
+      "Boil for 3 minutes and add sugar.",
+      "Simmer for 4 minutes and serve."
+    ],
+    nutritionFacts: {
+      calories: 7,
+      protein: 0.0,
+      fat: 0.11,
+      carbs: 0.05,
+      fiber: 1.4
+    },
+    region: "Nationwide",
+    swahiliName: "Uji wa Ngano",
+    kfctCode: "15136"
+  },
+  {
+    id: "ke-160",
+    name: "Pilau",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Pilau is the king of traditional rice cuisine among the Swahili community. Culturally, it is a must cook dish on Friday particularly during lunch. It is enjoyed by the entire family and often served with tomatoes, on- ions and chillies salad commonly known as (“kachumbari” or salsa) and accompanied with a ripe banana. This tastefully spiced dish is characterized by whole potatoes and meat chunks as key ingredients.",
+    preparationTime: 20,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "raw white rice", amount: "3 1/3 cups (595 g)" },
+      { name: "beef", amount: "½ kg" },
+      { name: "seeds (1 g) cardamom, whole", amount: "10" },
+      { name: "cinnamon, whole", amount: "5 sticks (3 g)" },
+      { name: "seeds (1 g) black pepper, whole", amount: "5" },
+      { name: "seeds (1 g) cloves, whole", amount: "5" },
+      { name: "salt, iodized", amount: "6 tsp. (30 g)" },
+      { name: "cumin", amount: "2 tbsp. (11 g)" },
+      { name: "potatoes, unpeeled, raw (840 g)", amount: "4" },
+      { name: "onions, red skinned, unpeeled, raw (387 g)", amount: "3" },
+      { name: "garlic, whole", amount: "5 cloves (17 g)" },
+      { name: "root (23 g) ginger", amount: "1" },
+      { name: "green capsicum (115 g)", amount: "½" },
+      { name: "coriander, fresh", amount: "62 g" },
+      { name: "water", amount: "8 ¼ cups (1788 g)" },
+      { name: "cooking oil", amount: "1 ½ cups (293 g)" }
+    ],
+    instructions: [
+      "Cut meat into medium size chunks.",
+      "Boil the meat in a large cooking pot with all the water for 30 minutes, drain the water and set both meat and water aside.",
+      "Prepare and chop onions and potatoes, grate capsicum, pound coriander, crush garlic and ginger.",
+      "Place each prepared ingredient in small separate bowls.",
+      "Toast cumin seeds under medium heat on a dry pan until they start to brown. Remove from the heat and grind.",
+      "Toast cardamom, cinnamon, cloves and black pepper together until they produce an aroma.",
+      "Grind them.",
+      "Put oil into the pan used to boil the meat.",
+      "Add onions into the hot oil and cook for 5 minutes until they brown (a golden-brown colour).",
+      "Add ginger and garlic. Stir.",
+      "Add all browned spices; cumin, black pepper, cloves, cinnamon, cardamom after 3 minutes.",
+      "Add capsicum, coriander and potatoes after 1 minute and stir. Meanwhile, wash the rice.",
+      "Add rice and salt after 3 minutes and stir in to properly mix the ingredients.",
+      "Add water drained from boiling the meat, stir the rice and bring the mixture to boil for 25 minutes.",
+      "Add the cooked meat to the boiling mixture.",
+      "Cook for 30 minutes and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Spiced Rice",
+    kfctCode: "15036"
+  },
+  {
+    id: "ke-161",
+    name: "Mseto wa Maharagwe",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "“Mseto wa Maharagwe” is the Swahili name for rice that is made with beans in one pot. It is a common recipe among many communities in Kenya. Mainly prepared as a main meal during lunch time, it is eaten by the whole family. Sometimes, this dish is eaten for supper.",
+    preparationTime: 165,
+    cookingTime: 225,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "kidney beans, raw", amount: "3 cups (505 g)" },
+      { name: "water", amount: "21 ¼ cups (4600 g)" },
+      { name: "raw white rice, long grain", amount: "4 cups (684 g)" },
+      { name: "onion, red skinned, raw, unpeeled", amount: "1 large" },
+      { name: "tomatoes, red, ripe, raw (226 g)", amount: "2" },
+      { name: "cooking oil", amount: "1 ¼ cups (238 g)" },
+      { name: "salt", amount: "2 tbsp. (27 g)" }
+    ],
+    instructions: [
+      "Soak the beans in 13 ¼ cups of water for 2 hours",
+      "35 minutes.",
+      "Boil the soaked beans for 3 hours.",
+      "Peel, wash and cut onions and tomatoes separate-",
+      "Fry the onions in cooking oil until golden-brown, add the tomatoes until they have cooked down to a paste.",
+      "Add salt to taste.",
+      "Add the previously boiled beans and stir until evenly mixed and well coated with the tomatoes.",
+      "Add 8 cups of water and let it boil.",
+      "Wash rice until water runs clear.",
+      "Add rice. When it starts boiling, reduce fire and let it cook on low heat for 20 minutes.",
+      "Remove and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Rice with Beans",
+    kfctCode: "15038"
+  },
+  {
+    id: "ke-162",
+    name: "Mseto wa Ndengu",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This recipe is named in Swahili “Mseto wa Ndengu” meaning a mix of green grams and rice. It is uniquely prepared using freshly squeezed coconut milk. Very popular in the Kenyan coastal region, it is served to infants and adults alike as a main meal during lunch or dinner. In other communities, this recipe is pre- pared without coconut milk.",
+    preparationTime: 15,
+    cookingTime: 90,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "raw white rice", amount: "3 ½ cups (621 g)" },
+      { name: "green grams", amount: "1 ¼ cups (242 g)" },
+      { name: "coconut milk", amount: "¾ cup (180 g)" },
+      { name: "onion, red skinned, raw, unpeeled (77", amount: "1" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "water", amount: "13 cups (2832 g)" }
+    ],
+    instructions: [
+      "Boil the green grams in 6 cups of water for 1 hour and set aside.",
+      "Prepare and finely chop the onions.",
+      "In a separate cooking pot, add 7 cups of water.",
+      "Add chopped onion and salt to the water and bring to a boil for 10 minutes.",
+      "Add the rice to the boiling mixture and cook until the water starts to dry up.",
+      "Add the green grams and reduce heat. Cook for 8 minutes.",
+      "Add the coconut milk and stir after 2 minutes.",
+      "Leave covered over very low heat to dry for 10 minutes.",
+      "Turn off the heat and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Rice with Green Grams",
+    kfctCode: "15037"
+  },
+  {
+    id: "ke-163",
+    name: "Swahili Biryani Rice",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is common among the Swahili community in Kenya. The cuisine is also meat based and special emphasis is given to finding the right kinds of rice, spices, meat and herbs. It is simply steamed rice eaten with Biryani stew. It is particularly made using the fragrant species of rice. This colourful dish can be served for lunch, dinner or during wedding occasions.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "raw white rice", amount: "5 3/4 cups (1 kg)" },
+      { name: "water", amount: "8 2/3 (1874 g)" },
+      { name: "food colour powder, egg yellow", amount: "1 g" },
+      { name: "salt, iodized", amount: "2 tsp. (10 g)" },
+      { name: "cooking oil", amount: "7 tbsp. (85 g)" }
+    ],
+    instructions: [
+      "Take out 2 tablespoons of water and put the rest of the water into a cooking pot, add salt and bring to a boil.",
+      "Wash the rice and add into the boiling water. Cover to cook for 10 minutes.",
+      "Meanwhile mix the food colour in the 2 tablespoons of water.",
+      "Add oil and cook for another 2 minutes.",
+      "Add the food colour and simmer for 13 minutes.",
+      "Remove from heat.",
+      "Serve with biryani stew."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15066"
+  },
+  {
+    id: "ke-164",
+    name: "Wali wa Kuchemshwa",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "One of the simplest ways that rice is cooked in Kenya is by boiling. This recipe is common in different communities in Kenya. It is eaten by the entire family often accompanied by a protein rich stew and vege-",
+    preparationTime: 15,
+    cookingTime: 40,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "raw white rice", amount: "5 2/3 cups (1 kg)" },
+      { name: "salt, iodized", amount: "3 tsp. (15 g)" },
+      { name: "cooking oil", amount: "¼ cup (50 g)" },
+      { name: "water", amount: "9 cups (1954 g)" }
+    ],
+    instructions: [
+      "Sort and wash the rice.",
+      "In a cooking pot, boil all the water for 2 minutes.",
+      "Add salt and rice. Stir and boil for 10 more minutes.",
+      "Reduce the heat and cover to simmer for 16 minutes.",
+      "Add cooking oil to the rice and stir.",
+      "Cover the rice and allow to simmer until it is ready.",
+      "Cover with aluminium foil.",
+      "Remove from the heat when ready and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.0,
+      fat: 0.02,
+      carbs: 0.04,
+      fiber: 0.4
+    },
+    region: "Nationwide",
+    swahiliName: "Boiled Rice",
+    kfctCode: "15074"
+  },
+  {
+    id: "ke-165",
+    name: "Wali wa Yasmin",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Commonly known as Wali wa Yasmin, this recipe is typical to the Swahili community. It is mainly prepared during special occasions. It is usually served as a main course accompanied by a variety of stews or broths. It is enjoyed by the whole family.",
+    preparationTime: 35,
+    cookingTime: 45,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "raw white rice", amount: "5 cups (898 g)" },
+      { name: "onions, red skinned, raw, unpeeled (335g)", amount: "4" },
+      { name: "cooking oil", amount: "2/3 cup (134 g)" },
+      { name: "salt, iodized", amount: "3 tsp. (15 g)" },
+      { name: "water", amount: "7 ½ cups (1622 g)" }
+    ],
+    instructions: [
+      "Wash the rice and soak in 2 cups of water for 30 minutes. Drain and discard the water.",
+      "Peel, wash and chop the onions and fry them in a separate pan until golden brown.",
+      "Boil 5 ½ cups of water in a pot.",
+      "Add salt and the rice into the boiling water. Cover to cook for 10 minutes.",
+      "Add onions with the oil with which it was fried in to the rice.",
+      "Cover with aluminium foil and simmer for 11 minutes.",
+      "Remove from fire."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 1.0,
+      fat: 0.02,
+      carbs: 0.05,
+      fiber: 0.5
+    },
+    region: "Nationwide",
+    swahiliName: "Onion Fried Rice",
+    kfctCode: "15075"
+  },
+  {
+    id: "ke-166",
+    name: "Mseto wa Viazi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a common recipe among Kenyan communities particularly those living in the agricultural areas. It is eaten as a main dish and can be accompanied by a vegetable side dish. Mseto wa viazi is a very basic rice dish and is loved for its ease of preparation. It is normally eaten by the entire family and serves as an infant dish as well.",
+    preparationTime: 10,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, Irish, white, raw (468 g)", amount: "5" },
+      { name: "carrots, orange, raw (379 g)", amount: "3" },
+      { name: "onions, red skinned, raw, unpeeled (205 g)", amount: "2" },
+      { name: "tomatoes, red, ripe (240 g)", amount: "3" },
+      { name: "cooking fat", amount: "6 tbsp. (63 g)" },
+      { name: "raw white rice", amount: "5 cups (882 g)" },
+      { name: "water", amount: "11 1/3 cups (2412 g)" },
+      { name: "salt, iodized", amount: "2 tsp. (9 g)" }
+    ],
+    instructions: [
+      "Peel, wash and cut the potatoes into cubes.",
+      "Peel, wash and chop the onions; wash and cut the tomatoes.",
+      "Peel, wash and grate the carrots.",
+      "Heat the oil in a cooking pot, add the onions and cook until golden brown.",
+      "Add tomatoes, salt and stir; cook until tender.",
+      "Add potatoes and stir. Add 1 1/3 cups of water; bring it to a boil.",
+      "Add the grated carrots after 6 minutes.",
+      "Add rest of water (10 cups), stir and bring the mixture to a boil.",
+      "Wash the rice and set aside.",
+      "Add the rice to the boiling mixture and stir.",
+      "Leave the mixture to boil until all the water dries up."
+    ],
+    nutritionFacts: {
+      calories: 4,
+      protein: 23.0,
+      fat: 0.02,
+      carbs: 0.03,
+      fiber: 0.4
+    },
+    region: "Nationwide",
+    swahiliName: "Potatoes in rice",
+    kfctCode: "15094"
+  },
+  {
+    id: "ke-167",
+    name: "Steamed Rice",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "The special step of soaking rice in this recipe gives a deliciously fluffy dish. Steamed rice is usually accom- panied by a variety of stews including legume based stews. It is common among Kenyan Indians and the Swahilis. Usually eaten by the entire family and can serve as part of infant feeding.",
+    preparationTime: 35,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "raw white rice", amount: "1 cup (193 g)" },
+      { name: "water", amount: "4 2/3 cups (1015 g)" },
+      { name: "salt, iodized", amount: "2 tsp. (9 g)" }
+    ],
+    instructions: [
+      "Sort and soak the rice in 2 cups of water for 30 minutes.",
+      "Drain and discard the water.",
+      "Put the soaked rice into a cooking pot, add the rest of the water (2 2/3 cups) and salt.",
+      "Bring to a boil and cook for 20 minutes.",
+      "Drain the water when the rice is semi-cooked.",
+      "Steam for 10 minutes on low heat.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.0,
+      fat: 0.02,
+      carbs: 0.04,
+      fiber: 0.4
+    },
+    region: "Nationwide",
+    swahiliName: "Wali wa Mvuke",
+    kfctCode: "15129"
+  },
+  {
+    id: "ke-168",
+    name: "Mcheleng",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This creamy smooth dish is unique to the Kalenjin community and is commonly known as ‘mcheleng’. It is made with milk and milk cream. Loved for its convenience, it is enjoyed by the entire family but mainly a delicacy for children. It is eaten mainly as a lunch or dinner dish often accompanied by a meat or legume",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "raw white rice", amount: "2 ¾ cups (500 g)" },
+      { name: "water", amount: "2 ¼ cups (488 g)" },
+      { name: "milk, cow", amount: "2 ¼ cups (541 g)" },
+      { name: "milk cream, cow", amount: "1 ¼ cups (284 g)" },
+      { name: "salt, iodized", amount: "1 tbsp. (14 g)" }
+    ],
+    instructions: [
+      "Put milk, all the water and cream into a cooking pot.",
+      "Add salt and bring the mixture to a boil.",
+      "Add rice and cook for 20 minutes or until all the liquid dries up.",
+      "Remove from heat and cover.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 47,
+      protein: 27.0,
+      fat: 0.02,
+      carbs: 0.14,
+      fiber: 0.3
+    },
+    region: "Nationwide",
+    swahiliName: "Rice with milk",
+    kfctCode: "15116"
+  },
+  {
+    id: "ke-169",
+    name: "Mukimo",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a common dish among the Kikuyu, Meru and Embu communities. Often eaten for lunch or dinner, it can be served with meat stew. This dish is served as a main meal to the whole family.",
+    preparationTime: 15,
+    cookingTime: 75,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, Irish, raw (876g)", amount: "6" },
+      { name: "bunches (31 g) pumpkin leaves", amount: "4" },
+      { name: "green maize, white, boiled", amount: "2 ½ cups (479 g)" },
+      { name: "water", amount: "2 cups (453 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" }
+    ],
+    instructions: [
+      "Peel the potatoes and wash.",
+      "Wash the pumpkin leaves and chop finely.",
+      "Put 2 cups of water into a pot. Add the potatoes, pumpkin leaves and salt.",
+      "Cover the pot and boil the mixture for 20 minutes.",
+      "Add the boiled maize and cover to cook for 10 minutes.",
+      "Remove from fire and mash to serve."
+    ],
+    nutritionFacts: {
+      calories: 27,
+      protein: 163.0,
+      fat: 0.09,
+      carbs: 0.06,
+      fiber: 1.2
+    },
+    region: "Nationwide",
+    swahiliName: "Fresh Maize, Potatoes & Pumpkin Leaves",
+    kfctCode: "15057"
+  },
+  {
+    id: "ke-170",
+    name: "Mukimo wa Njahi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a delicacy among the Kikuyu community particularly in Nyeri. Commonly referred to as “Mukimo wa Njahi”, this dish was traditionally prepared for lactating mothers and during occasions like dowry cere- monies. In modern times it remains important as a family dish mainly served during lunch or dinner.",
+    preparationTime: 20,
+    cookingTime: 240,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, Irish, raw", amount: "6 (1.2 kg)" },
+      { name: "green bananas, unpeeled, raw (1 kg)", amount: "6" },
+      { name: "njahi, dolichos lablab,", amount: "2 ½ cups (497 g)" },
+      { name: "water", amount: "25 ¾ cups (5611 g)" },
+      { name: "salt, iodized", amount: "4 tsp. (20 g)" }
+    ],
+    instructions: [
+      "Boil 2 ½ cups of njahi (dolichos lablab) in 21 cups of water for 3 hours.",
+      "Peel and wash the potatoes and green bananas in separate bowls, chop them.",
+      "Put the rest of the water into a separate cooking pot.",
+      "Add the chopped potatoes, green bananas and salt.",
+      "Boil for 10 minutes.",
+      "Add the cooked black beans, cover and cook for 20 minutes.",
+      "Remove from fire and mash."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.2,
+      fat: 0.08,
+      carbs: 1.2,
+      fiber: 19.0
+    },
+    region: "Nationwide",
+    swahiliName: "Black Beans, Green Bananas & Potatoes",
+    kfctCode: "15059"
+  },
+  {
+    id: "ke-171",
+    name: "Mashed Potato and Bananas",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This recipe is common among the Kisii, Kikuyu and Meru communities due to the abundance of the ba- nanas and potatoes in these communities. Sometimes it serves as an infant dish. When served as a main family dish, it can be eaten with a variety of stews or just a vegetable dish.",
+    preparationTime: 10,
+    cookingTime: 45,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, white, Irish,", amount: "14 large" },
+      { name: "bananas, raw, unpeeled (1.2 kg)", amount: "7" },
+      { name: "onion, red skinned, raw, unpeeled (134 g)", amount: "1" },
+      { name: "tomatoes, red, raw (321 g)", amount: "3" },
+      { name: "cooking fat", amount: "1 ¼ cups (186 g)" },
+      { name: "salt, iodized", amount: "2 tbsp. (35 g)" },
+      { name: "water", amount: "3 1/3 cups (734 g)" }
+    ],
+    instructions: [
+      "Peel, wash the potatoes and bananas into separate bowls.",
+      "Peel, wash and chop the onion. Wash and cut the tomatoes.",
+      "Heat the cooking fat in a pan. Add the onion into the pan and cook until golden brown.",
+      "Add tomatoes and stir until the tomatoes are cooked or tender",
+      "Cut the potatoes and bananas and add into the cooking pot.",
+      "Add salt, cover and keep stirring at intervals.",
+      "Add all the water and bring to a boil.",
+      "Cook until the potatoes and the green bananas are tender.",
+      "Mash to a smooth consistency and serve while food hot."
+    ],
+    nutritionFacts: {
+      calories: 8,
+      protein: 49.0,
+      fat: 0.06,
+      carbs: 0.04,
+      fiber: 0.9
+    },
+    region: "Nationwide",
+    kfctCode: "15061"
+  },
+  {
+    id: "ke-172",
+    name: "Mushenye",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is typical to the Luhya community. It is served as a main dish during lunch or dinner. Traditionally it was eaten plain but can be served with. It usually served with tea.",
+    preparationTime: 20,
+    cookingTime: 280,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beans, kidney, dry", amount: "3 ¾ cups (757 g)" },
+      { name: "cobs (917 g) green maize, with husks", amount: "2" },
+      { name: "sweet potatoes, unpeeled, pink skin,", amount: "4" },
+      { name: "salt, iodized", amount: "4 tsp. (20 g)" },
+      { name: "peanut butter", amount: "1 1/3 cups (323 g)" },
+      { name: "water", amount: "30 cups (6501 g)" }
+    ],
+    instructions: [
+      "Boil beans for 2 hours in 21 cups of water.",
+      "Remove husks and shell the maize grains into a bowl.",
+      "Add the green maize and 4 cups of water to the cooked beans.",
+      "Let the maize boil until it is cooked for about 1 hour.",
+      "Meanwhile peel and wash the sweet potatoes.",
+      "Add sweet potatoes, peanut butter, salt and the rest of the water.",
+      "Cook the sweet potatoes in the maize-bean mixture for 1 hour 15 minutes.",
+      "Once cooked, mash, remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 3,
+      protein: 16.0,
+      fat: 0.15,
+      carbs: 0.07,
+      fiber: 1.6
+    },
+    region: "Nationwide",
+    swahiliName: "Green Maize and Sweet Potatoes",
+    kfctCode: "15069"
+  },
+  {
+    id: "ke-173",
+    name: "Wukunu",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Wukunu is a traditional dish common in Taita community. It was commonly served during ceremonies such as burials, weddings, or other special occasions. Traditionally, it was eaten without any accompaniment. The modern practice incorporates some vegetables or salad.",
+    preparationTime: 15,
+    cookingTime: 150,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "black beans, dolichos", amount: "2¼ cups (384 g)" },
+      { name: "sweet potatoes, unpeeled, pink skin,", amount: "7" },
+      { name: "water", amount: "13½ cups (2946 g)" },
+      { name: "salt, iodized", amount: "2 tsp. (11 g)" }
+    ],
+    instructions: [
+      "Sort the black beans and wash.",
+      "Boil the beans in 9 cups of water for 1 hour 20 minutes (or until almost cooked).",
+      "While the beans boil, peel the sweet potatoes and set aside covered with water.",
+      "Remove the boiled beans from fire and set aside to cool.",
+      "Once cool enough to handle, shell the beans",
+      "(remove the outer skin)/ you can also blanch after cooling the beans to make shelling easier.",
+      "Put the shelled black beans into a pot, add 4 ½ cups of water and boil for 4 minutes.",
+      "Add the peeled sweet potatoes, salt and boil for 50 minutes or until the sweet potatoes are tender",
+      "Remove from fire and mash to a smooth consisten-",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 1,
+      protein: 8.0,
+      fat: 0.1,
+      carbs: 0.04,
+      fiber: 0.7
+    },
+    region: "Nationwide",
+    swahiliName: "Sweet Potatoes & Dehulled Black Beans",
+    kfctCode: "15068"
+  },
+  {
+    id: "ke-174",
+    name: "Kimanga cha Ndizi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Kimanga is a traditional dish in the Taita community particularly in the highland part of Taita. It is common- ly made from smoked green bananas that gives the dish its characteristic flavour. It is served during lunch or dinner as a main meal served to the entire family. Traditionally, it was preferred during drought period due to its filling effect and usually eaten plain.",
+    preparationTime: 15,
+    cookingTime: 140,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beans, kidney, dry", amount: "1 ¾ cups (310 g)" },
+      { name: "green bananas, peeled smoked (169g)", amount: "13" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" },
+      { name: "water", amount: "19 ¼ (4180 g)" }
+    ],
+    instructions: [
+      "Boil beans in all the water until they are ready.",
+      "Without draining the water used to cook the beans, add the smoked bananas, cover and cook for 10 minutes.",
+      "Add salt and stir. Cook until the bananas are soft.",
+      "Remove and mash.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Smoked Green Bananas and Kidney Beans"
+  },
+  {
+    id: "ke-175",
+    name: "Kimanga cha Mihogo",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a variant of the traditional Kimanga among the lowland Taita community and other drier parts of Taita bordering the Kamba community. It was a choice meal during drought and was liked for its filling effect. In modern times it is still common and eaten as a main meal during lunch and dinner by the entire",
+    preparationTime: 10,
+    cookingTime: 165,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cassava, unpeeled, raw", amount: "1 ½ (1.3 kg)" },
+      { name: "pigeon peas, dry, raw", amount: "3 cups (541 g)" },
+      { name: "salt, iodized", amount: "4 tsp. (20 g)" },
+      { name: "water", amount: "21 1/3 cups (4641 g)" }
+    ],
+    instructions: [
+      "Sort the pigeon peas and wash.",
+      "Boil 9 1/3 cups of water in a pot and add the pigeon peas. Boil the peas until soft or ready.",
+      "Meanwhile as the pigeon peas boil, peel and cut the cassava into a separate bowl with water.",
+      "Add 12 cups of water to the boiled peas and add the cut cassava, and cover.",
+      "Boil for 15-20 minutes and add salt.",
+      "Cover and cook until the cassava is tender and ready.",
+      "Turn off the heat and mash.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.13,
+      fat: 0.07,
+      carbs: 0.8,
+      fiber: 52.0
+    },
+    region: "Nationwide",
+    swahiliName: "Mashed Cassava and Pigeon Peas",
+    kfctCode: "15084"
+  },
+  {
+    id: "ke-176",
+    name: "Mashed Potatoes",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a typical infant dish among many Kenyan communities. It is usually mashed to a light texture and sometimes served with added milk. Sometimes a green leafy vegetable may be added and mashed to-",
+    preparationTime: 10,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, white, Irish, raw (1.25 kg)", amount: "7" },
+      { name: "water", amount: "2 ¾ cups (625 g)" },
+      { name: "salt, iodized", amount: "½ tbsp. (7 g)" }
+    ],
+    instructions: [
+      "Peel the potatoes and clean them.",
+      "Put them in a cooking pot, add salt and cover with all the water.",
+      "Bring to a boil and cook until the potatoes are ready and tender.",
+      "Drain any excess water.",
+      "Mash the potatoes to a smooth consistency and serve warm."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.0,
+      fat: 0.06,
+      carbs: 0.03,
+      fiber: 1.1
+    },
+    region: "Nationwide",
+    kfctCode: "15103"
+  },
+  {
+    id: "ke-177",
+    name: "Mashed Bananas Plain",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a typical infant dish among many Kenyan communities. It is usually mashed to a light texture and sometimes served with added milk. Sometimes a green leafy vegetable may be added and mashed to-",
+    preparationTime: 10,
+    cookingTime: 45,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "unpeeled bananas, green, raw (1 kg)", amount: "9" },
+      { name: "water", amount: "2 1/8 cups (465 g)" },
+      { name: "salt, iodized", amount: "1 tsp. (5 g)" }
+    ],
+    instructions: [
+      "Peel the bananas and clean them.",
+      "Put in a cooking pot, add all the water and salt.",
+      "Bring them to boil until the bananas are tender.",
+      "Mash and serve warm."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 2.0,
+      fat: 0.04,
+      carbs: 0.03,
+      fiber: 0.2
+    },
+    region: "Nationwide",
+    kfctCode: "15104"
+  },
+  {
+    id: "ke-178",
+    name: "Enriched Mashed Potatoes",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a typical infant dish among many Kenyan communities. It is usually mashed to a light texture and sometimes served with added milk. Sometimes a green leafy vegetable may be added and mashed to-",
+    preparationTime: 10,
+    cookingTime: 55,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, white, Irish, raw", amount: "7" },
+      { name: "water", amount: "4 2/3 cups (1007 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "margarine", amount: "6 tbsp. (76 g)" }
+    ],
+    instructions: [
+      "Peel the potatoes, wash and put into a pot.",
+      "Add all the water and bring to a boil.",
+      "Add salt and cook until the potatoes are tender and most water has evaporated. Leave a little water to help in mashing.",
+      "Add margarine.",
+      "Mash the potatoes into a smooth consistency.",
+      "Remove from heat and serve warm."
+    ],
+    nutritionFacts: {
+      calories: 54,
+      protein: 38.0,
+      fat: 0.05,
+      carbs: 0.03,
+      fiber: 0.9
+    },
+    region: "Nationwide",
+    kfctCode: "15105"
+  },
+  {
+    id: "ke-179",
+    name: "Enriched Mashed Bananas",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a typical infant dish among many Kenyan communities. It is usually mashed to a light texture and sometimes served with added milk. Sometimes a green leafy vegetable may be added and mashed to-",
+    preparationTime: 10,
+    cookingTime: 40,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "green bananas, raw, unpeeled (1.2 kg)", amount: "14" },
+      { name: "water", amount: "3 ¼ cups (702 g)" },
+      { name: "salt, iodized", amount: "¾ tsp. (4 g)" },
+      { name: "margarine", amount: "8 ½ tbsp. (113 g)" }
+    ],
+    instructions: [
+      "Peel the bananas, wash and put in a cooking pot.",
+      "Add all the water and salt.",
+      "Boil until the bananas are tender.",
+      "Add margarine.",
+      "Mash the bananas into a smooth consistency and serve warm."
+    ],
+    nutritionFacts: {
+      calories: 67,
+      protein: 48.0,
+      fat: 0.03,
+      carbs: 0.03,
+      fiber: 0.2
+    },
+    region: "Nationwide",
+    kfctCode: "15106"
+  },
+  {
+    id: "ke-180",
+    name: "Kimito",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Kimito is common among the Embu, Kikuyu and Meru communities. It is served as a main dish during lunch or dinner and enjoyed by the entire family. Traditionally, this was eaten dry but in modern day this dish is sometimes accompanied by various stews. It is also served to infants above 6 months of age.",
+    preparationTime: 10,
+    cookingTime: 180,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, Irish, white, raw", amount: "10" },
+      { name: "beans, kidney, raw, dry", amount: "3 cups (515 g)" },
+      { name: "salt, iodized", amount: "4 tsp. (21 g)" },
+      { name: "cooking oil", amount: "½ tbsp. (7 g)" },
+      { name: "water", amount: "36 1/3 cups (7898 g)" }
+    ],
+    instructions: [
+      "Sort and wash the kidney beans.",
+      "Put beans and 23 cups of water into a pot. Turn on the heat and boil until the beans are soft and ready; about 2 hours 30 minutes.",
+      "Meanwhile, peel and wash the potatoes.",
+      "Remove the boiled beans and transfer to a bowl.",
+      "Put potatoes into a pot and spread the beans on top.",
+      "Add the rest of the water and salt. Cover and cook for 50 minutes or until the potatoes are soft and tender.",
+      "Drain the excess water if necessary.",
+      "Add the cooking oil and mash the content to a smooth consistency.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 1.0,
+      fat: 0.09,
+      carbs: 0.06,
+      fiber: 1.0
+    },
+    region: "Nationwide",
+    swahiliName: "Mashed Beans & Potatoes",
+    kfctCode: "15111"
+  },
+  {
+    id: "ke-181",
+    name: "Kimanga cha Viazi Vitamu",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Kimanga is a common name for the mashed dishes among the Taita community. This recipe is particularly unique as it is a mix of sweet potato and black beans. It is usually eaten plain. It is common in both low- land and highland parts of Taita. To date, this serves as a main meal and is eaten during lunch or dinner.",
+    preparationTime: 15,
+    cookingTime: 180,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "brown skin sweet potatoes, unpeeled,", amount: "4" },
+      { name: "dolichos beans, black", amount: "2 cups (365 g)" },
+      { name: "salt, iodized", amount: "2 tsp. (11 g)" },
+      { name: "water", amount: "28 ¾ cups (6239 g)" }
+    ],
+    instructions: [
+      "Sort the black beans and wash.",
+      "Put the washed black beans into the cooking pot and boil in 18 cups of water for 2 hours or until soft.",
+      "In the meantime, peel and cut the sweet potatoes and put them in water.",
+      "Add the peeled sweet potatoes, the rest of the water and salt onto the boiled black beans, cover and boil until the sweet potatoes are properly cooked or soft.",
+      "Turn off the heat and mash.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.12,
+      fat: 0.05,
+      carbs: 0.8,
+      fiber: 9.0
+    },
+    region: "Nationwide",
+    swahiliName: "Mashed Sweet Potato & Black Beans",
+    kfctCode: "15090"
+  },
+  {
+    id: "ke-182",
+    name: "Enriched Matoke",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This a typical infant dish among the Kisii community. It is wonderfully enriched with peanut butter paste to give it a smooth taste. Infants are fed on this from the age of 6 months onwards. Sometimes, this recipe is made with some green leafy vegetables.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "green bananas, unpeeled, raw, un-", amount: "9" },
+      { name: "peanut butter", amount: "¼ cup (68 g)" },
+      { name: "salt, iodized", amount: "1 tsp. (5 g)" },
+      { name: "water", amount: "4 ½ cups (968 g)" }
+    ],
+    instructions: [
+      "Peel and wash the bananas.",
+      "Put the washed bananas into a pot, add salt and all the water, and bring to a boil.",
+      "Cook until the bananas are ready and tender.",
+      "Remove from heat; add the peanut butter and mash.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 2.0,
+      fat: 0.08,
+      carbs: 0.04,
+      fiber: 1.0
+    },
+    region: "Nationwide",
+    kfctCode: "15121"
+  },
+  {
+    id: "ke-183",
+    name: "Nyenyi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "“Nyenyi” is a traditional delicacy among the Embu community. It is made of green maize mashed with po- tatoes and pigeon peas. It is eaten during lunch and dinner by the entire family. Sometimes, the left-over of this dish is eaten as breakfast. Traditionally, this dish was eaten dry but in modern times it is eaten with variety of stews.",
+    preparationTime: 10,
+    cookingTime: 180,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "pigeon peas, dry, raw", amount: "2 ½ cups (474 g)" },
+      { name: "potatoes, unpeeled, Irish, white (1.6 kg)", amount: "6" },
+      { name: "pumpkin leaves, raw", amount: "200 g" },
+      { name: "maize cobs with kernels (750 g)", amount: "3" },
+      { name: "salt, iodized", amount: "4 tsp. (20 g)" },
+      { name: "margarine", amount: "1/3 cup (61 g)" },
+      { name: "water", amount: "30 cups (6472 g)" }
+    ],
+    instructions: [
+      "Sort and wash the pigeon peas. Put into a pot with",
+      "23 cups of water and cover.",
+      "Boil to cook for 2 hours.",
+      "Expose the maize kernels by pulling back the husks and carefully remove the silk.",
+      "Remove kernels from the cobs by hand in rows or use a corn zipper.",
+      "Wash the maize and add to the boiling pigeon peas. Continue boiling until both are tender and ready.",
+      "Remove from heat, drain any remaining water and put into a bowl.",
+      "Meanwhile, prepare and cut the potatoes.",
+      "Remove the pumpkin stalks, wash and cut the pumpkin leaves and hand blend with salt.",
+      "Put the cut potatoes, salted pumpkin leaves, followed by the boiled pigeon peas-maize mixture into a cooking pot.",
+      "Add the rest of the water, cover and cook until the potatoes are ready and soft.",
+      "Add margarine, remove from heat and mash",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 34,
+      protein: 130.0,
+      fat: 0.14,
+      carbs: 0.05,
+      fiber: 1.0
+    },
+    region: "Nationwide",
+    swahiliName: "Mashed Pigeon Peas & Green Maize",
+    kfctCode: "15118"
+  },
+  {
+    id: "ke-184",
+    name: "shir",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is typical to the Borana’s. A delicious meal of huskless maize mixed with milk. The husks are removed prior to cooking by pounding with a mortar and pestle. The mixture is boiled with added sugar and salted for a tantalizing taste.",
+    preparationTime: 10,
+    cookingTime: 135,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "pounded maize,", amount: "8 ½ cups (1536 g)" },
+      { name: "cow milk", amount: "13/4 cups (414 g)" },
+      { name: "sugar", amount: "6 ½ tbsp. (88 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (12 g)" },
+      { name: "water", amount: "29 2/3 cups (6430 g)" }
+    ],
+    instructions: [
+      "Sort and wash the pounded maize.",
+      "Put all the water in the cooking pot and add the pounded maize.",
+      "Put it on heat and boil.",
+      "Boil for 2 hours, remove from heat and strain excess water.",
+      "After draining water put back on the heat, add salt, sugar, milk and stir.",
+      "Simmer for 10 minutes and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15049"
+  },
+  {
+    id: "ke-185",
+    name: "Githeri",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Stewed fresh maize and beans is commonly known as Githeri. This is a variant of the Githeri dishes that uses fresh maize and beans. It is popular among communities in agricultural areas such as Eastern, Central and Western. This recipe is common during the season when maize and beans are green about a month to harvesting. It is usually served as a main dish in most communities and as a breakfast dish among the Luhya communities.",
+    preparationTime: 120,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "green maize cobs with kernels, (2 kgs)", amount: "4" },
+      { name: "water", amount: "9 ¼ cups (2005 g)" },
+      { name: "spring onion, unpeeled", amount: "1 stem (140 g)" },
+      { name: "cooking fat", amount: "1 ¼ cups (187 g)" },
+      { name: "salt, iodized", amount: "5 ½ tsp. (28 g)" }
+    ],
+    instructions: [
+      "Remove fresh beans from pods. Put in a bowl or container.",
+      "Remove maize cobs with kernels from the husks.",
+      "Remove maize kernels from the cobs by hand.",
+      "Mix and wash the maize and beans.",
+      "Boil in 9 ¼ cups of water for 2 hours until cooked.",
+      "Prepare the onions and chop into a separate bowl.",
+      "Stewing:",
+      "Heat cooking fat into a pan and add the spring onions.",
+      "Cook the spring onions until they soften.",
+      "Add the boiled maize-beans mixture. Cover with a pan.",
+      "Add salt and continue cooking while stirring periodically.",
+      "Once ready, remove from fire and serve."
+    ],
+    nutritionFacts: {
+      calories: 13,
+      protein: 76.0,
+      fat: 0.13,
+      carbs: 0.09,
+      fiber: 1.4
+    },
+    region: "Nationwide",
+    swahiliName: "Fresh Beans and Maize",
+    kfctCode: "15060"
+  },
+  {
+    id: "ke-186",
+    name: "Muthokoi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a traditional dish typical among the Kamba, Taita and Meru communities. The Borana have this dish by the name Ashir but it’s preparation is unique to their community. The recipe is prepared from dehulled maize which is boiled together with dry beans. Once stewed it gives a delicious smooth taste. It is mainly eaten as a main dish during lunch or dinner.",
+    preparationTime: 165,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "maize, white, de-germed", amount: "2 ½ cups (440 g)" },
+      { name: "beans, kidney, dry, raw", amount: "2 2/3 cups (474 g)" },
+      { name: "water (to boil", amount: "21 1/3 cups (4646 g)" },
+      { name: "onion red skinned, raw, unpeeled (182 g)", amount: "1" },
+      { name: "cooking fat, shortening,", amount: "1 ¼ cups (185 g)" },
+      { name: "salt, iodized", amount: "4 ½ tsp. (22 g)" }
+    ],
+    instructions: [
+      "Put the maize and beans into a pot and boil in all the water for 2 hours 30 minutes or until cooked.",
+      "Drain and keep the remaining water.",
+      "Peel, wash and chop the onion into a separate bowl.",
+      "Stewing:",
+      "Heat oil in a cooking pot for 1 minute.",
+      "Add the chopped onions and cook until soft.",
+      "Add muthokoi and salt; stir to mix.",
+      "Add the water drained from the boiled muthokoi.",
+      "Cover to cook for 3-5 minutes.",
+      "Turn off the heat.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 2.0,
+      fat: 0.07,
+      carbs: 0.04,
+      fiber: 0.4
+    },
+    region: "Nationwide",
+    swahiliName: "Dehulled Maize and Beans",
+    kfctCode: "15086"
+  },
+  {
+    id: "ke-187",
+    name: "chenga/ zenga",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This ancient dish has been a delicacy among the Kamba, Taita and Meru communities for many years as a rice substitute. The maize is crushed to small size to mimic the size of rice grain, then it is carefully pre- pared to yield a rice-like dish with a distinct taste. Traditionally, it was eaten on its own or a legume stew and could also be prepared with a variety of ingredients including meats, legumes or vegetables. It is eaten by the entire family.",
+    preparationTime: 15,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "crushed maize, white, dry", amount: "1 1/3 cups (231 g)" },
+      { name: "onion, red skinned, raw, unpeeled (115 g)", amount: "1" },
+      { name: "carrot, orange, raw (169 g)", amount: "1" },
+      { name: "cooking fat", amount: "2 ½ tbsp. (28 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" },
+      { name: "water", amount: "4 2/3 cups (1004 g)" }
+    ],
+    instructions: [
+      "Wash the crushed maize and boil in all the water until soft.",
+      "Peel the carrot and grate. Wash, peel and chop the onion.",
+      "Melt the cooking fat in a pot. Add onion and cook until golden brown.",
+      "Add the grated carrot, salt and stir for 2-3 minutes.",
+      "Add the boiled crushed maize, stir and cover to cook for 2-5 minutes.",
+      "Turn off the heat.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 173,
+      protein: 1038.0,
+      fat: 0.03,
+      carbs: 0.01,
+      fiber: 0.2
+    },
+    region: "Nationwide",
+    swahiliName: "Crushed Maize",
+    kfctCode: "15093"
+  },
+  {
+    id: "ke-188",
+    name: "Mchuzi wa Maharagwe",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "The ancient bean stew is chief among the legume stews in Kenya. Different varieties of beans are used to prepare bean stew by different communities depending on availability. Most communities in Kenya utilize bean stew as an accompaniment to starchy dishes such as Ugali, rice or chapatti. It is commonly eaten for lunch or dinner.",
+    preparationTime: 160,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beans, kidney, dry", amount: "2 2/3 cups (462 g)" },
+      { name: "water", amount: "10 3/4 cups (2333 g)" },
+      { name: "tomato, red, raw (140 g)", amount: "1" },
+      { name: "onion, red, raw (92 g)", amount: "1" },
+      { name: "cooking oil", amount: "¼ cup (40 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (13 g)" },
+      { name: "stalks (56 g) coriander", amount: "9" }
+    ],
+    instructions: [
+      "Boil all the beans in 9 cups of water for 2 hours 30 minutes.",
+      "Prepare and cut the vegetables (coriander leaves, tomatoes and onions) into small pieces in separate bowls.",
+      "In a pot, add ¼ cup of oil and turn on the heat.",
+      "Add the onions and cook for 7 minutes in a covered pan on low heat.",
+      "After 10 minutes, add the tomatoes and cook while stirring to mix.",
+      "Add the coriander leaves and mix then add the beans.",
+      "Add 1 3/4 cups of water followed by 1 tbsp. salt and cover the pot for 5 minutes. Stir to mix.",
+      "Cover the vessel and cook for 4 minutes.",
+      "Serve hot"
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Bean Stew",
+    kfctCode: "15045"
+  },
+  {
+    id: "ke-189",
+    name: "Mchuzi wa Ndengu Kamande",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Lentil stew is made from lentil grains which give a characteristic taste to the dish. It is quite aromatic and provides the desired fragrance as an accompaniment to starch dishes such as rice and chapatti. It is usual- ly served during lunch or dinner and is common in most parts of the country.",
+    preparationTime: 60,
+    cookingTime: 20,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "lentils, dry, raw", amount: "2 1/3 cups (466 g)" },
+      { name: "water", amount: "11 2/3 cups (2541 g)" },
+      { name: "onions, red skinned, raw, unpeeled (161 g)", amount: "2" },
+      { name: "tomatoes, red, raw (258 g)", amount: "2" },
+      { name: "cooking oil", amount: "1/3 cup (63 g)" },
+      { name: "salt, iodized", amount: "3 tsp. (15 g)" }
+    ],
+    instructions: [
+      "Sort and wash all the dry lentils. Put in a cooking pot and boil in 9 cups of water for 1 hour.",
+      "Remove from heat and set aside.",
+      "Wash and cut tomatoes and onions in separate bowls.",
+      "Stewing:",
+      "Add cooking oil into the vessel and heat for 1 minute.",
+      "Add onions and cook for 6 minutes.",
+      "Add tomatoes and salt.",
+      "Cook for 7 minutes while stirring to mix.",
+      "Add the pre-boiled lentils and mix.",
+      "Add 2 2/3 cups of water.",
+      "Cover the vessel and cook for 6 minutes.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Lentil Stew",
+    kfctCode: "15046"
+  },
+  {
+    id: "ke-190",
+    name: "Mchuzi wa Ndengu",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Green gram stew is one of the most common legume stews in Kenya. Eaten across the country, it serves as an accompaniment to starches such as Ugali, rice or chapatti. Sometimes green grams (or Ndengu as they are commonly known) are used as a key ingredient in making rice dishes as well as mashed with",
+    preparationTime: 60,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "green gram, dry, raw", amount: "2 ¾ cups (544 g)" },
+      { name: "water", amount: "10 3/4 cups (2337 g)" },
+      { name: "onion, red skinned, raw, unpeeled (118 g)", amount: "1" },
+      { name: "tomatoes, red, raw (155 g)", amount: "2" },
+      { name: "cooking oil", amount: "7 tbsp. (84 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (13 g)" }
+    ],
+    instructions: [
+      "Sort and wash all the green grams.",
+      "Add the raw green grams to a cooking pot and boil in 8 cups of water for 51 minutes.",
+      "Drain and discard the excess water.",
+      "Peel, wash and chop the onion and tomatoes.",
+      "Stewing:",
+      "Add oil to a cooking pot and heat for 2 minutes.",
+      "Add the onions.",
+      "Cook onions for 3 minutes and then add the tomatoes.",
+      "Cook for another 3 minutes and then add the boiled green grams.",
+      "Add 2 3/4 cups of water. Add salt and mix.",
+      "Cover the vessel and cook for 14 minutes.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Green Gram Stew",
+    kfctCode: "15044"
+  },
+  {
+    id: "ke-191",
+    name: "Bean Stew with Milk and Cream",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is very typical to the Kalenjin community. It is usually served with a starch such as rice or Ugali and serves as a main meal for the whole family during lunch or dinner.",
+    preparationTime: 10,
+    cookingTime: 150,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beans, kidney, dry", amount: "2 3/4 cups (500 g)" },
+      { name: "water", amount: "29 ½ cups (6385 g)" },
+      { name: "spring onion, unpeeled", amount: "1 bunch (58 g)" },
+      { name: "tomatoes, red, ripe (291 g)", amount: "3" },
+      { name: "cooking oil", amount: "3 tbsp. (34 g)" },
+      { name: "cow milk, pasteurized", amount: "2¼ cups (503 g)" },
+      { name: "cow cream", amount: "2/3 cup (139 g)" },
+      { name: "salt, iodized", amount: "2 tsp. (10 g)" }
+    ],
+    instructions: [
+      "Sort and wash the beans and put into a cooking pot.",
+      "Add all the water.",
+      "Bring to a boil and cook until the beans are soft and ready. Drain and discard the excess water.",
+      "Meanwhile, wash and chop the onion and tomatoes into separate bowls.",
+      "In a separate cooking pot, heat oil, add the onions and fry until tender.",
+      "Add tomatoes and salt and cook until the tomatoes are tender.",
+      "Add the boiled beans, stir and cover. Cook for 2-5 minutes.",
+      "Add milk and cream, stir, cover and cook for 10 minutes.",
+      "Remove and serve."
+    ],
+    nutritionFacts: {
+      calories: 32,
+      protein: 77.0,
+      fat: 0.08,
+      carbs: 0.11,
+      fiber: 0.6
+    },
+    region: "Nationwide",
+    kfctCode: "15115"
+  },
+  {
+    id: "ke-192",
+    name: "Black Bean Stew",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Black bean stew popularly known as Njahi stew, is common among the Kikuyu, Kisii, Meru, Embu and Luhya communities. It is usually used as an accompaniment to a starch dish such as Ugali, Chapati or rice. Traditionally, this was a preserve of lactating moms as “njahis” were believed to enhance milk production.",
+    preparationTime: 10,
+    cookingTime: 195,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "black beans, dolichos", amount: "2 ½ cups (501 g)" },
+      { name: "onions, red skinned, raw, unpeeled (349 g)", amount: "2" },
+      { name: "tomatoes, red, ripe (307 g)", amount: "3" },
+      { name: "cooking oil", amount: "2 ½ tbsp. (27 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" },
+      { name: "water", amount: "29 2/3 cups (6438 g)" }
+    ],
+    instructions: [
+      "Sort the black beans and wash. Put the washed beans into a cooking pot and add 26 cups of water.",
+      "Cook until ready or soft.",
+      "Remove from heat and drain the excess water from the boiled black beans.",
+      "Meanwhile, peel, wash and cut the onion and the tomatoes.",
+      "Put oil in a cooking pot and heat for 2 minutes. Add onions and fry until tender.",
+      "Add tomatoes, salt and cook until tender.",
+      "Add the boiled black beans and simmer for 4 minutes.",
+      "Add the rest of the water and simmer for 6 minutes.",
+      "Remove from heat.",
+      "Serve as desired."
+    ],
+    nutritionFacts: {
+      calories: 5,
+      protein: 30.0,
+      fat: 0.07,
+      carbs: 0.03,
+      fiber: 0.4
+    },
+    region: "Nationwide",
+    swahiliName: "Njahi/Dolichos Bean Stew",
+    kfctCode: "15114"
+  },
+  {
+    id: "ke-193",
+    name: "Mchuzi wa Mbaazi",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Commonly known as “mbaazi” stew, this recipe is common among the Kamba community. It is eaten with starchy meals such as Ugali, rice or chapatti and often served during lunch or dinner. Other farming com- munities also utilize this recipe in a similar manner.",
+    preparationTime: 10,
+    cookingTime: 160,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "onion, red skinned, raw, unpeeled (119 g)", amount: "1" },
+      { name: "tomatoes, red, ripe (167 g)", amount: "2" },
+      { name: "cooking fat", amount: "6 tbsp. (63 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" },
+      { name: "water", amount: "18 2/3 cups (4048 g)" }
+    ],
+    instructions: [
+      "Boil all the pigeon peas in all the water.",
+      "Cook until ready or when the peas soften.",
+      "Strain the water and keep; set aside the peas separately.",
+      "Wash and chop the onions the tomatoes.",
+      "Heat cooking fat in a cooking pot for 1 minute, add onions and cook until they turn golden brown.",
+      "Add tomatoes, stir and cook until tender.",
+      "Add the pigeon peas, stir and cook for 3-5 minutes.",
+      "Add salt, water drained from the pigeon peas and stir.",
+      "Cover and bring to a boil for 3-5 minutes.",
+      "Turn off the heat."
+    ],
+    nutritionFacts: {
+      calories: 16,
+      protein: 93.0,
+      fat: 0.13,
+      carbs: 0.03,
+      fiber: 0.5
+    },
+    region: "Nationwide",
+    swahiliName: "Pigeon Peas Stew",
+    kfctCode: "15092"
+  },
+  {
+    id: "ke-194",
+    name: "Firinda",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Firinda is a dish unique to the Nubian community. It is specially made by skinning boiled beans then sau- téed in spring onions. It is a popular accompaniment to starchy dishes like Ugali, mkate kuta and rice. It is served mainly during lunch and dinner to the entire family.",
+    preparationTime: 195,
+    cookingTime: 120,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beans, kidney, dry", amount: "2 ¼ cups (400 g)" },
+      { name: "cooking oil", amount: "1 ½ tbsp. (20 g)" },
+      { name: "water", amount: "29 1/8 cups (6326 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" },
+      { name: "stalks (67 g) spring onions, unpeeled", amount: "8" }
+    ],
+    instructions: [
+      "Sort and wash the beans.",
+      "Soak in 14 cups of warm water for 3 hours.",
+      "Drain the water soaking the beans.",
+      "Remove and discard the skin.",
+      "Put the beans into a cooking pot, add the rest of the water and bring to a boil for 2 hours.",
+      "Meanwhile, peel, wash and chop the spring onion.",
+      "Add the chopped onions, oil and salt into the boiling beans.",
+      "Continue boiling until the beans are tender and well cooked.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 4,
+      protein: 24.0,
+      fat: 0.09,
+      carbs: 0.05,
+      fiber: 0.6
+    },
+    region: "Nationwide",
+    swahiliName: "Skinned Bean Stew",
+    kfctCode: "15142"
+  },
+  {
+    id: "ke-195",
+    name: "doto",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Ndoto is a traditional dish among the Taita community. It was prepared during “Kuaikwa” (the Taita tradi- tional initiation ceremony for girls to prepare them for marriage). It was also prepared during weddings.",
+    preparationTime: 330,
+    cookingTime: 10,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "red sorghum", amount: "3 cups (501 g)" },
+      { name: "red kidney beans", amount: "1 ¾ cups (308 g)" },
+      { name: "water", amount: "23 ¼ cups (5059 g)" },
+      { name: "salt, iodized", amount: "3 tsp. (14 g)" },
+      { name: "onions, red skinned,", amount: "1 ½ cups (176 g)" },
+      { name: "cooking oil", amount: "3/4 cups (144 g)" }
+    ],
+    instructions: [
+      "Sort the beans. Wash and put on the fire in 21 cups of water. Let the beans boil until cooked",
+      "(2 hours 30 minutes).",
+      "As the beans are boiling, sort out the red sorghum.",
+      "Once beans are ready, wash the red sorghum and add it into the mixture with the remaining water.",
+      "Let the red sorghum boil until cooked (2 hours",
+      "50 minutes). Cook until all the liquid is almost dry. Remove from fire.",
+      "Peel and chop the onion.",
+      "Put in a pot with the cooking oil and fry onion until golden brown.",
+      "Add the boiled red sorghum, red kidney beans and salt.",
+      "Cook for 6 minutes and remove from fire."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.08,
+      fat: 0.05,
+      carbs: 1.0,
+      fiber: 35.0
+    },
+    region: "Nationwide",
+    swahiliName: "Sautéed Red Kidney Beans & Red Sorghum",
+    kfctCode: "15085"
+  },
+  {
+    id: "ke-196",
+    name: "Fiqe",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "A mixture of sorghum flour and cooked beans stirred together as a paste and until firm. It is best enjoyed with a strong cup of black tea. Eaten by everybody. Can also be made with maize flour or any other grain flour. Traditionally, a bean and ghee must be added. In modern time normal cooking oil is used.",
+    preparationTime: 10,
+    cookingTime: 165,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beans kidney, raw", amount: "1 ½ cups (262 g)" },
+      { name: "red sorghum flour", amount: "1½ cups (207 g)" },
+      { name: "teff flour", amount: "2 cups (323 g)" },
+      { name: "medium-size bowl (611 g) sukuma", amount: "1" },
+      { name: "salt, iodized", amount: "1 ½ tbsp. (22 g)" },
+      { name: "ghee", amount: "7 tbsp. (88 g)" },
+      { name: "water", amount: "8 2/3 cups (1882 g)" }
+    ],
+    instructions: [
+      "Boil beans in 8 2/3 cups of water until cooked (1 hour).",
+      "Wash and cut the sukuma wiki.",
+      "Add diced sukuma wiki into the boiled beans in the same cooking pot and cook for 20 minutes.",
+      "In a separate bowl, mix the teff flour and the red sorghum flour together.",
+      "Add the mixed flour into the mixture of beans and kale. Add salt and stir gently until evenly mixed.",
+      "Add ghee after 20 minutes and continue mixing for",
+      "10 minutes.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Red Sorghum, Beans and Teff Flour",
+    kfctCode: "15040"
+  },
+  {
+    id: "ke-197",
+    name: "Beef Stew",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Beef stew is the most common animal protein based stew in Kenya. It is prepared in different ways with the standard ingredients featured in this recipe. It is usually eaten with starchy dishes such as Ugali, rice, potatoes, chapatti or mashed dishes. It is more common in urban areas than in rural areas. Often, it is served for lunch or dinner and is relished by the entire family.",
+    preparationTime: 10,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beef, medium fat, without bone, raw", amount: "1 kg" },
+      { name: "onions, red skinned, raw, unpeeled (164 g)", amount: "2" },
+      { name: "tomatoes, red, ripe (304 g)", amount: "3" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "cooking oil", amount: "1½ tbsp. (20 g)" },
+      { name: "water", amount: "3 1/8 cups (682 g)" }
+    ],
+    instructions: [
+      "Peel, wash and chop the onions and the tomatoes into separate bowls.",
+      "Cut beef into small pieces and wash.",
+      "Boil the meat in all the water until tender. Turn off the heat, strain the remaining water and place the meat in a separate bowl.",
+      "Heat cooking oil in a cooking pot for 1 minute.",
+      "Add onions and cook until soft.",
+      "Add tomatoes and salt and cook until soft",
+      "Add the boiled meat and stir.",
+      "Add the liquid drained from boiling the meat, stir and cover to cook for 8 minutes.",
+      "Turn off the heat.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 21,
+      protein: 89.0,
+      fat: 0.01,
+      carbs: 0.2,
+      fiber: 3.3
+    },
+    region: "Nationwide",
+    kfctCode: "15087"
+  },
+  {
+    id: "ke-198",
+    name: "Stir Fried Goat Meat",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "In most cases goat meat is stir fried rather than stewed. It is common in many communities across the country. It is eaten with starchy dishes including rice, Ugali among others.",
+    preparationTime: 10,
+    cookingTime: 100,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "meat, goat, medium fat, raw", amount: "1 kg" },
+      { name: "onion, red skinned, raw, unpeeled", amount: "1" },
+      { name: "tomatoes, red, ripe, chopped (336 g)", amount: "3" },
+      { name: "cooking oil", amount: "1/8 cup (27 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (7 g)" },
+      { name: "water", amount: "2 ¼ cups (494 g)" }
+    ],
+    instructions: [
+      "Cut the goat meat into small pieces.",
+      "Add the meat, all the water and salt into a cooking pot. Bring the mixture to a boil.",
+      "Meanwhile, prepare and cut the onions and tomatoes into separate bowls.",
+      "Add the onions and continue boiling.",
+      "When all the water has dried, add oil and stir.",
+      "Add tomatoes and stir.",
+      "Simmer until ready.",
+      "Serve while hot"
+    ],
+    nutritionFacts: {
+      calories: 60,
+      protein: 214.0,
+      fat: 0.2,
+      carbs: 0.33,
+      fiber: 5.4
+    },
+    region: "Nationwide",
+    kfctCode: "15099"
+  },
+  {
+    id: "ke-199",
+    name: "Stir Fried Beef",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Stir fried beef is common across many communities in Kenya even though it is more popular among urban dwellers than rural dwellers. It is eaten with starchy foods such as Ugali, rice, potatoes or bananas. Often, it is enjoyed by the entire family and served during lunch or dinner.",
+    preparationTime: 15,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beef, raw, medium fat", amount: "1 kg" },
+      { name: "water", amount: "3 cups (646 g)" },
+      { name: "onions, red skinned, raw, unpeeled (176 g)", amount: "2" },
+      { name: "tomatoes, red, ripe (295 g)", amount: "3" },
+      { name: "cooking oil", amount: "3 tbsp. (36 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (7 g)" }
+    ],
+    instructions: [
+      "Cut the beef into small pieces.",
+      "Peel, wash and chop the onions and tomatoes into separate bowls.",
+      "Put the meat into a cooking pot, add 3 cups of water and boil for 1 hour.",
+      "Strain the remaining liquid and keep separately.",
+      "Heat oil in a cooking pot, add onions and cook until golden brown.",
+      "Add tomatoes and cook until tender.",
+      "Add salt and meat then stir and cook for 7-10 minutes.",
+      "Add half of the strained water then stir and cover to cook for 30 minutes.",
+      "Add the rest of the strained water and cook until all the water dries.",
+      "Turn off the heat.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 28,
+      protein: 107.0,
+      fat: 0.02,
+      carbs: 0.31,
+      fiber: 5.1
+    },
+    region: "Nationwide",
+    kfctCode: "15098"
+  },
+  {
+    id: "ke-200",
+    name: "Swahili Biryani Stew",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Biryani stew is a traditional delicacy of the Swahili community. It is made with meat and heavily spiced to produce a rich tasty meal. This recipe is sometimes served during special occasions such as weddings or other social ceremonies. It is eaten by the whole family and can be served for lunch or dinner usually accompanied by a colourful biryani rice.",
+    preparationTime: 20,
+    cookingTime: 70,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beef, raw, medium fat", amount: "1 kg" },
+      { name: "onions, red skinned, raw, unpeeled (806 g)", amount: "8" },
+      { name: "potatoes, unpeeled Irish, white, raw (454 g)", amount: "2" },
+      { name: "tomatoes, red, ripe (1.1 kg)", amount: "9" },
+      { name: "tomato paste, salted", amount: "1 cup (163 g)" },
+      { name: "fresh coriander", amount: "1 bunch (60 g)" },
+      { name: "capsicum, green (242 g)", amount: "1" },
+      { name: "cooking oil", amount: "2 1/3 cups (468 g)" },
+      { name: "ginger", amount: "1 piece (20 g)" },
+      { name: "garlic, whole (46 g)", amount: "1" },
+      { name: "salt, iodized", amount: "2 ½ tbsp. (37 g)" },
+      { name: "pilau masala", amount: "4 tbsp. (18 g)" },
+      { name: "maziwa mala (fermented milk)", amount: "1 cup (242 g)" },
+      { name: "turmeric powder", amount: "1 ¼ tsp. (2 g)" },
+      { name: "water", amount: "2 ¼ cups (511 g)" }
+    ],
+    instructions: [
+      "Wash and cut the meat.",
+      "Boil the meat in 1 cup of water for 20 minutes until meat is tender.",
+      "Prepare and put coriander, capsicum, garlic, ginger and tomatoes into a blender and blend to a medium thick juice. Add 1 ¼ cups of water.",
+      "Peel, wash and chop the onions into a separate bowl.",
+      "Put oil into a cooking pot and heat for 1 minute.",
+      "Add the chopped onions.",
+      "Cook onions until golden brown.",
+      "Add the blended paste and stir.",
+      "Add meat, turmeric, tomato paste, potatoes, pilau masala and salt.",
+      "Cover and simmer until the potatoes are cooked or soft.",
+      "Add the fermented milk and continue to simmer for 5 minutes.",
+      "Stir and remove from fire.",
+      "Serve with the biryani rice."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Swahili Spiced Beef Stew",
+    kfctCode: "15066"
+  },
+  {
+    id: "ke-201",
+    name: "Minced Meat Balls",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This recipe is common in many urban communities in Kenya. It is usually made from minced meat with var- ious types of fresh spices. It is usually served as an accompaniment with starchy dishes such as potatoes, rice or spaghetti. As such it is eaten during lunch or dinner and enjoyed by the entire family.",
+    preparationTime: 30,
+    cookingTime: 75,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "minced raw beef, medium fat", amount: "1 kg" },
+      { name: "water", amount: "5 ½ cups (1207 g)" },
+      { name: "onions, red skinned, raw, unpeeled (376 g)", amount: "4" },
+      { name: "tomatoes, red, ripe (439 g)", amount: "5" },
+      { name: "coriander leaves (51 g)", amount: "1 bunch" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" },
+      { name: "cooking oil (102 g)", amount: "½ cup" },
+      { name: "cumin seeds", amount: "2 tsp. (4 g)" },
+      { name: "curry powder", amount: "1 ½ tsp. (3 g)" },
+      { name: "Royco® cubes (8 g)", amount: "4" },
+      { name: "garlic (39 g)", amount: "1 whole" },
+      { name: "white raw rice", amount: "¼ cup (48 g)" }
+    ],
+    instructions: [
+      "Pound the minced meat in a mortar.",
+      "Prepare and cut the onions as well as the tomatoes and chop into two separate bowls.",
+      "Divide the onion, garlic, cumin seed and coriander in two equal portions. Mix and pound one half of each divided ingredient and add into the pounded meat.",
+      "Add rice to the pounded mixture and crush the grains.",
+      "Fry the other half of onions in ½ cup of cooking oil until they turn golden brown. Add salt and stir.",
+      "Add tomatoes and all the water, and then simmer until the tomatoes are tender.",
+      "Pound the rest of the garlic, cumin seeds and coriander into the pounded meat.",
+      "Work the meat with palms to form balls using ¼ cup of cooking oil.",
+      "Add the meat balls into the simmering tomato soup.",
+      "Add garlic, curry powder and Royco® cubes.",
+      "Simmer for 30 minutes until the meat balls are ready."
+    ],
+    nutritionFacts: {
+      calories: 16,
+      protein: 79.0,
+      fat: 0.02,
+      carbs: 0.1,
+      fiber: 1.4
+    },
+    region: "Nationwide",
+    kfctCode: "15134"
+  },
+  {
+    id: "ke-202",
+    name: "Stewed Dried Fish",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is typical among the Luhya and Luo communities. It also commonly known as “Shivambala”. Frequently, fish that is previously dried (usually split open manner) is stewed with tomatoes and onions. It is mainly served with Ugali to the entire family either during lunch or dinner.",
+    preparationTime: 15,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "dry fish", amount: "210 g" },
+      { name: "tomatoes, red, ripe (319 g)", amount: "3" },
+      { name: "onion, red skinned, raw, unpeeled (143g)", amount: "1 whole" },
+      { name: "cooking oil", amount: "½ cup (104 g)" },
+      { name: "peanut butter", amount: "2 tbsp. (28 g)" },
+      { name: "magadi (water and ash)", amount: "1 g" },
+      { name: "water", amount: "13/4 cups (406 g)" }
+    ],
+    instructions: [
+      "Soak the dried fish in ¾ cup of warm water for",
+      "10 minutes.",
+      "Chop the onion, cut the tomatoes and place into separate bowls.",
+      "Wash the dried fish in the soaking water and drain the water.",
+      "In a cooking pot, heat cooking oil, add the onions and cook until they turn golden brown.",
+      "Add peanut butter and the grated tomatoes and cook for 3 minutes while stirring at intervals.",
+      "Add 1g of magadi and cook for another 2 minutes.",
+      "Add salt and the rest of the water and bring the mixture to boil.",
+      "Add the washed fish and cook for 10 minutes or until ready.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 124.0,
+      fat: 0.05,
+      carbs: 0.03,
+      fiber: 3.3
+    },
+    region: "Nationwide",
+    kfctCode: "15082"
+  },
+  {
+    id: "ke-203",
+    name: "“Omena Stew”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "“Omena” as it is commonly known is a tiny fish mainly harvested at the Lake Victoria. As such it is a delica- cy among the Luo community. However, other communities in Kenya have embraced it as a main protein dish. It is mainly eaten with Ugali.",
+    preparationTime: 15,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "dried omena fish", amount: "2 cups (128 g)" },
+      { name: "onions, red skinned, raw, unpeeled", amount: "2" },
+      { name: "water", amount: "2 cups (453 g)" },
+      { name: "ghee, cow", amount: "1 tbsp. (21 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" },
+      { name: "tomatoes, red, ripe (313 g)", amount: "3" },
+      { name: "milk", amount: "2 ¼ cups (509 g)" },
+      { name: "cooking oil", amount: "1 cup (200 g)" }
+    ],
+    instructions: [
+      "Sort the omena (do not wash).",
+      "Into a clean pot, add omena, all the water and 1 tsp. salt.",
+      "Start the fire, cover the pot and boil for 40 minutes.",
+      "Remove from fire, drain and discard the water.",
+      "Wash and cut the onions, and tomatoes into separate bowls.",
+      "Into a clean pot, add cut onions and cooking oil.",
+      "Cook for 10 minutes.",
+      "Add tomatoes, cover and cook for 3 minutes.",
+      "Add the remaining salt, mix, cover and cook for another 2 minutes.",
+      "Mash the tomatoes with a fork.",
+      "Add the boiled omena and mix.",
+      "Add the milk, mix and cover.",
+      "Add ghee, mix and heat for 3 minutes.",
+      "Cook for another 10 minutes."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Silver Sardine Stew",
+    kfctCode: "15017"
+  },
+  {
+    id: "ke-204",
+    name: "Fried Tilapia",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Fried Tilapia is a delicacy that is traditionally relished among the Luo community. The current practice has seen many other communities adopt this recipe particularly in urban areas. It is usually eaten with Ugali and served during lunch or dinner to the entire family.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "fresh tilapia, (approx.834 g)", amount: "1 whole" },
+      { name: "cooking oil", amount: "4 ¼ cups (831 g)" },
+      { name: "salt (7 g)", amount: "1 ½ tsp." }
+    ],
+    instructions: [
+      "Prepare and wash the fresh fish.",
+      "Score the length of the fish and sprinkle salt on the surface.",
+      "Put oil into the pan and heat.",
+      "Put in the salted fish into the hot oil and fry until it browns.",
+      "Turn to cook the other side.",
+      "Place on paper towel to drain the excess oil."
+    ],
+    nutritionFacts: {
+      calories: 24,
+      protein: 0.0,
+      fat: 0.09,
+      carbs: 0.35,
+      fiber: 7.5
+    },
+    region: "Nationwide",
+    kfctCode: "15096"
+  },
+  {
+    id: "ke-205",
+    name: "Hydrabadi Biryani",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is common among the Indian community in Kenya and is served with lightly flavoured steamed rice. The method of preparation is very key to this recipe and type of fish used. This super spiced king fish has superior taste and aroma which blends perfectly well with the fragrance of aromatic rice that is served with it. It is mainly eaten during lunch or dinner by the entire family.",
+    preparationTime: 45,
+    cookingTime: 45,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "raw white rice", amount: "2 cups (424 g)" },
+      { name: "king fish", amount: "½ kg" },
+      { name: "red chilli powder", amount: "1 ½ tsp. (5 g)" },
+      { name: "turmeric powder", amount: "¼ tsp. (1 g)" },
+      { name: "coriander powder", amount: "2 tsp. (6 g)" },
+      { name: "cumin seeds", amount: "½ tsp. (4 g)" },
+      { name: "garlic", amount: "6 cloves (18 g)" },
+      { name: "ginger", amount: "1 piece (15 g)" },
+      { name: "green chillies (6 g)", amount: "3" },
+      { name: "coriander leaves", amount: "1 bunch (21 g)" },
+      { name: "mint leaves", amount: "1 bunch (14 g)" },
+      { name: "yoghurt", amount: "4 ½ tbsp. (67 g)" },
+      { name: "anise (5 g) seeds", amount: "6" },
+      { name: "clove seeds", amount: "¼ tsp. (2 g)" },
+      { name: "cardamom seeds (2 g)", amount: "8" },
+      { name: "cinnamon", amount: "6 sticks (3 g)" },
+      { name: "salt, iodized", amount: "1 ½ tbsp. (21 g)" },
+      { name: "bay leaf (1 g)", amount: "1" },
+      { name: "lemon (11 g)", amount: "½" },
+      { name: "cooking oil", amount: "2/3 cup (126 g)" },
+      { name: "water", amount: "8 ¾ cups (1895 g)" }
+    ],
+    instructions: [
+      "Chop the green chillies and coriander leaves.",
+      "Wash and cut the king fish.",
+      "Marinade with the dry ingredients (1 ½ tsp. red chilli powder, ¼ tsp. turmeric powder, 2 tsp. coriander powder, ½ tsp. cumin seeds, pinch of cloves, 4 anise seeds,",
+      "3 cinnamon sticks, 4 cardamoms seeds, the salt, and 3 tbsp. cooking oil. Leave to stand.",
+      "Crush ginger and garlic into a paste. Add the paste, coriander leaves, green chillies, lemon juice and yoghurt.",
+      "Sort, wash and soak the rice in 4 ¾ cups of water for 30 minutes.",
+      "Into a separate pot, add 4 cups of water and the soaked rice and start cooking.",
+      "Add the cloves, bay leaf, cardamoms, anise seeds, cinnamon and the cumin seeds.",
+      "Cover the rice and boil for 25 minutes until ready and soft.",
+      "Remove from heat and drain the water if necessary.",
+      "Into a separate pot, add the oil and heat for 1 minute.",
+      "Add the marinated fish and shallow fry for 6 minutes.",
+      "Into the pot used in frying the fish, add the boiled rice",
+      "(do not stir).",
+      "Cover the rice with the fried fish and garnish with mint and coriander leaves.",
+      "Steam for 5 minutes.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 19,
+      protein: 65.0,
+      fat: 0.06,
+      carbs: 0.09,
+      fiber: 1.2
+    },
+    region: "Nationwide",
+    kfctCode: "15138"
+  },
+  {
+    id: "ke-206",
+    name: "Stewed Nile Perch",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is dominant among the Luo and Luhya communities. Other communities as well have embraced consumption of this recipe and is common in majority of homes in the rural areas. It is mainly served with Ugali and eaten during lunch or dinner.",
+    preparationTime: 5,
+    cookingTime: 80,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "Nile perch fish", amount: "1 kg" },
+      { name: "onion, red skinned, raw, unpeeled (91 g)", amount: "1" },
+      { name: "tomatoes, red, ripe (293 g)", amount: "3" },
+      { name: "cooking oil", amount: "1/3 cup (67 g)" },
+      { name: "salt, iodized", amount: "3 ½ tsp. (18 g)" },
+      { name: "water", amount: "6 2/3 cups (1439 g)" }
+    ],
+    instructions: [
+      "Wash and cut the fish into 3-4 pieces.",
+      "Wash and chop the onion and tomatoes into separate bowls.",
+      "Put the fish in a pot and 3 2/3 cups of water.",
+      "Turn on the heat and boil for 1 hour.",
+      "In a separate cooking pot, add cooking oil and heat for 2 minutes.",
+      "Add onions and cook until soft. Add tomatoes and cook until tender.",
+      "Add salt, 3 cups of water and stir. Transfer the stewed onions and tomatoes into the boiled fish and stir.",
+      "Allow to simmer for 20 minutes and remove from heat."
+    ],
+    nutritionFacts: {
+      calories: 22,
+      protein: 68.0,
+      fat: 0.01,
+      carbs: 0.01,
+      fiber: 1.6
+    },
+    region: "Nationwide",
+    kfctCode: "15107"
+  },
+  {
+    id: "ke-207",
+    name: "Stewed Goat Meat",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "breakfast",
+    description: "Goat meat is common across the country both in rural and urban areas. This dish is usually eaten with a starchy dish such as Ugali, rice or chapatti. It is served during major meals and relished by the entire family.",
+    preparationTime: 10,
+    cookingTime: 45,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "onion, red skinned, raw, unpeeled (136 g)", amount: "1" },
+      { name: "tomatoes, red, ripe (319 g)", amount: "3" },
+      { name: "cooking oil", amount: "½ cup (89 g)" },
+      { name: "salt, iodized", amount: "4 tsp. (19 g)" }
+    ],
+    instructions: [
+      "Wash and cut the meat into small pieces.",
+      "Heat oil in cooking a pot, add the chopped meat and salt.",
+      "Cover and steam for 10-15 minutes to release water from the washed meat. Stir at intervals.",
+      "Drain and keep the broth from the meat. Return on heat and cook for 5 minutes while stirring.",
+      "Cover to dry. Add onion and cook for 10 minutes while stirring.",
+      "Add tomatoes, stir and cook until the tomatoes are tender.",
+      "Add the drained broth and stir. Cover and cook until ready.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 29,
+      protein: 94.0,
+      fat: 0.11,
+      carbs: 0.17,
+      fiber: 2.9
+    },
+    region: "Nationwide",
+    kfctCode: "15108"
+  },
+  {
+    id: "ke-208",
+    name: "yirinyiri",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Nyirinyiri is very tiny tender pieces of meat. It is stored in the oil that was cooked in and lasts very long without refrigeration. It can be eaten on its own as a breakfast snack or served with mandazi for special guests or even sprinkled on other foods to liven up the flavour. It is a typical dish among Borana, Gabra, Rendille, and other pastoralists’ communities.",
+    preparationTime: 15,
+    cookingTime: 75,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "camel meat", amount: "1½ kg" },
+      { name: "camel hump (544 g)", amount: "½ kg" },
+      { name: "salt, iodized", amount: "1 tsp. (6 g)" }
+    ],
+    instructions: [
+      "Cut camel hump into large pieces and put in a heated pan.",
+      "This is to remove the oil from the hump which was then used in the Nyirinyiri.",
+      "Cut the camel meat into small pieces and remove tendons and any other inedible part.",
+      "Put the meat in a cooking pot and add a pinch of salt (this is optional as camel meat is usually salty.)",
+      "Leave to boil. Before the meat juices runs out, add the prepared camel hump oil (257 g). Keep stirring so that it does not stick to the pan.",
+      "Cook until ready then serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Camel Meat",
+    kfctCode: "15047"
+  },
+  {
+    id: "ke-209",
+    name: "Ikalanga",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Ikalanga is very similar to Nyirinyiri. It is a loved dish eaten as an accompaniment to a starch such as rice or ugali during lunch or dinner. Rendille, Borana and Gabra, Maasai and other pastoralists communities. This is also commonly known as Kalanga.",
+    preparationTime: 10,
+    cookingTime: 40,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "sheep fat", amount: "894 g" },
+      { name: "water", amount: "2 cups (420 g)" },
+      { name: "salt, iodized", amount: "1 tsp. (4 g)" }
+    ],
+    instructions: [
+      "Cut the sheep fat into small pieces.",
+      "Put in a cooking pot with all the water and add salt.",
+      "Boil until the sheep fat forms dry balls.",
+      "Keep stirring until oil separates from the balls.",
+      "Cook until ready. e for fresh sheep tail fat, so the nutrient content of this dish could not be estimated."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Sheep Tail Fat",
+    kfctCode: "15050"
+  },
+  {
+    id: "ke-210",
+    name: "Qanchibelo",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Qanchibelo is a famous is a stew with balls of corn. The best Qanchibelo incorporates ‘shalqeetha’ (Mor- inga leaves) in the stew for a delightful and healthy meal. Alternatively, sukuma wiki (kale) may be used. It is a traditional dish among the Burji’s. Qanchibelo is eaten by the whole family as a main dish during lunch",
+    preparationTime: 20,
+    cookingTime: 120,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "of beef, raw, medium fat", amount: "1 ½ kg" },
+      { name: "water", amount: "12 ½ cups (2722 g)" },
+      { name: "sukuma wiki", amount: "514 g" },
+      { name: "salt, iodized", amount: "1 tbsp. (16 g)" },
+      { name: "red chilli flakes", amount: "1 tsp. (1 g)" },
+      { name: "coriander powder", amount: "1 tsp. (1 g)" },
+      { name: "black pepper", amount: "½ tsp. (1 g)" },
+      { name: "red capsicum (198 g)", amount: "½" },
+      { name: "green capsicum (210 g)", amount: "1" },
+      { name: "yellow capsicum (227 g)", amount: "½" },
+      { name: "onion, raw, red skinned, unpeeled (140 g)", amount: "1" },
+      { name: "tomatoes, red, ripe (195 g)", amount: "2" },
+      { name: "wheat flour, atta", amount: "4 1/8 cups (478 g)" },
+      { name: "maize flour, white", amount: "2 2/3 cups (339 g)" }
+    ],
+    instructions: [
+      "Cut meat into bite size chunks.",
+      "Cut the onion, green capsicum, yellow capsicum, red capsicum and tomatoes.",
+      "Remove the stalks from sukuma wiki and tear.",
+      "Meanwhile, put the meat to boil in 10 cups water for 1 hour 15 minutes or until it softens.",
+      "Once the meat is cooked, add salt, red chilli, black pepper, onion, green capsicum, yellow capsicum, red capsicum and tomatoes. Cook for 2 minutes.",
+      "Add the shredded sukuma wiki and continue simmering.",
+      "Meanwhile, measure 4 1/8 cups atta flour and 2 2/3 cups maize flour into a bowl. Measure 2 ½ cups of water for the flour.",
+      "Start mixing using hands until the dough is hard and properly mixed.",
+      "Cut dough and press on the palm to oval shapes until all the dough has been used.",
+      "Once done, add into the pan containing the meat.",
+      "Keep turning periodically until cooked."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Beef, Maize & Wheat Flour mix",
+    kfctCode: "15041"
+  },
+  {
+    id: "ke-211",
+    name: "Okra Meat Dish",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is traditional dish among the Nubian community. It is prepared with okra and meat giving it a smooth and soft appeal. The blend of garlic brings out a unique aroma to the dish which is enjoyed by the entire family. It is often eaten with rice.",
+    preparationTime: 15,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "okra", amount: "367 g" },
+      { name: "red skinned onions, raw, unpeeled (208g)", amount: "2" },
+      { name: "tomatoes, red, ripe (435 g)", amount: "5" },
+      { name: "garlic", amount: "3 cloves (18 g)" },
+      { name: "meat, beef", amount: "700 g" },
+      { name: "cooking oil", amount: "¼ cup (40 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (13 g)" },
+      { name: "Royco® cubes (8 g)", amount: "2" },
+      { name: "curry powder", amount: "1 tsp. (2 g)" },
+      { name: "coriander leaves", amount: "65 g" },
+      { name: "water", amount: "11/8 cups (253 g)" }
+    ],
+    instructions: [
+      "Wash and chop the onions, tomatoes, garlic and coriander leaves into separate bowls.",
+      "Put the onions in cooking oil in a pot and cook until golden brown.",
+      "Add meat followed by salt then stir and allow it to cook for 10 minutes.",
+      "Add tomatoes and simmer until the tomatoes are tender.",
+      "Add curry powder, 2 Royco® cubes and continue to simmer the meat.",
+      "Add coriander, okra and all the water.",
+      "Allow to simmer for 5-10 minutes",
+      "Add garlic, stir and simmer for another 15 minutes or until ready.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 28,
+      protein: 151.0,
+      fat: 0.03,
+      carbs: 0.1,
+      fiber: 1.7
+    },
+    region: "Nationwide",
+    kfctCode: "15137"
+  },
+  {
+    id: "ke-212",
+    name: "Tsiswa",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a traditional delicacy among the Luhya community. It was traditionally eaten by boys after circumci- sion. In modern practice, this dish is relished by the entire family due to its delicious taste, its satiety effect and its dense nutrient content. It is usually eaten with Ugali during lunch or dinner and as an all-day snack.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "dried termites, raw", amount: "2 cups (335 g)" },
+      { name: "onion, red skinned, raw, unpeeled (107g)", amount: "1" },
+      { name: "cow’s milk", amount: "1 ¼ cups (271 g)" },
+      { name: "salt, iodized", amount: "½ tbsp. (7 g)" }
+    ],
+    instructions: [
+      "Wash the termites.",
+      "Peel, wash and finely chop the onions.",
+      "Put milk into a cooking pot and place on heat.",
+      "Add onions and the washed termites.",
+      "Add salt and stir to mix while heating.",
+      "Continue stirring and intervals.",
+      "Reduce the heat and cook until dry.",
+      "Remove and serve."
+    ],
+    nutritionFacts: {
+      calories: 96,
+      protein: 10.0,
+      fat: 0.05,
+      carbs: 3.15,
+      fiber: 2.9
+    },
+    region: "Nationwide",
+    swahiliName: "Stewed Termites",
+    kfctCode: "15072"
+  },
+  {
+    id: "ke-213",
+    name: "Omena wa kukaangwa",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "“Omena” as it is commonly known is a tiny fish mainly harvested at the Lake Victoria. As such, it is a delicacy among the Luo community. However, other communities in Kenya have embraced it as a main protein dish. It is mainly eaten with Ugali.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "omena, dried, raw", amount: "120 g" },
+      { name: "spring onion, raw, unpeeled", amount: "1 bunch (25 g)" },
+      { name: "tomatoes, red, ripe (270 g)", amount: "2" },
+      { name: "cooking oil", amount: "1 cup (202 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" }
+    ],
+    instructions: [
+      "Sort the omena and wash in hot water.",
+      "Peel and wash the onion and tomatoes",
+      "Cut the tomatoes, chop the onions and place into separate bowls.",
+      "Heat cooking oil in a cooking pot; add the washed omena and leave to cook for 4-6 minutes without stirring.",
+      "Stir to allow for the other side to fry as well.",
+      "Remove from the heat and drain the excess cooking oil.",
+      "Add the cut onions, turn on the heat and stir to mix evenly.",
+      "Cook as you stir continuously to prevent the omena from burning.",
+      "Add tomatoes, salt, and stir.",
+      "Mash the tomatoes into the omena and continue cooking.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 69,
+      protein: 171.0,
+      fat: 0.11,
+      carbs: 0.17,
+      fiber: 5.4
+    },
+    region: "Nationwide",
+    swahiliName: "Fried Omena",
+    kfctCode: "15101"
+  },
+  {
+    id: "ke-214",
+    name: "Fried Egg",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "A recipe packed with nutrients, with an old style of cooking, is the fried egg! Everybody in the family enjoys it with a dash of salt! Served mainly during breakfast, this recipe is an all-time favourite of many",
+    preparationTime: 5,
+    cookingTime: 1,
+    servings: 1,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "egg, whole (59 g)", amount: "1" },
+      { name: "salt, iodized", amount: "1 pinch (1 g)" },
+      { name: "cooking oil", amount: "1 tsp. (3 g)" }
+    ],
+    instructions: [
+      "Break the egg into a clean bowl.",
+      "Heat the cooking oil in a pan.",
+      "Whisk the egg with a pinch of salt in the bowl.",
+      "Pour the egg on the pan and fry for 30 seconds. Then turn and fry for another 30 seconds.",
+      "Remove and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Mayai Ya Kukaangwa",
+    kfctCode: "15022"
+  },
+  {
+    id: "ke-215",
+    name: "Omelette",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Omelette is one of the legendary dishes that have become popular in Kenya among urbanite communi- ties. Even though it uses locally grown ingredients, it is still viewed as an exotic dish. Mainly served for breakfast, this recipe is enjoyed by the entire family.",
+    preparationTime: 5,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "eggs, whole (243 g)", amount: "4" },
+      { name: "tomatoes, red, ripe (288 g)", amount: "2" },
+      { name: "onion, red skinned, raw, unpeeled (179g)", amount: "1" },
+      { name: "salt, iodized", amount: "1 pinch (1 g)" },
+      { name: "cooking oil", amount: "2 tbsp. (20 g)" }
+    ],
+    instructions: [
+      "Break 4 eggs into a bowl.",
+      "Heat a little oil on a pan.",
+      "Peel, wash and cut the onion and tomatoes into small cubes.",
+      "Whisk the eggs in a pinch of salt, add onions and tomatoes and continue whisking until well mixed.",
+      "Pour the mixture into the heated greased pan and cook for 6 minutes, turn and cook for 6 minutes.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15023"
+  },
+  {
+    id: "ke-216",
+    name: "Spanish Omelette",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a modification of the traditional Spanish omelette. Often made with a variety of chopped vegeta- bles in beaten eggs, the Kenyan Spanish omelette does not include fried potatoes as is the case with the typical Spanish omelette. Sometimes, chillies are added for a peppery taste. Though exotic to Kenyan traditional recipes, it is rapidly gaining popularity among urban dwellers in Kenya as a breakfast favourite among the adult population.",
+    preparationTime: 10,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "eggs, whole (221 g)", amount: "4" },
+      { name: "cooking oil", amount: "1/8 cup (29 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "onion, red, raw, peeled,", amount: "¼ cup (33 g)" },
+      { name: "tomato, red, ripe, chopped", amount: "½ cup (89 g)" },
+      { name: "yellow capsicum, chopped", amount: "1/8 cup (16 g)" },
+      { name: "green capsicum, chopped", amount: "1/8 cup (18 g)" },
+      { name: "red (20 g) capsicum, chopped", amount: "1/8 cup" }
+    ],
+    instructions: [
+      "Break the eggs into a bowl and whisk them, then add a pinch of salt.",
+      "Add the chopped ingredients and continue to whisk until evenly mixed.",
+      "Heat the pan with a little oil for 2 minutes.",
+      "Pour the mixture into the pan and allow to cook for",
+      "50 seconds.",
+      "Then transfer into the oven and cook for 15 minutes.",
+      "Remove from oven and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15024"
+  },
+  {
+    id: "ke-217",
+    name: "“Ingokho”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Stewed chicken is common among many communities in Kenya. It has different names but ingokho stands out due to the way this dish is special to the Luhya community. It is eaten as a protein to a main meal and served with Ugali or any other starch. It is savoured by the entire family.",
+    preparationTime: 15,
+    cookingTime: 75,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "red skinned onions, raw, unpeeled, (219g)", amount: "2" },
+      { name: "green capsicum (187 g)", amount: "½" },
+      { name: "salt, iodized", amount: "2 tsp. (11 g)" },
+      { name: "tomatoes, red, ripe (504 g)", amount: "4" }
+    ],
+    instructions: [
+      "Light a charcoal stove. Put a mesh over the fire to singe any thin feathers and lightly brown the skin of the chicken.",
+      "After 12 minutes, cut the chicken into large chunks and continue roasting for another 5 minutes or until ready. Remove from the fire.",
+      "Cut the chicken into smaller portions and return the pieces onto the fire for another 11 minutes.",
+      "Put the chicken onto a heated pan. Cook the chicken without added oil/ fat to brown further. Keep turning for the chicken to cook evenly.",
+      "Add salt to the chicken and keep turning.",
+      "Add the whole green capsicum into the pan with chicken. Turn the stove to low heat and let it simmer for 9 minutes.",
+      "Prepare the onions and tomatoes. Chop into small pieces in separate bowls.",
+      "Add the onions, cover and continue cooking for another 25 minutes.",
+      "Remove the whole green capsicum from the pot and immediately add tomatoes.",
+      "Continue cooking for another 13 minutes.",
+      "Remove from the fire."
+    ],
+    nutritionFacts: {
+      calories: 74,
+      protein: 125.0,
+      fat: 0.11,
+      carbs: 0.13,
+      fiber: 5.1
+    },
+    region: "Nationwide",
+    swahiliName: "Stewed Chicken",
+    kfctCode: "15070"
+  },
+  {
+    id: "ke-218",
+    name: "luru",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Stewed quails commonly known as “Aluru” is a traditional dish typical to the Luhya and Luo communities. Aluru was prepared during special occasions. It is commonly known as Likhanga among the Luhya com-",
+    preparationTime: 15,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "quails, whole (507 g)", amount: "3" },
+      { name: "tomatoes, red, ripe (196 g)", amount: "2" },
+      { name: "onion, red skinned, raw, unpeeled (76 g)", amount: "1" },
+      { name: "salt, iodized", amount: "2 tsp. (10 g)" },
+      { name: "cow’s milk", amount: "2 cups (517 g)" },
+      { name: "cooking oil", amount: "3 ½ cups (679 g)" }
+    ],
+    instructions: [
+      "Roast the quails for 10 minutes and remove the innards.",
+      "Add 3 cups of cooking oil onto a clean dry pot and heat.",
+      "Put in the quails and fry for 11 minutes.",
+      "Remove and use paper towels to drain the oil.",
+      "Wash and chop the onion and tomatoes and place into separate bowls.",
+      "Add ½ a cup of cooking oil into a separate cooking pot and the chopped onions.",
+      "Cook until golden brown then add the tomatoes.",
+      "Cook it for 3 minutes or until the tomatoes are tender.",
+      "Add salt and stir. Cook for 5 minutes.",
+      "Add milk followed by the fried quails.",
+      "Cover and cook for 12 minutes.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 58,
+      protein: 80.0,
+      fat: 0.06,
+      carbs: 0.36,
+      fiber: 2.7
+    },
+    region: "Nationwide",
+    swahiliName: "Stewed Quails",
+    kfctCode: "15102"
+  },
+  {
+    id: "ke-219",
+    name: "“Likhanga”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a typical Luhya dish eaten during special occasions especially by boys after circumcision.",
+    preparationTime: 30,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "whole guinea fowl", amount: "665 g" },
+      { name: "onion, red skinned, raw, unpeeled (69g)", amount: "1" },
+      { name: "tomatoes, red, ripe (196g)", amount: "2" },
+      { name: "cooking oil", amount: "¼ cup (49 g)" },
+      { name: "salt, iodized", amount: "3 tsp. (14 g)" },
+      { name: "water", amount: "2 ½ cups (537 g)" }
+    ],
+    instructions: [
+      "Lightly roast the fresh guinea fowl for 10-15 minutes and cut into small pieces.",
+      "Put the pieces into a clean pot and add all the water.",
+      "Add salt, cover and boil for 1 hour.",
+      "Drain the water and keep in a separate bowl.",
+      "Chop the onions, cut the tomatoes and place into separate bowls.",
+      "Into the boiled guinea fowl, add onions and cook for 3- 5 minutes.",
+      "Add cooking oil, stir and cook for 5-10 minutes",
+      "Add tomatoes and cook for 2- 5 minutes while stirring.",
+      "Add the drained water and cover to cook for 2-5 minutes.",
+      "Turn off the heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 18,
+      protein: 96.0,
+      fat: 0.02,
+      carbs: 0.15,
+      fiber: 2.4
+    },
+    region: "Nationwide",
+    swahiliName: "Stewed Guinea Fowl",
+    kfctCode: "15095"
+  },
+  {
+    id: "ke-220",
+    name: "Munono",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Munono is a Maasai dish prepared when an animal is slaughtered and comprises of blood, beef and fat. It is eaten by the entire family and acts as a starter while the rest of meat is cooking. It is eaten immediately to avoid spoilage. Culturally, only men are allowed to prepare this dish as it is done at the point of slaugh- ter (usually in a bush).",
+    preparationTime: 10,
+    cookingTime: 90,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cow’s blood, fresh", amount: "1 ¾ cups (392 g)" },
+      { name: "beef, medium fat", amount: "695 g" },
+      { name: "cow’s fat", amount: "457 g" },
+      { name: "water", amount: "2 cups (446 g)" }
+    ],
+    instructions: [
+      "Place the cow’s fat, beef and water in a pot.",
+      "Boil the mixture until all water dries up.",
+      "Turn off the heat and drain the oil.",
+      "Mix the drained oil with blood.",
+      "Add the oil-blood mixture to the meat and stir.",
+      "Turn on the heat, cook for 3-5 minutes and remove from heat.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 549,
+      protein: 19.5,
+      fat: 50.3,
+      carbs: 4.6,
+      fiber: 0.0
+    },
+    region: "Nationwide",
+    swahiliName: "Cow Blood, Beef, Cow Fat",
+    kfctCode: "15088"
+  },
+  {
+    id: "ke-221",
+    name: "Malesele",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is traditional among the Luhya community. It is prepared on special ceremonies such as dowry",
+    preparationTime: 5,
+    cookingTime: 75,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cow’s fat", amount: "117 g" },
+      { name: "cow’s blood, fresh", amount: "4 ½ cups (1 kg)" },
+      { name: "onions, red skinned, raw, unpeeled (183 g)", amount: "2" },
+      { name: "sour milk, cow", amount: "1¾ cups (466 g)" },
+      { name: "salt, iodized", amount: "2 tsp. (9 g)" },
+      { name: "tomatoes, red, ripe (363 g)", amount: "3" }
+    ],
+    instructions: [
+      "Wash, cut and put the animal fat in a clean cooking pot.",
+      "Peel onion, wash and chop. Add the onion into the cow’s fat.",
+      "Prepare the blood by removing the clots. Add the pure blood into the same pot, place on fire to boil for 15 minutes.",
+      "Continue boiling until balls begin to form.",
+      "Add salt and continue boiling until the mixture dries up.",
+      "Add sour milk; bring to a boil while stirring at intervals until the sour milk dries up.",
+      "Grate the tomatoes and add into the mixture and let it boil for 2 minutes and then remove from the fire.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 335,
+      protein: 20.0,
+      fat: 21.2,
+      carbs: 15.4,
+      fiber: 1.0
+    },
+    region: "Nationwide",
+    swahiliName: "Cow Blood with Sour Milk",
+    kfctCode: "15071"
+  },
+  {
+    id: "ke-222",
+    name: "“Mbuboyi”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Mbuboyi is a traditional dish typical to the Rendille community.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "fresh cow’s blood", amount: "4 ½ cups (1 kg)" },
+      { name: "fresh cow’s milk", amount: "2 1/8 cups (492 g)" }
+    ],
+    instructions: [
+      "Pour the blood into a cooking vessel.",
+      "Place over fire and cook the blood while stirring.",
+      "Cook for 10 minutes and then add the fresh milk.",
+      "Continue stirring and let it boil for 10 minutes.",
+      "Remove from fire and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Blood Cooked in Fresh Milk",
+    kfctCode: "15048"
+  },
+  {
+    id: "ke-223",
+    name: "“Osarge Ogkole”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a traditional dish typical to the pastoralist Maasai community. It is prepared immediately after slaughter of a cow. This soup was traditionally given to the sick to hasten their recovery. In modern day, this recipe is enjoyed by the entire family.",
+    preparationTime: 5,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "fresh cow’s milk", amount: "6 2/3 cups (1486 g)" },
+      { name: "cow’s blood, fresh", amount: "1 ½ cups (342 g)" }
+    ],
+    instructions: [
+      "Boil the milk and turn off the heat.",
+      "Add blood to the milk and whisk.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 81,
+      protein: 6.1,
+      fat: 3.1,
+      carbs: 7.0,
+      fiber: 0.0
+    },
+    region: "Nationwide",
+    swahiliName: "Fresh Blood and Milk Soup",
+    kfctCode: "15089"
+  },
+  {
+    id: "ke-224",
+    name: "Sukuma Wiki",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Sukuma wiki is the most commonly used green vegetable in Kenya. It is commonly served with Ugali as a",
+    preparationTime: 15,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "tomatoes, red, ripe (345 g)", amount: "2" },
+      { name: "onion, red skinned, raw, unpeeled (184 g)", amount: "1" },
+      { name: "cooking oil", amount: "¼ cup (45 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" }
+    ],
+    instructions: [
+      "Wash the sukuma wiki and then remove the stalks.",
+      "Roll up a handful of sukuma wiki leaves into a bunch and chop them finely.",
+      "Wash, prepare and cut the onion and tomatoes separately.",
+      "Place a cooking pot on the fire. Add cooking oil.",
+      "Cook the onion until golden brown.",
+      "Add tomatoes into the pot.",
+      "Cook tomatoes until ready.",
+      "Add the chopped sukuma wiki and salt.",
+      "Stir until evenly mixed.",
+      "Simmer over low heat for 5 minutes.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Stir-fried Kales",
+    kfctCode: "15031"
+  },
+  {
+    id: "ke-225",
+    name: "Stir-fried Cabbage",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Stir fried cabbage is common in many communities in Kenya. It is served with various starchy dishes as a",
+    preparationTime: 10,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cabbage, white, raw", amount: "1124 g" },
+      { name: "onion, red skinned, raw, unpeeled (139g)", amount: "½" },
+      { name: "cooking oil", amount: "½ cup (83 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" }
+    ],
+    instructions: [
+      "Prepare and cut the onions and the cabbage into separate bowls.",
+      "Add the cooking oil into a cooking pot over fire and then put the chopped onions. Stir the onion and cook for 2 minutes.",
+      "Add the cabbage and stir.",
+      "Add salt and continue to stir the cabbage to cook it evenly.",
+      "Cook for an additional 5 minutes.",
+      "Remove and serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15032"
+  },
+  {
+    id: "ke-226",
+    name: "“Mrenda and Seveve”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This blend of “mrenda” and pumpkin leaves is a traditional vegetable dish among the Luhya community. It is usually served with Ugali.",
+    preparationTime: 15,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "jute mallow leaves, raw", amount: "316 g" },
+      { name: "pumpkin leaves, raw", amount: "74 g" },
+      { name: "onion, red skinned, raw, unpeeled (75 g)", amount: "1" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "water", amount: "2/3 cup (134 g)" },
+      { name: "tomato, red, ripe (145 g)", amount: "1" },
+      { name: "cow’s milk", amount: "1 ¾ cups (410 g)" }
+    ],
+    instructions: [
+      "Wash and pluck the leaves from the stalks of the jute mallow.",
+      "Wash and chop the pumpkin leaves.",
+      "Prepare, wash and cut the onion and tomato into separate bowls.",
+      "Boil all the water and put the leafy vegetables into the boiling water and cook on low heat for 5 minutes.",
+      "Stir the vegetables; add salt, onion and tomato.",
+      "Cook for 5 minutes and then add all the milk.",
+      "Stir and cook for another 5 minutes.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Jute Mallow & Pumpkin Leaves",
+    kfctCode: "15033"
+  },
+  {
+    id: "ke-227",
+    name: "Pumpkin Leaves",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Pumpkin leaves are rich in nutrients and are loved by many communities in Kenya. When stir fried, they are served with Ugali and at times pumpkin leaves are added to mashed dishes.",
+    preparationTime: 10,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "stalks (110 g) pumpkin leaves, raw", amount: "14" },
+      { name: "onion, red skinned, raw, unpeeled (44 g)", amount: "1" },
+      { name: "tomato, red, ripe (91 g)", amount: "1" },
+      { name: "cooking oil", amount: "1 tbsp. (12 g)" },
+      { name: "cow milk", amount: "2/3 cup (132 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" }
+    ],
+    instructions: [
+      "Wash the pumpkin leaves.",
+      "Wash, prepare and chop the onion and tomato into separate bowls.",
+      "Put cooking oil in a pan, heat, and add the chopped onions until they brown lightly.",
+      "Add tomatoes into the cooking pot and cook for 5 minutes.",
+      "Add the pumpkin leaves, salt and the milk gradually while stirring.",
+      "Cook for 5 minutes.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15034"
+  },
+  {
+    id: "ke-228",
+    name: "“Saget, Terere & Managu”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "The mix of saget, terere and managu is a typical way of preparing a deliciously rich vegetable dish among the Kisii and Luhya communities. This blend of vegetables is served with Ugali.",
+    preparationTime: 15,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "spider plant leaves, raw", amount: "451 g" },
+      { name: "African nightshade leaves, raw", amount: "1022 g" },
+      { name: "amaranth leaves", amount: "551 g" },
+      { name: "onion, red skinned, raw, unpeeled (126g)", amount: "1" },
+      { name: "cow’s milk", amount: "2 ¼ cups (511 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "water", amount: "2 ½ cups (539 g)" }
+    ],
+    instructions: [
+      "Wash and remove the leaves from the stalks.",
+      "Prepare and cut the onions.",
+      "Bring 2 ½ cups of water to a boil and add the vegetables to the boiling water. Cover and boil for 10 minutes. Do not stir the vegetables until they are fully covered by the water.",
+      "Turn off the heat. Strain and discard the excess water.",
+      "Add salt to the boiled vegetables, turn on the heat.",
+      "Add half the milk and the onion.",
+      "Stir the mixture. Cover and simmer on low heat.",
+      "Stir frequently to prevent the vegetables from clumping.",
+      "Add the rest of the milk and cook for 3 minutes.",
+      "Remove from heat."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Spider plant, Amaranth & African Nightshade leaves",
+    kfctCode: "15035"
+  },
+  {
+    id: "ke-229",
+    name: "“ derema”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Vine spinach commonly referred to as “Nderema” is traditional to the Luhya and Kuria communities. It is usually eaten with Ugali.",
+    preparationTime: 15,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "vine spinach leaves, fresh", amount: "417 g" },
+      { name: "tomatoes, red, ripe (182 g)", amount: "2" },
+      { name: "onion, red skinned, raw, unpeeled (139g)", amount: "1" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "ghee", amount: "3 tbsp. (39 g)" }
+    ],
+    instructions: [
+      "Peel, wash and cut the onions and the tomatoes separately.",
+      "Put ghee in the cooking pot and heat for 1 minute on medium heat.",
+      "Add the onions and cook for 5 minutes until golden-brown.",
+      "Add the tomatoes then the vine spinach and cover the cooking pot.",
+      "Cook for 10 minutes then stir the contents.",
+      "Add salt, cover and cook for 1 minute.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Vine Spinach",
+    kfctCode: "15039"
+  },
+  {
+    id: "ke-230",
+    name: "“Terere”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Amaranth leaves commonly known as “Terere” is an indigenous vegetable that used to grow as a weed. Nowadays, it is cultivated and eaten across all communities in Kenya. When cooked, amaranth leaves have a distinct aroma and a soft appeal. Most communities use amaranth leaves in mashed infant dishes but also as a side dish that is eaten with Ugali.",
+    preparationTime: 10,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "amaranth leaves, raw", amount: "1585 g" },
+      { name: "tomatoes, red, ripe (289 g)", amount: "2" },
+      { name: "onion, red skinned, raw, unpeeled (105g)", amount: "1" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "cooking oil", amount: "¼ cup (45 g)" }
+    ],
+    instructions: [
+      "Peel, wash, and cut the onion and tomatoes separately.",
+      "Put the cooking pot on the fire and pour in the oil, add the onion and cook until golden brown.",
+      "Put the tomatoes into the cooking pot. Continue stirring until the tomatoes are cooked.",
+      "Add the amaranth and salt then mix well.",
+      "Cover and simmer. Stir momentarily.",
+      "Remove from fire when ready; about 10 minutes."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Stir-fried Amaranth Leaves",
+    kfctCode: "15030"
+  },
+  {
+    id: "ke-231",
+    name: "Mashed Pumpkin & Black Nightshade leaves",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This vegetable dish is popular among the Kisii community. The added pumpkin gives it a sweet taste to balance the bitterness of “managu”. It is eaten with Ugali as a side dish.",
+    preparationTime: 5,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "black night shade leaves, raw", amount: "752 g" },
+      { name: "salt, iodized", amount: "1 tsp. (4 g)" },
+      { name: "cooking oil", amount: "1/8 cup (24 g)" },
+      { name: "water", amount: "4 ½ cups (998 g)" }
+    ],
+    instructions: [
+      "Peel the pumpkin and wash.",
+      "Pluck the leaves from the stalks and wash.",
+      "Put the pumpkin into a cooking pot, add all the water and salt.",
+      "Cook the pumpkin for 30 minutes.",
+      "Add oil and the black nightshade. Cover and cook for",
+      "20 minutes.",
+      "Remove from the heat and mash into a smooth consistency.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.09,
+      fat: 0.27,
+      carbs: 1.4,
+      fiber: 233.0
+    },
+    region: "Nationwide",
+    kfctCode: "15120"
+  },
+  {
+    id: "ke-232",
+    name: "“Thabai / Thaa”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Stinging nettle commonly known as “thabai” or “thaa” is a traditional vegetable popular among the Ki- kuyu and Meru communities. It is usually eaten with ugali as a side dish during lunch or dinner. Sometimes it is added to mashed food to enrich with nutrients.",
+    preparationTime: 15,
+    cookingTime: 45,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "stinging nettle leaves, raw", amount: "267 g" },
+      { name: "onion, red skinned, raw, unpeeled (96 g)", amount: "1" },
+      { name: "cooking oil", amount: "2 tbsp. (25 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (7 g)" },
+      { name: "water", amount: "4 ½ cups (994 g)" }
+    ],
+    instructions: [
+      "Cut the stinging nettle leaves from the stalks.",
+      "Wash the leaves.",
+      "Put the leaves in a pot and add 3 ½ cups of water.",
+      "Bring the mixture to a boil until tender.",
+      "In a separate cooking pot, heatcooking oil for 1 minute.",
+      "Peel, wash and chop the onion.",
+      "Add the chopped onion and cook until they are soft.",
+      "Add the boiled stinging nettle and salt then stir.",
+      "Add the rest of the water after 1 minute.",
+      "Cover the pot and bring to a boil for 8 minutes.",
+      "Remove from the fire."
+    ],
+    nutritionFacts: {
+      calories: 1,
+      protein: 4.0,
+      fat: 0.01,
+      carbs: 0.06,
+      fiber: 0.2
+    },
+    region: "Nationwide",
+    swahiliName: "Stinging Nettle leaves",
+    kfctCode: "15077"
+  },
+  {
+    id: "ke-233",
+    name: "“Rhikhuvi”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Cowpea leaves are among the most common green vegetables in Kenya. Most common among the Kam- ba community but also consumed in communities that grow cowpeas. It is usually served with Ugali as a side dish during lunch or dinner. It is eaten by the entire family.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cow pea leaves, raw", amount: "871 g" },
+      { name: "onion, red skinned, raw, unpeeled (79 g)", amount: "½" },
+      { name: "cooking oil", amount: "1/3 cup (59 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (8 g)" },
+      { name: "“msherekha” (wood ash and", amount: "1/8 cup (38 g)" },
+      { name: "milk", amount: "2/3 cup (149 g)" },
+      { name: "water", amount: "¾ cup (201 g)" }
+    ],
+    instructions: [
+      "Prepare the vegetables by removing the stalks. Do not cut the leaves.",
+      "Wash the vegetables.",
+      "Boil ¾ cup of water in a cooking pot and add the uncut vegetables and turn. Add 1/8 cup of msherekha.",
+      "Cover the pot and boil for 20 minutes. Stir at intervals.",
+      "Turn off the heat.",
+      "Strain the water and discard.",
+      "Add onions and cooking oil to a cooking pot.",
+      "Cook onions for 2 minutes and then add the vegetables.",
+      "Stir then add the milk and salt.",
+      "Cover the pot and cook for 2 minutes.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 52,
+      protein: 239.0,
+      fat: 0.19,
+      carbs: 0.22,
+      fiber: 0.7
+    },
+    region: "Nationwide",
+    swahiliName: "Stewed Cowpea Leaves",
+    kfctCode: "15078"
+  },
+  {
+    id: "ke-234",
+    name: "“Kunde & Mrenda”",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This vegetable blend is most common among the Luhya communities. It is usually eaten as a side dish with Ugali. Therefore, it is mostly consumed during lunch or dinner. It is garnished with milk to give a smooth and creamy taste.",
+    preparationTime: 10,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cow- pea leaves, raw", amount: "79 g" },
+      { name: "jute mallow leaves", amount: "232 g" },
+      { name: "“magadi” (water and ash,", amount: "1/8 cup (24 g)" },
+      { name: "salt, iodized", amount: "1 tsp. (4 g)" },
+      { name: "milk", amount: "2/3 cup (159 g)" }
+    ],
+    instructions: [
+      "Prepare the vegetables by removing the stalks.",
+      "Mix the leaves together and wash properly. Do not cut.",
+      "Add 1/8 cup of “magadi” (ash and water solution).",
+      "Add the uncut vegetables and cover the pot.",
+      "Cover and start cooking on low heat. Do not add water.",
+      "Steam for 5 minutes.",
+      "Add salt and stir.",
+      "Add milk, stir, and cover to cook for 5 minutes.",
+      "Turn off the heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 21,
+      protein: 0.1,
+      fat: 0.29,
+      carbs: 0.4,
+      fiber: 38.0
+    },
+    region: "Nationwide",
+    swahiliName: "Stewed Cowpeas Leaves and Jute Mallow leaves",
+    kfctCode: "15079"
+  },
+  {
+    id: "ke-235",
+    name: "Stir-fried Spinach",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is one of the most common green vegetable dishes available in Kenya. It is consumed across all com- munities in Kenya especially those living in urban areas. It is mainly eaten with Ugali or any other starchy meal as a side dish. Sometimes, it is cooked together with other green vegetables.",
+    preparationTime: 10,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "spinach leaves, raw", amount: "675 g" },
+      { name: "onion, red skinned, raw, unpeeled", amount: "1" },
+      { name: "cooking oil", amount: "1/8 cup (25 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (2 g)" }
+    ],
+    instructions: [
+      "Remove the stalks from the spinach and wash.",
+      "Cut the spinach.",
+      "Peel, wash and chop the onions.",
+      "Heat cooking oil in a pan for 1 minute and add the chopped onions. Cook for 4 minutes.",
+      "Add spinach and salt. Cover and let it simmer for 10 minutes.",
+      "Remove from heat."
+    ],
+    nutritionFacts: {
+      calories: 284,
+      protein: 1701.0,
+      fat: 0.02,
+      carbs: 0.08,
+      fiber: 0.5
+    },
+    region: "Nationwide",
+    kfctCode: "15076"
+  },
+  {
+    id: "ke-236",
+    name: "Kitojo",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "“Kitojo” as it is commonly called among the Taita community, is a delicious dish made from sweet potato leaves. It is commonly eaten with Ugali.",
+    preparationTime: 15,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "fresh sweet potato leaves, raw", amount: "835 g" },
+      { name: "onion, red skinned, raw, unpeeled (81 g)", amount: "1" },
+      { name: "cooking oil", amount: "¼ cup (44 g)" },
+      { name: "salt, iodized", amount: "1 tsp. (6 g)" }
+    ],
+    instructions: [
+      "Remove the leaves from the vines and wash thoroughly.",
+      "Cut the leaves into small strips.",
+      "Prepare and chop the onion.",
+      "Add cooking oil in a pot, add the chopped onions and fry until golden brown.",
+      "Add the vegetables and salt. Stir and cook until ready or soft.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 276,
+      protein: 1653.0,
+      fat: 0.07,
+      carbs: 0.26,
+      fiber: 0.9
+    },
+    region: "Nationwide",
+    swahiliName: "Sweet Potato Leaves",
+    kfctCode: "15091"
+  },
+  {
+    id: "ke-237",
+    name: "Obobwa",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Stewed mushroom commonly known as “Obobwa” is a traditional dish typical to the Luhya community.",
+    preparationTime: 15,
+    cookingTime: 70,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "mushrooms, raw", amount: "400g" },
+      { name: "onion, red skinned, raw, unpeeled (187 g)", amount: "1" },
+      { name: "peanut butter", amount: "3 ½ tbsp. (55 g)" },
+      { name: "tomato, red, raw (140 g)", amount: "1" },
+      { name: "salt, iodized", amount: "2 tsp. (11 g)" },
+      { name: "“msherekha” (wood ash and water mixture)", amount: "1 g" },
+      { name: "water", amount: "¾ cup (157 g)" }
+    ],
+    instructions: [
+      "Wash and cut the fresh mushroom into ¼ (quarter) pieces.",
+      "Peel, wash and finely chop the onion.",
+      "Place the onions, mushrooms, tomatoes and peanut butter into a clean cooking pot.",
+      "Add ¾ cup of water and salt, turn on the heat and cover the pot.",
+      "Cook for 11 minutes and add 1 g of “msherekha”",
+      "(ash: water ratio is 1:9).",
+      "Cover the pot and cook further for 5-8 minutes.",
+      "Stir, turn to low heat and continue cooking for 25-30 minutes.",
+      "Remove from heat and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 12,
+      protein: 69.0,
+      fat: 0.17,
+      carbs: 0.35,
+      fiber: 2.2
+    },
+    region: "Nationwide",
+    swahiliName: "Stewed Mushrooms in Peanut Butter",
+    kfctCode: "15080"
+  },
+  {
+    id: "ke-238",
+    name: "Potato Curry",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Potato curry is a spiced recipe that makes part of a full meal platter and served during a main meal. It is typical to the Kenyan Indian community and is relished by the entire family.",
+    preparationTime: 15,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, Irish, white, raw (558 g)", amount: "2" },
+      { name: "tomatoes, red, ripe (223 g)", amount: "2" },
+      { name: "salt, iodized", amount: "2 tsp. (9 g)" },
+      { name: "turmeric powder", amount: "¼ tsp. (1 g)" },
+      { name: "coriander powder", amount: "2 tsp. (6 g)" },
+      { name: "red chilli powder", amount: "¼ tsp. (1 g)" },
+      { name: "cooking oil", amount: "3 ½ tbsp. (42 g)" },
+      { name: "fenugreek seeds, raw", amount: "¼ tsp. (1 g)" },
+      { name: "mustard seeds, raw", amount: "1 tsp. (3 g)" },
+      { name: "cumin seeds, raw", amount: "½ tsp. (3 g)" },
+      { name: "curry leaves", amount: "½ bunch (2 g)" },
+      { name: "lemon, fresh (5 g)", amount: "¼" },
+      { name: "sugar", amount: "2 tsp. (9 g)" },
+      { name: "water", amount: "1 1/3 cups (299 g)" }
+    ],
+    instructions: [
+      "Peel wash and cut the potatoes.",
+      "Blend tomatoes, turmeric powder, coriander powder, red chilli powder, 1 tablespoon of cooking oil.",
+      "Put 2 ½ tablespoons of cooking oil in a cooking pot and heat for 3 minutes.",
+      "Add the fenugreek, mustard seeds, curry leaves and cumin seeds.",
+      "Stir and cook for 2 minutes.",
+      "Add the blended ingredients, mix and cook for 2 minutes.",
+      "Add salt and all the water and cook for 10 minutes.",
+      "Meanwhile, mix the sugar and lemon juice into a separate cup.",
+      "Add the potatoes and stir. Add the sugar-lemon juice solution.",
+      "Cover to cook for 16 minutes or until the potatoes are tender.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 20,
+      protein: 120.0,
+      fat: 0.06,
+      carbs: 0.04,
+      fiber: 0.9
+    },
+    region: "Nationwide",
+    kfctCode: "15127"
+  },
+  {
+    id: "ke-239",
+    name: "Peas and Brinjal Curry",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Green peas prepared with brinjals is a curry that makes part of a full meal platter referred to as Thali. It is traditional to Kenyan Indian community and is served as a side dish during lunch or dinner.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "garden peas, raw", amount: "1 cup (186 g)" },
+      { name: "egg plants (brinjals), raw (169 g)", amount: "3" },
+      { name: "tomatoes, red, ripe (161 g)", amount: "2" },
+      { name: "coriander leaves", amount: "1 bunch (40 g)" },
+      { name: "garlic", amount: "3 cloves (10 g)" },
+      { name: "chillies, fresh, raw (5 g)", amount: "2" },
+      { name: "ginger (7 g)", amount: "1 piece" },
+      { name: "fenugreek seeds, raw", amount: "1 tsp. (3 g)" },
+      { name: "mustard seeds, raw", amount: "1 tsp. (3 g)" },
+      { name: "cumin seeds, raw", amount: "¼ tsp. (1 g)" },
+      { name: "coriander powder", amount: "2 tsp. (8 g)" },
+      { name: "turmeric powder", amount: "¼ tsp. (1 g)" },
+      { name: "red chilli powder", amount: "¼ tsp. (1 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (7 g)" },
+      { name: "water", amount: "½ cup (113 g)" },
+      { name: "cooking oil", amount: "3 tbsp. (39 g)" }
+    ],
+    instructions: [
+      "Blend all the ingredients together; except garden peas, eggplants, water and cooking oil.",
+      "Cut the eggplant and mix with garden peas in a separate bowl.",
+      "Into a clean pot, add the cooking oil and heat for 2 minutes.",
+      "Add the blended ingredients and stir. Cook for 3 minutes.",
+      "Add the peas and egg plants, and stir.",
+      "Add ½ cup water.",
+      "Cover and cook for 20 minutes.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 58,
+      protein: 348.0,
+      fat: 0.13,
+      carbs: 0.09,
+      fiber: 1.1
+    },
+    region: "Nationwide",
+    kfctCode: "15128"
+  },
+  {
+    id: "ke-240",
+    name: "Stewed Split Dal",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This recipe is part of an assortment of dishes that make up a meal platter and is traditional to the Kenyan Indian community. The dal stew is heavily spiced to give a tantalizing taste. It is served as a family dish during lunch or dinner as a side dish.",
+    preparationTime: 60,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "yellow split dal, raw", amount: "1 cup (176 g)" },
+      { name: "tomatoes, red, raw diced (246 g)", amount: "3" },
+      { name: "salt, iodized", amount: "2 tsp. (12 g)" },
+      { name: "turmeric powder", amount: "¾ tsp. (2 g)" },
+      { name: "red chilli powder", amount: "¼ tsp. (1 g)" },
+      { name: "tomato paste, salted", amount: "½ tbsp. (17 g)" },
+      { name: "cooking oil", amount: "2 tbsp. (22 g)" },
+      { name: "fenugreek seeds, raw", amount: "1 tsp. (3 g)" },
+      { name: "mustard seeds, raw", amount: "1 tsp. (4 g)" },
+      { name: "cumin seeds, raw", amount: "1 tsp. (2 g)" },
+      { name: "curry leaves", amount: "1 bunch (3 g)" },
+      { name: "lemon, fresh (3 g)", amount: "1" },
+      { name: "sugar, white", amount: "1 ½ tbsp. (22 g)" },
+      { name: "water", amount: "8 ½ cups (1835 g)" }
+    ],
+    instructions: [
+      "Soak the dal for 50 minutes and wash.",
+      "Put the soaked dal into a cooking pot. Add 4 ½ cups of water and 2 teaspoons of salt. Cook for 40 minutes while stirring at intervals.",
+      "Meanwhile, weigh and mix tomatoes, turmeric, red chilli powder, tomato paste and fenugreek seeds.",
+      "Put cooking oil, mustard seeds and cumin seeds into a pot and cook for 1 minute.",
+      "Add the mixed ingredients cook for 2 minutes.",
+      "Add 4 cups of water and curry leaves then stir.",
+      "Boil for 5 minutes.",
+      "Add juice of lemon and sugar then stir.",
+      "Meanwhile grind the boiled dal (sieve it if necessary)",
+      "Add the ground dal into the pot and stir.",
+      "Cover to cook for 12 minutes.",
+      "Remove from heat and serve"
+    ],
+    nutritionFacts: {
+      calories: 18,
+      protein: 105.0,
+      fat: 0.05,
+      carbs: 0.03,
+      fiber: 0.3
+    },
+    region: "Nationwide",
+    kfctCode: "15126"
+  },
+  {
+    id: "ke-241",
+    name: "Chick Peas Curry",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a vegetable curry typical to Kenyan Indian community. The soaking step is a must if you desire soft and crunchy appeal and for a full release of nutrients. This deliciously spicy dish is commonly referred to as “Chole” and is eaten with fried bread called “Bhature” made from soft wheat flour. Chick peas curry is eaten as part of a main meal during lunch or dinner and is savoured by the entire family.",
+    preparationTime: 15,
+    cookingTime: 40,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "chick peas, raw", amount: "1 2/3 cups (294 g)" },
+      { name: "red chilli powder", amount: "1 tsp. (10 g)" },
+      { name: "turmeric powder", amount: "½ tsp. (3 g)" },
+      { name: "chole masala", amount: "½ tsp. (6 g)" },
+      { name: "tomatoes, red, ripe (220 g)", amount: "3" },
+      { name: "tomato paste, salted", amount: "1 tbsp. (20 g)" },
+      { name: "onion, red skinned, raw, unpeeled (113 g)", amount: "1" },
+      { name: "cooking oil", amount: "3 tbsp. (43 g)" },
+      { name: "garlic", amount: "4 cloves (16 g)" },
+      { name: "ginger", amount: "1 piece (9 g)" },
+      { name: "coriander leaves", amount: "20 g" },
+      { name: "coriander powder", amount: "1 tbsp. (11 g)" },
+      { name: "cinnamon", amount: "6 sticks (1 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (13 g)" },
+      { name: "bay leaf (1 g)", amount: "½" },
+      { name: "cloves", amount: "4 sticks (2 g)" },
+      { name: "cumin seeds, raw", amount: "1 tsp. (2 g)" },
+      { name: "lemon wedge (7 g)", amount: "1" },
+      { name: "water", amount: "3 cups (643 g)" },
+      { name: "anise seeds, raw", amount: "1 tsp. (1 g)" }
+    ],
+    instructions: [
+      "Sort and soak the chick peas overnight.",
+      "Wash and boil the chick peas in 2 cups water until the chick peas are ready and tender. Add 1 teaspoon of salt to taste.",
+      "Prepare, wash and cut the onion, tomatoes and coriander leaves.",
+      "Heat the oil in a cooking pot, add cinnamon, cumin, cloves, onion and stir.",
+      "Cook for 3 minutes.",
+      "Add the cut tomatoes, ginger, garlic and coriander powder. Stir.",
+      "Add the tomato paste, red Chilli powder, 1 ½ teaspoon of salt, turmeric powder, cinnamon, bay leaf, lemon juice, anise seeds and chole masala.",
+      "Stir and cover to cook for 5-10 minutes.",
+      "Add the coriander leaves.",
+      "Add the boiled chick peas and 1 cup of water.",
+      "Cover to cook for 5 minutes.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 23,
+      protein: 140.0,
+      fat: 0.11,
+      carbs: 0.06,
+      fiber: 0.6
+    },
+    region: "Nationwide",
+    kfctCode: "15139"
+  },
+  {
+    id: "ke-242",
+    name: "Stewed Potatoes & rrowroots",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Stewed arrowroots is a nostalgic dish traditional to the arrowroot growing regions. The Kikuyu, Meru and Embu communities are key to this recipe. It is eaten as a main meal during lunch or supper and is relished by the entire family.",
+    preparationTime: 15,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, Irish, white (1 kg)", amount: "9" },
+      { name: "arrowroots, unpeeled, raw (1.7 kg)", amount: "3" },
+      { name: "green bananas, unpeeled, raw (1.2 kg)", amount: "6" },
+      { name: "onion, red skinned, raw, unpeeled (185 g)", amount: "1" },
+      { name: "tomatoes, red, ripe (511 g)", amount: "3" },
+      { name: "cooking oil", amount: "1/3 cup (69 g)" },
+      { name: "salt, iodized", amount: "3 tsp. (15 g)" },
+      { name: "water", amount: "7 cups (1534 g)" }
+    ],
+    instructions: [
+      "Peel and wash the potatoes, arrowroots, onions and tomatoes.",
+      "Cut the washed ingredients into cubes in separate bowls.",
+      "Peel and wash the bananas and keep them in a separate bowl with water (this water is not for cooking but to prevent bananas from browning).",
+      "Heat the cooking oil in a cooking vessel for 2 minutes and add onions, cook for 12 minutes until golden brown.",
+      "Add tomatoes and cook for 8 minutes.",
+      "Add the salt and stir.",
+      "Add the chopped potatoes and stir.",
+      "Add 4 cups of water and cook for another 4 minutes.",
+      "Add cut arrowroots and cover to cook for 17 minutes.",
+      "Add the bananas and 3 cups of water then stir and let to it cook for 13 minutes. Serve."
+    ],
+    nutritionFacts: {
+      calories: 7,
+      protein: 40.0,
+      fat: 0.08,
+      carbs: 0.05,
+      fiber: 1.0
+    },
+    region: "Nationwide",
+    kfctCode: "15058"
+  },
+  {
+    id: "ke-243",
+    name: "Yam Stew",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "The ancient yam is among the oldest roots in Kenya. It is a traditional delicacy of the Meru community. To date, yams are eaten as a stew as indicated in this recipe. It can also be prepared with meat or other protein. Loved for its filling effect, yam stew is packed with good wholesome starch ideal for the health conscious. It can be eaten during lunch or dinner as a main dish served to the whole family.",
+    preparationTime: 20,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "yam, white, raw (2 kg)", amount: "1" },
+      { name: "potatoes, unpeeled, Irish, white (908 g)", amount: "6" },
+      { name: "onion, red skinned, raw, unpeeled (175 g)", amount: "1" },
+      { name: "tomatoes, red, ripe (209 g)", amount: "2" },
+      { name: "carrots, orange, raw (245 g)", amount: "2" },
+      { name: "salt, iodized", amount: "1 ½ tbsp. (22 g)" },
+      { name: "cooking oil", amount: "1/3 cup (76 g)" },
+      { name: "water", amount: "4 3/4 cups (1036 g)" }
+    ],
+    instructions: [
+      "Peel, wash and cut the yam into small pieces.",
+      "Peel and wash the potatoes in water.",
+      "Cut the potatoes into small cubes.",
+      "Peel, wash and cut the tomatoes, carrots and the onions.",
+      "Heat the oil for 1 minute then add the onions.",
+      "Add tomatoes after 3 minutes.",
+      "Add salt after 5 minutes. After 6 minutes add the cut yam and stir.",
+      "After 8 minutes add all the water and cover the pot.",
+      "After 6 minutes add potatoes, stir and cover.",
+      "Add carrots after 8 minutes.",
+      "Heat for 20 minutes and remove from the fire.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15052"
+  },
+  {
+    id: "ke-244",
+    name: "Pumpkins with Peanut Butter",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This sweet, buttery recipe is an infant dish served typically for lunch or dinner by the urban communities.",
+    preparationTime: 5,
+    cookingTime: 45,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "peanut butter", amount: "7 tbsp. (109 g)" },
+      { name: "cooking oil", amount: "4 tsp. (16 g)" },
+      { name: "water", amount: "2 1/8 cups (466 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (7 g)" }
+    ],
+    instructions: [
+      "Peel and wash the pumpkin.",
+      "In a separate bowl mix the peanut butter with 1/8 cup of water.",
+      "Put the pumpkin into a cooking pot and add the rest of the water.",
+      "Bring to boil, add salt and cooking oil.",
+      "When the pumpkin has cooked, add the peanut paste.",
+      "Cover and simmer for 9 minutes.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 182,
+      protein: 1092.0,
+      fat: 0.1,
+      carbs: 0.06,
+      fiber: 1.6
+    },
+    region: "Nationwide",
+    kfctCode: "15141"
+  },
+  {
+    id: "ke-245",
+    name: "Sweet Potatoes with Peanut Butter",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a recipe originally common among the Nubian community. It is eaten for breakfast with tea. It is loved for its filling effect due to the combined effect of peanut butter and sweet potatoes.",
+    preparationTime: 10,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "sweet potatoes, unpeeled, raw, orange", amount: "5" },
+      { name: "onion, red skinned, unpeeled, raw (71 g)", amount: "1" },
+      { name: "tomatoes, Red, ripe (296 g)", amount: "2" },
+      { name: "cooking oil", amount: "3 tbsp. (36 g)" },
+      { name: "peanut butter", amount: "6 tbsp. (100 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (7 g)" },
+      { name: "water", amount: "4 2/3 cups (1004 g)" }
+    ],
+    instructions: [
+      "Peel, wash and cut the sweet potatoes into desirable sizes.",
+      "Peel and chop the onion and fry with oil in a cooking pot until golden brown.",
+      "Grate tomatoes and add into the golden-brown onions, stir and simmer until the tomatoes are well cooked or tender.",
+      "Add the sweet potatoes and salt. Mix and cover to simmer.",
+      "Add 4 cups of water and continue simmering.",
+      "Meanwhile, mix the peanut butter with 2/3 cup of water in a separate bowl.",
+      "Add the peanut mixture into the sweet potatoes mixture and stir.",
+      "Simmer for 3 minutes and serve."
+    ],
+    nutritionFacts: {
+      calories: 526,
+      protein: 3155.0,
+      fat: 0.05,
+      carbs: 0.04,
+      fiber: 1.1
+    },
+    region: "Nationwide",
+    kfctCode: "15113"
+  },
+  {
+    id: "ke-246",
+    name: "rrowroot Stew",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is typical among the communities that grow arrowroots and bananas which include the Kisii, Ki- kuyu, Meru and Embu communities. Often served as a main meal, this recipe is eaten by the whole family and at times fed to infants above the age of 9 months.",
+    preparationTime: 15,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, white, Irish (916 g)", amount: "4" },
+      { name: "arrowroots, unpeeled, raw (1.6 kg)", amount: "3" },
+      { name: "green bananas, unpeeled (393 g)", amount: "3" },
+      { name: "carrots, orange (342 g)", amount: "3" },
+      { name: "red skinned, onions, unpeeled (188 g)", amount: "2" },
+      { name: "tomatoes, red, ripe (286 g)", amount: "3" },
+      { name: "cooking oil", amount: "1/3 cup (64 g)" },
+      { name: "salt, iodized", amount: "4 tsp. (20 g)" },
+      { name: "water", amount: "7 cups (1522 g)" }
+    ],
+    instructions: [
+      "Peel, wash and cut the potatoes, arrowroots and bananas into large chunks. Place them in separate bowls and cover with water.",
+      "Peel, wash, cut the carrots and tomatoes and place in separate bowls.",
+      "Chop the onions and put into a clean pot, add cooking oil and cook the onion until it starts to brown",
+      "Add tomatoes, cook while stirring until tender",
+      "Add the cut arrowroots, stir and cook for 3 minutes.",
+      "Add the cut carrots, 4 cups of water and stir. Cook for",
+      "4 minutes.",
+      "Add potatoes, salt and stir.",
+      "Cover and leave to cook for 15-20 minutes while stirring at intervals.",
+      "Add the chopped green bananas and cook for 2 minutes. Add 3 cups of water.",
+      "Cover and cook until ready.",
+      "Remove from heat and serve."
+    ],
+    nutritionFacts: {
+      calories: 95,
+      protein: 570.0,
+      fat: 0.09,
+      carbs: 0.05,
+      fiber: 1.1
+    },
+    region: "Nationwide",
+    kfctCode: "15112"
+  },
+  {
+    id: "ke-247",
+    name: "Pan Fried rrowroots",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Pan fried arrowroots is a breakfast dish typical among urban dwellers but originally eaten among the Ki- kuyu and Meru communities. It is usually eaten with tea.",
+    preparationTime: 5,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "arrowroot, unpeeled, raw (574 g)", amount: "1" },
+      { name: "cooking oil", amount: "1 cup (209 g)" },
+      { name: "water", amount: "5 cups (1085g)" },
+      { name: "salt, iodized", amount: "1 tsp. (5 g)" }
+    ],
+    instructions: [
+      "Peel and wash the arrowroots.",
+      "Put the arrowroots into a cooking pot; add all the water and salt bring to a boil for 15 minutes.",
+      "Drain the excess water.",
+      "Dice the boiled arrowroots into thin circular shapes.",
+      "Add cooking oil into a clean pan and heat for 3 minutes.",
+      "Place the boiled arrowroots on the pan. Fry for 7 minutes, while turning at intervals.",
+      "Remove from pan and place onto paper towels to drain the oil.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 3,
+      protein: 20.0,
+      fat: 0.21,
+      carbs: 0.1,
+      fiber: 2.4
+    },
+    region: "Nationwide",
+    kfctCode: "15117"
+  },
+  {
+    id: "ke-248",
+    name: "Pan Fried Sweet Potatoes",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This delicious recipe is a typical breakfast dish common among urban dwellers but originally from Kisii community. It is usually eaten with a cup of tea.",
+    preparationTime: 5,
+    cookingTime: 75,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "sweet potatoes, unpeeled, orange", amount: "6" },
+      { name: "water", amount: "4 ½ cups (996 g)" },
+      { name: "oil", amount: "1 cup (191 g)" }
+    ],
+    instructions: [
+      "Peel the sweet potatoes and wash.",
+      "Chop them into large chunks.",
+      "Put the sweet potatoes into a cooking pot, add all the water and place on heat.",
+      "Bring the sweet potatoes to a boil until tender. (Do not overcook)",
+      "Drain the excess water.",
+      "Heat cooking oil in a pan for 2 minutes.",
+      "Gently place the sweet potatoes onto the oil, fry until they turn golden brown and crispy.",
+      "Turn to fry the other side.",
+      "Remove from heat.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 1592,
+      protein: 9547.0,
+      fat: 0.04,
+      carbs: 0.07,
+      fiber: 1.2
+    },
+    region: "Nationwide",
+    kfctCode: "15109"
+  },
+  {
+    id: "ke-249",
+    name: "Potato Bhajia",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "snack",
+    description: "This is a spicy recipe common among Kenyan Indian community. It is served as part of a main meal and is eaten by the entire family.",
+    preparationTime: 10,
+    cookingTime: 40,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, white, Irish (809 g)", amount: "3" },
+      { name: "piece of ginger (11 g)", amount: "1 small" },
+      { name: "garlic (14 g)", amount: "4 cloves" },
+      { name: "green chillies (8 g)", amount: "4" },
+      { name: "coriander leaves", amount: "1 bunch (30 g)" },
+      { name: "gram flour", amount: "1 cups (133 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (8 g)" },
+      { name: "red chilli powder", amount: "1 tsp. (2 g)" },
+      { name: "turmeric powder", amount: "1 tsp. (2 g)" },
+      { name: "cooking oil", amount: "4 1/8 cups (818 g)" },
+      { name: "water", amount: "1/3 cup (68 g)" },
+      { name: "bicarbonate of soda", amount: "1 pinch (1 g)" }
+    ],
+    instructions: [
+      "Peel the potatoes, wash, cut into round shapes and put aside.",
+      "Crush the garlic, ginger and green chilli. Cut the coriander leaves.",
+      "Into a clean dry bowl, add all the ingredients and mix (gram flour, ginger, garlic, red chilli, green chillies, coriander leaves, salt, turmeric powder, lemon juice and bicarbonate of soda).",
+      "Into the mixed ingredients, add cut potatoes and mix to evenly coat the potatoes.",
+      "Add a little water if necessary.",
+      "Put cooking oil into a cooking pot and heat for 7 minutes.",
+      "Put in the coated potatoes and fry for 8 minutes.",
+      "Remove from oil and place onto paper towels to drain the oil.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 9,
+      protein: 50.0,
+      fat: 0.17,
+      carbs: 0.09,
+      fiber: 1.8
+    },
+    region: "Nationwide",
+    kfctCode: "15131"
+  },
+  {
+    id: "ke-250",
+    name: "Potato Chips",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "snack",
+    description: "This is typically an urban dish in many parts of Kenya. It is served to the whole family mainly during lunch. It is eaten with a protein dish such as fried chicken, stir fried beef or sausages. It can also be eaten plain or with vegetables.",
+    preparationTime: 5,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "potatoes, unpeeled, Irish, white (1.1 kg)", amount: "6" },
+      { name: "cooking oil", amount: "4 ½ cups (867 g)" }
+    ],
+    instructions: [
+      "Peel the potatoes, wash and cut lengthways into thin stripes",
+      "Heat cooking oil in a pot for 7-10 minutes or until the oil is hot enough.",
+      "Add the cut potatoes and fry for 10 minutes and turn.",
+      "Allow to cook for another 10 minutes or until ready.",
+      "Remove from oil and place on paper towels to drain the oil.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.0,
+      fat: 0.11,
+      carbs: 0.07,
+      fiber: 2.3
+    },
+    region: "Nationwide",
+    kfctCode: "15110"
+  },
+  {
+    id: "ke-251",
+    name: "Stewed Green Bananas",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is typical among the Kisii community but also popular in other parts of the country. It serves the whole family and is usually used as an infant dish. Stewed green bananas are eaten for lunch or dinner.",
+    preparationTime: 10,
+    cookingTime: 60,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "green bananas, unpeeled, raw (2.1 kg)", amount: "12" },
+      { name: "onions, red skinned, raw, unpeeled (256 g)", amount: "2" },
+      { name: "tomatoes, red, ripe (633 g)", amount: "6" },
+      { name: "salt, iodized", amount: "1 tsp. (4 g)" },
+      { name: "cooking oil", amount: "½ cup (80 g)" },
+      { name: "water", amount: "4 2/3 cups (1019 g)" }
+    ],
+    instructions: [
+      "Peel the onions, wash and cut into a bowl.",
+      "Wash the tomatoes and cut into a separate bowl.",
+      "Peel and clean the bananas",
+      "Heat oil in a cooking pot, add the onions and fry until golden brown.",
+      "Add the tomatoes, salt and stir",
+      "Add the bananas and stir.",
+      "Put all the water and allow to simmer until ready.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 13,
+      protein: 75.0,
+      fat: 0.03,
+      carbs: 0.03,
+      fiber: 0.3
+    },
+    region: "Nationwide",
+    kfctCode: "15097"
+  },
+  {
+    id: "ke-252",
+    name: "Matoke",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Matoke is central to Kisii community cuisines. Being the major source of bananas, Kisii community has learnt over many years numerous ways of preparing “matoke”. In this recipe, the combination of the variety of green bananas with meat yields a very tasty dish that is savoured by the entire family. It is mainly eaten without accompaniment and served during lunch or dinner.",
+    preparationTime: 20,
+    cookingTime: 150,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "beef, medium fat", amount: "456 g" },
+      { name: "onion, unpeeled, red skinned, raw (184 g)", amount: "1" },
+      { name: "tomatoes, red, ripe (329 g)", amount: "3" },
+      { name: "coriander leaves", amount: "106 g" },
+      { name: "potatoes, unpeeled, Irish, white (1.1 kg)", amount: "8" },
+      { name: "salt, iodized", amount: "1 ½ tbsp. (24 g)" },
+      { name: "cooking fat, white", amount: "¼ cup (44 g)" },
+      { name: "water", amount: "8 ¼ cups (1810 g)" }
+    ],
+    instructions: [
+      "Cut the meat into bite size chunks and boil in 4 cups of water for 50 minutes.",
+      "Meanwhile, peel and wash the onions and tomatoes; cut into small cubes.",
+      "Peel potatoes and bananas separately.",
+      "Cut coriander leaves and set aside.",
+      "Add onions to the meat and stir until the meat dries.",
+      "Add oil, tomatoes, potatoes and bananas and finally the coriander leaves.",
+      "Add salt to taste.",
+      "Continue to stir while adding the rest of the water for 13 minutes.",
+      "Cover with a lid.",
+      "Cook for another hour."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Stewed Green Bananas with Meat",
+    kfctCode: "15056"
+  },
+  {
+    id: "ke-253",
+    name: "Whole Maize Flour Ugali",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This recipe represents the most consumed Ugali in all communities in Kenya. It is eaten as a main dish during lunch or supper usually accompanied by a vegetable or protein dish.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "whole maize flour, white", amount: "3 2/3 cups (495 g)" },
+      { name: "water", amount: "4 3/4 cups (1026 g)" }
+    ],
+    instructions: [
+      "Measure water and flour into separate bowls.",
+      "Put all the water into a cooking pot, cover and bring to a boil.",
+      "Add flour into the boiling water and keep mixing while pressing against the wall of the cooking pot until the mixture is smooth without lumps.",
+      "Once properly mixed, reduce the fire and simmer for",
+      "13 minutes.",
+      "Serve as desired."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15005"
+  },
+  {
+    id: "ke-254",
+    name: "Maize and Finger Millet Flour Ugali",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This variant of Ugali is prepared from a combination of finger millet and whole maize flour. It is common among the Kisii, Luhya, Kamba, Kalenjin and Luo communities. It is served as a main dish accompanied by a vegetable or meat dish.",
+    preparationTime: 5,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "whole maize flour, white", amount: "2 cups (253 g)" },
+      { name: "finger millet flour", amount: "2 cups (262 g)" },
+      { name: "water", amount: "5 cups (1149 g)" }
+    ],
+    instructions: [
+      "Mix the dry ingredients together; whole maize meal and finger millet flour, until an even colour is obtained.",
+      "Boil all the water in a cooking pot.",
+      "Pour ¾ of the mixed flour into the cooking pot and slowly start mixing.",
+      "Continue mixing for 2 minutes.",
+      "Add the remaining quarter of the flour while mixing.",
+      "Mix while pressing the mixture against the wall of the pot to avoid forming lumps. Continue mixing until smooth.",
+      "Reduce the fire after 2 minutes of cooking and simmer for 17 minutes until ready.",
+      "While simmering, keep mixing periodically.",
+      "Remove from fire, turn over onto a plate and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15006"
+  },
+  {
+    id: "ke-255",
+    name: "Maize, Red Sorghum and Finger Millet flour Ugali",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This variant of Ugali is common as a traditional dish among the Kalenjin, the Luhya and Luo communities. It is served as a main dish often accompanied by a vegetable dish or a meat/fish dish.",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "whole maize flour, white", amount: "2 cups (255 g)" },
+      { name: "red sorghum flour", amount: "1 cup (132 g)" },
+      { name: "finger millet (113 g) flour", amount: "1 cup" },
+      { name: "water", amount: "5 cups (1139 g)" }
+    ],
+    instructions: [
+      "Put all the water into a cooking pot and bring to a boil.",
+      "Meanwhile, mix the dry ingredients; whole maize flour, finger millet, red sorghum until an even colour is attained.",
+      "Pour the dry mixture all at once into the cooking pot and slowly start mixing everything.",
+      "Mix while pressing the mixture against the walls of the pot to avoid forming lumps.",
+      "Continue mixing the paste until smooth.",
+      "Reduce the fire and simmer for 8 minutes.",
+      "Remove from fire, turn over onto a plate and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15007"
+  },
+  {
+    id: "ke-256",
+    name: "Cassava & Red Sorghum Flour Ugali",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This variant of Ugali is common in Western part of Kenya particularly Kuria, Luhya and Luo communities. It is eaten during lunch or dinner as a main dish and is usually accompanied by a vegetable and protein",
+    preparationTime: 5,
+    cookingTime: 25,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cassava flour", amount: "1 1/3 cups (174 g)" },
+      { name: "red sorghum flour", amount: "1 3/4 cups (237 g)" },
+      { name: "water", amount: "5 ¼ cups (1164 g)" }
+    ],
+    instructions: [
+      "Put all the water in a cooking pot and bring to a boil.",
+      "Mix the dry ingredients; cassava and red sorghum flour, together.",
+      "Add all the dry mixture into the boiling water.",
+      "Slowly start mixing the contents while pressing the mixture against the wall of the pot to prevent the flour from forming lumps.",
+      "Continue mixing the paste until smooth.",
+      "Reduce the fire to low and simmer for 10 minutes.",
+      "Remove from fire, turn over onto a plate and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15008"
+  },
+  {
+    id: "ke-257",
+    name: "Refined Maize Flour Ugali",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This type of Ugali is common across the entire country. It is made of refined maize flour, usually bought from retail shops. It is the predominant ugali in urban areas. It is eaten as a main dish accompanied by a protein and /or green vegetables.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "refined, white, maize flour", amount: "3 ½ cups (488 g)" },
+      { name: "water", amount: "4 ¼ cups (921 g)" }
+    ],
+    instructions: [
+      "Bring all the water to a boil.",
+      "Add the maize flour gradually to the boiling water",
+      "(not all at once).",
+      "Stir continuously with a wooden spoon until desired consistency is achieved.",
+      "Keep turning periodically until cooked and cover the pot at intervals.",
+      "Remove from fire, turn over onto a plate and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15009"
+  },
+  {
+    id: "ke-258",
+    name: "Sorghum, Finger Millet and Refined Maize",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This type of Ugali is common in several communities including Luhya, Kalenjin and Luo. It is eaten as a main dish accompanied by a traditional vegetable and/ or a protein dish.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "red sorghum flour", amount: "3 ½ cups (444 g)" },
+      { name: "finger millet flour", amount: "1¼ cups (154 g)" },
+      { name: "maize flour, refined, white,", amount: "4 ½ cups (570 g)" },
+      { name: "water", amount: "7 cups (1531 g)" }
+    ],
+    instructions: [
+      "Mix the dry ingredients evenly.",
+      "In a separate cooking pot, bring all the water to a boil.",
+      "Add the flour mixture into the boiling water and stir continuously for 6 minutes or until the mixture is firm.",
+      "Simmer and allow to cook for 15 minutes.",
+      "Remove from fire, turn over onto a plate and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15010"
+  },
+  {
+    id: "ke-259",
+    name: "Cassava Flour Ugali",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Cassava Ugali is prepared from dried cassava flour. It is common among the Luo community. It is usually eaten as a main course with a vegetable dish accompaniment.",
+    preparationTime: 5,
+    cookingTime: 20,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cassava flour", amount: "1 cup (125 g)" },
+      { name: "water", amount: "1 ¼ cups (268 g)" }
+    ],
+    instructions: [
+      "Put all the water in a cooking pot and place on the fire.",
+      "When the water boils, add the cassava flour gradually.",
+      "Keep stirring and turning until it becomes firm.",
+      "Once it is firm, allow to simmer for 10 minutes.",
+      "Remove from the fire and turn over onto a plate to serve."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15011"
+  },
+  {
+    id: "ke-260",
+    name: "Cassava, Finger Millet & Sorghum Flour Ugali",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This type of Ugali is typical among the Luhya, Kuria and Luo communities. It is eaten with a stew or a veg-",
+    preparationTime: 5,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cassava flour", amount: "6 cups (780 g)" },
+      { name: "finger millet flour", amount: "2 1/3 cups (313 g)" },
+      { name: "sorghum flour", amount: "2 ½ cups (345 g)" },
+      { name: "water", amount: "9 cups (1998 g)" }
+    ],
+    instructions: [
+      "Add all the water to a cooking vessel/pot and heat to boil.",
+      "Mix the flours together in a bowl.",
+      "Add the mixture of flours into the boiling water while stirring continuously for 10 minutes.",
+      "Keep turning periodically until cooked and cover the pot at intervals.",
+      "Remove from fire, turn over onto a plate and serve hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15051"
+  },
+  {
+    id: "ke-261",
+    name: "Gurdo, Marqa",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a unique type of Ugali that is common among the Burji community. It is prepared with teff and sor- ghum flour in sour milk. It is eaten as a main dish and is served to the entire family.",
+    preparationTime: 5,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "teff flour", amount: "1 cup (126 g)" },
+      { name: "red sorghum flour", amount: "2 ¼ cups (288 g)" },
+      { name: "fermented milk", amount: "3 1/3 cups (771 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (7 g)" },
+      { name: "ghee", amount: "4½ tbsp. (59 g)" },
+      { name: "water", amount: "1 cup (232 g)" }
+    ],
+    instructions: [
+      "Put the fermented milk in a cooking vessel and add all the water.",
+      "Begin to heat while stirring.",
+      "Add a pinch of salt and continue stirring.",
+      "In a separate bowl, mix the teff and sorghum flour evenly.",
+      "After 6 minutes add the flour mixture. Stir until evenly consistent.",
+      "Cook for 20 minutes then add ghee.",
+      "Continue turning until cooked; 4 minutes."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    swahiliName: "Ugali in Sour Milk",
+    kfctCode: "15043"
+  },
+  {
+    id: "ke-262",
+    name: "Vinolo",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a typical dish to the Mijikenda community. It is a unique type of Ugali that incorporates bananas. It is eaten as a main meal with an accompanying stew.",
+    preparationTime: 5,
+    cookingTime: 40,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "bananas, green, raw, unpeeled (710 g)", amount: "4" },
+      { name: "maize flour, white", amount: "2 cups (257 g)" },
+      { name: "water", amount: "4 cups (890 g)" }
+    ],
+    instructions: [
+      "Peel the bananas, wash and cover with water.",
+      "Boil the bananas in a separate cooking pot.",
+      "Mash the bananas until smooth.",
+      "Meanwhile, boil all the water in a cooking pot.",
+      "Add half the flour into the boiling water and stir until smooth.",
+      "Add the mashed bananas and continue stirring.",
+      "Add the remaining flour gradually as you stir until you achieve the desired consistency.",
+      "Remove from heat and wrap in aluminium foil.",
+      "Dip into boiling water and turn after 7 minutes.",
+      "Remove from the water after 5 minutes.",
+      "Serve hot."
+    ],
+    nutritionFacts: {
+      calories: 16,
+      protein: 1.0,
+      fat: 0.12,
+      carbs: 0.08,
+      fiber: 0.9
+    },
+    region: "Nationwide",
+    swahiliName: "Banana and Maize Flour Ugali",
+    kfctCode: "15065"
+  },
+  {
+    id: "ke-263",
+    name: "Finger Millet Flour Ugali",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This type of Ugali is typical among the Kisii community. It is prepared using pure finger millet flour. It is eaten together with a vegetable dish and a suitable meat or legume stew.",
+    preparationTime: 15,
+    cookingTime: 15,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "finger millet flour", amount: "7 3/4 cups (993 g)" },
+      { name: "water", amount: "4 2/3 cups (1007 g)" }
+    ],
+    instructions: [
+      "Put all the water into the pot over fire and bring to a boil.",
+      "Into the boiling water, add the finger millet flour gradually while stirring to a soft consistency.",
+      "Continue stirring for 3- 5 minutes while turning for cook evenly.",
+      "Remove from heat.",
+      "Serve while hot."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 1.0,
+      fat: 0.06,
+      carbs: 0.01,
+      fiber: 1.6
+    },
+    region: "Nationwide",
+    kfctCode: "15100"
+  },
+  {
+    id: "ke-264",
+    name: "White Chapati",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This dish is common in many communities in Kenya and even more popular in the urban communities. The white chapatti is made from refined wheat flour and is eaten with a meat, legume or vegetable stew. Chapatti is often made during special occasions. It is served as an accompaniment during lunch or dinner and at times eaten with tea for breakfast.",
+    preparationTime: 30,
+    cookingTime: 30,
+    servings: 6,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, refined,", amount: "4 1/3 cups (576 g)" },
+      { name: "water", amount: "1 ½ cups (318 g)" },
+      { name: "white sugar", amount: "1 tsp. (5 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (2 g)" },
+      { name: "cooking oil", amount: "¾ cup (168 g)" }
+    ],
+    instructions: [
+      "Measure flour, salt, sugar, cooking oil and water into separate bowls.",
+      "Mix the dry ingredients; flour, sugar and salt.",
+      "Warm all the water and add into the dry ingredients mixture.",
+      "Knead the mixture to soft dough for 6 minutes.",
+      "Set the dough aside and cover for 16 minutes before use.",
+      "Place the cast iron pan over the fire and heat.",
+      "Dust the working surface lightly with flour and start rolling the dough to desired thickness.",
+      "Apply ¼ cup oil on top, cut into strips and roll strips into balls of desired size.",
+      "Cover with cling film or a clean kitchen towel and let the dough rest.",
+      "Cooking oil is added into the mixture either in water, in dry ingredients or when kneading. You can also use oil to cover the dough to prevent it from drying/ crusting.",
+      "Oil can also be applied on top.",
+      "Start rolling each ball on a lightly floured work surface into a disc shape.",
+      "Cook each chapati on the pan one at a time until lightly browned on both sides.",
+      "Lightly oil each side and turn before removing it from the heat. Repeat for all the chapati’s.",
+      "Stack up the cooked chapati as you remove them from the pan. Keep covered."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15019"
+  },
+  {
+    id: "ke-265",
+    name: "Brown Chapati",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Brown chapatti is another variant of chapatti and is common among many communities in Kenya. It is preferred for the health-conscious people due to the high fibre content as it is made of whole wheat flour. It is served as an accompaniment during lunch, dinner or breakfast.",
+    preparationTime: 30,
+    cookingTime: 30,
+    servings: 7,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, whole,", amount: "3 2/3 cups (414 g)" },
+      { name: "water", amount: "1 cup (198 g)" },
+      { name: "sugar, white", amount: "1 tsp. (5 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (2 g)" },
+      { name: "cooking oil", amount: "2/3 cup (134 g)" }
+    ],
+    instructions: [
+      "Measure flour, salt, sugar, cooking oil and water into separate bowls.",
+      "Heat all water for 4 minutes. The water should be warm not boiling.",
+      "Mix the ingredients; flour, sugar and salt into a mixing bowl.",
+      "Pour all the warm water into the dry mixture.",
+      "Knead the mixture to soft dough.",
+      "Set the dough into a bowl and cover for 15 minutes before use.",
+      "Put the pan over fire and heat.",
+      "Dust the working surface with flour and start rolling the dough to desired thickness.",
+      "Cut the rolled into strips and roll the strips into round balls.",
+      "Cover with cling film, damp cloth or any suitable material to prevent the dough from drying and/ or forming a crust.",
+      "Roll out the balls one at a time into a disc shape.",
+      "Cook each the chapati on the pan, turning to cook on both sides. Lightly, oil each side and fry until browned.",
+      "Each chapati cooks for 3 minutes until golden brown.",
+      "Remove from fire and stack them up. Keep covered."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fat: 0,
+      fiber: 0
+    },
+    region: "Nationwide",
+    kfctCode: "15020"
+  },
+  {
+    id: "ke-266",
+    name: "Roti",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Roti is the Indian version of chapatti. It is common among the Kenyan Indian community. Usually, Roti is part of an assortment of dishes that make up a platter for a main meal. It is eaten as an accompaniment.",
+    preparationTime: 180,
+    cookingTime: 21,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "wheat flour, whole", amount: "1 3/4 cups (227 g)" },
+      { name: "salt, iodized", amount: "½ tsp. (3 g)" },
+      { name: "water", amount: "3/4 cup (163 g)" },
+      { name: "cooking oil", amount: "2 tbsp. (26 g)" },
+      { name: "cow ghee", amount: "2 ½ tbsp. (34 g)" }
+    ],
+    instructions: [
+      "Put wheat flour into a bowl, add salt and ghee.",
+      "Add ¾ cup of water while kneading.",
+      "Knead the mixture into soft dough.",
+      "Cover and leave to rest for 3 hours.",
+      "Heat a pan for 2 minutes. Put a drop of cooking oil.",
+      "Roll the dough into circular discs of desired sizes and place them on the pan.",
+      "Fry for 3 minutes until they turn brown or while turning continuously.",
+      "Add a little oil if necessary.",
+      "Remove and repeat the process for all the pieces."
+    ],
+    nutritionFacts: {
+      calories: 46,
+      protein: 25.0,
+      fat: 0.32,
+      carbs: 0.09,
+      fiber: 2.2
+    },
+    region: "Nationwide",
+    swahiliName: "Indian Chapati",
+    kfctCode: "15130"
+  },
+  {
+    id: "ke-267",
+    name: "Bhature",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This fried Indian bread is traditional to the Kenyan Indian community. It is eaten as an accompaniment to the spicy chole (chick pea) dish.",
+    preparationTime: 75,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "self-raising wheat flour", amount: "2 1/3 cups (304 g)" },
+      { name: "salt, iodized", amount: "1 ½ tsp. (8 g)" },
+      { name: "sugar", amount: "1 ½ tsp. (9 g)" },
+      { name: "ghee", amount: "1 ½ tbsp. (17 g)" },
+      { name: "cooking oil", amount: "3 ¾ cups (419 g)" },
+      { name: "natural yoghurt", amount: "3/4 cup (178 g)" },
+      { name: "water", amount: "½ cup (103 g)" },
+      { name: "coriander leaves", amount: "19 g" }
+    ],
+    instructions: [
+      "Into a dry bowl, put the self-raising wheat flour, sugar, salt and ghee. Sprinkle the fenugreek leaves, coriander leaves and add yoghurt.",
+      "Start kneading while adding all the water in small amounts. Knead to achieve soft dough.",
+      "Cover the dough let it stand for 1 hour.",
+      "Cut and roll the dough into desired sizes and shapes.",
+      "Put a little cooking oil at a time into a dry pan and heat for 4 minutes.",
+      "Gently drop the rolled-out dough and fry for 2 minutes.",
+      "Remove and repeat the process for all the dough pieces.",
+      "Let it cool and serve."
+    ],
+    nutritionFacts: {
+      calories: 87,
+      protein: 170.0,
+      fat: 0.38,
+      carbs: 0.27,
+      fiber: 2.4
+    },
+    region: "Nationwide",
+    swahiliName: "Fried Indian Bread",
+    kfctCode: "15140"
+  },
+  {
+    id: "ke-268",
+    name: "Vimumunya vya Sukari",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This is a famous Swahili dessert that is served after meals. It is eaten by the entire family.",
+    preparationTime: 5,
+    cookingTime: 45,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "cardamoms, powder", amount: "1 tsp. (1 g)" },
+      { name: "sugar", amount: "½ cup (113 g)" },
+      { name: "coconut milk", amount: "1 ½ cups (400 g)" },
+      { name: "water", amount: "3 3/4 cups (810 g)" }
+    ],
+    instructions: [
+      "Peel pumpkin and cut into large chunks.",
+      "Put the pumpkin onto a cooking pot, add all the water and put on heat.",
+      "Bring to a boil for 17 minutes.",
+      "Add half the amount of coconut milk and boil for 6 minutes.",
+      "Add sugar and cardamoms.",
+      "Add the rest of the coconut milk. Cover and cook for 18 more minutes.",
+      "Remove from heat."
+    ],
+    nutritionFacts: {
+      calories: 0,
+      protein: 0.05,
+      fat: 0.04,
+      carbs: 0.5,
+      fiber: 19.0
+    },
+    region: "Nationwide",
+    swahiliName: "Sweetened Pumpkin & Coconut Milk",
+    kfctCode: "15067"
+  },
+  {
+    id: "ke-269",
+    name: "Siro",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "Siro is a sweet desert that is served after a main meal. It is traditional to the Kenyan Indian community.",
+    preparationTime: 15,
+    cookingTime: 30,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "semolina flour", amount: "1 cup (145 g)" },
+      { name: "cow ghee", amount: "1 cup (177 g)" },
+      { name: "cow milk", amount: "2 1/8 cups (472 g)" },
+      { name: "sugar", amount: "1 cup (188 g)" },
+      { name: "pistachio nuts, raw (22 g)", amount: "15" },
+      { name: "almonds, nuts, raw (10 g)", amount: "1 tbsp." },
+      { name: "cardamoms, powder", amount: "1 tsp. (1 g)" }
+    ],
+    instructions: [
+      "Into a clean pot, add semolina flour and ghee.",
+      "Heat for 15 minutes while stirring continuously.",
+      "Put milk into a separate pot and bring to a boil",
+      "Add cardamoms into the milk and boil.",
+      "Add the boiled milk into the semolina flour mixture and stir.",
+      "Add sugar and stir, cook for another 7 minutes",
+      "Remove from heat and garnish with almonds and pistachio nuts.",
+      "Serve."
+    ],
+    nutritionFacts: {
+      calories: 205,
+      protein: 105.0,
+      fat: 0.03,
+      carbs: 0.18,
+      fiber: 0.3
+    },
+    region: "Nationwide",
+    swahiliName: "Semolina & Nuts",
+    kfctCode: "15133"
+  },
+  {
+    id: "ke-270",
+    name: "Chaas",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "drink",
+    description: "Chaas is simply diluted yoghurt with a pitch of salt. It is served after a main meal among the Kenyan Indian",
+    preparationTime: 5,
+    cookingTime: 30,
+    servings: 2,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "natural yoghurt", amount: "2 cups (450 g)" },
+      { name: "water", amount: "¾ cup (169 g)" },
+      { name: "salt, iodized", amount: "1 tsp. (4 g)" }
+    ],
+    instructions: [
+      "Add natural yoghurt, all the water and salt and whisk"
+    ],
+    nutritionFacts: {
+      calories: 26,
+      protein: 16.0,
+      fat: 0.04,
+      carbs: 0.11,
+      fiber: 0.0
+    },
+    region: "Nationwide",
+    swahiliName: "Diluted Yoghurt",
+    kfctCode: "15132"
+  },
+  {
+    id: "ke-271",
+    name: "Groundnut Sauce",
+    source: "Kenya Recipe Book 2018 (FAO/GOK)",
+    type: "lunch, dinner",
+    description: "This rich and smooth recipe is unique to the Luhya and Luo communities. It is usually fed to older infants",
+    preparationTime: 5,
+    cookingTime: 100,
+    servings: 4,
+    totalCost: 0,
+    calories: 0,
+    image: null,
+    tags: [
+      "Traditional",
+      "FAO",
+      "Community Recipe"
+    ],
+    ingredients: [
+      { name: "groundnuts, raw, with skin", amount: "3 1/3 cups (472 g)" },
+      { name: "salt, iodized", amount: "2 ½ tsp. (12 g)" },
+      { name: "sour milk", amount: "4 1/3 cups (979 g)" },
+      { name: "water", amount: "½ cup (119 g)" }
+    ],
+    instructions: [
+      "Place a saucepan over fire and let it preheat.",
+      "Add the groundnuts, salt and ½ a cup of water or as desired.",
+      "Cook until the water evaporates as you stir gradually. When ready, the nuts produce a pop sound.",
+      "Once they pop, turn down the heat and continue stirring until the groundnuts are dry (about 13 minutes).",
+      "Remove from heat and allow it to cool down.",
+      "Using a blender, blend the nuts into a paste. A pestle and mortar can be used in the absence of a blender.",
+      "Put the groundnut paste into a bowl, add sour milk and stir into thick paste. Water or fresh milk can be used in place of the sour milk.",
+      "Once ready, put another pan on the heat, add the peanut paste and stir.",
+      "Stir until it is smooth but not too thick.",
+      "Serve hot with green leafy vegetables of your choice, fish, sweet potatoes, green bananas, ugali, etc."
+    ],
+    nutritionFacts: {
+      calories: 28,
+      protein: 2.0,
+      fat: 0.28,
+      carbs: 0.21,
+      fiber: 5.0
+    },
+    region: "Nationwide",
+    kfctCode: "15063"
   }
 ];
-
-export default kenyanMeals;
