@@ -1,4 +1,4 @@
-﻿"""
+"""
 Generate comprehensive March Week 2 sales analysis reports.
 Period: March 9-14, 2026 (6 working days)
 Outputs: JSON, PDF (with charts), Excel, Word
@@ -69,14 +69,17 @@ VAT_RATE = 1.16
 with open("sales_march_w2.json", "r") as f:
     raw_data = json.load(f)
 
+with open("sales_march_w1.json", "r") as f:
+    w1_raw_data = json.load(f)
+
 # ========== DATA PROCESSING ==========
 def merge_reps(data):
-    """Merge Magdalene -> Betha Odumo"""
+    """Merge Magdalene and WALK IN-BOMAS -> Betha Odumo"""
     merged = {"period": data["period"], "working_days": data["working_days"], "categories": {}}
     for cat, reps in data["categories"].items():
         merged["categories"][cat] = {}
         for rep, vals in reps.items():
-            target = "Betha Odumo" if rep == "Magdalene" else rep
+            target = "Betha Odumo" if rep in ("Magdalene", "WALK IN-BOMAS") else rep
             if target not in merged["categories"][cat]:
                 merged["categories"][cat][target] = {"qty": 0, "sales_incl": 0, "cost": 0, "profit": 0}
             merged["categories"][cat][target]["qty"] += vals["qty"]
@@ -134,6 +137,21 @@ for cat in CAT_ORDER:
 # Weekly target (1/4 of monthly)
 weekly_target = MONTHLY_TARGETS['OVERALL'] / 4
 
+# Cumulative calculations for targets
+week1_data = merge_reps(w1_raw_data)
+w1_reps_data = get_rep_data(week1_data)
+w1_total_sales = sum(r['total_sales'] for r in w1_reps_data.values())
+
+w1_cat_totals = {}
+for cat in CAT_ORDER:
+    w1_cat_sales = sum(r['categories'].get(cat, {}).get('sales_incl', 0) for r in w1_reps_data.values())
+    w1_cat_totals[cat] = {'sales': w1_cat_sales}
+
+cum_total_sales = total_sales + w1_total_sales
+cum_cat_totals = {}
+for cat in CAT_ORDER:
+    cum_cat_totals[cat] = cat_totals[cat]['sales'] + w1_cat_totals[cat]['sales']
+
 # ========== CHART GENERATION ==========
 def create_category_pie(output_dir="charts/march_w2"):
     os.makedirs(output_dir, exist_ok=True)
@@ -162,6 +180,42 @@ def create_category_pie(output_dir="charts/march_w2"):
     ax.set_title(f"Sales by Category - {MONTH} Week {WEEK_NUM}", fontsize=13, fontweight='bold')
     plt.tight_layout()
     fn = f"{output_dir}/category_pie.png"
+    plt.savefig(fn, dpi=120, bbox_inches='tight', facecolor='white')
+    plt.close()
+    return fn
+
+def create_w1_w2_comparison_chart(output_dir="charts/march_w2"):
+    os.makedirs(output_dir, exist_ok=True)
+    names = [r[0] for r in sorted_reps]
+    w2_sales = [r[1]['total_sales']/1000000 for r in sorted_reps]
+    w1_sales = [(w1_reps_data.get(r[0], {}).get('total_sales', 0))/1000000 for r in sorted_reps]
+    
+    fig, ax = plt.subplots(figsize=(10, 5))
+    x = np.arange(len(names))
+    w = 0.35
+    bars1 = ax.bar(x - w/2, w1_sales, w, label='Week 1', color='#95a5a6', edgecolor='white')
+    bars2 = ax.bar(x + w/2, w2_sales, w, label='Week 2', color='#3498db', edgecolor='white')
+    
+    for bar in bars1:
+        h = bar.get_height()
+        if h > 0:
+            ax.annotate(f'{h:.2f}M', xy=(bar.get_x() + bar.get_width()/2, h),
+                        xytext=(0, 3), textcoords="offset points", ha='center', fontsize=8)
+    for bar in bars2:
+        h = bar.get_height()
+        if h > 0:
+            ax.annotate(f'{h:.2f}M', xy=(bar.get_x() + bar.get_width()/2, h),
+                        xytext=(0, 3), textcoords="offset points", ha='center', fontsize=8)
+                        
+    ax.set_ylabel('Sales (Millions KES)')
+    ax.set_title("Week 1 vs Week 2 Sales by Rep", fontweight='bold')
+    ax.set_xticks(x)
+    ax.set_xticklabels(names, rotation=25, ha='right', fontsize=9)
+    ax.legend()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    plt.tight_layout()
+    fn = f"{output_dir}/w1_w2_comparison.png"
     plt.savefig(fn, dpi=120, bbox_inches='tight', facecolor='white')
     plt.close()
     return fn
@@ -223,21 +277,21 @@ def create_margin_comparison(output_dir="charts/march_w2"):
 def create_target_progress(output_dir="charts/march_w2"):
     os.makedirs(output_dir, exist_ok=True)
     fig, axes = plt.subplots(1, 5, figsize=(14, 3))
-    items = [('OVERALL', total_sales, MONTHLY_TARGETS['OVERALL'])]
+    items = [('OVERALL', cum_total_sales, MONTHLY_TARGETS['OVERALL'])]
     for cat in CAT_ORDER:
-        items.append((cat, cat_totals[cat]['sales'], MONTHLY_TARGETS.get(cat, 0)))
+        items.append((cat, cum_cat_totals[cat], MONTHLY_TARGETS.get(cat, 0)))
     for ax, (label, actual, target) in zip(axes, items):
         pct = (actual / target * 100) if target > 0 else 0
-        expected = 25  # Week 2 of 4
+        expected = 50  # End of Week 2 expected pace
         color = '#27ae60' if pct >= expected else '#e74c3c'
         ax.barh([''], [pct], color=color, height=0.4, alpha=0.8)
         ax.axvline(x=expected, color='#2c3e50', linestyle='--', linewidth=1.5)
-        ax.set_xlim(0, max(35, pct + 5))
+        ax.set_xlim(0, max(60, pct + 5))
         ax.set_title(label[:12], fontsize=9, fontweight='bold')
         ax.text(pct + 0.5, 0, f'{pct:.1f}%', va='center', fontsize=9, fontweight='bold', color=color)
         ax.spines['top'].set_visible(False)
         ax.spines['right'].set_visible(False)
-    fig.suptitle(f'Monthly Target Progress After Week {WEEK_NUM} (Expected: 25%)', fontweight='bold', fontsize=11)
+    fig.suptitle(f'Monthly Target Progress After Week {WEEK_NUM} (Expected: 50%)', fontweight='bold', fontsize=11)
     plt.tight_layout()
     fn = f"{output_dir}/target_progress.png"
     plt.savefig(fn, dpi=120, bbox_inches='tight', facecolor='white')
@@ -468,37 +522,44 @@ def create_rep_sales_profit_bar(rep_name, rep_data, output_dir="charts/march_w2"
             categories.append(short_cat)
             sales.append(rep_data['categories'][cat]['sales_incl'] / 1000)
             profits.append(rep_data['categories'][cat]['profit'] / 1000)
+    
     if not categories:
         return None
+
     fig, ax = plt.subplots(figsize=(9, 4))
     x = np.arange(len(categories))
     width = 0.35
+
     bars1 = ax.bar(x - width/2, sales, width, label='Sales', color='#0494f5', edgecolor='white')
     bars2 = ax.bar(x + width/2, profits, width, label='Profit', color='#08f169', edgecolor='white')
+
     for bar in bars1:
         h = bar.get_height()
-        ax.annotate(f'{h:.0f}K', xy=(bar.get_x() + bar.get_width()/2, h),
-                    xytext=(0, 3), textcoords="offset points", ha='center', va='bottom', fontsize=8)
+        ax.annotate(f'{h:,.0f}k', xy=(bar.get_x() + bar.get_width()/2, h),
+                    xytext=(0, 3), textcoords="offset points", ha='center', fontsize=8)
     for bar in bars2:
         h = bar.get_height()
-        ax.annotate(f'{h:.0f}K', xy=(bar.get_x() + bar.get_width()/2, h),
-                    xytext=(0, 3), textcoords="offset points", ha='center', va='bottom', fontsize=8)
-    ax.set_ylabel('Amount (Thousands KES)', fontsize=10, fontweight='bold')
-    ax.set_title(f"{rep_name} - Sales vs Profit by Category", fontsize=12, fontweight='bold')
+        if h > 0:
+            ax.annotate(f'{h:,.0f}k', xy=(bar.get_x() + bar.get_width()/2, h),
+                        xytext=(0, 3), textcoords="offset points", ha='center', fontsize=8)
+
+    ax.set_ylabel('Amount (Thousands KES)')
+    ax.set_title(f'Sales vs Profit - {rep_name}', fontweight='bold')
     ax.set_xticks(x)
-    ax.set_xticklabels(categories, fontsize=9)
+    ax.set_xticklabels(categories, rotation=20, ha='right', fontsize=9)
     ax.legend()
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     plt.tight_layout()
-    fn = f"{output_dir}/{rep_name.replace(' ', '_')}_sales_profit.png"
-    plt.savefig(fn, dpi=120, bbox_inches='tight', facecolor='white')
+    fn = f"{output_dir}/sp_{rep_name.replace(' ', '_')}.png"
+    plt.savefig(fn, dpi=120, bbox_inches='tight', transparent=True)
     plt.close()
     return fn
 
 # ========== GENERATE CHARTS ==========
 print("Generating charts...")
 chart_files = {
+    'w1_w2_comp': create_w1_w2_comparison_chart(),
     'category_pie': create_category_pie(),
     'rep_bar': create_rep_bar_chart(),
     'margin': create_margin_comparison(),
@@ -520,9 +581,10 @@ for rep_name, rep_data in sorted_reps:
 perf_analysis = analyze_performance(reps_data, cat_totals)
 print(f"  Performance analysis generated for {len(perf_analysis)} reps")
 
+
 # ========== PDF REPORT ==========
 def generate_pdf():
-    output_fn = f"sales_analysis_march_w2.pdf"
+    output_fn = "sales_analysis_march_w2.pdf"
     doc = SimpleDocTemplate(output_fn, pagesize=A4,
                              topMargin=0.5*inch, bottomMargin=0.5*inch,
                              leftMargin=0.5*inch, rightMargin=0.5*inch)
@@ -590,26 +652,37 @@ def generate_pdf():
     elements.append(summary_table)
     elements.append(Spacer(1, 15))
     
+    # Week 1 vs Week 2 Comparison
+    elements.append(Paragraph("WEEK 1 VS WEEK 2 COMPARISON", subheading_s))
+    w1_w2_diff = total_sales - w1_total_sales
+    w1_w2_pct = (w1_w2_diff / w1_total_sales * 100) if w1_total_sales > 0 else 0
+    comp_text = f"Week 2 Sales: KES {total_sales:,.0f} | Week 1 Sales: KES {w1_total_sales:,.0f} | Growth: {w1_w2_pct:.1f}%"
+    elements.append(Paragraph(comp_text, body_s))
+    elements.append(Spacer(1, 10))
+    
+    if os.path.exists(chart_files['w1_w2_comp']):
+        elements.append(Image(chart_files['w1_w2_comp'], width=6.5*inch, height=3.25*inch))
+        elements.append(Spacer(1, 15))
+
     # Target Progress
     elements.append(Paragraph("MONTHLY TARGET PROGRESS", subheading_s))
-    target_pct = (total_sales / MONTHLY_TARGETS['OVERALL'] * 100)
-    expected_pct = 25.0  # Week 2 of 4
+    target_pct = (cum_total_sales / MONTHLY_TARGETS['OVERALL'] * 100)
+    expected_pct = 50.0  # Week 2 of 4
     pace = "AHEAD" if target_pct >= expected_pct else "BEHIND"
     pace_color = highlight_s if target_pct >= expected_pct else alert_s
     elements.append(Paragraph(f"Monthly Target: KES {MONTHLY_TARGETS['OVERALL']:,.0f}", body_s))
-    elements.append(Paragraph(f"Week 2 Achievement: KES {total_sales:,.0f} ({target_pct:.1f}% of target)", body_s))
-    elements.append(Paragraph(f"Pace: {pace} schedule (expected 25.0% after Week 2)", pace_color))
-    
-    target_data = [["Category", "Monthly Target", "Week 2 Actual", "% Achieved", "Expected", "Pace"]]
+    elements.append(Paragraph(f"Mid-Month Achievement: KES {cum_total_sales:,.0f} ({target_pct:.1f}% of target)", body_s))
+    elements.append(Paragraph(f"Pace: {pace} schedule (expected 50.0% after Week 2)", pace_color))
+
+    target_data = [["Category", "Monthly Target", "Cumulative Actual", "% Achieved", "Expected", "Pace"]]
     for cat in CAT_ORDER:
-        actual = cat_totals[cat]['sales']
+        actual = cum_cat_totals[cat]
         target = MONTHLY_TARGETS.get(cat, 0)
         pct = (actual / target * 100) if target > 0 else 0
-        p = "Ahead" if pct >= 25 else "Behind"
-        target_data.append([cat, f"KES {target:,.0f}", f"KES {actual:,.0f}", f"{pct:.1f}%", "25.0%", p])
-    target_data.append(["OVERALL", f"KES {MONTHLY_TARGETS['OVERALL']:,.0f}", f"KES {total_sales:,.0f}",
-                         f"{target_pct:.1f}%", "25.0%", pace])
-    
+        p = "Ahead" if pct >= 50 else "Behind"
+        target_data.append([cat, f"KES {target:,.0f}", f"KES {actual:,.0f}", f"{pct:.1f}%", "50.0%", p])
+    target_data.append(["OVERALL", f"KES {MONTHLY_TARGETS['OVERALL']:,.0f}", f"KES {cum_total_sales:,.0f}",
+                         f"{target_pct:.1f}%", "50.0%", pace])
     t = Table(target_data, colWidths=[1.3*inch, 1.2*inch, 1.2*inch, 0.8*inch, 0.8*inch, 0.7*inch])
     t.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#2c3e50')),
@@ -642,15 +715,16 @@ def generate_pdf():
     elements.append(PageBreak())
     elements.append(Paragraph("SALES REP PERFORMANCE", heading_s))
     
-    rep_data_rows = [["Rank", "Sales Rep", "Role", "Sales (KES)", "Profit (KES)", "Margin %", "Items"]]
+    rep_data_rows = [["Rank", "Sales Rep", "Role", "Sales (KES)", "Profit (KES)", "Margin %", "Total Qty", "Contribution %"]]
     for rank, (rep_name, rep_data) in enumerate(sorted_reps, 1):
         rep_data_rows.append([
             str(rank), rep_name, get_rep_role(rep_name)[:18],
             f"{rep_data['total_sales']:,.0f}", f"{rep_data['total_profit']:,.0f}",
-            f"{rep_data['overall_margin']:.1f}%", f"{rep_data['total_qty']:,.0f}"
+            f"{rep_data['overall_margin']:.1f}%", f"{rep_data['total_qty']:,.0f}",
+            f"{rep_data['total_sales'] / total_sales:.1%}"
         ])
     
-    t = Table(rep_data_rows, colWidths=[0.4*inch, 1.2*inch, 1.3*inch, 1.1*inch, 1.0*inch, 0.7*inch, 0.7*inch])
+    t = Table(rep_data_rows, colWidths=[0.4*inch, 1.2*inch, 1.3*inch, 1.1*inch, 1.0*inch, 0.7*inch, 0.7*inch, 0.8*inch])
     t.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#2c3e50')),
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
@@ -695,7 +769,7 @@ def generate_pdf():
         elements.append(Paragraph(f"Department Head(s): {dept_head}", body_s))
         elements.append(Paragraph(f"Total Sales: KES {cat_totals[cat]['sales']:,.0f} | Profit: KES {cat_totals[cat]['profit']:,.0f}", body_s))
         
-        cat_rows = [["Rep", "Sales (KES)", "Profit (KES)", "Margin %", "Qty", "% of Dept"]]
+        cat_rows = [["Rep", "Sales (KES)", "Profit (KES)", "Margin", "Qty", "% of Dept"]]
         reps_in_cat = []
         for rep_name, rep_d in sorted_reps:
             if cat in rep_d['categories']:
@@ -850,12 +924,11 @@ def generate_pdf():
             elements.append(ct)
         
         # Performance notes
-        elements.append(Spacer(1, 0.1*inch))
         notes_head = ParagraphStyle('NotesHead', parent=styles['Normal'],
                                      fontSize=10, textColor=colors.HexColor('#8e44ad'),
                                      fontName='Helvetica-Bold', spaceAfter=4)
         elements.append(Paragraph("PERFORMANCE NOTES", notes_head))
-        
+
         for note in pa.get('notes', [])[:5]:
             note_color = '#27ae60' if any(w in note for w in ['Strong', 'Excellent', 'Outstanding', 'Good', 'Selling across']) else (
                          '#e74c3c' if any(w in note for w in ['below', 'needs improvement', 'Should lead', 'Low contribution', 'Limited to']) else '#555555')
@@ -863,7 +936,7 @@ def generate_pdf():
                                           fontSize=8, textColor=colors.HexColor(note_color),
                                           spaceAfter=2, leftIndent=10)
             elements.append(Paragraph(f"&bull; {note}", note_item_s))
-    
+
     doc.build(elements)
     print(f"  PDF: {output_fn}")
     return output_fn
@@ -923,7 +996,7 @@ def generate_excel():
     ws.append([])
     ws.append(["MONTHLY TARGET PROGRESS"])
     ws.cell(row=ws.max_row, column=1).font = Font(name='Calibri', bold=True, size=12, color='2C3E50')
-    headers = ["Category", "Monthly Target", "Week 2 Actual", "% Achieved", "Expected %", "Pace"]
+    headers = ["Category", "Monthly Target", "Cumulative Actual", "% Achieved", "Expected %", "Pace"]
     ws.append(headers)
     for i, h in enumerate(headers, 1):
         cell = ws.cell(row=ws.max_row, column=i)
@@ -931,13 +1004,13 @@ def generate_excel():
         cell.fill = header_fill
         cell.alignment = Alignment(horizontal='center')
         cell.border = thin_border
-    
+
     for cat in CAT_ORDER + ['OVERALL']:
-        actual = cat_totals[cat]['sales'] if cat != 'OVERALL' else total_sales
+        actual = cum_cat_totals[cat] if cat != 'OVERALL' else cum_total_sales
         target = MONTHLY_TARGETS.get(cat, MONTHLY_TARGETS['OVERALL'])
         pct = actual / target if target > 0 else 0
-        pace = "Ahead" if pct >= 0.25 else "Behind"
-        ws.append([cat, target, actual, pct, 0.25, pace])
+        pace = "Ahead" if pct >= 0.50 else "Behind"
+        ws.append([cat, target, actual, pct, 0.50, pace])
         row = ws.max_row
         ws.cell(row=row, column=2).number_format = num_fmt
         ws.cell(row=row, column=3).number_format = num_fmt
@@ -945,14 +1018,7 @@ def generate_excel():
         ws.cell(row=row, column=5).number_format = pct_fmt
         for c in range(1, 7):
             ws.cell(row=row, column=c).border = thin_border
-    
-    ws.column_dimensions['A'].width = 22
-    ws.column_dimensions['B'].width = 18
-    ws.column_dimensions['C'].width = 18
-    ws.column_dimensions['D'].width = 14
-    ws.column_dimensions['E'].width = 14
-    ws.column_dimensions['F'].width = 10
-    
+
     # Rep Performance sheet
     ws2 = wb.create_sheet("Rep Performance")
     ws2.append([f"SALES REP PERFORMANCE - {MONTH.upper()} WEEK {WEEK_NUM}"])
@@ -1061,7 +1127,7 @@ def generate_excel():
         pie.height = 10
         ws_cat.add_chart(pie, f"A{7 + len(reps_in_cat)}")
     
-    # ===== Individual Rep Detail Sheets =====
+    # ===== INDIVIDUAL REP PAGES =====
     badge_fill = PatternFill(start_color='8E44AD', end_color='8E44AD', fill_type='solid')
     note_font_green = Font(name='Calibri', size=10, color='27AE60')
     note_font_red = Font(name='Calibri', size=10, color='E74C3C')
@@ -1108,38 +1174,12 @@ def generate_excel():
         ws_rep.cell(row=row_num, column=4).number_format = '#,##0'
         for c in range(1, 6):
             ws_rep.cell(row=row_num, column=c).border = thin_border
-        
+
         ws_rep.append([])
-        
-        # Category breakdown
-        cat_headers = ["Category", "Sales (KES)", "Profit (KES)", "Margin %", "Qty"]
-        ws_rep.append(cat_headers)
-        row_num = ws_rep.max_row
-        for i, h in enumerate(cat_headers, 1):
-            cell = ws_rep.cell(row=row_num, column=i)
-            cell.font = Font(name='Calibri', bold=True, size=11, color='FFFFFF')
-            cell.fill = PatternFill(start_color='3498DB', end_color='3498DB', fill_type='solid')
-            cell.alignment = Alignment(horizontal='center')
-            cell.border = thin_border
-        
-        for cat in CAT_ORDER:
-            if cat in rep_data_item['categories']:
-                c = rep_data_item['categories'][cat]
-                ws_rep.append([cat, c['sales_incl'], c['profit'], c['margin_pct'] / 100, c['qty']])
-                row_num = ws_rep.max_row
-                ws_rep.cell(row=row_num, column=2).number_format = num_fmt
-                ws_rep.cell(row=row_num, column=3).number_format = num_fmt
-                ws_rep.cell(row=row_num, column=4).number_format = pct_fmt
-                ws_rep.cell(row=row_num, column=5).number_format = '#,##0'
-                for ci in range(1, 6):
-                    ws_rep.cell(row=row_num, column=ci).border = thin_border
-        
-        ws_rep.append([])
-        
+
         # Performance notes
         ws_rep.append(["Performance Notes"])
         ws_rep.cell(row=ws_rep.max_row, column=1).font = Font(name='Calibri', bold=True, size=11, color='8E44AD')
-        
         for note in pa.get('notes', [])[:5]:
             ws_rep.append([f"  {note}"])
             row_num = ws_rep.max_row
@@ -1149,11 +1189,11 @@ def generate_excel():
                 ws_rep.cell(row=row_num, column=1).font = note_font_red
             else:
                 ws_rep.cell(row=row_num, column=1).font = note_font_grey
-        
+
         # Column widths
         for col_letter, width in [('A', 22), ('B', 16), ('C', 16), ('D', 12), ('E', 12), ('F', 12)]:
             ws_rep.column_dimensions[col_letter].width = width
-    
+
     wb.save(output_fn)
     print(f"  Excel: {output_fn}")
     return output_fn
@@ -1238,15 +1278,37 @@ def generate_word():
     run.font.size = Pt(14)
     run.font.color.rgb = RGBColor(0x2c, 0x3e, 0x50)
     
-    target_pct = (total_sales / MONTHLY_TARGETS['OVERALL'] * 100)
+    # Week 1 vs Week 2 Comparison
+    doc.add_paragraph()
     p = doc.add_paragraph()
-    pace_text = "AHEAD of" if target_pct >= 25 else "BEHIND"
-    run = p.add_run(f"After Week 2, the branch has achieved {target_pct:.1f}% of the monthly target (KES {MONTHLY_TARGETS['OVERALL']/1000000:.0f}M). This puts us {pace_text} the expected 25% pace.")
+    run = p.add_run("WEEK 1 VS WEEK 2 COMPARISON")
+    run.bold = True
+    run.font.size = Pt(14)
+    run.font.color.rgb = RGBColor(0x2c, 0x3e, 0x50)
+
+    w1_w2_diff = total_sales - w1_total_sales
+    w1_w2_pct = (w1_w2_diff / w1_total_sales * 100) if w1_total_sales > 0 else 0
+    p = doc.add_paragraph()
+    run = p.add_run(f"Week 2 Sales: KES {total_sales:,.0f}  |  Week 1 Sales: KES {w1_total_sales:,.0f}  |  Growth: {w1_w2_pct:.1f}%")
+    run.font.size = Pt(10)
+    
+    if os.path.exists(chart_files.get('w1_w2_comp', '')):
+        doc.add_paragraph()
+        doc.add_picture(chart_files['w1_w2_comp'], width=Inches(6.5))
+        doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    # Target Progress
+    target_pct = (cum_total_sales / MONTHLY_TARGETS['OVERALL'] * 100)
+    p = doc.add_paragraph()
+    pace_text = "AHEAD of" if target_pct >= 50 else "BEHIND"
+    run = p.add_run(f"After Week 2, the branch has achieved {target_pct:.1f}% of the monthly target (KES {MONTHLY_TARGETS['OVERALL']/1000000:.0f}M). This puts us {pace_text} the expected 50% pace.")
     run.font.size = Pt(10)
     
     table = doc.add_table(rows=len(CAT_ORDER) + 2, cols=5)
     table.style = 'Table Grid'
-    headers = ["Category", "Monthly Target", "Week 2 Actual", "% Achieved", "Pace"]
+    table = doc.add_table(rows=len(CAT_ORDER) + 2, cols=6)
+    table.style = 'Table Grid'
+    headers = ["Category", "Monthly Target", "Cumulative Actual", "% Achieved", "Expected %", "Pace"]
     for j, h in enumerate(headers):
         cell = table.cell(0, j)
         p = cell.paragraphs[0]
@@ -1258,11 +1320,11 @@ def generate_word():
         cell._element.get_or_add_tcPr().append(shading)
     
     for i, cat in enumerate(CAT_ORDER):
-        actual = cat_totals[cat]['sales']
+        actual = cum_cat_totals[cat]
         target = MONTHLY_TARGETS.get(cat, 0)
         pct = (actual / target * 100) if target > 0 else 0
-        pace = "Ahead" if pct >= 25 else "Behind"
-        vals = [cat, f"KES {target:,.0f}", f"KES {actual:,.0f}", f"{pct:.1f}%", pace]
+        pace = "Ahead" if pct >= 50 else "Behind"
+        vals = [cat, f"KES {target:,.0f}", f"KES {actual:,.0f}", f"{pct:.1f}%", "50.0%", pace]
         for j, v in enumerate(vals):
             cell = table.cell(i + 1, j)
             p = cell.paragraphs[0]
@@ -1270,8 +1332,8 @@ def generate_word():
             run.font.size = Pt(9)
     
     # Overall row
-    overall_vals = ["OVERALL", f"KES {MONTHLY_TARGETS['OVERALL']:,.0f}", f"KES {total_sales:,.0f}",
-                     f"{target_pct:.1f}%", "Ahead" if target_pct >= 25 else "Behind"]
+    overall_vals = ["OVERALL", f"KES {MONTHLY_TARGETS['OVERALL']:,.0f}", f"KES {cum_total_sales:,.0f}",
+                     f"{target_pct:.1f}%", "50.0%", "Ahead" if target_pct >= 50 else "Behind"]
     for j, v in enumerate(overall_vals):
         cell = table.cell(len(CAT_ORDER) + 1, j)
         p = cell.paragraphs[0]
@@ -1525,26 +1587,26 @@ def generate_json():
         "monthly_targets": {
             "overall": {
                 "target": MONTHLY_TARGETS['OVERALL'],
-                "week1_actual": total_sales,
-                "pct_achieved": round(total_sales / MONTHLY_TARGETS['OVERALL'] * 100, 1),
-                "expected_pct": 25.0,
-                "pace": "Ahead" if total_sales / MONTHLY_TARGETS['OVERALL'] >= 0.25 else "Behind",
+                "cumulative_actual": cum_total_sales,
+                "pct_achieved": round(cum_total_sales / MONTHLY_TARGETS['OVERALL'] * 100, 1),
+                "expected_pct": 50.0,
+                "pace": "AHEAD" if cum_total_sales / MONTHLY_TARGETS['OVERALL'] >= 0.50 else "BEHIND",
             },
             "categories": {}
         },
         "categories": {},
         "reps": {},
     }
-    
+
     for cat in CAT_ORDER:
-        actual = cat_totals[cat]['sales']
+        actual = cum_cat_totals[cat]
         target = MONTHLY_TARGETS.get(cat, 0)
         pct = (actual / target * 100) if target > 0 else 0
         output["monthly_targets"]["categories"][cat] = {
             "target": target,
-            "week1_actual": actual,
+            "cumulative_actual": actual,
             "pct_achieved": round(pct, 1),
-            "pace": "Ahead" if pct >= 25 else "Behind",
+            "pace": "Ahead" if pct >= 50 else "Behind",
             "department_head": DEPARTMENT_HEADS.get(cat, "N/A"),
         }
         
@@ -1555,7 +1617,6 @@ def generate_json():
             "margin": round(cat_margin, 2),
             "share_of_total": round(cat_totals[cat]['sales'] / total_sales * 100, 1) if total_sales > 0 else 0,
         }
-    
     for rep_name, rep_data in sorted_reps:
         contrib = (rep_data['total_sales'] / total_sales * 100) if total_sales > 0 else 0
         pa = perf_analysis.get(rep_name, {})
@@ -1614,11 +1675,10 @@ def main():
     
     print(f"\n{'GRAND TOTAL':<20} KES {total_sales:>11,.0f} KES {total_profit:>11,.0f} {overall_margin:>7.1f}%")
     print(f"{'Daily Average':<20} KES {total_sales/WORKING_DAYS:>11,.0f} KES {total_profit/WORKING_DAYS:>11,.0f}")
-    
+
     # Target progress
-    target_pct = total_sales / MONTHLY_TARGETS['OVERALL'] * 100
-    print(f"\nMonthly Target Progress: {target_pct:.1f}% (expected 25% after Week 2)")
-    
+    target_pct = cum_total_sales / MONTHLY_TARGETS['OVERALL'] * 100
+    print(f"\nMonthly Target Progress: {target_pct:.1f}% (expected 50% after Week 2)")
     print("\nGenerating reports...")
     generate_json()
     generate_pdf()

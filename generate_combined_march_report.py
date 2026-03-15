@@ -35,7 +35,7 @@ def process_data(raw_data):
             cats[cat] = {'sales': 0, 'profit': 0}
             
         for rep, data in cat_data.items():
-            rep_name = "Betha Odumo" if rep == "Magdalene" else rep
+            rep_name = "Betha Odumo" if rep in ("Magdalene", "WALK IN-BOMAS") else rep
             sales = data['sales_incl']
             profit = data['profit'] * VAT_RATE
             

@@ -34,7 +34,7 @@ def process_data(raw_data):
     reps = {}
     for cat, cat_reps in raw_data["categories"].items():
         for rep, data in cat_reps.items():
-            rep_name = "Betha Odumo" if rep == "Magdalene" else rep
+            rep_name = "Betha Odumo" if rep in ("Magdalene", "WALK IN-BOMAS") else rep
             if rep_name not in reps:
                 reps[rep_name] = {'sales': 0, 'profit': 0, 'categories': {}}
             
