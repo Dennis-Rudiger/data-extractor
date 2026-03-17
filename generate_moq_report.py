@@ -66,7 +66,7 @@ def build_insights(data):
 
     insights = {
         'executive_summary': (
-            f"In February 2026, BOMAS Hardware tracked {s['total_items']:,} SKUs across 23 categories "
+            f"In January-February 2026, BOMAS Hardware tracked {s['total_items']:,} SKUs across 23 categories "
             f"with total outward movement of {total_qty:,.0f} units over 24 working days. "
             f"Of these, {s['fast_movers']:,} items ({fast_pct:.0f}%) recorded active sales, while "
             f"{s['slow_movers']:,} items ({slow_pct:.0f}%) had zero outward movement — a significant "
@@ -110,7 +110,7 @@ def build_insights(data):
             "what is needed rather than over-purchasing, and (4) reduced carrying costs by avoiding "
             "excess inventory that depreciates or becomes obsolete. Regularly reviewing MOQs against "
             "actual sales trends ensures the business adapts to seasonal shifts and changing customer "
-            "preferences — what moves fast in February may slow down in other months."
+            "preferences — what moves fast in these months may slow down in other months."
         ),
         'cash_flow': (
             f"With a weekly restocking value of KES {s.get('total_weekly_value', 0):,.0f}, prudent cash "
@@ -135,15 +135,18 @@ def build_insights(data):
     return insights
 
 
+JAN_FILE = 'stock_movement_jan.json'
+FEB_FILE = 'stock_movement_feb.json'
+
 def build_jan_feb_comparison():
     """Compare January and February stock movement to identify trends."""
     import os
-    if not os.path.exists('stock_movement_jan.json') or not os.path.exists('stock_movement_feb.json'):
+    if not os.path.exists(JAN_FILE) or not os.path.exists(FEB_FILE):
         return None
 
-    with open('stock_movement_jan.json') as f:
+    with open(JAN_FILE, 'r', encoding='utf-8') as f:
         jan = json.load(f)
-    with open('stock_movement_feb.json') as f:
+    with open(FEB_FILE, 'r', encoding='utf-8') as f:
         feb = json.load(f)
 
     jan_wd = jan.get('working_days', 24)
@@ -258,7 +261,7 @@ class MOQReport:
         canvas.setFont('Helvetica-Bold', 10)
         canvas.setFillColor(colors.white)
         canvas.drawString(self.margin, self.page_height - 0.33 * inch,
-                          'BOMAS HARDWARE — MOQ REPORT  |  FEBRUARY 2026  |  24 Working Days  |  Formula: 6 × Daily Avg')
+                          'BOMAS HARDWARE — MOQ REPORT  |  JAN-FEB 2026  |  48 Working Days  |  Formula: 6 × Daily Avg')
         canvas.setFont('Helvetica', 8)
         canvas.drawRightString(self.page_width - self.margin, self.page_height - 0.33 * inch,
                                f'Page {doc.page}')
@@ -331,7 +334,7 @@ class MOQReport:
         elements.append(Spacer(1, 4))
         elements.append(Paragraph('INVENTORY MOVEMENT & MOQ ANALYSIS', self.styles['title']))
         elements.append(Paragraph(
-            'Period: February 1-28, 2026  •  24 Working Days (4 weeks × 6 days)  •  '
+            'Period: Jan 1 - Feb 28, 2026  •  48 Working Days (4 weeks × 6 days)  •  '
             'Daily Avg = Qty Out ÷ 24  •  MOQ = Daily Avg × 6',
             self.styles['subtitle']))
         elements.append(Spacer(1, 6))
@@ -428,7 +431,7 @@ class MOQReport:
         # ========== PAGE 3: RECOMMENDATIONS ==========
         elements.append(Paragraph('KEY RECOMMENDATIONS', self.styles['heading']))
         elements.append(Paragraph(
-            'Based on the February 2026 movement data, the following actions are recommended:',
+            'Based on the Jan-Feb 2026 movement data, the following actions are recommended:',
             self.styles['note']))
         elements.append(Spacer(1, 4))
         for i, rec in enumerate(insights['recommendations'], 1):
@@ -533,7 +536,7 @@ class MOQReport:
         # ========== TOP 30 FAST MOVERS ==========
         elements.append(Paragraph('TOP 30 FAST MOVING ITEMS', self.styles['heading']))
         elements.append(Paragraph(
-            'Items ranked by total quantity moved out in February 2026. '
+            'Items ranked by total quantity moved out in Jan-Feb 2026. '
             'These items require consistent restocking to meet demand.',
             self.styles['note']))
 
@@ -561,7 +564,7 @@ class MOQReport:
         slow_count = summary['slow_movers']
         elements.append(Paragraph(f'SLOW MOVING ITEMS ({slow_count} items with ZERO sales)', self.styles['heading']))
         elements.append(Paragraph(
-            'Items that received stock but recorded no outward movement during February. '
+            'Items that received stock but recorded no outward movement during Jan-Feb. '
             'These items are potential dead stock and should be reviewed for clearance, '
             'bundling, or discontinuation to free up capital and shelf space.',
             self.styles['note']))
@@ -722,7 +725,7 @@ class MOQReportWord:
         sub = doc.add_paragraph()
         sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
         run = sub.add_run(
-            'Period: February 1-28, 2026  •  24 Working Days (4 weeks × 6 days)  •  '
+            'Period: Jan 1 - Feb 28, 2026  •  48 Working Days (4 weeks × 6 days)  •  '
             'Daily Avg = Qty Out ÷ 24  •  MOQ = Daily Avg × 6'
         )
         run.font.size = Pt(9)
@@ -865,7 +868,7 @@ class MOQReportWord:
         run.font.color.rgb = RGBColor(*self.hex_to_rgb(NAVY))
 
         note = doc.add_paragraph()
-        run = note.add_run('Based on the February 2026 movement data, the following actions are recommended:')
+        run = note.add_run('Based on the Jan-Feb 2026 movement data, the following actions are recommended:')
         run.font.size = Pt(8.5)
         run.font.italic = True
         run.font.color.rgb = RGBColor(*self.hex_to_rgb(GREY_TEXT))
@@ -1060,7 +1063,7 @@ class MOQReportWord:
 
         note = doc.add_paragraph()
         run = note.add_run(
-            'Items ranked by total quantity moved out in February 2026. '
+            'Items ranked by total quantity moved out in Jan-Feb 2026. '
             'These items require consistent restocking to meet demand.'
         )
         run.font.size = Pt(8)
@@ -1114,7 +1117,7 @@ class MOQReportWord:
 
         note = doc.add_paragraph()
         run = note.add_run(
-            'Items that received stock but recorded no outward movement during February. '
+            'Items that received stock but recorded no outward movement during Jan-Feb. '
             'These items are potential dead stock and should be reviewed for clearance, '
             'bundling, or discontinuation to free up capital and shelf space.'
         )
