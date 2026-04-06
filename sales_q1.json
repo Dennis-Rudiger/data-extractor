@@ -1,0 +1,254 @@
+{
+  "period": "Q1 2026",
+  "working_days": 74,
+  "categories": {
+    "ELECTRICALS": {
+      "Betha Odumo": {
+        "qty": 2954.0,
+        "sales_incl": 219530.0,
+        "cost": 139324.53,
+        "profit": 49925.38
+      },
+      "Bonface Kitheka": {
+        "qty": 13452.0,
+        "sales_incl": 1437533.0,
+        "cost": 965603.19,
+        "profit": 273649.13
+      },
+      "Bonface Muriu": {
+        "qty": 292.0,
+        "sales_incl": 52890.0,
+        "cost": 29395.62,
+        "profit": 16199.24
+      },
+      "Dennis Rudiga": {
+        "qty": 414.0,
+        "sales_incl": 48745.0,
+        "cost": 30201.17,
+        "profit": 11820.32
+      },
+      "Eliza": {
+        "qty": 2125.0,
+        "sales_incl": 186500.0,
+        "cost": 119851.14,
+        "profit": 40924.68
+      },
+      "Gladys": {
+        "qty": 411.0,
+        "sales_incl": 36730.0,
+        "cost": 22373.06,
+        "profit": 9290.69
+      },
+      "Lewis": {
+        "qty": 401.0,
+        "sales_incl": 89215.0,
+        "cost": 58666.29,
+        "profit": 18243.16
+      },
+      "Stephen": {
+        "qty": 212.0,
+        "sales_incl": 28740.0,
+        "cost": 18932.27,
+        "profit": 5843.59
+      },
+      "WALK IN-BOMAS": {
+        "qty": 45.0,
+        "sales_incl": 2901.0,
+        "cost": 2128.65,
+        "profit": 372.21
+      }
+    },
+    "GENERAL HARDWARE": {
+      "Unknown": {
+        "qty": -4.0,
+        "sales_incl": -820.0,
+        "cost": -496.54,
+        "profit": -210.36
+      },
+      "Betha Odumo": {
+        "qty": 48236.0,
+        "sales_incl": 36227636.0,
+        "cost": 28826308.94,
+        "profit": 2404412.09
+      },
+      "Bonface Kitheka": {
+        "qty": 5303.5,
+        "sales_incl": 3044170.0,
+        "cost": 2328547.57,
+        "profit": 295736.87
+      },
+      "Bonface Muriu": {
+        "qty": 8969.5,
+        "sales_incl": 5664637.0,
+        "cost": 4323733.55,
+        "profit": 559574.1
+      },
+      "Dennis Rudiga": {
+        "qty": 1319.75,
+        "sales_incl": 757350.0,
+        "cost": 551147.22,
+        "profit": 101740.64
+      },
+      "Eliza": {
+        "qty": 35510.5,
+        "sales_incl": 26296242.0,
+        "cost": 20858928.53,
+        "profit": 1810245.99
+      },
+      "Gladys": {
+        "qty": 83530.75,
+        "sales_incl": 72833280.0,
+        "cost": 59082993.06,
+        "profit": 3704317.53
+      },
+      "Lewis": {
+        "qty": 4722.25,
+        "sales_incl": 2946129.0,
+        "cost": 2228096.2,
+        "profit": 311670.08
+      },
+      "Magdalene": {
+        "qty": 46.0,
+        "sales_incl": 32970.0,
+        "cost": 26607.38,
+        "profit": 1815.04
+      },
+      "Stephen": {
+        "qty": 17965.15,
+        "sales_incl": 12086148.0,
+        "cost": 9393969.99,
+        "profit": 1025122.86
+      },
+      "WALK IN-BOMAS": {
+        "qty": 133.0,
+        "sales_incl": 48823.0,
+        "cost": 35812.04,
+        "profit": 6276.6
+      }
+    },
+    "PAINTS": {
+      "Unknown": {
+        "qty": -1.0,
+        "sales_incl": -1900.0,
+        "cost": -1383.0,
+        "profit": -254.93
+      },
+      "Betha Odumo": {
+        "qty": 1913.0,
+        "sales_incl": 1539245.0,
+        "cost": 1079255.34,
+        "profit": 247679.84
+      },
+      "Bonface Kitheka": {
+        "qty": 904.0,
+        "sales_incl": 528580.0,
+        "cost": 362129.67,
+        "profit": 93542.66
+      },
+      "Bonface Muriu": {
+        "qty": 6013.5,
+        "sales_incl": 7313530.0,
+        "cost": 5203500.7,
+        "profit": 1101266.53
+      },
+      "Dennis Rudiga": {
+        "qty": 247.0,
+        "sales_incl": 190560.0,
+        "cost": 127853.06,
+        "profit": 36422.75
+      },
+      "Eliza": {
+        "qty": 3329.0,
+        "sales_incl": 3708040.0,
+        "cost": 2716954.21,
+        "profit": 479631.85
+      },
+      "Gladys": {
+        "qty": 741.0,
+        "sales_incl": 877290.0,
+        "cost": 632268.64,
+        "profit": 124015.81
+      },
+      "Lewis": {
+        "qty": 969.5,
+        "sales_incl": 890445.0,
+        "cost": 622693.18,
+        "profit": 144931.72
+      },
+      "Stephen": {
+        "qty": 760.0,
+        "sales_incl": 710600.0,
+        "cost": 490537.58,
+        "profit": 122048.56
+      },
+      "WALK IN-BOMAS": {
+        "qty": 5.0,
+        "sales_incl": 12694.0,
+        "cost": 10581.0,
+        "profit": 362.11
+      }
+    },
+    "PLUMBING": {
+      "Betha Odumo": {
+        "qty": 2543.0,
+        "sales_incl": 859655.0,
+        "cost": 564608.82,
+        "profit": 176473.14
+      },
+      "Bonface Kitheka": {
+        "qty": 1583.0,
+        "sales_incl": 396185.0,
+        "cost": 246235.9,
+        "profit": 95302.8
+      },
+      "Bonface Muriu": {
+        "qty": 698.0,
+        "sales_incl": 299885.0,
+        "cost": 198113.0,
+        "profit": 60408.47
+      },
+      "Dennis Rudiga": {
+        "qty": 351.0,
+        "sales_incl": 233540.0,
+        "cost": 166087.75,
+        "profit": 35239.77
+      },
+      "Eliza": {
+        "qty": 2453.0,
+        "sales_incl": 664770.0,
+        "cost": 390342.29,
+        "profit": 182735.29
+      },
+      "Gladys": {
+        "qty": 914.0,
+        "sales_incl": 385110.0,
+        "cost": 250066.58,
+        "profit": 81924.7
+      },
+      "Lewis": {
+        "qty": 8142.0,
+        "sales_incl": 2376352.0,
+        "cost": 1534931.35,
+        "profit": 513648.37
+      },
+      "Magdalene": {
+        "qty": 120.0,
+        "sales_incl": 24915.0,
+        "cost": 16394.6,
+        "profit": 5083.86
+      },
+      "Stephen": {
+        "qty": 503.0,
+        "sales_incl": 383470.0,
+        "cost": 257912.13,
+        "profit": 72665.42
+      },
+      "WALK IN-BOMAS": {
+        "qty": 46.0,
+        "sales_incl": 12067.0,
+        "cost": 10414.36,
+        "profit": -11.77
+      }
+    }
+  }
+}
