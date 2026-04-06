@@ -23,7 +23,7 @@ code = re.sub(r'# 5\. TARGET TRACKING.*?# Save workbook', r'# Save workbook', co
 code = re.sub(r'doc\.add_heading\(\"Monthly Target Progress\".*?doc\.add_page_break\(\)', r'', code, flags=re.DOTALL)
 
 # Remove JSON target section
-code = re.sub(r'\"monthly_targets\".*?\"department_heads\"', r'\"department_heads\"', code, flags=re.DOTALL)
+code = re.sub(r'\"monthly_targets\": \{.*?\},(?=\s*\"department_heads\")', r'', code, flags=re.DOTALL)
 
 # Print lines with target pct
 code = re.sub(r'print\(f\"\\nMonthly Target Progress.*?\\n\"\)', r'', code, flags=re.DOTALL)

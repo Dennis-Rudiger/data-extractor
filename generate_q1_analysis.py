@@ -1617,7 +1617,6 @@ def main():
     
     # Target progress
     target_pct = total_sales / MONTHLY_TARGETS['OVERALL'] * 100
-    print(f"\nMonthly Target Progress: {target_pct:.1f}% (expected 25% after Week 1)")
     
     print("\nGenerating reports...")
     generate_json()
