@@ -1,4 +1,4 @@
-"""
+﻿"""
 Generate comprehensive Q1 sales analysis reports.
 Period: January 5 - March 31, 2026 (6 working days)
 Outputs: JSON, PDF (with charts), Excel, Word
@@ -35,6 +35,15 @@ WORKING_DAYS = 74
 MONTH = "Q1"
 YEAR = 2026
 WEEK_NUM = "Q1"
+
+# Monthly targets (March)
+MONTHLY_TARGETS = {
+    'OVERALL': 60_000_000,
+    'PAINTS': 7_000_000,
+    'PLUMBING': 3_000_000,
+    'ELECTRICALS': 1_500_000,
+    'GENERAL HARDWARE': 48_500_000,
+}
 
 CAT_ORDER = ['GENERAL HARDWARE', 'PAINTS', 'PLUMBING', 'ELECTRICALS']
 
@@ -122,6 +131,9 @@ for cat in CAT_ORDER:
     cat_profit = sum(r['categories'].get(cat, {}).get('profit', 0) for r in reps_data.values())
     cat_totals[cat] = {'sales': cat_sales, 'profit': cat_profit}
 
+# Weekly target (1/4 of monthly)
+weekly_target = MONTHLY_TARGETS['OVERALL'] / 4
+
 # ========== CHART GENERATION ==========
 def create_category_pie(output_dir="charts/q1"):
     os.makedirs(output_dir, exist_ok=True)
@@ -204,6 +216,30 @@ def create_margin_comparison(output_dir="charts/q1"):
     ax.invert_yaxis()
     plt.tight_layout()
     fn = f"{output_dir}/margin_comparison.png"
+    plt.savefig(fn, dpi=120, bbox_inches='tight', facecolor='white')
+    plt.close()
+    return fn
+
+def create_target_progress(output_dir="charts/q1"):
+    os.makedirs(output_dir, exist_ok=True)
+    fig, axes = plt.subplots(1, 5, figsize=(14, 3))
+    items = [('OVERALL', total_sales, MONTHLY_TARGETS['OVERALL'])]
+    for cat in CAT_ORDER:
+        items.append((cat, cat_totals[cat]['sales'], MONTHLY_TARGETS.get(cat, 0)))
+    for ax, (label, actual, target) in zip(axes, items):
+        pct = (actual / target * 100) if target > 0 else 0
+        expected = 25  # Week 1 of 4
+        color = '#27ae60' if pct >= expected else '#e74c3c'
+        ax.barh([''], [pct], color=color, height=0.4, alpha=0.8)
+        ax.axvline(x=expected, color='#2c3e50', linestyle='--', linewidth=1.5)
+        ax.set_xlim(0, max(35, pct + 5))
+        ax.set_title(label[:12], fontsize=9, fontweight='bold')
+        ax.text(pct + 0.5, 0, f'{pct:.1f}%', va='center', fontsize=9, fontweight='bold', color=color)
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+    fig.suptitle(f'Monthly Target Progress After Week {WEEK_NUM} (Expected: 25%)', fontweight='bold', fontsize=11)
+    plt.tight_layout()
+    fn = f"{output_dir}/target_progress.png"
     plt.savefig(fn, dpi=120, bbox_inches='tight', facecolor='white')
     plt.close()
     return fn
@@ -466,7 +502,8 @@ chart_files = {
     'category_pie': create_category_pie(),
     'rep_bar': create_rep_bar_chart(),
     'margin': create_margin_comparison(),
-        'stacked': create_stacked_bar(),
+    'target': create_target_progress(),
+    'stacked': create_stacked_bar(),
     'radar': create_radar_chart(),
 }
 print(f"  {len(chart_files)} summary charts generated in charts/q1/")
@@ -553,7 +590,44 @@ def generate_pdf():
     elements.append(summary_table)
     elements.append(Spacer(1, 15))
     
+    # Target Progress
+    elements.append(Paragraph("MONTHLY TARGET PROGRESS", subheading_s))
+    target_pct = (total_sales / MONTHLY_TARGETS['OVERALL'] * 100)
+    expected_pct = 25.0  # Week 1 of 4
+    pace = "AHEAD" if target_pct >= expected_pct else "BEHIND"
+    pace_color = highlight_s if target_pct >= expected_pct else alert_s
+    elements.append(Paragraph(f"Monthly Target: KES {MONTHLY_TARGETS['OVERALL']:,.0f}", body_s))
+    elements.append(Paragraph(f"Week 1 Achievement: KES {total_sales:,.0f} ({target_pct:.1f}% of target)", body_s))
+    elements.append(Paragraph(f"Pace: {pace} schedule (expected 25.0% after Week 1)", pace_color))
     
+    target_data = [["Category", "Monthly Target", "Week 1 Actual", "% Achieved", "Expected", "Pace"]]
+    for cat in CAT_ORDER:
+        actual = cat_totals[cat]['sales']
+        target = MONTHLY_TARGETS.get(cat, 0)
+        pct = (actual / target * 100) if target > 0 else 0
+        p = "Ahead" if pct >= 25 else "Behind"
+        target_data.append([cat, f"KES {target:,.0f}", f"KES {actual:,.0f}", f"{pct:.1f}%", "25.0%", p])
+    target_data.append(["OVERALL", f"KES {MONTHLY_TARGETS['OVERALL']:,.0f}", f"KES {total_sales:,.0f}",
+                         f"{target_pct:.1f}%", "25.0%", pace])
+    
+    t = Table(target_data, colWidths=[1.3*inch, 1.2*inch, 1.2*inch, 0.8*inch, 0.8*inch, 0.7*inch])
+    t.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#2c3e50')),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 8),
+        ('ALIGN', (1, 1), (-1, -1), 'CENTER'),
+        ('ALIGN', (0, 0), (0, -1), 'LEFT'),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ('TOPPADDING', (0, 0), (-1, -1), 6),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+        ('ROWBACKGROUNDS', (0, 1), (-1, -2), [colors.white, colors.HexColor('#ecf0f1')]),
+        ('BACKGROUND', (0, -1), (-1, -1), colors.HexColor('#34495e')),
+        ('TEXTCOLOR', (0, -1), (-1, -1), colors.white),
+        ('FONTNAME', (0, -1), (-1, -1), 'Helvetica-Bold'),
+    ]))
+    elements.append(Spacer(1, 10))
+    elements.append(t)
     
     # Charts
     elements.append(PageBreak())
@@ -561,7 +635,9 @@ def generate_pdf():
     if os.path.exists(chart_files['category_pie']):
         elements.append(Image(chart_files['category_pie'], width=5.5*inch, height=3.4*inch))
     elements.append(Spacer(1, 10))
-    
+    if os.path.exists(chart_files['target']):
+        elements.append(Paragraph("TARGET PROGRESS", heading_s))
+        elements.append(Image(chart_files['target'], width=6.5*inch, height=2*inch))
     
     elements.append(PageBreak())
     elements.append(Paragraph("SALES REP PERFORMANCE", heading_s))
@@ -1446,7 +1522,15 @@ def generate_json():
             "daily_avg_profit": round(total_profit / WORKING_DAYS, 2),
             "active_reps": len(reps_data),
         },
-                    "categories": {}
+        "monthly_targets": {
+            "overall": {
+                "target": MONTHLY_TARGETS['OVERALL'],
+                "week1_actual": total_sales,
+                "pct_achieved": round(total_sales / MONTHLY_TARGETS['OVERALL'] * 100, 1),
+                "expected_pct": 25.0,
+                "pace": "Ahead" if total_sales / MONTHLY_TARGETS['OVERALL'] >= 0.25 else "Behind",
+            },
+            "categories": {}
         },
         "categories": {},
         "reps": {},
@@ -1531,7 +1615,9 @@ def main():
     print(f"\n{'GRAND TOTAL':<20} KES {total_sales:>11,.0f} KES {total_profit:>11,.0f} {overall_margin:>7.1f}%")
     print(f"{'Daily Average':<20} KES {total_sales/WORKING_DAYS:>11,.0f} KES {total_profit/WORKING_DAYS:>11,.0f}")
     
-    
+    # Target progress
+    target_pct = total_sales / MONTHLY_TARGETS['OVERALL'] * 100
+    print(f"\nMonthly Target Progress: {target_pct:.1f}% (expected 25% after Week 1)")
     
     print("\nGenerating reports...")
     generate_json()
