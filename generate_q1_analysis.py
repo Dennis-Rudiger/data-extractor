@@ -76,6 +76,8 @@ def merge_reps(data):
     for cat, reps in data["categories"].items():
         merged["categories"][cat] = {}
         for rep, vals in reps.items():
+            if rep.lower() == "unknown":
+                continue
             target = "Betha Odumo" if rep == "Magdalene" else rep
             if target not in merged["categories"][cat]:
                 merged["categories"][cat][target] = {"qty": 0, "sales_incl": 0, "cost": 0, "profit": 0}
@@ -521,6 +523,50 @@ perf_analysis = analyze_performance(reps_data, cat_totals)
 print(f"  Performance analysis generated for {len(perf_analysis)} reps")
 
 # ========== PDF REPORT ==========
+
+# Calculate top level insights
+sorted_cats = sorted(cat_totals.items(), key=lambda x: x[1]['sales'], reverse=True)
+top_cat = sorted_cats[0][0]
+top_cat_sales = sorted_cats[0][1]['sales']
+top_cat_share = top_cat_sales / total_sales * 100 if total_sales > 0 else 0
+highest_margin_cat = max(cat_totals.items(), key=lambda x: (x[1]['profit']/x[1]['sales']) if x[1]['sales'] > 0 else 0)[0]
+highest_margin_cat_margin = (cat_totals[highest_margin_cat]['profit']/cat_totals[highest_margin_cat]['sales']*100) if cat_totals[highest_margin_cat]['sales'] > 0 else 0
+if len(sorted_reps) >= 2:
+    top_rep = sorted_reps[0][0]
+    top_rep_sales = sorted_reps[0][1]['total_sales']
+    second_rep = sorted_reps[1][0]
+    second_rep_sales = sorted_reps[1][1]['total_sales']
+    top_2_share = (top_rep_sales + second_rep_sales) / total_sales * 100 if total_sales > 0 else 0
+else:
+    top_rep = "N/A"
+    top_rep_sales = 0
+    second_rep = "N/A"
+    second_rep_sales = 0
+    top_2_share = 0
+
+
+
+# Calculate top level insights
+sorted_cats = sorted(cat_totals.items(), key=lambda x: x[1]['sales'], reverse=True)
+top_cat = sorted_cats[0][0]
+top_cat_sales = sorted_cats[0][1]['sales']
+top_cat_share = top_cat_sales / total_sales * 100 if total_sales > 0 else 0
+highest_margin_cat = max(cat_totals.items(), key=lambda x: (x[1]['profit']/x[1]['sales']) if x[1]['sales'] > 0 else 0)[0]
+highest_margin_cat_margin = (cat_totals[highest_margin_cat]['profit']/cat_totals[highest_margin_cat]['sales']*100) if cat_totals[highest_margin_cat]['sales'] > 0 else 0
+if len(sorted_reps) >= 2:
+    top_rep = sorted_reps[0][0]
+    top_rep_sales = sorted_reps[0][1]['total_sales']
+    second_rep = sorted_reps[1][0]
+    second_rep_sales = sorted_reps[1][1]['total_sales']
+    top_2_share = (top_rep_sales + second_rep_sales) / total_sales * 100 if total_sales > 0 else 0
+else:
+    top_rep = "N/A"
+    top_rep_sales = 0
+    second_rep = "N/A"
+    second_rep_sales = 0
+    top_2_share = 0
+
+
 def generate_pdf():
     output_fn = f"sales_analysis_q1.pdf"
     doc = SimpleDocTemplate(output_fn, pagesize=A4,
@@ -589,56 +635,59 @@ def generate_pdf():
     ]))
     elements.append(summary_table)
     elements.append(Spacer(1, 15))
-    
-    # Target Progress
-    elements.append(Paragraph("MONTHLY TARGET PROGRESS", subheading_s))
-    target_pct = (total_sales / MONTHLY_TARGETS['OVERALL'] * 100)
-    expected_pct = 25.0  # Week 1 of 4
-    pace = "AHEAD" if target_pct >= expected_pct else "BEHIND"
-    pace_color = highlight_s if target_pct >= expected_pct else alert_s
-    elements.append(Paragraph(f"Monthly Target: KES {MONTHLY_TARGETS['OVERALL']:,.0f}", body_s))
-    elements.append(Paragraph(f"Week 1 Achievement: KES {total_sales:,.0f} ({target_pct:.1f}% of target)", body_s))
-    elements.append(Paragraph(f"Pace: {pace} schedule (expected 25.0% after Week 1)", pace_color))
-    
-    target_data = [["Category", "Monthly Target", "Week 1 Actual", "% Achieved", "Expected", "Pace"]]
-    for cat in CAT_ORDER:
-        actual = cat_totals[cat]['sales']
-        target = MONTHLY_TARGETS.get(cat, 0)
-        pct = (actual / target * 100) if target > 0 else 0
-        p = "Ahead" if pct >= 25 else "Behind"
-        target_data.append([cat, f"KES {target:,.0f}", f"KES {actual:,.0f}", f"{pct:.1f}%", "25.0%", p])
-    target_data.append(["OVERALL", f"KES {MONTHLY_TARGETS['OVERALL']:,.0f}", f"KES {total_sales:,.0f}",
-                         f"{target_pct:.1f}%", "25.0%", pace])
-    
-    t = Table(target_data, colWidths=[1.3*inch, 1.2*inch, 1.2*inch, 0.8*inch, 0.8*inch, 0.7*inch])
-    t.setStyle(TableStyle([
-        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#2c3e50')),
-        ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
-        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-        ('FONTSIZE', (0, 0), (-1, -1), 8),
-        ('ALIGN', (1, 1), (-1, -1), 'CENTER'),
-        ('ALIGN', (0, 0), (0, -1), 'LEFT'),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
-        ('TOPPADDING', (0, 0), (-1, -1), 6),
-        ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
-        ('ROWBACKGROUNDS', (0, 1), (-1, -2), [colors.white, colors.HexColor('#ecf0f1')]),
-        ('BACKGROUND', (0, -1), (-1, -1), colors.HexColor('#34495e')),
-        ('TEXTCOLOR', (0, -1), (-1, -1), colors.white),
-        ('FONTNAME', (0, -1), (-1, -1), 'Helvetica-Bold'),
-    ]))
+
+    # --- Quarterly Insights
+    elements.append(PageBreak())
+    elements.append(Paragraph("Q1 2026 STRATEGIC BUSINESS INSIGHTS", heading_s))
+      
+    elements.append(Paragraph("1. Overall Quarterly Performance", subheading_s))
+    elements.append(Paragraph(f"BOMAS Hardware Store generated KES {total_sales:,.0f} in revenue and KES {total_profit:,.0f} in gross profit during the first 74 working days of Q1 2026. This translates to an average daily revenue of KES {daily_avg:,.0f} and an average daily profit of KES {daily_profit:,.0f}. The overall profit margin stabilized at {overall_margin:.1f}%.", body_s))
     elements.append(Spacer(1, 10))
-    elements.append(t)
-    
+      
+    elements.append(Paragraph("2. Departmental Contribution & Margin Analysis", subheading_s))
+    elements.append(Paragraph(f"The {top_cat} department remains the dominant revenue driver, accounting for {top_cat_share:.1f}% of total Q1 sales (KES {top_cat_sales:,.0f}). However, margin analysis reveals that {highest_margin_cat} operates at the highest profitability rate ({highest_margin_cat_margin:.1f}%). Strategic focus should be placed on pushing higher-margin {highest_margin_cat} items in Q2 to lift the overall {overall_margin:.1f}% store margin.", body_s))
+    elements.append(Spacer(1, 10))
+      
+    elements.append(Paragraph("3. Sales Team Productivity", subheading_s))
+    elements.append(Paragraph(f"Sales concentration is notably high among the top performers. {top_rep} led the quarter with KES {top_rep_sales:,.0f} in sales, followed closely by {second_rep} (KES {second_rep_sales:,.0f}). Combined, these top two representatives accounted for {top_2_share:.1f}% of the store's total Q1 volume. To mitigate key-person dependency risks, training and mentorship programs should be implemented for the remaining {len(reps_data)-2} active representatives.", body_s))
+    elements.append(Spacer(1, 10))
+      
+    elements.append(Paragraph("4. Q2 Operational Recommendations", subheading_s))
+    elements.append(Paragraph("&bull; Balance cross-selling between volume leader (General Hardware) and margin leaders (Plumbing/Electricals).", body_s))
+    elements.append(Paragraph("&bull; Conduct sales training focused on improving the conversion rates and average order values of bottom-quartile representatives.", body_s))
+    elements.append(Paragraph("&bull; Align Minimum Order Quantities (MOQs) with Q1 daily consumption averages to ensure optimal working capital allocation.", body_s))
+    elements.append(Spacer(1, 20))
+
+
+    # --- Quarterly Insights
+    elements.append(PageBreak())
+    elements.append(Paragraph("Q1 2026 STRATEGIC BUSINESS INSIGHTS", heading_s))
+      
+    elements.append(Paragraph("1. Overall Quarterly Performance", subheading_s))
+    elements.append(Paragraph(f"BOMAS Hardware Store generated KES {total_sales:,.0f} in revenue and KES {total_profit:,.0f} in gross profit during the first 74 working days of Q1 2026. This translates to an average daily revenue of KES {daily_avg:,.0f} and an average daily profit of KES {daily_profit:,.0f}. The overall profit margin stabilized at {overall_margin:.1f}%.", body_s))
+    elements.append(Spacer(1, 10))
+      
+    elements.append(Paragraph("2. Departmental Contribution & Margin Analysis", subheading_s))
+    elements.append(Paragraph(f"The {top_cat} department remains the dominant revenue driver, accounting for {top_cat_share:.1f}% of total Q1 sales (KES {top_cat_sales:,.0f}). However, margin analysis reveals that {highest_margin_cat} operates at the highest profitability rate ({highest_margin_cat_margin:.1f}%). Strategic focus should be placed on pushing higher-margin {highest_margin_cat} items in Q2 to lift the overall {overall_margin:.1f}% store margin.", body_s))
+    elements.append(Spacer(1, 10))
+      
+    elements.append(Paragraph("3. Sales Team Productivity", subheading_s))
+    elements.append(Paragraph(f"Sales concentration is notably high among the top performers. {top_rep} led the quarter with KES {top_rep_sales:,.0f} in sales, followed closely by {second_rep} (KES {second_rep_sales:,.0f}). Combined, these top two representatives accounted for {top_2_share:.1f}% of the store's total Q1 volume. To mitigate key-person dependency risks, training and mentorship programs should be implemented for the remaining {len(reps_data)-2} active representatives.", body_s))
+    elements.append(Spacer(1, 10))
+      
+    elements.append(Paragraph("4. Q2 Operational Recommendations", subheading_s))
+    elements.append(Paragraph("&bull; Balance cross-selling between volume leader (General Hardware) and margin leaders (Plumbing/Electricals).", body_s))
+    elements.append(Paragraph("&bull; Conduct sales training focused on improving the conversion rates and average order values of bottom-quartile representatives.", body_s))
+    elements.append(Paragraph("&bull; Align Minimum Order Quantities (MOQs) with Q1 daily consumption averages to ensure optimal working capital allocation.", body_s))
+    elements.append(Spacer(1, 20))
+
     # Charts
     elements.append(PageBreak())
     elements.append(Paragraph("CATEGORY BREAKDOWN", heading_s))
     if os.path.exists(chart_files['category_pie']):
         elements.append(Image(chart_files['category_pie'], width=5.5*inch, height=3.4*inch))
     elements.append(Spacer(1, 10))
-    if os.path.exists(chart_files['target']):
-        elements.append(Paragraph("TARGET PROGRESS", heading_s))
-        elements.append(Image(chart_files['target'], width=6.5*inch, height=2*inch))
-    
+   
     elements.append(PageBreak())
     elements.append(Paragraph("SALES REP PERFORMANCE", heading_s))
     
@@ -721,7 +770,7 @@ def generate_pdf():
             ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor('#f5f5f5')]),
         ]))
         elements.append(t)
-        elements.append(Spacer(1, 15))
+    elements.append(Spacer(1, 15))
     
     # ===== PERFORMANCE COMMENTARY & AWARDS =====
     elements.append(PageBreak())
@@ -1499,7 +1548,37 @@ def generate_word():
             run.font.color.rgb = color
         
         doc.add_paragraph()
+
+    # Q1 Strategic Insights (Word)
+    doc.add_page_break()
+    p = doc.add_paragraph()
+    run = p.add_run("Q1 2026 STRATEGIC BUSINESS INSIGHTS")
+    run.bold = True
+    run.font.size = Pt(14)
+    run.font.color.rgb = RGBColor(0x2c, 0x3e, 0x50)
+
+    p = doc.add_paragraph()
+    run = p.add_run("1. Overall Quarterly Performance")
+    run.bold = True
+    doc.add_paragraph(f"BOMAS Hardware Store generated KES {total_sales:,.0f} in revenue and KES {total_profit:,.0f} in gross profit during the first 74 working days of Q1 2026. This translates to an average daily revenue of KES {total_sales/74:,.0f} and an average daily profit of KES {total_profit/74:,.0f}. The overall profit margin stabilized at {overall_margin:.1f}%.")
     
+    p = doc.add_paragraph()
+    run = p.add_run("2. Departmental Contribution & Margin Analysis")
+    run.bold = True
+    doc.add_paragraph(f"The {top_cat} department remains the dominant revenue driver, accounting for {top_cat_share:.1f}% of total Q1 sales (KES {top_cat_sales:,.0f}). However, margin analysis reveals that {highest_margin_cat} operates at the highest profitability rate ({highest_margin_cat_margin:.1f}%). Strategic focus should be placed on pushing higher-margin {highest_margin_cat} items in Q2 to lift the overall {overall_margin:.1f}% store margin.")
+    
+    p = doc.add_paragraph()
+    run = p.add_run("3. Sales Team Productivity")
+    run.bold = True
+    doc.add_paragraph(f"Sales concentration is notably high among the top performers. {top_rep} led the quarter with KES {top_rep_sales:,.0f} in sales, followed closely by {second_rep} (KES {second_rep_sales:,.0f}). Combined, these top two representatives accounted for {top_2_share:.1f}% of the store's total Q1 volume. To mitigate key-person dependency risks, training and mentorship programs should be implemented for the remaining {len(reps_data)-2} active representatives.")
+    
+    p = doc.add_paragraph()
+    run = p.add_run("4. Q2 Operational Recommendations")
+    run.bold = True
+    doc.add_paragraph("- Balance cross-selling between volume leader (General Hardware) and margin leaders (Plumbing/Electricals).")
+    doc.add_paragraph("- Conduct sales training focused on improving the conversion rates and average order values of bottom-quartile representatives.")
+    doc.add_paragraph("- Align Minimum Order Quantities (MOQs) with Q1 daily consumption averages to ensure optimal working capital allocation.")
+
     doc.save(output_fn)
     print(f"  Word: {output_fn}")
     return output_fn

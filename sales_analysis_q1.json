@@ -2,7 +2,7 @@
   "report": "Q1 2026 - Week Q1 Sales Analysis",
   "period": "January 5 - March 31, 2026",
   "working_days": 74,
-  "generated": "2026-04-06 10:57:29",
+  "generated": "2026-04-06 11:33:46",
   "department_heads": {
     "PLUMBING": "Lewis",
     "PAINTS": "Bonface Muriu",
@@ -15,17 +15,17 @@
     ]
   },
   "summary": {
-    "total_sales": 183444382.0,
-    "total_profit": 16495300.68,
+    "total_sales": 183447102.0,
+    "total_profit": 16495840.41,
     "overall_margin": 8.99,
-    "daily_avg_sales": 2478978.14,
-    "daily_avg_profit": 222909.47,
-    "active_reps": 10
+    "daily_avg_sales": 2479014.89,
+    "daily_avg_profit": 222916.76,
+    "active_reps": 9
   },
   "monthly_targets": {
     "overall": {
       "target": 60000000,
-      "week1_actual": 183444382.0,
+      "week1_actual": 183447102.0,
       "pct_achieved": 305.7,
       "expected_pct": 25.0,
       "pace": "Ahead"
@@ -33,7 +33,7 @@
     "categories": {
       "GENERAL HARDWARE": {
         "target": 48500000,
-        "week1_actual": 159936565.0,
+        "week1_actual": 159937385.0,
         "pct_achieved": 329.8,
         "pace": "Ahead",
         "department_head": [
@@ -45,7 +45,7 @@
       },
       "PAINTS": {
         "target": 7000000,
-        "week1_actual": 15769084.0,
+        "week1_actual": 15770984.0,
         "pct_achieved": 225.3,
         "pace": "Ahead",
         "department_head": "Bonface Muriu"
@@ -68,14 +68,14 @@
   },
   "categories": {
     "GENERAL HARDWARE": {
-      "total_sales": 159936565.0,
-      "total_profit": 11856013.67,
+      "total_sales": 159937385.0,
+      "total_profit": 11856257.69,
       "margin": 7.41,
       "share_of_total": 87.2
     },
     "PAINTS": {
-      "total_sales": 15769084.0,
-      "total_profit": 2725590.4,
+      "total_sales": 15770984.0,
+      "total_profit": 2725886.12,
       "margin": 17.28,
       "share_of_total": 8.6
     },
@@ -109,8 +109,8 @@
         "TOP PROFIT"
       ],
       "performance_notes": [
-        "Outstanding! Sales 304% above team average",
-        "Margin at 6.1% below team average of 11.3%",
+        "Outstanding! Sales 264% above team average",
+        "Margin at 6.1% below team average of 12.5%",
         "General Hardware: 45.5% of dept, 5.9% margin",
         "Selling across all 4 categories - excellent product range",
         "Best margin in ELECTRICALS: 29.3%",
@@ -160,8 +160,8 @@
       "profit_rank": 2,
       "badges": [],
       "performance_notes": [
-        "Outstanding! Sales 112% above team average",
-        "Margin at 8.6% below team average of 11.3%",
+        "Outstanding! Sales 91% above team average",
+        "Margin at 8.6% below team average of 12.5%",
         "General Hardware: 22.7% of dept, 7.7% margin",
         "Selling across all 4 categories - excellent product range",
         "Best margin in ELECTRICALS: 26.4%"
@@ -210,7 +210,8 @@
       "profit_rank": 3,
       "badges": [],
       "performance_notes": [
-        "Outstanding! Sales 68% above team average",
+        "Outstanding! Sales 51% above team average",
+        "Margin at 9.4% below team average of 12.5%",
         "General Hardware: 16.4% of dept, 8.0% margin",
         "Selling across all 4 categories - excellent product range",
         "Best margin in PLUMBING: 31.9%"
@@ -259,8 +260,7 @@
       "profit_rank": 4,
       "badges": [],
       "performance_notes": [
-        "Sales 27% below team average - needs improvement",
-        "Excellent margin at 15.1% (Team avg: 11.3%)",
+        "Sales 35% below team average - needs improvement",
         "Paints Dept Head: 46.4% of dept sales, 17.5% margin",
         "Good paints leadership with 46.4% of dept sales",
         "Selling across all 4 categories - excellent product range",
@@ -310,7 +310,7 @@
       "profit_rank": 5,
       "badges": [],
       "performance_notes": [
-        "Sales 28% below team average - needs improvement",
+        "Sales 35% below team average - needs improvement",
         "General Hardware: 7.6% of dept, 9.8% margin",
         "Selling across all 4 categories - excellent product range",
         "Best margin in ELECTRICALS: 23.6%"
@@ -361,8 +361,8 @@
         "BEST MARGIN"
       ],
       "performance_notes": [
-        "Sales 66% below team average - needs improvement",
-        "Excellent margin at 18.2% (Team avg: 11.3%)",
+        "Sales 69% below team average - needs improvement",
+        "Excellent margin at 18.2% (Team avg: 12.5%)",
         "Plumbing Dept Head: 42.2% of dept sales, 25.1% margin",
         "Strong plumbing leadership with 42.2% of dept sales",
         "Selling across all 4 categories - excellent product range",
@@ -413,8 +413,8 @@
       "profit_rank": 7,
       "badges": [],
       "performance_notes": [
-        "Sales 71% below team average - needs improvement",
-        "Excellent margin at 16.3% (Team avg: 11.3%)",
+        "Sales 73% below team average - needs improvement",
+        "Excellent margin at 16.3% (Team avg: 12.5%)",
         "Electricals Dept Head: 68.4% of dept sales, 22.1% margin",
         "Strong leadership - controls 68.4% of department sales",
         "Selling across all 4 categories - excellent product range",
@@ -465,8 +465,8 @@
       "profit_rank": 8,
       "badges": [],
       "performance_notes": [
-        "Sales 93% below team average - needs improvement",
-        "Excellent margin at 17.5% (Team avg: 11.3%)",
+        "Sales 94% below team average - needs improvement",
+        "Excellent margin at 17.5% (Team avg: 12.5%)",
         "General Hardware: 0.5% of dept, 15.6% margin",
         "Selling across all 4 categories - excellent product range",
         "Best margin in ELECTRICALS: 28.1%",
@@ -550,43 +550,6 @@
           "margin_pct": -0.11,
           "qty": 46.0,
           "share_of_dept": 0.2
-        }
-      }
-    },
-    "Unknown": {
-      "role": "General Hardware Team",
-      "primary_department": "GENERAL HARDWARE",
-      "total_sales": -2720.0,
-      "total_profit": -539.74,
-      "overall_margin": 0,
-      "total_qty": -5.0,
-      "contribution_pct": -0.0,
-      "sales_rank": 10,
-      "margin_rank": 10,
-      "profit_rank": 10,
-      "badges": [],
-      "performance_notes": [
-        "Sales 100% below team average - needs improvement",
-        "Margin at 0.0% below team average of 11.3%",
-        "General Hardware: -0.0% of dept, 0.0% margin",
-        "Limited to 2 categories - expand into PLUMBING, ELECTRICALS",
-        "Best margin in GENERAL HARDWARE: 0.0%",
-        "Low contribution at -0.0% of total branch sales - growth opportunity"
-      ],
-      "categories": {
-        "GENERAL HARDWARE": {
-          "sales": -820.0,
-          "profit": -244.02,
-          "margin_pct": 0,
-          "qty": -4.0,
-          "share_of_dept": -0.0
-        },
-        "PAINTS": {
-          "sales": -1900.0,
-          "profit": -295.72,
-          "margin_pct": 0,
-          "qty": -1.0,
-          "share_of_dept": -0.0
         }
       }
     }

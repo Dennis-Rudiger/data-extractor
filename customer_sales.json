@@ -1,0 +1,1498 @@
+[
+    {
+        "Month": "April",
+        "Customer": "ARAB MAINA",
+        "Quantity": 50.0,
+        "Amount_Exc": 18017.24,
+        "Cost": 16362.0,
+        "Profit": 1655.24
+    },
+    {
+        "Month": "April",
+        "Customer": "BARON CAPITAL",
+        "Quantity": 204.0,
+        "Amount_Exc": 138362.07,
+        "Cost": 128453.96,
+        "Profit": 9908.11
+    },
+    {
+        "Month": "April",
+        "Customer": "Bomas -Cash Customer",
+        "Quantity": 49391.75,
+        "Amount_Exc": 28047901.67,
+        "Cost": 25100938.39,
+        "Profit": 2946963.28
+    },
+    {
+        "Month": "April",
+        "Customer": "BROOKHOUSE SCHOOLS LTD",
+        "Quantity": 124.0,
+        "Amount_Exc": 109862.04,
+        "Cost": 87570.93,
+        "Profit": 22291.11
+    },
+    {
+        "Month": "April",
+        "Customer": "BRUCE MOKAYA",
+        "Quantity": 498.0,
+        "Amount_Exc": 272887.92,
+        "Cost": 240329.31,
+        "Profit": 32558.61
+    },
+    {
+        "Month": "April",
+        "Customer": "COMMISSION REFUND-BOMAS",
+        "Quantity": 7.0,
+        "Amount_Exc": 1379.31,
+        "Cost": 939.0,
+        "Profit": 440.31
+    },
+    {
+        "Month": "April",
+        "Customer": "CONCORDIA BUILDING",
+        "Quantity": 4388.0,
+        "Amount_Exc": 3475849.11,
+        "Cost": 3192724.62,
+        "Profit": 283124.49
+    },
+    {
+        "Month": "April",
+        "Customer": "CROWN PARADISE ENTERPRISES LIMITED",
+        "Quantity": 834.0,
+        "Amount_Exc": 576271.54,
+        "Cost": 480175.07,
+        "Profit": 96096.47
+    },
+    {
+        "Month": "April",
+        "Customer": "DAVESTAR HARDWARE-UNCLE DAVES TOOLBOX",
+        "Quantity": 460.0,
+        "Amount_Exc": 299698.26,
+        "Cost": 288546.6,
+        "Profit": 11151.66
+    },
+    {
+        "Month": "April",
+        "Customer": "DR KEN-SIGMUND PEAK",
+        "Quantity": 409.0,
+        "Amount_Exc": 277512.94,
+        "Cost": 264800.79,
+        "Profit": 12712.15
+    },
+    {
+        "Month": "April",
+        "Customer": "FOCUS HARDWARE",
+        "Quantity": 177.0,
+        "Amount_Exc": 192499.99,
+        "Cost": 181472.92,
+        "Profit": 11027.07
+    },
+    {
+        "Month": "April",
+        "Customer": "FRED NYAMWEYA OMATO",
+        "Quantity": 22.0,
+        "Amount_Exc": 11120.68,
+        "Cost": 8244.54,
+        "Profit": 2876.14
+    },
+    {
+        "Month": "April",
+        "Customer": "GEKARA NYAKAMBA",
+        "Quantity": 136.0,
+        "Amount_Exc": 59681.04,
+        "Cost": 53517.56,
+        "Profit": 6163.48
+    },
+    {
+        "Month": "April",
+        "Customer": "GEOFFREY NJATHI NJENGA",
+        "Quantity": 80.0,
+        "Amount_Exc": 49956.89,
+        "Cost": 38182.25,
+        "Profit": 11774.64
+    },
+    {
+        "Month": "April",
+        "Customer": "Grace muhoro/ POD",
+        "Quantity": 513.0,
+        "Amount_Exc": 342801.73,
+        "Cost": 326930.3,
+        "Profit": 15871.43
+    },
+    {
+        "Month": "April",
+        "Customer": "GURAIN ENTERPRISES LTD",
+        "Quantity": 1499.0,
+        "Amount_Exc": 1265137.9,
+        "Cost": 1197544.73,
+        "Profit": 67593.17
+    },
+    {
+        "Month": "April",
+        "Customer": "HISTORIA RESIDENCE MANAGEMENT CO LTD",
+        "Quantity": 553.0,
+        "Amount_Exc": 1194038.79,
+        "Cost": 1132373.69,
+        "Profit": 61665.1
+    },
+    {
+        "Month": "April",
+        "Customer": "JAMJOS ENTERPRISES LIMITED",
+        "Quantity": 302.0,
+        "Amount_Exc": 213482.74,
+        "Cost": 205294.4,
+        "Profit": 8188.34
+    },
+    {
+        "Month": "April",
+        "Customer": "KAREN PROFFESSIONAL CENTER",
+        "Quantity": 283.0,
+        "Amount_Exc": 239671.55,
+        "Cost": 203951.13,
+        "Profit": 35720.42
+    },
+    {
+        "Month": "April",
+        "Customer": "KELIMUYU HARDWARE-JULIUS",
+        "Quantity": 1911.0,
+        "Amount_Exc": 1307844.83,
+        "Cost": 1230697.85,
+        "Profit": 77146.98
+    },
+    {
+        "Month": "April",
+        "Customer": "MAVRICK CONSTRUCTION COMPANY LTD",
+        "Quantity": 164.0,
+        "Amount_Exc": 143568.97,
+        "Cost": 136855.66,
+        "Profit": 6713.31
+    },
+    {
+        "Month": "April",
+        "Customer": "METACAST PRECAST LTD",
+        "Quantity": 58.0,
+        "Amount_Exc": 56245.68,
+        "Cost": 50711.26,
+        "Profit": 5534.42
+    },
+    {
+        "Month": "April",
+        "Customer": "MIBM LTD",
+        "Quantity": 1508.0,
+        "Amount_Exc": 855306.04,
+        "Cost": 799451.2,
+        "Profit": 55854.84
+    },
+    {
+        "Month": "April",
+        "Customer": "MORRIS GACHAU",
+        "Quantity": 185.0,
+        "Amount_Exc": 65137.9,
+        "Cost": 45128.82,
+        "Profit": 20009.08
+    },
+    {
+        "Month": "April",
+        "Customer": "NAKIMS MERCHANTS",
+        "Quantity": 32.0,
+        "Amount_Exc": 27366.36,
+        "Cost": 24246.92,
+        "Profit": 3119.44
+    },
+    {
+        "Month": "April",
+        "Customer": "OBUYA JUSTUS",
+        "Quantity": 109.0,
+        "Amount_Exc": 48413.79,
+        "Cost": 42894.46,
+        "Profit": 5519.33
+    },
+    {
+        "Month": "April",
+        "Customer": "OSTREA VILLAS LTD",
+        "Quantity": 75.0,
+        "Amount_Exc": 32758.61,
+        "Cost": 26197.4,
+        "Profit": 6561.21
+    },
+    {
+        "Month": "April",
+        "Customer": "PARKROSE HARDWARE",
+        "Quantity": 2130.0,
+        "Amount_Exc": 1534719.8,
+        "Cost": 1442231.98,
+        "Profit": 92487.82
+    },
+    {
+        "Month": "April",
+        "Customer": "PETER DEMATRIC",
+        "Quantity": 937.0,
+        "Amount_Exc": 688043.1,
+        "Cost": 651449.04,
+        "Profit": 36594.06
+    },
+    {
+        "Month": "April",
+        "Customer": "PHILIP KATITA MUYALE",
+        "Quantity": 2084.0,
+        "Amount_Exc": 1633353.47,
+        "Cost": 1532417.66,
+        "Profit": 100935.81
+    },
+    {
+        "Month": "April",
+        "Customer": "POD ACCOUNT BOMAS",
+        "Quantity": 355.0,
+        "Amount_Exc": 356465.5,
+        "Cost": 215552.47,
+        "Profit": 140913.03
+    },
+    {
+        "Month": "April",
+        "Customer": "ROSEWOOD-GEN",
+        "Quantity": 2.0,
+        "Amount_Exc": 517.24,
+        "Cost": 462.17,
+        "Profit": 55.07
+    },
+    {
+        "Month": "April",
+        "Customer": "SIDE-VENT LTD",
+        "Quantity": 511.0,
+        "Amount_Exc": 354741.38,
+        "Cost": 339441.57,
+        "Profit": 15299.81
+    },
+    {
+        "Month": "April",
+        "Customer": "SILANGA-GOVIND KABARIY",
+        "Quantity": 315.0,
+        "Amount_Exc": 215659.47,
+        "Cost": 199153.49,
+        "Profit": 16505.98
+    },
+    {
+        "Month": "April",
+        "Customer": "Sir George",
+        "Quantity": 1.0,
+        "Amount_Exc": 56034.48,
+        "Cost": 52965.52,
+        "Profit": 3068.96
+    },
+    {
+        "Month": "April",
+        "Customer": "SMARTCON CONTRACTORS & SUPPLIERS CO LTD",
+        "Quantity": 10062.0,
+        "Amount_Exc": 7409896.47,
+        "Cost": 6949111.74,
+        "Profit": 460784.73
+    },
+    {
+        "Month": "April",
+        "Customer": "Stanley Gitau- Kikuyu",
+        "Quantity": 66.0,
+        "Amount_Exc": 29387.94,
+        "Cost": 25902.12,
+        "Profit": 3485.82
+    },
+    {
+        "Month": "April",
+        "Customer": "SYMPHONY RESIDENCES LTD",
+        "Quantity": 1200.0,
+        "Amount_Exc": 801724.14,
+        "Cost": 760344.0,
+        "Profit": 41380.14
+    },
+    {
+        "Month": "April",
+        "Customer": "TO CONFIRM-BOMAS",
+        "Quantity": 13533.0,
+        "Amount_Exc": 7824986.9,
+        "Cost": 7244293.94,
+        "Profit": 580692.96
+    },
+    {
+        "Month": "February",
+        "Customer": "BARON CAPITAL",
+        "Quantity": 213.0,
+        "Amount_Exc": 142629.31,
+        "Cost": 131233.74,
+        "Profit": 11395.57
+    },
+    {
+        "Month": "February",
+        "Customer": "BINAA MS LIMITED",
+        "Quantity": 3.0,
+        "Amount_Exc": 5948.28,
+        "Cost": 4741.37,
+        "Profit": 1206.91
+    },
+    {
+        "Month": "February",
+        "Customer": "Bomas -Cash Customer",
+        "Quantity": 47046.0,
+        "Amount_Exc": 28196068.87,
+        "Cost": 25313784.16,
+        "Profit": 2882284.71
+    },
+    {
+        "Month": "February",
+        "Customer": "BRUCE MOKAYA",
+        "Quantity": 668.0,
+        "Amount_Exc": 417456.9,
+        "Cost": 394496.55,
+        "Profit": 22960.35
+    },
+    {
+        "Month": "February",
+        "Customer": "CONCORDIA BUILDING",
+        "Quantity": 927.0,
+        "Amount_Exc": 581193.96,
+        "Cost": 547032.06,
+        "Profit": 34161.9
+    },
+    {
+        "Month": "February",
+        "Customer": "CROWN PARADISE ENTERPRISES LIMITED",
+        "Quantity": 2230.0,
+        "Amount_Exc": 866280.16,
+        "Cost": 761501.31,
+        "Profit": 104778.85
+    },
+    {
+        "Month": "February",
+        "Customer": "DR KEN-SIGMUND PEAK",
+        "Quantity": 105.0,
+        "Amount_Exc": 78681.04,
+        "Cost": 70823.97,
+        "Profit": 7857.07
+    },
+    {
+        "Month": "February",
+        "Customer": "FOCUS HARDWARE",
+        "Quantity": 308.0,
+        "Amount_Exc": 223103.42,
+        "Cost": 211331.75,
+        "Profit": 11771.67
+    },
+    {
+        "Month": "February",
+        "Customer": "FRED NYAMWEYA OMATO",
+        "Quantity": 221.0,
+        "Amount_Exc": 142758.62,
+        "Cost": 134655.4,
+        "Profit": 8103.22
+    },
+    {
+        "Month": "February",
+        "Customer": "GEKARA NYAKAMBA",
+        "Quantity": 1292.0,
+        "Amount_Exc": 326607.75,
+        "Cost": 269701.64,
+        "Profit": 56906.11
+    },
+    {
+        "Month": "February",
+        "Customer": "GEOFFREY NJATHI NJENGA",
+        "Quantity": 172.0,
+        "Amount_Exc": 109241.38,
+        "Cost": 102094.68,
+        "Profit": 7146.7
+    },
+    {
+        "Month": "February",
+        "Customer": "GEORGE GWENO",
+        "Quantity": 8.0,
+        "Amount_Exc": 8448.28,
+        "Cost": 7456.1,
+        "Profit": 992.18
+    },
+    {
+        "Month": "February",
+        "Customer": "GURAIN ENTERPRISES LTD",
+        "Quantity": 980.0,
+        "Amount_Exc": 801969.82,
+        "Cost": 752764.04,
+        "Profit": 49205.78
+    },
+    {
+        "Month": "February",
+        "Customer": "HANAMOTO ENTERPRISE LTD",
+        "Quantity": 522.0,
+        "Amount_Exc": 851120.69,
+        "Cost": 769397.4,
+        "Profit": 81723.29
+    },
+    {
+        "Month": "February",
+        "Customer": "HARDY PRIME HARDWARE",
+        "Quantity": 120.0,
+        "Amount_Exc": 74482.76,
+        "Cost": 71896.8,
+        "Profit": 2585.96
+    },
+    {
+        "Month": "February",
+        "Customer": "HISTORIA RESIDENCE MANAGEMENT CO LTD",
+        "Quantity": 3165.0,
+        "Amount_Exc": 3437870.68,
+        "Cost": 3234896.49,
+        "Profit": 202974.19
+    },
+    {
+        "Month": "February",
+        "Customer": "JAMJOS ENTERPRISES LIMITED",
+        "Quantity": 150.0,
+        "Amount_Exc": 93103.45,
+        "Cost": 89871.0,
+        "Profit": 3232.45
+    },
+    {
+        "Month": "February",
+        "Customer": "KAREN PROFFESSIONAL CENTER",
+        "Quantity": 786.5,
+        "Amount_Exc": 444810.29,
+        "Cost": 343829.76,
+        "Profit": 100980.53
+    },
+    {
+        "Month": "February",
+        "Customer": "LIGHT ACADEMY-BOMAS",
+        "Quantity": 27.0,
+        "Amount_Exc": 15086.21,
+        "Cost": 13857.36,
+        "Profit": 1228.85
+    },
+    {
+        "Month": "February",
+        "Customer": "METACAST PRECAST LTD",
+        "Quantity": 18.0,
+        "Amount_Exc": 27000.0,
+        "Cost": 22291.04,
+        "Profit": 4708.96
+    },
+    {
+        "Month": "February",
+        "Customer": "MORRIS GACHAU",
+        "Quantity": 1312.0,
+        "Amount_Exc": 588249.96,
+        "Cost": 476698.37,
+        "Profit": 111551.59
+    },
+    {
+        "Month": "February",
+        "Customer": "NAKIMS MERCHANTS",
+        "Quantity": 101.5,
+        "Amount_Exc": 112849.14,
+        "Cost": 92607.52,
+        "Profit": 20241.61
+    },
+    {
+        "Month": "February",
+        "Customer": "OBUYA JUSTUS",
+        "Quantity": 961.0,
+        "Amount_Exc": 629001.65,
+        "Cost": 569043.0,
+        "Profit": 59958.65
+    },
+    {
+        "Month": "February",
+        "Customer": "PARKROSE HARDWARE",
+        "Quantity": 2856.0,
+        "Amount_Exc": 2071387.92,
+        "Cost": 1941345.65,
+        "Profit": 130042.27
+    },
+    {
+        "Month": "February",
+        "Customer": "POD ACCOUNT BOMAS",
+        "Quantity": 12587.0,
+        "Amount_Exc": 8274573.47,
+        "Cost": 7847825.4,
+        "Profit": 426748.07
+    },
+    {
+        "Month": "February",
+        "Customer": "ROSEWOOD-GEN",
+        "Quantity": 241.0,
+        "Amount_Exc": 114724.12,
+        "Cost": 91798.72,
+        "Profit": 22925.4
+    },
+    {
+        "Month": "February",
+        "Customer": "SILANGA-GOVIND KABARIY",
+        "Quantity": 6.0,
+        "Amount_Exc": 10655.17,
+        "Cost": 10238.46,
+        "Profit": 416.71
+    },
+    {
+        "Month": "February",
+        "Customer": "SMARTCON CONTRACTORS & SUPPLIERS CO LTD",
+        "Quantity": 3411.0,
+        "Amount_Exc": 2692573.25,
+        "Cost": 2541374.99,
+        "Profit": 151198.26
+    },
+    {
+        "Month": "February",
+        "Customer": "STAFF ACCOUNT-BOMAS",
+        "Quantity": 84.0,
+        "Amount_Exc": 20711.2,
+        "Cost": 16690.69,
+        "Profit": 4020.51
+    },
+    {
+        "Month": "February",
+        "Customer": "TO CONFIRM-BOMAS",
+        "Quantity": 7728.0,
+        "Amount_Exc": 5254004.18,
+        "Cost": 4807345.74,
+        "Profit": 446658.44
+    },
+    {
+        "Month": "YTD",
+        "Customer": "ARAB MAINA",
+        "Quantity": 131.0,
+        "Amount_Exc": 102077.57,
+        "Cost": 86418.65,
+        "Profit": 15658.92
+    },
+    {
+        "Month": "YTD",
+        "Customer": "BARON CAPITAL",
+        "Quantity": 3516.0,
+        "Amount_Exc": 1504926.66,
+        "Cost": 1374303.27,
+        "Profit": 130623.39
+    },
+    {
+        "Month": "YTD",
+        "Customer": "BINAA MS LIMITED",
+        "Quantity": 5.0,
+        "Amount_Exc": 6086.21,
+        "Cost": 4771.63,
+        "Profit": 1314.58
+    },
+    {
+        "Month": "YTD",
+        "Customer": "BROOKHOUSE SCHOOLS LTD",
+        "Quantity": 126.0,
+        "Amount_Exc": 114948.25,
+        "Cost": 91674.54,
+        "Profit": 23273.71
+    },
+    {
+        "Month": "YTD",
+        "Customer": "BRUCE MOKAYA",
+        "Quantity": 3162.5,
+        "Amount_Exc": 1281142.2,
+        "Cost": 1163762.82,
+        "Profit": 117379.38
+    },
+    {
+        "Month": "YTD",
+        "Customer": "COMMISSION REFUND-BOMAS",
+        "Quantity": 8.0,
+        "Amount_Exc": 4137.93,
+        "Cost": 3242.92,
+        "Profit": 895.01
+    },
+    {
+        "Month": "YTD",
+        "Customer": "CONCORDIA BUILDING",
+        "Quantity": 5322.0,
+        "Amount_Exc": 4074124.97,
+        "Cost": 3754754.78,
+        "Profit": 319370.19
+    },
+    {
+        "Month": "YTD",
+        "Customer": "CROWN PARADISE ENTERPRISES LIMITED",
+        "Quantity": 8890.0,
+        "Amount_Exc": 3464853.41,
+        "Cost": 2966729.01,
+        "Profit": 498124.4
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DAVESTAR HARDWARE-UNCLE DAVES TOOLBOX",
+        "Quantity": 515.0,
+        "Amount_Exc": 334137.92,
+        "Cost": 321801.0,
+        "Profit": 12336.92
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DAVID MEREKA",
+        "Quantity": 89.0,
+        "Amount_Exc": 130646.54,
+        "Cost": 114583.83,
+        "Profit": 16062.71
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DR KEN-SIGMUND PEAK",
+        "Quantity": 968.0,
+        "Amount_Exc": 613568.98,
+        "Cost": 573371.76,
+        "Profit": 40197.22
+    },
+    {
+        "Month": "YTD",
+        "Customer": "FOCUS HARDWARE",
+        "Quantity": 974.0,
+        "Amount_Exc": 722060.28,
+        "Cost": 686410.27,
+        "Profit": 35650.01
+    },
+    {
+        "Month": "YTD",
+        "Customer": "FRED NYAMWEYA OMATO",
+        "Quantity": 243.0,
+        "Amount_Exc": 153879.3,
+        "Cost": 142899.94,
+        "Profit": 10979.36
+    },
+    {
+        "Month": "YTD",
+        "Customer": "GEKARA NYAKAMBA",
+        "Quantity": 2264.0,
+        "Amount_Exc": 693810.28,
+        "Cost": 579689.72,
+        "Profit": 114120.56
+    },
+    {
+        "Month": "YTD",
+        "Customer": "GEOFFREY NJATHI NJENGA",
+        "Quantity": 315.0,
+        "Amount_Exc": 200405.16,
+        "Cost": 176742.53,
+        "Profit": 23662.63
+    },
+    {
+        "Month": "YTD",
+        "Customer": "GEORGE GWENO",
+        "Quantity": 134.0,
+        "Amount_Exc": 85280.18,
+        "Cost": 76590.48,
+        "Profit": 8689.7
+    },
+    {
+        "Month": "YTD",
+        "Customer": "Grace muhoro/ POD",
+        "Quantity": 2287.0,
+        "Amount_Exc": 1752931.05,
+        "Cost": 1673074.56,
+        "Profit": 79856.49
+    },
+    {
+        "Month": "YTD",
+        "Customer": "GURAIN ENTERPRISES LTD",
+        "Quantity": 3650.0,
+        "Amount_Exc": 2899573.22,
+        "Cost": 2733667.71,
+        "Profit": 165905.51
+    },
+    {
+        "Month": "YTD",
+        "Customer": "H AND M",
+        "Quantity": 301.0,
+        "Amount_Exc": 492586.21,
+        "Cost": 453364.3,
+        "Profit": 39221.91
+    },
+    {
+        "Month": "YTD",
+        "Customer": "HANAMOTO ENTERPRISE LTD",
+        "Quantity": 680.0,
+        "Amount_Exc": 1105818.98,
+        "Cost": 1008405.5,
+        "Profit": 97413.48
+    },
+    {
+        "Month": "YTD",
+        "Customer": "HARDY PRIME HARDWARE",
+        "Quantity": 170.0,
+        "Amount_Exc": 105517.24,
+        "Cost": 101853.8,
+        "Profit": 3663.44
+    },
+    {
+        "Month": "YTD",
+        "Customer": "HISTORIA RESIDENCE MANAGEMENT CO LTD",
+        "Quantity": 14797.0,
+        "Amount_Exc": 14679357.76,
+        "Cost": 13803331.43,
+        "Profit": 876026.33
+    },
+    {
+        "Month": "YTD",
+        "Customer": "JAMJOS ENTERPRISES LIMITED",
+        "Quantity": 883.0,
+        "Amount_Exc": 575810.33,
+        "Cost": 554778.2,
+        "Profit": 21032.13
+    },
+    {
+        "Month": "YTD",
+        "Customer": "KAREN PROFFESSIONAL CENTER",
+        "Quantity": 2645.5,
+        "Amount_Exc": 1775486.09,
+        "Cost": 1435296.99,
+        "Profit": 340189.1
+    },
+    {
+        "Month": "YTD",
+        "Customer": "KELIMUYU HARDWARE-JULIUS",
+        "Quantity": 3449.0,
+        "Amount_Exc": 2420771.59,
+        "Cost": 2267525.55,
+        "Profit": 153246.04
+    },
+    {
+        "Month": "YTD",
+        "Customer": "KILELE JOSEPH",
+        "Quantity": 0.0,
+        "Amount_Exc": 0.0,
+        "Cost": 0.0,
+        "Profit": 0.0
+    },
+    {
+        "Month": "YTD",
+        "Customer": "LIGHT ACADEMY-BOMAS",
+        "Quantity": 141.0,
+        "Amount_Exc": 71155.17,
+        "Cost": 66017.06,
+        "Profit": 5138.11
+    },
+    {
+        "Month": "YTD",
+        "Customer": "LIGHT PULSE",
+        "Quantity": 350.0,
+        "Amount_Exc": 55870.69,
+        "Cost": 38433.61,
+        "Profit": 17437.08
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MAVRICK CONSTRUCTION COMPANY LTD",
+        "Quantity": 164.0,
+        "Amount_Exc": 143568.97,
+        "Cost": 136855.66,
+        "Profit": 6713.31
+    },
+    {
+        "Month": "YTD",
+        "Customer": "METACAST PRECAST LTD",
+        "Quantity": 395.0,
+        "Amount_Exc": 284038.78,
+        "Cost": 251103.2,
+        "Profit": 32935.58
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MIBM LTD",
+        "Quantity": 2941.0,
+        "Amount_Exc": 1608038.81,
+        "Cost": 1507024.48,
+        "Profit": 101014.33
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MORRIS GACHAU",
+        "Quantity": 2368.0,
+        "Amount_Exc": 1005538.68,
+        "Cost": 811030.9,
+        "Profit": 194507.78
+    },
+    {
+        "Month": "YTD",
+        "Customer": "NAKIMS MERCHANTS",
+        "Quantity": 245.5,
+        "Amount_Exc": 208215.5,
+        "Cost": 171000.86,
+        "Profit": 37214.64
+    },
+    {
+        "Month": "YTD",
+        "Customer": "NELSON MAINA",
+        "Quantity": 217.5,
+        "Amount_Exc": 123478.43,
+        "Cost": 98722.57,
+        "Profit": 24755.86
+    },
+    {
+        "Month": "YTD",
+        "Customer": "NJOROGE FAIR ACRES",
+        "Quantity": 11.0,
+        "Amount_Exc": 2827.59,
+        "Cost": 2518.02,
+        "Profit": 309.57
+    },
+    {
+        "Month": "YTD",
+        "Customer": "OBUYA JUSTUS",
+        "Quantity": 1690.0,
+        "Amount_Exc": 1150859.42,
+        "Cost": 1037905.82,
+        "Profit": 112953.6
+    },
+    {
+        "Month": "YTD",
+        "Customer": "OSTREA VILLAS LTD",
+        "Quantity": 738.0,
+        "Amount_Exc": 449655.16,
+        "Cost": 427319.0,
+        "Profit": 22336.16
+    },
+    {
+        "Month": "YTD",
+        "Customer": "OWINO POD",
+        "Quantity": 101.0,
+        "Amount_Exc": 62586.21,
+        "Cost": 60776.0,
+        "Profit": 1810.21
+    },
+    {
+        "Month": "YTD",
+        "Customer": "PARKROSE HARDWARE",
+        "Quantity": 7525.0,
+        "Amount_Exc": 5494004.25,
+        "Cost": 5145531.83,
+        "Profit": 348472.42
+    },
+    {
+        "Month": "YTD",
+        "Customer": "PETER DEMATRIC",
+        "Quantity": 937.0,
+        "Amount_Exc": 688043.1,
+        "Cost": 651449.04,
+        "Profit": 36594.06
+    },
+    {
+        "Month": "YTD",
+        "Customer": "PHILIP KATITA MUYALE",
+        "Quantity": 3368.0,
+        "Amount_Exc": 2854879.36,
+        "Cost": 2656339.75,
+        "Profit": 198539.61
+    },
+    {
+        "Month": "YTD",
+        "Customer": "POD ACCOUNT BOMAS",
+        "Quantity": 24559.0,
+        "Amount_Exc": 16022534.75,
+        "Cost": 15084619.66,
+        "Profit": 937915.09
+    },
+    {
+        "Month": "YTD",
+        "Customer": "ROSEWOOD-GEN",
+        "Quantity": 648.5,
+        "Amount_Exc": 413340.47,
+        "Cost": 373956.85,
+        "Profit": 39383.62
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SIDE-VENT LTD",
+        "Quantity": 1245.0,
+        "Amount_Exc": 974487.07,
+        "Cost": 922443.18,
+        "Profit": 52043.89
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SILANGA-GOVIND KABARIY",
+        "Quantity": 887.0,
+        "Amount_Exc": 476008.59,
+        "Cost": 438765.88,
+        "Profit": 37242.71
+    },
+    {
+        "Month": "YTD",
+        "Customer": "Sir George",
+        "Quantity": 1051.0,
+        "Amount_Exc": 712284.48,
+        "Cost": 691113.52,
+        "Profit": 21170.96
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SMARTCON CONTRACTORS & SUPPLIERS CO LTD",
+        "Quantity": 14757.0,
+        "Amount_Exc": 10969892.13,
+        "Cost": 10311239.71,
+        "Profit": 658652.42
+    },
+    {
+        "Month": "YTD",
+        "Customer": "STAFF ACCOUNT-BOMAS",
+        "Quantity": 166.0,
+        "Amount_Exc": 43564.51,
+        "Cost": 38854.44,
+        "Profit": 4710.07
+    },
+    {
+        "Month": "YTD",
+        "Customer": "Stanley Gitau- Kikuyu",
+        "Quantity": 66.0,
+        "Amount_Exc": 29387.94,
+        "Cost": 25902.12,
+        "Profit": 3485.82
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SYMPHONY RESIDENCES LTD",
+        "Quantity": 1200.0,
+        "Amount_Exc": 801724.14,
+        "Cost": 760344.0,
+        "Profit": 41380.14
+    },
+    {
+        "Month": "YTD",
+        "Customer": "TO CONFIRM-BOMAS",
+        "Quantity": 40572.0,
+        "Amount_Exc": 25659658.23,
+        "Cost": 23628688.98,
+        "Profit": 2030969.26
+    },
+    {
+        "Month": "January",
+        "Customer": "BARON CAPITAL",
+        "Quantity": 1148.0,
+        "Amount_Exc": 375060.33,
+        "Cost": 341859.78,
+        "Profit": 33200.55
+    },
+    {
+        "Month": "January",
+        "Customer": "BINAA MS LIMITED",
+        "Quantity": 2.0,
+        "Amount_Exc": 137.93,
+        "Cost": 30.26,
+        "Profit": 107.67
+    },
+    {
+        "Month": "January",
+        "Customer": "Bomas -Cash Customer",
+        "Quantity": 43914.65,
+        "Amount_Exc": 24444546.36,
+        "Cost": 21708992.11,
+        "Profit": 2735554.25
+    },
+    {
+        "Month": "January",
+        "Customer": "BRUCE MOKAYA",
+        "Quantity": 1188.0,
+        "Amount_Exc": 107245.68,
+        "Cost": 74217.58,
+        "Profit": 33028.1
+    },
+    {
+        "Month": "January",
+        "Customer": "COMMISSION REFUND-BOMAS",
+        "Quantity": 0.0,
+        "Amount_Exc": 0.0,
+        "Cost": 0.0,
+        "Profit": 0.0
+    },
+    {
+        "Month": "January",
+        "Customer": "CROWN PARADISE ENTERPRISES LIMITED",
+        "Quantity": 4670.0,
+        "Amount_Exc": 1541655.16,
+        "Cost": 1331796.5,
+        "Profit": 209858.66
+    },
+    {
+        "Month": "January",
+        "Customer": "DAVID MEREKA",
+        "Quantity": 89.0,
+        "Amount_Exc": 130646.54,
+        "Cost": 114583.83,
+        "Profit": 16062.71
+    },
+    {
+        "Month": "January",
+        "Customer": "FOCUS HARDWARE",
+        "Quantity": 241.0,
+        "Amount_Exc": 152189.63,
+        "Cost": 145422.44,
+        "Profit": 6767.19
+    },
+    {
+        "Month": "January",
+        "Customer": "GEKARA NYAKAMBA",
+        "Quantity": 458.0,
+        "Amount_Exc": 201159.45,
+        "Cost": 176238.01,
+        "Profit": 24921.44
+    },
+    {
+        "Month": "January",
+        "Customer": "GEORGE GWENO",
+        "Quantity": 126.0,
+        "Amount_Exc": 76831.9,
+        "Cost": 69134.38,
+        "Profit": 7697.52
+    },
+    {
+        "Month": "January",
+        "Customer": "GURAIN ENTERPRISES LTD",
+        "Quantity": 789.0,
+        "Amount_Exc": 485396.52,
+        "Cost": 453417.06,
+        "Profit": 31979.46
+    },
+    {
+        "Month": "January",
+        "Customer": "H AND M",
+        "Quantity": 301.0,
+        "Amount_Exc": 492586.21,
+        "Cost": 453364.3,
+        "Profit": 39221.91
+    },
+    {
+        "Month": "January",
+        "Customer": "HISTORIA RESIDENCE MANAGEMENT CO LTD",
+        "Quantity": 4856.0,
+        "Amount_Exc": 4378232.76,
+        "Cost": 4123923.85,
+        "Profit": 254308.91
+    },
+    {
+        "Month": "January",
+        "Customer": "JAMJOS ENTERPRISES LIMITED",
+        "Quantity": 130.0,
+        "Amount_Exc": 80689.65,
+        "Cost": 77888.2,
+        "Profit": 2801.45
+    },
+    {
+        "Month": "January",
+        "Customer": "KAREN PROFFESSIONAL CENTER",
+        "Quantity": 1218.0,
+        "Amount_Exc": 934857.72,
+        "Cost": 768086.25,
+        "Profit": 166771.47
+    },
+    {
+        "Month": "January",
+        "Customer": "KILELE JOSEPH",
+        "Quantity": 0.0,
+        "Amount_Exc": 0.0,
+        "Cost": 0.0,
+        "Profit": 0.0
+    },
+    {
+        "Month": "January",
+        "Customer": "LIGHT ACADEMY-BOMAS",
+        "Quantity": 114.0,
+        "Amount_Exc": 56068.96,
+        "Cost": 52159.7,
+        "Profit": 3909.26
+    },
+    {
+        "Month": "January",
+        "Customer": "LIGHT PULSE",
+        "Quantity": 120.0,
+        "Amount_Exc": 30982.77,
+        "Cost": 21617.66,
+        "Profit": 9365.11
+    },
+    {
+        "Month": "January",
+        "Customer": "METACAST PRECAST LTD",
+        "Quantity": 301.0,
+        "Amount_Exc": 176474.13,
+        "Cost": 159259.14,
+        "Profit": 17214.99
+    },
+    {
+        "Month": "January",
+        "Customer": "MORRIS GACHAU",
+        "Quantity": 661.0,
+        "Amount_Exc": 322405.15,
+        "Cost": 281603.48,
+        "Profit": 40801.67
+    },
+    {
+        "Month": "January",
+        "Customer": "NAKIMS MERCHANTS",
+        "Quantity": 104.0,
+        "Amount_Exc": 56741.37,
+        "Cost": 45306.96,
+        "Profit": 11434.41
+    },
+    {
+        "Month": "January",
+        "Customer": "NELSON MAINA",
+        "Quantity": 217.5,
+        "Amount_Exc": 123478.43,
+        "Cost": 98722.57,
+        "Profit": 24755.86
+    },
+    {
+        "Month": "January",
+        "Customer": "NJOROGE FAIR ACRES",
+        "Quantity": 11.0,
+        "Amount_Exc": 2827.59,
+        "Cost": 2518.02,
+        "Profit": 309.57
+    },
+    {
+        "Month": "January",
+        "Customer": "OBUYA JUSTUS",
+        "Quantity": 252.0,
+        "Amount_Exc": 186534.51,
+        "Cost": 165757.67,
+        "Profit": 20776.84
+    },
+    {
+        "Month": "January",
+        "Customer": "PARKROSE HARDWARE",
+        "Quantity": 493.0,
+        "Amount_Exc": 364482.74,
+        "Cost": 342686.07,
+        "Profit": 21796.67
+    },
+    {
+        "Month": "January",
+        "Customer": "POD ACCOUNT BOMAS",
+        "Quantity": 7332.0,
+        "Amount_Exc": 4750737.1,
+        "Cost": 4522437.91,
+        "Profit": 228299.19
+    },
+    {
+        "Month": "January",
+        "Customer": "ROSEWOOD-GEN",
+        "Quantity": 328.5,
+        "Amount_Exc": 261168.06,
+        "Cost": 250072.62,
+        "Profit": 11095.44
+    },
+    {
+        "Month": "January",
+        "Customer": "TO CONFIRM-BOMAS",
+        "Quantity": 6694.0,
+        "Amount_Exc": 4362914.62,
+        "Cost": 4035410.64,
+        "Profit": 327503.98
+    },
+    {
+        "Month": "March",
+        "Customer": "ARAB MAINA",
+        "Quantity": 81.0,
+        "Amount_Exc": 84060.33,
+        "Cost": 70056.65,
+        "Profit": 14003.68
+    },
+    {
+        "Month": "March",
+        "Customer": "BARON CAPITAL",
+        "Quantity": 1951.0,
+        "Amount_Exc": 848874.95,
+        "Cost": 772755.79,
+        "Profit": 76119.16
+    },
+    {
+        "Month": "March",
+        "Customer": "Bomas -Cash Customer",
+        "Quantity": 51220.25,
+        "Amount_Exc": 28081915.66,
+        "Cost": 25228766.48,
+        "Profit": 2853149.18
+    },
+    {
+        "Month": "March",
+        "Customer": "BROOKHOUSE SCHOOLS LTD",
+        "Quantity": 2.0,
+        "Amount_Exc": 5086.21,
+        "Cost": 4103.61,
+        "Profit": 982.6
+    },
+    {
+        "Month": "March",
+        "Customer": "BRUCE MOKAYA",
+        "Quantity": 808.5,
+        "Amount_Exc": 483551.7,
+        "Cost": 454719.38,
+        "Profit": 28832.32
+    },
+    {
+        "Month": "March",
+        "Customer": "COMMISSION REFUND-BOMAS",
+        "Quantity": 1.0,
+        "Amount_Exc": 2758.62,
+        "Cost": 2303.92,
+        "Profit": 454.7
+    },
+    {
+        "Month": "March",
+        "Customer": "CONCORDIA BUILDING",
+        "Quantity": 7.0,
+        "Amount_Exc": 17081.9,
+        "Cost": 14998.1,
+        "Profit": 2083.8
+    },
+    {
+        "Month": "March",
+        "Customer": "CROWN PARADISE ENTERPRISES LIMITED",
+        "Quantity": 1156.0,
+        "Amount_Exc": 480646.55,
+        "Cost": 393256.13,
+        "Profit": 87390.42
+    },
+    {
+        "Month": "March",
+        "Customer": "DAVESTAR HARDWARE-UNCLE DAVES TOOLBOX",
+        "Quantity": 55.0,
+        "Amount_Exc": 34439.66,
+        "Cost": 33254.4,
+        "Profit": 1185.26
+    },
+    {
+        "Month": "March",
+        "Customer": "DR KEN-SIGMUND PEAK",
+        "Quantity": 454.0,
+        "Amount_Exc": 257375.0,
+        "Cost": 237747.0,
+        "Profit": 19628.0
+    },
+    {
+        "Month": "March",
+        "Customer": "FOCUS HARDWARE",
+        "Quantity": 248.0,
+        "Amount_Exc": 154267.24,
+        "Cost": 148183.16,
+        "Profit": 6084.08
+    },
+    {
+        "Month": "March",
+        "Customer": "GEKARA NYAKAMBA",
+        "Quantity": 378.0,
+        "Amount_Exc": 106362.04,
+        "Cost": 80232.51,
+        "Profit": 26129.53
+    },
+    {
+        "Month": "March",
+        "Customer": "GEOFFREY NJATHI NJENGA",
+        "Quantity": 63.0,
+        "Amount_Exc": 41206.89,
+        "Cost": 36465.6,
+        "Profit": 4741.29
+    },
+    {
+        "Month": "March",
+        "Customer": "Grace muhoro/ POD",
+        "Quantity": 1774.0,
+        "Amount_Exc": 1410129.32,
+        "Cost": 1346144.26,
+        "Profit": 63985.06
+    },
+    {
+        "Month": "March",
+        "Customer": "GURAIN ENTERPRISES LTD",
+        "Quantity": 382.0,
+        "Amount_Exc": 347068.98,
+        "Cost": 329941.88,
+        "Profit": 17127.1
+    },
+    {
+        "Month": "March",
+        "Customer": "HANAMOTO ENTERPRISE LTD",
+        "Quantity": 158.0,
+        "Amount_Exc": 254698.29,
+        "Cost": 239008.1,
+        "Profit": 15690.19
+    },
+    {
+        "Month": "March",
+        "Customer": "HARDY PRIME HARDWARE",
+        "Quantity": 50.0,
+        "Amount_Exc": 31034.48,
+        "Cost": 29957.0,
+        "Profit": 1077.48
+    },
+    {
+        "Month": "March",
+        "Customer": "HISTORIA RESIDENCE MANAGEMENT CO LTD",
+        "Quantity": 6223.0,
+        "Amount_Exc": 5669215.53,
+        "Cost": 5312137.4,
+        "Profit": 357078.13
+    },
+    {
+        "Month": "March",
+        "Customer": "JAMJOS ENTERPRISES LIMITED",
+        "Quantity": 301.0,
+        "Amount_Exc": 188534.49,
+        "Cost": 181724.6,
+        "Profit": 6809.89
+    },
+    {
+        "Month": "March",
+        "Customer": "KAREN PROFFESSIONAL CENTER",
+        "Quantity": 358.0,
+        "Amount_Exc": 156146.53,
+        "Cost": 119429.85,
+        "Profit": 36716.68
+    },
+    {
+        "Month": "March",
+        "Customer": "KELIMUYU HARDWARE-JULIUS",
+        "Quantity": 1538.0,
+        "Amount_Exc": 1112926.76,
+        "Cost": 1036827.7,
+        "Profit": 76099.06
+    },
+    {
+        "Month": "March",
+        "Customer": "LIGHT PULSE",
+        "Quantity": 230.0,
+        "Amount_Exc": 24887.92,
+        "Cost": 16815.95,
+        "Profit": 8071.97
+    },
+    {
+        "Month": "March",
+        "Customer": "METACAST PRECAST LTD",
+        "Quantity": 18.0,
+        "Amount_Exc": 24318.97,
+        "Cost": 18841.76,
+        "Profit": 5477.21
+    },
+    {
+        "Month": "March",
+        "Customer": "MIBM LTD",
+        "Quantity": 1433.0,
+        "Amount_Exc": 752732.77,
+        "Cost": 707573.28,
+        "Profit": 45159.49
+    },
+    {
+        "Month": "March",
+        "Customer": "MORRIS GACHAU",
+        "Quantity": 210.0,
+        "Amount_Exc": 29745.67,
+        "Cost": 7600.23,
+        "Profit": 22145.44
+    },
+    {
+        "Month": "March",
+        "Customer": "NAKIMS MERCHANTS",
+        "Quantity": 8.0,
+        "Amount_Exc": 11258.63,
+        "Cost": 8839.45,
+        "Profit": 2419.18
+    },
+    {
+        "Month": "March",
+        "Customer": "OBUYA JUSTUS",
+        "Quantity": 368.0,
+        "Amount_Exc": 286909.47,
+        "Cost": 260210.69,
+        "Profit": 26698.78
+    },
+    {
+        "Month": "March",
+        "Customer": "OSTREA VILLAS LTD",
+        "Quantity": 663.0,
+        "Amount_Exc": 416896.55,
+        "Cost": 401121.6,
+        "Profit": 15774.95
+    },
+    {
+        "Month": "March",
+        "Customer": "OWINO POD",
+        "Quantity": 101.0,
+        "Amount_Exc": 62586.21,
+        "Cost": 60776.0,
+        "Profit": 1810.21
+    },
+    {
+        "Month": "March",
+        "Customer": "PARKROSE HARDWARE",
+        "Quantity": 2046.0,
+        "Amount_Exc": 1523413.79,
+        "Cost": 1419268.13,
+        "Profit": 104145.66
+    },
+    {
+        "Month": "March",
+        "Customer": "PHILIP KATITA MUYALE",
+        "Quantity": 1284.0,
+        "Amount_Exc": 1221525.89,
+        "Cost": 1123922.09,
+        "Profit": 97603.8
+    },
+    {
+        "Month": "March",
+        "Customer": "POD ACCOUNT BOMAS",
+        "Quantity": 4285.0,
+        "Amount_Exc": 2640758.68,
+        "Cost": 2498803.88,
+        "Profit": 141954.8
+    },
+    {
+        "Month": "March",
+        "Customer": "ROSEWOOD-GEN",
+        "Quantity": 77.0,
+        "Amount_Exc": 36931.05,
+        "Cost": 31623.35,
+        "Profit": 5307.7
+    },
+    {
+        "Month": "March",
+        "Customer": "SIDE-VENT LTD",
+        "Quantity": 734.0,
+        "Amount_Exc": 619745.69,
+        "Cost": 583001.61,
+        "Profit": 36744.08
+    },
+    {
+        "Month": "March",
+        "Customer": "SILANGA-GOVIND KABARIY",
+        "Quantity": 566.0,
+        "Amount_Exc": 249693.95,
+        "Cost": 229373.93,
+        "Profit": 20320.02
+    },
+    {
+        "Month": "March",
+        "Customer": "Sir George",
+        "Quantity": 1050.0,
+        "Amount_Exc": 656250.0,
+        "Cost": 638148.0,
+        "Profit": 18102.0
+    },
+    {
+        "Month": "March",
+        "Customer": "SMARTCON CONTRACTORS & SUPPLIERS CO LTD",
+        "Quantity": 1284.0,
+        "Amount_Exc": 867422.41,
+        "Cost": 820752.98,
+        "Profit": 46669.43
+    },
+    {
+        "Month": "March",
+        "Customer": "STAFF ACCOUNT-BOMAS",
+        "Quantity": 82.0,
+        "Amount_Exc": 22853.31,
+        "Cost": 22163.75,
+        "Profit": 689.56
+    },
+    {
+        "Month": "March",
+        "Customer": "TO CONFIRM-BOMAS",
+        "Quantity": 12617.0,
+        "Amount_Exc": 8217752.53,
+        "Cost": 7541638.66,
+        "Profit": 676113.87
+    }
+]

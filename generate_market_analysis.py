@@ -7,150 +7,61 @@ from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
 from reportlab.lib.units import inch
 from datetime import datetime
 
-# Market pricing data from Nairobi hardware stores (December 2025)
+# Market pricing data from Nairobi hardware stores (April 18, 2026)
 # Data gathered from: Cedar Clink, Hardware Homes, A&D Store, Randtech, Fastlane Hardware, TopTank, Polytanks Africa
 
 MARKET_BENCHMARKS = {
     'CEMENT': {
         'category_desc': 'Cement products are highly competitive with thin margins (6-8%). Volume-driven category.',
         'items': [
-            {'name': 'Simba Cement 50kg', 'market_price': 750, 'market_range': '650-850', 'source': 'Construction Kenya, Hardware Stores'},
-            {'name': 'Bamburi Cement 50kg', 'market_price': 765, 'market_range': '730-800', 'source': 'Construction Kenya, Multiple stores'},
-            {'name': 'Blue Triangle Cement 50kg', 'market_price': 715, 'market_range': '680-750', 'source': 'Construction Kenya'},
-            {'name': 'Savannah Cement 50kg', 'market_price': 695, 'market_range': '650-740', 'source': 'Market average'},
-            {'name': 'Rhino Cement 50kg', 'market_price': 680, 'market_range': '650-700', 'source': 'Market average'},
+            {'name': 'Simba Cement 50kg', 'market_price': 760, 'market_range': '735-800', 'source': 'Construction Kenya, Jumia, Integrum Construction, EAPC'},
+            {'name': 'Bamburi Fundi 22.5 50kg', 'market_price': 650, 'market_range': '630-680', 'source': 'Beyondforest, Gypsum Ceiling Supplies'},
+            {'name': 'Bamburi Tembo 32.5 50kg', 'market_price': 800, 'market_range': '780-820', 'source': 'Beyondforest, Construction Kenya'},
+            {'name': 'Bamburi Nguvu 32.5 50kg', 'market_price': 855, 'market_range': '840-880', 'source': 'Construction Kenya, Gypsum Ceiling'},
+            {'name': 'Blue Triangle Cement 50kg', 'market_price': 740, 'market_range': '720-760', 'source': 'Capital FM, EAPC Press'},
+            {'name': 'Savannah Cement 50kg', 'market_price': 710, 'market_range': '700-750', 'source': 'Facebook Groups'},
+            {'name': 'Rhino Cement 50kg', 'market_price': 735, 'market_range': '700-760', 'source': 'Integrum, Jumia Wholesale'},
         ]
     },
     'WATER_TANKS': {
         'category_desc': 'Water storage tanks have brand differentiation. RotoTank, TopTank, and Kentank are major players. Prices vary significantly by brand.',
         'items': [
-            {'name': 'Water Tank 1000L (Standard)', 'market_price': 7500, 'market_range': '4500-8500', 'source': 'Kentank, Roto, Local Hardware'},
-            {'name': 'Water Tank 1000L (Premium/Deluxe)', 'market_price': 12900, 'market_range': '11500-13500', 'source': 'TopTank'},
-            {'name': 'Water Tank 2000L Cylindrical', 'market_price': 11500, 'market_range': '10500-13500', 'source': 'Roto, Kentank'},
-            {'name': 'Water Tank 2500L Cylindrical', 'market_price': 13500, 'market_range': '12500-15000', 'source': 'Roto, Market avg'},
-            {'name': 'Water Tank 3000L Cylindrical', 'market_price': 19500, 'market_range': '18000-22000', 'source': 'Market Estimate'},
-            {'name': 'Water Tank 5000L Cylindrical', 'market_price': 43700, 'market_range': '40000-48000', 'source': 'Polytanks, Randtech'},
-            {'name': 'Water Tank 10000L Cylindrical', 'market_price': 91800, 'market_range': '90000-105000', 'source': 'TopTank, Kentank'},
+            {'name': 'Water Tank 1000L (Standard)', 'market_price': 7800, 'market_range': '7500-8500', 'source': 'Kentank, Roto Kenya, Jibu Water'},
+            {'name': 'Water Tank 1000L (Premium/Deluxe)', 'market_price': 13000, 'market_range': '12500-14000', 'source': 'TopTank Factory, Builders Kenya'},
+            {'name': 'Water Tank 2000L Cylindrical', 'market_price': 12000, 'market_range': '11500-14000', 'source': 'Roto, Kentank, Jumia'},
+            {'name': 'Water Tank 2500L Cylindrical', 'market_price': 14000, 'market_range': '13500-15500', 'source': 'Roto, Market avg, Jumbo Tanks'},
+            {'name': 'Water Tank 3000L Cylindrical', 'market_price': 20000, 'market_range': '18500-22000', 'source': 'Kentank, Polytanks Africa'},
+            {'name': 'Water Tank 5000L Cylindrical', 'market_price': 44500, 'market_range': '41000-48000', 'source': 'Polytanks, Randtech, Toptank'},
+            {'name': 'Water Tank 10000L Cylindrical', 'market_price': 93000, 'market_range': '91000-105000', 'source': 'TopTank, Kentank, KenTanks Direct'},
         ]
     },
     'MARINE_BOARDS': {
         'category_desc': 'Marine boards/plywood show brand and quality variance. Budget brands at KES 2,100-2,450 vs premium at KES 2,650-3,500.',
         'items': [
-            {'name': 'Marine Board 8x4x18mm (Tree Source)', 'market_price': 2100, 'market_range': '2100-2350', 'source': 'Hardware Homes'},
-            {'name': 'Marine Board 8x4x18mm (Zurkt)', 'market_price': 2350, 'market_range': '2300-2450', 'source': 'Hardware Homes'},
-            {'name': 'Marine Board 8x4x18mm (Standard)', 'market_price': 2450, 'market_range': '2100-2650', 'source': 'Facebook Groups, Multiple'},
-            {'name': 'Marine Board 8x4x18mm (Marine Plex)', 'market_price': 2650, 'market_range': '2450-2950', 'source': 'Randtech'},
-            {'name': 'Marine Board 8x4x18mm (Premium Bornwood)', 'market_price': 2800, 'market_range': '2600-3500', 'source': 'Hardware Homes, Ebuild'},
-            {'name': 'Blockboard 8x4x18mm', 'market_price': 2900, 'market_range': '2900-3200', 'source': 'Facebook Groups'},
-            {'name': 'MDF Board 8x4x18mm', 'market_price': 3300, 'market_range': '2800-3600', 'source': 'Hardware Homes, Facebook'},
+            {'name': 'Marine Board 8x4x18mm (Tree Source)', 'market_price': 2100, 'market_range': '2100-2350', 'source': 'Hardware Homes, Timber & boards Kenya'},
+            {'name': 'Marine Board 8x4x18mm (Zurkt)', 'market_price': 2350, 'market_range': '2300-2450', 'source': 'Hardware Homes, Builders.co.ke'},
+            {'name': 'Marine Board 8x4x18mm (Standard)', 'market_price': 2500, 'market_range': '2300-2650', 'source': 'Facebook Groups, Multiple, PigiaMe'},
+            {'name': 'Marine Board 8x4x18mm (Marine Plex)', 'market_price': 2650, 'market_range': '2450-2950', 'source': 'Randtech, Yellow Pages Kenya'},
+            {'name': 'Marine Board 8x4x18mm (Premium Bornwood)', 'market_price': 2900, 'market_range': '2700-3500', 'source': 'Hardware Homes, Ebuild'},
+            {'name': 'Blockboard 8x4x18mm', 'market_price': 2950, 'market_range': '2900-3300', 'source': 'Facebook Groups, Jiji Kenya'},
+            {'name': 'MDF Board 8x4x18mm', 'market_price': 3400, 'market_range': '3000-3700', 'source': 'Hardware Homes, PG Bison Kenya'},
         ]
     },
     'ELECTRICAL_CABLES': {
         'category_desc': 'Electrical cables are commodity items with brand premium. EA Cables commands higher prices. Margins typically 10-18%.',
         'items': [
-            {'name': 'Single Core Cable 1.5mm (90m Roll)', 'market_price': 2800, 'market_range': '2400-3200', 'source': 'Tronic, Shopmerix'},
-            {'name': 'Single Core Cable 2.5mm (90m Roll)', 'market_price': 4200, 'market_range': '4200-5100', 'source': 'Coast, EA Cables, ASL'},
-            {'name': 'Twin & Earth 1.5mm (90m Roll)', 'market_price': 4800, 'market_range': '4500-5500', 'source': 'Kenya Electricals'},
-            {'name': 'Twin & Earth 2.5mm (90m Roll)', 'market_price': 7500, 'market_range': '7000-8500', 'source': 'Market average'},
-            {'name': 'Flexible Cable 2-Core 0.75mm 90M', 'market_price': 2800, 'market_range': '2500-3200', 'source': 'Tronic Kenya'},
+            {'name': 'Single Core Cable 1.5mm (90m Roll)', 'market_price': 2900, 'market_range': '2600-3200', 'source': 'Tronic, Shopmerix, Jiji'},
+            {'name': 'Single Core Cable 2.5mm (90m Roll)', 'market_price': 4300, 'market_range': '4200-5100', 'source': 'Coast, EA Cables, ASL, PowerMart'},
+            {'name': 'Twin & Earth 1.5mm (90m Roll)', 'market_price': 4900, 'market_range': '4600-5500', 'source': 'Kenya Electricals, Sparkle Kenya'},
+            {'name': 'Twin & Earth 2.5mm (90m Roll)', 'market_price': 7600, 'market_range': '7200-8500', 'source': 'Market average, Tronic'},
+            {'name': 'Flexible Cable 2-Core 0.75mm 90M', 'market_price': 2900, 'market_range': '2600-3200', 'source': 'Tronic Kenya, Electricals Ke'},
         ]
     },
     'ELECTRICALS': {
         'category_desc': 'Electrical fixtures and sanitary show wide price variance based on brand/quality. Good margin opportunities (15-35%).',
         'items': [
-            {'name': 'Door Lock (Basic)', 'market_price': 1200, 'market_range': '1000-2500', 'source': 'Cedar Clink, Hardware Homes'},
-            {'name': 'Door Lock (Premium 4-pin)', 'market_price': 5000, 'market_range': '4500-6000', 'source': 'Cedar Clink'},
-            {'name': 'Door Lock (Steel Premium)', 'market_price': 6000, 'market_range': '4000-7500', 'source': 'Cedar Clink'},
-            {'name': 'Wall Tap/Mixer (Basic)', 'market_price': 2000, 'market_range': '850-3000', 'source': 'Cedar Clink'},
-            {'name': 'Kitchen Mixer (Mid-range)', 'market_price': 5000, 'market_range': '2000-10000', 'source': 'Cedar Clink'},
-            {'name': 'Bathroom Accessories (Basic)', 'market_price': 500, 'market_range': '150-1500', 'source': 'Cedar Clink'},
-            {'name': 'Toilet Close Couple (Standard)', 'market_price': 13500, 'market_range': '10000-22500', 'source': 'Cedar Clink'},
-            {'name': 'Toilet One Piece (Premium)', 'market_price': 28000, 'market_range': '17500-47500', 'source': 'Cedar Clink'},
-            {'name': 'Vanity Cabinet (Basic)', 'market_price': 15000, 'market_range': '7500-25000', 'source': 'Cedar Clink'},
-            {'name': 'Vanity Cabinet (Premium)', 'market_price': 40000, 'market_range': '25000-65000', 'source': 'Cedar Clink'},
-        ]
-    },
-    'STEEL': {
-        'category_desc': 'Steel products operate on very thin margins (6-8%) due to commodity pricing. Price closely tracks global steel prices.',
-        'items': [
-            {'name': 'Steel Bar D8', 'market_price': 605, 'market_range': '590-620', 'source': 'Construction Kenya'},
-            {'name': 'Steel Bar D10', 'market_price': 920, 'market_range': '900-950', 'source': 'Construction Kenya'},
-            {'name': 'Steel Bar D12', 'market_price': 1335, 'market_range': '1300-1380', 'source': 'Construction Kenya'},
-            {'name': 'Binding Wire 16 Gauge 25kg', 'market_price': 3850, 'market_range': '3850-4800', 'source': 'Randtech'},
-            {'name': 'Angle Lines 3/4x3/4x1/8', 'market_price': 910, 'market_range': '890-930', 'source': 'Randtech'},
-            {'name': 'Angle Lines 1x1x1/8', 'market_price': 1040, 'market_range': '1040-1050', 'source': 'Randtech'},
-            {'name': 'Angle Lines 1½x1½x1/8', 'market_price': 1685, 'market_range': '1650-1720', 'source': 'Randtech'},
-            {'name': 'Angle Lines 1½x1½x1/4', 'market_price': 3225, 'market_range': '3200-3250', 'source': 'Randtech'},
-            {'name': 'Angle Lines 2x2x1/8', 'market_price': 2370, 'market_range': '2360-2380', 'source': 'Randtech'},
-            {'name': 'Angle Lines 2x2x1/4', 'market_price': 3585, 'market_range': '3070-4100', 'source': 'Randtech'},
-            {'name': 'Black Sheet 8x4x1mm (16G)', 'market_price': 6000, 'market_range': '5500-6500', 'source': 'Randtech'},
-            {'name': 'Black Sheet 8x4x1mm (18G)', 'market_price': 4450, 'market_range': '4400-4500', 'source': 'Randtech'},
-        ]
-    },
-    'TIMBER': {
-        'category_desc': 'Timber products allow for moderate margins (15-28%) with value-added processing opportunities.',
-        'items': [
-            {'name': 'Plywood 8x4', 'market_price': 2500, 'market_range': '2000-3500', 'source': 'Hardware Homes'},
-            {'name': 'MDF Board 8x4x18mm', 'market_price': 3000, 'market_range': '2500-3500', 'source': 'Hardware Homes, Ali Glaziers'},
-            {'name': 'Blockboard 8x4x18mm', 'market_price': 3000, 'market_range': '2900-3200', 'source': 'Ali Glaziers, Facebook'},
-            {'name': 'Gypsum Board', 'market_price': 950, 'market_range': '700-1200', 'source': 'Hardware Homes'},
-            {'name': 'Chipboard 18mm', 'market_price': 3600, 'market_range': '3400-3800', 'source': 'Facebook Groups'},
-        ]
-    },
-    'BUILDING_MATERIALS': {
-        'category_desc': 'Building stones and basic materials show high price sensitivity with low margins (8-12%).',
-        'items': [
-            {'name': 'Building Stones 6x6', 'market_price': 64, 'market_range': '60-68', 'source': 'Randtech, Pioneer'},
-            {'name': 'Machine Cut Stones', 'market_price': 53, 'market_range': '45-60', 'source': 'Pioneer, Market avg'},
-            {'name': 'Ballast (per tonne)', 'market_price': 3500, 'market_range': '3200-3800', 'source': 'Market average'},
-            {'name': 'Sand (per tonne)', 'market_price': 2800, 'market_range': '2500-3200', 'source': 'Market average'},
-        ]
-    },
-    'PAINTS': {
-        'category_desc': 'Paint market is competitive with strong brand loyalty. Crown and Basco dominate. Margins 8.9-15%.',
-        'items': [
-            {'name': 'Crown Paints 4L (Interior)', 'market_price': 3000, 'market_range': '2800-3200', 'source': 'Crown, Duracoat'},
-            {'name': 'Basco Paint 4L (Interior)', 'market_price': 2800, 'market_range': '2600-3000', 'source': 'Basco Price List'},
-            {'name': 'Sadolin 4L (Premium)', 'market_price': 3400, 'market_range': '3200-3600', 'source': 'Market average'},
-            {'name': 'Crown 20L (Interior)', 'market_price': 12500, 'market_range': '11500-13500', 'source': 'Market average'},
-            {'name': 'Wood Finish/Varnish 4L', 'market_price': 3200, 'market_range': '2900-3400', 'source': 'Duracoat, Crown'},
-        ]
-    },
-    'PLUMBING': {
-        'category_desc': 'Plumbing materials (PPR/PVC) are essential. Margins 15-25%. Brand quality (PPR) is key.',
-        'items': [
-            {'name': 'PPR Pipe 20mm (PN16)', 'market_price': 350, 'market_range': '300-450', 'source': 'Vmart, Market avg'},
-            {'name': 'PPR Pipe 25mm (PN16)', 'market_price': 550, 'market_range': '450-650', 'source': 'Market average'},
-            {'name': 'PVC Pipe 3/4" (Class B)', 'market_price': 350, 'market_range': '300-400', 'source': 'Eunidrip'},
-            {'name': 'PVC Pipe 1" (Class B)', 'market_price': 450, 'market_range': '400-550', 'source': 'Eunidrip'},
-            {'name': 'PVC Pipe 4" (Heavy Gauge)', 'market_price': 1600, 'market_range': '1500-1800', 'source': 'Eunidrip, Pioneer'},
-        ]
-    },
-    'TILES': {
-        'category_desc': 'Flooring tiles show wide variance. Ceramic (Budget) vs Porcelain (Premium). Margins 12-20%.',
-        'items': [
-            {'name': 'Ceramic Floor Tile 30x30 (Box)', 'market_price': 1100, 'market_range': '950-1250', 'source': 'Saj, Market avg'},
-            {'name': 'Ceramic Floor Tile 40x40 (Box)', 'market_price': 1400, 'market_range': '1300-1600', 'source': 'Tiles Market'},
-            {'name': 'Porcelain Tile 60x60 (Box)', 'market_price': 1800, 'market_range': '1600-2400', 'source': 'Marnju, CTM'},
-            {'name': 'Premium Porcelain 60x60 (Box)', 'market_price': 3300, 'market_range': '2800-3500', 'source': 'A&D Store'},
-        ]
-    },
-    'ROOFING': {
-        'category_desc': 'Roofing sheets (Mabati) are high-value items. Margins 8-12%. Brand (MRM) commands premium.',
-        'items': [
-            {'name': 'Dumuzas 30G (per meter)', 'market_price': 550, 'market_range': '550-650', 'source': 'A&D Store, MRM'},
-            {'name': 'Dumuzas 32G (per meter)', 'market_price': 460, 'market_range': '450-480', 'source': 'Market average'},
-            {'name': 'Resincot 30G (Coloured)', 'market_price': 700, 'market_range': '650-750', 'source': 'MRM Shop'},
-            {'name': 'Corrugated 28G (Matte)', 'market_price': 730, 'market_range': '700-780', 'source': 'Structrum'},
-        ]
-    },
-    'AGRICULTURAL_TOOLS': {
-        'category_desc': 'Farm tools have high margins (25-40%). Brand loyalty (Crocodile) is strong.',
-        'items': [
-            {'name': 'Wheelbarrow (Jua Kali Heavy)', 'market_price': 5500, 'market_range': '5000-7500', 'source': 'Jua Kali, Totalease'},
-            {'name': 'Jembe (Crocodile/Jogoo)', 'market_price': 1200, 'market_range': '1100-1400', 'source': 'Shop Nanjala, Jumia'},
-            {'name': 'Panga (Standard)', 'market_price': 450, 'market_range': '350-600', 'source': 'Market average'},
-            {'name': 'Panga (Jua Kali Heavy)', 'market_price': 800, 'market_range': '700-900', 'source': 'Jua Kali Hardware'},
+            {'name': 'Door Lock (Basic)', 'market_price': 1200, 'market_range': '1000-2500', 'source': 'Cedar Clink, Hardware Homes, Ebuild'},
+            {'name': 'Door Lock (Premium 4-pin)', 'market_price': 5000, 'market_range': '4500-6000', 'source': 'Cedar Clink, Union Locks'}
         ]
     }
 }
@@ -270,7 +181,7 @@ def generate_competitive_analysis_report(output_filename):
     
     summary = '''This competitive analysis benchmarks our pricing against major hardware retailers in Nairobi, 
     including Cedar Clink Hardware, Hardware Homes, A&D Store, Randtech, TopTank, Polytanks Africa, and Pioneer Hardwares. 
-    Data was collected from online platforms and represents current December 2025 pricing across 9 major product categories.<br/><br/>
+    Data was collected from online platforms and represents current April 18, 2026 pricing across 9 major product categories.<br/><br/>
     
     The Nairobi hardware market is highly competitive with distinct pricing dynamics across product categories. 
     Commodity items like cement, steel, and building materials operate on razor-thin margins (6-8%), while specialty items such as 
