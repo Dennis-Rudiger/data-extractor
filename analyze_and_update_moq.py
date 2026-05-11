@@ -89,8 +89,12 @@ def analyze_branch(branch_name, q1_file, apr_file):
     
     # Calculate Q1 (Jan-Mar) by subtracting April from Jan-Apr (assuming the file Jan-Apr covers all 4 months, thus Q1 = (Jan_Apr - Apr))
     df_merged = pd.merge(df_q1, df_apr, on='code', how='outer', suffixes=('_jan_apr', '_apr'))
-    df_merged.fillna(0, inplace=True)
-    df_merged['description'] = df_merged['description_jan_apr'].combine_first(df_merged['description_apr'])
+    df_merged['description_jan_apr'] = df_merged['description_jan_apr'].fillna('')
+    df_merged['description_apr'] = df_merged['description_apr'].fillna('')
+    df_merged['qty_out_jan_apr'] = df_merged['qty_out_jan_apr'].fillna(0)
+    df_merged['qty_out_apr'] = df_merged['qty_out_apr'].fillna(0)
+    
+    df_merged['description'] = df_merged['description_jan_apr'].replace('', float('nan')).combine_first(df_merged['description_apr'])
     
     # Q1 is Jan-Mar, so Total - April
     df_merged['qty_q1'] = df_merged['qty_out_jan_apr'] - df_merged['qty_out_apr']
