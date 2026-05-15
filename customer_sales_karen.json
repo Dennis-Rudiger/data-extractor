@@ -1,0 +1,2186 @@
+[
+    {
+        "Month": "YTD",
+        "Customer": "AFRICA REIT",
+        "Quantity": 6561.0,
+        "Amount_Exc": 10328301.71,
+        "Cost": 9660317.89,
+        "Profit": 667983.82
+    },
+    {
+        "Month": "YTD",
+        "Customer": "ALMAZ YOHANNIS",
+        "Quantity": 308.0,
+        "Amount_Exc": 203189.64,
+        "Cost": 193603.17,
+        "Profit": 9586.47
+    },
+    {
+        "Month": "YTD",
+        "Customer": "BETH MUSHI",
+        "Quantity": 3014.0,
+        "Amount_Exc": 1907613.78,
+        "Cost": 1821557.67,
+        "Profit": 86056.11
+    },
+    {
+        "Month": "YTD",
+        "Customer": "BREW DISTILL",
+        "Quantity": 4013.0,
+        "Amount_Exc": 2080025.83,
+        "Cost": 1875473.28,
+        "Profit": 204552.55
+    },
+    {
+        "Month": "YTD",
+        "Customer": "BRIQ COSTRUCTION GROUP",
+        "Quantity": 3618.0,
+        "Amount_Exc": 1769581.81,
+        "Cost": 1596546.75,
+        "Profit": 173035.06
+    },
+    {
+        "Month": "YTD",
+        "Customer": "CALEB",
+        "Quantity": 7.0,
+        "Amount_Exc": 7413.79,
+        "Cost": 6674.64,
+        "Profit": 739.15
+    },
+    {
+        "Month": "YTD",
+        "Customer": "CLEMENT MBOGO",
+        "Quantity": 87.0,
+        "Amount_Exc": 61448.26,
+        "Cost": 57294.57,
+        "Profit": 4153.69
+    },
+    {
+        "Month": "YTD",
+        "Customer": "COMMISSION REFUND-KAREN",
+        "Quantity": 46.0,
+        "Amount_Exc": 34021.56,
+        "Cost": 31591.74,
+        "Profit": 2429.82
+    },
+    {
+        "Month": "YTD",
+        "Customer": "CONCORDIA BULDINGS",
+        "Quantity": 3482.0,
+        "Amount_Exc": 2784374.93,
+        "Cost": 2602242.1,
+        "Profit": 182132.83
+    },
+    {
+        "Month": "YTD",
+        "Customer": "CYNTHIA MOOKE- OLOLUA",
+        "Quantity": 67.5,
+        "Amount_Exc": 46168.11,
+        "Cost": 41513.96,
+        "Profit": 4654.15
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DAMARIS (K)",
+        "Quantity": 301.0,
+        "Amount_Exc": 221896.54,
+        "Cost": 207681.0,
+        "Profit": 14215.54
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DAN ONSTER GROUP LTD",
+        "Quantity": 1759.0,
+        "Amount_Exc": 1090793.09,
+        "Cost": 1015661.12,
+        "Profit": 75131.97
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DANIEL CHACHA",
+        "Quantity": 1149.0,
+        "Amount_Exc": 899155.16,
+        "Cost": 844974.02,
+        "Profit": 54181.14
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DEROW CONSTRUCTION CO LTD",
+        "Quantity": 3222.0,
+        "Amount_Exc": 2263047.41,
+        "Cost": 2105159.14,
+        "Profit": 157888.27
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DIRECTORS ACCOUNT",
+        "Quantity": 70.25,
+        "Amount_Exc": 4843.09,
+        "Cost": 3894.83,
+        "Profit": 948.26
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DOMUS H/W",
+        "Quantity": 1528.0,
+        "Amount_Exc": 1301758.65,
+        "Cost": 1196147.3,
+        "Profit": 105611.35
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DONALD KISEMBE",
+        "Quantity": 798.0,
+        "Amount_Exc": 535689.65,
+        "Cost": 503595.03,
+        "Profit": 32094.62
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DR. KEN - NDEGE RD",
+        "Quantity": 371.0,
+        "Amount_Exc": 223383.59,
+        "Cost": 201048.54,
+        "Profit": 22335.05
+    },
+    {
+        "Month": "YTD",
+        "Customer": "DUKE -MARULA LANE",
+        "Quantity": 4501.0,
+        "Amount_Exc": 3000155.26,
+        "Cost": 2721701.94,
+        "Profit": 278453.32
+    },
+    {
+        "Month": "YTD",
+        "Customer": "Evans Nyabuto",
+        "Quantity": 614.0,
+        "Amount_Exc": 550974.13,
+        "Cost": 525722.16,
+        "Profit": 25251.97
+    },
+    {
+        "Month": "YTD",
+        "Customer": "FINRAYS",
+        "Quantity": 70.0,
+        "Amount_Exc": 43448.28,
+        "Cost": 41939.8,
+        "Profit": 1508.48
+    },
+    {
+        "Month": "YTD",
+        "Customer": "HKM CONTRUCTION GROUP LTD",
+        "Quantity": 1216.0,
+        "Amount_Exc": 1038810.33,
+        "Cost": 952942.54,
+        "Profit": 85867.79
+    },
+    {
+        "Month": "YTD",
+        "Customer": "INFRATECH LIMITED",
+        "Quantity": 3862.0,
+        "Amount_Exc": 2597620.64,
+        "Cost": 2436464.5,
+        "Profit": 161156.14
+    },
+    {
+        "Month": "YTD",
+        "Customer": "JACOB KUNDU",
+        "Quantity": 1597.0,
+        "Amount_Exc": 1016340.51,
+        "Cost": 994353.16,
+        "Profit": 21987.35
+    },
+    {
+        "Month": "YTD",
+        "Customer": "JOANNE-SAANALSUPPLIERS",
+        "Quantity": 2046.0,
+        "Amount_Exc": 1304965.54,
+        "Cost": 1154105.01,
+        "Profit": 150860.53
+    },
+    {
+        "Month": "YTD",
+        "Customer": "JOSE ST.CHRISTOPHER",
+        "Quantity": 916.0,
+        "Amount_Exc": 476258.63,
+        "Cost": 443890.7,
+        "Profit": 32367.93
+    },
+    {
+        "Month": "YTD",
+        "Customer": "KALUMU INVESTMENTS LTD",
+        "Quantity": 270.0,
+        "Amount_Exc": 305172.4,
+        "Cost": 264423.75,
+        "Profit": 40748.65
+    },
+    {
+        "Month": "YTD",
+        "Customer": "Karen -Cash Customer",
+        "Quantity": 115430.7,
+        "Amount_Exc": 65257798.23,
+        "Cost": 59403014.27,
+        "Profit": 5854783.96
+    },
+    {
+        "Month": "YTD",
+        "Customer": "KEN MUGAMBI",
+        "Quantity": 2.0,
+        "Amount_Exc": 560.34,
+        "Cost": 362.11,
+        "Profit": 198.23
+    },
+    {
+        "Month": "YTD",
+        "Customer": "KIONI PETER",
+        "Quantity": 11637.0,
+        "Amount_Exc": 9583999.91,
+        "Cost": 8779017.42,
+        "Profit": 804982.49
+    },
+    {
+        "Month": "YTD",
+        "Customer": "LEONARD (TESTIMONY KABIRIA)",
+        "Quantity": 1011.0,
+        "Amount_Exc": 682715.52,
+        "Cost": 644861.32,
+        "Profit": 37854.2
+    },
+    {
+        "Month": "YTD",
+        "Customer": "LHM BUILDING CONTRACTORS LIMITED",
+        "Quantity": 72.0,
+        "Amount_Exc": 57732.76,
+        "Cost": 49954.82,
+        "Profit": 7777.94
+    },
+    {
+        "Month": "YTD",
+        "Customer": "LIGHT ACADEMY",
+        "Quantity": 163.0,
+        "Amount_Exc": 126982.76,
+        "Cost": 114157.92,
+        "Profit": 12824.84
+    },
+    {
+        "Month": "YTD",
+        "Customer": "LIPTON INVESTMENT LTD",
+        "Quantity": 1717.0,
+        "Amount_Exc": 1692676.71,
+        "Cost": 1535431.11,
+        "Profit": 157245.6
+    },
+    {
+        "Month": "YTD",
+        "Customer": "LUCAS MBAE",
+        "Quantity": 181.0,
+        "Amount_Exc": 20336.21,
+        "Cost": 15286.1,
+        "Profit": 5050.11
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MALYA INTERRIORS",
+        "Quantity": 975.0,
+        "Amount_Exc": 810280.19,
+        "Cost": 762970.01,
+        "Profit": 47310.18
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MAREC VENTURS LIMITED",
+        "Quantity": 491.0,
+        "Amount_Exc": 780646.55,
+        "Cost": 740183.7,
+        "Profit": 40462.85
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MBOGO CLEMENT",
+        "Quantity": 1357.0,
+        "Amount_Exc": 1065978.44,
+        "Cost": 1008746.64,
+        "Profit": 57231.8
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MILDRED OTHENO",
+        "Quantity": 71.0,
+        "Amount_Exc": 36896.56,
+        "Cost": 33416.8,
+        "Profit": 3479.76
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MIRA SYSTEMS LIMITED",
+        "Quantity": 1.5,
+        "Amount_Exc": 241.38,
+        "Cost": 189.66,
+        "Profit": 51.73
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MOLLY WANGUI",
+        "Quantity": 1406.5,
+        "Amount_Exc": 554215.46,
+        "Cost": 488668.44,
+        "Profit": 65547.02
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MONICAH WANGECI",
+        "Quantity": 33.0,
+        "Amount_Exc": 35905.17,
+        "Cost": 32159.08,
+        "Profit": 3746.09
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MOSES SIMIYU",
+        "Quantity": 129.0,
+        "Amount_Exc": 75012.94,
+        "Cost": 62281.44,
+        "Profit": 12731.5
+    },
+    {
+        "Month": "YTD",
+        "Customer": "MUTUA -BAMBURI",
+        "Quantity": 220.0,
+        "Amount_Exc": 143189.66,
+        "Cost": 134655.4,
+        "Profit": 8534.26
+    },
+    {
+        "Month": "YTD",
+        "Customer": "NACHON",
+        "Quantity": 1476.0,
+        "Amount_Exc": 952935.32,
+        "Cost": 913767.96,
+        "Profit": 39167.36
+    },
+    {
+        "Month": "YTD",
+        "Customer": "NAKSHI GLASS LTD",
+        "Quantity": 180.0,
+        "Amount_Exc": 72443.98,
+        "Cost": 59486.26,
+        "Profit": 12957.72
+    },
+    {
+        "Month": "YTD",
+        "Customer": "NANCY METRO",
+        "Quantity": 400.0,
+        "Amount_Exc": 256034.47,
+        "Cost": 240518.0,
+        "Profit": 15516.47
+    },
+    {
+        "Month": "YTD",
+        "Customer": "OTIS",
+        "Quantity": 533.0,
+        "Amount_Exc": 370676.7,
+        "Cost": 319416.87,
+        "Profit": 51259.83
+    },
+    {
+        "Month": "YTD",
+        "Customer": "PHOENIX TIMBER AND HARDWARE LIMITED",
+        "Quantity": 1200.0,
+        "Amount_Exc": 784482.74,
+        "Cost": 756818.0,
+        "Profit": 27664.74
+    },
+    {
+        "Month": "YTD",
+        "Customer": "POD CUSTOMER KAREN",
+        "Quantity": 20590.0,
+        "Amount_Exc": 12799768.04,
+        "Cost": 11973368.07,
+        "Profit": 826399.97
+    },
+    {
+        "Month": "YTD",
+        "Customer": "RICHVILLE GARDENS LTD",
+        "Quantity": 2291.0,
+        "Amount_Exc": 1520431.02,
+        "Cost": 1441274.59,
+        "Profit": 79156.43
+    },
+    {
+        "Month": "YTD",
+        "Customer": "RINA SYSTEM",
+        "Quantity": 127.0,
+        "Amount_Exc": 68461.22,
+        "Cost": 56764.57,
+        "Profit": 11696.65
+    },
+    {
+        "Month": "YTD",
+        "Customer": "RUKIA ABDUL",
+        "Quantity": 523.0,
+        "Amount_Exc": 321422.43,
+        "Cost": 308113.0,
+        "Profit": 13309.43
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SAJENJE",
+        "Quantity": 51.0,
+        "Amount_Exc": 31465.51,
+        "Cost": 30129.41,
+        "Profit": 1336.1
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SAM VISION MAIYOHO",
+        "Quantity": 3541.0,
+        "Amount_Exc": 2221129.33,
+        "Cost": 2143940.99,
+        "Profit": 77188.34
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SAMUEL OMONDI",
+        "Quantity": 2.0,
+        "Amount_Exc": 52155.17,
+        "Cost": 46721.5,
+        "Profit": 5433.67
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SANDIEGO JAMES",
+        "Quantity": 2926.0,
+        "Amount_Exc": 1954883.6,
+        "Cost": 1843790.54,
+        "Profit": 111093.06
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SHOP REPAIR AND RENOVATION",
+        "Quantity": 6.0,
+        "Amount_Exc": 1457.77,
+        "Cost": 1309.25,
+        "Profit": 148.52
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SIMON THUO NGANGA",
+        "Quantity": 190.0,
+        "Amount_Exc": 150517.22,
+        "Cost": 122673.59,
+        "Profit": 27843.63
+    },
+    {
+        "Month": "YTD",
+        "Customer": "STAFF ACCOUNT KAREN",
+        "Quantity": 191.25,
+        "Amount_Exc": 160356.85,
+        "Cost": 110175.15,
+        "Profit": 50181.7
+    },
+    {
+        "Month": "YTD",
+        "Customer": "STUDIO PLUS CONTRUCTION",
+        "Quantity": 1824.0,
+        "Amount_Exc": 1323987.01,
+        "Cost": 1231447.26,
+        "Profit": 92539.74
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SUJAL",
+        "Quantity": 610.0,
+        "Amount_Exc": 376000.01,
+        "Cost": 355261.51,
+        "Profit": 20738.5
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SUNSTAR",
+        "Quantity": 4642.0,
+        "Amount_Exc": 2940775.83,
+        "Cost": 2805403.4,
+        "Profit": 135372.43
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SUSAN KIVULINI",
+        "Quantity": 1711.25,
+        "Amount_Exc": 801564.51,
+        "Cost": 674020.62,
+        "Profit": 127543.89
+    },
+    {
+        "Month": "YTD",
+        "Customer": "SUSAN-KARINDE (PCEA)",
+        "Quantity": 282.0,
+        "Amount_Exc": 203879.28,
+        "Cost": 187357.23,
+        "Profit": 16522.05
+    },
+    {
+        "Month": "YTD",
+        "Customer": "TALYA HARDWARE LTD",
+        "Quantity": 3017.0,
+        "Amount_Exc": 1944793.12,
+        "Cost": 1885728.85,
+        "Profit": 59064.27
+    },
+    {
+        "Month": "YTD",
+        "Customer": "TESTIMONY HARDWARE AND GLASS MARTS LIMITED",
+        "Quantity": 8486.0,
+        "Amount_Exc": 5420137.93,
+        "Cost": 5212900.02,
+        "Profit": 207237.91
+    },
+    {
+        "Month": "YTD",
+        "Customer": "TESTIMONY KIMUKA",
+        "Quantity": 3817.0,
+        "Amount_Exc": 2548176.73,
+        "Cost": 2444819.91,
+        "Profit": 103356.82
+    },
+    {
+        "Month": "YTD",
+        "Customer": "TETEZI HOUSE",
+        "Quantity": 9739.0,
+        "Amount_Exc": 8685107.7,
+        "Cost": 8017048.96,
+        "Profit": 668058.74
+    },
+    {
+        "Month": "YTD",
+        "Customer": "TIMOTHY MUTUNGA",
+        "Quantity": 5010.0,
+        "Amount_Exc": 3325068.96,
+        "Cost": 3137130.33,
+        "Profit": 187938.63
+    },
+    {
+        "Month": "YTD",
+        "Customer": "TO CONFIRM-KAREN",
+        "Quantity": 40663.75,
+        "Amount_Exc": 26081040.9,
+        "Cost": 24027540.97,
+        "Profit": 2053499.93
+    },
+    {
+        "Month": "YTD",
+        "Customer": "TWIN AFRICA-EDWARD",
+        "Quantity": 722.0,
+        "Amount_Exc": 408008.62,
+        "Cost": 375152.03,
+        "Profit": 32856.59
+    },
+    {
+        "Month": "YTD",
+        "Customer": "VERONICAH",
+        "Quantity": 4209.0,
+        "Amount_Exc": 2710431.04,
+        "Cost": 2552754.59,
+        "Profit": 157676.45
+    },
+    {
+        "Month": "YTD",
+        "Customer": "VICTOR MIOTONI",
+        "Quantity": 1.0,
+        "Amount_Exc": 620.69,
+        "Cost": 599.14,
+        "Profit": 21.55
+    },
+    {
+        "Month": "YTD",
+        "Customer": "VINCENT NEEMA HARDWARE",
+        "Quantity": 1480.0,
+        "Amount_Exc": 941810.36,
+        "Cost": 897067.2,
+        "Profit": 44743.16
+    },
+    {
+        "Month": "YTD",
+        "Customer": "YUSUF KIPTOO",
+        "Quantity": 25.0,
+        "Amount_Exc": 15146.55,
+        "Cost": 14516.42,
+        "Profit": 630.13
+    },
+    {
+        "Month": "April",
+        "Customer": "AFRICA REIT",
+        "Quantity": 479.0,
+        "Amount_Exc": 437568.98,
+        "Cost": 379892.8,
+        "Profit": 57676.18
+    },
+    {
+        "Month": "April",
+        "Customer": "ALMAZ YOHANNIS",
+        "Quantity": 308.0,
+        "Amount_Exc": 203189.64,
+        "Cost": 193603.17,
+        "Profit": 9586.47
+    },
+    {
+        "Month": "April",
+        "Customer": "BETH MUSHI",
+        "Quantity": 247.0,
+        "Amount_Exc": 148836.2,
+        "Cost": 141744.62,
+        "Profit": 7091.58
+    },
+    {
+        "Month": "April",
+        "Customer": "BREW DISTILL",
+        "Quantity": 1810.0,
+        "Amount_Exc": 862560.31,
+        "Cost": 777742.03,
+        "Profit": 84818.28
+    },
+    {
+        "Month": "April",
+        "Customer": "BRIQ COSTRUCTION GROUP",
+        "Quantity": 1772.0,
+        "Amount_Exc": 705405.11,
+        "Cost": 639429.87,
+        "Profit": 65975.24
+    },
+    {
+        "Month": "April",
+        "Customer": "CALEB",
+        "Quantity": 2.0,
+        "Amount_Exc": 4310.34,
+        "Cost": 3678.94,
+        "Profit": 631.4
+    },
+    {
+        "Month": "April",
+        "Customer": "CLEMENT MBOGO",
+        "Quantity": 85.0,
+        "Amount_Exc": 56793.09,
+        "Cost": 53501.47,
+        "Profit": 3291.62
+    },
+    {
+        "Month": "April",
+        "Customer": "COMMISSION REFUND-KAREN",
+        "Quantity": 46.0,
+        "Amount_Exc": 34021.56,
+        "Cost": 31591.74,
+        "Profit": 2429.82
+    },
+    {
+        "Month": "April",
+        "Customer": "DAN ONSTER GROUP LTD",
+        "Quantity": 202.0,
+        "Amount_Exc": 134655.16,
+        "Cost": 128448.0,
+        "Profit": 6207.16
+    },
+    {
+        "Month": "April",
+        "Customer": "DANIEL CHACHA",
+        "Quantity": 605.0,
+        "Amount_Exc": 417586.19,
+        "Cost": 396736.08,
+        "Profit": 20850.11
+    },
+    {
+        "Month": "April",
+        "Customer": "DEROW CONSTRUCTION CO LTD",
+        "Quantity": 300.0,
+        "Amount_Exc": 199741.38,
+        "Cost": 188399.95,
+        "Profit": 11341.43
+    },
+    {
+        "Month": "April",
+        "Customer": "DOMUS H/W",
+        "Quantity": 295.0,
+        "Amount_Exc": 256163.8,
+        "Cost": 226024.84,
+        "Profit": 30138.96
+    },
+    {
+        "Month": "April",
+        "Customer": "DONALD KISEMBE",
+        "Quantity": 327.0,
+        "Amount_Exc": 230568.95,
+        "Cost": 213998.46,
+        "Profit": 16570.49
+    },
+    {
+        "Month": "April",
+        "Customer": "DR. KEN - NDEGE RD",
+        "Quantity": 269.0,
+        "Amount_Exc": 160280.15,
+        "Cost": 141134.54,
+        "Profit": 19145.61
+    },
+    {
+        "Month": "April",
+        "Customer": "DUKE -MARULA LANE",
+        "Quantity": 535.0,
+        "Amount_Exc": 360771.56,
+        "Cost": 327822.54,
+        "Profit": 32949.02
+    },
+    {
+        "Month": "April",
+        "Customer": "Evans Nyabuto",
+        "Quantity": 614.0,
+        "Amount_Exc": 550974.13,
+        "Cost": 525722.16,
+        "Profit": 25251.97
+    },
+    {
+        "Month": "April",
+        "Customer": "HKM CONTRUCTION GROUP LTD",
+        "Quantity": 8.0,
+        "Amount_Exc": 2396.55,
+        "Cost": 1573.24,
+        "Profit": 823.31
+    },
+    {
+        "Month": "April",
+        "Customer": "INFRATECH LIMITED",
+        "Quantity": 552.0,
+        "Amount_Exc": 394181.03,
+        "Cost": 364481.07,
+        "Profit": 29699.96
+    },
+    {
+        "Month": "April",
+        "Customer": "JOANNE-SAANALSUPPLIERS",
+        "Quantity": 540.0,
+        "Amount_Exc": 375551.74,
+        "Cost": 340559.52,
+        "Profit": 34992.22
+    },
+    {
+        "Month": "April",
+        "Customer": "JOSE ST.CHRISTOPHER",
+        "Quantity": 688.0,
+        "Amount_Exc": 338594.83,
+        "Cost": 319244.83,
+        "Profit": 19350.0
+    },
+    {
+        "Month": "April",
+        "Customer": "Karen -Cash Customer",
+        "Quantity": 35989.25,
+        "Amount_Exc": 20072045.4,
+        "Cost": 18469469.46,
+        "Profit": 1602575.94
+    },
+    {
+        "Month": "April",
+        "Customer": "KEN MUGAMBI",
+        "Quantity": 2.0,
+        "Amount_Exc": 560.34,
+        "Cost": 362.11,
+        "Profit": 198.23
+    },
+    {
+        "Month": "April",
+        "Customer": "KIONI PETER",
+        "Quantity": 3984.0,
+        "Amount_Exc": 3445155.12,
+        "Cost": 3162511.74,
+        "Profit": 282643.38
+    },
+    {
+        "Month": "April",
+        "Customer": "LEONARD (TESTIMONY KABIRIA)",
+        "Quantity": 81.0,
+        "Amount_Exc": 52931.04,
+        "Cost": 50000.0,
+        "Profit": 2931.04
+    },
+    {
+        "Month": "April",
+        "Customer": "LIPTON INVESTMENT LTD",
+        "Quantity": 448.0,
+        "Amount_Exc": 392297.41,
+        "Cost": 370105.89,
+        "Profit": 22191.52
+    },
+    {
+        "Month": "April",
+        "Customer": "MALYA INTERRIORS",
+        "Quantity": 975.0,
+        "Amount_Exc": 810280.19,
+        "Cost": 762970.01,
+        "Profit": 47310.18
+    },
+    {
+        "Month": "April",
+        "Customer": "MAREC VENTURS LIMITED",
+        "Quantity": 491.0,
+        "Amount_Exc": 780646.55,
+        "Cost": 740183.7,
+        "Profit": 40462.85
+    },
+    {
+        "Month": "April",
+        "Customer": "MILDRED OTHENO",
+        "Quantity": 71.0,
+        "Amount_Exc": 36896.56,
+        "Cost": 33416.8,
+        "Profit": 3479.76
+    },
+    {
+        "Month": "April",
+        "Customer": "MIRA SYSTEMS LIMITED",
+        "Quantity": 1.5,
+        "Amount_Exc": 241.38,
+        "Cost": 189.66,
+        "Profit": 51.73
+    },
+    {
+        "Month": "April",
+        "Customer": "MOSES SIMIYU",
+        "Quantity": 3.0,
+        "Amount_Exc": 15086.2,
+        "Cost": 10703.44,
+        "Profit": 4382.76
+    },
+    {
+        "Month": "April",
+        "Customer": "NACHON",
+        "Quantity": 177.0,
+        "Amount_Exc": 112913.79,
+        "Cost": 106167.94,
+        "Profit": 6745.85
+    },
+    {
+        "Month": "April",
+        "Customer": "NAKSHI GLASS LTD",
+        "Quantity": 42.0,
+        "Amount_Exc": 22577.58,
+        "Cost": 20984.12,
+        "Profit": 1593.46
+    },
+    {
+        "Month": "April",
+        "Customer": "OTIS",
+        "Quantity": 166.0,
+        "Amount_Exc": 106413.81,
+        "Cost": 95317.22,
+        "Profit": 11096.59
+    },
+    {
+        "Month": "April",
+        "Customer": "PHOENIX TIMBER AND HARDWARE LIMITED",
+        "Quantity": 1200.0,
+        "Amount_Exc": 784482.74,
+        "Cost": 756818.0,
+        "Profit": 27664.74
+    },
+    {
+        "Month": "April",
+        "Customer": "POD CUSTOMER KAREN",
+        "Quantity": 4591.0,
+        "Amount_Exc": 3160784.42,
+        "Cost": 2995908.62,
+        "Profit": 164875.8
+    },
+    {
+        "Month": "April",
+        "Customer": "RICHVILLE GARDENS LTD",
+        "Quantity": 761.0,
+        "Amount_Exc": 511767.24,
+        "Cost": 486840.44,
+        "Profit": 24926.8
+    },
+    {
+        "Month": "April",
+        "Customer": "RINA SYSTEM",
+        "Quantity": 1.0,
+        "Amount_Exc": 668.1,
+        "Cost": 642.24,
+        "Profit": 25.86
+    },
+    {
+        "Month": "April",
+        "Customer": "SAM VISION MAIYOHO",
+        "Quantity": 740.0,
+        "Amount_Exc": 478879.31,
+        "Cost": 462395.6,
+        "Profit": 16483.71
+    },
+    {
+        "Month": "April",
+        "Customer": "SANDIEGO JAMES",
+        "Quantity": 590.0,
+        "Amount_Exc": 401465.51,
+        "Cost": 380635.8,
+        "Profit": 20829.71
+    },
+    {
+        "Month": "April",
+        "Customer": "SIMON THUO NGANGA",
+        "Quantity": 190.0,
+        "Amount_Exc": 150517.22,
+        "Cost": 122673.59,
+        "Profit": 27843.63
+    },
+    {
+        "Month": "April",
+        "Customer": "STAFF ACCOUNT KAREN",
+        "Quantity": 20.0,
+        "Amount_Exc": 46344.84,
+        "Cost": 45135.0,
+        "Profit": 1209.84
+    },
+    {
+        "Month": "April",
+        "Customer": "STUDIO PLUS CONTRUCTION",
+        "Quantity": 965.0,
+        "Amount_Exc": 717874.97,
+        "Cost": 675286.88,
+        "Profit": 42588.09
+    },
+    {
+        "Month": "April",
+        "Customer": "SUNSTAR",
+        "Quantity": 1074.0,
+        "Amount_Exc": 704482.73,
+        "Cost": 675646.0,
+        "Profit": 28836.73
+    },
+    {
+        "Month": "April",
+        "Customer": "SUSAN KIVULINI",
+        "Quantity": 349.0,
+        "Amount_Exc": 195991.34,
+        "Cost": 158854.61,
+        "Profit": 37136.73
+    },
+    {
+        "Month": "April",
+        "Customer": "TALYA HARDWARE LTD",
+        "Quantity": 1303.0,
+        "Amount_Exc": 845396.55,
+        "Cost": 820433.09,
+        "Profit": 24963.46
+    },
+    {
+        "Month": "April",
+        "Customer": "TESTIMONY HARDWARE AND GLASS MARTS LIMITED",
+        "Quantity": 2660.0,
+        "Amount_Exc": 1738793.08,
+        "Cost": 1673874.8,
+        "Profit": 64918.28
+    },
+    {
+        "Month": "April",
+        "Customer": "TESTIMONY KIMUKA",
+        "Quantity": 575.0,
+        "Amount_Exc": 442797.4,
+        "Cost": 423634.48,
+        "Profit": 19162.92
+    },
+    {
+        "Month": "April",
+        "Customer": "TETEZI HOUSE",
+        "Quantity": 280.0,
+        "Amount_Exc": 184396.55,
+        "Cost": 176724.0,
+        "Profit": 7672.55
+    },
+    {
+        "Month": "April",
+        "Customer": "TIMOTHY MUTUNGA",
+        "Quantity": 1267.0,
+        "Amount_Exc": 874637.93,
+        "Cost": 819542.53,
+        "Profit": 55095.4
+    },
+    {
+        "Month": "April",
+        "Customer": "TO CONFIRM-KAREN",
+        "Quantity": 10924.0,
+        "Amount_Exc": 7588711.17,
+        "Cost": 7041485.41,
+        "Profit": 547225.76
+    },
+    {
+        "Month": "April",
+        "Customer": "VERONICAH",
+        "Quantity": 1100.0,
+        "Amount_Exc": 729224.13,
+        "Cost": 695039.4,
+        "Profit": 34184.73
+    },
+    {
+        "Month": "April",
+        "Customer": "VINCENT NEEMA HARDWARE",
+        "Quantity": 200.0,
+        "Amount_Exc": 133620.69,
+        "Cost": 128444.0,
+        "Profit": 5176.69
+    },
+    {
+        "Month": "January",
+        "Customer": "AFRICA REIT",
+        "Quantity": 3030.0,
+        "Amount_Exc": 4857025.85,
+        "Cost": 4569328.51,
+        "Profit": 287697.34
+    },
+    {
+        "Month": "January",
+        "Customer": "BREW DISTILL",
+        "Quantity": 1213.0,
+        "Amount_Exc": 815241.4,
+        "Cost": 747491.05,
+        "Profit": 67750.35
+    },
+    {
+        "Month": "January",
+        "Customer": "CALEB",
+        "Quantity": 5.0,
+        "Amount_Exc": 3103.45,
+        "Cost": 2995.7,
+        "Profit": 107.75
+    },
+    {
+        "Month": "January",
+        "Customer": "CONCORDIA BULDINGS",
+        "Quantity": 564.0,
+        "Amount_Exc": 448491.38,
+        "Cost": 428695.57,
+        "Profit": 19795.81
+    },
+    {
+        "Month": "January",
+        "Customer": "CYNTHIA MOOKE- OLOLUA",
+        "Quantity": 67.5,
+        "Amount_Exc": 46168.11,
+        "Cost": 41513.96,
+        "Profit": 4654.15
+    },
+    {
+        "Month": "January",
+        "Customer": "DAN ONSTER GROUP LTD",
+        "Quantity": 157.0,
+        "Amount_Exc": 104508.63,
+        "Cost": 97396.96,
+        "Profit": 7111.67
+    },
+    {
+        "Month": "January",
+        "Customer": "DIRECTORS ACCOUNT",
+        "Quantity": 45.0,
+        "Amount_Exc": 3067.23,
+        "Cost": 2641.16,
+        "Profit": 426.07
+    },
+    {
+        "Month": "January",
+        "Customer": "DOMUS H/W",
+        "Quantity": 823.0,
+        "Amount_Exc": 573362.1,
+        "Cost": 542998.42,
+        "Profit": 30363.68
+    },
+    {
+        "Month": "January",
+        "Customer": "DUKE -MARULA LANE",
+        "Quantity": 1503.0,
+        "Amount_Exc": 1048155.18,
+        "Cost": 947457.23,
+        "Profit": 100697.95
+    },
+    {
+        "Month": "January",
+        "Customer": "FINRAYS",
+        "Quantity": 70.0,
+        "Amount_Exc": 43448.28,
+        "Cost": 41939.8,
+        "Profit": 1508.48
+    },
+    {
+        "Month": "January",
+        "Customer": "HKM CONTRUCTION GROUP LTD",
+        "Quantity": 1066.0,
+        "Amount_Exc": 991051.73,
+        "Cost": 913819.24,
+        "Profit": 77232.49
+    },
+    {
+        "Month": "January",
+        "Customer": "INFRATECH LIMITED",
+        "Quantity": 402.0,
+        "Amount_Exc": 281254.3,
+        "Cost": 256285.48,
+        "Profit": 24968.82
+    },
+    {
+        "Month": "January",
+        "Customer": "JACOB KUNDU",
+        "Quantity": 1597.0,
+        "Amount_Exc": 1016340.51,
+        "Cost": 994353.16,
+        "Profit": 21987.35
+    },
+    {
+        "Month": "January",
+        "Customer": "JOANNE-SAANALSUPPLIERS",
+        "Quantity": 400.0,
+        "Amount_Exc": 216034.51,
+        "Cost": 188041.14,
+        "Profit": 27993.37
+    },
+    {
+        "Month": "January",
+        "Customer": "Karen -Cash Customer",
+        "Quantity": 28137.5,
+        "Amount_Exc": 16642124.71,
+        "Cost": 15129061.24,
+        "Profit": 1513063.47
+    },
+    {
+        "Month": "January",
+        "Customer": "KIONI PETER",
+        "Quantity": 1705.0,
+        "Amount_Exc": 1318870.67,
+        "Cost": 1199539.45,
+        "Profit": 119331.22
+    },
+    {
+        "Month": "January",
+        "Customer": "LHM BUILDING CONTRACTORS LIMITED",
+        "Quantity": 26.0,
+        "Amount_Exc": 20362.07,
+        "Cost": 17531.31,
+        "Profit": 2830.76
+    },
+    {
+        "Month": "January",
+        "Customer": "LIGHT ACADEMY",
+        "Quantity": 112.0,
+        "Amount_Exc": 93275.86,
+        "Cost": 83554.42,
+        "Profit": 9721.44
+    },
+    {
+        "Month": "January",
+        "Customer": "LIPTON INVESTMENT LTD",
+        "Quantity": 196.0,
+        "Amount_Exc": 379956.9,
+        "Cost": 331664.61,
+        "Profit": 48292.29
+    },
+    {
+        "Month": "January",
+        "Customer": "LUCAS MBAE",
+        "Quantity": 54.0,
+        "Amount_Exc": 15853.46,
+        "Cost": 11841.76,
+        "Profit": 4011.7
+    },
+    {
+        "Month": "January",
+        "Customer": "MOLLY WANGUI",
+        "Quantity": 361.0,
+        "Amount_Exc": 212193.94,
+        "Cost": 195692.08,
+        "Profit": 16501.86
+    },
+    {
+        "Month": "January",
+        "Customer": "MONICAH WANGECI",
+        "Quantity": 33.0,
+        "Amount_Exc": 35905.17,
+        "Cost": 32159.08,
+        "Profit": 3746.09
+    },
+    {
+        "Month": "January",
+        "Customer": "NACHON",
+        "Quantity": 871.0,
+        "Amount_Exc": 535754.29,
+        "Cost": 516689.61,
+        "Profit": 19064.68
+    },
+    {
+        "Month": "January",
+        "Customer": "NANCY METRO",
+        "Quantity": 100.0,
+        "Amount_Exc": 63793.1,
+        "Cost": 59914.0,
+        "Profit": 3879.1
+    },
+    {
+        "Month": "January",
+        "Customer": "OTIS",
+        "Quantity": 131.0,
+        "Amount_Exc": 142073.26,
+        "Cost": 118615.44,
+        "Profit": 23457.82
+    },
+    {
+        "Month": "January",
+        "Customer": "POD CUSTOMER KAREN",
+        "Quantity": 2945.0,
+        "Amount_Exc": 1673849.07,
+        "Cost": 1545465.25,
+        "Profit": 128383.82
+    },
+    {
+        "Month": "January",
+        "Customer": "RINA SYSTEM",
+        "Quantity": 76.0,
+        "Amount_Exc": 54181.04,
+        "Cost": 47761.0,
+        "Profit": 6420.04
+    },
+    {
+        "Month": "January",
+        "Customer": "RUKIA ABDUL",
+        "Quantity": 352.0,
+        "Amount_Exc": 218620.7,
+        "Cost": 209699.0,
+        "Profit": 8921.7
+    },
+    {
+        "Month": "January",
+        "Customer": "SAJENJE",
+        "Quantity": 51.0,
+        "Amount_Exc": 31465.51,
+        "Cost": 30129.41,
+        "Profit": 1336.1
+    },
+    {
+        "Month": "January",
+        "Customer": "SAM VISION MAIYOHO",
+        "Quantity": 280.0,
+        "Amount_Exc": 173793.11,
+        "Cost": 167759.2,
+        "Profit": 6033.91
+    },
+    {
+        "Month": "January",
+        "Customer": "SANDIEGO JAMES",
+        "Quantity": 1010.0,
+        "Amount_Exc": 665560.34,
+        "Cost": 627045.6,
+        "Profit": 38514.74
+    },
+    {
+        "Month": "January",
+        "Customer": "SHOP REPAIR AND RENOVATION",
+        "Quantity": 6.0,
+        "Amount_Exc": 1457.77,
+        "Cost": 1309.25,
+        "Profit": 148.52
+    },
+    {
+        "Month": "January",
+        "Customer": "STAFF ACCOUNT KAREN",
+        "Quantity": 70.25,
+        "Amount_Exc": 47325.84,
+        "Cost": 43514.79,
+        "Profit": 3811.05
+    },
+    {
+        "Month": "January",
+        "Customer": "SUJAL",
+        "Quantity": 120.0,
+        "Amount_Exc": 71172.41,
+        "Cost": 67243.31,
+        "Profit": 3929.1
+    },
+    {
+        "Month": "January",
+        "Customer": "SUNSTAR",
+        "Quantity": 802.0,
+        "Amount_Exc": 497931.02,
+        "Cost": 479484.41,
+        "Profit": 18446.61
+    },
+    {
+        "Month": "January",
+        "Customer": "SUSAN KIVULINI",
+        "Quantity": 145.0,
+        "Amount_Exc": 86637.93,
+        "Cost": 74195.42,
+        "Profit": 12442.51
+    },
+    {
+        "Month": "January",
+        "Customer": "TESTIMONY HARDWARE AND GLASS MARTS LIMITED",
+        "Quantity": 2550.0,
+        "Amount_Exc": 1586637.95,
+        "Cost": 1529746.5,
+        "Profit": 56891.45
+    },
+    {
+        "Month": "January",
+        "Customer": "TESTIMONY KIMUKA",
+        "Quantity": 875.0,
+        "Amount_Exc": 560711.2,
+        "Cost": 539228.45,
+        "Profit": 21482.75
+    },
+    {
+        "Month": "January",
+        "Customer": "TETEZI HOUSE",
+        "Quantity": 3114.0,
+        "Amount_Exc": 2556383.6,
+        "Cost": 2356124.33,
+        "Profit": 200259.27
+    },
+    {
+        "Month": "January",
+        "Customer": "TO CONFIRM-KAREN",
+        "Quantity": 6407.75,
+        "Amount_Exc": 4340357.43,
+        "Cost": 3980883.61,
+        "Profit": 359473.82
+    },
+    {
+        "Month": "January",
+        "Customer": "TWIN AFRICA-EDWARD",
+        "Quantity": 40.0,
+        "Amount_Exc": 6482.75,
+        "Cost": 4370.73,
+        "Profit": 2112.02
+    },
+    {
+        "Month": "January",
+        "Customer": "VERONICAH",
+        "Quantity": 1215.0,
+        "Amount_Exc": 768706.9,
+        "Cost": 721065.33,
+        "Profit": 47641.57
+    },
+    {
+        "Month": "January",
+        "Customer": "VICTOR MIOTONI",
+        "Quantity": 1.0,
+        "Amount_Exc": 620.69,
+        "Cost": 599.14,
+        "Profit": 21.55
+    },
+    {
+        "Month": "January",
+        "Customer": "VINCENT NEEMA HARDWARE",
+        "Quantity": 660.0,
+        "Amount_Exc": 416293.11,
+        "Cost": 395432.4,
+        "Profit": 20860.71
+    },
+    {
+        "Month": "March",
+        "Customer": "AFRICA REIT",
+        "Quantity": 508.0,
+        "Amount_Exc": 630543.12,
+        "Cost": 567579.92,
+        "Profit": 62963.2
+    },
+    {
+        "Month": "March",
+        "Customer": "BETH MUSHI",
+        "Quantity": 1092.0,
+        "Amount_Exc": 709389.64,
+        "Cost": 681442.06,
+        "Profit": 27947.58
+    },
+    {
+        "Month": "March",
+        "Customer": "BREW DISTILL",
+        "Quantity": 78.0,
+        "Amount_Exc": 17198.26,
+        "Cost": 12564.2,
+        "Profit": 4634.06
+    },
+    {
+        "Month": "March",
+        "Customer": "BRIQ COSTRUCTION GROUP",
+        "Quantity": 1213.0,
+        "Amount_Exc": 597181.02,
+        "Cost": 521290.0,
+        "Profit": 75891.02
+    },
+    {
+        "Month": "March",
+        "Customer": "CLEMENT MBOGO",
+        "Quantity": 2.0,
+        "Amount_Exc": 4655.17,
+        "Cost": 3793.1,
+        "Profit": 862.07
+    },
+    {
+        "Month": "March",
+        "Customer": "CONCORDIA BULDINGS",
+        "Quantity": 1613.0,
+        "Amount_Exc": 1303215.47,
+        "Cost": 1208836.99,
+        "Profit": 94378.48
+    },
+    {
+        "Month": "March",
+        "Customer": "DAMARIS (K)",
+        "Quantity": 301.0,
+        "Amount_Exc": 221896.54,
+        "Cost": 207681.0,
+        "Profit": 14215.54
+    },
+    {
+        "Month": "March",
+        "Customer": "DAN ONSTER GROUP LTD",
+        "Quantity": 1120.0,
+        "Amount_Exc": 667232.76,
+        "Cost": 616809.46,
+        "Profit": 50423.3
+    },
+    {
+        "Month": "March",
+        "Customer": "DANIEL CHACHA",
+        "Quantity": 544.0,
+        "Amount_Exc": 481568.97,
+        "Cost": 448237.94,
+        "Profit": 33331.03
+    },
+    {
+        "Month": "March",
+        "Customer": "DEROW CONSTRUCTION CO LTD",
+        "Quantity": 758.0,
+        "Amount_Exc": 674655.18,
+        "Cost": 622910.83,
+        "Profit": 51744.35
+    },
+    {
+        "Month": "March",
+        "Customer": "DIRECTORS ACCOUNT",
+        "Quantity": 22.25,
+        "Amount_Exc": 1314.66,
+        "Cost": 799.02,
+        "Profit": 515.64
+    },
+    {
+        "Month": "March",
+        "Customer": "DOMUS H/W",
+        "Quantity": 263.0,
+        "Amount_Exc": 229646.53,
+        "Cost": 215164.96,
+        "Profit": 14481.57
+    },
+    {
+        "Month": "March",
+        "Customer": "DONALD KISEMBE",
+        "Quantity": 251.0,
+        "Amount_Exc": 149258.63,
+        "Cost": 142225.48,
+        "Profit": 7033.15
+    },
+    {
+        "Month": "March",
+        "Customer": "DR. KEN - NDEGE RD",
+        "Quantity": 51.0,
+        "Amount_Exc": 31551.72,
+        "Cost": 29957.0,
+        "Profit": 1594.72
+    },
+    {
+        "Month": "March",
+        "Customer": "DUKE -MARULA LANE",
+        "Quantity": 1214.0,
+        "Amount_Exc": 757452.61,
+        "Cost": 679668.33,
+        "Profit": 77784.28
+    },
+    {
+        "Month": "March",
+        "Customer": "HKM CONTRUCTION GROUP LTD",
+        "Quantity": 114.0,
+        "Amount_Exc": 25099.13,
+        "Cost": 18525.23,
+        "Profit": 6573.9
+    },
+    {
+        "Month": "March",
+        "Customer": "INFRATECH LIMITED",
+        "Quantity": 1608.0,
+        "Amount_Exc": 1030331.91,
+        "Cost": 980668.76,
+        "Profit": 49663.15
+    },
+    {
+        "Month": "March",
+        "Customer": "JOANNE-SAANALSUPPLIERS",
+        "Quantity": 991.0,
+        "Amount_Exc": 634715.47,
+        "Cost": 557369.1,
+        "Profit": 77346.37
+    },
+    {
+        "Month": "March",
+        "Customer": "KALUMU INVESTMENTS LTD",
+        "Quantity": 270.0,
+        "Amount_Exc": 305172.4,
+        "Cost": 264423.75,
+        "Profit": 40748.65
+    },
+    {
+        "Month": "March",
+        "Customer": "Karen -Cash Customer",
+        "Quantity": 22884.2,
+        "Amount_Exc": 13212089.31,
+        "Cost": 11999515.47,
+        "Profit": 1212573.84
+    },
+    {
+        "Month": "March",
+        "Customer": "KIONI PETER",
+        "Quantity": 4239.0,
+        "Amount_Exc": 3492939.64,
+        "Cost": 3206365.62,
+        "Profit": 286574.02
+    },
+    {
+        "Month": "March",
+        "Customer": "LEONARD (TESTIMONY KABIRIA)",
+        "Quantity": 930.0,
+        "Amount_Exc": 629784.48,
+        "Cost": 594861.32,
+        "Profit": 34923.16
+    },
+    {
+        "Month": "March",
+        "Customer": "LIPTON INVESTMENT LTD",
+        "Quantity": 209.0,
+        "Amount_Exc": 152844.83,
+        "Cost": 141816.08,
+        "Profit": 11028.75
+    },
+    {
+        "Month": "March",
+        "Customer": "LUCAS MBAE",
+        "Quantity": 127.0,
+        "Amount_Exc": 4482.75,
+        "Cost": 3444.34,
+        "Profit": 1038.41
+    },
+    {
+        "Month": "March",
+        "Customer": "MBOGO CLEMENT",
+        "Quantity": 550.0,
+        "Amount_Exc": 441857.74,
+        "Cost": 416739.28,
+        "Profit": 25118.46
+    },
+    {
+        "Month": "March",
+        "Customer": "MOLLY WANGUI",
+        "Quantity": 267.5,
+        "Amount_Exc": 168823.26,
+        "Cost": 146832.57,
+        "Profit": 21990.69
+    },
+    {
+        "Month": "March",
+        "Customer": "MOSES SIMIYU",
+        "Quantity": 81.0,
+        "Amount_Exc": 43823.29,
+        "Cost": 40653.6,
+        "Profit": 3169.69
+    },
+    {
+        "Month": "March",
+        "Customer": "NACHON",
+        "Quantity": 194.0,
+        "Amount_Exc": 126120.69,
+        "Cost": 121187.08,
+        "Profit": 4933.61
+    },
+    {
+        "Month": "March",
+        "Customer": "NAKSHI GLASS LTD",
+        "Quantity": 110.0,
+        "Amount_Exc": 40025.88,
+        "Cost": 30507.47,
+        "Profit": 9518.41
+    },
+    {
+        "Month": "March",
+        "Customer": "NANCY METRO",
+        "Quantity": 200.0,
+        "Amount_Exc": 128448.27,
+        "Cost": 120690.0,
+        "Profit": 7758.27
+    },
+    {
+        "Month": "March",
+        "Customer": "OTIS",
+        "Quantity": 178.0,
+        "Amount_Exc": 91068.92,
+        "Cost": 81841.45,
+        "Profit": 9227.47
+    },
+    {
+        "Month": "March",
+        "Customer": "POD CUSTOMER KAREN",
+        "Quantity": 8811.0,
+        "Amount_Exc": 5283776.75,
+        "Cost": 4928811.91,
+        "Profit": 354964.84
+    },
+    {
+        "Month": "March",
+        "Customer": "RICHVILLE GARDENS LTD",
+        "Quantity": 802.0,
+        "Amount_Exc": 521327.57,
+        "Cost": 491781.65,
+        "Profit": 29545.92
+    },
+    {
+        "Month": "March",
+        "Customer": "RINA SYSTEM",
+        "Quantity": 7.0,
+        "Amount_Exc": 4094.82,
+        "Cost": 2660.74,
+        "Profit": 1434.08
+    },
+    {
+        "Month": "March",
+        "Customer": "RUKIA ABDUL",
+        "Quantity": 171.0,
+        "Amount_Exc": 102801.73,
+        "Cost": 98414.0,
+        "Profit": 4387.73
+    },
+    {
+        "Month": "March",
+        "Customer": "SAM VISION MAIYOHO",
+        "Quantity": 1745.0,
+        "Amount_Exc": 1093318.95,
+        "Cost": 1055547.75,
+        "Profit": 37771.2
+    },
+    {
+        "Month": "March",
+        "Customer": "SAMUEL OMONDI",
+        "Quantity": 2.0,
+        "Amount_Exc": 52155.17,
+        "Cost": 46721.5,
+        "Profit": 5433.67
+    },
+    {
+        "Month": "March",
+        "Customer": "SANDIEGO JAMES",
+        "Quantity": 981.0,
+        "Amount_Exc": 653288.78,
+        "Cost": 614596.39,
+        "Profit": 38692.39
+    },
+    {
+        "Month": "March",
+        "Customer": "STAFF ACCOUNT KAREN",
+        "Quantity": 24.0,
+        "Amount_Exc": 8805.16,
+        "Cost": 8611.24,
+        "Profit": 193.92
+    },
+    {
+        "Month": "March",
+        "Customer": "STUDIO PLUS CONTRUCTION",
+        "Quantity": 859.0,
+        "Amount_Exc": 606112.04,
+        "Cost": 556160.39,
+        "Profit": 49951.65
+    },
+    {
+        "Month": "March",
+        "Customer": "SUJAL",
+        "Quantity": 178.0,
+        "Amount_Exc": 111293.11,
+        "Cost": 105280.5,
+        "Profit": 6012.61
+    },
+    {
+        "Month": "March",
+        "Customer": "SUNSTAR",
+        "Quantity": 1659.0,
+        "Amount_Exc": 1034655.19,
+        "Cost": 988807.6,
+        "Profit": 45847.59
+    },
+    {
+        "Month": "March",
+        "Customer": "SUSAN KIVULINI",
+        "Quantity": 907.75,
+        "Amount_Exc": 335797.34,
+        "Cost": 283364.99,
+        "Profit": 52432.35
+    },
+    {
+        "Month": "March",
+        "Customer": "SUSAN-KARINDE (PCEA)",
+        "Quantity": 176.0,
+        "Amount_Exc": 125517.22,
+        "Cost": 114714.45,
+        "Profit": 10802.77
+    },
+    {
+        "Month": "March",
+        "Customer": "TALYA HARDWARE LTD",
+        "Quantity": 1714.0,
+        "Amount_Exc": 1099396.57,
+        "Cost": 1065295.76,
+        "Profit": 34100.81
+    },
+    {
+        "Month": "March",
+        "Customer": "TESTIMONY HARDWARE AND GLASS MARTS LIMITED",
+        "Quantity": 742.0,
+        "Amount_Exc": 466948.27,
+        "Cost": 450957.92,
+        "Profit": 15990.35
+    },
+    {
+        "Month": "March",
+        "Customer": "TESTIMONY KIMUKA",
+        "Quantity": 1530.0,
+        "Amount_Exc": 1024741.38,
+        "Cost": 981728.7,
+        "Profit": 43012.68
+    },
+    {
+        "Month": "March",
+        "Customer": "TETEZI HOUSE",
+        "Quantity": 3684.0,
+        "Amount_Exc": 3183948.25,
+        "Cost": 2939366.73,
+        "Profit": 244581.52
+    },
+    {
+        "Month": "March",
+        "Customer": "TIMOTHY MUTUNGA",
+        "Quantity": 3743.0,
+        "Amount_Exc": 2450431.03,
+        "Cost": 2317587.8,
+        "Profit": 132843.23
+    },
+    {
+        "Month": "March",
+        "Customer": "TO CONFIRM-KAREN",
+        "Quantity": 13692.0,
+        "Amount_Exc": 8503679.17,
+        "Cost": 7824578.22,
+        "Profit": 679100.95
+    },
+    {
+        "Month": "March",
+        "Customer": "TWIN AFRICA-EDWARD",
+        "Quantity": 16.0,
+        "Amount_Exc": 2974.14,
+        "Cost": 1090.61,
+        "Profit": 1883.53
+    },
+    {
+        "Month": "March",
+        "Customer": "VERONICAH",
+        "Quantity": 1133.0,
+        "Amount_Exc": 726810.35,
+        "Cost": 681303.46,
+        "Profit": 45506.89
+    },
+    {
+        "Month": "March",
+        "Customer": "VINCENT NEEMA HARDWARE",
+        "Quantity": 400.0,
+        "Amount_Exc": 253448.28,
+        "Cost": 241380.0,
+        "Profit": 12068.28
+    },
+    {
+        "Month": "March",
+        "Customer": "YUSUF KIPTOO",
+        "Quantity": 5.0,
+        "Amount_Exc": 2732.76,
+        "Cost": 2533.62,
+        "Profit": 199.14
+    },
+    {
+        "Month": "February",
+        "Customer": "AFRICA REIT",
+        "Quantity": 2544.0,
+        "Amount_Exc": 4403163.76,
+        "Cost": 4143516.66,
+        "Profit": 259647.1
+    },
+    {
+        "Month": "February",
+        "Customer": "BETH MUSHI",
+        "Quantity": 1675.0,
+        "Amount_Exc": 1049387.94,
+        "Cost": 998370.99,
+        "Profit": 51016.95
+    },
+    {
+        "Month": "February",
+        "Customer": "BREW DISTILL",
+        "Quantity": 912.0,
+        "Amount_Exc": 385025.86,
+        "Cost": 337676.0,
+        "Profit": 47349.86
+    },
+    {
+        "Month": "February",
+        "Customer": "BRIQ COSTRUCTION GROUP",
+        "Quantity": 633.0,
+        "Amount_Exc": 466995.68,
+        "Cost": 435826.88,
+        "Profit": 31168.8
+    },
+    {
+        "Month": "February",
+        "Customer": "CONCORDIA BULDINGS",
+        "Quantity": 1305.0,
+        "Amount_Exc": 1032668.08,
+        "Cost": 964709.54,
+        "Profit": 67958.54
+    },
+    {
+        "Month": "February",
+        "Customer": "DAN ONSTER GROUP LTD",
+        "Quantity": 280.0,
+        "Amount_Exc": 184396.54,
+        "Cost": 173006.7,
+        "Profit": 11389.84
+    },
+    {
+        "Month": "February",
+        "Customer": "DEROW CONSTRUCTION CO LTD",
+        "Quantity": 2164.0,
+        "Amount_Exc": 1388650.85,
+        "Cost": 1293848.36,
+        "Profit": 94802.49
+    },
+    {
+        "Month": "February",
+        "Customer": "DIRECTORS ACCOUNT",
+        "Quantity": 3.0,
+        "Amount_Exc": 461.2,
+        "Cost": 454.65,
+        "Profit": 6.55
+    },
+    {
+        "Month": "February",
+        "Customer": "DOMUS H/W",
+        "Quantity": 147.0,
+        "Amount_Exc": 242586.22,
+        "Cost": 211959.08,
+        "Profit": 30627.14
+    },
+    {
+        "Month": "February",
+        "Customer": "DONALD KISEMBE",
+        "Quantity": 220.0,
+        "Amount_Exc": 155862.07,
+        "Cost": 147371.09,
+        "Profit": 8490.98
+    },
+    {
+        "Month": "February",
+        "Customer": "DR. KEN - NDEGE RD",
+        "Quantity": 51.0,
+        "Amount_Exc": 31551.72,
+        "Cost": 29957.0,
+        "Profit": 1594.72
+    },
+    {
+        "Month": "February",
+        "Customer": "DUKE -MARULA LANE",
+        "Quantity": 1249.0,
+        "Amount_Exc": 833775.91,
+        "Cost": 766753.84,
+        "Profit": 67022.07
+    },
+    {
+        "Month": "February",
+        "Customer": "HKM CONTRUCTION GROUP LTD",
+        "Quantity": 28.0,
+        "Amount_Exc": 20262.92,
+        "Cost": 19024.83,
+        "Profit": 1238.09
+    },
+    {
+        "Month": "February",
+        "Customer": "INFRATECH LIMITED",
+        "Quantity": 1300.0,
+        "Amount_Exc": 891853.4,
+        "Cost": 835029.19,
+        "Profit": 56824.21
+    },
+    {
+        "Month": "February",
+        "Customer": "JOANNE-SAANALSUPPLIERS",
+        "Quantity": 115.0,
+        "Amount_Exc": 78663.82,
+        "Cost": 68135.25,
+        "Profit": 10528.57
+    },
+    {
+        "Month": "February",
+        "Customer": "JOSE ST.CHRISTOPHER",
+        "Quantity": 228.0,
+        "Amount_Exc": 137663.8,
+        "Cost": 124645.87,
+        "Profit": 13017.93
+    },
+    {
+        "Month": "February",
+        "Customer": "Karen -Cash Customer",
+        "Quantity": 28419.75,
+        "Amount_Exc": 15331538.81,
+        "Cost": 13804968.1,
+        "Profit": 1526570.71
+    },
+    {
+        "Month": "February",
+        "Customer": "KIONI PETER",
+        "Quantity": 1709.0,
+        "Amount_Exc": 1327034.48,
+        "Cost": 1210600.61,
+        "Profit": 116433.87
+    },
+    {
+        "Month": "February",
+        "Customer": "LHM BUILDING CONTRACTORS LIMITED",
+        "Quantity": 46.0,
+        "Amount_Exc": 37370.69,
+        "Cost": 32423.51,
+        "Profit": 4947.18
+    },
+    {
+        "Month": "February",
+        "Customer": "LIGHT ACADEMY",
+        "Quantity": 51.0,
+        "Amount_Exc": 33706.9,
+        "Cost": 30603.5,
+        "Profit": 3103.4
+    },
+    {
+        "Month": "February",
+        "Customer": "LIPTON INVESTMENT LTD",
+        "Quantity": 864.0,
+        "Amount_Exc": 767577.57,
+        "Cost": 691844.53,
+        "Profit": 75733.04
+    },
+    {
+        "Month": "February",
+        "Customer": "MBOGO CLEMENT",
+        "Quantity": 807.0,
+        "Amount_Exc": 624120.7,
+        "Cost": 592007.36,
+        "Profit": 32113.34
+    },
+    {
+        "Month": "February",
+        "Customer": "MOLLY WANGUI",
+        "Quantity": 778.0,
+        "Amount_Exc": 173198.26,
+        "Cost": 146143.8,
+        "Profit": 27054.46
+    },
+    {
+        "Month": "February",
+        "Customer": "MOSES SIMIYU",
+        "Quantity": 45.0,
+        "Amount_Exc": 16103.45,
+        "Cost": 10924.4,
+        "Profit": 5179.05
+    },
+    {
+        "Month": "February",
+        "Customer": "MUTUA -BAMBURI",
+        "Quantity": 220.0,
+        "Amount_Exc": 143189.66,
+        "Cost": 134655.4,
+        "Profit": 8534.26
+    },
+    {
+        "Month": "February",
+        "Customer": "NACHON",
+        "Quantity": 234.0,
+        "Amount_Exc": 178146.55,
+        "Cost": 169723.33,
+        "Profit": 8423.22
+    },
+    {
+        "Month": "February",
+        "Customer": "NAKSHI GLASS LTD",
+        "Quantity": 28.0,
+        "Amount_Exc": 9840.52,
+        "Cost": 7994.67,
+        "Profit": 1845.85
+    },
+    {
+        "Month": "February",
+        "Customer": "NANCY METRO",
+        "Quantity": 100.0,
+        "Amount_Exc": 63793.1,
+        "Cost": 59914.0,
+        "Profit": 3879.1
+    },
+    {
+        "Month": "February",
+        "Customer": "OTIS",
+        "Quantity": 58.0,
+        "Amount_Exc": 31120.71,
+        "Cost": 23642.76,
+        "Profit": 7477.95
+    },
+    {
+        "Month": "February",
+        "Customer": "POD CUSTOMER KAREN",
+        "Quantity": 4243.0,
+        "Amount_Exc": 2681357.8,
+        "Cost": 2503182.29,
+        "Profit": 178175.51
+    },
+    {
+        "Month": "February",
+        "Customer": "RICHVILLE GARDENS LTD",
+        "Quantity": 728.0,
+        "Amount_Exc": 487336.21,
+        "Cost": 462652.5,
+        "Profit": 24683.71
+    },
+    {
+        "Month": "February",
+        "Customer": "RINA SYSTEM",
+        "Quantity": 43.0,
+        "Amount_Exc": 9517.26,
+        "Cost": 5700.59,
+        "Profit": 3816.67
+    },
+    {
+        "Month": "February",
+        "Customer": "SAM VISION MAIYOHO",
+        "Quantity": 776.0,
+        "Amount_Exc": 475137.96,
+        "Cost": 458238.44,
+        "Profit": 16899.52
+    },
+    {
+        "Month": "February",
+        "Customer": "SANDIEGO JAMES",
+        "Quantity": 345.0,
+        "Amount_Exc": 234568.97,
+        "Cost": 221512.75,
+        "Profit": 13056.22
+    },
+    {
+        "Month": "February",
+        "Customer": "STAFF ACCOUNT KAREN",
+        "Quantity": 77.0,
+        "Amount_Exc": 57881.01,
+        "Cost": 12914.12,
+        "Profit": 44966.89
+    },
+    {
+        "Month": "February",
+        "Customer": "SUJAL",
+        "Quantity": 312.0,
+        "Amount_Exc": 193534.49,
+        "Cost": 182737.7,
+        "Profit": 10796.79
+    },
+    {
+        "Month": "February",
+        "Customer": "SUNSTAR",
+        "Quantity": 1107.0,
+        "Amount_Exc": 703706.89,
+        "Cost": 661465.39,
+        "Profit": 42241.5
+    },
+    {
+        "Month": "February",
+        "Customer": "SUSAN KIVULINI",
+        "Quantity": 309.5,
+        "Amount_Exc": 183137.9,
+        "Cost": 157605.6,
+        "Profit": 25532.3
+    },
+    {
+        "Month": "February",
+        "Customer": "SUSAN-KARINDE (PCEA)",
+        "Quantity": 106.0,
+        "Amount_Exc": 78362.06,
+        "Cost": 72642.78,
+        "Profit": 5719.28
+    },
+    {
+        "Month": "February",
+        "Customer": "TESTIMONY HARDWARE AND GLASS MARTS LIMITED",
+        "Quantity": 2534.0,
+        "Amount_Exc": 1627758.63,
+        "Cost": 1558320.8,
+        "Profit": 69437.83
+    },
+    {
+        "Month": "February",
+        "Customer": "TESTIMONY KIMUKA",
+        "Quantity": 837.0,
+        "Amount_Exc": 519926.75,
+        "Cost": 500228.28,
+        "Profit": 19698.47
+    },
+    {
+        "Month": "February",
+        "Customer": "TETEZI HOUSE",
+        "Quantity": 2661.0,
+        "Amount_Exc": 2760379.3,
+        "Cost": 2544833.9,
+        "Profit": 215545.4
+    },
+    {
+        "Month": "February",
+        "Customer": "TO CONFIRM-KAREN",
+        "Quantity": 9640.0,
+        "Amount_Exc": 5648293.13,
+        "Cost": 5180593.74,
+        "Profit": 467699.39
+    },
+    {
+        "Month": "February",
+        "Customer": "TWIN AFRICA-EDWARD",
+        "Quantity": 666.0,
+        "Amount_Exc": 398551.73,
+        "Cost": 369690.69,
+        "Profit": 28861.04
+    },
+    {
+        "Month": "February",
+        "Customer": "VERONICAH",
+        "Quantity": 761.0,
+        "Amount_Exc": 485689.66,
+        "Cost": 455346.4,
+        "Profit": 30343.26
+    },
+    {
+        "Month": "February",
+        "Customer": "VINCENT NEEMA HARDWARE",
+        "Quantity": 220.0,
+        "Amount_Exc": 138448.28,
+        "Cost": 131810.8,
+        "Profit": 6637.48
+    },
+    {
+        "Month": "February",
+        "Customer": "YUSUF KIPTOO",
+        "Quantity": 20.0,
+        "Amount_Exc": 12413.79,
+        "Cost": 11982.8,
+        "Profit": 430.99
+    }
+]

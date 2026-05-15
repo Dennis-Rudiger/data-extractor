@@ -1,0 +1,452 @@
+{
+  "report": "April 2026 - Week All Sales Analysis",
+  "period": "April 1 - April 30, 2026",
+  "working_days": 26,
+  "generated": "2026-05-12 08:01:20",
+  "department_heads": {
+    "PLUMBING": "Lewis",
+    "PAINTS": "Bonface Muriu",
+    "ELECTRICALS": "Bonface Kitheka",
+    "GENERAL HARDWARE": [
+      "Gladys",
+      "Betha Odumo",
+      "Eliza",
+      "Stephen"
+    ]
+  },
+  "summary": {
+    "total_sales": 69864836.0,
+    "total_profit": 6160115.07,
+    "overall_margin": 8.82,
+    "daily_avg_sales": 2687109.08,
+    "daily_avg_profit": 236927.5,
+    "active_reps": 7
+  },
+  "monthly_targets": {
+    "overall": {
+      "target": 60000000,
+      "week1_actual": 69864836.0,
+      "pct_achieved": 116.4,
+      "expected_pct": 25.0,
+      "pace": "Ahead"
+    },
+    "categories": {
+      "GENERAL HARDWARE": {
+        "target": 48500000,
+        "week1_actual": 61301331.0,
+        "pct_achieved": 126.4,
+        "pace": "Ahead",
+        "department_head": [
+          "Gladys",
+          "Betha Odumo",
+          "Eliza",
+          "Stephen"
+        ]
+      },
+      "PAINTS": {
+        "target": 7000000,
+        "week1_actual": 5920540.0,
+        "pct_achieved": 84.6,
+        "pace": "Ahead",
+        "department_head": "Bonface Muriu"
+      },
+      "PLUMBING": {
+        "target": 3000000,
+        "week1_actual": 1834255.0,
+        "pct_achieved": 61.1,
+        "pace": "Ahead",
+        "department_head": "Lewis"
+      },
+      "ELECTRICALS": {
+        "target": 1500000,
+        "week1_actual": 808710.0,
+        "pct_achieved": 53.9,
+        "pace": "Ahead",
+        "department_head": "Bonface Kitheka"
+      }
+    }
+  },
+  "categories": {
+    "GENERAL HARDWARE": {
+      "total_sales": 61301331.0,
+      "total_profit": 4334536.67,
+      "margin": 7.07,
+      "share_of_total": 87.7
+    },
+    "PAINTS": {
+      "total_sales": 5920540.0,
+      "total_profit": 1163212.92,
+      "margin": 19.65,
+      "share_of_total": 8.5
+    },
+    "PLUMBING": {
+      "total_sales": 1834255.0,
+      "total_profit": 466408.71,
+      "margin": 25.43,
+      "share_of_total": 2.6
+    },
+    "ELECTRICALS": {
+      "total_sales": 808710.0,
+      "total_profit": 195956.78,
+      "margin": 24.23,
+      "share_of_total": 1.2
+    }
+  },
+  "reps": {
+    "Gladys": {
+      "role": "General Hardware Team",
+      "primary_department": "GENERAL HARDWARE",
+      "total_sales": 29407278.0,
+      "total_profit": 1959212.33,
+      "overall_margin": 6.66,
+      "total_qty": 30267.25,
+      "contribution_pct": 42.1,
+      "sales_rank": 1,
+      "margin_rank": 7,
+      "profit_rank": 1,
+      "badges": [
+        "TOP SELLER",
+        "TOP PROFIT"
+      ],
+      "performance_notes": [
+        "Outstanding! Sales 195% above team average",
+        "Margin at 6.7% below team average of 13.6%",
+        "General Hardware: 47.5% of dept, 6.5% margin",
+        "Selling across all 4 categories - excellent product range",
+        "Best margin in PLUMBING: 32.0%",
+        "Key contributor at 42.1% of total branch sales"
+      ],
+      "categories": {
+        "ELECTRICALS": {
+          "sales": 28280.0,
+          "profit": 7568.71,
+          "margin_pct": 26.76,
+          "qty": 353.0,
+          "share_of_dept": 3.5
+        },
+        "GENERAL HARDWARE": {
+          "sales": 29109268.0,
+          "profit": 1879710.57,
+          "margin_pct": 6.46,
+          "qty": 29416.25,
+          "share_of_dept": 47.5
+        },
+        "PAINTS": {
+          "sales": 212650.0,
+          "profit": 53648.45,
+          "margin_pct": 25.23,
+          "qty": 385.0,
+          "share_of_dept": 3.6
+        },
+        "PLUMBING": {
+          "sales": 57080.0,
+          "profit": 18284.6,
+          "margin_pct": 32.03,
+          "qty": 113.0,
+          "share_of_dept": 3.1
+        }
+      }
+    },
+    "Betha Odumo": {
+      "role": "General Hardware Team",
+      "primary_department": "GENERAL HARDWARE",
+      "total_sales": 16509420.0,
+      "total_profit": 1192439.86,
+      "overall_margin": 7.22,
+      "total_qty": 20558.25,
+      "contribution_pct": 23.6,
+      "sales_rank": 2,
+      "margin_rank": 6,
+      "profit_rank": 2,
+      "badges": [],
+      "performance_notes": [
+        "Outstanding! Sales 65% above team average",
+        "Margin at 7.2% below team average of 13.6%",
+        "General Hardware: 26.4% of dept, 6.9% margin",
+        "Selling across all 4 categories - excellent product range",
+        "Best margin in ELECTRICALS: 48.6%"
+      ],
+      "categories": {
+        "ELECTRICALS": {
+          "sales": 3150.0,
+          "profit": 1530.12,
+          "margin_pct": 48.58,
+          "qty": 49.0,
+          "share_of_dept": 0.4
+        },
+        "GENERAL HARDWARE": {
+          "sales": 16185695.0,
+          "profit": 1119441.21,
+          "margin_pct": 6.92,
+          "qty": 20041.25,
+          "share_of_dept": 26.4
+        },
+        "PAINTS": {
+          "sales": 214890.0,
+          "profit": 43742.06,
+          "margin_pct": 20.36,
+          "qty": 331.0,
+          "share_of_dept": 3.6
+        },
+        "PLUMBING": {
+          "sales": 105685.0,
+          "profit": 27726.47,
+          "margin_pct": 26.24,
+          "qty": 137.0,
+          "share_of_dept": 5.8
+        }
+      }
+    },
+    "Eliza": {
+      "role": "General Hardware Team",
+      "primary_department": "GENERAL HARDWARE",
+      "total_sales": 14180203.0,
+      "total_profit": 1128771.25,
+      "overall_margin": 7.96,
+      "total_qty": 20152.75,
+      "contribution_pct": 20.3,
+      "sales_rank": 3,
+      "margin_rank": 4,
+      "profit_rank": 3,
+      "badges": [],
+      "performance_notes": [
+        "Sales 42% above team average - solid performance",
+        "Margin at 8.0% below team average of 13.6%",
+        "General Hardware: 22.7% of dept, 7.6% margin",
+        "Selling across all 4 categories - excellent product range",
+        "Best margin in PLUMBING: 27.8%"
+      ],
+      "categories": {
+        "ELECTRICALS": {
+          "sales": 1090.0,
+          "profit": 290.89,
+          "margin_pct": 26.69,
+          "qty": 10.0,
+          "share_of_dept": 0.1
+        },
+        "GENERAL HARDWARE": {
+          "sales": 13915603.0,
+          "profit": 1058523.65,
+          "margin_pct": 7.61,
+          "qty": 19582.75,
+          "share_of_dept": 22.7
+        },
+        "PAINTS": {
+          "sales": 182740.0,
+          "profit": 47507.06,
+          "margin_pct": 26.0,
+          "qty": 404.0,
+          "share_of_dept": 3.1
+        },
+        "PLUMBING": {
+          "sales": 80770.0,
+          "profit": 22449.64,
+          "margin_pct": 27.79,
+          "qty": 156.0,
+          "share_of_dept": 4.4
+        }
+      }
+    },
+    "Bonface Muriu": {
+      "role": "Department Head - Paints",
+      "primary_department": "PAINTS",
+      "total_sales": 5578445.0,
+      "total_profit": 1065150.45,
+      "overall_margin": 19.09,
+      "total_qty": 5079.0,
+      "contribution_pct": 8.0,
+      "sales_rank": 4,
+      "margin_rank": 3,
+      "profit_rank": 4,
+      "badges": [],
+      "performance_notes": [
+        "Sales 44% below team average - needs improvement",
+        "Excellent margin at 19.1% (Team avg: 13.6%)",
+        "Paints Dept Head: 84.0% of dept sales, 19.1% margin",
+        "Good paints leadership with 84.0% of dept sales",
+        "Selling across all 4 categories - excellent product range",
+        "Best margin in PLUMBING: 30.2%"
+      ],
+      "categories": {
+        "ELECTRICALS": {
+          "sales": 8570.0,
+          "profit": 1588.53,
+          "margin_pct": 18.54,
+          "qty": 24.0,
+          "share_of_dept": 1.1
+        },
+        "GENERAL HARDWARE": {
+          "sales": 562385.0,
+          "profit": 101905.1,
+          "margin_pct": 18.12,
+          "qty": 1197.5,
+          "share_of_dept": 0.9
+        },
+        "PAINTS": {
+          "sales": 4972845.0,
+          "profit": 951181.6,
+          "margin_pct": 19.13,
+          "qty": 3741.5,
+          "share_of_dept": 84.0
+        },
+        "PLUMBING": {
+          "sales": 34645.0,
+          "profit": 10475.23,
+          "margin_pct": 30.24,
+          "qty": 116.0,
+          "share_of_dept": 1.9
+        }
+      }
+    },
+    "Lewis": {
+      "role": "Department Head - Plumbing",
+      "primary_department": "PLUMBING",
+      "total_sales": 2002130.0,
+      "total_profit": 468826.68,
+      "overall_margin": 23.42,
+      "total_qty": 6317.25,
+      "contribution_pct": 2.9,
+      "sales_rank": 5,
+      "margin_rank": 1,
+      "profit_rank": 5,
+      "badges": [
+        "BEST MARGIN"
+      ],
+      "performance_notes": [
+        "Sales 80% below team average - needs improvement",
+        "Excellent margin at 23.4% (Team avg: 13.6%)",
+        "Plumbing Dept Head: 83.0% of dept sales, 24.7% margin",
+        "Strong plumbing leadership with 83.0% of dept sales",
+        "Selling across all 4 categories - excellent product range",
+        "Best margin in PLUMBING: 24.7%",
+        "Low contribution at 2.9% of total branch sales - growth opportunity"
+      ],
+      "categories": {
+        "ELECTRICALS": {
+          "sales": 54845.0,
+          "profit": 10932.79,
+          "margin_pct": 19.93,
+          "qty": 223.0,
+          "share_of_dept": 6.8
+        },
+        "GENERAL HARDWARE": {
+          "sales": 224870.0,
+          "profit": 44764.11,
+          "margin_pct": 19.91,
+          "qty": 430.25,
+          "share_of_dept": 0.4
+        },
+        "PAINTS": {
+          "sales": 199495.0,
+          "profit": 36294.6,
+          "margin_pct": 18.19,
+          "qty": 250.0,
+          "share_of_dept": 3.4
+        },
+        "PLUMBING": {
+          "sales": 1522920.0,
+          "profit": 376835.18,
+          "margin_pct": 24.74,
+          "qty": 5414.0,
+          "share_of_dept": 83.0
+        }
+      }
+    },
+    "Bonface Kitheka": {
+      "role": "Department Head - Electricals",
+      "primary_department": "ELECTRICALS",
+      "total_sales": 1154035.0,
+      "total_profit": 264750.12,
+      "overall_margin": 22.94,
+      "total_qty": 11440.25,
+      "contribution_pct": 1.7,
+      "sales_rank": 6,
+      "margin_rank": 2,
+      "profit_rank": 6,
+      "badges": [],
+      "performance_notes": [
+        "Sales 88% below team average - needs improvement",
+        "Excellent margin at 22.9% (Team avg: 13.6%)",
+        "Electricals Dept Head: 88.1% of dept sales, 24.4% margin",
+        "Strong leadership - controls 88.1% of department sales",
+        "Selling across all 4 categories - excellent product range",
+        "Best margin in PLUMBING: 31.5%",
+        "Low contribution at 1.7% of total branch sales - growth opportunity"
+      ],
+      "categories": {
+        "ELECTRICALS": {
+          "sales": 712775.0,
+          "profit": 174045.74,
+          "margin_pct": 24.42,
+          "qty": 10400.0,
+          "share_of_dept": 88.1
+        },
+        "GENERAL HARDWARE": {
+          "sales": 297885.0,
+          "profit": 55470.77,
+          "margin_pct": 18.62,
+          "qty": 713.25,
+          "share_of_dept": 0.5
+        },
+        "PAINTS": {
+          "sales": 111520.0,
+          "profit": 25184.28,
+          "margin_pct": 22.58,
+          "qty": 196.0,
+          "share_of_dept": 1.9
+        },
+        "PLUMBING": {
+          "sales": 31855.0,
+          "profit": 10049.32,
+          "margin_pct": 31.55,
+          "qty": 131.0,
+          "share_of_dept": 1.7
+        }
+      }
+    },
+    "Stephen": {
+      "role": "General Hardware Team",
+      "primary_department": "GENERAL HARDWARE",
+      "total_sales": 1033325.0,
+      "total_profit": 80964.38,
+      "overall_margin": 7.84,
+      "total_qty": 1354.0,
+      "contribution_pct": 1.5,
+      "sales_rank": 7,
+      "margin_rank": 5,
+      "profit_rank": 7,
+      "badges": [],
+      "performance_notes": [
+        "Sales 90% below team average - needs improvement",
+        "Margin at 7.8% below team average of 13.6%",
+        "General Hardware: 1.6% of dept, 7.4% margin",
+        "Consider expanding into ELECTRICALS",
+        "Best margin in PLUMBING: 45.3%",
+        "Low contribution at 1.5% of total branch sales - growth opportunity"
+      ],
+      "categories": {
+        "GENERAL HARDWARE": {
+          "sales": 1005625.0,
+          "profit": 74721.25,
+          "margin_pct": 7.43,
+          "qty": 1303.0,
+          "share_of_dept": 1.6
+        },
+        "PAINTS": {
+          "sales": 26400.0,
+          "profit": 5654.87,
+          "margin_pct": 21.42,
+          "qty": 47.0,
+          "share_of_dept": 0.4
+        },
+        "PLUMBING": {
+          "sales": 1300.0,
+          "profit": 588.26,
+          "margin_pct": 45.25,
+          "qty": 4.0,
+          "share_of_dept": 0.1
+        }
+      }
+    }
+  }
+}

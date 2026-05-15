@@ -1,0 +1,200 @@
+{
+  "period": "April 2026",
+  "working_days": 24,
+  "categories": {
+    "ELECTRICALS": {
+      "Betha Odumo": {
+        "qty": 49.0,
+        "sales_incl": 3150.0,
+        "cost": 1396.44,
+        "profit": 1319.07
+      },
+      "Bonface Kitheka": {
+        "qty": 10400.0,
+        "sales_incl": 712775.0,
+        "cost": 464421.64,
+        "profit": 150039.43
+      },
+      "Bonface Muriu": {
+        "qty": 24.0,
+        "sales_incl": 8570.0,
+        "cost": 6018.51,
+        "profit": 1369.42
+      },
+      "Eliza": {
+        "qty": 10.0,
+        "sales_incl": 1090.0,
+        "cost": 688.89,
+        "profit": 250.77
+      },
+      "Gladys": {
+        "qty": 353.0,
+        "sales_incl": 28280.0,
+        "cost": 17854.56,
+        "profit": 6524.75
+      },
+      "Lewis": {
+        "qty": 223.0,
+        "sales_incl": 54845.0,
+        "cost": 37855.36,
+        "profit": 9424.82
+      }
+    },
+    "GENERAL HARDWARE": {
+      "Betha Odumo": {
+        "qty": 19958.25,
+        "sales_incl": 16139285.0,
+        "cost": 12950349.62,
+        "profit": 962827.09
+      },
+      "Bonface Kitheka": {
+        "qty": 713.25,
+        "sales_incl": 297885.0,
+        "cost": 208977.71,
+        "profit": 47819.63
+      },
+      "Bonface Muriu": {
+        "qty": 1197.5,
+        "sales_incl": 562385.0,
+        "cost": 396965.34,
+        "profit": 87849.22
+      },
+      "Eliza": {
+        "qty": 19582.75,
+        "sales_incl": 13915603.0,
+        "cost": 11083688.82,
+        "profit": 912520.39
+      },
+      "Esther": {
+        "qty": 1.0,
+        "sales_incl": 200.0,
+        "cost": 87.58,
+        "profit": 84.83
+      },
+      "Gladys": {
+        "qty": 29415.25,
+        "sales_incl": 29109068.0,
+        "cost": 23473668.79,
+        "profit": 1620355.32
+      },
+      "Lewis": {
+        "qty": 430.25,
+        "sales_incl": 224870.0,
+        "cost": 155263.69,
+        "profit": 38589.75
+      },
+      "Magdalene": {
+        "qty": 83.0,
+        "sales_incl": 46410.0,
+        "cost": 37800.18,
+        "profit": 2208.44
+      },
+      "Stephen": {
+        "qty": 1303.0,
+        "sales_incl": 1005625.0,
+        "cost": 802503.32,
+        "profit": 64414.87
+      },
+      "WALK IN-BOMAS": {
+        "qty": 0.0,
+        "sales_incl": 0.0,
+        "cost": 0.0,
+        "profit": 0.0
+      }
+    },
+    "PAINTS": {
+      "Betha Odumo": {
+        "qty": 331.0,
+        "sales_incl": 214890.0,
+        "cost": 147541.3,
+        "profit": 37708.67
+      },
+      "Bonface Kitheka": {
+        "qty": 196.0,
+        "sales_incl": 111520.0,
+        "cost": 74427.29,
+        "profit": 21710.59
+      },
+      "Bonface Muriu": {
+        "qty": 3741.5,
+        "sales_incl": 4972845.0,
+        "cost": 3466951.1,
+        "profit": 819984.14
+      },
+      "Eliza": {
+        "qty": 404.0,
+        "sales_incl": 182740.0,
+        "cost": 116580.05,
+        "profit": 40954.36
+      },
+      "Gladys": {
+        "qty": 385.0,
+        "sales_incl": 212650.0,
+        "cost": 137070.32,
+        "profit": 46248.66
+      },
+      "Lewis": {
+        "qty": 250.0,
+        "sales_incl": 199495.0,
+        "cost": 140689.93,
+        "profit": 31288.45
+      },
+      "Stephen": {
+        "qty": 47.0,
+        "sales_incl": 26400.0,
+        "cost": 17883.71,
+        "profit": 4874.89
+      }
+    },
+    "PLUMBING": {
+      "Betha Odumo": {
+        "qty": 126.0,
+        "sales_incl": 105070.0,
+        "cost": 66963.55,
+        "profit": 23614.02
+      },
+      "Bonface Kitheka": {
+        "qty": 131.0,
+        "sales_incl": 31855.0,
+        "cost": 18797.98,
+        "profit": 8663.21
+      },
+      "Bonface Muriu": {
+        "qty": 116.0,
+        "sales_incl": 34645.0,
+        "cost": 20835.99,
+        "profit": 9030.37
+      },
+      "Eliza": {
+        "qty": 156.0,
+        "sales_incl": 80770.0,
+        "cost": 50276.13,
+        "profit": 19353.14
+      },
+      "Gladys": {
+        "qty": 113.0,
+        "sales_incl": 57080.0,
+        "cost": 33444.29,
+        "profit": 15762.59
+      },
+      "Lewis": {
+        "qty": 5414.0,
+        "sales_incl": 1522920.0,
+        "cost": 988003.74,
+        "profit": 324857.91
+      },
+      "Magdalene": {
+        "qty": 11.0,
+        "sales_incl": 615.0,
+        "cost": 242.06,
+        "profit": 288.11
+      },
+      "Stephen": {
+        "qty": 4.0,
+        "sales_incl": 1300.0,
+        "cost": 613.57,
+        "profit": 507.12
+      }
+    }
+  }
+}
