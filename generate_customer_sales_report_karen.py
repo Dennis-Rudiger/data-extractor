@@ -31,6 +31,8 @@ def build_reports():
     if not ytd_df.empty:
         ytd_summary = ytd_df.groupby('Customer')[['Amount_Exc', 'Cost', 'Profit']].sum().reset_index()
         ytd_summary['Profit_Margin_%'] = (ytd_summary['Profit'] / ytd_summary['Amount_Exc']) * 100
+        # Ensure profit is inclusive of 16% VAT but leave margin unchanged
+        ytd_summary['Profit'] = ytd_summary['Profit'] * 1.16
         ytd_summary = ytd_summary.sort_values('Amount_Exc', ascending=False)
         ytd_summary.to_excel(writer, sheet_name='YTD Totals', index=False)
 
@@ -64,7 +66,7 @@ def build_reports():
 
     # 3. Create Word Summary Report
     doc = Document()
-    head = doc.add_heading('KAREN BRANCH - CUSTOMER SALES PERFORMANCE REPORT', 0)
+    head = doc.add_heading('CUSTOMER SALES PERFORMANCE REPORT - KAREN', 0)
     head.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     p = doc.add_paragraph()
@@ -76,8 +78,10 @@ def build_reports():
     total_ytd_profit = ytd_df['Profit'].sum() if not ytd_df.empty else monthly_df['Profit'].sum()
     margin = (total_ytd_profit / total_ytd_sales * 100) if total_ytd_sales > 0 else 0
     
-    doc.add_paragraph(f"This report consolidates customer sales performance for the Karen Branch from January to April 2026. The total sales generated across all tracked customers was KES {total_ytd_sales:,.2f}, delivering a gross profit of KES {total_ytd_profit:,.2f} (Overall Margin: {margin:.2f}%).")
-    
+    total_ytd_profit_inc = total_ytd_profit * 1.16
+    total_ytd_sales_inc = sum(round(x * 1.16) for x in (ytd_df['Amount_Exc'] if not ytd_df.empty else monthly_df['Amount_Exc']))
+
+    doc.add_paragraph(f"This report consolidates customer sales performance from January to April 2026. The total inclusive sales generated across all tracked customers was KES {total_ytd_sales_inc:,.0f}, delivering a gross profit of KES {total_ytd_profit_inc:,.2f} (Overall Margin: {margin:.2f}%).")
     if os.path.exists(monthly_trend_path):
         doc.add_picture(monthly_trend_path, width=Inches(6.0))
 
@@ -101,7 +105,9 @@ def build_reports():
             cells[2].text = f"{row['Profit']:,.2f}"
             cells[3].text = f"{row['Profit_Margin_%']:.1f}%"
 
-    doc.add_heading('3. Monthly Performance Breakdown', level=1)
+        doc.add_paragraph("\nNote: Karen -Cash Customer remains our largest generic channel. Focus on retaining high margin corporate or individual accounts.")
+
+    doc.add_heading('3. Monthly Performance Trend', level=1)
     if not monthly_df.empty:
         for mth, val in monthly_trend.items():
             if val > 0:
@@ -109,6 +115,21 @@ def build_reports():
 
     doc.save('Customer_Sales_Summary_Karen.docx')
     print('Created Customer_Sales_Summary_Karen.docx')
+
+    # 4. Create JSON Summary Report
+    summary_data = {
+        "Executive_Overview": {
+            "Total_Sales_Exc": float(total_ytd_sales),
+            "Total_Sales_Inc": int(total_ytd_sales_inc),
+            "Total_Profit": float(total_ytd_profit_inc),
+            "Overall_Margin_Percent": float(margin)
+        },
+        "Top_10_Customers": top_10[['Customer', 'Amount_Exc', 'Profit', 'Profit_Margin_%']].to_dict(orient='records') if not ytd_df.empty else [],
+        "Monthly_Performance": {k: float(v) for k, v in monthly_trend.items()} if not monthly_df.empty else {}
+    }
+    with open('Customer_Sales_Summary_Karen.json', 'w') as f:
+        json.dump(summary_data, f, indent=4)
+    print('Created Customer_Sales_Summary_Karen.json')
 
 if __name__ == '__main__':
     build_reports()

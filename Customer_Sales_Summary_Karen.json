@@ -1,0 +1,76 @@
+{
+    "Executive_Overview": {
+        "Total_Sales_Exc": 196466791.72,
+        "Total_Sales_Inc": 227901479,
+        "Total_Profit": 17369722.816800002,
+        "Overall_Margin_Percent": 7.621592865088601
+    },
+    "Top_10_Customers": [
+        {
+            "Customer": "Karen -Cash Customer",
+            "Amount_Exc": 65257798.23,
+            "Profit": 6791549.393599999,
+            "Profit_Margin_%": 8.971776735961752
+        },
+        {
+            "Customer": "TO CONFIRM-KAREN",
+            "Amount_Exc": 26081040.9,
+            "Profit": 2382059.9187999996,
+            "Profit_Margin_%": 7.87353517780803
+        },
+        {
+            "Customer": "POD CUSTOMER KAREN",
+            "Amount_Exc": 12799768.04,
+            "Profit": 958623.9651999999,
+            "Profit_Margin_%": 6.456366767096508
+        },
+        {
+            "Customer": "AFRICA REIT",
+            "Amount_Exc": 10328301.71,
+            "Profit": 774861.2311999999,
+            "Profit_Margin_%": 6.467508780782895
+        },
+        {
+            "Customer": "KIONI PETER",
+            "Amount_Exc": 9583999.91,
+            "Profit": 933779.6883999999,
+            "Profit_Margin_%": 8.399233071361746
+        },
+        {
+            "Customer": "TETEZI HOUSE",
+            "Amount_Exc": 8685107.7,
+            "Profit": 774948.1383999999,
+            "Profit_Margin_%": 7.692002944304306
+        },
+        {
+            "Customer": "TESTIMONY HARDWARE AND GLASS MARTS LIMITED",
+            "Amount_Exc": 5420137.93,
+            "Profit": 240395.97559999998,
+            "Profit_Margin_%": 3.823480374050186
+        },
+        {
+            "Customer": "TIMOTHY MUTUNGA",
+            "Amount_Exc": 3325068.96,
+            "Profit": 218008.81079999998,
+            "Profit_Margin_%": 5.65217239885455
+        },
+        {
+            "Customer": "DUKE -MARULA LANE",
+            "Amount_Exc": 3000155.26,
+            "Profit": 323005.8512,
+            "Profit_Margin_%": 9.281296995276172
+        },
+        {
+            "Customer": "SUNSTAR",
+            "Amount_Exc": 2940775.83,
+            "Profit": 157032.0188,
+            "Profit_Margin_%": 4.603289669991609
+        }
+    ],
+    "Monthly_Performance": {
+        "January": 43665604.46,
+        "February": 46735712.99,
+        "March": 54652442.28,
+        "April": 51413031.989999995
+    }
+}
