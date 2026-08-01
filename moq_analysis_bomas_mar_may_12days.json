@@ -1,0 +1,9892 @@
+{
+  "all_items": [
+    {
+      "item_code": "ADA001",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ADA002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ADA003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ADA005",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "ADA006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ALL001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ALL004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ANG002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ANG003",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "ANG004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "ANG005",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ANG006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ANG007",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ANG008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ANG009",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "ANG011",
+      "weekly_moq": 21,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "ANG012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ANG014",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "AQU001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ARA001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ARA003",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ART001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ASI002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "AXE001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "AXE003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "AXE004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAL004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAL010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAL011",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAL012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAL014",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BAL018",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAL024",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAL025",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAM001",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "BAM002",
+      "weekly_moq": 81,
+      "min_level": 41,
+      "reorder_level": 41
+    },
+    {
+      "item_code": "BAM004",
+      "weekly_moq": 25,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "BAM005",
+      "weekly_moq": 1959,
+      "min_level": 980,
+      "reorder_level": 980
+    },
+    {
+      "item_code": "BAR001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAR002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAR003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BAS003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS006",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "BAS007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS012",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "BAS017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS019",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS021",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS022",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS024",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS025",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS026",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS027",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS029",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS030",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS032",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS033",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS034",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS035",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS036",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "BAS037",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS039",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "BAS041",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "BAS043",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS044",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS046",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS047",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS048",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS049",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS050",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS051",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS052",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "BAS055",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS056",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS057",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "BAS058",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS059",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS060",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS061",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS064",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS065",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS070",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS073",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS076",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BAS077",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BAS078",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BED003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BED004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BIN001",
+      "weekly_moq": 32,
+      "min_level": 16,
+      "reorder_level": 16
+    },
+    {
+      "item_code": "BIN003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BIN005",
+      "weekly_moq": 144,
+      "min_level": 72,
+      "reorder_level": 72
+    },
+    {
+      "item_code": "BLA001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BLA002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BLA003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BLA007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BLA008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BLA009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BLA010",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BLA011",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BLA016",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BLA017",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "BLA018",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BLA019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BLO001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BLO002",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BOD007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOD008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOD009",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BOD010",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BOL004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOL012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS001",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BOS002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS003",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BOS004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS018",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS022",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS032",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS033",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS034",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS035",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS036",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS038",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS039",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS041",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS045",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS046",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS047",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS049",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS050",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOS052",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOT007",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BOT009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BOT010",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BOT011",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BRA001",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BRC001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BRC003",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "BRC004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BRC005",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BRO001",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BRU001",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "BRU002",
+      "weekly_moq": 12,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "BRU003",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "BRU004",
+      "weekly_moq": 23,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "BRU005",
+      "weekly_moq": 27,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "BRU007",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "BRU009",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "BRU010",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "BRU011",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BRU012",
+      "weekly_moq": 15,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "BRU013",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BRU014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUC001",
+      "weekly_moq": 37,
+      "min_level": 19,
+      "reorder_level": 19
+    },
+    {
+      "item_code": "BUL001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUL002",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BUL003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUL004",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BUL007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUL008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUL009",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUL010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUL011",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUL015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUS002",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "BUS003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BUS005",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "BUS007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUS008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUS009",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BUS010",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BUS015",
+      "weekly_moq": 13,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "BUS016",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BUS017",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "BUS018",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "BUS019",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "BUT005",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "BUT006",
+      "weekly_moq": 41,
+      "min_level": 21,
+      "reorder_level": 21
+    },
+    {
+      "item_code": "BUT007",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "C/ 004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/ 005",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E004",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "C/E005",
+      "weekly_moq": 46,
+      "min_level": 23,
+      "reorder_level": 23
+    },
+    {
+      "item_code": "C/E006",
+      "weekly_moq": 28,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "C/E007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E018",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "C/E019",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "C/E020",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "C/E025",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E026",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E027",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "C/E028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E029",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E030",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E031",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E032",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E033",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E034",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E035",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E036",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E037",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "C/E038",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "C/E040",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E041",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E042",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E043",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E044",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E045",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/E046",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/E047",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "C/E048",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "C/E049",
+      "weekly_moq": 24,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "C/S002",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "C/S003",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "C/S009",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "C/S010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S012",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/S013",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "C/S014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S017",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S018",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/S020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S021",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "C/S022",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S024",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S025",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S026",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S027",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/S029",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S031",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S037",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S038",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S039",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S044",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "C/S046",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "C/S047",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "C/S048",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S050",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S053",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S057",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "C/S058",
+      "weekly_moq": 39,
+      "min_level": 20,
+      "reorder_level": 20
+    },
+    {
+      "item_code": "C/S061",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/S062",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "C/S068",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S069",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S070",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S071",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S072",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/S074",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S075",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "C/S076",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "C/S077",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S079",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S080",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S081",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "C/S083",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S084",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S085",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S086",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S087",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "C/S089",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB007",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CAB008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB009",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAB011",
+      "weekly_moq": 49,
+      "min_level": 25,
+      "reorder_level": 25
+    },
+    {
+      "item_code": "CAB014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAN001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CAR004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CEI001",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "CEI002",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "CEM001",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "CEN001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CER002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CER003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CER004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CER005",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CER006",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CES002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CES003",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CEV002",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "CHA001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CHA002",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CHA005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA014",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CHA015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA016",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHA017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHE001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHE002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHI001",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "CHI004",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "CHI005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHI006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHI008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHI009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHR001",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "CHR002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CHR003",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CHR004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CHR005",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CIR002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CIR003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CIR004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CIR006",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CIR007",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "CIR008",
+      "weekly_moq": 13,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "CIR009",
+      "weekly_moq": 363,
+      "min_level": 182,
+      "reorder_level": 182
+    },
+    {
+      "item_code": "CIR010",
+      "weekly_moq": 38,
+      "min_level": 19,
+      "reorder_level": 19
+    },
+    {
+      "item_code": "CIS004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CIS005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CIS006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLA001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLA002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLA003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLA005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLA006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLE004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLE005",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "CLO003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLO004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CLO006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COA001",
+      "weekly_moq": 25,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "COA002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COA003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COF001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COF002",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "COL002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COL003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COL004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "COL005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COL006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COL010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COL011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COL012",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "COL015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COL016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COM001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CON006",
+      "weekly_moq": 1068,
+      "min_level": 534,
+      "reorder_level": 534
+    },
+    {
+      "item_code": "CON007",
+      "weekly_moq": 355,
+      "min_level": 178,
+      "reorder_level": 178
+    },
+    {
+      "item_code": "CON008",
+      "weekly_moq": 73,
+      "min_level": 37,
+      "reorder_level": 37
+    },
+    {
+      "item_code": "CON009",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "CON010",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "CON012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CON015",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CON016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CON017",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CON021",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CON022",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CON023",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CON024",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "CON025",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "CON026",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COO002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COO004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "COO006",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "COR001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COR003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COR004",
+      "weekly_moq": 15,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "COR007",
+      "weekly_moq": 68,
+      "min_level": 34,
+      "reorder_level": 34
+    },
+    {
+      "item_code": "COR008",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "COR010",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "COR011",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COR012",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "COU001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COU002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "COU004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "COU007",
+      "weekly_moq": 24,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "COU008",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "COU009",
+      "weekly_moq": 2105,
+      "min_level": 1053,
+      "reorder_level": 1053
+    },
+    {
+      "item_code": "COU010",
+      "weekly_moq": 533,
+      "min_level": 267,
+      "reorder_level": 267
+    },
+    {
+      "item_code": "COU011",
+      "weekly_moq": 107,
+      "min_level": 54,
+      "reorder_level": 54
+    },
+    {
+      "item_code": "COU012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "COU013",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "CRO001",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "CRO002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CRO003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO007",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CRO008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CRO024",
+      "weekly_moq": 178,
+      "min_level": 89,
+      "reorder_level": 89
+    },
+    {
+      "item_code": "CRO025",
+      "weekly_moq": 31,
+      "min_level": 16,
+      "reorder_level": 16
+    },
+    {
+      "item_code": "CRO026",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CSG002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CSG004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CSG005",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CSG006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CSG007",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CSG009",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "CSG011",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CSG013",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CSG016",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CUP003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUR001",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CUR002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUR003",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "CUR004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUR007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUR008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUR013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUR017",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "CUR028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUT001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUT002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUT006",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "CUT007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUT008",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "CUT009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUT010",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "CUT011",
+      "weekly_moq": 22,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "CUT012",
+      "weekly_moq": 24,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "CUT013",
+      "weekly_moq": 139,
+      "min_level": 70,
+      "reorder_level": 70
+    },
+    {
+      "item_code": "CUT015",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUT016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CUT018",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CYP001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CYP003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "CYP012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D 1001",
+      "weekly_moq": 3698,
+      "min_level": 1849,
+      "reorder_level": 1849
+    },
+    {
+      "item_code": "D 1002",
+      "weekly_moq": 1549,
+      "min_level": 775,
+      "reorder_level": 775
+    },
+    {
+      "item_code": "D 1003",
+      "weekly_moq": 672,
+      "min_level": 336,
+      "reorder_level": 336
+    },
+    {
+      "item_code": "D 2001",
+      "weekly_moq": 259,
+      "min_level": 130,
+      "reorder_level": 130
+    },
+    {
+      "item_code": "D 2002",
+      "weekly_moq": 52,
+      "min_level": 26,
+      "reorder_level": 26
+    },
+    {
+      "item_code": "D 3001",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "D 8001",
+      "weekly_moq": 2814,
+      "min_level": 1407,
+      "reorder_level": 1407
+    },
+    {
+      "item_code": "D/E002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/E004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/E008",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "D/E009",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "D/E010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/E014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/E015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/G001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/G003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/G004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "D/G005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/G007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/G010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/R001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/S003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D/S004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "D16003",
+      "weekly_moq": 208,
+      "min_level": 104,
+      "reorder_level": 104
+    },
+    {
+      "item_code": "D25001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DAM001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DAR001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DAY010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DAY011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEC002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEC003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DES003",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DEW001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW008",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DEW009",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DEW010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW011",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DEW012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW016",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DEW017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW021",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW024",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW026",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW027",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DEW028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DEW029",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DEW030",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DGB001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DGC001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DGW001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DHO001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DIG001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DIS001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DIS002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOO001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOO002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOO005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOO006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOO014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOV001",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DOV007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOV008",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DOV010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOV011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOV012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DOV014",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DOW001",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "DOW003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DPC001",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "DR 002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DR 003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DR 004",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DR 005",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DR 006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DR 007",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "DR 008",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "DR 009",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DR 010",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DR 011",
+      "weekly_moq": 209,
+      "min_level": 105,
+      "reorder_level": 105
+    },
+    {
+      "item_code": "DR 012",
+      "weekly_moq": 137,
+      "min_level": 69,
+      "reorder_level": 69
+    },
+    {
+      "item_code": "DRA001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRA002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRA004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DRA005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRA006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRA010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRA011",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DRA016",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DRA022",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRA023",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DRA024",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DRA025",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRA026",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRA028",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DRI002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRI004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRI005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRI006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRI008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRI009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRI010",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "DRI012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DRI013",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DRI014",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DRI016",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRI017",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "DRI018",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "DRI022",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRU002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DRU004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DU 001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DUR002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "DUR003",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "DUR004",
+      "weekly_moq": 25,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "DUS001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DUS002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "DUS003",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "EAR001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "EAR002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE001",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "ELE002",
+      "weekly_moq": 32,
+      "min_level": 16,
+      "reorder_level": 16
+    },
+    {
+      "item_code": "ELE003",
+      "weekly_moq": 38,
+      "min_level": 19,
+      "reorder_level": 19
+    },
+    {
+      "item_code": "ELE004",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "ELE005",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "ELE006",
+      "weekly_moq": 22,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "ELE007",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "ELE008",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "ELE009",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE011",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ELE013",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "ELE014",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "ELE015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE016",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE018",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE026",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "ELE028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE030",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE031",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "ELE032",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ELE033",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE034",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "ELE035",
+      "weekly_moq": 28,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "ELE036",
+      "weekly_moq": 17,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "ELE037",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE038",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ELE040",
+      "weekly_moq": 13,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "ELE041",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "ELE042",
+      "weekly_moq": 25,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "ELE043",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "ELE044",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "ELE045",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "EME001",
+      "weekly_moq": 22,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "EXP002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "EXT005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "EXT006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "EYE004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "EYE008",
+      "weekly_moq": 17,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "FEV003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FEV004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FEV005",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "FEV006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FIB002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FIL001",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "FIL003",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "FIL004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FIL005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLA001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLA002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "FLA003",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "FLA008",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "FLA009",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLA010",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "FLA011",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "FLA013",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "FLA014",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "FLA015",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "FLA016",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "FLA017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLA018",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "FLE001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLE002",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "FLE004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLE007",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "FLE008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLE009",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "FLE011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLE012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "FLE013",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "FLE014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLE015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLE017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLO001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLO004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLO006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLO007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FLU001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOO003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOO004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOO008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOO009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOR001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOR002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOR003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOR004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FOR006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "FRI001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GAL003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GAT002",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GAT003",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GAT004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GAT005",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GAT006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GAT007",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "GAT008",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GI 001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 006",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GI 007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 008",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "GI 012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 018",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 020",
+      "weekly_moq": 44,
+      "min_level": 22,
+      "reorder_level": 22
+    },
+    {
+      "item_code": "GI 023",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GI 024",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 025",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "GI 028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 029",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 030",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 031",
+      "weekly_moq": 59,
+      "min_level": 30,
+      "reorder_level": 30
+    },
+    {
+      "item_code": "GI 032",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 033",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 034",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 035",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GI 036",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 037",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 038",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 039",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 041",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GI 043",
+      "weekly_moq": 21,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "GI 045",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GI 047",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 048",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 051",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 052",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 056",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GI 057",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 058",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 062",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 065",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 068",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 069",
+      "weekly_moq": 28,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "GI 071",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 073",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GI 074",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GI 075",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 076",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 077",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 079",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 081",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 082",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 088",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 089",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 092",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GI 095",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GLA004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "GLA006",
+      "weekly_moq": 15,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "GLA007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GLA008",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GLA012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GLA013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GLA015",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GLA018",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GLA023",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GLO005",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GLO007",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GLO008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GOO001",
+      "weekly_moq": 17,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "GOO002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GRE002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GRE003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GRO002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GRO005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GRO006",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GRO015",
+      "weekly_moq": 32,
+      "min_level": 16,
+      "reorder_level": 16
+    },
+    {
+      "item_code": "GRO016",
+      "weekly_moq": 27,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "GRO017",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GRO018",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GUM003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUM004",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GUM005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUM006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUM007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUM008",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GUM009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUM010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUM011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUM012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUM013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GUT001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GUT002",
+      "weekly_moq": 49,
+      "min_level": 25,
+      "reorder_level": 25
+    },
+    {
+      "item_code": "GUT003",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "GUT008",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "GUT012",
+      "weekly_moq": 12,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "GUT014",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "GYP002",
+      "weekly_moq": 38,
+      "min_level": 19,
+      "reorder_level": 19
+    },
+    {
+      "item_code": "GYP003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GYP006",
+      "weekly_moq": 525,
+      "min_level": 263,
+      "reorder_level": 263
+    },
+    {
+      "item_code": "GYP008",
+      "weekly_moq": 32,
+      "min_level": 16,
+      "reorder_level": 16
+    },
+    {
+      "item_code": "GYP010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GYP011",
+      "weekly_moq": 547,
+      "min_level": 274,
+      "reorder_level": 274
+    },
+    {
+      "item_code": "GYP012",
+      "weekly_moq": 112,
+      "min_level": 56,
+      "reorder_level": 56
+    },
+    {
+      "item_code": "GYP013",
+      "weekly_moq": 47,
+      "min_level": 24,
+      "reorder_level": 24
+    },
+    {
+      "item_code": "GYP016",
+      "weekly_moq": 29,
+      "min_level": 15,
+      "reorder_level": 15
+    },
+    {
+      "item_code": "GYP020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GYP021",
+      "weekly_moq": 27,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "GYP022",
+      "weekly_moq": 39,
+      "min_level": 20,
+      "reorder_level": 20
+    },
+    {
+      "item_code": "GYP025",
+      "weekly_moq": 50,
+      "min_level": 25,
+      "reorder_level": 25
+    },
+    {
+      "item_code": "GYP026",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "GYP027",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "GYP028",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GYP029",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GYP030",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GYP032",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "GYP034",
+      "weekly_moq": 946,
+      "min_level": 473,
+      "reorder_level": 473
+    },
+    {
+      "item_code": "GYP037",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GYP038",
+      "weekly_moq": 27,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "GYP039",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "GYP040",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "GYP041",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "GYP042",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "HAC001",
+      "weekly_moq": 225,
+      "min_level": 113,
+      "reorder_level": 113
+    },
+    {
+      "item_code": "HAC005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HAC006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HAM001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HAM003",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HAN003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HAN006",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "HAN007",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "HAN008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HAN009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HAS001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HAS003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HAS005",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "HDP003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HEL001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HEL002",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HEL003",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HEL004",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HEM001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HIG002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HIL002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HIL003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HIL004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HIL005",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "HIL006",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HIL007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HIN002",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "HIN003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "HIN004",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "HIN005",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "HIN006",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "HIN015",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "HIN016",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "HOO003",
+      "weekly_moq": 161,
+      "min_level": 81,
+      "reorder_level": 81
+    },
+    {
+      "item_code": "HOS008",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "HOS012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS016",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS018",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS019",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS021",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "HOS026",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "IND001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "IND002",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "IND003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "INS001",
+      "weekly_moq": 23,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "INS002",
+      "weekly_moq": 13,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "INS004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "INS008",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "INS012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "INS015",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "INS018",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "INS019",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "INS020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "IZO001",
+      "weekly_moq": 21,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "J",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "J",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "JEM001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JEM002",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "JEM003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JEM004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JEM005",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "JUM001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JUM002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JUM003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JUM009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JUM010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JUM011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JUM014",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JUM017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "JUM019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "KIF001",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "KIT002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "KIT003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "KIT004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "KIT006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "KIT007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "KIT008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LEA003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LED014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LIM001",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "LIP003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LIP004",
+      "weekly_moq": 34,
+      "min_level": 17,
+      "reorder_level": 17
+    },
+    {
+      "item_code": "LIP007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOC002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOC003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOC006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOC010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOC011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOC012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "LOC013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOC014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOC015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOO001",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "LOR001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "LOR002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAC002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAC004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "MAC005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAG001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAG002",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAG004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "MAG005",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAH001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAH003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAL003",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "MAN001",
+      "weekly_moq": 12,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "MAN002",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "MAN003",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "MAN004",
+      "weekly_moq": 21,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "MAN005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAN007",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAN008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAN009",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "MAN010",
+      "weekly_moq": 27,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "MAN011",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "MAN013",
+      "weekly_moq": 13,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "MAN014",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAN015",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "MAN016",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "MAN017",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAN020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAN021",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "MAN022",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAN023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAR001",
+      "weekly_moq": 214,
+      "min_level": 107,
+      "reorder_level": 107
+    },
+    {
+      "item_code": "MAR002",
+      "weekly_moq": 15,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "MAR003",
+      "weekly_moq": 383,
+      "min_level": 192,
+      "reorder_level": 192
+    },
+    {
+      "item_code": "MAS002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAS006",
+      "weekly_moq": 40,
+      "min_level": 20,
+      "reorder_level": 20
+    },
+    {
+      "item_code": "MAS008",
+      "weekly_moq": 45,
+      "min_level": 23,
+      "reorder_level": 23
+    },
+    {
+      "item_code": "MAS009",
+      "weekly_moq": 32,
+      "min_level": 16,
+      "reorder_level": 16
+    },
+    {
+      "item_code": "MAS010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAS011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAS014",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAS015",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAS016",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAS017",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "MAS019",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MAS020",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAS021",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAS022",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MAS025",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "MAS026",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "MAT001",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "MCB001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MCB002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MCB003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MCB004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MCB005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MCB006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MCB007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MCB008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MDF002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MDF003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MDF005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MDF006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MDF007",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MDF008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MDF009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MDF012",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MDF013",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MDF014",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "MDF015",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "MDF017",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MDF018",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MDF019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MEA001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MEA002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MET006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MET009",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "MIN001",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "MIR001",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "MOP003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "MOP006",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "MUL001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI001",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "NAI002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI003",
+      "weekly_moq": 28,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "NAI004",
+      "weekly_moq": 48,
+      "min_level": 24,
+      "reorder_level": 24
+    },
+    {
+      "item_code": "NAI005",
+      "weekly_moq": 212,
+      "min_level": 106,
+      "reorder_level": 106
+    },
+    {
+      "item_code": "NAI006",
+      "weekly_moq": 241,
+      "min_level": 121,
+      "reorder_level": 121
+    },
+    {
+      "item_code": "NAI007",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "NAI008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI011",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "NAI013",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "NAI014",
+      "weekly_moq": 26,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "NAI015",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI022",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI023",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "NAI024",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI025",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "NAI027",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI029",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI030",
+      "weekly_moq": 33,
+      "min_level": 17,
+      "reorder_level": 17
+    },
+    {
+      "item_code": "NAI031",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NAI035",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "NAI036",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "NEM015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM018",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM029",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM033",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM037",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM038",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM039",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM040",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM041",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM048",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM049",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NEM052",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "NON002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NON003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "NON006",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "NYU001",
+      "weekly_moq": 1861,
+      "min_level": 931,
+      "reorder_level": 931
+    },
+    {
+      "item_code": "ORI002",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "P 1002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAD001",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PAD004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "PAD006",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PAD009",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PAD015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAD016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAD017",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAD018",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PAD019",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PAD020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAD021",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAD022",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAI002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PAI004",
+      "weekly_moq": 29,
+      "min_level": 15,
+      "reorder_level": 15
+    },
+    {
+      "item_code": "PAI006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAN001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAN002",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PAN003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAT001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PAT003",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PAT004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAT006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PAV002",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "PED001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PED002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PHO001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PIL003",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PIL005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PIP001",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "PIP002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PIP003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA016",
+      "weekly_moq": 27,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "PLA017",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "PLA021",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA022",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLA027",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLI001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLI003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PLI007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLU001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PLY001",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "PLY002",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "PLY003",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "POL003",
+      "weekly_moq": 12,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "POL004",
+      "weekly_moq": 41,
+      "min_level": 21,
+      "reorder_level": 21
+    },
+    {
+      "item_code": "POL005",
+      "weekly_moq": 99,
+      "min_level": 50,
+      "reorder_level": 50
+    },
+    {
+      "item_code": "POL006",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "POL007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "POL008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PON001",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PON002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PON003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PON005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "POP002",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "POP004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "POP005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "POU001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "POU002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR008",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "PPR009",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PPR010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR013",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR014",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PPR016",
+      "weekly_moq": 283,
+      "min_level": 142,
+      "reorder_level": 142
+    },
+    {
+      "item_code": "PPR017",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PPR018",
+      "weekly_moq": 82,
+      "min_level": 41,
+      "reorder_level": 41
+    },
+    {
+      "item_code": "PPR019",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR020",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "PPR021",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR022",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR023",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR024",
+      "weekly_moq": 28,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "PPR025",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "PPR026",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PPR027",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR029",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR032",
+      "weekly_moq": 96,
+      "min_level": 48,
+      "reorder_level": 48
+    },
+    {
+      "item_code": "PPR033",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "PPR034",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR036",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR037",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR039",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR040",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "PPR041",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR043",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR045",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR048",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR050",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PPR051",
+      "weekly_moq": 81,
+      "min_level": 41,
+      "reorder_level": 41
+    },
+    {
+      "item_code": "PPR052",
+      "weekly_moq": 44,
+      "min_level": 22,
+      "reorder_level": 22
+    },
+    {
+      "item_code": "PPR053",
+      "weekly_moq": 30,
+      "min_level": 15,
+      "reorder_level": 15
+    },
+    {
+      "item_code": "PPR055",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR056",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "PPR057",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PPR058",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR060",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR061",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR062",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR067",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR072",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR074",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR075",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR076",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "PPR084",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR085",
+      "weekly_moq": 130,
+      "min_level": 65,
+      "reorder_level": 65
+    },
+    {
+      "item_code": "PPR086",
+      "weekly_moq": 46,
+      "min_level": 23,
+      "reorder_level": 23
+    },
+    {
+      "item_code": "PPR087",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "PPR088",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR095",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR098",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR100",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR101",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR102",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR105",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR107",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR109",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "PPR110",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PPR111",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR115",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR116",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR117",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR124",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR125",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR126",
+      "weekly_moq": 184,
+      "min_level": 92,
+      "reorder_level": 92
+    },
+    {
+      "item_code": "PPR127",
+      "weekly_moq": 49,
+      "min_level": 25,
+      "reorder_level": 25
+    },
+    {
+      "item_code": "PPR128",
+      "weekly_moq": 12,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "PPR130",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR135",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR137",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR138",
+      "weekly_moq": 96,
+      "min_level": 48,
+      "reorder_level": 48
+    },
+    {
+      "item_code": "PPR139",
+      "weekly_moq": 28,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "PPR140",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PPR141",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PPR142",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR145",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR148",
+      "weekly_moq": 17,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "PPR149",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PPR150",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR151",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR155",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PPR158",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR159",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PPR160",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PTG011",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PUM001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PUS001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PUT003",
+      "weekly_moq": 12,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "PUT004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC001",
+      "weekly_moq": 48,
+      "min_level": 24,
+      "reorder_level": 24
+    },
+    {
+      "item_code": "PVC002",
+      "weekly_moq": 97,
+      "min_level": 49,
+      "reorder_level": 49
+    },
+    {
+      "item_code": "PVC003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC004",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PVC005",
+      "weekly_moq": 42,
+      "min_level": 21,
+      "reorder_level": 21
+    },
+    {
+      "item_code": "PVC006",
+      "weekly_moq": 92,
+      "min_level": 46,
+      "reorder_level": 46
+    },
+    {
+      "item_code": "PVC007",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "PVC008",
+      "weekly_moq": 39,
+      "min_level": 20,
+      "reorder_level": 20
+    },
+    {
+      "item_code": "PVC009",
+      "weekly_moq": 35,
+      "min_level": 18,
+      "reorder_level": 18
+    },
+    {
+      "item_code": "PVC010",
+      "weekly_moq": 72,
+      "min_level": 36,
+      "reorder_level": 36
+    },
+    {
+      "item_code": "PVC011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PVC013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC016",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PVC017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC019",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC020",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PVC022",
+      "weekly_moq": 80,
+      "min_level": 40,
+      "reorder_level": 40
+    },
+    {
+      "item_code": "PVC023",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PVC026",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PVC028",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PVC031",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PVC034",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "PVC035",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC036",
+      "weekly_moq": 22,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "PVC037",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PVC038",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PVC039",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC053",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC054",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "PVC055",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC056",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PVC057",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "PVC058",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PVC059",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC061",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "PVC062",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC064",
+      "weekly_moq": 13,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "PVC065",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC066",
+      "weekly_moq": 56,
+      "min_level": 28,
+      "reorder_level": 28
+    },
+    {
+      "item_code": "PVC067",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "PVC068",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "PVC069",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC072",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PVC073",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC074",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC076",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "PVC077",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC079",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PVC080",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PVC081",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "PVC082",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "PVC083",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "PVC085",
+      "weekly_moq": 29,
+      "min_level": 15,
+      "reorder_level": 15
+    },
+    {
+      "item_code": "PVC086",
+      "weekly_moq": 57,
+      "min_level": 29,
+      "reorder_level": 29
+    },
+    {
+      "item_code": "PVC087",
+      "weekly_moq": 32,
+      "min_level": 16,
+      "reorder_level": 16
+    },
+    {
+      "item_code": "PVC088",
+      "weekly_moq": 75,
+      "min_level": 38,
+      "reorder_level": 38
+    },
+    {
+      "item_code": "PVC089",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "PVC093",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "PVC096",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R 1001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "R 1003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R 1004",
+      "weekly_moq": 12,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "R 6001",
+      "weekly_moq": 16,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "R 8001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "R/S001",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "R/S002",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "R/S003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R/S004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R/S011",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "R/S012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "R/S013",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "R/S014",
+      "weekly_moq": 24,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "R/S015",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "R/S016",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "R/S017",
+      "weekly_moq": 27,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "R/S018",
+      "weekly_moq": 26,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "R/S019",
+      "weekly_moq": 27,
+      "min_level": 14,
+      "reorder_level": 14
+    },
+    {
+      "item_code": "RAK002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "RAK003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "RAK005",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "RAK007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "RAW001",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "RAW002",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "RAW004",
+      "weekly_moq": 25,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "RED001",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "REF001",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "RET001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "RID003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "RID006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "RID007",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "RIV003",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "ROO001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ROO002",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "ROO004",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "ROO009",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ROO010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ROO013",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "ROO015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ROU003",
+      "weekly_moq": 17,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "ROU005",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ROU006",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "ROU007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "RSB001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "RSB005",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "RSB006",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "RUF001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SAC001",
+      "weekly_moq": 22,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "SAD001",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "SAD003",
+      "weekly_moq": 58,
+      "min_level": 29,
+      "reorder_level": 29
+    },
+    {
+      "item_code": "SAD004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SAD005",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SAD006",
+      "weekly_moq": 15,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "SAD007",
+      "weekly_moq": 39,
+      "min_level": 20,
+      "reorder_level": 20
+    },
+    {
+      "item_code": "SAD008",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SAD011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SAF001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SAN006",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SAN007",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "SAN008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SAN009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SAN010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SAN011",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SAN016",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "SAN017",
+      "weekly_moq": 48,
+      "min_level": 24,
+      "reorder_level": 24
+    },
+    {
+      "item_code": "SAN018",
+      "weekly_moq": 74,
+      "min_level": 37,
+      "reorder_level": 37
+    },
+    {
+      "item_code": "SAN019",
+      "weekly_moq": 140,
+      "min_level": 70,
+      "reorder_level": 70
+    },
+    {
+      "item_code": "SAN020",
+      "weekly_moq": 12,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "SAN021",
+      "weekly_moq": 39,
+      "min_level": 20,
+      "reorder_level": 20
+    },
+    {
+      "item_code": "SAN022",
+      "weekly_moq": 21,
+      "min_level": 11,
+      "reorder_level": 11
+    },
+    {
+      "item_code": "SAN023",
+      "weekly_moq": 60,
+      "min_level": 30,
+      "reorder_level": 30
+    },
+    {
+      "item_code": "SCR003",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "SCR004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SCR005",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SCR006",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SCR008",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SCR009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SCR011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SCR027",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SCR029",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "SEA003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SEL002",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "SEL007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHA001",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "SHE001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHE003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHE004",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "SHE005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHE008",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SHE011",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHE012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHE014",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHO002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHO003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHO005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SHO015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SID001",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "SID004",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "SIL001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SIL002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SIL003",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "SIL004",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "SIL010",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SIL011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SIL013",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "SIL014",
+      "weekly_moq": 23,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "SIL015",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "SIL016",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SIL017",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SIM001",
+      "weekly_moq": 14091,
+      "min_level": 7046,
+      "reorder_level": 7046
+    },
+    {
+      "item_code": "SIN004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SIS001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SIS002",
+      "weekly_moq": 32,
+      "min_level": 16,
+      "reorder_level": 16
+    },
+    {
+      "item_code": "SIS003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SIS004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SLA001",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "SLE001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SLE002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SLE003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SLE004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SLE005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SOC001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SOC002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SOC003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SOC004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SOC005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SOC006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SOC008",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "SOC009",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SOC010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SOC013",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SOF003",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "SOF004",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SPA001",
+      "weekly_moq": 24,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "SPA007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPA010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPA011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPA015",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPA016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPA017",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPA020",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPI001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPI002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPI008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR004",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "SPR005",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR007",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR020",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "SPR021",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR022",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR024",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR025",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "SPR027",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SPR028",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SQ 001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SQU001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STA001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STA003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STA005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STA009",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STA010",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "STA011",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "STA012",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "STA015",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "STE001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STE002",
+      "weekly_moq": 57,
+      "min_level": 29,
+      "reorder_level": 29
+    },
+    {
+      "item_code": "STE003",
+      "weekly_moq": 17,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "STE004",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "STE005",
+      "weekly_moq": 18,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "STE006",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "STE007",
+      "weekly_moq": 36,
+      "min_level": 18,
+      "reorder_level": 18
+    },
+    {
+      "item_code": "STE008",
+      "weekly_moq": 15,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "STE010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STE011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STE012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STE014",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STE015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STO006",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "STR003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "STR004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STR005",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "STR006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STR008",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STR010",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "STR012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "STR016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "STY001",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "STY002",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "STY003",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "SUP002",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "SWI001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SWI002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SWI003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SWI004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "SWI005",
+      "weekly_moq": 146,
+      "min_level": 73,
+      "reorder_level": 73
+    },
+    {
+      "item_code": "SWI006",
+      "weekly_moq": 172,
+      "min_level": 86,
+      "reorder_level": 86
+    },
+    {
+      "item_code": "SWI015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAC002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAN001",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "TAN002",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "TAN003",
+      "weekly_moq": 23,
+      "min_level": 12,
+      "reorder_level": 12
+    },
+    {
+      "item_code": "TAN004",
+      "weekly_moq": 37,
+      "min_level": 19,
+      "reorder_level": 19
+    },
+    {
+      "item_code": "TAN005",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "TAN006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAN007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAN009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAP001",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "TAP002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAP003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAP004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAP007",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TAP008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAP015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAP017",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TAP019",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "TAP022",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TAP025",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TEE001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TEE002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TEE004",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "TEE005",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TEE006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TES001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TES003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "THR001",
+      "weekly_moq": 88,
+      "min_level": 44,
+      "reorder_level": 44
+    },
+    {
+      "item_code": "THR002",
+      "weekly_moq": 55,
+      "min_level": 28,
+      "reorder_level": 28
+    },
+    {
+      "item_code": "TIL006",
+      "weekly_moq": 72,
+      "min_level": 36,
+      "reorder_level": 36
+    },
+    {
+      "item_code": "TIL007",
+      "weekly_moq": 135,
+      "min_level": 68,
+      "reorder_level": 68
+    },
+    {
+      "item_code": "TIL008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TIL010",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "TIL011",
+      "weekly_moq": 20,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "TIL012",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TIL014",
+      "weekly_moq": 13,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "TIL015",
+      "weekly_moq": 49,
+      "min_level": 25,
+      "reorder_level": 25
+    },
+    {
+      "item_code": "TIN002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TIN004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TIS009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TOI001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TOI004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TOW004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TOW010",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TOW011",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TOW012",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TOW017",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "TRA001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRA004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRA009",
+      "weekly_moq": 224,
+      "min_level": 112,
+      "reorder_level": 112
+    },
+    {
+      "item_code": "TRI001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRI002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRI003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRI004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRO002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRO003",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TRO004",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRO006",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRO008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRO010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRO011",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TRO012",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TUB003",
+      "weekly_moq": 45,
+      "min_level": 23,
+      "reorder_level": 23
+    },
+    {
+      "item_code": "TUB004",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "TUB006",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "TUB007",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "TUB008",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "TUB009",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TUB011",
+      "weekly_moq": 63,
+      "min_level": 32,
+      "reorder_level": 32
+    },
+    {
+      "item_code": "TUB012",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "TUB014",
+      "weekly_moq": 17,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "TUB015",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "TUB018",
+      "weekly_moq": 25,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "TUB019",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "TUB020",
+      "weekly_moq": 15,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "TUB021",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "TUB022",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "TUB023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TUB024",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TUB026",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TUB028",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TUB036",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TUB041",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TUB042",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TUB045",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TUB046",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "TUB047",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "TUR001",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "TUR002",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "UND001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "UND002",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "UND003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "USP003",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "USP004",
+      "weekly_moq": 8,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "UVE001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "VAL009",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAL001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAL003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAL004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAL006",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAL007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAL008",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAL009",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "WAL010",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "WAL011",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "WAL014",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAL015",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAR001",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "WAS003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAS009",
+      "weekly_moq": 9,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "WAT001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAT002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAT005",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAT007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAT010",
+      "weekly_moq": 17,
+      "min_level": 9,
+      "reorder_level": 9
+    },
+    {
+      "item_code": "WAT013",
+      "weekly_moq": 100,
+      "min_level": 50,
+      "reorder_level": 50
+    },
+    {
+      "item_code": "WAT014",
+      "weekly_moq": 3,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "WAT015",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAT016",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAT017",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "WAT023",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAT026",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WAT028",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "WAT029",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WD4002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WEL002",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WEL004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WEL008",
+      "weekly_moq": 10,
+      "min_level": 5,
+      "reorder_level": 5
+    },
+    {
+      "item_code": "WEL009",
+      "weekly_moq": 120,
+      "min_level": 60,
+      "reorder_level": 60
+    },
+    {
+      "item_code": "WHE003",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "WHE004",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WHE005",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "WHE007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WHE009",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WHI001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WHI003",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "WHI005",
+      "weekly_moq": 15,
+      "min_level": 8,
+      "reorder_level": 8
+    },
+    {
+      "item_code": "WHI006",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "WHI007",
+      "weekly_moq": 11,
+      "min_level": 6,
+      "reorder_level": 6
+    },
+    {
+      "item_code": "WHI008",
+      "weekly_moq": 19,
+      "min_level": 10,
+      "reorder_level": 10
+    },
+    {
+      "item_code": "WIN001",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "WIN003",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WIN004",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "WIN005",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "WIN007",
+      "weekly_moq": 13,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "WIN008",
+      "weekly_moq": 5,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "WIN010",
+      "weekly_moq": 6,
+      "min_level": 3,
+      "reorder_level": 3
+    },
+    {
+      "item_code": "WIN011",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "WIR001",
+      "weekly_moq": 50,
+      "min_level": 25,
+      "reorder_level": 25
+    },
+    {
+      "item_code": "WIR002",
+      "weekly_moq": 14,
+      "min_level": 7,
+      "reorder_level": 7
+    },
+    {
+      "item_code": "WIR004",
+      "weekly_moq": 25,
+      "min_level": 13,
+      "reorder_level": 13
+    },
+    {
+      "item_code": "WOO003",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "WOO006",
+      "weekly_moq": 4,
+      "min_level": 2,
+      "reorder_level": 2
+    },
+    {
+      "item_code": "WOO007",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WOO008",
+      "weekly_moq": 38,
+      "min_level": 19,
+      "reorder_level": 19
+    },
+    {
+      "item_code": "WOO010",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WOO018",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WOO019",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "WOO020",
+      "weekly_moq": 0,
+      "min_level": 0,
+      "reorder_level": 0
+    },
+    {
+      "item_code": "YEL001",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ZED001",
+      "weekly_moq": 7,
+      "min_level": 4,
+      "reorder_level": 4
+    },
+    {
+      "item_code": "ZED002",
+      "weekly_moq": 2,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ZED003",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    },
+    {
+      "item_code": "ZVE001",
+      "weekly_moq": 1,
+      "min_level": 1,
+      "reorder_level": 1
+    }
+  ]
+}

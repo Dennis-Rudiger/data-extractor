@@ -1,0 +1,2042 @@
+code,description,qty_out
+ADA001,Adaptor Box 100x100x70,29.0
+ADA002,Adaptor Box 150x150x70,14.0
+ADA003,Adaptor Box 200x200x80,11.0
+ADA005,Adaptor Box 255x200x80mm,1.0
+ADA006,Adaptor Box 300x250x120mm,14.0
+AG1001,AG 1 1L,0.0
+ALL001,Allan Key Big,12.0
+ALL003,Stanley-Alluminium Level12'(300mm)BAOntMicAhSoc,1.0
+ALL004,Stanley-Alluminium Level 24''(600mmB) O-(Mb-A1S0),1.0
+ANG001,Angle Brackets,42.0
+ANG002,Angle Line 11/2x1/4,26.0
+ANG003,Angle Line 11/2x1/8,57.0
+ANG004,Angle Line 11/2x3/16,15.0
+ANG005,Angle Line 1x1/8,37.5
+ANG006,Angle Line 2x1/4,16.0
+ANG007,Angle Line 2x1/8,17.0
+ANG008,Angle Line 2x3/16,10.0
+ANG009,Angle Line 3/4x1/8,11.0
+ANG011,Angle Valve 1/2turn,190.0
+ANG012,Angle Valve 2way,9.0
+ANG014,Angle Valve 1/2turn lirlee,35.0
+AQU001,C/S/G Aqua Gloss Deep 4l,0.0
+ARA001,Lirlee Arabic Shower-LR9202,20.0
+ARA003,Araldite Glue,18.0
+ART001,Artist Brush Pkts,6.0
+ASI002,Asian Toilet,0.0
+AUT001,Automatic Voltage Regulator,0.0
+AXE001,Axe 2.5LB,0.0
+AXE003,Axe 3.5LB,7.0
+AXE004,Axe 3LB,5.0
+BAL004,Ball Cork 1,6.0
+BAL005,Ball Cork 1/2,0.0
+BAL010,Ball Fitting Bulb,4.0
+BAL011,Ball Valve 1 Pegler,9.0
+BAL012,Ball Valve 1/2 Pegler,9.0
+BAL013,Ball Valve 11/2 pegler,0.0
+BAL014,Ball Valve 3/4 Pegler,39.0
+BAL015,Ballast Dust Tonnes,66.0
+BAL016,Ballast Dust Truck,2.0
+BAL017,Ballast Dust Wheelbarrow,0.0
+BAL018,Ballast Mchele Tonnes,1.0
+BAL020,Ballast Mchele Wheelbarrow,12.0
+BAL022,Ballast Truck,2.0
+BAL024,Ball Valve 11/4 pegler,2.0
+BAL025,Ball Cork 3/4,20.0
+BAL026,Ball Valve 3/4-Lirlee,1.0
+BAM001,Bamburi Fundi,1.0
+BAM002,Bamburi Nguvu,738.0
+BAM004,Bamburi Powermax,310.0
+BAM005,Bamburi Tembo,16902.0
+BAR001,Barbed Wire 480m,6.0
+BAR002,Barbed Wire 610m,10.0
+BAR003,Barbed Wire 610m-Tej,17.0
+BAS003,Basco Primer Grey 1l,11.0
+BAS004,Basco Primer Grey 4l,10.0
+BAS005,Basco Red Oxide 1l,0.0
+BAS006,Basco Red Oxide 4l,0.0
+BAS007,Basco Sanding Sealer 1l,1.0
+BAS008,Basco Sanding Sealer 4l,0.0
+BAS009,Basco Silver Almn 1l,5.0
+BAS010,Basco Silver Almn 4l,0.0
+BAS011,Base Aquagloss 1 4l,1.0
+BAS012,Base Aquagloss 2 1l,0.0
+BAS013,Base Aquagloss 2 4l,0.0
+BAS017,Base Sg Red 1l,0.0
+BAS018,Base Sg Red 4l,1.0
+BAS019,Base Sg1 1l,10.0
+BAS020,Base Sg1 4l,12.0
+BAS021,Base Sg2 1l,2.0
+BAS022,Base Sg2 4l,7.0
+BAS023,Base Sg3 1l,0.0
+BAS024,Base Sg3 4l,1.0
+BAS025,Base Sg4 1l,3.0
+BAS026,Base Sg4 4l,3.0
+BAS027,Base Sg5 1l,9.0
+BAS028,Base Sg5 4l,2.0
+BAS029,Base Sg6 1l,1.0
+BAS030,Base Sg6 4l,0.0
+BAS031,Base Sgylw 1l,3.0
+BAS032,Base Sgylw 4l,5.0
+BAS033,Base Silicon 1 Ext 4l,4.0
+BAS034,Base Silicon 2 Ext 4l,0.0
+BAS035,Base Silicon Ext 1 1l,0.0
+BAS036,Base Silicon Ext 2 1l,0.0
+BAS037,Base Silicon Ext 3 1l,2.0
+BAS039,Base Vm Yox 1l,0.0
+BAS041,Base Vm1 1l,53.0
+BAS042,Base Vm1 20l,2.0
+BAS043,Base Vm1 4l,13.0
+BAS044,Base Vm2 1l,0.0
+BAS046,Base Vm2 4l,2.0
+BAS047,Base Vm3 1l,1.0
+BAS048,Base Vm3 4l,2.0
+BAS049,Base Vm4 1l,4.0
+BAS050,Base Vm4 4l,1.0
+BAS051,Base Vm5 1l,2.0
+BAS052,Base Vm5 4l,0.0
+BAS053,Base Vmylw 1l,1.0
+BAS054,Base Vmylw 4l,0.0
+BAS055,Base Vs1 1l,13.0
+BAS056,Base Vs1 20l,8.0
+BAS057,Base Vs1 4l,59.0
+BAS058,Base Vs2 1l,3.0
+BAS059,Base Vs2 20l,0.0
+BAS060,Base Vs2 4l,4.0
+BAS061,Base Vs3 4l,4.0
+BAS063,Base Vs4 1l,0.0
+BAS064,Base Vs4 4l,1.0
+BAS065,Base Vs5 1l,1.0
+BAS066,Base Vs5 4l,0.0
+BAS067,Basin & Pedestal,6.0
+BAS069,Basin Mixer Sprout,1.0
+BAS070,Basin Screw Small,10.0
+BAS073,Base Silicon Ext 3 4 Ll,6.0
+BAS076,Base VSYLW 4l,0.0
+BAS077,Basin Screw Big,17.0
+BAS078,Base Silicon Ext3 -20 L,3.0
+BED003,Bed Bolts 5,14.0
+BED004,Bed Bolts 6,14.0
+BIN001,Binding Wire 1kg,356.0
+BIN002,Binding Wire 17kg,158.0
+BIN003,Binding Wire 23kg,61.0
+BIN005,Binding Wire 15KG,791.0
+BLA001,Black Oxide,19.0
+BLA002,Black Pipe 1,0.5
+BLA003,Black Pipe 11/2,5.0
+BLA004,Black Pipe 11/4,0.0
+BLA005,Black Pipe 2,4.0
+BLA007,Black Pipe 3/4,7.5
+BLA008,Black Pipe 4,12.0
+BLA009,Black Sheet 8x4x14g,6.0
+BLA010,Black Sheet 8x4x16g,43.5
+BLA011,Black Sheet 8x4x18g(0.8mm),28.5
+BLA016,Blanking Cover Double,19.0
+BLA017,Blanking Cover Single,21.0
+BLA018,Black Pipe 1/2,6.0
+BLA019,BLACKSHEET 8X4X3MM,4.0
+BLO001,Blockboard 1,6.0
+BLO002,Blockboard 3/4,70.0
+BOD007,Bodyfiller 1/2kg,23.5
+BOD008,Bodyfiller 1kg,14.0
+BOD009,Body filler 2.5kg,31.0
+BOD010,Bodyfiller 4.5kg neo,20.0
+BOL004,Bolt & Nut 10x3,7.0
+BOL012,Bolt & Nut No 22,13.0
+BOS001,Boss White 200g,19.0
+BOS002,Boss White 400g,17.0
+BOS003,Bosch cutting Slim 4,30.0
+BOS004,Bosch Grinding 7,19.0
+BOS005,Bosch Grinding 4,10.0
+BOS006,Bosch Grinding 9,14.0
+BOS007,Bosch Cutting Slim 9,45.0
+BOS008,Bosch Circular Saw Blade7 40T,1.0
+BOS009,Bosch Circular Saw Blade 7 60T,1.0
+BOS010,Bosch Circular Saw Blade 9 40T,2.0
+BOS011,Bosch Circular Saw Blade 9 60T,2.0
+BOS012,Bosch Circular Saw Blade 10 60T,1.0
+BOS013,Bosch Flap Disc 4 P60,1.0
+BOS015,Bosch Sanding DiscP60,0.0
+BOS016,Bosch Cutting Diamond 4,9.0
+BOS017,Bosch Cutting Diamond 9,0.0
+BOS018,Bosch cutting Ceramic 4,4.0
+BOS019,Bosch Hole saw Pkt,1.0
+BOS020,Bosch Blade For Wood Set,1.0
+BOS021,Bosch Saw Blade Set,1.0
+BOS022,Bosch Drill Bit 3mm,1.0
+BOS023,Bosch Drill Bit 4mm,0.0
+BOS024,Bosch Drill Bit 5mm,1.0
+BOS025,Bosch Drill Bit 6mm,1.0
+BOS026,Bosch Bit Hard Metal 8mm,0.0
+BOS027,Bosch Router Bit Set 471,0.0
+BOS028,Bosch Bit Set 472,0.0
+BOS029,Bosch Sand Paper P60,0.0
+BOS030,Bosch Sand Paper P120,1.0
+BOS031,Bosch Router Bit Set 464,1.0
+BOS032,Bosch Hilt Bit 6mm,4.0
+BOS033,Bosch Hilt Bit 8mm,1.0
+BOS034,Bosch Hilt Bit 10mm,1.0
+BOS035,Bosch Accessory Set,4.0
+BOS036,Bosch Cordless Impact Drill,2.0
+BOS037,Bosch Drill 400w,2.0
+BOS038,Bosch Angle Grinder small- OLO,6.0
+BOS039,Bosch Angle Grinder Big -OPO,2.0
+BOS040,Bosch Straight Grinder,0.0
+BOS041,Bosch Jigsaw,1.0
+BOS042,Bosch Circular Hand saw,0.0
+BOS043,Bosch Orbital Sander,0.0
+BOS044,Bosch Industrial Router,0.0
+BOS045,Bosch Heat Gun 180,1.0
+BOS046,Bosch Laser Tape Measure -WOO,1.0
+BOS047,Bosch Laser Tape Measure S00,2.0
+BOS048,Bosch Optical Level,0.0
+BOS049,Bosch Laser Level 320,2.0
+BOS050,Bosch Screw Driver bit-2608521042,3.0
+BOS051,Bosch Angle polisher GPO14CE,0.0
+BOS052,Bosch Cordless Screw Driver Go kit,1.0
+BOT001,Bottle Trap 11/2 malpine,1.0
+BOT002,Bottle Trap 11/4 Malpine,0.0
+BOT007,"Magic Connector Plastic 11/2""",19.0
+BOT009,"Magic Connector Plastic 11/4""",7.0
+BOT010,Bottle Trap Viega 1 1/4,23.0
+BOT011,Bottle Trap Viega 11/2,52.0
+BOW001,Bow Saw,1.0
+BRA001,Construction Net Mtrs,28.0
+BRC001,Brc 610,3.0
+BRC003,Brc A142 Std,95.0
+BRC004,Brc A66,4.0
+BRC005,Brc A98 Std,54.0
+BRO001,Broom/Rake Handles,101.0
+BRU001,Brush Fixtec 1,71.0
+BRU002,Brush Fixtec 2,166.0
+BRU003,Brush Fixtec 3,113.0
+BRU004,Brush Fixtec 4,192.0
+BRU005,Brush Fixtec 6,236.0
+BRU007,Brush Premium 2,83.0
+BRU009,Brush Premium 3,63.0
+BRU010,Brush Premium 4,159.0
+BRU011,Brush Premium 5,19.0
+BRU012,Brush Premium 6,142.0
+BRU013,Brush Fixtec 5,53.0
+BRU014,"Brush Premium 2.5""",5.0
+BUC001,Buckets,209.0
+BUL001,Bulb Energy Saver Pin 7w,13.0
+BUL002,Bulb Energy Saver Pin 9w,29.0
+BUL003,Bulb Energy Saver Screw 7w,12.0
+BUL004,Bulb Eneryg Saver Screw 9w,35.0
+BUL006,Bulb Filament 4w,1.0
+BUL007,Bulb Holder Angle,1.0
+BUL008,Bulb Holder Ceiling Rose,13.0
+BUL009,Bulb Holder Pin,14.0
+BUL010,Bulb Holder Screw,7.0
+BUL011,Bulb Holder Straight,37.0
+BUL015,Bulk Head Fitting,0.0
+BUS002,"Bush JK 1/2""",134.0
+BUS003,"Bush JK 11/2""",36.0
+BUS004,"Bush JK 11/4""",4.0
+BUS005,"Bush JK 3/4""",0.0
+BUS007,Bush Ball 11/2x4,5.0
+BUS008,Bush Ball 11/4x4,10.0
+BUS009,Bush Ball 1x4,55.0
+BUS010,Bush Ball 3/4x4,47.0
+BUS015,Bush Smooth 1,35.0
+BUS016,Bush Smooth 11/2,24.0
+BUS017,Bush Smooth 11/4,19.0
+BUS018,Bush Smooth 3/4,67.0
+BUS019,Bush smooth 1/2,62.0
+BUT005,Butterfly Bush 3/4,20.0
+BUT006,"Butterfly Bush 1"" imported",136.0
+BUT007,"Butterfly Bush 3/4"" imported",60.0
+C/ 002,C/ Roofmaster Beetle Green 4,0.0
+C/ 004,C/ Transeal 1l,5.0
+C/ 005,C/ Transeal 4l,35.0
+C/E001,C/S/G Aqua Glow Accent 4l,2.0
+C/E004,C/E Covermatt White 1l,52.0
+C/E005,C/E Covermatt White 20l,384.0
+C/E006,C/E Covermatt White 4l,213.0
+C/E007,C/E Matt Accent Base 1l,16.0
+C/E008,C/E Matt Accent Base 20l,9.0
+C/E009,C/E Matt Accent Base 4l,12.0
+C/E012,C/E Matt Black 1l,5.0
+C/E014,C/E Matt Black 4l,6.0
+C/E015,C/E Matt Deep Base 1l,3.0
+C/E016,C/E Matt Deep Base 20l,0.0
+C/E017,C/E Matt Deep Base 4l,2.0
+C/E018,C/E Matt Pastel Base 1l,41.0
+C/E019,C/E Matt Pastel Base 20l,80.0
+C/E020,C/E Matt Pastel Base 4l,85.0
+C/E025,C/E Silicon Accent Base 1l,33.0
+C/E026,C/E Silicon Accent Base 20l,8.0
+C/E027,C/E Silicon Accent Base 4l,42.0
+C/E028,C/E Silicon B/White 1l,2.0
+C/E029,C/E Silicon B/White 20l,21.0
+C/E030,C/E Silicon B/White 4l,19.0
+C/E031,C/E Silicon Black 1l,6.0
+C/E032,C/E Silicon Black 4l,8.0
+C/E033,C/E Silicon Deep Base 1l,17.0
+C/E034,C/E Silicon Deep Base 20l,8.0
+C/E035,C/E Silicon Deep Base 4l,14.0
+C/E036,C/E Silicon Pastel Base 1l,41.0
+C/E037,C/E Silicon Pastel Base 20l,41.0
+C/E038,C/E Silicon Pastel Base 4l,81.0
+C/E040,C/E Silk Accent Base 1l,21.0
+C/E041,C/E Silk Accent Base 20l,1.0
+C/E042,C/E Silk Accent Base 4l,25.0
+C/E043,C/E Silk Brill White 20l,19.0
+C/E044,C/E Silk Deep Base 1l,12.0
+C/E045,C/E Silk Deep Base 20l,7.0
+C/E046,C/E Silk Deep Base 4l,18.0
+C/E047,C/E Silk Pastel Base 1l,81.0
+C/E048,C/E Silk Pastel Base 20l,93.0
+C/E049,C/E Silk Pastel Base 4l,230.0
+C/S002,C/S/G Accent Base 4l,97.0
+C/S003,C/S/G Accent Base 1l,74.0
+C/S009,C/S/G Black 1l,50.0
+C/S010,C/S/G Black BITUMINOUS 4l,35.0
+C/S012,C/S/G C/Varnish H/G 1l,39.0
+C/S013,C/S/G C/Varnish H/G 4l,72.0
+C/S014,C/S/G Clear Varnish Matt 1l,7.0
+C/S016,C/S/G Clear Varnish Nc 4l,6.0
+C/S017,C/S/G Deep Base 1l,17.0
+C/S018,C/S/G Deep Base 4l,22.0
+C/S020,C/S/G Eggshell Accent Base 1l,6.0
+C/S021,C/S/G Eggshell Accent Base 4l,35.0
+C/S022,C/S/G Eggshell Black 1l,1.0
+C/S023,C/S/G Eggshell Black 4l,3.0
+C/S024,C/S/G Eggshell Deep Base 1l,3.0
+C/S025,C/S/G Eggshell Deep Base 4l,3.0
+C/S026,C/S/G Eggshell Pastel 1l,3.0
+C/S027,C/S/G Eggshell Pastel 4l,14.0
+C/S028,C/S/G Floor Grey 4l,2.0
+C/S029,C/S/G Floor Paint Red Oxide 1l,7.0
+C/S031,C/S/G Floor Paint Red Oxide 4L,8.0
+C/S037,C/S/G Clear Varnish Matt 4l,16.0
+C/S038,C/S/G Matt Finish Black 1l,10.0
+C/S039,C/S/G Matt Finish Black 4l,8.0
+C/S044,C/S/G Nc Clear Lacquer 4l,1.0
+C/S046,C/S/G Pastel Base 1l,91.0
+C/S047,C/S/G Pastel Base 4l,184.0
+C/S048,C/S/G Roadline White 4l,13.0
+C/S050,C/S/G Roadline Yellow 4l,3.0
+C/S053,C/S/G Roof Green 4l,0.0
+C/S057,C/S/G Roofmaster Clear Base,36.0
+C/S058,C/S/G Ruff & Tuff 30l-Normal,396.0
+C/S061,C/S/G Sanding Sealer 1l,34.0
+C/S062,C/S/G Sanding Sealer 4l,100.0
+C/S067,C/S/G Thinner For Roadline 1l,0.0
+C/S068,C/S/G Thinner For Roadline 5L,10.0
+C/S069,C/S/G Twopack Thinner 1l,1.0
+C/S070,C/S/G Twopack Thinner 5l,28.0
+C/S071,C/S/G Twopack V/Gloss 1l,13.0
+C/S072,C/S/G Twopack V/Gloss 4l,38.0
+C/S074,C/S/G Twopack V/Matt 4l,1.0
+C/S075,C/S/G Undercoat 1l,34.0
+C/S076,C/S/G Undercoat 4l,85.0
+C/S077,C/S/G Varnish Mahogany 1L,20.0
+C/S078,C/S/G Vesta Black 1l,5.0
+C/S079,C/S/G Vesta Black 4l,4.0
+C/S080,C/S/G Vesta Floor Red 4l,2.0
+C/S081,C/S/G Vesta Grey Oxide 1l-primer,47.0
+C/S083,C/S/G Vesta Red Oxide 1l,2.0
+C/S084,C/S/G Vesta Red Oxide 4l,1.0
+C/S085,C/S/G Vesta Roof Green 4l,0.0
+C/S086,C/S/G Vesta White 1l,3.0
+C/S087,C/S/G Vesta White 4l,1.0
+C/S089,C/S/G Wood Primer White 4l,4.0
+CAB001,Cable Clips 10mm,15.0
+CAB002,Cable Clips 12mm,8.0
+CAB003,Cable Clips 9mm,0.0
+CAB005,Cable Clips Round 10mm,3.0
+CAB006,Cable Ties 10,9.0
+CAB007,Cable Ties 12,12.0
+CAB008,Cable Ties 14,15.0
+CAB009,Cable Ties 6,7.0
+CAB010,Cable Ties 8,12.0
+CAB011,Cable Ties Pcs,291.0
+CAB013,"CABLE TIES 4""",0.0
+CAB014,Cable Clips 8mm,6.0
+CAL001,Caliper,0.0
+CAN001,Canvas Fire hose 3x30m,2.0
+CAR004,Carpet Brush,15.0
+CEI001,Ceiling Board Flowered,36.0
+CEI002,Ceiling Board Plain,59.0
+CEM001,Cement In Kgs,156.5
+CEN001,Center Stopper,66.0
+CER002,Cerrazo 1l,7.0
+CER003,Cerrazo 5l,10.0
+CES002,C/E Silk Bril White 1Ltr,6.0
+CES003,C/E Silk Bril White 4 ltr,16.0
+CEV002,C/S/G Vesta Primer Grey Oxide 4l,60.0
+CHA001,Chain 1/4,25.0
+CHA002,Chain 3/16,13.0
+CHA005,Chain Link 4ft,9.0
+CHA006,Chain Link 5ft,15.0
+CHA007,Chain Link 6ft,14.0
+CHA008,Chain Link 7ft,10.0
+CHA009,Chain Link 8ft,14.0
+CHA011,Chair Rubber Square 1,1.0
+CHA012,Chair Rubber Square 2,1.0
+CHA013,Chair Rubber Square 3/4,2.0
+CHA014,Chalk pcs,19.0
+CHA015,Chalk Line,9.0
+CHA016,Chalk Carton,16.0
+CHA017,Chalk Pkt,0.0
+CHE001,Chequered Plate 16g,6.0
+CHE002,Chequered Plate 2mm,2.0
+CHE004,Chequered Plate 4mm,33.0
+CHI001,Chicken Wire 1/2x30 MTRS,88.5
+CHI004,Chicken Wire Roll 1/2x30,78.0
+CHI005,Chicken Wire Roll 1/2x6FT,4.0
+CHI006,MDF Particle White,2.0
+CHI008,Chisel 1/2,5.0
+CHI009,Chisel 3/4,9.0
+CHR001,Chrome Brackets 1,52.0
+CHR002,Chrome Brackets 1/2,0.0
+CHR003,Chrome Brackets 3/4,22.0
+CHR004,Chrome Pipe 1,23.0
+CHR005,Chrome Pipe 3/4,3.0
+CIR002,Circular Blade 4.5,19.0
+CIR003,Circular Blade 7,10.0
+CIR004,Circular Blade 9,23.0
+CIR006,Circular Box 2way,1.0
+CIR007,Circular Box 3way 20mm,164.0
+CIR008,Circular Box 3way 25mm,74.0
+CIR009,Circular Box 4way 20mm,1728.0
+CIR010,Circular Box 4way 25mm,205.0
+CIR011,Circular Box 1 way 20MM,26.0
+CIS004,Cistern High Lever,3.0
+CIS005,Cistern Low Lever,6.0
+CIS006,Cistern Top Flush,13.0
+CLA001,Claw Bar 4ft,4.0
+CLA002,Claw Bar 5ft,16.0
+CLA003,Claw Bar 6ft,8.0
+CLA004,Stanley-Claw Hammer 160z (453g)f/g,1.0
+CLA005,Stanley-Claw Hammer 20oz,2.0
+CLA006,Claw Hammer 27mm,10.0
+CLE004,Clear Tape Big,20.0
+CLE005,Clear Tape 2X20mts,0.0
+CLO003,Close Couple Fitting Pvc,3.0
+CLO004,Close Couple Set,15.0
+CLO006,Cloth Line,12.0
+COA001,Coast Calcium,93.0
+COA002,Coat Hook Double,4.0
+COA003,Coat Hook Single,3.0
+COF001,Coffee Tray Roll,4.0
+COF002,Coffee Tray Mtrs,94.5
+COL001,Colorant Ext Orange,0.0
+COL002,Colorant Ext Red,0.0
+COL003,Colorant Ext Yellow,0.0
+COL004,Colorant Fast Black,3.0
+COL005,Colorant Fast Blue,0.0
+COL006,Colorant Fast Green,0.0
+COL007,Colorant Fast Magenta,0.0
+COL008,Colorant Fast Red Oxide,0.0
+COL009,Colorant Fast Violet,0.0
+COL010,Colorant Fast Yellow Oxide,7.0
+COL011,Colorant Ht Blue,1.0
+COL012,Colorant Ht Green,0.0
+COL013,Colorant Ht White,2.0
+COL014,Colorant Int Red,0.0
+COL015,Colorant Int Yellow,2.0
+COL016,Colorant Tmed Yellow,1.0
+COM001,Complete Hinges 1,62.0
+CON006,Conduit Metro 20mm,5708.0
+CON007,Conduit Metro 25mm,1814.0
+CON008,Conduit Metro 32mm,434.0
+CON009,Conduit Metro 38mm,68.0
+CON010,Conduit Metro 50mm,106.0
+CON012,Construction Net,30.0
+CON013,Consumer Unit 10way,3.0
+CON014,Consumer Unit 14way,0.0
+CON015,Consumer Unit 4way,7.0
+CON016,Consumer Unit 6way,1.0
+CON017,Consumer Unit 8way,10.0
+CON021,Conta 1/2kg,11.0
+CON022,Conta 1/4kg,14.0
+CON023,Conta 100ml,31.0
+CON024,Conta 1kg,49.0
+CON025,Conta 4kg,55.0
+CON026,Conta 50ml,9.0
+CON028,Consumer Unit 12way,5.0
+COO002,Cooker Unit Socket,3.0
+COO003,Cooker Connector,3.0
+COO004,Cooker Socket Grey,0.0
+COO005,Cooker Socket Black,0.0
+COO006,Cooker Socket Gold,0.0
+COR001,Cornace Super Fix 2kg,14.0
+COR003,Corner Strip,1.0
+COR004,Corner Strip Aluminium,186.0
+COR005,Corner Strip Cream,11.0
+COR006,Corner Strip Gold,2.0
+COR007,Corner Strip L Shaped,414.0
+COR008,Corner Strip Plastic White,46.0
+COR010,Gypsum Corner Tape,100.0
+COR011,Cornace Super Fix 5kg,7.0
+COR012,Cordless Spray Gun Set-(FCSG20LFBXO-1M)AS,0.0
+COU001,Counter Sunk Screw 1,3.0
+COU002,Counter Sunk Screw 1.5,28.0
+COU004,Counter Sunk Screw 2,7.0
+COU007,Coupler Threaded 20mm,182.0
+COU008,Coupler Threaded 25mm,100.0
+COU009,Couplers 20mm,11778.0
+COU010,Couplers 25mm,2779.0
+COU011,Couplers 32mm,804.0
+COU012,Couplers 38mm,6.0
+COU013,Couplers 50mm,120.0
+CRO001,Crown Colorant B,62.0
+CRO002,Crown Colorant C,15.0
+CRO003,Crown Colorant D,6.0
+CRO004,Crown Colorant E,7.0
+CRO005,Crown Colorant Ext Orange Us,0.0
+CRO006,Crown Colorant High Yellow-QS,1.0
+CRO007,Crown Colorant Kx,16.0
+CRO008,Crown Colorant M/Yellow- T,5.0
+CRO009,Crown Colorant R,1.0
+CRO010,Crown Colorant Raw Umber-L,6.0
+CRO011,Crown Colorant Red Oxide-F,7.0
+CRO012,Crown Colorant Rn,4.0
+CRO013,Crown Colorant V,9.5
+CRO014,Crown Colorant Violet-Zs,1.0
+CRO015,Crown Colorant Yellow An,3.0
+CRO016,Crown Colorant Yellow Axx,2.0
+CRO024,Crown Wallputty 25kg,841.0
+CRO025,Crown Wallputty 1kg,246.0
+CRO026,C/S/G Ruff & Tuff Stoneless,8.0
+CSG002,C/S/G Aqua Glow B/W 4l,8.0
+CSG003,C/E Vesta White 20l,1.0
+CSG004,C/S/G Varnish Mahogany 4L,11.0
+CSG005,C/S/G Black 4l,27.0
+CSG006,C/S/G Roadline Black 4l,14.0
+CSG007,C/S/G Zinc phophate Grey 4 l,1.0
+CSG009,C/S/G Ruff & Tuff 30l-White Base,144.0
+CSG010,C/S/G Vesta Red Oxide 4l-Primer,0.0
+CSG011,C/S/G Ruff & Tuff 30l-Clear Base,21.0
+CSG013,C/S/G Vesta Undercoat 1 Ltr,0.0
+CSG015,C/S/G Ruff & Tuff 5l-Normal,2.0
+CUP001,Cup Washers,0.0
+CUP002,Cup Wire Brush twisted,2.0
+CUP003,Cup Wire Brush smooth,5.0
+CUR001,Curtain Balls Black,8.0
+CUR002,Curtain Balls Copper,1.0
+CUR003,Curtain Balls Gold,2.0
+CUR004,Curtain Balls Silver,9.0
+CUR005,Curtain Balls White,24.0
+CUR007,Curtain Brackets Copper,7.0
+CUR008,Curtain Brackets White,8.0
+CUR009,Curtain Caps Black,0.0
+CUR010,Curtain Caps Copper,0.0
+CUR011,Curtain Caps Gold,0.0
+CUR012,Curtain Caps Silver,0.0
+CUR013,Curtain Caps White,2.0
+CUR017,Curtain Ring,20.0
+CUR023,Curtain Rod Jk 2m Bronze,1.0
+CUR024,Curtain Rod Jk 2m Gold,1.0
+CUR025,Curtain Rod Jk 2m White,0.0
+CUR027,Curtain Rod Jk 3m White,0.0
+CUR028,Curtain Rod Jk 6m Black,1.0
+CUR029,Curtain Rod Jk 6m White,4.0
+CUT001,Cut Out Double,4.0
+CUT002,Cut Out Single,1.0
+CUT006,Cutting Disk Diamond 4,90.0
+CUT007,Cutting Disk Diamond 7,27.0
+CUT008,Cutting Disk Diamond 9,74.0
+CUT009,Cutting Disk Metal 4,5.0
+CUT010,Grinding Disk 7.,126.0
+CUT011,Cutting Disk Metal 9,167.0
+CUT012,Cutting Disk Slim 4,226.0
+CUT013,Cutting Disk Slim 9,1073.0
+CUT014,Cutting Disk Stone 7,0.0
+CUT015,Cutting Disk Metal 7,9.0
+CUT016,Cutting Disk Damond Continuous 4,4.0
+CUT017,Cutting Disk Damond Continuous 7,0.0
+CUT018,Cutting Disk Damond Continuous 9,3.0
+CYL001,CYLINDER BIG,1.0
+CYP001,Syphone,7.0
+CYP003,Syphon Top Flush,9.0
+CYP005,Cypress 2x1,45.0
+CYP006,Cypress 2x2,0.0
+CYP011,Cypress 6x2,0.0
+CYP012,Cypress 8x1,7.0
+CYP014,Cypress Cornice,0.0
+CYP016,Cypress Quarter Round,0.0
+CYP019,Cyphone Side Flash,2.0
+D 1001,D 10,33665.0
+D 1002,D 12,12660.0
+D 1003,D 16,5981.0
+D 2001,D 20,2418.0
+D 2002,D 25,375.0
+D 3001,D 32,106.0
+D 8001,D 8,22231.0
+D/E001,D/E Matt Black 1l,2.0
+D/E002,D/E Matt Black 4l,9.0
+D/E004,D/E Matt Brilliant White 1l,4.0
+D/E008,D/E Sf Brill White 20l,43.0
+D/E009,D/E Sf Brill White 4l,43.0
+D/E010,D/E Sf Brilliant White 1l,13.0
+D/E014,D/E Silk White 1l,12.0
+D/E015,D/E Silk White 4l,9.0
+D/G001,D/G Aquagloss White 1l,1.0
+D/G003,D/G Black 4l,4.0
+D/G004,D/G Clear Gloss Varnish 1l,0.0
+D/G005,D/G Clear Gloss Varnish 4l,5.0
+D/G007,D/G Matt Primer Grey 4l,0.0
+D/G008,D/G Nc Lacquer 1l,4.0
+D/G010,D/G Undercoat 1l,4.0
+D/R001,D/Real Roc White 20l,2.0
+D/S003,D/Sanding Sealer 1l,2.0
+D/S004,D/Sanding Sealer 4l,14.0
+D10004,D 10 Accurate,140.0
+D12004,D 12 Accurate,80.0
+D16003,D 16-Kifaru,733.0
+D16004,D 16 Accurate,28.0
+D25001,D 25- Kifaru,80.0
+D8A001,D 8 Accurate,150.0
+DAM001,Variance/DG Goods Sold,9.0
+DAR001,Dari,8.0
+DAT001,Data Socket Grey,0.0
+DAT002,Data Socket Black,0.0
+DAY010,Waterpump Dayliff 0.5HP,2.0
+DAY011,Dayliff Chlorine65-5kgs,2.0
+DEC001,Decra Ridges,0.0
+DEC002,Decra Roofing Sheet,0.0
+DEC003,Decra Valleys,0.0
+DES003,D/E Sf Soft White 1tr,0.0
+DEW001,Dewalt Angle Grinder2200w-230mm,1.0
+DEW002,Dewalt DrillDriver 18v-1.5Ah,1.0
+DEW003,DewaltAngle Grinder220W-180mm,1.0
+DEW004,Dewalt Blower800W,0.0
+DEW005,Dewalt Paddle Switch 1200w-115mm,1.0
+DEW006,Dewalt Circula Saw 1500w-190mm,1.0
+DEW007,Dewalt std HeatGun 1800w,0.0
+DEW008,Dewalt Grinder 4010,0.0
+DEW009,Dewalt Grinder 4120,0.0
+DEW010,"Dewalt Grinding Disk4""",1.0
+DEW011,"Dewalt Slim cutting4""",4.0
+DEW012,Dewalt Hilt 6mm,1.0
+DEW013,Dewalt Hilt 14mm,2.0
+DEW014,Dewalt Hilt 18mm,0.0
+DEW015,Dewalt Hilt 20mm,2.0
+DEW016,Dewalt Hilt Elite 12mm-DT8935-QZ,1.0
+DEW017,Dewalt Hilt Bit 7mm,3.0
+DEW018,Dewalt Hilt Bit 6508- 8mm,0.0
+DEW019,Dewalt Hilt Bit6556-6mm,1.0
+DEW020,Dewalt Diamond 41/2- 47450hp,1.0
+DEW021,Dewalt Diamond 9-47900hp,1.0
+DEW022,Dewalt Diamond Cup 4-4772t-AE,1.0
+DEW023,"Dewalt Diamond 7""-47702HP",1.0
+DEW024,"Dewalt Diamond 9"" -47902 HP",3.0
+DEW025,"Dewalt Diamond 4"" dx3721",0.0
+DEW026,Dewalt Drill Driver DC077152B,1.0
+DEW027,Dewalt Sander DWE6423-B5,0.0
+DEW028,Dewalt Laser DW088K-XJ,1.0
+DEW029,Dewalt Hammer chuck d25033c-B5,0.0
+DEW030,Dewalt Drill Driver DCD710D2-B,0.0
+DEW031,Dewalt Diamond Cup41/2 4774T-AE,0.0
+DGB001,D/G White 4L,8.0
+DGC001,D/G Clear High Gloss 1 Ltr,3.0
+DGW001,D/G White 1l,6.0
+DHO001,Dhobi Sink,2.0
+DIG002,Dewalt Digital LED Heat Gun,2.0
+DIS001,Distribution Board 4way,1.0
+DIS002,Distribution Board 8way,1.0
+DOO001,Door Bell Ding Dong,2.0
+DOO002,Door Bell Switch,1.0
+DOO005,Door Stopper,7.0
+DOO006,Door Stopper Steel,9.0
+DOO014,Door Bell Switch water Proof,0.0
+DOV001,Dovetail Tank 1000l Rect,0.0
+DOV007,Dovetail Tank 10000l,1.0
+DOV009,Dovetail Tank 1500l,0.0
+DOV010,Dovetail Tank 2000l,2.0
+DOV011,Dovetail Tank 3000l,0.0
+DOV012,Dovetail Tank 5000l,1.0
+DOV013,Dovetail Tank 2500l,2.0
+DOW001,Down Stoppers,103.0
+DOW002,Down Lighter Glass 6w,0.0
+DOW003,Down lighter 3w,0.0
+DPC001,Dpc,174.0
+DR 002,Dr Fixit Gapseal Tape 10m,6.0
+DR 003,Dr Fixit Gapseal Tape Mtrs,18.0
+DR 004,Dr Fixit Pidiproof 1l,31.0
+DR 005,Dr Fixit Pidiproof 20l,15.0
+DR 006,Dr Fixit Pidiproof 5l,7.0
+DR 007,Dr Fixit Superlatex 1l,32.0
+DR 008,Dr Fixit Superlatex 5kg,49.0
+DR 009,Dr Fixit Sureseal 1kg,16.0
+DR 010,Dr Fixit Sureseal 5kg,12.0
+DR 011,Dr Fixit Modern Tile Adhesive 25kg,1506.0
+DR 012,Dr Fixit Waterproof Powder,1193.0
+DRA001,Drain Opener 1kg,3.0
+DRA002,Drain Opener 500g,8.0
+DRA004,Drawer Handle Big,0.0
+DRA005,Drawer Handle Small Gold,3.0
+DRA006,Drawer Handle Small Silver,6.0
+DRA008,Drawer Handles Brass 9,47.0
+DRA010,Drawer Handles Silver 9,2.0
+DRA011,Drawer Knob Big,0.0
+DRA016,Drawer Lock Evergood,14.0
+DRA017,Drawer Lock Moon,1.0
+DRA022,Drawer Rail Hydro 14,24.0
+DRA023,Drawer Rail D/Extension 16,13.0
+DRA024,Drawer Rail Hydro 18,29.0
+DRA025,Drawer Rail Hydro 20,2.0
+DRA026,Drawer Rail Hydro 12,2.0
+DRA028,Drawer Handles Brass 8,0.0
+DRI002,Drill Bit 10mm,7.0
+DRI003,Drill Bit 11mm,0.0
+DRI004,Drill Bit 12mm,7.0
+DRI005,Drill Bit 14mm,1.0
+DRI006,Drill Bit 16mm,8.0
+DRI008,Drill Bit 3.5mm,20.0
+DRI009,Drill Bit 3/16mm,4.0
+DRI010,Drill Bit 3mm,22.0
+DRI012,Drill Bit 4mm,20.0
+DRI013,Drill Bit 5mm,10.0
+DRI014,Drill Bit 6mm,30.0
+DRI016,Drill Bit 8mm,14.0
+DRI017,Drill Bit 9mm,0.0
+DRI018,Drill Bit Hilt 10mm,0.0
+DRI022,Drill Bit Hilt 8mm,1.0
+DRU002,Drum 220l,10.0
+DRU004,Drum 240l,1.0
+DU 001,Du Acrylic Sealer 4L,7.0
+DUC001,Duct Tape,4.0
+DUR001,Dura Paint Remover 1l,4.0
+DUR002,Dura Paint Remover 5l,2.0
+DUR003,Dura Skim Coat 1kg,33.0
+DUR004,Dura Skim Coat 25kg,232.0
+DUS001,Dust Mask Pkt,9.0
+DUS002,Dust Mask Plastic,7.0
+DUS003,Dust Mask Pcs,45.0
+EAR001,Earthrod 4FT,4.0
+EAR002,Earthrod 5FT,5.0
+ELE001,Elec Bend 20mm,165.0
+ELE002,Elec Bend 25mm,174.0
+ELE003,Elec Bend 32mm,266.0
+ELE004,Elec Bend 38mm,35.0
+ELE005,Elec Bend 50mm,74.0
+ELE006,Elec Cable Flex 1.5mm mtrs,140.0
+ELE007,Elec Cable Flex 2.5mm mtrs,141.0
+ELE008,Elec Cable Single 1.5mm red mtrs,134.0
+ELE009,Elec Cable Single 1.5mm Black Roll,9.0
+ELE010,Elec Cable Single 1.5mm Green Roll,7.0
+ELE011,Elec Cable Single 1.5mm Red Roll,17.0
+ELE013,Elec Cable Single 2.5mm Red mtrs,231.0
+ELE014,Elec Cable Single 2.5mm Black mtrs,225.0
+ELE015,Elec Cable Single 2.5mm Green Roll,5.0
+ELE016,Elec Cable Single 2.5mm Red Roll,7.0
+ELE018,Elec Cable Twin 1.5mm Roll Grey,7.0
+ELE019,Elec Cable Twin 2.5mm Roll,6.0
+ELE026,Elec Top Plug,66.0
+ELE028,Electric Starter,3.0
+ELE030,Element Shower,7.0
+ELE031,Elec Cable Single 1.5mm Black mtrs,114.0
+ELE032,Elec Cable Single 1.5mm Green mtrs,62.0
+ELE033,Elec Cable Single 2.5mm Black Roll,7.0
+ELE034,Elec Cable Single 2.5mm Green mtrs,176.0
+ELE035,Elec Cable Twin 1.5mm Mtrs,319.0
+ELE036,Elec Cable Twin 2.5mm Mtrs,481.0
+ELE037,ELEC CABLE FLEX 1.5MM ROLL,4.0
+ELE038,ELEC CABLE FLEX 2.5MM ROLL,2.0
+ELE040,Elec Cable 6mm3 core amoured,83.0
+ELE041,Elec Cable 6mm 2core amoured-16mBmOMAS,100.0
+ELE042,Elec Cable 2core amoured-10mm,160.0
+ELE043,Elec Cable 6mm 2core amoured-2.5mBmOMAS,120.0
+ELE044,Elec cable Single core 10mm,30.0
+ELE045,Electric Sprayer630WTS-(FSG6301-BBSO)MAS,0.0
+EME001,Emery Cloth No. 0,492.0
+EXP002,Expanded Metal Medium,9.0
+EXT004,Extension Ring,0.0
+EXT005,Extension Socket 4way,2.0
+EXT006,Extension Socket 6way,4.0
+EYE004,Eye Hook No 2,15.0
+EYE007,Eye Hook No 6,16.0
+EYE008,Eye Hook No 8,102.0
+FEN001,Fencing Posts,8.0
+FEV003,Fevicol Pur 150g,2.0
+FEV004,Fevicol Pur 1kg,24.0
+FEV005,Fevicol Pur 500gm,34.0
+FEV006,Fevicol Pur 70gm,2.0
+FIB002,Fibre Cement Board 6mm,6.0
+FIL001,File 10 jk,27.0
+FIL003,File 8 jk,29.0
+FIL004,File Round jk,0.0
+FIL005,File Saw J.K,20.0
+FLA001,Flap Disk 4,3.0
+FLA002,Flap Disk 7,10.0
+FLA003,Flush Door,3.0
+FLA007,Flusher Plugs pcs,800.0
+FLA008,Flashing Handle H/G,4.0
+FLA009,Flashing Handle L/G,3.0
+FLA010,Flat 11/2x1/4,30.0
+FLA011,Flat 11/2x1/8,64.5
+FLA013,Flat 1x1/4,35.0
+FLA014,Flat 1x1/8,68.0
+FLA015,Flat 2x1/4,14.0
+FLA016,Flat 2x1/8,25.5
+FLA017,Flat 3/4x1/4,0.0
+FLA018,Flat 3/4x1/8,64.0
+FLA019,Bosch Flap Disc 4 P40,5.0
+FLA020,Bosch Flap Disc 4 P 120,5.0
+FLE001,Flex Conduit 25mm Mtrs,20.0
+FLE002,Flex Tube Metallic 1/2x1.5ft,128.0
+FLE004,Flex Tube Plastic 1/2x2ft,21.0
+FLE007,Flex Tube Plastic 1/2x1.5ft,1.0
+FLE008,Flex Tube 1/2x1ft,11.0
+FLE009,Flex metallic Tube 1/2x2ft,41.0
+FLE010,Flex Tube 11/2x1/2 M/F,1.0
+FLE011,Flex Tube Plastic 3/4x1.5ft,3.0
+FLE012,Flex Tube Metallic 1/2x1ft,41.0
+FLE013,Flex conduit 20mm Mtrs,58.0
+FLE014,Flex conduit Roll 20mm black,1.0
+FLE015,Flex conduit Roll 25mm black,3.0
+FLE016,Flex conduit Roll 20mm White,0.0
+FLE017,Flex conduit Roll 25mm white,3.0
+FLO001,Float Switch,3.0
+FLO004,Floor Drain,7.0
+FLO006,Flourescent Fitting 2ft,12.0
+FLO007,Flourescent Fitting 4ft,12.0
+FLU001,Flusher Plug pkts,15.0
+FOO003,Foot Valve 1 peggler,6.0
+FOO004,Foot Valve 1/2,2.0
+FOO005,Foot Valve 11/2,0.0
+FOO007,Foot Valve 3/4 pegler,3.0
+FOO008,Foot Valve 3/4,7.0
+FOO009,Foot Valve 1,3.0
+FOR001,Force Pump small,3.0
+FOR002,Fork Jembe 1.5LB,6.0
+FOR003,Fork Jembe 2.5LB,12.0
+FOR004,Fork Jembe 3.5LB,17.0
+FOR006,Force Pump Big,1.0
+FRI001,Fridge Guard,0.0
+GAL003,Galvanised Wire Kgs,1.8
+GAL006,Galvanized Wire 2mm,1.0
+GAR007,GARDENA HOSE CONNECTOR,1.0
+GAT002,Gate Valve 1,21.0
+GAT003,Gate Valve 1/2,17.0
+GAT004,Gate Valve 11/2,6.0
+GAT005,Gate Valve 11/4,20.0
+GAT006,Gate Valve 2 pegler,3.0
+GAT007,Gate Valve 3/4,105.0
+GAT008,Gate Valve 1 pegler,53.0
+GI 001,Gi Back Nut 1,28.0
+GI 002,Gi Back Nut 1/2,6.0
+GI 004,Gi Back Nut 11/4,3.0
+GI 005,Gi Back Nut 2,6.0
+GI 006,Gi Back Nut 3/4,36.0
+GI 007,Gi Barrel Nipple 1,12.0
+GI 008,Gi Barrel Nipple 1/2,47.0
+GI 009,Gi Barrel Nipple 11/2,1.0
+GI 010,Gi Barrel Nipple 11/4,5.0
+GI 011,Gi Barrel Nipple 2,0.0
+GI 012,Gi Barrel Nipple 3/4,12.0
+GI 013,Gi Bend 1,0.0
+GI 014,Gi Bend 1/2,3.0
+GI 015,Gi Bend 11/2,1.0
+GI 016,Gi Bend 11/4,0.0
+GI 018,Gi Bend 3/4,1.0
+GI 019,Gi Cup Female 1,6.0
+GI 020,Gi Cup Female 1/2,349.0
+GI 021,Gi Cup Female 11/2,1.0
+GI 023,Gi Cup Female 3/4,18.0
+GI 024,Gi Elbow 1,13.0
+GI 025,Gi Elbow 1/2,41.0
+GI 026,Gi Elbow 11/2,0.0
+GI 027,Gi Elbow 11/4,0.0
+GI 028,Gi Elbow 2,2.0
+GI 029,Gi Elbow 3/4,14.0
+GI 030,Gi Hex Nipple 1,7.0
+GI 031,Gi Hex Nipple 1/2,472.0
+GI 032,Gi Hex Nipple 11/2,7.0
+GI 033,Gi Hex Nipple 11/4,9.0
+GI 034,Gi Hex Nipple 2,4.0
+GI 035,Gi Hex Nipple 3/4,40.0
+GI 036,Gi Long Thread Nipple 1,15.0
+GI 037,Gi Long Thread Nipple 1/2,7.0
+GI 038,Gi Long Thread Nipple 11/2,6.0
+GI 039,Gi Long Thread Nipple 11/4,2.0
+GI 040,Gi Long Thread Nipple 2,1.0
+GI 041,Gi Long Thread Nipple 3/4,23.0
+GI 042,Gi Plug Male 1,6.0
+GI 043,Gi Plug Male 1/2,173.0
+GI 045,Gi Plug Male 3/4,26.0
+GI 046,Gi Red Bush 11/2x11/4,2.0
+GI 047,Gi Red Bush 11/2x3/4,1.0
+GI 048,Gi Red Bush 11/4x1,4.0
+GI 049,Gi Red Bush 11/4x3/4,0.0
+GI 051,Gi Red Bush 1x3/4,2.0
+GI 052,Gi Red Bush 2x1,1.0
+GI 053,Gi Red Bush 2x11/2,3.0
+GI 054,Gi Red Bush 2x11/4,1.0
+GI 055,Gi Red Bush 2x3/4,0.0
+GI 056,Gi Red Bush 3/4x1/2,23.0
+GI 057,Gi Red Socket 11/2x1,3.0
+GI 058,Gi Red Socket 11/2x1/2,2.0
+GI 059,Gi Red Socket 11/2x3/4,2.0
+GI 060,Gi Red Socket 11/4x1,3.0
+GI 061,Gi Red Socket 1x1/2,3.0
+GI 062,Gi Red Socket 1x3/4,18.0
+GI 064,Gi Red Socket 2 X 3/4,0.0
+GI 065,Gi Red Socket 3/4x1/2,18.0
+GI 066,Gi Red Tee 1x1/2,0.0
+GI 068,Gi Socket 1,25.0
+GI 069,Gi Socket 1/2,285.0
+GI 070,Gi Socket 11/2,1.0
+GI 071,Gi Socket 11/4,2.0
+GI 073,Gi Socket 3/4,24.0
+GI 074,Gi Stand Pipe 1/2x1.5ft,34.0
+GI 075,Gi Stand Pipe 1/2x1ft,9.0
+GI 076,Gi Stand Pipe 1/2x2ft,12.0
+GI 077,Gi Stand Pipe 1/2x3ft,6.0
+GI 079,Gi Stand Pipe 3/4x1ft,1.0
+GI 081,Gi Tee 1,1.0
+GI 082,Gi Tee 1/2,46.0
+GI 083,Gi Tee 11/2,1.0
+GI 084,Gi Tee 11/4,0.0
+GI 085,Gi Tee 2,1.0
+GI 088,Gi Tee 3/4,7.0
+GI 089,Gi Union 1,10.0
+GI 090,Gi Union 1/2,2.0
+GI 092,Gi Union 11/4,2.0
+GI 095,Gi Union 3/4,16.0
+GIR001,Gi Red Bush 11/2x1/2,0.0
+GLA004,Glass Bit,0.0
+GLA006,Glass Clear 3mm,108.5
+GLA007,Glass Clear 4mm,62.3
+GLA008,Glass Clear 5mm,26.5
+GLA009,Glass Clear 6mm,6.0
+GLA012,Glass Flowered 3mm,13.5
+GLA013,Glass Gold Bronze 4mm,6.0
+GLA014,Glass Mirror 3mm,0.0
+GLA015,Glass Mirror 4mm,45.5
+GLA016,Glass Mirror 5mm,0.0
+GLA017,Glass Obs Blue 3mm,9.0
+GLA018,Glass One Way Blue,0.0
+GLA020,Glass One Way Gold,0.0
+GLA021,Glass One Way Grey,0.0
+GLA022,Glass Square Type Grey Obs,0.0
+GLA023,Glass Tint Grey 4mm,2.0
+GLA024,Glass Tint Grey Indi,0.0
+GLO004,Gloves Leather H/G,21.0
+GLO005,Gloves Leather Hg 14',17.0
+GLO007,Gloves Rubber H/G,63.0
+GOO001,Gauze Wire Mtrs,154.0
+GOO002,Gauze Wire Roll,12.0
+GRE002,Grey Oxide Powder 1kg,12.0
+GRE003,Green Oxide 1kg,4.0
+GRI004,Grinding Disc 9,6.0
+GRO002,Grout 1kg Cream,13.0
+GRO005,Grout 3kg Grey,11.0
+GRO006,Grout 3kg White,15.0
+GRO015,Grout 1kg Grey-Fuga,356.0
+GRO016,Grout 1kg White-Fuga,283.0
+GRO017,Grout white-kalekim 3kg,15.0
+GRO018,Grout Grey- Kalekim 3kg,12.0
+GUM003,Gum Poles Small,11.0
+GUM004,Gumboot No 6,17.0
+GUM005,Gumboot No 7,18.0
+GUM006,Gumboot No 8,11.0
+GUM007,Gumboot No 10,6.0
+GUM008,Gumboot No 9,20.0
+GUM009,Gumboot H/G No 6,0.0
+GUM010,Gumboot H/G No 7,2.0
+GUM011,Gumboot H/G No 8,2.0
+GUM012,Gumboot H/G No 9,2.0
+GUM013,Gumboot H/G No 10,1.0
+GUT001,Gutter Angle,17.0
+GUT002,Gutter Bracket,350.0
+GUT003,Gutter Connector,43.0
+GUT008,Gutter Metro,48.0
+GUT012,Gutter Stop End,75.0
+GUT014,Gutters Outlet,38.0
+GYP002,Gypsum Angle Line,431.0
+GYP003,Gypsum Board 12mm,108.0
+GYP006,Gypsum Board Hada,3270.0
+GYP008,Gypsum Board Moist Resistant,284.0
+GYP010,Gypsum Board Waterproof 9mm,2.0
+GYP011,Gypsum Channel,7004.0
+GYP012,Gypsum Cornice-Plain,1549.0
+GYP013,Gypsum Corner Bead,188.0
+GYP016,Gypsum Fibre Tape,300.0
+GYP020,Gypsum Knife,6.0
+GYP021,Gypsum Powder 1kg,190.0
+GYP022,Gypsum Powder 25kg,398.0
+GYP025,Gypsum Screws 1 *1000pcs -Blue esBseOnMtiaAlS,468.0
+GYP026,Gypsum Screws 1 Pkt,62.0
+GYP027,Gypsum Screws 11/2 Pkt,43.0
+GYP028,Gypsum Screws 11/4 Pkt,11.0
+GYP029,Gypsum Screws 2 Pkt,43.5
+GYP030,Gypsum Screws 3/4 Pkt,15.0
+GYP032,Gypsum Screws Assorted,150.0
+GYP034,Gypsum Stud,9273.0
+GYP036,Gypsum Board Thumb 9mm,373.0
+GYP037,Gypsum Screws 1 *1000pcs,78.0
+GYP038,Gypsum Cornice-Flowered,341.0
+GYP039,Gypsum Stud 75mm,344.0
+GYP040,Gypsum Channel 75mm,177.0
+GYP041,Gypsum Furring Channel 68,373.0
+GYP042,Gypsum Cornace-Type 2,0.0
+HAC001,Hacksaw Blade,2026.0
+HAC005,Hacksaw Frame J/K,8.0
+HAC006,Hacksaw Frame Orange,17.0
+HAM001,Hammer Jk,20.0
+HAM003,Hammer Rubber 29mm,19.0
+HAN003,Handsaw 16,13.0
+HAN006,Hard Broom With Handle,123.0
+HAN007,Hard Broom Without Handle,56.0
+HAN008,Handsaw 16 -Metallic,2.0
+HAN009,Hand sprayer Pump 20lt,1.0
+HAS001,Hasp & Staple 2,5.0
+HAS003,Hasp & Staple 3,3.0
+HAS005,Hasp Juakali,86.0
+HDP001,Hdpe Pipe Roll 32mm,0.0
+HDP003,Hdpe Pipe Roll 50mm,2.0
+HDP004,Hdpe Pipe roll 40mm,0.0
+HDP005,Hdpe pipe roll 25mm,0.0
+HDP006,Hdpe pipe roll 20mm,1.0
+HEL001,Helmets Red,52.0
+HEL002,Helmets Blue,10.0
+HEL003,Helmets white,56.0
+HEL004,Helmets yellow,31.0
+HEM001,Hemp,3.0
+HIG002,High Gloss Thinner 5lt,2.0
+HIL002,Hilt Bit 12mm,4.0
+HIL003,Hilt Bit 14mm,4.0
+HIL004,Hilt Bit 16mm,3.0
+HIL005,Hilt Bit 6mm,56.0
+HIL006,Hilt Bit 8mm,12.0
+HIL007,Hilt Bit 10MM,6.0
+HIN002,Hinges 1.5- Pairs,10.0
+HIN003,Hinges 2- Pairs,36.0
+HIN004,Hinges 2.5- Pairs,15.0
+HIN005,Hinges 3- Pairs,53.0
+HIN006,Hinges 4- Pairs,96.0
+HIN011,Hinges Double Action 4,0.0
+HIN015,Hinges Oxford Brass,109.0
+HIN016,Hinges Oxford Silver,40.0
+HOO002,Hoop Iron Kgs,0.25
+HOO003,Hoop Iron Roll,1174.0
+HOS001,Hose Clip 1,4.0
+HOS008,Hose Connector 1/2:,0.0
+HOS011,Hose Pipe Braided 1/2x30m,2.0
+HOS012,Hose Pipe Braided 1/2x50m,7.0
+HOS013,Hose Pipe Braided 1x30m,4.0
+HOS014,Hose Pipe Braided 1x50,8.0
+HOS015,Hose Pipe Braided 3/4x30m,14.0
+HOS016,Hose Pipe Braided 3/4x50m,23.0
+HOS017,Hose Pipe Clear 1/2x120ft,5.0
+HOS018,Hose Pipe Clear 1/2x60ft,11.0
+HOS019,Hose Pipe Clear 1/4 X 50 Roll(s),12.0
+HOS021,Hose Pipe Clear 3/4x120ft,2.0
+HOS022,Hose Pipe Clear 3/4x60ft,0.0
+HOS023,Hose Pipe Zebra 1/2x60ft,1.0
+HOS026,Hose Pipe Zebra 3/4x60ft,1.0
+HOS030,Hospital Tap,2.0
+IND001,Ind Socket Single Phase,7.0
+IND002,Ind Socket Three Phase,0.0
+IND003,Industrial Socket Two Phase,0.0
+INS001,Insulating Tape Black Big,177.0
+INS002,InsulatingTape Black Small,108.0
+INS004,Insulating Tape Yellow Big,17.0
+INS008,Insulating Tape White Big,11.0
+INS012,Instant Shower Ener 4t,22.0
+INS015,Instant Shower Lorenzeti,18.0
+INS018,Insulating Tape Green Big,12.0
+INS019,Insulating Tape Red Big,19.0
+INS020,Insulating Tape Blue Big,2.0
+INT001,TV Outlet,0.0
+IZO001,IZOSTOP 3001-Kalekim,132.0
+J,B001 J Bolts,49.0
+JEM001,Jembe 1.5LB,3.0
+JEM002,Jembe 2.5LB,25.0
+JEM003,Jembe 2LB,3.0
+JEM004,Jembe 3LB,18.0
+JEM005,Jembe Handle,187.0
+JIG001,Jigsaw Blade,1.0
+JUM001,Jumbo Tank 10000l,11.0
+JUM002,Jumbo Tank 1000l,8.0
+JUM003,Jumbo Tank 100l,1.0
+JUM005,Jumbo Tank 1500l,2.0
+JUM007,Jumbo Tank 2300l,0.0
+JUM009,Jumbo Tank 2500l,2.0
+JUM010,Jumbo Tank 3000l,10.0
+JUM011,Jumbo Tank 300l,1.0
+JUM014,Jumbo Tank 5000l,18.0
+JUM017,Jumbo Tank Rect 1000l,4.0
+JUM019,Jumbo Tank Rect 500l,1.0
+KEN001,KenSeal4KG,1.0
+KHA001,KHAKI BAGS NO5,6.0
+KHA002,KHAKI BAG NO 2,6.0
+KHA003,KHAKI BAG NO 1/2,6.0
+KIF001,Kifagio Big,121.0
+KIT002,Bath Mixer wall Pillar,1.0
+KIT003,Kitchen Mixer Sink,2.0
+KIT004,Kitchen Mixer Wall,3.0
+KIT006,Kitchen Sink D/B S/D,5.0
+KIT007,Kitchen Sink S/B S/D,3.0
+KIT008,Kitchen Sink S/B S/D Light,1.0
+LEA003,Leaf Rake Plastic Big,13.0
+LED001,Flourescent Led Fittings 2ft,1.0
+LED002,Flourescent Led Fittings 4ft,2.0
+LED004,Flourescent Led Tubes 2ft,4.0
+LED005,Flourescent Led Tubes 4ft,12.0
+LED006,Led Panel Light 6w,1.0
+LED007,LED Panel light(6500k),0.0
+LED008,Led Panel Light 6w(3000k),1.0
+LED009,LED Butten lights 50w,3.0
+LED010,LED Butten light 20w,4.0
+LED011,LED Flood Light 30w(Sensor),0.0
+LED012,LED Flood Light 20w,0.0
+LED013,LED Flood Lights 30w,0.0
+LED014,LED Panel 24W,2.0
+LIM001,Lime 25kg,175.0
+LIP001,Lipping Beach Roll,7.62
+LIP002,Lipping Cherry Roll,0.0
+LIP003,Lipping Coimbra,1.0
+LIP004,Lipping Mtrs,134.0
+LIP006,Lipping Wall Nut,0.0
+LIP007,Lipping White,31.0
+LOC002,Lock Flyglobe Gold,5.0
+LOC003,Lock Flyglobe Silver,6.0
+LOC004,Lock Moment,11.0
+LOC006,Lock Union 2lever Silver,12.0
+LOC008,Lock Union Almn 2lever,4.0
+LOC009,Lock Union Brass 2lever,0.0
+LOC010,Lock Union Dead 3lever,7.0
+LOC011,Lock Wista W-20188,10.0
+LOC012,Lock Union 2lever brass/gold,23.0
+LOC013,Lock Wista W-23615,5.0
+LOC014,Lock Wista W-23613,1.0
+LOC015,Lock Wista W-20252,1.0
+LOO001,Looping Boxes,64.0
+LOR001,Lordex 1kg,16.0
+LOR002,Lordex 300g,11.0
+MAC002,Machine Screw 2ba pcs,9.0
+MAC004,Machine Screw 4ba,3.0
+MAC005,MACHINE SCREW 2BA PKT,13.0
+MAG001,Magic Connector 11/2 CHROME,13.0
+MAG002,Magic Connector 11/4 CHROME,30.0
+MAG004,Magnetic Socket 10mm,0.0
+MAG005,Magnetic Socket 8mm,26.0
+MAH001,Mahogany Spirit Stain,29.0
+MAH003,Orion Mahogany Varnish1/2l,2.0
+MAL003,Malpha Hinges Hydraulic,226.0
+MAN001,Manhole Cover 12x12,120.0
+MAN002,Manhole Cover 15x15,41.0
+MAN003,Manhole Cover 18x18,91.0
+MAN004,Manhole Cover 18x24,197.0
+MAN005,Manhole Cover 24x24,19.0
+MAN007,Manilla Roll 100m,16.0
+MAN008,Manilla Roll 500m,22.0
+MAN009,Manilla Rope 10mm- Mtrs,365.0
+MAN010,Manilla Rope 12mm- Mtrs,168.5
+MAN011,Manilla Rope 14mm- Mtrs,443.0
+MAN013,Manilla Rope 18ply,68.0
+MAN014,Manilla Rope 42ply,39.0
+MAN015,Manilla Rope 6mm- Mtrs,303.0
+MAN016,Manilla Rope 8mm- Mtrs,451.0
+MAN017,Manilla Roll 1000m,15.0
+MAN020,Manilla rope 10mm roll,3.0
+MAN021,Manilla Rope 6mm Rolls,1.0
+MAN022,Manilla Rope 8mm Rolls,2.0
+MAN023,Manilla Rope 12mm Rolls,1.0
+MAN024,Manilla Rope 14mm Rolls,1.0
+MAR001,Marine Board- Tywood,3808.0
+MAR002,Marine Board-Zurkit 16mm,1613.0
+MAR003,Marine Board-Zurkit 18mm,1622.0
+MAS002,"Masking Tape Welfast 1.5""",51.0
+MAS006,"Masking Tape Welfast 1""",464.0
+MAS007,Masking Tape Big 1.5,34.0
+MAS008,"Masking Tape Welfast 2""",559.0
+MAS009,"Masking Tape Welfast 3/4""",211.0
+MAS010,Mason Bit 10mm,12.0
+MAS011,Mason Bit 12mm,4.0
+MAS014,Mason Bit 6mm,23.0
+MAS015,Mason Bit 8mm,9.0
+MAS016,Mason Chisel Flat,19.0
+MAS017,Mason Chisel Pointed,109.0
+MAS019,Mason Hammer 2.5lb,20.0
+MAS020,Mason Hammer 2lb,6.0
+MAS021,Mason Hammer 3lb,11.0
+MAS022,Mason Square 24,6.0
+MAS024,Mason Square Black,6.0
+MAS025,"Masking Tape 1""X20mts",0.0
+MAS026,"Masking Tape 2""X20mts",0.0
+MAT001,Mattock Combined,108.0
+MCB001,Mcb 63 A D/Pole,7.0
+MCB002,Mcb 20A S/Pole,4.0
+MCB003,Mcb 32A S/Pole,16.0
+MCB004,MCB 10 AMP,10.0
+MCB005,MCB 16 AMP,1.0
+MCB006,Mcb 63 A S/Pole,2.0
+MCB007,Mcb 100 A D/Pole,5.0
+MCB008,Mcb 40A S/Pole,1.0
+MDF001,Mdf Board Beech,21.0
+MDF002,Mdf Board Cherry,14.0
+MDF003,Mdf Board Coimbra,20.0
+MDF005,Mdf Board Plain,11.0
+MDF006,Mdf Board American Walnut,12.0
+MDF007,Mdf Board White,36.0
+MDF008,Mdf Ply Plain,4.0
+MDF009,Mdf Ply White,5.0
+MDF012,Mdf Screws 1 Pkt,31.0
+MDF013,Mdf Screws 1/12 Pkt,27.0
+MDF014,Mdf Screws 11/4 Pkt,74.0
+MDF015,Mdf Screws 2 Pkt,130.0
+MDF017,Mdf Screws 3 Pkt,22.0
+MDF018,Mdf Screws 3/4 Pkt,10.0
+MDF019,MDF SCEWS 4 PKT,1.0
+MEA001,Stanley-Measuring Tape-5m power loBcOkMAS,4.0
+MEA002,Stanley -Measuring Tape 5m-Tylon,4.0
+MEA003,stanley-Measuring Tape 8m-tylon,1.0
+MET006,Meter Box Powdered 13X13,4.0
+MET009,Metro Glue 250gms,22.0
+MIN001,Mini Trunking,81.0
+MIR001,Mirror Screws Pcs,137.0
+MOP003,Mop Bucket,6.0
+MOP004,Mop Bucket J/K,0.0
+MOP006,Mop Teepee,33.0
+MUL001,Multi Plug,9.0
+NAI001,Nails 1'- Kgs,28.25
+NAI002,Nails 1.5'- Kgs,30.0
+NAI003,Nails 2'- Kgs,293.75
+NAI004,Nails 2.5'- Kgs,420.5
+NAI005,Nails 3'- Kgs,1614.5
+NAI006,Nails 4'- Kgs,1792.0
+NAI007,Nails 5'- Kgs,114.25
+NAI008,Nails 6'- Kgs,11.0
+NAI009,Nails Bag 1,3.0
+NAI011,Nails Bag 2,20.0
+NAI012,Nails Bag 2.5,21.0
+NAI013,Nails Bag 3,133.0
+NAI014,Nails Bag 4,189.0
+NAI015,Nails Bag 5,7.0
+NAI016,Nails Bag 6,1.0
+NAI017,Nails Bag Ceiling 1,0.0
+NAI018,Nails Bag Ceiling 1.5,1.0
+NAI019,Nails Bag Panel Pins 1,0.0
+NAI020,Nails Bag Panel Pins 1.5,3.0
+NAI022,Nails Ceiling 1,8.25
+NAI023,Nails Ceiling 1.5,44.75
+NAI024,Nails Panel Pins 1,13.75
+NAI025,Nails Panel Pins 1.5,62.25
+NAI027,Nails Polished Bag 1.5,0.0
+NAI029,Nails Roofing Bag,8.0
+NAI030,Nails Roofing Kgs,327.0
+NAI031,Nails U Bags,2.0
+NAI032,"Nails Polished Bag 1""",0.0
+NAI035,Nails U Kgs,21.0
+NAI036,Nail Polished 1.5- Kgs,0.0
+NEM015,Nemsi Push Tap Wall-A003,3.0
+NEM016,Nemsi Pillar tapCurved Highneck-BS1B0O1M1HAS,0.0
+NEM017,Nemsi Delay Push Tap Kitchen-EG96B1O7MAS,0.0
+NEM018,Nemsi Long Neck Pillar KitchenMixerB AOdMj-AKSM2051,2.0
+NEM019,Nemsi Long Neck BIB Kitchen Mixer-BKOMM30A5S1,4.0
+NEM020,Nemsi Shower Head$Mirror 40cm-KSB0O02MAS,4.0
+NEM021,Nemsi Adjustable shower tube-KS004B,0.0
+NEM022,Nemsi Sq- Framed 4-way shower mixBeOr BMlAacSk-KS1012,0.0
+NEM023,Nemsi 3-Way Almn-Piano shower MixBeOr-MKASS1055,3.0
+NEM024,Nemsi 3-way Brass ConcealedShoweBr OMMixAeSr-KS2016,0.0
+NEM025,Nemsi Premium ktchen mixer ChromeB-OKMS6A0S41,2.0
+NEM026,Nemsi Kitchen Tap L- Neck Blk& silveBrO-KMSA9S022,2.0
+NEM027,Nemsi Kitchen Wall Tap-KS9051,0.0
+NEM028,Nemsi Double Corner-Shelf With TowBeOl-NM0A0S2,3.0
+NEM029,Nemsi mirrorSingle Corner Shelf-N00B9OMAS,3.0
+NEM030,Nemsi Single Corner Shelf Blk-N009-B,1.0
+NEM031,Nemsi Black Towel ring-N025B,0.0
+NEM032,Nemsi Double Tumbler Holder-N026,0.0
+NEM033,Nemsi Bath 6pcs Accessories set BlaBcOk-MNA05S3B,0.0
+NEM034,Nemsi Bath 6pcs Accessories Set -MBirrOoMr-NA0S53M,0.0
+NEM035,Nemsi Black Grab Bar 25x40-N063-B,0.0
+NEM036,Nemsi Single Tumbler Holder Mirror-NB0O7M2AS,0.0
+NEM037,Nemsi Soap Dish Mirror-N092,4.0
+NEM038,Nemsi Tissue Holder mirror-N131,2.0
+NEM039,Nemsi Tissue Holder Black-N131-B,3.0
+NEM040,Nemsi Hook Double Black-N177,4.0
+NEM041,Nemsi Double Towel bar With 5 HooBksO-NM2A2S6,1.0
+NEM042,Nemsi Double Tumbler+T.Brush HoldBeOr -MMA.MSirror-N299,0.0
+NEM043,Nemsi Premium Double T+T.Brush HBolOdMerA BSlack299B,0.0
+NEM044,Nemsi Premium Gun Grey Towel BaBr-ON3M0A6S,0.0
+NEM045,Nemsi Premium Gun Grey Towel RingB-ONM30A9S,0.0
+NEM046,Nemsi Premium Single T+T.Brush h- B MOiMrroArS-N313M,0.0
+NEM047,Nemsi Rectangle Shelf Gun Grey-N31B6OMAS,1.0
+NEM048,Nemsi M- Hooks silver& black AluminBiuOmM-NA3S66,2.0
+NEM049,Nemsi Heavy Duty Hand rail Grab BaBr-ONM37A0S,0.0
+NEM050,Nemsi Double Glass Soap DispenserB MOiMrroArS-N378,0.0
+NEM051,Nemsi Black $ Chrome Kitchen Pillar BTOapM-APS019,0.0
+NEM052,Nemsi Paint Roller 9,12.0
+NON001,"Non Return Valve lirlee 1""",2.0
+NON002,Non Return Valve 1 pegler,16.0
+NON003,Non Return Valve 1/2 Pegler,7.0
+NON006,Non Return Valve 3/4 Pegler,25.0
+NYL002,Nylon Window Netting Mtrs,13.0
+NYU001,Nyumba Cement,13280.0
+ORI002,Orion Clear Varnish 1l,0.0
+P 1002,SQ 12,3.5
+PAC001,Packing Tape Clear,5.0
+PAC002,PACKING BAG BIG,7.0
+PAC003,PACKING BAG MEDIUM,14.0
+PAC004,PACKING BAG SMALL,18.0
+PAD001,Padbolt 6,16.0
+PAD002,Padbolt China,4.0
+PAD004,Padbolt Jk Big,12.0
+PAD006,Padbolt Juakali-Shiny,51.0
+PAD009,Padlock Mindy 70mm,11.0
+PAD015,Padlock Tri Circle 261,4.0
+PAD016,Padlock Tri Circle 262,9.0
+PAD017,Padlock Tri Circle 263,23.0
+PAD018,Padlock Tri Circle 264,36.0
+PAD019,Padlock Tri Circle 265,24.0
+PAD020,Padlock Tri Circle 266,16.0
+PAD021,Padlock Mindy 60mm,17.0
+PAD022,Padlock Mindy 50mm,20.0
+PAI002,Paint Roller 4,20.0
+PAI004,Paint Roller 9,253.0
+PAI006,"Nemsi Paint Roller Tray 9""",2.0
+PAN001,Panga,1.0
+PAN002,Panga H/G,60.0
+PAN003,Panel Door Laminated,2.0
+PAN004,Panel Door Mahogany,0.0
+PAN005,Panel Light 20w,0.0
+PAT001,Pattress Double Deep,30.0
+PAT003,Pattress Single Deep,41.0
+PAT004,Pattress Single Shallow,2.0
+PAT005,Pattex PL100,8.0
+PAT006,Pattex PL-150,12.0
+PED001,Pedrallo Pump 0.5hp,9.0
+PED002,Pedrallo Pump 1hp,1.0
+PHO001,Photocell Switch,4.0
+PIL001,Pillar Coping 15,8.0
+PIL002,Kitchen Mixer Tap 1/2,0.0
+PIL003,Pillar Tap Basin Type,49.0
+PIL005,Pillar Tap Sprout Brimix,6.0
+PIL006,Pillar Tap Sprout,2.0
+PIN005,Pine 8x1,0.0
+PIP001,Pipe Wrench 10,1.0
+PIP002,Pipe Wrench 12,3.0
+PIP003,Pipe Wrench 14,5.0
+PIP005,Pipe Wrench 8,1.0
+PLA001,Plain Sheet Roll 30g,14.0
+PLA002,Plain Sheet Roll 32g,10.0
+PLA004,Plascon Ext Clear 5l,2.0
+PLA007,Plascon Int Clear 1l,2.0
+PLA008,Plascon Int Clear 5l,3.0
+PLA010,Plascon Int Mahogany 5l,8.0
+PLA016,Plain sheet 30g mtrs,202.5
+PLA017,Plain sheet 32g mtrs,133.0
+PLA020,Plascon Int Pine 5l,0.0
+PLA021,Plascon EXT Pine 5l,5.0
+PLA022,Plascon Woodcare Pine 1l,1.0
+PLA023,Plascon Woodcare Ext Pine 1l,1.0
+PLA024,Plascon Woodcare Int Teak 5l,0.0
+PLA026,Plascon Woodcare Ext Teak 5l,1.0
+PLA027,Plascon Woodcare Ext Teak 1l,2.0
+PLI001,Pliers H.G,16.0
+PLI003,Pliers Red,19.0
+PLI004,Stanley-Pliers Combination7'' dyna grBipO MAS,0.0
+PLI005,Stanley-Pliers Circlip7'' Bent External,0.0
+PLI006,"Stanley-Pliers circlip7"" straight internaBlOMAS",0.0
+PLI007,Stanley-Pliears Combination8''DynagBripO.MAS,2.0
+PLI008,Stanley-Pliers End Nipper6,0.0
+PLI009,Stanley-Pliers Mini -MultiTool,1.0
+PLU001,Plumb Line,8.0
+PLY001,Plywood 3mm,178.0
+PLY002,Plywood 6mm,162.0
+PLY003,Plywood 9mm,80.0
+POL003,Polythene Black 15kg,112.0
+POL004,Polythene Black 20kg,316.0
+POL005,Polythene Black Mtrs,826.2
+POL006,Polythene Clear Mtrs,15.0
+POL007,Polythene Clear Roll,5.0
+POL008,Polishing Pad,9.0
+PON001,Ponal Glue 1/2l,16.0
+PON002,Ponal Glue 1/4l,18.0
+PON003,Ponal Glue 1l,24.0
+PON005,Ponal Glue 4l,7.0
+POP002,Pop Rivets 3/4,0.0
+POP004,"Pop Up Waste Chrome 11/2""",4.0
+POP005,Pop Up Waste Chrome 11/4,9.0
+POU001,Poultry Mesh Blue,3.0
+POU002,Poultry Mesh Green,3.0
+POW001,Power Guard,1.0
+PPR001,Ppr Ball Cork 20mm,0.0
+PPR002,Ppr Ball Cork 25mm,21.0
+PPR003,Ppr Ball Cork 32mm,1.0
+PPR006,Ppr Ball Cork 63mm,1.0
+PPR007,Ppr Cup 20mm,4.0
+PPR008,Ppr Cup 25mm,60.0
+PPR009,Ppr Cup 32mm,54.0
+PPR010,Ppr Cup 40mm,5.0
+PPR011,Ppr Cup 50mm,5.0
+PPR012,Ppr Cup 63mm,0.0
+PPR013,Ppr Double Elbow 25x1/2,29.0
+PPR014,Ppr Elbow 20mm,72.0
+PPR015,Ppr Elbow 20mm *45',0.0
+PPR016,Ppr Elbow 25mm,2220.0
+PPR017,Ppr Elbow 25mmx45,70.0
+PPR018,Ppr Elbow 32mm,810.0
+PPR019,Ppr Elbow 32mm x45,13.0
+PPR020,Ppr Elbow 40mm,65.0
+PPR021,Ppr Elbow 50mm,17.0
+PPR022,Ppr Elbow 63mm,10.0
+PPR023,Ppr F/Adapter 20x1/2,21.0
+PPR024,Ppr F/Adapter 25x1/2,168.0
+PPR025,Ppr F/Adapter 25x3/4,89.0
+PPR026,Ppr F/Adapter 32x1,71.0
+PPR027,Ppr F/Adapter 32x3/4,7.0
+PPR028,Ppr F/Adapter 40x11/4,4.0
+PPR029,Ppr F/Adapter 50x11/2,8.0
+PPR030,Ppr F/Adapter 63x2,0.0
+PPR031,Ppr F/Elbow 20x1/2,2.0
+PPR032,Ppr F/Elbow 25x1/2,826.0
+PPR033,Ppr F/Elbow 25x3/4,132.0
+PPR034,Ppr F/Elbow 32x1,13.0
+PPR036,Ppr F/Elbow 32x3/4,3.0
+PPR037,Ppr F/Elbow 40x11/4,5.0
+PPR038,Ppr F/Elbow 50x11/2,0.0
+PPR039,Ppr F/Tee 20x1/2,6.0
+PPR040,Ppr F/Tee 25x1/2,51.0
+PPR041,Ppr F/Tee 25x3/4,5.0
+PPR042,Ppr F/Tee 32x1,5.0
+PPR043,Ppr F/Tee 32x3/4,4.0
+PPR044,Ppr F/Tee 40x11/4,0.0
+PPR045,Ppr F/ Thread Union 1,5.0
+PPR048,Ppr Gate Valve 25mm,1.0
+PPR050,Ppr M/Adapter 20x1/2,33.0
+PPR051,Ppr M/Adapter 25x1/2,523.0
+PPR052,Ppr M/Adapter 25x3/4,433.0
+PPR053,Ppr M/Adapter 32x1,217.0
+PPR054,Ppr M/Adapter 32x1/2,3.0
+PPR055,Ppr M/Adapter 32x3/4,12.0
+PPR056,Ppr M/Adapter 40x11/4,54.0
+PPR057,Ppr M/Adapter 50x11/2,11.0
+PPR058,Ppr M/Adapter 63x2,3.0
+PPR059,Ppr M/Elbow 20x1/2,2.0
+PPR060,Ppr M/Elbow 25x1/2,19.0
+PPR061,Ppr M/Elbow 25x3/4,35.0
+PPR062,Ppr M/Elbow 32x1,4.0
+PPR063,Ppr M/Elbow 32x3/4,0.0
+PPR064,Ppr M/Elbow 40x11/4,0.0
+PPR065,Ppr M/Elbow 50x11/2,0.0
+PPR066,Ppr M/Tee 20x1/2,0.0
+PPR067,Ppr M/Tee 25x1/2,13.0
+PPR068,Ppr M/Tee 25x3/4,5.0
+PPR069,Ppr M/Tee 32x1,0.0
+PPR070,Ppr M/Tee 32x3/4,2.0
+PPR071,Ppr M/Tee 40x11/4,0.0
+PPR072,Ppr M/Thread Union 1,18.0
+PPR074,Ppr M/Thread Union 3/4,27.0
+PPR075,Ppr Machine H/G,3.0
+PPR076,Ppr Overbend 25mm,84.0
+PPR084,Ppr Pipe Danco 20mm,38.0
+PPR085,Ppr Pipe Danco 25mm,1094.0
+PPR086,Ppr Pipe Danco 32mm,354.0
+PPR087,Ppr Pipe Danco 40mm,54.0
+PPR088,Ppr Pipe Danco 50mm,23.0
+PPR089,Ppr Pipe Metro 20mm,1.0
+PPR093,Ppr Pipe Metro 40mm,3.0
+PPR094,Ppr Pipe Metro 50mm,0.0
+PPR095,Ppr Pipe Metro 63mm,0.0
+PPR096,Ppr Pipe Roll 20mm-DANCO,0.0
+PPR098,Ppr Pipe Roll 32mm,0.0
+PPR100,Ppr Pipe Roll Danco 25mm,10.0
+PPR101,Ppr Pipe Roll Danco 32mm,6.0
+PPR102,Ppr Pipe Roll Danco 40mm,0.0
+PPR103,Ppr Pipe Roll Danco 50mm,0.0
+PPR104,Ppr Pipe Roll Danco 63mm,0.0
+PPR105,Ppr Plug 20mm,17.0
+PPR106,Ppr Plug 25mm,33.0
+PPR107,Ppr Red/Socket 25x20,11.0
+PPR108,Ppr Red/Socket 32x20,0.0
+PPR109,Ppr Red/Socket 32x25,197.0
+PPR110,Ppr Red/Socket 40x25,32.0
+PPR111,Ppr Red/Socket 40x32,25.0
+PPR112,Ppr Red/Socket 50x20,0.0
+PPR115,Ppr Red/Socket 50x40,1.0
+PPR116,Ppr Red/Socket 63x25,6.0
+PPR117,Ppr Red/Socket 63x32,2.0
+PPR118,Ppr Red/Socket 63x40,2.0
+PPR120,Ppr Red/Tee 20x25,1.0
+PPR121,Ppr Red/Tee 32x20,1.0
+PPR122,Ppr Red/Tee 32x25,32.0
+PPR124,Ppr Red/Tee 40x32,2.0
+PPR125,Ppr Socket 20mm,37.0
+PPR126,Ppr Socket 25mm,1689.0
+PPR127,Ppr Socket 32mm,628.0
+PPR128,Ppr Socket 40mm,70.0
+PPR130,Ppr Socket 63mm,20.0
+PPR133,Ppr Stone 32mm,1.0
+PPR135,Ppr socket 50mm,29.0
+PPR137,Ppr Tee 20mm,18.0
+PPR138,Ppr Tee 25mm,697.0
+PPR139,Ppr Tee 32mm,297.0
+PPR140,Ppr Tee 40mm,44.0
+PPR141,Ppr Tee 50mm,6.0
+PPR142,Ppr Tee 63mm,4.0
+PPR145,Ppr Thread Union 32mm,4.0
+PPR147,Ppr Union 20mm,3.0
+PPR148,Ppr Union 25mm,84.0
+PPR149,Ppr Union 32mm,75.0
+PPR150,Ppr Union 40mm,4.0
+PPR151,Ppr Union 50mm,11.0
+PPR152,Ppr Union 63mm,2.0
+PPR153,Ppr clip 20mm,0.0
+PPR155,Ppr Pipe Danco 63mm,15.0
+PPR156,Ppr M/Elbow 63x2,0.0
+PPR158,Ppr F/Thread Union 3/4,3.0
+PPR159,Ppr Red/Tee 50x25,3.0
+PPR160,Ppr Pipe Roll 25mm-Metro(PN16),26.0
+PTG003,Ptg Connector,7.0
+PTG008,Ptg Elbow 65',0.0
+PTG010,Ptg Endcup,0.0
+PTG011,Ptg Gutter,0.0
+PTG013,Ptg Inside Corner,1.0
+PTG015,Ptg Outside Corner,1.0
+PUM001,Pump Control Auto,18.0
+PUS001,Push Tap,6.0
+PUT003,Putty Premium in Kgs,182.5
+PUT004,Putty Premium Buckets- 40kgs,204.0
+PVC001,Pvc Bend 11/2x45,335.0
+PVC002,Pvc Bend 11/2x90,742.0
+PVC003,Pvc Bend 11/4x45,9.0
+PVC004,Pvc Bend 11/4x90,36.0
+PVC005,Pvc Bend 2x45,261.0
+PVC006,Pvc Bend 2x90,657.0
+PVC007,Pvc Bend 3x45,97.0
+PVC008,Pvc Bend 3x90,269.0
+PVC009,Pvc Bend 4x45,191.0
+PVC010,Pvc Bend 4x90,514.0
+PVC011,Pvc Bend 6x45,5.0
+PVC012,Pvc Bend 6x90,33.0
+PVC013,Pvc Bend 8x90,0.0
+PVC014,Pvc Boss Connector 4x11/2,11.0
+PVC015,Pvc Boss Connector 4x11/4,1.0
+PVC016,Pvc Boss Connector 4x2,44.0
+PVC017,Pvc Boss Connector 4x3,3.0
+PVC019,Pvc Cross Tee 4,10.0
+PVC020,Pvc Flex Bend 4,65.0
+PVC022,Pvc Floor Trap 4way,530.0
+PVC023,Pvc Floor Trap 1Way,55.0
+PVC026,Pvc Full Bora 4,20.0
+PVC027,Pvc Gulley Trap 2,6.0
+PVC028,Pvc Gulley Trap 4,53.0
+PVC031,Pvc Inspection Bend 4,34.0
+PVC032,Pvc Inspection Tee 4,3.0
+PVC033,Pvc Pipe Sewer 6,0.0
+PVC034,Pvc Plug 11/2,100.0
+PVC035,Pvc Plug 11/4,4.0
+PVC036,Pvc Plug 2,134.0
+PVC037,Pvc Plug 3,48.0
+PVC038,Pvc Plug 4,63.0
+PVC039,Pvc Plug 6,6.0
+PVC040,Pvc Plug 8,0.0
+PVC041,Pvc Press Elbow 1,0.0
+PVC042,Pvc Press Elbow 1/2,0.0
+PVC043,Pvc Press Elbow 11/2,0.0
+PVC044,Pvc Press Elbow 11/4,0.0
+PVC046,Pvc Press Elbow 3/4,0.0
+PVC047,Pvc Press Tee 11/4,0.0
+PVC048,Pvc Pressure Tee 1,0.0
+PVC049,Pvc Pressure Tee 1/2,0.0
+PVC050,Pvc Pressure Tee 11/2,0.0
+PVC051,Pvc Pressure Tee 2,0.0
+PVC052,Pvc Pressure Tee 3/4,0.0
+PVC053,Pvc Reducer 11/2x11/4,15.0
+PVC054,Pvc Reducer 2x11/2,87.0
+PVC055,Pvc Reducer 2x11/4,2.0
+PVC056,Pvc Reducer 3x2,38.0
+PVC057,Pvc Reducer 4x2,36.0
+PVC058,Pvc Reducer 4x3,33.0
+PVC059,Pvc Reducer 6x4,3.0
+PVC061,Pvc Ring Sewer 6,0.0
+PVC062,Pvc Socket 4,30.0
+PVC064,Pvc Tee 11/2,112.0
+PVC065,Pvc Tee 11/4,8.0
+PVC066,Pvc Tee 2,347.0
+PVC067,Pvc Tee 3,75.0
+PVC068,Pvc Tee 4,116.0
+PVC069,Pvc Tee 6,5.0
+PVC070,Pvc Tee 8,0.0
+PVC072,Pvc Vent Core 2,12.0
+PVC073,Pvc Vent Core 3,14.0
+PVC074,Pvc Vent Core 4,31.0
+PVC076,Pvc W/Pipe Brown 4,117.0
+PVC077,Pvc W/Pipe Grey 11/2,76.0
+PVC079,Pvc W/Pipe Grey 2,78.0
+PVC080,Pvc W/Pipe Grey 3,63.0
+PVC081,Pvc W/Pipe Grey 4,72.0
+PVC082,Pvc W/Pipe Grey 6,14.0
+PVC083,Pvc W/Pipe Grey 8 pm,11.0
+PVC085,Pvc W/Pipe Metro 11/2,117.0
+PVC086,Pvc W/Pipe Metro 2,329.0
+PVC087,Pvc W/Pipe Metro 3,175.0
+PVC088,Pvc W/Pipe Metro 4,491.0
+PVC089,Pvc W/Pipe Metro 6,77.0
+PVC093,Pvc W/Pipe Pm 4,97.0
+PVC094,Pvc Y Tee 4,2.0
+PVC096,"Pvc W/Pipe Metro 11/4""",9.0
+QUA001,Quarry Stones 6x9,0.0
+QUA002,Quarry Stones 9x9,14.0
+QUA003,Quarry stone 9ft,0.0
+QUA004,Quarry stone 6ft,0.0
+QUA005,Quarry stone 4x9,0.0
+R,P001 R Pipe 11/2x16g,152.5
+R 1001,R 10- 1/2 length,5.0
+R 1003,R 16,7.0
+R 1004,R 16 Ft,116.0
+R 6001,R 6,775.0
+R 8001,R 8,9.0
+R/S001,R/S Box Charcoal Grey 2.5m,44.0
+R/S002,R/S Box Charcoal Grey 3m,96.0
+R/S003,R/S Box Clear 2.5m,10.0
+R/S004,R/S Box Clear 2m,1.0
+R/S005,R/S Box Clear 3m,13.0
+R/S011,R/S Clear 2.5m,27.0
+R/S012,R/S Clear 2m,18.0
+R/S013,R/S Clear 3m,10.0
+R/S014,R/S Maisha 2.5x30g,237.0
+R/S015,R/S Maisha 2.5x32g,210.0
+R/S016,R/S Maisha 2x30g,93.0
+R/S017,R/S Maisha 2x32g,173.0
+R/S018,R/S Maisha 3x30g,215.0
+R/S019,R/S Maisha 3x32g,175.0
+RAK001,Rake 10,0.0
+RAK002,Rake 12,2.0
+RAK003,Rake 14,4.0
+RAK005,Rake Juakali Big,31.0
+RAK007,Rake Juakali Small,3.0
+RAW001,Rawl Bolt M10,249.0
+RAW002,Rawl Bolt M12,100.0
+RAW003,Rawl Bolt M6,30.0
+RAW004,Rawl Bolt M8,282.0
+RAZ001,Razor Wire,4.0
+RED001,Red Oxide 1kg,98.0
+REF001,Reflector Vest,152.0
+RET001,Stanley-Retractable Knife With 3 BlaBdeOsMAS,3.0
+RHI001,Rhino Cement,220.0
+RID002,Ridges 30g,22.0
+RID003,Ridges 32g,13.0
+RID004,RIDGES BLUE 30G,0.0
+RID005,RIDGES RED 30G,0.0
+RID006,Ridges Box Grey,15.0
+RID007,Ridges 28G,13.0
+RIV003,Rivet Pcs,60.0
+RIV004,Rivets 3/4,0.0
+ROA001,Road Channel,0.0
+ROA002,Road Kerb,13.0
+ROO001,Roofing Bolt 1,1.0
+ROO004,Roofing Bolt 2.5,10.0
+ROO008,Roofing Insulation 3mm-Roll,4.0
+ROO009,Roofing Insulation 5mm-Roll,26.0
+ROO010,Roofing Screw 1,0.0
+ROO013,Roofing Washers,63.0
+ROO014,Roofing Screw 2,1.0
+ROO015,Roofing Bolt 2,5.0
+ROO016,"Roofing Screw 2.5""",1.0
+ROU001,Rough Cast Machine,1.0
+ROU003,Round Covers Black Large,127.0
+ROU004,Round Covers Black Small,2.0
+ROU005,Round Covers White Large,23.0
+ROU006,Round Covers White Small,10.0
+ROU007,Round File,10.0
+RSB001,R/S Box charcoal grey 2m,17.0
+RSB005,R/S Box Charcoal Grey 3m 28g,84.0
+RSB006,R/S Box Charcoal Grey 2.5m 28g,20.0
+RSR001,R/S ROMAN TILE 2.5X30G,0.0
+RUF001,C/S/G RUFF & TUFF 3mm B/whiite,9.0
+SAC001,Sacks,211.0
+SAD001,Saddle Clips 1,60.0
+SAD002,Saddle Clips 1/2 Hose,9.0
+SAD003,Saddle Clips 1/2,360.0
+SAD004,Saddle Clips 11/2,7.0
+SAD005,Saddle Clips 2,22.0
+SAD006,Saddle Clips 3,69.0
+SAD007,Saddle Clips 3/4,224.0
+SAD008,Saddle Clips 4,25.0
+SAD011,Saddle Clips Plastic 32mm,0.0
+SAD012,Saddle Clips Plastic 38mm,15.0
+SAF001,Safety Gloves,41.0
+SAH001,Sahara Filler,2.0
+SAN006,Sand Paper P100 Roll,21.0
+SAN007,Sand Paper P120 Roll,53.0
+SAN008,Sand Paper P36 Roll,1.0
+SAN009,Sand Paper P40 Roll,2.0
+SAN010,Sand Paper P60 Roll,4.0
+SAN011,Sand Paper P80 Roll,10.0
+SAN012,Sand Truck,1.0
+SAN013,Sand Wheelbarrow,5.0
+SAN016,Sanding Disk 7,40.0
+SAN017,Sand Paper Water Proof,330.0
+SAN018,Sand Paper P100 Ft,708.0
+SAN019,Sand Paper P120 Ft,1093.0
+SAN020,Sand Paper P36 Ft,76.0
+SAN021,Sand Paper P40 Ft,112.0
+SAN022,Sand Paper P60 Ft,118.0
+SAN023,Sand Paper P80 Ft,363.0
+SCR003,Scrapper 2,39.0
+SCR004,Scrapper 2.5,4.0
+SCR005,Scrapper 3,38.0
+SCR006,Scrapper 4,33.0
+SCR008,Screw Driver Combined,26.0
+SCR009,Screw Driver Flat,6.0
+SCR011,Screw Driver Star,3.0
+SCR025,Stanley-Screw Driver CushionGripstaBr3OxM20A0Smm,0.0
+SCR026,Stanley-Screw Driver Set 6pc-magneBticO tMipA+Stester,1.0
+SCR027,Stanley-Screw Driver Set 8pc cushionBGOrMipAS,0.0
+SCR029,Bosch Screw DriverBit-2608521039-1B0OpcMAS,1.0
+SEA002,Seat Cover Fitting,0.0
+SEA003,Seat Cover H/G,17.0
+SEL002,Self Tapping Screws 1.5,12.0
+SEL003,Self Tapping Screws 2,17.85
+SEL004,Counter Sank screw 2,10.0
+SEL005,Counter Sank screw 11/2,0.0
+SEL007,Self Tapping Screws 3/4,14.0
+SEN001,Motion Sensor,0.0
+SHA001,Shallow Drain,5.0
+SHE001,Shears Adjustable H/G,11.0
+SHE002,Shears Aluminium,1.0
+SHE003,Shears Fixed,5.0
+SHE004,Shelf Bracket 10x12,23.0
+SHE005,Shelf Bracket 8x10,33.0
+SHE008,Shelf Brackets 6x8,28.0
+SHE010,Orion Shellac Heavy 1l,6.0
+SHE011,Orion Shellac Light 1/2l,15.0
+SHE012,Orion Shellac Light 1l,9.0
+SHE014,Orion Shellac Heavy 1/2L,11.0
+SHO001,Shoe Tacks 1,2.0
+SHO002,Shoe Tacks 1/2,6.0
+SHO003,Shoe Tacks 3/4,12.0
+SHO004,Shoe Tacks 5/8,0.0
+SHO005,Lirlee Arabic Shower-LR9217,5.0
+SHO009,Shower Mixer,0.0
+SHO014,Shower Concealed 4way,0.0
+SHO015,Shower Concealed 5way,4.0
+SID001,Side Slabs,0.0
+SID003,SIDE DRAINERS,0.0
+SID004,Side Flash 28G,40.0
+SIL001,Silicon Gun,8.0
+SIL002,Silicon Gun Sausage,2.0
+SIL003,Silicon Hi Tech Black,37.0
+SIL004,Silicon Hi Tech Clear,144.0
+SIL010,Silicon Sausage Clear,33.0
+SIL011,Silicon Sausage White,14.0
+SIL013,Silicon Tube Black,61.0
+SIL014,Silicon Tube Clear,234.0
+SIL015,Silicon Tube White,34.0
+SIL016,Silicon Solution 5L,10.0
+SIL017,Silicon Sausage Black,21.0
+SIM001,Simba Cement,111695.0
+SIN003,Single Socket Grey,0.0
+SIN004,Single Socket,5.0
+SIS001,Sisal Rope Big,0.0
+SIS002,Sisal Rope Small,217.0
+SIS003,Sisal Twine 1kg,5.0
+SIS004,Sisal Twine 2kg,3.0
+SLA001,Slasher,72.0
+SLE001,Sledge Hammer 10lb,7.0
+SLE002,Sledge Hammer 12lb,4.0
+SLE003,Sledge Hammer 14lb,3.0
+SLE004,Sledge Hammer 6lb,4.0
+SLE005,Sledge Hammer 8lb,2.0
+SOA003,Soap Dish Small,0.0
+SOC001,Socket Double Gold,25.0
+SOC002,Socket Single Black,35.0
+SOC003,Socket Double Metal,6.0
+SOC004,Socket Single Metal,6.0
+SOC005,Socket Double Black,65.0
+SOC006,Socket Double ( USB) Black,22.0
+SOC007,Socket Double Grey,0.0
+SOC008,Socket Single Gold,0.0
+SOC009,Tronic Socket Double,24.0
+SOC010,Tronic Socket Single,10.0
+SOC011,Tronic Socket Double-LED Gold,0.0
+SOC013,Socket Double,8.0
+SOF003,Soft Broom With Handle,95.0
+SOF004,Soft Broom Without Handle,36.0
+SPA001,Spade Imported,262.0
+SPA007,Spanner Combined 17,3.0
+SPA010,Spanner Fix 14x15,3.0
+SPA011,Spanner Fix 16x17,2.0
+SPA015,Spanner Ring 12x13,10.0
+SPA016,Spanner Ring 14x15,9.0
+SPA017,Spanner Ring 16x17,4.0
+SPA020,Spanner Fix 6mm,2.0
+SPE001,Spear Medium,0.0
+SPI006,Spirit Level Magnetic 10,2.0
+SPI007,Spirit Level Magnetic 12,4.0
+SPI008,Spirit Level Medium Magnetic,3.0
+SPR002,Spray Paint Blue,4.0
+SPR003,Spray Paint Chrome MAXIMA,3.0
+SPR004,Spray Paint Black MAXIMA,21.0
+SPR005,Spray Paint White- MAXIMA,23.0
+SPR006,Spray Paint Gold MAXIMA,14.0
+SPR007,Spray Paint Matt Black,6.0
+SPR008,Spray Paint Red-MAXIMA,3.0
+SPR009,Spray Paint Remover,4.0
+SPR011,Spray Paint Gold,6.0
+SPR015,Sprinkler Head,7.0
+SPR019,Spray Paint Grey MAXIMA,1.0
+SPR020,Spray Paint Grey,6.0
+SPR021,Spray Paint Bright Gold MAXIMA,7.0
+SPR022,Spray Paint Yellow MAXIMA,4.0
+SPR023,Spray Paint Asmaco- Matt Black,7.0
+SPR024,Spray Paint Asmaco-Silver,0.0
+SPR025,Sprinkler 3 arms-schneeberg,0.0
+SPR027,Sprinkler Rotary,5.0
+SPR028,Spray Paint Maxima Bright Silver,0.0
+SQ 001,Sq 10,0.0
+SQU001,Squeezer,7.0
+STA001,Stain Spirit Black,15.0
+STA003,Stain Spirit Wallnut,1.0
+STA005,Stain Water Wallnut,5.0
+STA009,Standard Thinner Crown 1l,19.0
+STA010,Standard Thinner Crown 5l,74.0
+STA011,Standard Thinner Glory 1l,80.0
+STA012,Standard Thinner Glory 5l,71.0
+STA015,Star Bit,66.0
+STA016,Standard Thinner Dura 5 ltrs,2.0
+STE001,Steel Float Trowel Yellow,6.0
+STE002,Steel Nails Pcs,502.0
+STE003,Steel Nails Pkt 1,123.0
+STE004,Steel Nails Pkt 1.5,37.0
+STE005,Steel Nails Pkt 2,128.0
+STE006,Steel Nails Pkt 2.5,61.0
+STE007,Steel Nails Pkt 3,324.0
+STE008,Steel Nails Pkt 4,180.0
+STE010,Steel Tape 100m,4.0
+STE011,Steel Tape 50m,1.0
+STE012,Steel Trowel Rubber Handle,15.0
+STE014,Steel Trowel Wooden Handle,1.0
+STE015,Steel Tape,11.0
+STO001,Stone 4x9,54.0
+STO002,Stone 6x9,3.0
+STO003,Stone 9x9,201.0
+STO006,Stop Cork Cons 1/2 Cobra,35.0
+STR003,Strip Connector 30a,16.0
+STR004,Strip Connector 60a,0.0
+STR005,Stronghold Parquet Crown 1kg,20.0
+STR006,Stronghold Parquet Crown 20k,15.0
+STR008,Stronghold Parquet Crown 4kg,30.0
+STR010,Stronghold T/Adhesive 1kg,21.0
+STR011,Stronghold T/Adhesive 25k,0.0
+STR012,Stronghold T/Adhesive 4kg,16.0
+STR016,Strip Connector 20a,15.0
+STY001,Styro Foam 1,40.0
+STY002,Styro Foam 1/2,22.0
+STY003,Styro Foam 3/4,38.0
+SUP001,Super Glue Big,6.0
+SUP002,Super Glue Small,54.0
+SWI001,Tronic Switch 1 Gang,18.0
+SWI002,Switch 2 Gang,14.0
+SWI003,Switch 3 Gang,2.0
+SWI004,Switch 4 Gang Gold,1.0
+SWI005,Switch Box Double,882.0
+SWI006,Switch Box Single,956.0
+SWI007,Switch 2 Gang Black,19.0
+SWI008,Switch 3 gang Black,12.0
+SWI009,Switch 4 gang Black,3.0
+SWI010,Switch 1 Gang Grey,0.0
+SWI011,Switch 2 Gang Grey,0.0
+SWI012,Switch 3 gang Grey,0.0
+SWI013,Switch 4 Gang Grey,0.0
+SWI014,Switch 1 Gang Gold,0.0
+SWI015,Switch 2 Gang Gold,1.0
+SWI016,Switch 3 Gang Gold,0.0
+T,S001 T Stoppers,28.0
+TAC001,Taco Easycare Polish 1l,2.0
+TAC002,Taco Easycare Polish 5l,1.0
+TAN001,Tangit 1000ml,64.0
+TAN002,Tangit 100ml,45.0
+TAN003,Tangit 250ml,181.0
+TAN004,Tangit 500ml,259.0
+TAN005,Tangit 50ml,34.0
+TAN006,Tank Connector 1,6.0
+TAN007,Tank Connector 1/2,1.0
+TAN009,Tank Connector 3/4,11.0
+TAP001,Tap Garden 1/2,59.0
+TAP002,Tap Garden 3/4,9.0
+TAP003,Tap Lockable 1/2,3.0
+TAP004,Tap Lockable 3/4,2.0
+TAP007,Tap Pegler 1/2,50.0
+TAP008,Tap Pegler 3/4,10.0
+TAP015,Tape Measure 3m,11.0
+TAP017,Tape Measure 5m,10.0
+TAP019,Tape Measure Steel 100m,5.0
+TAP022,Tape Measure Knicker 5M,18.0
+TAP025,Tape Measure Knicker 7.5M,42.0
+TEE001,Tee 1x1/8,40.0
+TEE002,Tee 3/4x1/8,11.5
+TEE003,Tee Door,8.0
+TEE004,Tee Hinges 4,30.0
+TEE005,Tee Hinges 6,22.0
+TEE006,Tee Hinges 8,3.0
+TER001,Terrazop Disc 4,4.0
+TES001,Tester Big,20.0
+TES003,Tester Small,18.0
+THR001,Thread Tape Small,711.0
+THR002,Thread Tape Big,417.0
+TIL001,Tile Adhesive Bamburi Seti,0.0
+TIL006,Tile Adhesive Izomix 25kg,389.0
+TIL007,Tile Adhesive Mzito Probond,432.0
+TIL008,Tile Cutter,4.0
+TIL010,Tile Spacers 2.5mm,31.0
+TIL011,Tile Spacers 2mm,197.0
+TIL012,Tile Spacers 3mm,40.0
+TIL014,Tile Adhesive 1951-Kalekim 25kg,50.0
+TIL015,Tile Adhesive 1952 White-kalekim 25BkgOMAS,234.0
+TIN002,Tinsnip 10,4.0
+TIN004,Tinsnip 8,5.0
+TIS009,Tissue Holder NEMSI Black,5.0
+TOI001,Toilet P-Trap,3.0
+TOI004,Toilet S-Trap,2.0
+TOW004,Towel Holder Ring-chrome,3.0
+TOW010,Tower Bolt China 3,11.0
+TOW011,Tower Bolt China 4,15.0
+TOW012,Tower Bolt China 6,25.0
+TOW014,Padbot Blue JK,15.0
+TOW016,Towel Holder -Premium square-black,2.0
+TRA001,Trans Africa Q35-Hm,1.0
+TRA004,Transafrica Sdw750,1.0
+TRA006,Transafrica Sub Sm5,0.0
+TRA009,Transport,1813.0
+TRI001,Tri Square 10,4.0
+TRI002,Tri Square 12,2.0
+TRI003,Tri Square 6,2.0
+TRI004,Tri Square 8,2.0
+TRO001,Tronic Led Fitting 4ft,0.0
+TRO002,Tronic Led Tube 4ft,16.0
+TRO003,Trowel China 8,7.0
+TRO004,Trowel China 6,9.0
+TRO006,Trowel Jk Big,7.0
+TRO007,Trowel Jk Medium,5.0
+TRO008,Trowel Jk Small,1.0
+TRO010,Tronic Led Fitting 2ft,13.0
+TRO011,Tronic Led Tube 2ft,13.0
+TRO012,Trolley,0.0
+TUB001,Tube 1/2x1/2x16g,5.0
+TUB002,Tube 11/2x11/2x14g,2.0
+TUB003,Tube 11/2x11/2x16g,277.0
+TUB004,Tube 11/2x11/2x18g(0.8mm),79.0
+TUB006,Tube 11/2x1x16g,202.5
+TUB007,Tube 11/2x1x18g,151.0
+TUB008,Tube 11/4x11/4x16g,46.0
+TUB009,Tube 11/4x11/4x18g,25.0
+TUB011,Tube 1x1x16g,476.5
+TUB012,Tube 1x1x18g,145.0
+TUB013,Tube 2x1x14g,150.0
+TUB014,Tube 2x1x16g,146.0
+TUB015,Tube 2x1x18g,83.5
+TUB018,Tube 2x2x16g,287.0
+TUB019,Tube 2x2x18g,66.5
+TUB020,Tube 3/4x3/4x16g,179.5
+TUB021,Tube 3/4x3/4x18g(0.8mm),122.0
+TUB022,Tube 3x2X2mm,74.0
+TUB023,Tube 3x2x2.5mm,9.5
+TUB024,Tube 3x2x3mm,5.5
+TUB026,Tube 3x3x2.5mm,8.0
+TUB028,Tube 3x3x3mm,11.0
+TUB029,Tube 3x3x4mm,35.0
+TUB033,Tube 4x2x3mm,10.0
+TUB035,Tube 4x4x2.5mm,4.0
+TUB036,Tube 4x4x3mm,8.0
+TUB040,Tube 4x2x4mm,30.0
+TUB041,Tube 11/2x11/2x3mm,19.0
+TUB042,Tube 6x4x3mm,3.0
+TUB045,Tube 2x2x1.2mm,22.0
+TUB046,Tube 4x4x4mm,4.0
+TUR001,Turpentine Glory 1l,42.0
+TUR002,Turpentine Glory 5l,19.0
+TYR001,Stanley-Tyre Repair Kit,0.0
+UND001,Undertaker 100ml,7.0
+UND002,Undertaker 1l,116.0
+UND003,Undertaker 250ml,10.0
+URI001,Urinal Bowl,0.0
+URI002,Urinal Flash Valve,0.0
+USP001,Uspro Foam Premium 750ml,71.0
+USP002,Uspro Foam Economy 750ml,34.0
+USP003,USPRO Foam DLG,27.0
+USP004,USPRO Foam Sista,33.0
+UVE001,Iron strips U VENT,30.0
+VAL002,Valve Socket 1,0.0
+VAL004,Valve Socket 11/2,0.0
+VAL009,Valley 28G,2.0
+WAL001,Wall Coping 12,10.0
+WAL003,Wall Nut Spirit,6.0
+WAL004,Wall Nut Water,6.0
+WAL006,Wall Pass,98.0
+WAL007,Wall Plug 10mm,6.0
+WAL008,Wall Plug 12mm,5.0
+WAL009,Wall Plug 6mm,40.0
+WAL010,Wall Plug 8mm,37.0
+WAL011,Wall Plug Pcs,80.0
+WAL014,Wall Tap Short Neck,10.0
+WAL015,Wall Tap Long Neck,16.0
+WAL016,Wall Tap Sprout 1/2,1.0
+WAR001,Warning Tape Red,22.0
+WAS003,Wash Hand Basin 18x12,3.0
+WAS006,Wash Hand Basin Corner,0.0
+WAS009,Washers Metal Small,78.0
+WAT001,Tronic Water Heater Switch 20A,16.0
+WAT002,Water Heater Switch 45a Gold,11.0
+WAT003,Water Meter Davis 1/2,1.0
+WAT005,Water Meter Kent 1/2,0.0
+WAT006,Water Meter Kent 3/4,0.0
+WAT007,Watering Can,2.0
+WAT010,Waterproof Mzito Powder,83.0
+WAT013,Waterproof Sikalite,796.0
+WAT014,Waterproof Sikalite 25l-plastocrete,25.0
+WAT015,Waterproof Socket Single,3.0
+WAT016,Tronic Waterproof Socket Twin,4.0
+WAT017,Waterproof Switch,0.0
+WAT023,Waterpump Dayliff 1HP,1.0
+WAT026,Cooker Socket Grey,0.0
+WAT027,Water Heater 45aGrey,0.0
+WAT028,Water Heater Switch 45A,16.0
+WAT029,Water Heater Switch 45A Black,8.0
+WD4002,Wd40 250ml,6.0
+WD4003,Wd40 500ml,1.0
+WEL002,Welding Glass,5.0
+WEL004,Welding Googles,8.0
+WEL005,Welding Holder,3.0
+WEL009,Welding Rods Simba,1165.25
+WHE003,Wheelbarrow H/G,38.0
+WHE004,Wheelbarrow M/G,1.0
+WHE005,Wheelbarrow Super H/G,46.0
+WHE007,Wheelbarrow Wheel Big,9.0
+WHE009,Wheelbarrow Wheel Tuktuk,18.0
+WHI001,White Cement 1kg,5.0
+WHI003,White Cement 40kg (52.5N),32.0
+WHI005,White Spirit 5l Glory,165.0
+WHI006,White Spirit Crown 1l,45.0
+WHI007,White Spirit Crown 5l,108.0
+WHI008,White Spirit Glory 1l,181.0
+WIN001,Window Fastener,196.0
+WIN003,Window Handle,54.0
+WIN004,Window Fastener Kent,108.0
+WIN005,Window Stay,206.0
+WIN007,Window Stay Kent,108.0
+WIN008,Drawer Handle Silver 8,13.0
+WIN009,Drawer Handle Gold 8,12.0
+WIN010,Drawer Handle Grey 8,30.0
+WIR001,Wire Brush,296.0
+WIR002,Wire Mesh H/G,167.0
+WIR003,Wire Mesh L/G,1.0
+WIR004,Wire Mesh M/G,309.0
+WOO003,Wood Chisel 1/2,11.0
+WOO006,Wood Filla Mahogany,33.0
+WOO007,Wood Filla Pine,16.0
+WOO008,Wood Screw Assorted,748.0
+WOO009,Wood Screw Pkt 1,0.5
+WOO010,Wood Screw Pkt 1.5,1.0
+WOO012,Wood Screw Pkt 2.5,0.0
+WOO016,Wood preservative Black 20l,4.0
+WOO017,Wood preservative Black 5l,1.0
+WOO018,Wood preservative Green 20l,9.0
+WOO019,Wood preservative Green 5l,6.0
+WOO020,Wood Chisel 3/4,7.0
+YEL001,Yellow Oxide 1kg,4.0
+ZED001,Zed 1,29.0
+ZED002,Zed 3/4,31.0
+ZED003,Zed Stopper,15.0
+ZVE001,Irn strips Z VENT,1.0
